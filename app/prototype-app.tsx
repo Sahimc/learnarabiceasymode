@@ -3,15 +3,13 @@
 import Link from "next/link";
 import { useMemo, useState, useSyncExternalStore } from "react";
 import {
-  getAyah,
   getProgressKey,
-  getSurah,
   getWordBreakdown,
-  getWordLesson,
   orderLessonForms,
   surahs,
   type LessonComponent,
   type Surah,
+  type WordLesson,
   type WordOccurrence,
 } from "./data/fixtures";
 
@@ -21,6 +19,7 @@ type PrototypeAppProps = {
   view?: PrototypeView;
   initialSurah?: number;
   initialAyah?: number;
+  content?: Surah[];
 };
 
 function LessonBreakdownParts({
@@ -71,6 +70,7 @@ let memoryLessonSettings = defaultLessonSettings;
 
 const statusLabel = {
   complete: "Complete Word Tree",
+  "custom-partial": "Custom content in progress",
   "source-only": "Source text ready",
 } as const;
 
@@ -171,7 +171,9 @@ export function PrototypeApp({
   view = "home",
   initialSurah,
   initialAyah = 1,
+  content: initialContent,
 }: PrototypeAppProps) {
+  const content = initialContent ?? surahs;
   const [selectedSurah, setSelectedSurah] = useState(
     resolveInitialSurah(view, initialSurah),
   );
@@ -219,17 +221,24 @@ export function PrototypeApp({
     }
   }, [progressSnapshot]);
 
-  const surah = getSurah(selectedSurah);
-  const ayah = getAyah(selectedSurah, selectedAyah);
+  const surah =
+    content.find((item) => item.number === selectedSurah) ??
+    content[content.length - 1];
+  const ayah =
+    surah.ayahs.find((item) => item.number === selectedAyah) ?? surah.ayahs[0];
   const selectedWord = ayah.words[selectedWordIndex] ?? ayah.words[0];
-  const selectedLesson = getWordLesson(selectedWord);
+  const selectedLesson = selectedWord.lesson;
   const progressKey = getProgressKey(selectedSurah, selectedAyah);
   const hasCompleted = completed.includes(progressKey);
-  const completeCount = surahs.filter(
+  const completeCount = content.filter(
     (item) => item.status === "complete",
   ).length;
 
   function chooseSurah(item: Surah) {
+    if (item.ayahs.length === 0) {
+      window.location.assign(`/learn/${item.number}/1`);
+      return;
+    }
     setSelectedSurah(item.number);
     setSelectedAyah(1);
     setSelectedWordIndex(0);
@@ -263,7 +272,7 @@ export function PrototypeApp({
   }
 
   const sectionLabel = "Lesson explorer";
-  const visibleSurahs = useMemo(() => surahs, []);
+  const visibleSurahs = useMemo(() => content, [content]);
 
   if (view === "print") {
     return <PrintPreview surah={surah} ayah={ayah} />;
@@ -788,6 +797,7 @@ export function PrototypeApp({
         </div>
         <div className="footer-links">
           <Link href="/print">Print preview</Link>
+          <Link href="/credits">Sources & credits</Link>
           <a href="https://tanzil.net" target="_blank" rel="noreferrer">
             Tanzil source ↗
           </a>
@@ -802,16 +812,22 @@ export function PresentationWordView({
   surahNumber,
   ayahNumber,
   wordPosition,
+  content: initialContent,
 }: {
   surahNumber: number;
   ayahNumber: number;
   wordPosition: number;
+  content?: Surah[];
 }) {
-  const surah = getSurah(surahNumber);
-  const ayah = getAyah(surahNumber, ayahNumber);
+  const content = initialContent ?? surahs;
+  const surah =
+    content.find((item) => item.number === surahNumber) ??
+    content[content.length - 1];
+  const ayah =
+    surah.ayahs.find((item) => item.number === ayahNumber) ?? surah.ayahs[0];
   const word =
     ayah.words.find((item) => item.position === wordPosition) ?? ayah.words[0];
-  const lesson = getWordLesson(word);
+  const lesson = word.lesson;
   const [sectionIndex, setSectionIndex] = useState(0);
 
   if (!lesson) {
@@ -987,7 +1003,7 @@ function WordFocus({
   showTransliteration,
   expandedExplanations,
 }: {
-  lesson: NonNullable<ReturnType<typeof getWordLesson>>;
+  lesson: WordLesson;
   word: WordOccurrence;
   showRoot: boolean;
   showTransliteration: boolean;
@@ -1027,7 +1043,7 @@ function WordFocus({
           type="button"
           disabled
           aria-label={`Listen to ${word.arabic}`}
-          title="Audio will be connected when the recitation source is imported"
+          title="No audio metadata is available for this word yet"
         >
           ▶ Listen
         </button>
@@ -1194,7 +1210,7 @@ function PrintPreview({
   ayah,
 }: {
   surah: Surah;
-  ayah: ReturnType<typeof getAyah>;
+  ayah: import("./data/fixtures").Ayah;
 }) {
   return (
     <main className="print-page">
@@ -1203,6 +1219,15 @@ function PrintPreview({
           ← Back to lesson
         </Link>
         <span>Printable handout · A4 prototype</span>
+        <Link
+          href={`/api/pdf?kind=ayah&surah=${surah.number}&ayah=${ayah.number}`}
+        >
+          Download current āyah PDF
+        </Link>
+        <Link href={`/api/pdf?kind=surah&surah=${surah.number}`}>
+          Download sūrah PDF
+        </Link>
+        <Link href="/api/pdf?kind=volume">Download final-six volume</Link>
         <button type="button" onClick={() => window.print()}>
           Print this page
         </button>
@@ -1230,7 +1255,7 @@ function PrintPreview({
         </div>
         <div className="print-word-grid">
           {ayah.words.map((word) => {
-            const wordLesson = getWordLesson(word);
+            const wordLesson = word.lesson;
             return (
               <div className="print-word" key={word.id}>
                 <span>{String(word.position).padStart(2, "0")}</span>

@@ -4,22 +4,35 @@
   "title": "Word Tree word record",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "position", "arabic", "teachingId"],
+  "required": ["id", "position", "arabic"],
   "properties": {
     "id": { "type": "string", "minLength": 1 },
     "position": { "type": "integer", "minimum": 1 },
     "arabic": { "type": "string", "minLength": 1 },
     "teachingId": { "type": "string", "pattern": "^lesson:.+" },
+    "transliteration": { "type": "string" },
+    "gloss": { "type": "string" },
+    "occurrenceRole": { "type": "string" },
+    "sourceReferences": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/providerReference" }
+    },
     "breakdown": {
       "$ref": "#/$defs/wordBreakdown"
+    },
+    "breakdownOverride": {
+      "$ref": "#/$defs/wordBreakdown",
+      "description": "Occurrence-specific override resolved before a shared teaching-entry breakdown."
     }
   },
   "$defs": {
     "wordBreakdown": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["sourceText", "parts"],
+      "required": ["id", "mode", "sourceText", "parts"],
       "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "mode": { "enum": ["atomic", "segmented"] },
         "sourceText": { "type": "string", "minLength": 1 },
         "parts": {
           "type": "array",
@@ -32,6 +45,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
+        "id",
         "order",
         "sourceText",
         "displayText",
@@ -40,6 +54,7 @@
         "kind"
       ],
       "properties": {
+        "id": { "type": "string", "minLength": 1 },
         "order": { "type": "integer", "minimum": 1 },
         "sourceText": { "type": "string", "minLength": 1 },
         "displayText": { "type": "string", "minLength": 1 },
@@ -47,15 +62,31 @@
         "meaning": { "type": "string", "minLength": 1 },
         "kind": {
           "enum": [
+            "whole",
             "prefix",
             "stem",
             "suffix",
             "article",
+            "preposition",
+            "subject-marker",
+            "object-pronoun",
+            "possessive-pronoun",
             "ending",
             "connector",
-            "whole"
+            "other"
           ]
         }
+      }
+    },
+    "providerReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "recordKey"],
+      "properties": {
+        "provider": { "type": "string", "minLength": 1 },
+        "recordKey": { "type": "string", "minLength": 1 },
+        "version": { "type": "string" },
+        "attribution": { "type": "string" }
       }
     }
   }

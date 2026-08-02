@@ -1,5 +1,7 @@
 # Prompt 2 one-shot production plan
 
+> Implementation status: this plan has now been executed in the current checkout. The final implementation record is in `docs/prompt-2-production-run.md`; that record supersedes any historical prototype-only status below.
+
 This is the build sequence for the later uninterrupted production prompt. It is intentionally explicit so implementation can proceed without architectural discovery during the build.
 
 ## Operating rule

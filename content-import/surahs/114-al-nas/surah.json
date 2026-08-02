@@ -1,32 +1,87 @@
 {
-  "id": "surah:114",
-  "number": 114,
-  "arabicName": "الناس",
-  "transliteration": "Al-Nās",
-  "englishLabel": "Humankind",
-  "status": "complete",
+  "schemaVersion": "2.0.0",
+  "packageId": "surah:114",
+  "surah": {
+    "number": 114,
+    "name": "An-Nās",
+    "arabicName": "الناس",
+    "transliteration": "An-Nās",
+    "englishLabel": "Humankind",
+    "description": "Reviewed Word Tree teaching layer."
+  },
+  "contentVersion": "tanzil-1.1",
+  "status": "custom-complete",
+  "sourceReferences": [
+    {
+      "provider": "tanzil",
+      "recordKey": "surah:114",
+      "version": "1.1",
+      "attribution": "Tanzil Project"
+    }
+  ],
   "ayahs": [
     {
       "id": "ayah:114:1",
       "number": 1,
       "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "sourceRawArabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
       "translation": "Say: I seek refuge in the Lord of humankind.",
+      "naturalMeaning": "Say: I seek refuge in the Lord of humankind.",
       "words": [
         {
           "id": "word:114:1:1",
           "position": 1,
           "arabic": "قُلْ",
-          "teachingId": "lesson:qul"
+          "transliteration": "Qul",
+          "gloss": "Say",
+          "teachingId": "lesson:qul",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:1:1",
+            "mode": "atomic",
+            "sourceText": "قُلْ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:1:1:part:whole",
+                "order": 1,
+                "sourceText": "قُلْ",
+                "displayText": "قُلْ",
+                "label": "Whole word",
+                "meaning": "Say",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:1:2",
           "position": 2,
           "arabic": "أَعُوذُ",
+          "transliteration": "Aʿūdhu",
+          "gloss": "I seek refuge",
           "teachingId": "lesson:audhu",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
           "breakdown": {
+            "id": "breakdown:word:114:1:2",
+            "mode": "segmented",
             "sourceText": "أَعُوذُ",
             "parts": [
               {
+                "id": "breakdown:word:114:1:2:part:1",
                 "order": 1,
                 "sourceText": "أَ",
                 "displayText": "أَـ",
@@ -35,6 +90,7 @@
                 "kind": "prefix"
               },
               {
+                "id": "breakdown:word:114:1:2:part:2",
                 "order": 2,
                 "sourceText": "عُوذُ",
                 "displayText": "عُوذُ",
@@ -49,13 +105,74 @@
           "id": "word:114:1:3",
           "position": 3,
           "arabic": "بِرَبِّ",
-          "teachingId": "lesson:birabbi"
+          "transliteration": "Bi-rabbi",
+          "gloss": "with my Lord",
+          "teachingId": "lesson:birabbi",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:1:3",
+            "mode": "segmented",
+            "sourceText": "بِرَبِّ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:1:3:part:1",
+                "order": 1,
+                "sourceText": "بِ",
+                "displayText": "بِـ",
+                "label": "with / by",
+                "meaning": "an attached preposition",
+                "kind": "preposition"
+              },
+              {
+                "id": "breakdown:word:114:1:3:part:2",
+                "order": 2,
+                "sourceText": "رَبِّ",
+                "displayText": "رَبِّ",
+                "label": "Lord",
+                "meaning": "the one who sustains",
+                "kind": "stem"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:1:4",
           "position": 4,
           "arabic": "ٱلنَّاسِ",
-          "teachingId": "lesson:nas"
+          "transliteration": "Al-nās",
+          "gloss": "humankind",
+          "teachingId": "lesson:nas",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:1:4",
+            "mode": "atomic",
+            "sourceText": "ٱلنَّاسِ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:1:4:part:whole",
+                "order": 1,
+                "sourceText": "ٱلنَّاسِ",
+                "displayText": "ٱلنَّاسِ",
+                "label": "Whole word",
+                "meaning": "Humankind / people",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     },
@@ -63,39 +180,167 @@
       "id": "ayah:114:2",
       "number": 2,
       "arabic": "مَلِكِ ٱلنَّاسِ",
+      "sourceRawArabic": "مَلِكِ ٱلنَّاسِ",
       "translation": "The King of humankind.",
+      "naturalMeaning": "The King of humankind.",
       "words": [
         {
           "id": "word:114:2:1",
           "position": 1,
           "arabic": "مَلِكِ",
-          "teachingId": "lesson:malik"
+          "transliteration": "Malik",
+          "gloss": "King",
+          "teachingId": "lesson:malik",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:2",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:2:1",
+            "mode": "segmented",
+            "sourceText": "مَلِكِ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:2:1:part:1",
+                "order": 1,
+                "sourceText": "مَلِك",
+                "displayText": "مَلِك",
+                "label": "King",
+                "meaning": "the noun naming the sovereign",
+                "kind": "prefix"
+              },
+              {
+                "id": "breakdown:word:114:2:1:part:2",
+                "order": 2,
+                "sourceText": "ِ",
+                "displayText": "ِ",
+                "label": "of",
+                "meaning": "kasrah marks the first noun in the phrase",
+                "kind": "ending"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:2:2",
           "position": 2,
           "arabic": "ٱلنَّاسِ",
-          "teachingId": "lesson:nas"
+          "transliteration": "Al-nās",
+          "gloss": "humankind",
+          "teachingId": "lesson:nas",
+          "occurrenceRole": "Seen in 114:1.",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:2",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:2:2",
+            "mode": "atomic",
+            "sourceText": "ٱلنَّاسِ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:2:2:part:whole",
+                "order": 1,
+                "sourceText": "ٱلنَّاسِ",
+                "displayText": "ٱلنَّاسِ",
+                "label": "Whole word",
+                "meaning": "Humankind / people",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "ayah:114:3",
       "number": 3,
-      "arabic": "إِلَٰهِ ٱلنَّاسِ",
+      "arabic": "إِلَـٰهِ ٱلنَّاسِ",
+      "sourceRawArabic": "إِلَـٰهِ ٱلنَّاسِ",
       "translation": "The God of humankind.",
+      "naturalMeaning": "The God of humankind.",
       "words": [
         {
           "id": "word:114:3:1",
           "position": 1,
           "arabic": "إِلَٰهِ",
-          "teachingId": "lesson:ilah"
+          "transliteration": "Ilāh",
+          "gloss": "God",
+          "teachingId": "lesson:ilah",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:3",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:3:1",
+            "mode": "segmented",
+            "sourceText": "إِلَٰهِ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:3:1:part:1",
+                "order": 1,
+                "sourceText": "إِلَٰه",
+                "displayText": "إِلَٰه",
+                "label": "God",
+                "meaning": "the head noun naming the deity",
+                "kind": "prefix"
+              },
+              {
+                "id": "breakdown:word:114:3:1:part:2",
+                "order": 2,
+                "sourceText": "ِ",
+                "displayText": "ِ",
+                "label": "of",
+                "meaning": "kasrah marks the genitive link",
+                "kind": "ending"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:3:2",
           "position": 2,
           "arabic": "ٱلنَّاسِ",
-          "teachingId": "lesson:nas"
+          "transliteration": "Al-nās",
+          "gloss": "humankind",
+          "teachingId": "lesson:nas",
+          "occurrenceRole": "Seen in 114:1 and 114:2.",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:3",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:3:2",
+            "mode": "atomic",
+            "sourceText": "ٱلنَّاسِ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:3:2:part:whole",
+                "order": 1,
+                "sourceText": "ٱلنَّاسِ",
+                "displayText": "ٱلنَّاسِ",
+                "label": "Whole word",
+                "meaning": "Humankind / people",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     },
@@ -103,69 +348,308 @@
       "id": "ayah:114:4",
       "number": 4,
       "arabic": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+      "sourceRawArabic": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
       "translation": "From the evil of the retreating whisperer.",
+      "naturalMeaning": "From the evil of the whisperer who repeatedly retreats.",
       "words": [
         {
           "id": "word:114:4:1",
           "position": 1,
           "arabic": "مِن",
-          "teachingId": "lesson:min"
+          "transliteration": "Min",
+          "gloss": "from",
+          "teachingId": "lesson:min",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:4:1",
+            "mode": "atomic",
+            "sourceText": "مِن",
+            "parts": [
+              {
+                "id": "breakdown:word:114:4:1:part:whole",
+                "order": 1,
+                "sourceText": "مِن",
+                "displayText": "مِن",
+                "label": "Whole word",
+                "meaning": "From / among",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:4:2",
           "position": 2,
           "arabic": "شَرِّ",
-          "teachingId": "lesson:sharri"
+          "transliteration": "Sharr",
+          "gloss": "harm / evil",
+          "teachingId": "lesson:sharri",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:4:2",
+            "mode": "atomic",
+            "sourceText": "شَرِّ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:4:2:part:whole",
+                "order": 1,
+                "sourceText": "شَرِّ",
+                "displayText": "شَرِّ",
+                "label": "Whole word",
+                "meaning": "The evil / harm",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:4:3",
           "position": 3,
           "arabic": "ٱلْوَسْوَاسِ",
-          "teachingId": "lesson:waswas"
+          "transliteration": "Al-waswās",
+          "gloss": "the whisperer",
+          "teachingId": "lesson:waswas",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:4:3",
+            "mode": "atomic",
+            "sourceText": "ٱلْوَسْوَاسِ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:4:3:part:whole",
+                "order": 1,
+                "sourceText": "ٱلْوَسْوَاسِ",
+                "displayText": "ٱلْوَسْوَاسِ",
+                "label": "Whole word",
+                "meaning": "The whisperer / persistent whispering",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:4:4",
           "position": 4,
           "arabic": "ٱلْخَنَّاسِ",
-          "teachingId": "lesson:khannas"
+          "transliteration": "Al-khannās",
+          "gloss": "the retreating one",
+          "teachingId": "lesson:khannas",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:4:4",
+            "mode": "atomic",
+            "sourceText": "ٱلْخَنَّاسِ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:4:4:part:whole",
+                "order": 1,
+                "sourceText": "ٱلْخَنَّاسِ",
+                "displayText": "ٱلْخَنَّاسِ",
+                "label": "Whole word",
+                "meaning": "The one who repeatedly retreats",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "ayah:114:5",
       "number": 5,
-      "arabic": "ٱلَّذِي يُوَسْوِسُ فِي صُدُورِ ٱلنَّاسِ",
+      "arabic": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+      "sourceRawArabic": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
       "translation": "The one who whispers in the chests of humankind.",
+      "naturalMeaning": "The one who whispers in the chests of humankind.",
       "words": [
         {
           "id": "word:114:5:1",
           "position": 1,
           "arabic": "ٱلَّذِي",
-          "teachingId": "lesson:alladhi"
+          "transliteration": "Al-ladhī",
+          "gloss": "the one who",
+          "teachingId": "lesson:alladhi",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:5",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:5:1",
+            "mode": "atomic",
+            "sourceText": "ٱلَّذِي",
+            "parts": [
+              {
+                "id": "breakdown:word:114:5:1:part:whole",
+                "order": 1,
+                "sourceText": "ٱلَّذِي",
+                "displayText": "ٱلَّذِي",
+                "label": "Whole word",
+                "meaning": "The one who / which",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:5:2",
           "position": 2,
           "arabic": "يُوَسْوِسُ",
-          "teachingId": "lesson:yuwaswis"
+          "transliteration": "Yuwaswis",
+          "gloss": "he whispers",
+          "teachingId": "lesson:yuwaswis",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:5",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:5:2",
+            "mode": "atomic",
+            "sourceText": "يُوَسْوِسُ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:5:2:part:whole",
+                "order": 1,
+                "sourceText": "يُوَسْوِسُ",
+                "displayText": "يُوَسْوِسُ",
+                "label": "Whole word",
+                "meaning": "He whispers",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:5:3",
           "position": 3,
           "arabic": "فِي",
-          "teachingId": "lesson:fi"
+          "transliteration": "Fī",
+          "gloss": "in",
+          "teachingId": "lesson:fi",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:5",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:5:3",
+            "mode": "atomic",
+            "sourceText": "فِي",
+            "parts": [
+              {
+                "id": "breakdown:word:114:5:3:part:whole",
+                "order": 1,
+                "sourceText": "فِي",
+                "displayText": "فِي",
+                "label": "Whole word",
+                "meaning": "In",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:5:4",
           "position": 4,
           "arabic": "صُدُورِ",
-          "teachingId": "lesson:sudur"
+          "transliteration": "Ṣudūr",
+          "gloss": "chests",
+          "teachingId": "lesson:sudur",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:5",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:5:4",
+            "mode": "atomic",
+            "sourceText": "صُدُورِ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:5:4:part:whole",
+                "order": 1,
+                "sourceText": "صُدُورِ",
+                "displayText": "صُدُورِ",
+                "label": "Whole word",
+                "meaning": "Chests · breasts",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:5:5",
           "position": 5,
           "arabic": "ٱلنَّاسِ",
-          "teachingId": "lesson:nas"
+          "transliteration": "Al-nās",
+          "gloss": "humankind",
+          "teachingId": "lesson:nas",
+          "occurrenceRole": "Seen in 114:1, 114:2 and 114:3.",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:5",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:5:5",
+            "mode": "atomic",
+            "sourceText": "ٱلنَّاسِ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:5:5:part:whole",
+                "order": 1,
+                "sourceText": "ٱلنَّاسِ",
+                "displayText": "ٱلنَّاسِ",
+                "label": "Whole word",
+                "meaning": "Humankind / people",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     },
@@ -173,27 +657,737 @@
       "id": "ayah:114:6",
       "number": 6,
       "arabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "sourceRawArabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
       "translation": "From among jinn and humankind.",
+      "naturalMeaning": "From among the jinn and humankind.",
       "words": [
         {
           "id": "word:114:6:1",
           "position": 1,
           "arabic": "مِنَ",
-          "teachingId": "lesson:min"
+          "transliteration": "Mina",
+          "gloss": "from among",
+          "teachingId": "lesson:min",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:6",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:6:1",
+            "mode": "atomic",
+            "sourceText": "مِنَ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:6:1:part:whole",
+                "order": 1,
+                "sourceText": "مِنَ",
+                "displayText": "مِنَ",
+                "label": "Whole word",
+                "meaning": "From / among",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:6:2",
           "position": 2,
           "arabic": "ٱلْجِنَّةِ",
-          "teachingId": "lesson:jinnah"
+          "transliteration": "Al-jinnah",
+          "gloss": "the jinn",
+          "teachingId": "lesson:jinnah",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:6",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:6:2",
+            "mode": "atomic",
+            "sourceText": "ٱلْجِنَّةِ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:6:2:part:whole",
+                "order": 1,
+                "sourceText": "ٱلْجِنَّةِ",
+                "displayText": "ٱلْجِنَّةِ",
+                "label": "Whole word",
+                "meaning": "The jinn",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:114:6:3",
           "position": 3,
           "arabic": "وَٱلنَّاسِ",
-          "teachingId": "lesson:wa"
+          "transliteration": "Wa-al-nās",
+          "gloss": "and humankind",
+          "teachingId": "lesson:wa",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "114:6",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:114:6:3",
+            "mode": "segmented",
+            "sourceText": "وَٱلنَّاسِ",
+            "parts": [
+              {
+                "id": "breakdown:word:114:6:3:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَـ",
+                "label": "and",
+                "meaning": "an attached connector",
+                "kind": "connector"
+              },
+              {
+                "id": "breakdown:word:114:6:3:part:2",
+                "order": 2,
+                "sourceText": "ٱلنَّاسِ",
+                "displayText": "ٱلنَّاسِ",
+                "label": "humankind",
+                "meaning": "the people / humankind",
+                "kind": "article"
+              }
+            ]
+          }
         }
       ]
     }
-  ]
+  ],
+  "teachingEntries": {
+    "lesson:qul": {
+      "id": "lesson:qul",
+      "meaning": "Say",
+      "type": "Command verb",
+      "root": "ق و ل",
+      "rootPicture": "say · speak · tell · state",
+      "construction": "قُلْ",
+      "components": [],
+      "grammar": "A command addressed to one male; Arabic understands the ‘you’ from the verb form.",
+      "sentenceRole": "Introduces what the Prophet ﷺ is commanded to declare.",
+      "recognitionClue": "A command can contain its subject without a separate word for ‘you.’",
+      "forms": [
+        {
+          "form": "قَالَ",
+          "meaning": "He said",
+          "difference": "past tense"
+        },
+        {
+          "form": "يَقُولُ",
+          "meaning": "He says",
+          "difference": "present tense"
+        },
+        {
+          "form": "نَقُولُ",
+          "meaning": "We say",
+          "difference": "نَ points to we"
+        },
+        {
+          "form": "قُلْ",
+          "meaning": "Say!",
+          "difference": "command to one male"
+        }
+      ],
+      "takeaway": "The root stays connected to speaking while the form tells us who speaks and whether it is a statement or command."
+    },
+    "lesson:audhu": {
+      "id": "lesson:audhu",
+      "meaning": "I seek refuge",
+      "type": "First-person present verb",
+      "root": "ع و ذ",
+      "rootPicture": "seek shelter · hold fast · take refuge",
+      "construction": "أَعُوذُ",
+      "components": [
+        {
+          "text": "أَ",
+          "displayText": "أَـ",
+          "label": "I",
+          "meaning": "the person doing the action",
+          "kind": "prefix"
+        },
+        {
+          "text": "عُوذُ",
+          "displayText": "عُوذُ",
+          "label": "seek refuge",
+          "meaning": "the main verb stem",
+          "kind": "stem"
+        }
+      ],
+      "breakdown": {
+        "id": "breakdown:114:1:2",
+        "mode": "segmented",
+        "sourceText": "أَعُوذُ",
+        "parts": [
+          {
+            "id": "breakdown:114:1:2:part:prefix-a",
+            "order": 1,
+            "sourceText": "أَ",
+            "displayText": "أَـ",
+            "label": "I",
+            "meaning": "the person doing the action",
+            "kind": "prefix"
+          },
+          {
+            "id": "breakdown:114:1:2:part:stem-udhu",
+            "order": 2,
+            "sourceText": "عُوذُ",
+            "displayText": "عُوذُ",
+            "label": "seek refuge",
+            "meaning": "the main verb stem",
+            "kind": "stem"
+          }
+        ]
+      },
+      "grammar": "The opening أَ marks the first-person speaker. The verb expresses actively seeking protection.",
+      "sentenceRole": "Begins the learner’s spoken request for refuge.",
+      "recognitionClue": "أَ at the beginning of a present verb can point to ‘I.’",
+      "forms": [
+        {
+          "form": "عَاذَ",
+          "meaning": "He sought refuge",
+          "difference": "past"
+        },
+        {
+          "form": "أَعُوذُ",
+          "meaning": "I seek refuge",
+          "difference": "أَ = I"
+        },
+        {
+          "form": "نَعُوذُ",
+          "meaning": "We seek refuge",
+          "difference": "نَ = we"
+        },
+        {
+          "form": "مَعَاذ",
+          "meaning": "place of refuge",
+          "difference": "derived noun"
+        }
+      ],
+      "takeaway": "The root gives the movement toward protection while the prefix identifies the speaker."
+    },
+    "lesson:birabbi": {
+      "id": "lesson:birabbi",
+      "meaning": "With / by my Lord",
+      "type": "Attached preposition and possessive noun",
+      "root": "ر ب ب",
+      "rootPicture": "raise · nurture · sustain · govern",
+      "construction": "بِ + رَبِّ + ي",
+      "components": [
+        {
+          "text": "بِ",
+          "label": "with / by",
+          "meaning": "attached preposition"
+        },
+        {
+          "text": "رَبِّ",
+          "label": "Lord",
+          "meaning": "one who sustains"
+        }
+      ],
+      "grammar": "The preposition بِ joins to ربّ, while the possessive ending is understood in the attached form used here.",
+      "sentenceRole": "Names the source of protection being sought.",
+      "recognitionClue": "A short attached preposition can change the relationship of the noun to the verb.",
+      "forms": [
+        {
+          "form": "رَبّ",
+          "meaning": "Lord / nurturer",
+          "difference": "base noun"
+        },
+        {
+          "form": "بِرَبِّ",
+          "meaning": "by a Lord",
+          "difference": "بِ attached"
+        },
+        {
+          "form": "رَبِّي",
+          "meaning": "my Lord",
+          "difference": "ي = my"
+        }
+      ],
+      "takeaway": "The root picture of nurturing and sustaining makes رَبّ a rich word for Lord and caretaker."
+    },
+    "lesson:nas": {
+      "id": "lesson:nas",
+      "meaning": "Humankind / people",
+      "type": "Definite noun",
+      "root": "ن و س",
+      "rootPicture": "humanity · people · movement among people",
+      "construction": "ٱلـ + نَّاس",
+      "components": [
+        {
+          "text": "ٱلـ",
+          "label": "the",
+          "meaning": "definite article"
+        }
+      ],
+      "grammar": "ٱلـ makes the word definite: ‘the people’ or ‘humankind.’ After مَلِكِ or إِلَٰهِ, its kasrah marks it as the second noun in an iḍāfah phrase: ‘of humankind.’",
+      "sentenceRole": "Identifies the people protected, the people described by the titles, and the people whose chests are affected.",
+      "recognitionClue": "The same word repeats across the sūrah; repetition is a recognition aid.",
+      "forms": [
+        {
+          "form": "نَاس",
+          "meaning": "people",
+          "difference": "indefinite group"
+        },
+        {
+          "form": "ٱلنَّاس",
+          "meaning": "humankind",
+          "difference": "definite article"
+        },
+        {
+          "form": "وَٱلنَّاس",
+          "meaning": "and humankind",
+          "difference": "وَ attached"
+        }
+      ],
+      "takeaway": "The visible word stays stable while its sentence role shifts with each āyah."
+    },
+    "lesson:malik": {
+      "id": "lesson:malik",
+      "meaning": "King / Sovereign",
+      "type": "Noun in an iḍāfah phrase",
+      "root": "م ل ك",
+      "rootPicture": "rule · own · possess · have authority",
+      "construction": "مَلِكِ + ٱلنَّاسِ",
+      "components": [
+        {
+          "text": "مَلِك",
+          "label": "King",
+          "meaning": "the noun naming the sovereign"
+        },
+        {
+          "text": "ـِ",
+          "label": "of",
+          "meaning": "kasrah marks the first noun in the phrase"
+        }
+      ],
+      "grammar": "مَلِكِ is the first noun in an iḍāfah phrase. Its kasrah links it to ٱلنَّاسِ, so the phrase means ‘King of humankind.’",
+      "sentenceRole": "Names Allah as the Sovereign over humankind.",
+      "recognitionClue": "The kasrah ending on مَلِكِ signals the first part of an ‘of’ relationship.",
+      "forms": [
+        {
+          "form": "مَلِك",
+          "meaning": "king",
+          "difference": "base noun"
+        },
+        {
+          "form": "مَلِكِ",
+          "meaning": "King of…",
+          "difference": "iḍāfah ending"
+        },
+        {
+          "form": "مُلُوك",
+          "meaning": "kings",
+          "difference": "broken plural"
+        }
+      ],
+      "takeaway": "The root carries authority and ownership; the ending shows how the noun connects to what follows."
+    },
+    "lesson:ilah": {
+      "id": "lesson:ilah",
+      "meaning": "God / deity",
+      "type": "Noun in an iḍāfah phrase",
+      "root": "أ ل ه",
+      "rootPicture": "worship · deity · turn toward the One worshipped",
+      "construction": "إِلَٰهِ + ٱلنَّاسِ",
+      "components": [
+        {
+          "text": "إِلَٰه",
+          "label": "God",
+          "meaning": "the head noun naming the deity"
+        },
+        {
+          "text": "ـِ",
+          "label": "of",
+          "meaning": "kasrah marks the genitive link"
+        }
+      ],
+      "grammar": "إِلَٰهِ is the first noun in an iḍāfah phrase. The kasrah is its genitive ending, while ٱلنَّاسِ is the possessor: ‘the God of humankind.’",
+      "sentenceRole": "Names Allah as the true God belonging to no other object of worship.",
+      "recognitionClue": "The kasrah on إِلَٰهِ helps show that the next noun supplies the ‘of humankind’ relationship.",
+      "forms": [
+        {
+          "form": "إِلَٰه",
+          "meaning": "a god / deity",
+          "difference": "base noun"
+        },
+        {
+          "form": "إِلَٰهِ ٱلنَّاس",
+          "meaning": "God of humankind",
+          "difference": "iḍāfah phrase"
+        },
+        {
+          "form": "آلِهَة",
+          "meaning": "gods / deities",
+          "difference": "broken plural"
+        }
+      ],
+      "takeaway": "The root connects the word to worship and deity; the phrase makes the relationship clear."
+    },
+    "lesson:min": {
+      "id": "lesson:min",
+      "meaning": "From / among",
+      "type": "Preposition",
+      "root": "",
+      "rootPicture": "No lexical root — a preposition marking source, separation or origin.",
+      "construction": "مِنْ → مِنَ",
+      "components": [
+        {
+          "text": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation"
+        },
+        {
+          "text": "ـَ",
+          "label": "linking vowel",
+          "meaning": "helps pronunciation before the next word"
+        }
+      ],
+      "grammar": "مِنْ introduces the source or group something comes from. The final vowel in مِنَ is a pronunciation adjustment before the next word.",
+      "sentenceRole": "Introduces the harm or the group from which something comes.",
+      "recognitionClue": "Recognise مِنْ / مِنَ as the compact word for ‘from’; its ending can change for easy pronunciation.",
+      "forms": [
+        {
+          "form": "مِنْ",
+          "meaning": "from",
+          "difference": "base preposition"
+        },
+        {
+          "form": "مِنَ",
+          "meaning": "from among",
+          "difference": "vowel before the next word"
+        },
+        {
+          "form": "مِنْهُ",
+          "meaning": "from him / it",
+          "difference": "attached pronoun"
+        }
+      ],
+      "takeaway": "Short grammar words do important structural work even though they do not carry a lexical root."
+    },
+    "lesson:sharri": {
+      "id": "lesson:sharri",
+      "meaning": "The evil / harm",
+      "type": "Definite noun with attached preposition",
+      "root": "ش ر ر",
+      "rootPicture": "badness · harm · evil",
+      "construction": "مِنْ + شَرِّ",
+      "components": [
+        {
+          "text": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation"
+        }
+      ],
+      "grammar": "مِنْ introduces the source or separation, and the noun is definite in meaning through the construction.",
+      "sentenceRole": "Names the harm from which refuge is sought.",
+      "recognitionClue": "مِنْ often carries ‘from’ and can be attached in pronunciation to what follows.",
+      "forms": [
+        {
+          "form": "شَرّ",
+          "meaning": "evil / harm",
+          "difference": "base noun"
+        },
+        {
+          "form": "مِنْ شَرّ",
+          "meaning": "from the harm",
+          "difference": "preposition added"
+        },
+        {
+          "form": "شِرَار",
+          "meaning": "worst / evil ones",
+          "difference": "related plural"
+        }
+      ],
+      "takeaway": "The phrase is learned as a unit while the word remains available for comparison elsewhere."
+    },
+    "lesson:waswas": {
+      "id": "lesson:waswas",
+      "meaning": "The whisperer / persistent whispering",
+      "type": "Definite intensive descriptive noun",
+      "root": "و س و س",
+      "rootPicture": "whisper · repeat secretly · hidden suggestion",
+      "construction": "ٱلـ + وَسْوَاس",
+      "components": [],
+      "grammar": "The repeated root letters fit the repeated nature of whispering; the definite article identifies the particular whisperer.",
+      "sentenceRole": "Identifies the source of the evil.",
+      "recognitionClue": "Repeated root letters may appear in words connected to repeated action.",
+      "forms": [
+        {
+          "form": "وَسْوَسَ",
+          "meaning": "He whispered",
+          "difference": "past verb"
+        },
+        {
+          "form": "يُوَسْوِسُ",
+          "meaning": "He whispers",
+          "difference": "present verb"
+        },
+        {
+          "form": "وَسْوَاسَة",
+          "meaning": "whispering",
+          "difference": "action noun"
+        },
+        {
+          "form": "ٱلْوَسْوَاس",
+          "meaning": "the whisperer",
+          "difference": "definite form"
+        }
+      ],
+      "takeaway": "The repeated root remains connected to whispering while the pattern gives the persistent sense."
+    },
+    "lesson:khannas": {
+      "id": "lesson:khannas",
+      "meaning": "The one who repeatedly retreats",
+      "type": "Definite intensive descriptive noun",
+      "root": "خ ن س",
+      "rootPicture": "withdraw · retreat · hide back",
+      "construction": "ٱلـ + خَنَّاس",
+      "components": [],
+      "grammar": "The strengthened middle letter carries an intensive or repeated sense.",
+      "sentenceRole": "Describes the whisperer as repeatedly retreating or hiding back.",
+      "recognitionClue": "A strengthened middle letter can occur in intensive patterns.",
+      "forms": [
+        {
+          "form": "خَنَسَ",
+          "meaning": "He withdrew",
+          "difference": "past"
+        },
+        {
+          "form": "يَخْنِسُ",
+          "meaning": "He withdraws",
+          "difference": "present"
+        },
+        {
+          "form": "خَنَّاس",
+          "meaning": "one who repeatedly withdraws",
+          "difference": "intensive noun"
+        }
+      ],
+      "takeaway": "The root carries withdrawal while the pattern gives repeated or strong withdrawal."
+    },
+    "lesson:alladhi": {
+      "id": "lesson:alladhi",
+      "meaning": "The one who / which",
+      "type": "Relative pronoun",
+      "root": "",
+      "rootPicture": "linking a noun to its description",
+      "construction": "ٱلَّذِي",
+      "components": [],
+      "grammar": "This pronoun connects a person or thing to the description that follows.",
+      "sentenceRole": "Introduces what the whisperer does.",
+      "recognitionClue": "ٱلَّذِي frequently means ‘the one who’ or ‘which.’",
+      "forms": [
+        {
+          "form": "ٱلَّذِي",
+          "meaning": "the one who",
+          "difference": "masculine singular"
+        },
+        {
+          "form": "ٱلَّتِي",
+          "meaning": "the one who",
+          "difference": "feminine singular"
+        },
+        {
+          "form": "ٱلَّذِينَ",
+          "meaning": "those who",
+          "difference": "masculine or mixed plural"
+        }
+      ],
+      "takeaway": "The meaning remains ‘the one who,’ while gender and number change the form."
+    },
+    "lesson:yuwaswis": {
+      "id": "lesson:yuwaswis",
+      "meaning": "He whispers",
+      "type": "Present-tense verb",
+      "root": "و س و س",
+      "rootPicture": "whisper · repeat secretly · hidden suggestion",
+      "construction": "يُ + وَسْوِس",
+      "components": [
+        {
+          "text": "يُ",
+          "label": "he",
+          "meaning": "third-person marker"
+        }
+      ],
+      "grammar": "The opening يُ identifies a third-person masculine present verb.",
+      "sentenceRole": "Gives the action performed by the whisperer.",
+      "recognitionClue": "The opening يُ often points to ‘he’ in a present verb.",
+      "forms": [
+        {
+          "form": "وَسْوَسَ",
+          "meaning": "He whispered",
+          "difference": "past"
+        },
+        {
+          "form": "يُوَسْوِسُ",
+          "meaning": "He whispers",
+          "difference": "present he form"
+        },
+        {
+          "form": "تُوَسْوِسُ",
+          "meaning": "You / she whispers",
+          "difference": "تَ prefix"
+        },
+        {
+          "form": "أُوَسْوِسُ",
+          "meaning": "I whisper",
+          "difference": "أَ prefix"
+        }
+      ],
+      "takeaway": "The repeating root remains while the opening changes who performs the present action."
+    },
+    "lesson:fi": {
+      "id": "lesson:fi",
+      "meaning": "In",
+      "type": "Preposition",
+      "root": "",
+      "rootPicture": "location within something",
+      "construction": "فِي",
+      "components": [],
+      "grammar": "The preposition locates the following noun as the place where something occurs.",
+      "sentenceRole": "Identifies where the whispering takes place.",
+      "recognitionClue": "فِي is a compact high-frequency word worth recognising on sight.",
+      "forms": [
+        {
+          "form": "فِي",
+          "meaning": "in",
+          "difference": "preposition"
+        },
+        {
+          "form": "فِيهِ",
+          "meaning": "in it",
+          "difference": "attached pronoun"
+        },
+        {
+          "form": "فِيهَا",
+          "meaning": "in her / it",
+          "difference": "feminine pronoun"
+        }
+      ],
+      "takeaway": "Short grammar words become anchors for understanding longer Qur’anic phrases."
+    },
+    "lesson:sudur": {
+      "id": "lesson:sudur",
+      "meaning": "Chests · breasts",
+      "type": "Broken plural noun",
+      "root": "ص د ر",
+      "rootPicture": "chest · front · come forth · emerge",
+      "construction": "صُدُور",
+      "components": [],
+      "grammar": "This is the broken plural of صَدْر. It follows فِي, so its ending reflects the preposition.",
+      "sentenceRole": "Identifies where the whispering enters or occurs.",
+      "recognitionClue": "صُدُور is a broken plural of صَدْر.",
+      "forms": [
+        {
+          "form": "صَدْر",
+          "meaning": "chest",
+          "difference": "singular"
+        },
+        {
+          "form": "صُدُور",
+          "meaning": "chests",
+          "difference": "broken plural"
+        },
+        {
+          "form": "صَدَرَ",
+          "meaning": "he came forth",
+          "difference": "verb"
+        },
+        {
+          "form": "مَصْدَر",
+          "meaning": "source / origin",
+          "difference": "derived noun"
+        }
+      ],
+      "takeaway": "The root family connects the chest or front with coming forth and origin, while patterns create different words."
+    },
+    "lesson:jinnah": {
+      "id": "lesson:jinnah",
+      "meaning": "The jinn",
+      "type": "Definite collective noun",
+      "root": "ج ن ن",
+      "rootPicture": "hidden · covered · concealed · unseen",
+      "construction": "ٱلـ + جِنَّة",
+      "components": [],
+      "grammar": "The root family carries hiddenness or covering. Here the word refers to jinn, normally hidden from human sight.",
+      "sentenceRole": "Names the first group from which whisperers may come.",
+      "recognitionClue": "The root ج ن ن often appears in words connected to hiding or covering.",
+      "forms": [
+        {
+          "form": "جِنّ",
+          "meaning": "jinn",
+          "difference": "common collective"
+        },
+        {
+          "form": "جِنَّة",
+          "meaning": "jinn in this form",
+          "difference": "related collective noun"
+        },
+        {
+          "form": "جَنَّة",
+          "meaning": "garden / Paradise",
+          "difference": "different vowels"
+        },
+        {
+          "form": "مَجْنُون",
+          "meaning": "one whose reason is covered",
+          "difference": "derived form"
+        }
+      ],
+      "takeaway": "The shared root concerns hiddenness, but vowel patterns produce different related words."
+    },
+    "lesson:wa": {
+      "id": "lesson:wa",
+      "meaning": "And",
+      "type": "Attached connector",
+      "root": "",
+      "rootPicture": "joining two elements",
+      "construction": "وَ + word",
+      "components": [
+        {
+          "text": "وَ",
+          "label": "and",
+          "meaning": "connector"
+        }
+      ],
+      "grammar": "The connector is written directly onto the following word.",
+      "sentenceRole": "Adds the second group or clause.",
+      "recognitionClue": "وَ attached to a word commonly contributes ‘and.’",
+      "forms": [
+        {
+          "form": "وَٱلنَّاس",
+          "meaning": "and humankind",
+          "difference": "وَ added"
+        },
+        {
+          "form": "فَٱلنَّاس",
+          "meaning": "so the people",
+          "difference": "فَ added"
+        },
+        {
+          "form": "بِٱلنَّاس",
+          "meaning": "with the people",
+          "difference": "بِ added"
+        }
+      ],
+      "takeaway": "A small attached word can change the relationship between two otherwise familiar words."
+    }
+  },
+  "volumeReferences": ["volume:final-six-surahs"]
 }

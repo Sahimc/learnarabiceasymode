@@ -1,0 +1,5578 @@
+{
+  "auditVersion": "prompt-2-word-breakdown-audit-v1",
+  "scope": { "surahs": [109, 110, 111, 112, 113, 114], "ayahCount": 27, "browserTestingPerformed": false, "lessonContentModified": false, "postgresqlWorkPerformed": false },
+  "definitions": {
+    "wordBreakdownExists": "An authored breakdown exists on the fixture occurrence, shared teaching lesson, or import word record.",
+    "breakdownMode": "Authored parts are atomic when there is one part and segmented when there is more than one. Legacy and fallback modes are reported separately.",
+    "sourcePartsConcatenateExactly": "Compared using the same NFC, whitespace and tatweel normalization as validateWordBreakdown.",
+    "validAtomicCount": "Counts authored one-part WordBreakdown records only; safe runtime whole-word fallbacks are separate."
+  },
+  "schemaAssessment": {
+    "atomicAndSegmentedModes": { "status": "partial", "detail": "Inferred from parts length; no explicit mode property or enum." },
+    "stablePartIds": { "status": "no", "detail": "Part records have order but no stable part id." },
+    "orderedParts": { "status": "partial", "detail": "order is required as an integer, but uniqueness and contiguous ordering are enforced only by runtime validation." },
+    "sourceText": "yes",
+    "displayText": "yes",
+    "label": "yes",
+    "meaning": "yes",
+    "kind": "yes",
+    "occurrenceLevelOverrides": { "status": "yes", "detail": "A word record can contain breakdown." },
+    "sharedTeachingBreakdowns": { "status": "no", "detail": "The package schema has teachingId and occurrence breakdowns but no shared teaching-entry schema; TypeScript fixtures support lesson.breakdown." }
+  },
+  "testCoverageAssessment": {
+    "authoredBreakdownCoverage": "Only the second word of āyah 1 in 113 and 114 (أَعُوذُ) is tested.",
+    "allOccurrenceCoverage": "No test audits every visible occurrence in 109–114.",
+    "specialWords": "No test covers بِرَبِّ, وَلَمْ, لَّهُۥ, وَٱلنَّاسِ, قُلْ, or rootless atomic fallback behavior.",
+    "schemaCoverage": "No test validates atomic/segmented mode, stable part ids, ordering invariants, or overrides against word.schema.json."
+  },
+  "summary": { "totalVisibleOccurrences": 127, "validAtomicCount": 0, "effectiveAtomicFallbackCount": 29, "validSegmentedCount": 2, "missingCount": 98, "invalidCount": 18, "legacyComponentOccurrenceCount": 9, "explicitWordBreakdownOccurrenceCount": 2, "importOccurrenceOverrideCount": 2, "fixtureOccurrenceOverrideCount": 0, "readyForLockedPrompt2Contract": false },
+  "categoryDefinitions": {
+    "validSegmented": "Authored WordBreakdown, more than one part, complete source concatenation and metadata.",
+    "validAtomic": "Authored one-part whole-word WordBreakdown passing validation.",
+    "missing": "No authored WordBreakdown; includes source-only records and custom lessons using whole-word fallback.",
+    "invalidOrIncomplete": "Legacy parts do not concatenate to the complete canonical word.",
+    "legacyComponentData": "Legacy parts concatenate completely but are not an explicit WordBreakdown and lack required kind metadata."
+  },
+  "sharedWordsMayNeedOverrides": [
+    { "teachingId": "lesson:wa", "reason": "Shared وَ is used for وَمِن and وَٱلنَّاسِ; the latter needs a complete occurrence-specific split." },
+    { "teachingId": "lesson:min", "reason": "Shared lesson is used for مِن and مِنَ; the final-vowel occurrence needs an occurrence-aware source/display decision." },
+    { "teachingId": "lesson:ahad", "reason": "112:1 is glossed uniquely One while 112:4 is glossed anyone." },
+    { "teachingId": "lesson:nas", "reason": "Repeated ٱلنَّاسِ occurrences have different sentence roles." },
+    { "teachingId": "lesson:allah", "reason": "The repeated form has a distinct occurrence role in 112:2." }
+  ],
+  "specialConfirmations": {
+    "أَعُوذُ": "Valid shared segmented breakdown: أَ + عُوذُ. Import packages also contain occurrence-level copies. displayText أَـ does not alter sourceText.",
+    "بِرَبِّ": "Legacy only: بِ + رَبِّ concatenates exactly, but there is no authored WordBreakdown and no kind metadata.",
+    "وَلَمْ": "Legacy only: وَ + لَمْ concatenates exactly, but there is no authored WordBreakdown and no kind metadata.",
+    "لَّهُۥ": "Invalid/incomplete legacy data: current لِ + هُ does not concatenate to canonical لَّهُۥ.",
+    "وَٱلنَّاسِ": "Incomplete shared legacy data: lesson:wa supplies only وَ; an occurrence-specific complete breakdown is required.",
+    "قُلْ": "No authored breakdown and no fabricated split; runtime safely falls back to the complete word atomically.",
+    "rootlessParticles": "An authored one-part atomic breakdown is safe, but none currently exist.",
+    "displayJoiningLines": "Validation uses sourceText; display-only joining lines remain outside canonical source concatenation."
+  },
+  "occurrences": [
+    {
+      "stableOccurrenceId": "word:109:1:1",
+      "surah": 109,
+      "ayah": 1,
+      "wordPosition": 1,
+      "canonicalSourceText": "قُلْ",
+      "importSourceText": "قُلْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:1:2",
+      "surah": 109,
+      "ayah": 1,
+      "wordPosition": 2,
+      "canonicalSourceText": "يَا",
+      "importSourceText": "يَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:1:3",
+      "surah": 109,
+      "ayah": 1,
+      "wordPosition": 3,
+      "canonicalSourceText": "أَيُّهَا",
+      "importSourceText": "أَيُّهَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:1:4",
+      "surah": 109,
+      "ayah": 1,
+      "wordPosition": 4,
+      "canonicalSourceText": "الْكَافِرُونَ",
+      "importSourceText": "الْكَافِرُونَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:2:1",
+      "surah": 109,
+      "ayah": 2,
+      "wordPosition": 1,
+      "canonicalSourceText": "لَا",
+      "importSourceText": "لَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:2:2",
+      "surah": 109,
+      "ayah": 2,
+      "wordPosition": 2,
+      "canonicalSourceText": "أَعْبُدُ",
+      "importSourceText": "أَعْبُدُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:2:3",
+      "surah": 109,
+      "ayah": 2,
+      "wordPosition": 3,
+      "canonicalSourceText": "مَا",
+      "importSourceText": "مَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:2:4",
+      "surah": 109,
+      "ayah": 2,
+      "wordPosition": 4,
+      "canonicalSourceText": "تَعْبُدُونَ",
+      "importSourceText": "تَعْبُدُونَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:3:1",
+      "surah": 109,
+      "ayah": 3,
+      "wordPosition": 1,
+      "canonicalSourceText": "وَلَا",
+      "importSourceText": "وَلَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:3:2",
+      "surah": 109,
+      "ayah": 3,
+      "wordPosition": 2,
+      "canonicalSourceText": "أَنْتُمْ",
+      "importSourceText": "أَنْتُمْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:3:3",
+      "surah": 109,
+      "ayah": 3,
+      "wordPosition": 3,
+      "canonicalSourceText": "عَابِدُونَ",
+      "importSourceText": "عَابِدُونَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:3:4",
+      "surah": 109,
+      "ayah": 3,
+      "wordPosition": 4,
+      "canonicalSourceText": "مَا",
+      "importSourceText": "مَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:3:5",
+      "surah": 109,
+      "ayah": 3,
+      "wordPosition": 5,
+      "canonicalSourceText": "أَعْبُدُ",
+      "importSourceText": "أَعْبُدُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:4:1",
+      "surah": 109,
+      "ayah": 4,
+      "wordPosition": 1,
+      "canonicalSourceText": "وَلَا",
+      "importSourceText": "وَلَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:4:2",
+      "surah": 109,
+      "ayah": 4,
+      "wordPosition": 2,
+      "canonicalSourceText": "أَنَا",
+      "importSourceText": "أَنَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:4:3",
+      "surah": 109,
+      "ayah": 4,
+      "wordPosition": 3,
+      "canonicalSourceText": "عَابِدٌ",
+      "importSourceText": "عَابِدٌ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:4:4",
+      "surah": 109,
+      "ayah": 4,
+      "wordPosition": 4,
+      "canonicalSourceText": "مَا",
+      "importSourceText": "مَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:4:5",
+      "surah": 109,
+      "ayah": 4,
+      "wordPosition": 5,
+      "canonicalSourceText": "عَبَدْتُّمْ",
+      "importSourceText": "عَبَدْتُّمْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:5:1",
+      "surah": 109,
+      "ayah": 5,
+      "wordPosition": 1,
+      "canonicalSourceText": "وَلَا",
+      "importSourceText": "وَلَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:5:2",
+      "surah": 109,
+      "ayah": 5,
+      "wordPosition": 2,
+      "canonicalSourceText": "أَنْتُمْ",
+      "importSourceText": "أَنْتُمْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:5:3",
+      "surah": 109,
+      "ayah": 5,
+      "wordPosition": 3,
+      "canonicalSourceText": "عَابِدُونَ",
+      "importSourceText": "عَابِدُونَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:5:4",
+      "surah": 109,
+      "ayah": 5,
+      "wordPosition": 4,
+      "canonicalSourceText": "مَا",
+      "importSourceText": "مَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:5:5",
+      "surah": 109,
+      "ayah": 5,
+      "wordPosition": 5,
+      "canonicalSourceText": "أَعْبُدُ",
+      "importSourceText": "أَعْبُدُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:6:1",
+      "surah": 109,
+      "ayah": 6,
+      "wordPosition": 1,
+      "canonicalSourceText": "لَكُمْ",
+      "importSourceText": "لَكُمْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:6:2",
+      "surah": 109,
+      "ayah": 6,
+      "wordPosition": 2,
+      "canonicalSourceText": "دِينُكُمْ",
+      "importSourceText": "دِينُكُمْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:6:3",
+      "surah": 109,
+      "ayah": 6,
+      "wordPosition": 3,
+      "canonicalSourceText": "وَلِيَ",
+      "importSourceText": "وَلِيَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:109:6:4",
+      "surah": 109,
+      "ayah": 6,
+      "wordPosition": 4,
+      "canonicalSourceText": "دِينِ",
+      "importSourceText": "دِينِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:1:1",
+      "surah": 110,
+      "ayah": 1,
+      "wordPosition": 1,
+      "canonicalSourceText": "إِذَا",
+      "importSourceText": "إِذَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:1:2",
+      "surah": 110,
+      "ayah": 1,
+      "wordPosition": 2,
+      "canonicalSourceText": "جَاءَ",
+      "importSourceText": "جَاءَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:1:3",
+      "surah": 110,
+      "ayah": 1,
+      "wordPosition": 3,
+      "canonicalSourceText": "نَصْرُ",
+      "importSourceText": "نَصْرُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:1:4",
+      "surah": 110,
+      "ayah": 1,
+      "wordPosition": 4,
+      "canonicalSourceText": "اللَّهِ",
+      "importSourceText": "اللَّهِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:1:5",
+      "surah": 110,
+      "ayah": 1,
+      "wordPosition": 5,
+      "canonicalSourceText": "وَالْفَتْحُ",
+      "importSourceText": "وَالْفَتْحُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:2:1",
+      "surah": 110,
+      "ayah": 2,
+      "wordPosition": 1,
+      "canonicalSourceText": "وَرَأَيْتَ",
+      "importSourceText": "وَرَأَيْتَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:2:2",
+      "surah": 110,
+      "ayah": 2,
+      "wordPosition": 2,
+      "canonicalSourceText": "النَّاسَ",
+      "importSourceText": "النَّاسَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:2:3",
+      "surah": 110,
+      "ayah": 2,
+      "wordPosition": 3,
+      "canonicalSourceText": "يَدْخُلُونَ",
+      "importSourceText": "يَدْخُلُونَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:2:4",
+      "surah": 110,
+      "ayah": 2,
+      "wordPosition": 4,
+      "canonicalSourceText": "فِي",
+      "importSourceText": "فِي",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:2:5",
+      "surah": 110,
+      "ayah": 2,
+      "wordPosition": 5,
+      "canonicalSourceText": "دِينِ",
+      "importSourceText": "دِينِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:2:6",
+      "surah": 110,
+      "ayah": 2,
+      "wordPosition": 6,
+      "canonicalSourceText": "اللَّهِ",
+      "importSourceText": "اللَّهِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:2:7",
+      "surah": 110,
+      "ayah": 2,
+      "wordPosition": 7,
+      "canonicalSourceText": "أَفْوَاجًا",
+      "importSourceText": "أَفْوَاجًا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:3:1",
+      "surah": 110,
+      "ayah": 3,
+      "wordPosition": 1,
+      "canonicalSourceText": "فَسَبِّحْ",
+      "importSourceText": "فَسَبِّحْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:3:2",
+      "surah": 110,
+      "ayah": 3,
+      "wordPosition": 2,
+      "canonicalSourceText": "بِحَمْدِ",
+      "importSourceText": "بِحَمْدِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:3:3",
+      "surah": 110,
+      "ayah": 3,
+      "wordPosition": 3,
+      "canonicalSourceText": "رَبِّكَ",
+      "importSourceText": "رَبِّكَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:3:4",
+      "surah": 110,
+      "ayah": 3,
+      "wordPosition": 4,
+      "canonicalSourceText": "وَاسْتَغْفِرْهُ",
+      "importSourceText": "وَاسْتَغْفِرْهُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:3:5",
+      "surah": 110,
+      "ayah": 3,
+      "wordPosition": 5,
+      "canonicalSourceText": "إِنَّهُ",
+      "importSourceText": "إِنَّهُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:3:6",
+      "surah": 110,
+      "ayah": 3,
+      "wordPosition": 6,
+      "canonicalSourceText": "كَانَ",
+      "importSourceText": "كَانَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:110:3:7",
+      "surah": 110,
+      "ayah": 3,
+      "wordPosition": 7,
+      "canonicalSourceText": "تَوَّابًا",
+      "importSourceText": "تَوَّابًا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:1:1",
+      "surah": 111,
+      "ayah": 1,
+      "wordPosition": 1,
+      "canonicalSourceText": "تَبَّتْ",
+      "importSourceText": "تَبَّتْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:1:2",
+      "surah": 111,
+      "ayah": 1,
+      "wordPosition": 2,
+      "canonicalSourceText": "يَدَا",
+      "importSourceText": "يَدَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:1:3",
+      "surah": 111,
+      "ayah": 1,
+      "wordPosition": 3,
+      "canonicalSourceText": "أَبِي",
+      "importSourceText": "أَبِي",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:1:4",
+      "surah": 111,
+      "ayah": 1,
+      "wordPosition": 4,
+      "canonicalSourceText": "لَهَبٍ",
+      "importSourceText": "لَهَبٍ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:1:5",
+      "surah": 111,
+      "ayah": 1,
+      "wordPosition": 5,
+      "canonicalSourceText": "وَتَبَّ",
+      "importSourceText": "وَتَبَّ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:2:1",
+      "surah": 111,
+      "ayah": 2,
+      "wordPosition": 1,
+      "canonicalSourceText": "مَا",
+      "importSourceText": "مَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:2:2",
+      "surah": 111,
+      "ayah": 2,
+      "wordPosition": 2,
+      "canonicalSourceText": "أَغْنَىٰ",
+      "importSourceText": "أَغْنَىٰ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:2:3",
+      "surah": 111,
+      "ayah": 2,
+      "wordPosition": 3,
+      "canonicalSourceText": "عَنْهُ",
+      "importSourceText": "عَنْهُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:2:4",
+      "surah": 111,
+      "ayah": 2,
+      "wordPosition": 4,
+      "canonicalSourceText": "مَالُهُ",
+      "importSourceText": "مَالُهُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:2:5",
+      "surah": 111,
+      "ayah": 2,
+      "wordPosition": 5,
+      "canonicalSourceText": "وَمَا",
+      "importSourceText": "وَمَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:2:6",
+      "surah": 111,
+      "ayah": 2,
+      "wordPosition": 6,
+      "canonicalSourceText": "كَسَبَ",
+      "importSourceText": "كَسَبَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:3:1",
+      "surah": 111,
+      "ayah": 3,
+      "wordPosition": 1,
+      "canonicalSourceText": "سَيَصْلَىٰ",
+      "importSourceText": "سَيَصْلَىٰ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:3:2",
+      "surah": 111,
+      "ayah": 3,
+      "wordPosition": 2,
+      "canonicalSourceText": "نَارًا",
+      "importSourceText": "نَارًا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:3:3",
+      "surah": 111,
+      "ayah": 3,
+      "wordPosition": 3,
+      "canonicalSourceText": "ذَاتَ",
+      "importSourceText": "ذَاتَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:3:4",
+      "surah": 111,
+      "ayah": 3,
+      "wordPosition": 4,
+      "canonicalSourceText": "لَهَبٍ",
+      "importSourceText": "لَهَبٍ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:4:1",
+      "surah": 111,
+      "ayah": 4,
+      "wordPosition": 1,
+      "canonicalSourceText": "وَامْرَأَتُهُ",
+      "importSourceText": "وَامْرَأَتُهُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:4:2",
+      "surah": 111,
+      "ayah": 4,
+      "wordPosition": 2,
+      "canonicalSourceText": "حَمَّالَةَ",
+      "importSourceText": "حَمَّالَةَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:4:3",
+      "surah": 111,
+      "ayah": 4,
+      "wordPosition": 3,
+      "canonicalSourceText": "الْحَطَبِ",
+      "importSourceText": "الْحَطَبِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:5:1",
+      "surah": 111,
+      "ayah": 5,
+      "wordPosition": 1,
+      "canonicalSourceText": "فِي",
+      "importSourceText": "فِي",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:5:2",
+      "surah": 111,
+      "ayah": 5,
+      "wordPosition": 2,
+      "canonicalSourceText": "جِيدِهَا",
+      "importSourceText": "جِيدِهَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:5:3",
+      "surah": 111,
+      "ayah": 5,
+      "wordPosition": 3,
+      "canonicalSourceText": "حَبْلٌ",
+      "importSourceText": "حَبْلٌ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:5:4",
+      "surah": 111,
+      "ayah": 5,
+      "wordPosition": 4,
+      "canonicalSourceText": "مِّن",
+      "importSourceText": "مِّن",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:111:5:5",
+      "surah": 111,
+      "ayah": 5,
+      "wordPosition": 5,
+      "canonicalSourceText": "مَّسَدٍ",
+      "importSourceText": "مَّسَدٍ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "source-only",
+      "teachingId": null,
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "not-authored",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "missing",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no custom lesson or authored breakdown"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author custom content and an explicit breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:112:1:1",
+      "surah": 112,
+      "ayah": 1,
+      "wordPosition": 1,
+      "canonicalSourceText": "قُلْ",
+      "importSourceText": "قُلْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "qul",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "قُلْ",
+          "displayText": "قُلْ",
+          "label": "Whole word",
+          "meaning": "Say",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:112:1:2",
+      "surah": 112,
+      "ayah": 1,
+      "wordPosition": 2,
+      "canonicalSourceText": "هُوَ",
+      "importSourceText": "هُوَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "huwa",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "هُوَ",
+          "displayText": "هُوَ",
+          "label": "Whole word",
+          "meaning": "He",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:112:1:3",
+      "surah": 112,
+      "ayah": 1,
+      "wordPosition": 3,
+      "canonicalSourceText": "ٱللَّهُ",
+      "importSourceText": "ٱللَّهُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "allah",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱللَّهُ",
+          "displayText": "ٱللَّهُ",
+          "label": "Whole word",
+          "meaning": "Allah",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:112:1:4",
+      "surah": 112,
+      "ayah": 1,
+      "wordPosition": 4,
+      "canonicalSourceText": "أَحَدٌ",
+      "importSourceText": "أَحَدٌ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "ahad",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "أَحَدٌ",
+          "displayText": "أَحَدٌ",
+          "label": "Whole word",
+          "meaning": "One · uniquely One",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:112:2:1",
+      "surah": 112,
+      "ayah": 2,
+      "wordPosition": 1,
+      "canonicalSourceText": "ٱللَّهُ",
+      "importSourceText": "ٱللَّهُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "allah",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱللَّهُ",
+          "displayText": "ٱللَّهُ",
+          "label": "Whole word",
+          "meaning": "Allah",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:112:2:2",
+      "surah": 112,
+      "ayah": 2,
+      "wordPosition": 2,
+      "canonicalSourceText": "ٱلصَّمَدُ",
+      "importSourceText": "ٱلصَّمَدُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "alSamed",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "segmented",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلـ",
+          "displayText": "ٱلـ",
+          "label": "the",
+          "meaning": "makes the title definite",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "صَّمَدُ",
+          "displayText": "صَّمَدُ",
+          "label": "the depended-upon One",
+          "meaning": "ultimate aim and support",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "ٱلـ",
+        "صَّمَدُ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلـ",
+          "displayText": "ٱلـ",
+          "label": "the",
+          "meaning": "makes the title definite",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "صَّمَدُ",
+          "displayText": "صَّمَدُ",
+          "label": "the depended-upon One",
+          "meaning": "ultimate aim and support",
+          "kind": null
+        }
+      ],
+      "sourcePartsConcatenateExactly": true,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "legacy-complete",
+        "errors": [
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "legacy-component-data",
+      "requiredMigration": "Migrate legacy parts to explicit WordBreakdown metadata."
+    },
+    {
+      "stableOccurrenceId": "word:112:3:1",
+      "surah": 112,
+      "ayah": 3,
+      "wordPosition": 1,
+      "canonicalSourceText": "لَمْ",
+      "importSourceText": "لَمْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "lam",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "لَمْ",
+          "displayText": "لَمْ",
+          "label": "Whole word",
+          "meaning": "Did not / does not",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:112:3:2",
+      "surah": 112,
+      "ayah": 3,
+      "wordPosition": 2,
+      "canonicalSourceText": "يَلِدْ",
+      "importSourceText": "يَلِدْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "yalid",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "segmented",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "يَ",
+          "displayText": "يَ",
+          "label": "he",
+          "meaning": "third-person masculine marker",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "لِدْ",
+          "displayText": "لِدْ",
+          "label": "beget",
+          "meaning": "birth-related action",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "يَ",
+        "لِدْ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "يَ",
+          "displayText": "يَ",
+          "label": "he",
+          "meaning": "third-person masculine marker",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "لِدْ",
+          "displayText": "لِدْ",
+          "label": "beget",
+          "meaning": "birth-related action",
+          "kind": null
+        }
+      ],
+      "sourcePartsConcatenateExactly": true,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "legacy-complete",
+        "errors": [
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "legacy-component-data",
+      "requiredMigration": "Migrate legacy parts to explicit WordBreakdown metadata."
+    },
+    {
+      "stableOccurrenceId": "word:112:3:3",
+      "surah": 112,
+      "ayah": 3,
+      "wordPosition": 3,
+      "canonicalSourceText": "وَلَمْ",
+      "importSourceText": "وَلَمْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "walam",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "segmented",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "joins the clause",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "لَمْ",
+          "displayText": "لَمْ",
+          "label": "did not",
+          "meaning": "negates the action",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "وَ",
+        "لَمْ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "joins the clause",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "لَمْ",
+          "displayText": "لَمْ",
+          "label": "did not",
+          "meaning": "negates the action",
+          "kind": null
+        }
+      ],
+      "sourcePartsConcatenateExactly": true,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "legacy-complete",
+        "errors": [
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "legacy-component-data",
+      "requiredMigration": "Migrate legacy parts to explicit WordBreakdown metadata."
+    },
+    {
+      "stableOccurrenceId": "word:112:3:4",
+      "surah": 112,
+      "ayah": 3,
+      "wordPosition": 4,
+      "canonicalSourceText": "يُولَدْ",
+      "importSourceText": "يُولَدْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "yulad",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "segmented",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "يُ",
+          "displayText": "يُ",
+          "label": "passive he",
+          "meaning": "passive present opening",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "ولَدْ",
+          "displayText": "ولَدْ",
+          "label": "born",
+          "meaning": "birth action received",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "يُ",
+        "ولَدْ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "يُ",
+          "displayText": "يُ",
+          "label": "passive he",
+          "meaning": "passive present opening",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "ولَدْ",
+          "displayText": "ولَدْ",
+          "label": "born",
+          "meaning": "birth action received",
+          "kind": null
+        }
+      ],
+      "sourcePartsConcatenateExactly": true,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "legacy-complete",
+        "errors": [
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "legacy-component-data",
+      "requiredMigration": "Migrate legacy parts to explicit WordBreakdown metadata."
+    },
+    {
+      "stableOccurrenceId": "word:112:4:1",
+      "surah": 112,
+      "ayah": 4,
+      "wordPosition": 1,
+      "canonicalSourceText": "وَلَمْ",
+      "importSourceText": "وَلَمْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "walam",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "segmented",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "joins the clause",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "لَمْ",
+          "displayText": "لَمْ",
+          "label": "did not",
+          "meaning": "negates the action",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "وَ",
+        "لَمْ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "joins the clause",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "لَمْ",
+          "displayText": "لَمْ",
+          "label": "did not",
+          "meaning": "negates the action",
+          "kind": null
+        }
+      ],
+      "sourcePartsConcatenateExactly": true,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "legacy-complete",
+        "errors": [
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "legacy-component-data",
+      "requiredMigration": "Migrate legacy parts to explicit WordBreakdown metadata."
+    },
+    {
+      "stableOccurrenceId": "word:112:4:2",
+      "surah": 112,
+      "ayah": 4,
+      "wordPosition": 2,
+      "canonicalSourceText": "يَكُن",
+      "importSourceText": "يَكُن",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "yakun",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "يَكُن",
+          "displayText": "يَكُن",
+          "label": "Whole word",
+          "meaning": "He / it was or existed",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:112:4:3",
+      "surah": 112,
+      "ayah": 4,
+      "wordPosition": 3,
+      "canonicalSourceText": "لَّهُۥ",
+      "importSourceText": "لَّهُۥ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "lahu",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "لِ",
+          "displayText": "لِ",
+          "label": "for / to",
+          "meaning": "preposition",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "هُ",
+          "displayText": "هُ",
+          "label": "Him",
+          "meaning": "attached pronoun",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "لِ",
+        "هُ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "لَّهُۥ",
+          "displayText": "لَّهُۥ",
+          "label": "Whole word",
+          "meaning": "For Him / belonging to Him",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:112:4:4",
+      "surah": 112,
+      "ayah": 4,
+      "wordPosition": 4,
+      "canonicalSourceText": "كُفُوًا",
+      "importSourceText": "كُفُوًا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "kufuwan",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "كُفُوًا",
+          "displayText": "كُفُوًا",
+          "label": "Whole word",
+          "meaning": "Equal · comparable · equivalent",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:112:4:5",
+      "surah": 112,
+      "ayah": 4,
+      "wordPosition": 5,
+      "canonicalSourceText": "أَحَدٌ",
+      "importSourceText": "أَحَدٌ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "ahad",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "أَحَدٌ",
+          "displayText": "أَحَدٌ",
+          "label": "Whole word",
+          "meaning": "One · uniquely One",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:1:1",
+      "surah": 113,
+      "ayah": 1,
+      "wordPosition": 1,
+      "canonicalSourceText": "قُلْ",
+      "importSourceText": "قُلْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "qul",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "قُلْ",
+          "displayText": "قُلْ",
+          "label": "Whole word",
+          "meaning": "Say",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:1:2",
+      "surah": 113,
+      "ayah": 1,
+      "wordPosition": 2,
+      "canonicalSourceText": "أَعُوذُ",
+      "importSourceText": "أَعُوذُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "audhu",
+      "wordBreakdownExists": true,
+      "fixtureSharedBreakdownExists": true,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": true,
+      "breakdownSource": "import-occurrence-override",
+      "breakdownMode": "segmented",
+      "effectiveRuntimeMode": "segmented",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "أَ",
+          "displayText": "أَـ",
+          "label": "I",
+          "meaning": "the person doing the action",
+          "kind": "prefix"
+        },
+        {
+          "order": 2,
+          "sourceText": "عُوذُ",
+          "displayText": "عُوذُ",
+          "label": "seek refuge",
+          "meaning": "the main verb stem",
+          "kind": "stem"
+        }
+      ],
+      "orderedDisplayParts": [
+        "أَـ",
+        "عُوذُ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "أَ",
+          "displayText": "أَـ",
+          "label": "I",
+          "meaning": "the person doing the action",
+          "kind": "prefix"
+        },
+        {
+          "order": 2,
+          "sourceText": "عُوذُ",
+          "displayText": "عُوذُ",
+          "label": "seek refuge",
+          "meaning": "the main verb stem",
+          "kind": "stem"
+        }
+      ],
+      "sourcePartsConcatenateExactly": true,
+      "allPartsHaveLabelsMeaningsKinds": true,
+      "displayOnlyJoiningLinePreservesSourceText": true,
+      "breakdownSharedOrOccurrenceSpecific": "shared-and-occurrence-specific",
+      "occurrenceLevelOverrideExists": true,
+      "validationResult": {
+        "status": "valid",
+        "errors": []
+      },
+      "auditCategory": "valid-segmented",
+      "requiredMigration": "None"
+    },
+    {
+      "stableOccurrenceId": "word:113:1:3",
+      "surah": 113,
+      "ayah": 1,
+      "wordPosition": 3,
+      "canonicalSourceText": "بِرَبِّ",
+      "importSourceText": "بِرَبِّ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "birabbi",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "segmented",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "بِ",
+          "displayText": "بِ",
+          "label": "with / by",
+          "meaning": "attached preposition",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "رَبِّ",
+          "displayText": "رَبِّ",
+          "label": "Lord",
+          "meaning": "one who sustains",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "بِ",
+        "رَبِّ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "بِ",
+          "displayText": "بِ",
+          "label": "with / by",
+          "meaning": "attached preposition",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "رَبِّ",
+          "displayText": "رَبِّ",
+          "label": "Lord",
+          "meaning": "one who sustains",
+          "kind": null
+        }
+      ],
+      "sourcePartsConcatenateExactly": true,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "legacy-complete",
+        "errors": [
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "legacy-component-data",
+      "requiredMigration": "Migrate legacy parts to explicit WordBreakdown metadata."
+    },
+    {
+      "stableOccurrenceId": "word:113:1:4",
+      "surah": 113,
+      "ayah": 1,
+      "wordPosition": 4,
+      "canonicalSourceText": "ٱلْفَلَقِ",
+      "importSourceText": "ٱلْفَلَقِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "daybreak",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلْفَلَقِ",
+          "displayText": "ٱلْفَلَقِ",
+          "label": "Whole word",
+          "meaning": "The daybreak",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:2:1",
+      "surah": 113,
+      "ayah": 2,
+      "wordPosition": 1,
+      "canonicalSourceText": "مِن",
+      "importSourceText": "مِن",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "min",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "مِنْ",
+          "displayText": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "ـَ",
+          "displayText": "ـَ",
+          "label": "linking vowel",
+          "meaning": "helps pronunciation before the next word",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "مِنْ",
+        "ـَ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "مِن",
+          "displayText": "مِن",
+          "label": "Whole word",
+          "meaning": "From / among",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:2:2",
+      "surah": 113,
+      "ayah": 2,
+      "wordPosition": 2,
+      "canonicalSourceText": "شَرِّ",
+      "importSourceText": "شَرِّ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "sharri",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "مِنْ",
+          "displayText": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "مِنْ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "شَرِّ",
+          "displayText": "شَرِّ",
+          "label": "Whole word",
+          "meaning": "The evil / harm",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:2:3",
+      "surah": 113,
+      "ayah": 2,
+      "wordPosition": 3,
+      "canonicalSourceText": "مَا",
+      "importSourceText": "مَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "ma",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "مَا",
+          "displayText": "مَا",
+          "label": "Whole word",
+          "meaning": "What / whatever",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:2:4",
+      "surah": 113,
+      "ayah": 2,
+      "wordPosition": 4,
+      "canonicalSourceText": "خَلَقَ",
+      "importSourceText": "خَلَقَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "khalaqa",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "خَلَقَ",
+          "displayText": "خَلَقَ",
+          "label": "Whole word",
+          "meaning": "He created",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:3:1",
+      "surah": 113,
+      "ayah": 3,
+      "wordPosition": 1,
+      "canonicalSourceText": "وَمِن",
+      "importSourceText": "وَمِن",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "conjunction",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "connector",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "وَ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "وَمِن",
+          "displayText": "وَمِن",
+          "label": "Whole word",
+          "meaning": "And",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:3:2",
+      "surah": 113,
+      "ayah": 3,
+      "wordPosition": 2,
+      "canonicalSourceText": "شَرِّ",
+      "importSourceText": "شَرِّ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "sharri",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "مِنْ",
+          "displayText": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "مِنْ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "شَرِّ",
+          "displayText": "شَرِّ",
+          "label": "Whole word",
+          "meaning": "The evil / harm",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:3:3",
+      "surah": 113,
+      "ayah": 3,
+      "wordPosition": 3,
+      "canonicalSourceText": "غَاسِقٍ",
+      "importSourceText": "غَاسِقٍ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "ghasiq",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "غَاسِقٍ",
+          "displayText": "غَاسِقٍ",
+          "label": "Whole word",
+          "meaning": "Darkness / night",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:3:4",
+      "surah": 113,
+      "ayah": 3,
+      "wordPosition": 4,
+      "canonicalSourceText": "إِذَا",
+      "importSourceText": "إِذَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "idha",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "إِذَا",
+          "displayText": "إِذَا",
+          "label": "Whole word",
+          "meaning": "When",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:3:5",
+      "surah": 113,
+      "ayah": 3,
+      "wordPosition": 5,
+      "canonicalSourceText": "وَقَبَ",
+      "importSourceText": "وَقَبَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "waqaba",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "وَقَبَ",
+          "displayText": "وَقَبَ",
+          "label": "Whole word",
+          "meaning": "It settles / enters",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:4:1",
+      "surah": 113,
+      "ayah": 4,
+      "wordPosition": 1,
+      "canonicalSourceText": "وَمِن",
+      "importSourceText": "وَمِن",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "conjunction",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "connector",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "وَ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "وَمِن",
+          "displayText": "وَمِن",
+          "label": "Whole word",
+          "meaning": "And",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:4:2",
+      "surah": 113,
+      "ayah": 4,
+      "wordPosition": 2,
+      "canonicalSourceText": "شَرِّ",
+      "importSourceText": "شَرِّ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "sharri",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "مِنْ",
+          "displayText": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "مِنْ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "شَرِّ",
+          "displayText": "شَرِّ",
+          "label": "Whole word",
+          "meaning": "The evil / harm",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:4:3",
+      "surah": 113,
+      "ayah": 4,
+      "wordPosition": 3,
+      "canonicalSourceText": "ٱلنَّفَّاثَاتِ",
+      "importSourceText": "ٱلنَّفَّاثَاتِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "naffathat",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلنَّفَّاثَاتِ",
+          "displayText": "ٱلنَّفَّاثَاتِ",
+          "label": "Whole word",
+          "meaning": "Those who blow",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:4:4",
+      "surah": 113,
+      "ayah": 4,
+      "wordPosition": 4,
+      "canonicalSourceText": "فِي",
+      "importSourceText": "فِي",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "fi",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "فِي",
+          "displayText": "فِي",
+          "label": "Whole word",
+          "meaning": "In",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:4:5",
+      "surah": 113,
+      "ayah": 4,
+      "wordPosition": 5,
+      "canonicalSourceText": "ٱلْعُقَدِ",
+      "importSourceText": "ٱلْعُقَدِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "uqad",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلْعُقَدِ",
+          "displayText": "ٱلْعُقَدِ",
+          "label": "Whole word",
+          "meaning": "The knots",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:5:1",
+      "surah": 113,
+      "ayah": 5,
+      "wordPosition": 1,
+      "canonicalSourceText": "وَمِن",
+      "importSourceText": "وَمِن",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "conjunction",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "connector",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "وَ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "وَمِن",
+          "displayText": "وَمِن",
+          "label": "Whole word",
+          "meaning": "And",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:5:2",
+      "surah": 113,
+      "ayah": 5,
+      "wordPosition": 2,
+      "canonicalSourceText": "شَرِّ",
+      "importSourceText": "شَرِّ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "sharri",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "مِنْ",
+          "displayText": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "مِنْ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "شَرِّ",
+          "displayText": "شَرِّ",
+          "label": "Whole word",
+          "meaning": "The evil / harm",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:5:3",
+      "surah": 113,
+      "ayah": 5,
+      "wordPosition": 3,
+      "canonicalSourceText": "حَاسِدٍ",
+      "importSourceText": "حَاسِدٍ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "hasid",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "حَاسِدٍ",
+          "displayText": "حَاسِدٍ",
+          "label": "Whole word",
+          "meaning": "An envier",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:5:4",
+      "surah": 113,
+      "ayah": 5,
+      "wordPosition": 4,
+      "canonicalSourceText": "إِذَا",
+      "importSourceText": "إِذَا",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "idha",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "إِذَا",
+          "displayText": "إِذَا",
+          "label": "Whole word",
+          "meaning": "When",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:113:5:5",
+      "surah": 113,
+      "ayah": 5,
+      "wordPosition": 5,
+      "canonicalSourceText": "حَسَدَ",
+      "importSourceText": "حَسَدَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "hasada",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "حَسَدَ",
+          "displayText": "حَسَدَ",
+          "label": "Whole word",
+          "meaning": "He envies",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:1:1",
+      "surah": 114,
+      "ayah": 1,
+      "wordPosition": 1,
+      "canonicalSourceText": "قُلْ",
+      "importSourceText": "قُلْ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "qul",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "قُلْ",
+          "displayText": "قُلْ",
+          "label": "Whole word",
+          "meaning": "Say",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:1:2",
+      "surah": 114,
+      "ayah": 1,
+      "wordPosition": 2,
+      "canonicalSourceText": "أَعُوذُ",
+      "importSourceText": "أَعُوذُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "audhu",
+      "wordBreakdownExists": true,
+      "fixtureSharedBreakdownExists": true,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": true,
+      "breakdownSource": "import-occurrence-override",
+      "breakdownMode": "segmented",
+      "effectiveRuntimeMode": "segmented",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "أَ",
+          "displayText": "أَـ",
+          "label": "I",
+          "meaning": "the person doing the action",
+          "kind": "prefix"
+        },
+        {
+          "order": 2,
+          "sourceText": "عُوذُ",
+          "displayText": "عُوذُ",
+          "label": "seek refuge",
+          "meaning": "the main verb stem",
+          "kind": "stem"
+        }
+      ],
+      "orderedDisplayParts": [
+        "أَـ",
+        "عُوذُ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "أَ",
+          "displayText": "أَـ",
+          "label": "I",
+          "meaning": "the person doing the action",
+          "kind": "prefix"
+        },
+        {
+          "order": 2,
+          "sourceText": "عُوذُ",
+          "displayText": "عُوذُ",
+          "label": "seek refuge",
+          "meaning": "the main verb stem",
+          "kind": "stem"
+        }
+      ],
+      "sourcePartsConcatenateExactly": true,
+      "allPartsHaveLabelsMeaningsKinds": true,
+      "displayOnlyJoiningLinePreservesSourceText": true,
+      "breakdownSharedOrOccurrenceSpecific": "shared-and-occurrence-specific",
+      "occurrenceLevelOverrideExists": true,
+      "validationResult": {
+        "status": "valid",
+        "errors": []
+      },
+      "auditCategory": "valid-segmented",
+      "requiredMigration": "None"
+    },
+    {
+      "stableOccurrenceId": "word:114:1:3",
+      "surah": 114,
+      "ayah": 1,
+      "wordPosition": 3,
+      "canonicalSourceText": "بِرَبِّ",
+      "importSourceText": "بِرَبِّ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "birabbi",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "segmented",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "بِ",
+          "displayText": "بِ",
+          "label": "with / by",
+          "meaning": "attached preposition",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "رَبِّ",
+          "displayText": "رَبِّ",
+          "label": "Lord",
+          "meaning": "one who sustains",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "بِ",
+        "رَبِّ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "بِ",
+          "displayText": "بِ",
+          "label": "with / by",
+          "meaning": "attached preposition",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "رَبِّ",
+          "displayText": "رَبِّ",
+          "label": "Lord",
+          "meaning": "one who sustains",
+          "kind": null
+        }
+      ],
+      "sourcePartsConcatenateExactly": true,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "legacy-complete",
+        "errors": [
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "legacy-component-data",
+      "requiredMigration": "Migrate legacy parts to explicit WordBreakdown metadata."
+    },
+    {
+      "stableOccurrenceId": "word:114:1:4",
+      "surah": 114,
+      "ayah": 1,
+      "wordPosition": 4,
+      "canonicalSourceText": "ٱلنَّاسِ",
+      "importSourceText": "ٱلنَّاسِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "nas",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلـ",
+          "displayText": "ٱلـ",
+          "label": "the",
+          "meaning": "definite article",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "ٱلـ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلنَّاسِ",
+          "displayText": "ٱلنَّاسِ",
+          "label": "Whole word",
+          "meaning": "Humankind / people",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:2:1",
+      "surah": 114,
+      "ayah": 2,
+      "wordPosition": 1,
+      "canonicalSourceText": "مَلِكِ",
+      "importSourceText": "مَلِكِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "malik",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "segmented",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "مَلِك",
+          "displayText": "مَلِك",
+          "label": "King",
+          "meaning": "the noun naming the sovereign",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "ـِ",
+          "displayText": "ـِ",
+          "label": "of",
+          "meaning": "kasrah marks the first noun in the phrase",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "مَلِك",
+        "ـِ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "مَلِك",
+          "displayText": "مَلِك",
+          "label": "King",
+          "meaning": "the noun naming the sovereign",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "ـِ",
+          "displayText": "ـِ",
+          "label": "of",
+          "meaning": "kasrah marks the first noun in the phrase",
+          "kind": null
+        }
+      ],
+      "sourcePartsConcatenateExactly": true,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "legacy-complete",
+        "errors": [
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "legacy-component-data",
+      "requiredMigration": "Migrate legacy parts to explicit WordBreakdown metadata."
+    },
+    {
+      "stableOccurrenceId": "word:114:2:2",
+      "surah": 114,
+      "ayah": 2,
+      "wordPosition": 2,
+      "canonicalSourceText": "ٱلنَّاسِ",
+      "importSourceText": "ٱلنَّاسِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "nas",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلـ",
+          "displayText": "ٱلـ",
+          "label": "the",
+          "meaning": "definite article",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "ٱلـ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلنَّاسِ",
+          "displayText": "ٱلنَّاسِ",
+          "label": "Whole word",
+          "meaning": "Humankind / people",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:3:1",
+      "surah": 114,
+      "ayah": 3,
+      "wordPosition": 1,
+      "canonicalSourceText": "إِلَٰهِ",
+      "importSourceText": "إِلَٰهِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "ilah",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "segmented",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "إِلَٰه",
+          "displayText": "إِلَٰه",
+          "label": "God",
+          "meaning": "the head noun naming the deity",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "ـِ",
+          "displayText": "ـِ",
+          "label": "of",
+          "meaning": "kasrah marks the genitive link",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "إِلَٰه",
+        "ـِ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "إِلَٰه",
+          "displayText": "إِلَٰه",
+          "label": "God",
+          "meaning": "the head noun naming the deity",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "ـِ",
+          "displayText": "ـِ",
+          "label": "of",
+          "meaning": "kasrah marks the genitive link",
+          "kind": null
+        }
+      ],
+      "sourcePartsConcatenateExactly": true,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "legacy-complete",
+        "errors": [
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "legacy-component-data",
+      "requiredMigration": "Migrate legacy parts to explicit WordBreakdown metadata."
+    },
+    {
+      "stableOccurrenceId": "word:114:3:2",
+      "surah": 114,
+      "ayah": 3,
+      "wordPosition": 2,
+      "canonicalSourceText": "ٱلنَّاسِ",
+      "importSourceText": "ٱلنَّاسِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "nas",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلـ",
+          "displayText": "ٱلـ",
+          "label": "the",
+          "meaning": "definite article",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "ٱلـ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلنَّاسِ",
+          "displayText": "ٱلنَّاسِ",
+          "label": "Whole word",
+          "meaning": "Humankind / people",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:4:1",
+      "surah": 114,
+      "ayah": 4,
+      "wordPosition": 1,
+      "canonicalSourceText": "مِن",
+      "importSourceText": "مِن",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "min",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "مِنْ",
+          "displayText": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "ـَ",
+          "displayText": "ـَ",
+          "label": "linking vowel",
+          "meaning": "helps pronunciation before the next word",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "مِنْ",
+        "ـَ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "مِن",
+          "displayText": "مِن",
+          "label": "Whole word",
+          "meaning": "From / among",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:4:2",
+      "surah": 114,
+      "ayah": 4,
+      "wordPosition": 2,
+      "canonicalSourceText": "شَرِّ",
+      "importSourceText": "شَرِّ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "sharri",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "مِنْ",
+          "displayText": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "مِنْ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "شَرِّ",
+          "displayText": "شَرِّ",
+          "label": "Whole word",
+          "meaning": "The evil / harm",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:4:3",
+      "surah": 114,
+      "ayah": 4,
+      "wordPosition": 3,
+      "canonicalSourceText": "ٱلْوَسْوَاسِ",
+      "importSourceText": "ٱلْوَسْوَاسِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "waswas",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلْوَسْوَاسِ",
+          "displayText": "ٱلْوَسْوَاسِ",
+          "label": "Whole word",
+          "meaning": "The whisperer / persistent whispering",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:4:4",
+      "surah": 114,
+      "ayah": 4,
+      "wordPosition": 4,
+      "canonicalSourceText": "ٱلْخَنَّاسِ",
+      "importSourceText": "ٱلْخَنَّاسِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "khannas",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلْخَنَّاسِ",
+          "displayText": "ٱلْخَنَّاسِ",
+          "label": "Whole word",
+          "meaning": "The one who repeatedly retreats",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:5:1",
+      "surah": 114,
+      "ayah": 5,
+      "wordPosition": 1,
+      "canonicalSourceText": "ٱلَّذِي",
+      "importSourceText": "ٱلَّذِي",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "alladhi",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلَّذِي",
+          "displayText": "ٱلَّذِي",
+          "label": "Whole word",
+          "meaning": "The one who / which",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:5:2",
+      "surah": 114,
+      "ayah": 5,
+      "wordPosition": 2,
+      "canonicalSourceText": "يُوَسْوِسُ",
+      "importSourceText": "يُوَسْوِسُ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "yuwaswis",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "يُ",
+          "displayText": "يُ",
+          "label": "he",
+          "meaning": "third-person marker",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "يُ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "يُوَسْوِسُ",
+          "displayText": "يُوَسْوِسُ",
+          "label": "Whole word",
+          "meaning": "He whispers",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:5:3",
+      "surah": 114,
+      "ayah": 5,
+      "wordPosition": 3,
+      "canonicalSourceText": "فِي",
+      "importSourceText": "فِي",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "fi",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "فِي",
+          "displayText": "فِي",
+          "label": "Whole word",
+          "meaning": "In",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:5:4",
+      "surah": 114,
+      "ayah": 5,
+      "wordPosition": 4,
+      "canonicalSourceText": "صُدُورِ",
+      "importSourceText": "صُدُورِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "sudur",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "صُدُورِ",
+          "displayText": "صُدُورِ",
+          "label": "Whole word",
+          "meaning": "Chests · breasts",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:5:5",
+      "surah": 114,
+      "ayah": 5,
+      "wordPosition": 5,
+      "canonicalSourceText": "ٱلنَّاسِ",
+      "importSourceText": "ٱلنَّاسِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "nas",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلـ",
+          "displayText": "ٱلـ",
+          "label": "the",
+          "meaning": "definite article",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "ٱلـ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلنَّاسِ",
+          "displayText": "ٱلنَّاسِ",
+          "label": "Whole word",
+          "meaning": "Humankind / people",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:6:1",
+      "surah": 114,
+      "ayah": 6,
+      "wordPosition": 1,
+      "canonicalSourceText": "مِنَ",
+      "importSourceText": "مِنَ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "min",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "segmented",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "مِنْ",
+          "displayText": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation",
+          "kind": null
+        },
+        {
+          "order": 2,
+          "sourceText": "ـَ",
+          "displayText": "ـَ",
+          "label": "linking vowel",
+          "meaning": "helps pronunciation before the next word",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "مِنْ",
+        "ـَ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "مِنَ",
+          "displayText": "مِنَ",
+          "label": "Whole word",
+          "meaning": "From / among",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:6:2",
+      "surah": 114,
+      "ayah": 6,
+      "wordPosition": 2,
+      "canonicalSourceText": "ٱلْجِنَّةِ",
+      "importSourceText": "ٱلْجِنَّةِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "jinnah",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "runtime-whole-word-fallback",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": null,
+      "orderedSourceParts": [],
+      "orderedDisplayParts": [],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "ٱلْجِنَّةِ",
+          "displayText": "ٱلْجِنَّةِ",
+          "label": "Whole word",
+          "meaning": "The jinn",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": null,
+      "allPartsHaveLabelsMeaningsKinds": null,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "missing-authored-breakdown",
+        "errors": [
+          "no explicit WordBreakdown; runtime whole-word fallback used"
+        ]
+      },
+      "auditCategory": "missing",
+      "requiredMigration": "Author an explicit atomic whole-word breakdown."
+    },
+    {
+      "stableOccurrenceId": "word:114:6:3",
+      "surah": 114,
+      "ayah": 6,
+      "wordPosition": 3,
+      "canonicalSourceText": "وَٱلنَّاسِ",
+      "importSourceText": "وَٱلنَّاسِ",
+      "importSourceMatchesCanonical": true,
+      "customContentStatus": "complete",
+      "teachingId": "conjunction",
+      "wordBreakdownExists": false,
+      "fixtureSharedBreakdownExists": false,
+      "fixtureOccurrenceBreakdownExists": false,
+      "importOccurrenceBreakdownExists": false,
+      "breakdownSource": "legacy-components",
+      "breakdownMode": "missing",
+      "effectiveRuntimeMode": "atomic",
+      "legacyComponentMode": "atomic",
+      "orderedSourceParts": [
+        {
+          "order": 1,
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "connector",
+          "kind": null
+        }
+      ],
+      "orderedDisplayParts": [
+        "وَ"
+      ],
+      "effectiveRuntimeParts": [
+        {
+          "order": 1,
+          "sourceText": "وَٱلنَّاسِ",
+          "displayText": "وَٱلنَّاسِ",
+          "label": "Whole word",
+          "meaning": "And",
+          "kind": "whole"
+        }
+      ],
+      "sourcePartsConcatenateExactly": false,
+      "allPartsHaveLabelsMeaningsKinds": false,
+      "displayOnlyJoiningLinePreservesSourceText": null,
+      "breakdownSharedOrOccurrenceSpecific": "none",
+      "occurrenceLevelOverrideExists": false,
+      "validationResult": {
+        "status": "invalid-or-incomplete",
+        "errors": [
+          "legacy component parts do not concatenate to canonical word",
+          "no explicit WordBreakdown; legacy components remain"
+        ]
+      },
+      "auditCategory": "invalid-or-incomplete",
+      "requiredMigration": "Replace incomplete legacy parts with an author-reviewed complete breakdown."
+    }
+  ]
+}

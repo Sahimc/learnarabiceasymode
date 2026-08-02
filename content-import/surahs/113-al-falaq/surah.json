@@ -1,32 +1,87 @@
 {
-  "id": "surah:113",
-  "number": 113,
-  "arabicName": "الفلق",
-  "transliteration": "Al-Falaq",
-  "englishLabel": "The Daybreak",
-  "status": "complete",
+  "schemaVersion": "2.0.0",
+  "packageId": "surah:113",
+  "surah": {
+    "number": 113,
+    "name": "Al-Falaq",
+    "arabicName": "الفلق",
+    "transliteration": "Al-Falaq",
+    "englishLabel": "The Daybreak",
+    "description": "Reviewed Word Tree teaching layer."
+  },
+  "contentVersion": "tanzil-1.1",
+  "status": "custom-complete",
+  "sourceReferences": [
+    {
+      "provider": "tanzil",
+      "recordKey": "surah:113",
+      "version": "1.1",
+      "attribution": "Tanzil Project"
+    }
+  ],
   "ayahs": [
     {
       "id": "ayah:113:1",
       "number": 1,
       "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+      "sourceRawArabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
       "translation": "Say: I seek refuge in the Lord of daybreak.",
+      "naturalMeaning": "Say: I seek refuge in the Lord of the daybreak.",
       "words": [
         {
           "id": "word:113:1:1",
           "position": 1,
           "arabic": "قُلْ",
-          "teachingId": "lesson:qul"
+          "transliteration": "Qul",
+          "gloss": "Say",
+          "teachingId": "lesson:qul",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:1:1",
+            "mode": "atomic",
+            "sourceText": "قُلْ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:1:1:part:whole",
+                "order": 1,
+                "sourceText": "قُلْ",
+                "displayText": "قُلْ",
+                "label": "Whole word",
+                "meaning": "Say",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:1:2",
           "position": 2,
           "arabic": "أَعُوذُ",
+          "transliteration": "Aʿūdhu",
+          "gloss": "I seek refuge",
           "teachingId": "lesson:audhu",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
           "breakdown": {
+            "id": "breakdown:word:113:1:2",
+            "mode": "segmented",
             "sourceText": "أَعُوذُ",
             "parts": [
               {
+                "id": "breakdown:word:113:1:2:part:1",
                 "order": 1,
                 "sourceText": "أَ",
                 "displayText": "أَـ",
@@ -35,6 +90,7 @@
                 "kind": "prefix"
               },
               {
+                "id": "breakdown:word:113:1:2:part:2",
                 "order": 2,
                 "sourceText": "عُوذُ",
                 "displayText": "عُوذُ",
@@ -49,13 +105,74 @@
           "id": "word:113:1:3",
           "position": 3,
           "arabic": "بِرَبِّ",
-          "teachingId": "lesson:birabbi"
+          "transliteration": "Bi-rabbi",
+          "gloss": "with my Lord",
+          "teachingId": "lesson:birabbi",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:1:3",
+            "mode": "segmented",
+            "sourceText": "بِرَبِّ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:1:3:part:1",
+                "order": 1,
+                "sourceText": "بِ",
+                "displayText": "بِـ",
+                "label": "with / by",
+                "meaning": "an attached preposition",
+                "kind": "preposition"
+              },
+              {
+                "id": "breakdown:word:113:1:3:part:2",
+                "order": 2,
+                "sourceText": "رَبِّ",
+                "displayText": "رَبِّ",
+                "label": "Lord",
+                "meaning": "the one who sustains",
+                "kind": "stem"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:1:4",
           "position": 4,
           "arabic": "ٱلْفَلَقِ",
-          "teachingId": "lesson:daybreak"
+          "transliteration": "Al-falaq",
+          "gloss": "the daybreak",
+          "teachingId": "lesson:daybreak",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:1:4",
+            "mode": "atomic",
+            "sourceText": "ٱلْفَلَقِ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:1:4:part:whole",
+                "order": 1,
+                "sourceText": "ٱلْفَلَقِ",
+                "displayText": "ٱلْفَلَقِ",
+                "label": "Whole word",
+                "meaning": "The daybreak",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     },
@@ -63,31 +180,137 @@
       "id": "ayah:113:2",
       "number": 2,
       "arabic": "مِن شَرِّ مَا خَلَقَ",
+      "sourceRawArabic": "مِن شَرِّ مَا خَلَقَ",
       "translation": "From the evil of what He created.",
+      "naturalMeaning": "From the harm in what He created.",
       "words": [
         {
           "id": "word:113:2:1",
           "position": 1,
           "arabic": "مِن",
-          "teachingId": "lesson:min"
+          "transliteration": "Min",
+          "gloss": "from",
+          "teachingId": "lesson:min",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:2",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:2:1",
+            "mode": "atomic",
+            "sourceText": "مِن",
+            "parts": [
+              {
+                "id": "breakdown:word:113:2:1:part:whole",
+                "order": 1,
+                "sourceText": "مِن",
+                "displayText": "مِن",
+                "label": "Whole word",
+                "meaning": "From / among",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:2:2",
           "position": 2,
           "arabic": "شَرِّ",
-          "teachingId": "lesson:sharri"
+          "transliteration": "Sharr",
+          "gloss": "harm / evil",
+          "teachingId": "lesson:sharri",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:2",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:2:2",
+            "mode": "atomic",
+            "sourceText": "شَرِّ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:2:2:part:whole",
+                "order": 1,
+                "sourceText": "شَرِّ",
+                "displayText": "شَرِّ",
+                "label": "Whole word",
+                "meaning": "The evil / harm",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:2:3",
           "position": 3,
           "arabic": "مَا",
-          "teachingId": "lesson:ma"
+          "transliteration": "Mā",
+          "gloss": "what",
+          "teachingId": "lesson:ma",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:2",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:2:3",
+            "mode": "atomic",
+            "sourceText": "مَا",
+            "parts": [
+              {
+                "id": "breakdown:word:113:2:3:part:whole",
+                "order": 1,
+                "sourceText": "مَا",
+                "displayText": "مَا",
+                "label": "Whole word",
+                "meaning": "What / whatever",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:2:4",
           "position": 4,
           "arabic": "خَلَقَ",
-          "teachingId": "lesson:khalaqa"
+          "transliteration": "Khalaqa",
+          "gloss": "He created",
+          "teachingId": "lesson:khalaqa",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:2",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:2:4",
+            "mode": "atomic",
+            "sourceText": "خَلَقَ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:2:4:part:whole",
+                "order": 1,
+                "sourceText": "خَلَقَ",
+                "displayText": "خَلَقَ",
+                "label": "Whole word",
+                "meaning": "He created",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     },
@@ -95,75 +318,339 @@
       "id": "ayah:113:3",
       "number": 3,
       "arabic": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+      "sourceRawArabic": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
       "translation": "And from the evil of darkness when it settles.",
+      "naturalMeaning": "From the harm of the night as it descends.",
       "words": [
         {
           "id": "word:113:3:1",
           "position": 1,
           "arabic": "وَمِن",
-          "teachingId": "lesson:wa"
+          "transliteration": "Wa-min",
+          "gloss": "and from",
+          "teachingId": "lesson:wa",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:3",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:3:1",
+            "mode": "atomic",
+            "sourceText": "وَمِن",
+            "parts": [
+              {
+                "id": "breakdown:word:113:3:1:part:whole",
+                "order": 1,
+                "sourceText": "وَمِن",
+                "displayText": "وَمِن",
+                "label": "Whole word",
+                "meaning": "And",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:3:2",
           "position": 2,
           "arabic": "شَرِّ",
-          "teachingId": "lesson:sharri"
+          "transliteration": "Sharr",
+          "gloss": "harm / evil",
+          "teachingId": "lesson:sharri",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:3",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:3:2",
+            "mode": "atomic",
+            "sourceText": "شَرِّ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:3:2:part:whole",
+                "order": 1,
+                "sourceText": "شَرِّ",
+                "displayText": "شَرِّ",
+                "label": "Whole word",
+                "meaning": "The evil / harm",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:3:3",
           "position": 3,
           "arabic": "غَاسِقٍ",
-          "teachingId": "lesson:ghasiq"
+          "transliteration": "Ghāsiq",
+          "gloss": "darkness",
+          "teachingId": "lesson:ghasiq",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:3",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:3:3",
+            "mode": "atomic",
+            "sourceText": "غَاسِقٍ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:3:3:part:whole",
+                "order": 1,
+                "sourceText": "غَاسِقٍ",
+                "displayText": "غَاسِقٍ",
+                "label": "Whole word",
+                "meaning": "Darkness / night",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:3:4",
           "position": 4,
           "arabic": "إِذَا",
-          "teachingId": "lesson:idha"
+          "transliteration": "Idhā",
+          "gloss": "when",
+          "teachingId": "lesson:idha",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:3",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:3:4",
+            "mode": "atomic",
+            "sourceText": "إِذَا",
+            "parts": [
+              {
+                "id": "breakdown:word:113:3:4:part:whole",
+                "order": 1,
+                "sourceText": "إِذَا",
+                "displayText": "إِذَا",
+                "label": "Whole word",
+                "meaning": "When",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:3:5",
           "position": 5,
           "arabic": "وَقَبَ",
-          "teachingId": "lesson:waqaba"
+          "transliteration": "Waqaba",
+          "gloss": "it settles",
+          "teachingId": "lesson:waqaba",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:3",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:3:5",
+            "mode": "atomic",
+            "sourceText": "وَقَبَ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:3:5:part:whole",
+                "order": 1,
+                "sourceText": "وَقَبَ",
+                "displayText": "وَقَبَ",
+                "label": "Whole word",
+                "meaning": "It settles / enters",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "ayah:113:4",
       "number": 4,
-      "arabic": "وَمِن شَرِّ ٱلنَّفَّاثَاتِ فِي ٱلْعُقَدِ",
+      "arabic": "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ",
+      "sourceRawArabic": "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ",
       "translation": "And from the evil of those who blow on knots.",
+      "naturalMeaning": "From the harm of those who blow on knots.",
       "words": [
         {
           "id": "word:113:4:1",
           "position": 1,
           "arabic": "وَمِن",
-          "teachingId": "lesson:wa"
+          "transliteration": "Wa-min",
+          "gloss": "and from",
+          "teachingId": "lesson:wa",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:4:1",
+            "mode": "atomic",
+            "sourceText": "وَمِن",
+            "parts": [
+              {
+                "id": "breakdown:word:113:4:1:part:whole",
+                "order": 1,
+                "sourceText": "وَمِن",
+                "displayText": "وَمِن",
+                "label": "Whole word",
+                "meaning": "And",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:4:2",
           "position": 2,
           "arabic": "شَرِّ",
-          "teachingId": "lesson:sharri"
+          "transliteration": "Sharr",
+          "gloss": "harm / evil",
+          "teachingId": "lesson:sharri",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:4:2",
+            "mode": "atomic",
+            "sourceText": "شَرِّ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:4:2:part:whole",
+                "order": 1,
+                "sourceText": "شَرِّ",
+                "displayText": "شَرِّ",
+                "label": "Whole word",
+                "meaning": "The evil / harm",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:4:3",
           "position": 3,
           "arabic": "ٱلنَّفَّاثَاتِ",
-          "teachingId": "lesson:naffathat"
+          "transliteration": "Al-naffāthāt",
+          "gloss": "those who blow",
+          "teachingId": "lesson:naffathat",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:4:3",
+            "mode": "atomic",
+            "sourceText": "ٱلنَّفَّاثَاتِ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:4:3:part:whole",
+                "order": 1,
+                "sourceText": "ٱلنَّفَّاثَاتِ",
+                "displayText": "ٱلنَّفَّاثَاتِ",
+                "label": "Whole word",
+                "meaning": "Those who blow",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:4:4",
           "position": 4,
           "arabic": "فِي",
-          "teachingId": "lesson:fi"
+          "transliteration": "Fī",
+          "gloss": "in",
+          "teachingId": "lesson:fi",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:4:4",
+            "mode": "atomic",
+            "sourceText": "فِي",
+            "parts": [
+              {
+                "id": "breakdown:word:113:4:4:part:whole",
+                "order": 1,
+                "sourceText": "فِي",
+                "displayText": "فِي",
+                "label": "Whole word",
+                "meaning": "In",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:4:5",
           "position": 5,
           "arabic": "ٱلْعُقَدِ",
-          "teachingId": "lesson:uqad"
+          "transliteration": "Al-ʿuqad",
+          "gloss": "the knots",
+          "teachingId": "lesson:uqad",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:4:5",
+            "mode": "atomic",
+            "sourceText": "ٱلْعُقَدِ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:4:5:part:whole",
+                "order": 1,
+                "sourceText": "ٱلْعُقَدِ",
+                "displayText": "ٱلْعُقَدِ",
+                "label": "Whole word",
+                "meaning": "The knots",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     },
@@ -171,39 +658,768 @@
       "id": "ayah:113:5",
       "number": 5,
       "arabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "sourceRawArabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
       "translation": "And from the evil of an envier when he envies.",
+      "naturalMeaning": "From the harm of the envier when envy acts.",
       "words": [
         {
           "id": "word:113:5:1",
           "position": 1,
           "arabic": "وَمِن",
-          "teachingId": "lesson:wa"
+          "transliteration": "Wa-min",
+          "gloss": "and from",
+          "teachingId": "lesson:wa",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:5",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:5:1",
+            "mode": "atomic",
+            "sourceText": "وَمِن",
+            "parts": [
+              {
+                "id": "breakdown:word:113:5:1:part:whole",
+                "order": 1,
+                "sourceText": "وَمِن",
+                "displayText": "وَمِن",
+                "label": "Whole word",
+                "meaning": "And",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:5:2",
           "position": 2,
           "arabic": "شَرِّ",
-          "teachingId": "lesson:sharri"
+          "transliteration": "Sharr",
+          "gloss": "harm / evil",
+          "teachingId": "lesson:sharri",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:5",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:5:2",
+            "mode": "atomic",
+            "sourceText": "شَرِّ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:5:2:part:whole",
+                "order": 1,
+                "sourceText": "شَرِّ",
+                "displayText": "شَرِّ",
+                "label": "Whole word",
+                "meaning": "The evil / harm",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:5:3",
           "position": 3,
           "arabic": "حَاسِدٍ",
-          "teachingId": "lesson:hasid"
+          "transliteration": "Ḥāsid",
+          "gloss": "an envier",
+          "teachingId": "lesson:hasid",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:5",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:5:3",
+            "mode": "atomic",
+            "sourceText": "حَاسِدٍ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:5:3:part:whole",
+                "order": 1,
+                "sourceText": "حَاسِدٍ",
+                "displayText": "حَاسِدٍ",
+                "label": "Whole word",
+                "meaning": "An envier",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:5:4",
           "position": 4,
           "arabic": "إِذَا",
-          "teachingId": "lesson:idha"
+          "transliteration": "Idhā",
+          "gloss": "when",
+          "teachingId": "lesson:idha",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:5",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:5:4",
+            "mode": "atomic",
+            "sourceText": "إِذَا",
+            "parts": [
+              {
+                "id": "breakdown:word:113:5:4:part:whole",
+                "order": 1,
+                "sourceText": "إِذَا",
+                "displayText": "إِذَا",
+                "label": "Whole word",
+                "meaning": "When",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:113:5:5",
           "position": 5,
           "arabic": "حَسَدَ",
-          "teachingId": "lesson:hasada"
+          "transliteration": "Ḥasada",
+          "gloss": "he envies",
+          "teachingId": "lesson:hasada",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "113:5",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:113:5:5",
+            "mode": "atomic",
+            "sourceText": "حَسَدَ",
+            "parts": [
+              {
+                "id": "breakdown:word:113:5:5:part:whole",
+                "order": 1,
+                "sourceText": "حَسَدَ",
+                "displayText": "حَسَدَ",
+                "label": "Whole word",
+                "meaning": "He envies",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     }
-  ]
+  ],
+  "teachingEntries": {
+    "lesson:qul": {
+      "id": "lesson:qul",
+      "meaning": "Say",
+      "type": "Command verb",
+      "root": "ق و ل",
+      "rootPicture": "say · speak · tell · state",
+      "construction": "قُلْ",
+      "components": [],
+      "grammar": "A command addressed to one male; Arabic understands the ‘you’ from the verb form.",
+      "sentenceRole": "Introduces what the Prophet ﷺ is commanded to declare.",
+      "recognitionClue": "A command can contain its subject without a separate word for ‘you.’",
+      "forms": [
+        {
+          "form": "قَالَ",
+          "meaning": "He said",
+          "difference": "past tense"
+        },
+        {
+          "form": "يَقُولُ",
+          "meaning": "He says",
+          "difference": "present tense"
+        },
+        {
+          "form": "نَقُولُ",
+          "meaning": "We say",
+          "difference": "نَ points to we"
+        },
+        {
+          "form": "قُلْ",
+          "meaning": "Say!",
+          "difference": "command to one male"
+        }
+      ],
+      "takeaway": "The root stays connected to speaking while the form tells us who speaks and whether it is a statement or command."
+    },
+    "lesson:audhu": {
+      "id": "lesson:audhu",
+      "meaning": "I seek refuge",
+      "type": "First-person present verb",
+      "root": "ع و ذ",
+      "rootPicture": "seek shelter · hold fast · take refuge",
+      "construction": "أَعُوذُ",
+      "components": [
+        {
+          "text": "أَ",
+          "displayText": "أَـ",
+          "label": "I",
+          "meaning": "the person doing the action",
+          "kind": "prefix"
+        },
+        {
+          "text": "عُوذُ",
+          "displayText": "عُوذُ",
+          "label": "seek refuge",
+          "meaning": "the main verb stem",
+          "kind": "stem"
+        }
+      ],
+      "breakdown": {
+        "id": "breakdown:114:1:2",
+        "mode": "segmented",
+        "sourceText": "أَعُوذُ",
+        "parts": [
+          {
+            "id": "breakdown:114:1:2:part:prefix-a",
+            "order": 1,
+            "sourceText": "أَ",
+            "displayText": "أَـ",
+            "label": "I",
+            "meaning": "the person doing the action",
+            "kind": "prefix"
+          },
+          {
+            "id": "breakdown:114:1:2:part:stem-udhu",
+            "order": 2,
+            "sourceText": "عُوذُ",
+            "displayText": "عُوذُ",
+            "label": "seek refuge",
+            "meaning": "the main verb stem",
+            "kind": "stem"
+          }
+        ]
+      },
+      "grammar": "The opening أَ marks the first-person speaker. The verb expresses actively seeking protection.",
+      "sentenceRole": "Begins the learner’s spoken request for refuge.",
+      "recognitionClue": "أَ at the beginning of a present verb can point to ‘I.’",
+      "forms": [
+        {
+          "form": "عَاذَ",
+          "meaning": "He sought refuge",
+          "difference": "past"
+        },
+        {
+          "form": "أَعُوذُ",
+          "meaning": "I seek refuge",
+          "difference": "أَ = I"
+        },
+        {
+          "form": "نَعُوذُ",
+          "meaning": "We seek refuge",
+          "difference": "نَ = we"
+        },
+        {
+          "form": "مَعَاذ",
+          "meaning": "place of refuge",
+          "difference": "derived noun"
+        }
+      ],
+      "takeaway": "The root gives the movement toward protection while the prefix identifies the speaker."
+    },
+    "lesson:birabbi": {
+      "id": "lesson:birabbi",
+      "meaning": "With / by my Lord",
+      "type": "Attached preposition and possessive noun",
+      "root": "ر ب ب",
+      "rootPicture": "raise · nurture · sustain · govern",
+      "construction": "بِ + رَبِّ + ي",
+      "components": [
+        {
+          "text": "بِ",
+          "label": "with / by",
+          "meaning": "attached preposition"
+        },
+        {
+          "text": "رَبِّ",
+          "label": "Lord",
+          "meaning": "one who sustains"
+        }
+      ],
+      "grammar": "The preposition بِ joins to ربّ, while the possessive ending is understood in the attached form used here.",
+      "sentenceRole": "Names the source of protection being sought.",
+      "recognitionClue": "A short attached preposition can change the relationship of the noun to the verb.",
+      "forms": [
+        {
+          "form": "رَبّ",
+          "meaning": "Lord / nurturer",
+          "difference": "base noun"
+        },
+        {
+          "form": "بِرَبِّ",
+          "meaning": "by a Lord",
+          "difference": "بِ attached"
+        },
+        {
+          "form": "رَبِّي",
+          "meaning": "my Lord",
+          "difference": "ي = my"
+        }
+      ],
+      "takeaway": "The root picture of nurturing and sustaining makes رَبّ a rich word for Lord and caretaker."
+    },
+    "lesson:daybreak": {
+      "id": "lesson:daybreak",
+      "meaning": "The daybreak",
+      "type": "Definite noun",
+      "root": "ف ل ق",
+      "rootPicture": "split · break open · emerge",
+      "construction": "ٱلـ + فَلَق",
+      "components": [],
+      "grammar": "The definite noun names the dawn as the thing that breaks through darkness.",
+      "sentenceRole": "Names the Lord of the emerging daybreak.",
+      "recognitionClue": "The root image makes the word easier to remember: light splitting the dark.",
+      "forms": [
+        {
+          "form": "فَلَق",
+          "meaning": "to split / break",
+          "difference": "verb family"
+        },
+        {
+          "form": "فَلَق",
+          "meaning": "daybreak",
+          "difference": "noun"
+        },
+        {
+          "form": "ٱلْفَلَق",
+          "meaning": "the daybreak",
+          "difference": "definite noun"
+        }
+      ],
+      "takeaway": "A root picture can be a memory hook without replacing the exact contextual meaning."
+    },
+    "lesson:min": {
+      "id": "lesson:min",
+      "meaning": "From / among",
+      "type": "Preposition",
+      "root": "",
+      "rootPicture": "No lexical root — a preposition marking source, separation or origin.",
+      "construction": "مِنْ → مِنَ",
+      "components": [
+        {
+          "text": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation"
+        },
+        {
+          "text": "ـَ",
+          "label": "linking vowel",
+          "meaning": "helps pronunciation before the next word"
+        }
+      ],
+      "grammar": "مِنْ introduces the source or group something comes from. The final vowel in مِنَ is a pronunciation adjustment before the next word.",
+      "sentenceRole": "Introduces the harm or the group from which something comes.",
+      "recognitionClue": "Recognise مِنْ / مِنَ as the compact word for ‘from’; its ending can change for easy pronunciation.",
+      "forms": [
+        {
+          "form": "مِنْ",
+          "meaning": "from",
+          "difference": "base preposition"
+        },
+        {
+          "form": "مِنَ",
+          "meaning": "from among",
+          "difference": "vowel before the next word"
+        },
+        {
+          "form": "مِنْهُ",
+          "meaning": "from him / it",
+          "difference": "attached pronoun"
+        }
+      ],
+      "takeaway": "Short grammar words do important structural work even though they do not carry a lexical root."
+    },
+    "lesson:sharri": {
+      "id": "lesson:sharri",
+      "meaning": "The evil / harm",
+      "type": "Definite noun with attached preposition",
+      "root": "ش ر ر",
+      "rootPicture": "badness · harm · evil",
+      "construction": "مِنْ + شَرِّ",
+      "components": [
+        {
+          "text": "مِنْ",
+          "label": "from",
+          "meaning": "source or separation"
+        }
+      ],
+      "grammar": "مِنْ introduces the source or separation, and the noun is definite in meaning through the construction.",
+      "sentenceRole": "Names the harm from which refuge is sought.",
+      "recognitionClue": "مِنْ often carries ‘from’ and can be attached in pronunciation to what follows.",
+      "forms": [
+        {
+          "form": "شَرّ",
+          "meaning": "evil / harm",
+          "difference": "base noun"
+        },
+        {
+          "form": "مِنْ شَرّ",
+          "meaning": "from the harm",
+          "difference": "preposition added"
+        },
+        {
+          "form": "شِرَار",
+          "meaning": "worst / evil ones",
+          "difference": "related plural"
+        }
+      ],
+      "takeaway": "The phrase is learned as a unit while the word remains available for comparison elsewhere."
+    },
+    "lesson:ma": {
+      "id": "lesson:ma",
+      "meaning": "What / whatever",
+      "type": "Relative pronoun",
+      "root": "",
+      "rootPicture": "No lexical root — a pronoun referring to a thing or action without naming it.",
+      "construction": "مَا",
+      "components": [],
+      "grammar": "مَا points to an unspecified thing or action. Here it means ‘what He created,’ linking the description to خَلَقَ.",
+      "sentenceRole": "Introduces the created things without repeating a noun.",
+      "recognitionClue": "مَا often means ‘what’ or ‘whatever’; the following clause explains what it refers to.",
+      "forms": [
+        {
+          "form": "مَا",
+          "meaning": "what / whatever",
+          "difference": "relative pronoun"
+        },
+        {
+          "form": "مَنْ",
+          "meaning": "who / whoever",
+          "difference": "usually for people"
+        },
+        {
+          "form": "مَاذَا",
+          "meaning": "what?",
+          "difference": "question form"
+        }
+      ],
+      "takeaway": "Rootless grammar words are recognised by the job they do in the sentence."
+    },
+    "lesson:khalaqa": {
+      "id": "lesson:khalaqa",
+      "meaning": "He created",
+      "type": "Past-tense verb",
+      "root": "خ ل ق",
+      "rootPicture": "create · shape · measure",
+      "construction": "خَلَقَ",
+      "components": [],
+      "grammar": "The past form presents the creating as a completed action.",
+      "sentenceRole": "Identifies the created things mentioned after the opening request.",
+      "recognitionClue": "The final ـََ pattern is a familiar past-tense shape for a third-person masculine verb.",
+      "forms": [
+        {
+          "form": "خَلَقَ",
+          "meaning": "He created",
+          "difference": "past"
+        },
+        {
+          "form": "يَخْلُقُ",
+          "meaning": "He creates",
+          "difference": "present"
+        },
+        {
+          "form": "خَلْق",
+          "meaning": "creation",
+          "difference": "verbal noun"
+        }
+      ],
+      "takeaway": "A concrete action and a root picture work together: creating is bringing something into measured form."
+    },
+    "lesson:wa": {
+      "id": "lesson:wa",
+      "meaning": "And",
+      "type": "Attached connector",
+      "root": "",
+      "rootPicture": "joining two elements",
+      "construction": "وَ + word",
+      "components": [
+        {
+          "text": "وَ",
+          "label": "and",
+          "meaning": "connector"
+        }
+      ],
+      "grammar": "The connector is written directly onto the following word.",
+      "sentenceRole": "Adds the second group or clause.",
+      "recognitionClue": "وَ attached to a word commonly contributes ‘and.’",
+      "forms": [
+        {
+          "form": "وَٱلنَّاس",
+          "meaning": "and humankind",
+          "difference": "وَ added"
+        },
+        {
+          "form": "فَٱلنَّاس",
+          "meaning": "so the people",
+          "difference": "فَ added"
+        },
+        {
+          "form": "بِٱلنَّاس",
+          "meaning": "with the people",
+          "difference": "بِ added"
+        }
+      ],
+      "takeaway": "A small attached word can change the relationship between two otherwise familiar words."
+    },
+    "lesson:ghasiq": {
+      "id": "lesson:ghasiq",
+      "meaning": "Darkness / night",
+      "type": "Noun / active participle",
+      "root": "غ س ق",
+      "rootPicture": "grow dark · become deep night · enter darkness",
+      "construction": "غَسَقَ → غَاسِقٍ",
+      "components": [],
+      "grammar": "غَاسِقٍ describes the dark or the thing becoming dark. Its tanwīn and kasrah fit its position after شَرِّ.",
+      "sentenceRole": "Names the darkness whose harm is being described.",
+      "recognitionClue": "The غَاسِق pattern points to something characterised by the action of becoming dark.",
+      "forms": [
+        {
+          "form": "غَسَقَ",
+          "meaning": "it became dark",
+          "difference": "past verb"
+        },
+        {
+          "form": "غَاسِق",
+          "meaning": "dark / darkening",
+          "difference": "active participle"
+        },
+        {
+          "form": "غَاسِقٍ",
+          "meaning": "of darkness",
+          "difference": "case ending here"
+        }
+      ],
+      "takeaway": "The root picture makes the night’s descent vivid while the pattern turns the action into a describing noun."
+    },
+    "lesson:idha": {
+      "id": "lesson:idha",
+      "meaning": "When",
+      "type": "Time adverb / conditional connector",
+      "root": "",
+      "rootPicture": "No lexical root — a grammar word that introduces the time of an event.",
+      "construction": "إِذَا + clause",
+      "components": [],
+      "grammar": "إِذَا opens a time clause: ‘when it settles’ or ‘when he envies.’ The following verb supplies the event.",
+      "sentenceRole": "Introduces the time or condition in which the next action happens.",
+      "recognitionClue": "When you see إِذَا, look to the following clause for the event being timed.",
+      "forms": [
+        {
+          "form": "إِذَا",
+          "meaning": "when / whenever",
+          "difference": "time or condition"
+        },
+        {
+          "form": "إِذْ",
+          "meaning": "when",
+          "difference": "past-time connector"
+        },
+        {
+          "form": "مَتَى",
+          "meaning": "when?",
+          "difference": "question word"
+        }
+      ],
+      "takeaway": "The word has no lexical root to memorise; its sentence position is the clue."
+    },
+    "lesson:waqaba": {
+      "id": "lesson:waqaba",
+      "meaning": "It settles / enters",
+      "type": "Past-tense verb",
+      "root": "و ق ب",
+      "rootPicture": "enter · settle · fall into darkness",
+      "construction": "وَقَبَ",
+      "components": [],
+      "grammar": "وَقَبَ is a completed action: the darkness settles or enters. إِذَا places that action inside a time clause.",
+      "sentenceRole": "Completes the time clause introduced by إِذَا.",
+      "recognitionClue": "The final ـَ pattern is a common past-tense shape for a third-person masculine verb.",
+      "forms": [
+        {
+          "form": "وَقَبَ",
+          "meaning": "it settled / entered",
+          "difference": "past"
+        },
+        {
+          "form": "يَقِبُ",
+          "meaning": "it settles / enters",
+          "difference": "present"
+        },
+        {
+          "form": "وَقْب",
+          "meaning": "entering / deepening",
+          "difference": "related noun"
+        }
+      ],
+      "takeaway": "The root picture turns the image of night settling into a memorable verb."
+    },
+    "lesson:naffathat": {
+      "id": "lesson:naffathat",
+      "meaning": "Those who blow",
+      "type": "Intensive feminine plural active participle",
+      "root": "ن ف ث",
+      "rootPicture": "blow lightly · breathe onto · release breath",
+      "construction": "ٱلـ + نَفَّاثَات",
+      "components": [],
+      "grammar": "The definite article marks the group as known, while the intensive pattern and feminine plural ending describe those who repeatedly blow.",
+      "sentenceRole": "Names the group whose harm is being sought for protection from.",
+      "recognitionClue": "Look for the repeated middle consonant and the ـَات ending of a feminine sound plural.",
+      "forms": [
+        {
+          "form": "نَفَثَ",
+          "meaning": "he blew lightly",
+          "difference": "past verb"
+        },
+        {
+          "form": "نَفَّاث",
+          "meaning": "one who blows repeatedly",
+          "difference": "intensive singular"
+        },
+        {
+          "form": "ٱلنَّفَّاثَات",
+          "meaning": "those who blow",
+          "difference": "definite feminine plural"
+        }
+      ],
+      "takeaway": "The pattern keeps the action of blowing visible while the plural ending identifies a group."
+    },
+    "lesson:fi": {
+      "id": "lesson:fi",
+      "meaning": "In",
+      "type": "Preposition",
+      "root": "",
+      "rootPicture": "location within something",
+      "construction": "فِي",
+      "components": [],
+      "grammar": "The preposition locates the following noun as the place where something occurs.",
+      "sentenceRole": "Identifies where the whispering takes place.",
+      "recognitionClue": "فِي is a compact high-frequency word worth recognising on sight.",
+      "forms": [
+        {
+          "form": "فِي",
+          "meaning": "in",
+          "difference": "preposition"
+        },
+        {
+          "form": "فِيهِ",
+          "meaning": "in it",
+          "difference": "attached pronoun"
+        },
+        {
+          "form": "فِيهَا",
+          "meaning": "in her / it",
+          "difference": "feminine pronoun"
+        }
+      ],
+      "takeaway": "Short grammar words become anchors for understanding longer Qur’anic phrases."
+    },
+    "lesson:uqad": {
+      "id": "lesson:uqad",
+      "meaning": "The knots",
+      "type": "Definite broken plural noun",
+      "root": "ع ق د",
+      "rootPicture": "tie · bind · fasten · make a knot",
+      "construction": "ٱلـ + عُقَد",
+      "components": [],
+      "grammar": "The definite article makes the knots specific. فِي places the knots as the location of the action.",
+      "sentenceRole": "Names the objects on which the blowing is performed.",
+      "recognitionClue": "عُقَد is the broken plural of عُقْدَة; the plural changes the internal vowels rather than adding a regular ending.",
+      "forms": [
+        {
+          "form": "عَقَدَ",
+          "meaning": "he tied",
+          "difference": "past verb"
+        },
+        {
+          "form": "عُقْدَة",
+          "meaning": "a knot",
+          "difference": "singular noun"
+        },
+        {
+          "form": "ٱلْعُقَد",
+          "meaning": "the knots",
+          "difference": "definite broken plural"
+        }
+      ],
+      "takeaway": "The root picture of tying gives a concrete memory hook for the broken plural."
+    },
+    "lesson:hasid": {
+      "id": "lesson:hasid",
+      "meaning": "An envier",
+      "type": "Active participle",
+      "root": "ح س د",
+      "rootPicture": "envy · wish another’s blessing away",
+      "construction": "حَسَدَ → حَاسِدٍ",
+      "components": [],
+      "grammar": "حَاسِدٍ names a person characterised by envy. Its tanwīn and kasrah fit its position after شَرِّ.",
+      "sentenceRole": "Names the person whose envy is the source of harm.",
+      "recognitionClue": "The ا after the first consonant is a familiar active-participle shape: one who performs the action.",
+      "forms": [
+        {
+          "form": "حَسَدَ",
+          "meaning": "he envied",
+          "difference": "past verb"
+        },
+        {
+          "form": "حَاسِد",
+          "meaning": "envier",
+          "difference": "active participle"
+        },
+        {
+          "form": "حَاسِدٍ",
+          "meaning": "of an envier",
+          "difference": "case ending here"
+        }
+      ],
+      "takeaway": "The root and participle pattern make the person and the action easy to connect."
+    },
+    "lesson:hasada": {
+      "id": "lesson:hasada",
+      "meaning": "He envies",
+      "type": "Past-tense verb",
+      "root": "ح س د",
+      "rootPicture": "envy · wish another’s blessing away",
+      "construction": "حَسَدَ",
+      "components": [],
+      "grammar": "حَسَدَ is the completed action inside the clause introduced by إِذَا: ‘when he envies.’",
+      "sentenceRole": "Completes the time clause describing the envier’s action.",
+      "recognitionClue": "The final ـَ pattern marks a completed third-person masculine action.",
+      "forms": [
+        {
+          "form": "حَسَدَ",
+          "meaning": "he envied",
+          "difference": "past"
+        },
+        {
+          "form": "يَحْسُدُ",
+          "meaning": "he envies",
+          "difference": "present"
+        },
+        {
+          "form": "حَاسِد",
+          "meaning": "envier",
+          "difference": "active participle"
+        }
+      ],
+      "takeaway": "The same root appears in حَاسِدٍ, connecting the person to the action."
+    }
+  },
+  "volumeReferences": ["volume:final-six-surahs"]
 }

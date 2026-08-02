@@ -1,5 +1,7 @@
 # Prompt 2 acceptance checklist
 
+> Execution note: the checklist is retained as the acceptance contract. The checked results from the completed run are recorded in `docs/prompt-2-production-run.md`.
+
 Prompt 2 is complete only when every item below is checked against the running application and the production database.
 
 ## Content and database

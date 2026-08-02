@@ -41,8 +41,10 @@ test("starter import packages cover all six required sūrahs", async () => {
       new URL(`content-import/surahs/${directory}/manifest.json`, root),
       "utf8",
     );
-    assert.match(manifest, /"schemaVersion": 1/);
-    assert.match(manifest, /"includedAyahs"/);
+    assert.match(manifest, /"schemaVersion": "2\.0\.0"/);
+    const manifestData = JSON.parse(manifest);
+    assert.equal(manifestData.surah, Number(directory.slice(0, 3)));
+    assert.ok(manifestData.contentVersion);
     await readFile(
       new URL(`content-import/surahs/${directory}/surah.json`, root),
       "utf8",

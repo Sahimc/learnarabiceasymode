@@ -1,89 +1,92 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import test from "node:test";
 
-const root = new URL("../", import.meta.url);
+const root = fileURLToPath(new URL("../", import.meta.url));
 
-test("authored breakdowns cover the complete word and preserve display joins", async () => {
-  for (const directory of ["113-al-falaq", "114-al-nas"]) {
-    const packageData = JSON.parse(
-      await readFile(
-        new URL(`content-import/surahs/${directory}/surah.json`, root),
-        "utf8",
-      ),
-    );
-    const word = packageData.ayahs[0].words[1];
-    assert.equal(word.arabic, "أَعُوذُ");
-    assert.equal(word.breakdown.sourceText, word.arabic);
-    assert.deepEqual(
-      word.breakdown.parts.map((part) => part.sourceText),
-      ["أَ", "عُوذُ"],
-    );
-    assert.equal(
-      word.breakdown.parts.map((part) => part.sourceText).join(""),
-      word.breakdown.sourceText,
-    );
-    assert.equal(word.breakdown.parts[0].displayText, "أَـ");
-  }
-});
+async function packages() {
+  const directories = await readdir(path.join(root, "content-import", "surahs"));
+  return Promise.all(directories.map(async (directory) => {
+    const file = path.join(root, "content-import", "surahs", directory, "surah.json");
+    try { return JSON.parse(await readFile(file, "utf8")); } catch { return null; }
+  })).then((items) => items.filter(Boolean));
+}
 
-test("complete starter packages keep each word mapped to a teaching lesson", async () => {
-  const directories = ["112-al-ikhlas", "113-al-falaq", "114-al-nas"];
+function findWord(packageData, ayahNumber, position) {
+  return packageData.ayahs.find((ayah) => ayah.number === ayahNumber)?.words.find((word) => word.position === position);
+}
 
-  for (const directory of directories) {
-    const packageData = JSON.parse(
-      await readFile(
-        new URL(`content-import/surahs/${directory}/surah.json`, root),
-        "utf8",
-      ),
-    );
-    for (const ayah of packageData.ayahs) {
-      for (const [index, word] of ayah.words.entries()) {
-        assert.equal(word.position, index + 1);
-        assert.equal(
-          word.id,
-          `word:${packageData.number}:${ayah.number}:${index + 1}`,
-        );
-        assert.ok(word.arabic.length > 0);
-        assert.match(
-          word.teachingId,
-          /^lesson:/,
-          `${directory} ${ayah.number}:${word.position} is missing a teaching lesson`,
-        );
-      }
+test("all 58 custom occurrences have explicit valid atomic or segmented breakdowns", async () => {
+  const all = await packages();
+  const custom = all.flatMap((pkg) => pkg.ayahs.flatMap((ayah) => ayah.words.filter((word) => word.teachingId).map((word) => ({ pkg, word }))));
+  assert.equal(custom.length, 58);
+  for (const { word } of custom) {
+    const breakdown = word.breakdown;
+    assert.ok(breakdown);
+    assert.ok(["atomic", "segmented"].includes(breakdown.mode));
+    assert.equal(breakdown.sourceText, word.arabic);
+    assert.equal(breakdown.parts.length, breakdown.mode === "atomic" ? 1 : breakdown.parts.length);
+    assert.deepEqual(breakdown.parts.map((part) => part.order), breakdown.parts.map((_, index) => index + 1));
+    assert.equal(breakdown.parts.map((part) => part.sourceText).join(""), breakdown.sourceText);
+    for (const part of breakdown.parts) {
+      assert.ok(part.id && part.label && part.meaning && part.kind);
+      assert.ok(part.sourceText);
+      assert.ok(part.displayText);
     }
   }
 });
 
-test("Al-Falaq and Al-Nas use the specific lessons for previously misassigned words", async () => {
-  const [falaq, nas] = await Promise.all([
-    readFile(
-      new URL("content-import/surahs/113-al-falaq/surah.json", root),
-      "utf8",
-    ).then(JSON.parse),
-    readFile(
-      new URL("content-import/surahs/114-al-nas/surah.json", root),
-      "utf8",
-    ).then(JSON.parse),
-  ]);
+test("the six-surah regression layer preserves 127 occurrences and source-only status", async () => {
+  const all = await packages();
+  const selected = all.filter((pkg) => pkg.surah.number >= 109 && pkg.surah.number <= 114);
+  assert.equal(selected.length, 6);
+  assert.equal(selected.reduce((sum, pkg) => sum + pkg.ayahs.reduce((n, ayah) => n + ayah.words.length, 0), 0), 127);
+  assert.deepEqual(selected.filter((pkg) => pkg.status === "source-only").map((pkg) => pkg.surah.number), [109, 110, 111]);
+  assert.deepEqual(selected.filter((pkg) => pkg.status === "custom-complete").map((pkg) => pkg.surah.number), [112, 113, 114]);
+});
 
-  const falaqLessons = new Map(
-    falaq.ayahs
-      .flatMap((ayah) => ayah.words)
-      .map((word) => [word.arabic, word.teachingId]),
-  );
-  const nasLessons = new Map(
-    nas.ayahs
-      .flatMap((ayah) => ayah.words)
-      .map((word) => [word.arabic, word.teachingId]),
-  );
+test("required teaching mappings use exact source parts and display-only joining lines", async () => {
+  const all = await packages();
+  const byNumber = new Map(all.map((pkg) => [pkg.surah.number, pkg]));
+  const audhu = findWord(byNumber.get(113), 1, 2);
+  assert.deepEqual(audhu.breakdown.parts.map((part) => part.sourceText), ["أَ", "عُوذُ"]);
+  assert.equal(audhu.breakdown.parts[0].displayText, "أَـ");
+  assert.equal(audhu.breakdown.parts.map((part) => part.sourceText).join(""), "أَعُوذُ");
 
-  assert.equal(falaqLessons.get("مِن"), "lesson:min");
-  assert.equal(falaqLessons.get("مَا"), "lesson:ma");
-  assert.equal(falaqLessons.get("غَاسِقٍ"), "lesson:ghasiq");
-  assert.equal(falaqLessons.get("حَاسِدٍ"), "lesson:hasid");
-  assert.equal(nasLessons.get("مَلِكِ"), "lesson:malik");
-  assert.equal(nasLessons.get("إِلَٰهِ"), "lesson:ilah");
-  assert.equal(nasLessons.get("مِن"), "lesson:min");
-  assert.equal(nasLessons.get("مِنَ"), "lesson:min");
+  const birabbi = findWord(byNumber.get(113), 1, 3);
+  assert.deepEqual(birabbi.breakdown.parts.map((part) => part.sourceText), ["بِ", "رَبِّ"]);
+  const walam = findWord(byNumber.get(112), 3, 3);
+  assert.deepEqual(walam.breakdown.parts.map((part) => part.sourceText), ["وَ", "لَمْ"]);
+  const lahu = findWord(byNumber.get(112), 4, 3);
+  assert.equal(lahu.arabic, "لَّهُۥ");
+  assert.equal(lahu.breakdown.mode, "atomic");
+  assert.equal(lahu.breakdown.parts[0].sourceText, lahu.arabic);
+  const wanas = findWord(byNumber.get(114), 6, 3);
+  assert.deepEqual(wanas.breakdown.parts.map((part) => part.sourceText), ["وَ", "ٱلنَّاسِ"]);
+  const qul = findWord(byNumber.get(114), 1, 1);
+  assert.equal(qul.breakdown.mode, "atomic");
+  assert.equal(qul.breakdown.parts[0].sourceText, "قُلْ");
+});
+
+test("source-only packages do not invent custom teaching", async () => {
+  const all = await packages();
+  for (const pkg of all.filter((item) => item.status === "source-only")) {
+    assert.equal(Object.keys(pkg.teachingEntries).length, 0);
+    assert.equal(pkg.ayahs.flatMap((ayah) => ayah.words).some((word) => word.teachingId || word.breakdown), false);
+  }
+});
+
+test("known authored word assignments remain occurrence-specific", async () => {
+  const all = await packages();
+  const falaq = all.find((pkg) => pkg.surah.number === 113);
+  const nas = all.find((pkg) => pkg.surah.number === 114);
+  const falaqWords = falaq.ayahs.flatMap((ayah) => ayah.words);
+  const nasWords = nas.ayahs.flatMap((ayah) => ayah.words);
+  assert.equal(falaqWords.find((word) => word.arabic === "مِن")?.teachingId, "lesson:min");
+  assert.equal(falaqWords.find((word) => word.arabic === "غَاسِقٍ")?.teachingId, "lesson:ghasiq");
+  assert.equal(nasWords.find((word) => word.arabic === "مَلِكِ")?.teachingId, "lesson:malik");
+  assert.equal(nasWords.find((word) => word.arabic === "إِلَٰهِ")?.teachingId, "lesson:ilah");
+  assert.equal(nasWords.find((word) => word.arabic === "مِنَ")?.teachingId, "lesson:min");
 });

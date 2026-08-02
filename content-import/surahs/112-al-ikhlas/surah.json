@@ -1,40 +1,160 @@
 {
-  "id": "surah:112",
-  "number": 112,
-  "arabicName": "الإخلاص",
-  "transliteration": "Al-Ikhlāṣ",
-  "englishLabel": "Sincerity / Purity of Faith",
-  "status": "complete",
+  "schemaVersion": "2.0.0",
+  "packageId": "surah:112",
+  "surah": {
+    "number": 112,
+    "name": "Al-Ikhlāṣ",
+    "arabicName": "الإخلاص",
+    "transliteration": "Al-Ikhlāṣ",
+    "englishLabel": "Sincerity",
+    "description": "Reviewed Word Tree teaching layer."
+  },
+  "contentVersion": "tanzil-1.1",
+  "status": "custom-complete",
+  "sourceReferences": [
+    {
+      "provider": "tanzil",
+      "recordKey": "surah:112",
+      "version": "1.1",
+      "attribution": "Tanzil Project"
+    }
+  ],
   "ayahs": [
     {
       "id": "ayah:112:1",
       "number": 1,
       "arabic": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+      "sourceRawArabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ",
       "translation": "Say: He is Allah, uniquely One.",
+      "naturalMeaning": "Say: He is Allah, uniquely One.",
       "words": [
         {
           "id": "word:112:1:1",
           "position": 1,
           "arabic": "قُلْ",
-          "teachingId": "lesson:qul"
+          "transliteration": "Qul",
+          "gloss": "Say",
+          "teachingId": "lesson:qul",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:1:1",
+            "mode": "atomic",
+            "sourceText": "قُلْ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:1:1:part:whole",
+                "order": 1,
+                "sourceText": "قُلْ",
+                "displayText": "قُلْ",
+                "label": "Whole word",
+                "meaning": "Say",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:112:1:2",
           "position": 2,
           "arabic": "هُوَ",
-          "teachingId": "lesson:huwa"
+          "transliteration": "Huwa",
+          "gloss": "He",
+          "teachingId": "lesson:huwa",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:1:2",
+            "mode": "atomic",
+            "sourceText": "هُوَ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:1:2:part:whole",
+                "order": 1,
+                "sourceText": "هُوَ",
+                "displayText": "هُوَ",
+                "label": "Whole word",
+                "meaning": "He",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:112:1:3",
           "position": 3,
           "arabic": "ٱللَّهُ",
-          "teachingId": "lesson:allah"
+          "transliteration": "Allāhu",
+          "gloss": "Allah",
+          "teachingId": "lesson:allah",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:1:3",
+            "mode": "atomic",
+            "sourceText": "ٱللَّهُ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:1:3:part:whole",
+                "order": 1,
+                "sourceText": "ٱللَّهُ",
+                "displayText": "ٱللَّهُ",
+                "label": "Whole word",
+                "meaning": "Allah",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:112:1:4",
           "position": 4,
           "arabic": "أَحَدٌ",
-          "teachingId": "lesson:ahad"
+          "transliteration": "Aḥad",
+          "gloss": "uniquely One",
+          "teachingId": "lesson:ahad",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:1",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:1:4",
+            "mode": "atomic",
+            "sourceText": "أَحَدٌ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:1:4:part:whole",
+                "order": 1,
+                "sourceText": "أَحَدٌ",
+                "displayText": "أَحَدٌ",
+                "label": "Whole word",
+                "meaning": "One · uniquely One",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     },
@@ -42,19 +162,83 @@
       "id": "ayah:112:2",
       "number": 2,
       "arabic": "ٱللَّهُ ٱلصَّمَدُ",
+      "sourceRawArabic": "ٱللَّهُ ٱلصَّمَدُ",
       "translation": "Allah, the One upon whom all depend.",
+      "naturalMeaning": "Allah, the One upon whom all depend.",
       "words": [
         {
           "id": "word:112:2:1",
           "position": 1,
           "arabic": "ٱللَّهُ",
-          "teachingId": "lesson:allah"
+          "transliteration": "Allāhu",
+          "gloss": "Allah",
+          "teachingId": "lesson:allah",
+          "occurrenceRole": "Begins the second declaration.",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:2",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:2:1",
+            "mode": "atomic",
+            "sourceText": "ٱللَّهُ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:2:1:part:whole",
+                "order": 1,
+                "sourceText": "ٱللَّهُ",
+                "displayText": "ٱللَّهُ",
+                "label": "Whole word",
+                "meaning": "Allah",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:112:2:2",
           "position": 2,
           "arabic": "ٱلصَّمَدُ",
-          "teachingId": "lesson:al-samad"
+          "transliteration": "Al-Ṣamad",
+          "gloss": "the One all depend upon",
+          "teachingId": "lesson:al-samad",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:2",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:2:2",
+            "mode": "segmented",
+            "sourceText": "ٱلصَّمَدُ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:2:2:part:1",
+                "order": 1,
+                "sourceText": "ٱل",
+                "displayText": "ٱل",
+                "label": "the",
+                "meaning": "makes the title definite",
+                "kind": "prefix"
+              },
+              {
+                "id": "breakdown:word:112:2:2:part:2",
+                "order": 2,
+                "sourceText": "صَّمَدُ",
+                "displayText": "صَّمَدُ",
+                "label": "the depended-upon One",
+                "meaning": "ultimate aim and support",
+                "kind": "stem"
+              }
+            ]
+          }
         }
       ]
     },
@@ -62,71 +246,804 @@
       "id": "ayah:112:3",
       "number": 3,
       "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+      "sourceRawArabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
       "translation": "He neither begets nor is born.",
+      "naturalMeaning": "He neither begets nor is born.",
       "words": [
         {
           "id": "word:112:3:1",
           "position": 1,
           "arabic": "لَمْ",
-          "teachingId": "lesson:lam"
+          "transliteration": "Lam",
+          "gloss": "did not",
+          "teachingId": "lesson:lam",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:3",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:3:1",
+            "mode": "atomic",
+            "sourceText": "لَمْ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:3:1:part:whole",
+                "order": 1,
+                "sourceText": "لَمْ",
+                "displayText": "لَمْ",
+                "label": "Whole word",
+                "meaning": "Did not / does not",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:112:3:2",
           "position": 2,
           "arabic": "يَلِدْ",
-          "teachingId": "lesson:yalid"
+          "transliteration": "Yalid",
+          "gloss": "He begets",
+          "teachingId": "lesson:yalid",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:3",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:3:2",
+            "mode": "segmented",
+            "sourceText": "يَلِدْ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:3:2:part:1",
+                "order": 1,
+                "sourceText": "يَ",
+                "displayText": "يَ",
+                "label": "he",
+                "meaning": "third-person masculine marker",
+                "kind": "prefix"
+              },
+              {
+                "id": "breakdown:word:112:3:2:part:2",
+                "order": 2,
+                "sourceText": "لِدْ",
+                "displayText": "لِدْ",
+                "label": "beget",
+                "meaning": "birth-related action",
+                "kind": "stem"
+              }
+            ]
+          }
         },
         {
           "id": "word:112:3:3",
           "position": 3,
           "arabic": "وَلَمْ",
-          "teachingId": "lesson:walam"
+          "transliteration": "Wa-lam",
+          "gloss": "and did not",
+          "teachingId": "lesson:walam",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:3",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:3:3",
+            "mode": "segmented",
+            "sourceText": "وَلَمْ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:3:3:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَـ",
+                "label": "and",
+                "meaning": "an attached connector",
+                "kind": "connector"
+              },
+              {
+                "id": "breakdown:word:112:3:3:part:2",
+                "order": 2,
+                "sourceText": "لَمْ",
+                "displayText": "لَمْ",
+                "label": "did not",
+                "meaning": "a past-negating particle",
+                "kind": "stem"
+              }
+            ]
+          }
         },
         {
           "id": "word:112:3:4",
           "position": 4,
           "arabic": "يُولَدْ",
-          "teachingId": "lesson:yulad"
+          "transliteration": "Yūlad",
+          "gloss": "He is born",
+          "teachingId": "lesson:yulad",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:3",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:3:4",
+            "mode": "segmented",
+            "sourceText": "يُولَدْ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:3:4:part:1",
+                "order": 1,
+                "sourceText": "يُ",
+                "displayText": "يُ",
+                "label": "passive he",
+                "meaning": "passive present opening",
+                "kind": "prefix"
+              },
+              {
+                "id": "breakdown:word:112:3:4:part:2",
+                "order": 2,
+                "sourceText": "ولَدْ",
+                "displayText": "ولَدْ",
+                "label": "born",
+                "meaning": "birth action received",
+                "kind": "stem"
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "ayah:112:4",
       "number": 4,
-      "arabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ",
+      "arabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+      "sourceRawArabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
       "translation": "And there has never been anyone comparable to Him.",
+      "naturalMeaning": "There has never been anyone comparable to Him.",
       "words": [
         {
           "id": "word:112:4:1",
           "position": 1,
           "arabic": "وَلَمْ",
-          "teachingId": "lesson:walam"
+          "transliteration": "Wa-lam",
+          "gloss": "and did not",
+          "teachingId": "lesson:walam",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:4:1",
+            "mode": "segmented",
+            "sourceText": "وَلَمْ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:4:1:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَـ",
+                "label": "and",
+                "meaning": "an attached connector",
+                "kind": "connector"
+              },
+              {
+                "id": "breakdown:word:112:4:1:part:2",
+                "order": 2,
+                "sourceText": "لَمْ",
+                "displayText": "لَمْ",
+                "label": "did not",
+                "meaning": "a past-negating particle",
+                "kind": "stem"
+              }
+            ]
+          }
         },
         {
           "id": "word:112:4:2",
           "position": 2,
           "arabic": "يَكُن",
-          "teachingId": "lesson:yakun"
+          "transliteration": "Yakun",
+          "gloss": "there be",
+          "teachingId": "lesson:yakun",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:4:2",
+            "mode": "atomic",
+            "sourceText": "يَكُن",
+            "parts": [
+              {
+                "id": "breakdown:word:112:4:2:part:whole",
+                "order": 1,
+                "sourceText": "يَكُن",
+                "displayText": "يَكُن",
+                "label": "Whole word",
+                "meaning": "He / it was or existed",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:112:4:3",
           "position": 3,
           "arabic": "لَّهُۥ",
-          "teachingId": "lesson:lahu"
+          "transliteration": "Lahu",
+          "gloss": "for Him",
+          "teachingId": "lesson:lahu",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:4:3",
+            "mode": "atomic",
+            "sourceText": "لَّهُۥ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:4:3:part:whole",
+                "order": 1,
+                "sourceText": "لَّهُۥ",
+                "displayText": "لَّهُۥ",
+                "label": "Whole word",
+                "meaning": "For Him / belonging to Him",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:112:4:4",
           "position": 4,
           "arabic": "كُفُوًا",
-          "teachingId": "lesson:kufuwan"
+          "transliteration": "Kufuwan",
+          "gloss": "an equal",
+          "teachingId": "lesson:kufuwan",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:4:4",
+            "mode": "atomic",
+            "sourceText": "كُفُوًا",
+            "parts": [
+              {
+                "id": "breakdown:word:112:4:4:part:whole",
+                "order": 1,
+                "sourceText": "كُفُوًا",
+                "displayText": "كُفُوًا",
+                "label": "Whole word",
+                "meaning": "Equal · comparable · equivalent",
+                "kind": "whole"
+              }
+            ]
+          }
         },
         {
           "id": "word:112:4:5",
           "position": 5,
           "arabic": "أَحَدٌ",
-          "teachingId": "lesson:ahad"
+          "transliteration": "Aḥad",
+          "gloss": "anyone",
+          "teachingId": "lesson:ahad",
+          "occurrenceRole": "Same visible word as 112:1; context changes the natural meaning.",
+          "sourceReferences": [
+            {
+              "provider": "tanzil",
+              "recordKey": "112:4",
+              "version": "1.1",
+              "attribution": "Tanzil Project"
+            }
+          ],
+          "breakdown": {
+            "id": "breakdown:word:112:4:5",
+            "mode": "atomic",
+            "sourceText": "أَحَدٌ",
+            "parts": [
+              {
+                "id": "breakdown:word:112:4:5:part:whole",
+                "order": 1,
+                "sourceText": "أَحَدٌ",
+                "displayText": "أَحَدٌ",
+                "label": "Whole word",
+                "meaning": "One · uniquely One",
+                "kind": "whole"
+              }
+            ]
+          }
         }
       ]
     }
-  ]
+  ],
+  "teachingEntries": {
+    "lesson:qul": {
+      "id": "lesson:qul",
+      "meaning": "Say",
+      "type": "Command verb",
+      "root": "ق و ل",
+      "rootPicture": "say · speak · tell · state",
+      "construction": "قُلْ",
+      "components": [],
+      "grammar": "A command addressed to one male; Arabic understands the ‘you’ from the verb form.",
+      "sentenceRole": "Introduces what the Prophet ﷺ is commanded to declare.",
+      "recognitionClue": "A command can contain its subject without a separate word for ‘you.’",
+      "forms": [
+        {
+          "form": "قَالَ",
+          "meaning": "He said",
+          "difference": "past tense"
+        },
+        {
+          "form": "يَقُولُ",
+          "meaning": "He says",
+          "difference": "present tense"
+        },
+        {
+          "form": "نَقُولُ",
+          "meaning": "We say",
+          "difference": "نَ points to we"
+        },
+        {
+          "form": "قُلْ",
+          "meaning": "Say!",
+          "difference": "command to one male"
+        }
+      ],
+      "takeaway": "The root stays connected to speaking while the form tells us who speaks and whether it is a statement or command."
+    },
+    "lesson:huwa": {
+      "id": "lesson:huwa",
+      "meaning": "He",
+      "type": "Independent pronoun",
+      "root": "",
+      "rootPicture": "pointing to a male third person",
+      "construction": "هُوَ",
+      "components": [],
+      "grammar": "This pronoun identifies the one being described before the sentence continues.",
+      "sentenceRole": "Points to Allah before the descriptions that follow.",
+      "recognitionClue": "هُوَ means ‘he’; هِيَ means ‘she.’",
+      "forms": [
+        {
+          "form": "أَنَا",
+          "meaning": "I",
+          "difference": "first-person singular"
+        },
+        {
+          "form": "أَنْتَ",
+          "meaning": "You",
+          "difference": "second-person masculine"
+        },
+        {
+          "form": "هُوَ",
+          "meaning": "He",
+          "difference": "third-person masculine"
+        },
+        {
+          "form": "هُمْ",
+          "meaning": "They",
+          "difference": "third-person plural"
+        }
+      ],
+      "takeaway": "Pronoun forms change according to who is being spoken about."
+    },
+    "lesson:allah": {
+      "id": "lesson:allah",
+      "meaning": "Allah",
+      "type": "Proper name",
+      "root": "أ ل ه",
+      "rootPicture": "deity · worship · the One worshipped",
+      "construction": "ٱللَّهُ",
+      "components": [],
+      "grammar": "This is Allah’s unique proper name. The ending here fits its position in the sentence.",
+      "sentenceRole": "Names the One being described as uniquely One.",
+      "recognitionClue": "The written proper name ٱللَّه is recognised as one complete name.",
+      "forms": [
+        {
+          "form": "إِلَٰه",
+          "meaning": "a deity or god",
+          "difference": "common noun"
+        },
+        {
+          "form": "ٱلْإِلَٰه",
+          "meaning": "the deity",
+          "difference": "definite expression"
+        },
+        {
+          "form": "ٱللَّه",
+          "meaning": "Allah",
+          "difference": "unique proper name"
+        },
+        {
+          "form": "إِلَٰهِيّ",
+          "meaning": "divine",
+          "difference": "related adjective"
+        }
+      ],
+      "takeaway": "Allah is the unique proper name; related words discuss deity or divinity but are not interchangeable with it."
+    },
+    "lesson:ahad": {
+      "id": "lesson:ahad",
+      "meaning": "One · uniquely One",
+      "type": "Noun / adjective",
+      "root": "أ ح د",
+      "rootPicture": "one · single · unique · undivided",
+      "construction": "أَحَدٌ",
+      "components": [],
+      "grammar": "Here the word describes Allah’s complete and unmatched oneness; in another context the same form can mean anyone.",
+      "sentenceRole": "Gives the central description of the āyah.",
+      "recognitionClue": "Context matters: أَحَد can mean ‘one,’ ‘anyone’ or ‘no one.’",
+      "forms": [
+        {
+          "form": "أَحَد",
+          "meaning": "one / anyone",
+          "difference": "context determines sense"
+        },
+        {
+          "form": "وَاحِد",
+          "meaning": "one",
+          "difference": "ordinary counting"
+        },
+        {
+          "form": "وَحْدَهُ",
+          "meaning": "alone / by Himself",
+          "difference": "attached expression"
+        }
+      ],
+      "takeaway": "The root carries oneness while the sentence determines the exact nuance."
+    },
+    "lesson:al-samad": {
+      "id": "lesson:al-samad",
+      "meaning": "The One upon whom all depend",
+      "type": "Definite noun / title",
+      "root": "ص م د",
+      "rootPicture": "turn toward · depend upon · ultimate aim · firmness",
+      "construction": "ٱلـ + صَّمَدُ",
+      "components": [
+        {
+          "text": "ٱلـ",
+          "label": "the",
+          "meaning": "makes the title definite"
+        },
+        {
+          "text": "صَّمَدُ",
+          "label": "the depended-upon One",
+          "meaning": "ultimate aim and support"
+        }
+      ],
+      "grammar": "The definite article makes the title specific. The root carries the picture of turning deliberately toward a goal or one depended upon.",
+      "sentenceRole": "Describes Allah as the One all creation needs while He needs none.",
+      "recognitionClue": "The opening ٱلـ gives the sense of ‘the.’",
+      "forms": [
+        {
+          "form": "صَمَدَ إِلَيْهِ",
+          "meaning": "He turned toward him",
+          "difference": "verbal expression"
+        },
+        {
+          "form": "صَمْد",
+          "meaning": "aim or direction",
+          "difference": "related noun"
+        },
+        {
+          "form": "ٱلصَّمَد",
+          "meaning": "the One all turn to",
+          "difference": "Qur’anic title"
+        }
+      ],
+      "takeaway": "The root picture centres on deliberate turning and dependence; the title identifies the ultimate One depended upon."
+    },
+    "lesson:lam": {
+      "id": "lesson:lam",
+      "meaning": "Did not / does not",
+      "type": "Negative grammar word",
+      "root": "",
+      "rootPicture": "completed negative action",
+      "construction": "لَمْ",
+      "components": [],
+      "grammar": "It negates a following present-form verb and changes the ending of that verb.",
+      "sentenceRole": "Negates the action that follows.",
+      "recognitionClue": "A verb after لَمْ often ends with a still sound or another jussive change.",
+      "forms": [
+        {
+          "form": "لَا",
+          "meaning": "not / does not",
+          "difference": "general or present negation"
+        },
+        {
+          "form": "لَنْ",
+          "meaning": "will not",
+          "difference": "future negation"
+        },
+        {
+          "form": "لَمْ",
+          "meaning": "did not",
+          "difference": "completed negative"
+        },
+        {
+          "form": "لَمَّا",
+          "meaning": "not yet",
+          "difference": "up to now"
+        }
+      ],
+      "takeaway": "Arabic uses different negative words depending on time and sentence structure."
+    },
+    "lesson:yalid": {
+      "id": "lesson:yalid",
+      "meaning": "He begets",
+      "type": "Present-form verb made jussive",
+      "root": "و ل د",
+      "rootPicture": "birth · child · parenthood · bring forth",
+      "construction": "يَ + لِدْ",
+      "components": [
+        {
+          "text": "يَ",
+          "label": "he",
+          "meaning": "third-person masculine marker"
+        },
+        {
+          "text": "لِدْ",
+          "label": "beget",
+          "meaning": "birth-related action"
+        }
+      ],
+      "grammar": "The normal present form is يَلِدُ. After لَمْ, the ending becomes still: يَلِدْ.",
+      "sentenceRole": "Names the first denied action.",
+      "recognitionClue": "The root و ل د appears in words connected to birth, children and parents.",
+      "forms": [
+        {
+          "form": "وَلَدَ",
+          "meaning": "He begot",
+          "difference": "past active"
+        },
+        {
+          "form": "يَلِدُ",
+          "meaning": "He begets",
+          "difference": "present active"
+        },
+        {
+          "form": "يَلِدْ",
+          "meaning": "He beget after لَمْ",
+          "difference": "jussive ending"
+        },
+        {
+          "form": "مَوْلُود",
+          "meaning": "one born",
+          "difference": "passive-related noun"
+        }
+      ],
+      "takeaway": "The root stays connected to birth while the form shows the doer, time and sentence condition."
+    },
+    "lesson:walam": {
+      "id": "lesson:walam",
+      "meaning": "And did not",
+      "type": "Connector plus negative word",
+      "root": "",
+      "rootPicture": "joining a second negative clause",
+      "construction": "وَ + لَمْ",
+      "components": [
+        {
+          "text": "وَ",
+          "label": "and",
+          "meaning": "joins the clause"
+        },
+        {
+          "text": "لَمْ",
+          "label": "did not",
+          "meaning": "negates the action"
+        }
+      ],
+      "grammar": "Arabic writes the connector directly onto the negative word.",
+      "sentenceRole": "Connects the second denied action to the first.",
+      "recognitionClue": "وَ attached to a word usually contributes ‘and.’",
+      "forms": [
+        {
+          "form": "لَمْ",
+          "meaning": "did not",
+          "difference": "without connector"
+        },
+        {
+          "form": "وَلَمْ",
+          "meaning": "and did not",
+          "difference": "وَ added"
+        },
+        {
+          "form": "فَلَمْ",
+          "meaning": "so did not",
+          "difference": "فَ added"
+        }
+      ],
+      "takeaway": "A short attached connector changes how the negative statement joins what came before."
+    },
+    "lesson:yulad": {
+      "id": "lesson:yulad",
+      "meaning": "He is born",
+      "type": "Passive present-form verb made jussive",
+      "root": "و ل د",
+      "rootPicture": "birth · child · parenthood · bring forth",
+      "construction": "يُ + ولَدْ",
+      "components": [
+        {
+          "text": "يُ",
+          "label": "passive he",
+          "meaning": "passive present opening"
+        },
+        {
+          "text": "ولَدْ",
+          "label": "born",
+          "meaning": "birth action received"
+        }
+      ],
+      "grammar": "This is passive: the subject receives the action. After لَمْ, the ending becomes still.",
+      "sentenceRole": "Names the second denied action.",
+      "recognitionClue": "A vowel change inside a verb may switch it from active to passive.",
+      "forms": [
+        {
+          "form": "وَلَدَ",
+          "meaning": "He begot",
+          "difference": "past active"
+        },
+        {
+          "form": "وُلِدَ",
+          "meaning": "He was born",
+          "difference": "past passive"
+        },
+        {
+          "form": "يُولَدُ",
+          "meaning": "He is born",
+          "difference": "present passive"
+        },
+        {
+          "form": "يُولَدْ",
+          "meaning": "He be born after لَمْ",
+          "difference": "passive jussive"
+        }
+      ],
+      "takeaway": "The active form describes producing offspring; the passive form describes being born."
+    },
+    "lesson:yakun": {
+      "id": "lesson:yakun",
+      "meaning": "He / it was or existed",
+      "type": "Jussive present-form verb",
+      "root": "ك و ن",
+      "rootPicture": "be · exist · become · occur",
+      "construction": "يَكُونُ → يَكُنْ",
+      "components": [],
+      "grammar": "The ordinary present form is يَكُونُ. After لَمْ, the long weak letter drops and the word becomes يَكُنْ.",
+      "sentenceRole": "Forms the existence statement being denied.",
+      "recognitionClue": "Weak-letter verbs may change internally after words such as لَمْ.",
+      "forms": [
+        {
+          "form": "كَانَ",
+          "meaning": "He / it was",
+          "difference": "past"
+        },
+        {
+          "form": "يَكُونُ",
+          "meaning": "He / it is",
+          "difference": "present"
+        },
+        {
+          "form": "يَكُنْ",
+          "meaning": "He / it be after a jussive",
+          "difference": "weak letter removed"
+        },
+        {
+          "form": "كُنْ",
+          "meaning": "Be!",
+          "difference": "command"
+        }
+      ],
+      "takeaway": "The root carries being and existence while grammar can shorten the visible form."
+    },
+    "lesson:lahu": {
+      "id": "lesson:lahu",
+      "meaning": "For Him / belonging to Him",
+      "type": "Preposition with attached pronoun",
+      "root": "",
+      "rootPicture": "direction or belonging to a person",
+      "construction": "لِ + هُ",
+      "components": [
+        {
+          "text": "لِ",
+          "label": "for / to",
+          "meaning": "preposition"
+        },
+        {
+          "text": "هُ",
+          "label": "Him",
+          "meaning": "attached pronoun"
+        }
+      ],
+      "grammar": "The preposition and pronoun join into one word. Together they mean ‘for Him’ or ‘belonging to Him.’",
+      "sentenceRole": "Identifies Allah as the One to whom no equal can be assigned.",
+      "recognitionClue": "Attached هُ often means ‘him’ or ‘his.’",
+      "forms": [
+        {
+          "form": "لِي",
+          "meaning": "for me",
+          "difference": "ي = me"
+        },
+        {
+          "form": "لَنَا",
+          "meaning": "for us",
+          "difference": "نَا = us"
+        },
+        {
+          "form": "لَهُ",
+          "meaning": "for him",
+          "difference": "هُ = him"
+        },
+        {
+          "form": "لَهُمْ",
+          "meaning": "for them",
+          "difference": "هُمْ = them"
+        }
+      ],
+      "takeaway": "The preposition remains while the attached pronoun changes the person."
+    },
+    "lesson:kufuwan": {
+      "id": "lesson:kufuwan",
+      "meaning": "Equal · comparable · equivalent",
+      "type": "Noun / adjective",
+      "root": "ك ف أ",
+      "rootPicture": "equal · match · counterpart",
+      "construction": "كُفُوًا",
+      "components": [],
+      "grammar": "The word describes someone or something that could match or equal another. Its ending fits its role in this sentence.",
+      "sentenceRole": "Names the type of equal that is completely denied.",
+      "recognitionClue": "The root family concerns equivalence or suitability.",
+      "forms": [
+        {
+          "form": "كُفْء",
+          "meaning": "equal / match",
+          "difference": "common base form"
+        },
+        {
+          "form": "كُفُوًا",
+          "meaning": "an equal",
+          "difference": "sentence ending here"
+        },
+        {
+          "form": "أَكْفَاء",
+          "meaning": "equals / peers",
+          "difference": "plural"
+        }
+      ],
+      "takeaway": "The forms remain connected to matching and equivalence."
+    }
+  },
+  "volumeReferences": ["volume:final-six-surahs"]
 }

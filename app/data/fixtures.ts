@@ -14,12 +14,18 @@ export type LessonComponent = {
     | "stem"
     | "suffix"
     | "article"
+    | "preposition"
     | "ending"
     | "connector"
+    | "subject-marker"
+    | "object-pronoun"
+    | "possessive-pronoun"
+    | "other"
     | "whole";
 };
 
 export type WordBreakdownPart = {
+  id: string;
   order: number;
   sourceText: string;
   displayText: string;
@@ -29,6 +35,8 @@ export type WordBreakdownPart = {
 };
 
 export type WordBreakdown = {
+  id: string;
+  mode: "atomic" | "segmented";
   sourceText: string;
   parts: WordBreakdownPart[];
 };
@@ -81,7 +89,7 @@ export type Surah = {
   transliteration: string;
   englishLabel: string;
   ayahCount: number;
-  status: "complete" | "source-only";
+  status: "complete" | "custom-partial" | "source-only";
   description: string;
   ayahs: Ayah[];
 };
@@ -256,9 +264,12 @@ export function getWordBreakdown(
 }
 
 const audhuBreakdown: WordBreakdown = {
+  id: "breakdown:114:1:2",
+  mode: "segmented",
   sourceText: "أَعُوذُ",
   parts: [
     {
+      id: "breakdown:114:1:2:part:prefix-a",
       order: 1,
       sourceText: "أَ",
       displayText: "أَـ",
@@ -267,6 +278,7 @@ const audhuBreakdown: WordBreakdown = {
       kind: "prefix",
     },
     {
+      id: "breakdown:114:1:2:part:stem-udhu",
       order: 2,
       sourceText: "عُوذُ",
       displayText: "عُوذُ",

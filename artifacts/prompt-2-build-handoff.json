@@ -1,0 +1,345 @@
+{
+  "handoff": {
+    "title": "Prompt 2 Build Handoff — Fact Collection",
+    "status": "fact_collection_only",
+    "productionBuildStarted": false,
+    "contentMigrated": false,
+    "schemaChanged": false,
+    "databaseStarted": false,
+    "browserTestingRun": false,
+    "authoritativeAudit": [
+      "artifacts/prompt-2-handoff/word-breakdown-audit.md",
+      "artifacts/prompt-2-handoff/word-breakdown-audit.json"
+    ]
+  },
+  "repository": {
+    "root": "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode",
+    "branch": "agent/rtl-lesson-redesign",
+    "latestCommit": "5c1dab70ecbd7b13c47d42645281e8e711b93155",
+    "latestCommitMessage": "Finalize lesson alignment and word breakdowns",
+    "remote": "https://github.com/Sahimc/learnarabiceasymode.git",
+    "pushedLatestCommit": true,
+    "dirty": true,
+    "trackedImplementationChangesAtInspection": 0,
+    "untrackedArtifactAreas": [
+      "artifacts/prompt-2-handoff/",
+      "artifacts/screenshots/"
+    ],
+    "packageManager": "npm",
+    "lockfile": "package-lock.json",
+    "nodeRecorded": "v20.17.0",
+    "npmRecorded": "10.9.0",
+    "declaredNodeEngine": ">=22.13.0",
+    "secretsIncluded": false
+  },
+  "prototype": {
+    "publicNoAuth": true,
+    "dataSource": "app/data/fixtures.ts",
+    "implementedViews": [
+      "public home",
+      "surah browser",
+      "lesson",
+      "presentation",
+      "presentation word detail",
+      "HTML/CSS print preview"
+    ],
+    "prototypeOnlyOrMissing": [
+      "PostgreSQL-backed lesson reads",
+      "external provider import/refresh",
+      "audio playback and metadata",
+      "search/root/pattern/morphology indexes",
+      "API routes",
+      "production PDF/EPUB generation",
+      "server-side user progress"
+    ],
+    "settings": {
+      "storageKey": "qawt:lesson-settings",
+      "fields": [
+        "showRoot",
+        "showTransliteration",
+        "largeArabic",
+        "largeEnglish",
+        "expandedExplanations"
+      ],
+      "persisted": true,
+      "presentationConsumesLessonSettings": false,
+      "decisionNeeded": true
+    },
+    "progress": {
+      "storageKey": "qawt:completed",
+      "serverSide": false,
+      "accountsRequired": false
+    }
+  },
+  "routes": {
+    "current": [
+      "/",
+      "/surahs",
+      "/learn/[surah]/[ayah]",
+      "/presentation?surah=&ayah=",
+      "/presentation/[surah]/[ayah]/word/[position]",
+      "/print"
+    ],
+    "plannedNotImplemented": [
+      "/api/health",
+      "/api/search",
+      "roots index",
+      "patterns index"
+    ]
+  },
+  "content": {
+    "surahs": [
+      { "number": 109, "ayahs": 6, "occurrences": 27, "status": "source-only" },
+      { "number": 110, "ayahs": 3, "occurrences": 19, "status": "source-only" },
+      { "number": 111, "ayahs": 5, "occurrences": 23, "status": "source-only" },
+      { "number": 112, "ayahs": 4, "occurrences": 15, "status": "custom-starter" },
+      { "number": 113, "ayahs": 5, "occurrences": 23, "status": "custom-starter" },
+      { "number": 114, "ayahs": 6, "occurrences": 20, "status": "custom-starter" }
+    ],
+    "totalAyahs": 27,
+    "totalVisibleOccurrences": 127,
+    "sourceOnlyOccurrences": 69,
+    "customOccurrences": 58,
+    "mappingState": "visible occurrences resolve to intended fixture entries, but custom teaching completeness is not achieved",
+    "sourceOnlyRule": "Do not invent custom WordBreakdown or teaching content for Sūrahs 109–111 in the initial release; display exact source content with a polished source-only/incomplete state.",
+    "migrationRequirement": {
+      "customOccurrencesRequiringMigration": 56,
+      "safeWholeWordFallbacks": 29,
+      "invalidOrIncompleteLegacy": 18,
+      "completeLegacyComponentRecords": 9,
+      "mustMigrateDuringPrompt2": true,
+      "mustMigrateDuringThisHandoff": false
+    },
+    "specificMigrations": [
+      "قُلْ -> explicit atomic record; no fabricated split",
+      "مِن and فِي -> explicit rootless atomic records",
+      "أَعُوذُ -> segmented أَ + عُوذُ",
+      "بِرَبِّ -> segmented بِ + رَبِّ",
+      "وَلَمْ -> segmented وَ + لَمْ",
+      "لَّهُۥ -> corrected canonical reconstruction; not incomplete لِ + هُ",
+      "وَٱلنَّاسِ -> occurrence-specific وَ + ٱلنَّاسِ",
+      "ٱلنَّفَّاثَاتِ -> complete reviewed segmentation",
+      "shared مِن/مِنَ and ٱلنَّاسِ -> preserve occurrence context"
+    ]
+  },
+  "wordBreakdown": {
+    "auditTotals": {
+      "authoredValidAtomic": 0,
+      "effectiveAtomicFallback": 29,
+      "validSegmented": 2,
+      "missing": 98,
+      "invalidOrIncomplete": 18,
+      "completeLegacyComponentOccurrences": 9,
+      "explicitPackageOccurrenceOverrides": 2,
+      "fixtureOccurrenceOverrides": 0,
+      "readyForLockedPrompt2Contract": false
+    },
+    "validSegmentedOccurrences": [
+      "word:113:1:2",
+      "word:114:1:2"
+    ],
+    "typeFile": "app/data/fixtures.ts",
+    "currentType": {
+      "partFields": [
+        "order",
+        "sourceText",
+        "displayText",
+        "label",
+        "meaning",
+        "kind"
+      ],
+      "breakdownFields": ["sourceText", "parts"],
+      "kindValues": ["prefix", "stem", "suffix", "article", "ending", "connector", "whole"],
+      "explicitMode": false,
+      "stablePartId": false,
+      "occurrenceOverride": true,
+      "sharedLessonBreakdown": true,
+      "legacyFallback": true
+    },
+    "authoredAudhuContract": {
+      "sourceText": "أَعُوذُ",
+      "parts": [
+        {
+          "order": 1,
+          "sourceText": "أَ",
+          "displayText": "أَـ",
+          "label": "I",
+          "meaning": "the person doing the action",
+          "kind": "prefix"
+        },
+        {
+          "order": 2,
+          "sourceText": "عُوذُ",
+          "displayText": "عُوذُ",
+          "label": "seek refuge",
+          "meaning": "the main verb stem",
+          "kind": "stem"
+        }
+      ],
+      "displayJoiningLineChangesCanonicalSource": false
+    },
+    "requiredProductionContract": [
+      "mode must be atomic or segmented",
+      "sourceText must equal the complete canonical visible word",
+      "displayText is presentation-only",
+      "every part needs a stable part ID",
+      "parts require contiguous unique order",
+      "every part needs sourceText, displayText, label, meaning, and kind",
+      "ordered sourceText values must reconstruct sourceText exactly after agreed normalisation",
+      "atomic records are explicit one-part records, including simple and rootless words",
+      "segmented records are reserved for internally meaningful components",
+      "shared breakdowns and occurrence-level overrides must be supported",
+      "invalid completed custom data must fail the package transaction",
+      "legacy fallback may exist only as transitional prototype behavior"
+    ],
+    "schemaAssessment": {
+      "file": "content-import/schema/word.schema.json",
+      "supportsAtomicAndSegmentedModes": "no explicit mode; inferred from part count",
+      "supportsStablePartIds": false,
+      "supportsOrderedParts": true,
+      "enforcesUniqueContiguousOrder": false,
+      "supportsSourceText": true,
+      "supportsDisplayText": true,
+      "supportsLabel": true,
+      "supportsMeaning": true,
+      "supportsKind": true,
+      "supportsOccurrenceLevelOverride": true,
+      "supportsSharedTeachingBreakdownContract": false
+    },
+    "sharedReviewCandidates": [
+      "lesson:wa",
+      "lesson:min",
+      "lesson:ahad",
+      "lesson:nas",
+      "lesson:allah"
+    ]
+  },
+  "packages": {
+    "directories": "content-import/surahs/109-al-kafirun through content-import/surahs/114-an-nas",
+    "filesPerSurah": ["manifest.json", "surah.json"],
+    "sourceOnlyPackageShape": "flat package with source word strings",
+    "customPackageShape": "flat word records with id, position, arabic, teachingId and only two explicit audhu breakdowns",
+    "packageSchema": "content-import/schema/word.schema.json only; no package.schema.json",
+    "validator": false,
+    "importer": false,
+    "transactionWrapper": false,
+    "packageToFixtureMismatch": [
+      "packages use teachingId while fixtures use sharedLessonId and inline/shared lesson data",
+      "packages do not yet carry full lesson, grammar, forms, drills, sentence maps, provenance, or provider contract",
+      "UI reads fixtures rather than package JSON"
+    ]
+  },
+  "database": {
+    "plannedDocumentation": "docs/database-architecture.md",
+    "actualImplementation": {
+      "dbSchema": "placeholder",
+      "runtimeExample": "Cloudflare D1-style binding path",
+      "drizzleDialect": "sqlite",
+      "productionPostgreSQL": false,
+      "migrations": false,
+      "wordBreakdownTables": false,
+      "sharedBreakdownSupport": false,
+      "occurrenceOverrideSupport": false
+    },
+    "requiredPrompt2Work": [
+      "choose PostgreSQL hosting/runtime",
+      "add shared breakdown and occurrence override model",
+      "add WordBreakdownPart ordering and reconstruction constraints",
+      "add package/import records and transaction boundary",
+      "write migrations before production import"
+    ]
+  },
+  "sources": {
+    "researchDocument": "docs/source-research.md",
+    "quranFoundation": "planned credentialed source for content, words, translations, transliteration, recitation and audio metadata",
+    "tanzil": "planned local canonical Arabic text and attribution",
+    "quranicArabicCorpus": "planned morphology, roots, lemmas, grammar and syntax evidence",
+    "quranMorph": "secondary morphology source to evaluate",
+    "translations": "currently authored fixture strings; licensing/redistribution approval not encoded",
+    "fonts": "CSS fallback stack only; no bundled dedicated Quranic font or @font-face",
+    "audio": "not connected",
+    "print": "HTML/CSS preview only; no Paged.js or Vivliostyle pipeline"
+  },
+  "tests": {
+    "files": [
+      "tests/content-mapping.test.mjs",
+      "tests/rendered-html.test.mjs"
+    ],
+    "recordedCommand": "npm test",
+    "recordedResult": "production build passed and 5 tests passed before this fact-only task",
+    "rerunForHandoff": false,
+    "coverageGaps": [
+      "all 127 occurrence audit",
+      "explicit atomic/segmented mode",
+      "stable part IDs and unique contiguous ordering",
+      "shared breakdown and occurrence override isolation",
+      "special migrations and rootless words",
+      "invalid package transaction rollback",
+      "settings persistence and print independence",
+      "approved PDF renderer behavior"
+    ]
+  },
+  "documentation": {
+    "productionPlan": "docs/prompt-2-production-plan.md",
+    "acceptance": "docs/prompt-2-acceptance.md",
+    "contentImportDesign": "docs/content-import-design.md",
+    "databaseArchitecture": "docs/database-architecture.md",
+    "sourceResearch": "docs/source-research.md",
+    "acceptanceGaps": [
+      "explicit mode atomic|segmented",
+      "stable part IDs",
+      "unique contiguous ordering as a schema/import rule",
+      "shared breakdown and occurrence override database contract",
+      "56 custom occurrence migration requirement",
+      "invalid package transaction failure"
+    ]
+  },
+  "phaseStatus": {
+    "P0": "partial — source/environment decisions unresolved",
+    "P1": "partial — prototype foundation exists",
+    "P2": "not_started — no production PostgreSQL schema/migrations",
+    "P3": "partial — starter JSON and word schema only",
+    "P4": "not_started — no provider adapters",
+    "P5": "not_started — no importer/transaction validator",
+    "P6": "partial — fixture helpers only",
+    "P7": "partial — public prototype exists",
+    "P8": "partial — browser print preview only",
+    "P9": "partial — focused checks only",
+    "P10": "not_started — no production import",
+    "P11": "not_started — no deploy/observe work",
+    "P12": "not_started — this report is the prerequisite handoff"
+  },
+  "ownerInputs": [
+    "PostgreSQL hosting and deployment environment",
+    "Quran.Foundation credentials and refresh/import permissions",
+    "translation, Arabic text, morphology, audio and font licensing approvals",
+    "final print renderer and PDF/EPUB release scope",
+    "commit/push decision for untracked audit, screenshots and handoff files"
+  ],
+  "prompt2": {
+    "readyToWrite": false,
+    "readyToExecuteProductionBuild": false,
+    "reason": "The handoff can be reviewed, but production execution requires owner decisions and the schema/importer contract must be implemented before the 56 custom-occurrence migration.",
+    "firstContentGate": "Every complete custom teaching occurrence in Sūrahs 112–114 must have a valid explicit WordBreakdown before PostgreSQL insertion.",
+    "sourceOnlyGate": "Sūrahs 109–111 remain source-only until a later authored-content scope.",
+    "transactionGate": "Invalid completed custom breakdowns fail the package transaction and cannot enter canonical production data."
+  },
+  "importantFiles": [
+    "docs/prompt-2-build-handoff.md",
+    "artifacts/prompt-2-build-handoff.json",
+    "package.json",
+    "content-import/schema/word.schema.json",
+    "app/data/fixtures.ts",
+    "docs/prompt-2-production-plan.md",
+    "docs/prompt-2-acceptance.md",
+    "artifacts/prompt-2-handoff/word-breakdown-audit.md",
+    "artifacts/prompt-2-handoff/word-breakdown-audit.json",
+    "docs/content-import-design.md",
+    "docs/database-architecture.md",
+    "docs/source-research.md",
+    "tests/content-mapping.test.mjs",
+    "tests/rendered-html.test.mjs",
+    "artifacts/screenshots/"
+  ],
+  "shareLocation": "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode"
+}

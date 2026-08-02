@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://word-tree.local/schema/surah.schema.json",
+  "title": "Qur’anic Arabic Word Tree sūrah metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "number",
+    "name",
+    "arabicName",
+    "transliteration",
+    "englishLabel"
+  ],
+  "properties": {
+    "number": { "type": "integer", "minimum": 1, "maximum": 114 },
+    "name": { "type": "string", "minLength": 1 },
+    "arabicName": { "type": "string", "minLength": 1 },
+    "transliteration": { "type": "string", "minLength": 1 },
+    "englishLabel": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" }
+  }
+}
