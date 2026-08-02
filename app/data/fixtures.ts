@@ -85,6 +85,63 @@ const lesson = (
   takeaway,
 });
 
+const normalizeArabicForm = (value: string) =>
+  value.normalize("NFC").replace(/[\u0640\s]/g, "");
+
+const normalizeArabicBase = (value: string) =>
+  normalizeArabicForm(value).replace(/[\u064B-\u065F\u0670]/g, "");
+
+const normalizeFormMeaning = (value: string) =>
+  value.toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ");
+
+export function orderLessonForms(lesson: WordLesson, word: WordOccurrence) {
+  const target = normalizeArabicForm(word.arabic);
+  const baseTarget = normalizeArabicBase(word.arabic);
+  const gloss = normalizeFormMeaning(word.gloss);
+
+  return lesson.forms
+    .map((form, index) => {
+      const candidate = normalizeArabicForm(form.form);
+      const baseCandidate = normalizeArabicBase(form.form);
+      const meaning = normalizeFormMeaning(form.meaning);
+      const exactMatch = candidate === target;
+      const boundaryMatch =
+        candidate.startsWith(target) || target.startsWith(candidate);
+      const baseExactMatch = baseCandidate === baseTarget;
+      const baseBoundaryMatch =
+        baseCandidate.startsWith(baseTarget) ||
+        baseTarget.startsWith(baseCandidate);
+      const basePartialMatch =
+        baseCandidate.includes(baseTarget) ||
+        baseTarget.includes(baseCandidate);
+      const glossMatch = gloss
+        .split(" ")
+        .filter((term) => term.length > 2)
+        .filter((term) => meaning.includes(term)).length;
+
+      return {
+        form,
+        index,
+        score:
+          (exactMatch
+            ? 12000
+            : boundaryMatch
+              ? 10000
+              : baseExactMatch
+                ? 9000
+                : baseBoundaryMatch
+                  ? 8000
+                  : basePartialMatch
+                    ? 7000
+                    : 0) +
+          Math.min(candidate.length, target.length) +
+          glossMatch * 100,
+      };
+    })
+    .sort((left, right) => right.score - left.score || left.index - right.index)
+    .map((item) => item.form);
+}
+
 const sharedLessons: Record<string, WordLesson> = {
   qul: lesson(
     "lesson:qul",

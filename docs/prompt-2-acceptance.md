@@ -23,6 +23,7 @@ Prompt 2 is complete only when every item below is checked against the running a
 - [ ] Mobile layout is usable at 360px width.
 - [ ] Tablet layout is usable at 768px width.
 - [ ] Desktop layout is usable at 1280px width.
+- [ ] Ayah navigation labels say `Āyah x` and no lesson route has horizontal overflow or overlapping controls at mobile, tablet or desktop widths.
 - [ ] Word order matches source records.
 - [ ] Arabic word controls and lesson content render right-to-left, with the English gloss below each word.
 - [ ] Full āyah Arabic and English translation are centered, and the selected word metadata is centered beneath it.

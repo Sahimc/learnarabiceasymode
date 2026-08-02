@@ -1619,6 +1619,202 @@ p {
   }
 }
 
+/* Centered lesson hierarchy and explicit navigation controls. */
+.presentation-control {
+  background: #f4f7f1 !important;
+  border: 1px solid var(--line) !important;
+  color: var(--teal-dark) !important;
+  font-size: 10px !important;
+  padding: 7px 9px !important;
+  text-decoration: none;
+}
+.presentation-control:hover {
+  background: var(--teal-pale) !important;
+  border-color: #bedcd0 !important;
+}
+.lesson-ayah-nav {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  padding: 9px 0;
+}
+.lesson-ayah-nav button {
+  background: transparent;
+  border: 0;
+  color: var(--teal);
+  cursor: pointer;
+  font-size: 10px;
+  padding: 3px 5px;
+  white-space: nowrap;
+}
+.lesson-ayah-nav button:first-child {
+  justify-self: end;
+}
+.lesson-ayah-nav button:last-child {
+  justify-self: start;
+}
+.lesson-ayah-nav button:hover {
+  color: var(--teal-dark);
+}
+.lesson-ayah-nav button:disabled {
+  color: #b9c0bb;
+  cursor: default;
+}
+.lesson-ayah-nav strong {
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  color: var(--teal-dark);
+  font-size: 11px;
+  min-width: 0;
+  padding: 0 15px;
+  text-align: center;
+  white-space: nowrap;
+}
+.ayah-item {
+  gap: 8px;
+}
+.ayah-index {
+  min-width: 43px;
+  white-space: nowrap;
+}
+.section-heading {
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  text-align: center;
+}
+.section-heading h5 {
+  margin-top: 4px;
+}
+.lesson-section {
+  text-align: center;
+}
+.root-top-grid {
+  grid-template-columns: 1fr;
+}
+.detail-card {
+  text-align: center;
+}
+.detail-arabic {
+  text-align: center;
+}
+.construction {
+  text-align: center;
+}
+.lesson-detail-stack {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
+}
+.grammar-lead {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 680px;
+  text-align: center;
+}
+.grammar-row {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+  text-align: center;
+}
+.grammar-row > strong,
+.grammar-row > div {
+  grid-column: auto;
+  grid-row: auto;
+  text-align: center;
+}
+.grammar-row > strong {
+  font-size: 25px;
+}
+.grammar-row b {
+  display: block;
+}
+.grammar-row p {
+  margin-top: 4px;
+}
+.sarf-section .form-table {
+  display: grid;
+  gap: 7px;
+}
+.form-row {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  min-height: 69px;
+  padding: 9px 8px;
+  text-align: center;
+}
+.form-row strong,
+.form-row span,
+.form-row small {
+  display: block;
+  text-align: center;
+}
+.form-row strong {
+  font-size: 24px;
+}
+.form-row span {
+  font-size: 12px;
+}
+.form-row small {
+  font-size: 10px;
+}
+.takeaway {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 680px;
+  text-align: center;
+}
+.takeaway span {
+  margin: 0;
+}
+.takeaway p {
+  color: inherit;
+  font-family: Georgia, serif;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+@media (max-width: 780px) {
+  .ayah-list {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(67px, 1fr));
+    overflow: visible;
+  }
+  .ayah-item {
+    justify-content: center;
+    min-width: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+  .ayah-index {
+    min-width: 0;
+  }
+  .lesson-ayah-nav {
+    gap: 6px;
+  }
+  .lesson-ayah-nav strong {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .lesson-ayah-nav button {
+    font-size: 9px;
+  }
+}
+
 /* Lesson clarity pass: Arabic stays RTL, while the learning path stays one vertical sequence. */
 .lesson-tools {
   font-size: 11px;
@@ -2320,6 +2516,153 @@ p {
     grid-column: 2;
   }
 }
+/* Final lesson layout guard: keep every teaching stage centered and single-column. */
+.lesson-canvas,
+.lesson-section,
+.lesson-detail-stack,
+.grammar-breakdown,
+.form-table,
+.grammar-row,
+.form-row,
+.detail-card,
+.root-picture-card,
+.takeaway {
+  min-width: 0;
+}
+.section-heading {
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  text-align: center;
+}
+.section-heading > div {
+  min-width: 0;
+  text-align: center;
+}
+.root-top-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+.detail-card,
+.detail-card p,
+.detail-arabic,
+.construction,
+.type-value,
+.grammar-lead,
+.grammar-row,
+.grammar-row > strong,
+.grammar-row > div,
+.grammar-row b,
+.grammar-row p,
+.form-row,
+.form-row strong,
+.form-row span,
+.form-row small,
+.takeaway,
+.takeaway p {
+  text-align: center;
+}
+.detail-arabic,
+.construction {
+  margin-left: auto;
+  margin-right: auto;
+}
+.grammar-row {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+}
+.grammar-row > strong,
+.grammar-row > div {
+  grid-column: auto;
+  grid-row: auto;
+}
+.grammar-row b {
+  display: block;
+}
+.form-row {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+.form-row strong,
+.form-row span,
+.form-row small {
+  display: block;
+}
+.takeaway {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.takeaway p {
+  margin: 0;
+  max-width: 680px;
+}
+.lesson-topline,
+.lesson-topline > div,
+.lesson-tools,
+.lesson-ayah-nav,
+.ayah-heading,
+.word-select-heading,
+.word-focus-head {
+  min-width: 0;
+}
+.lesson-kicker,
+.lesson-status,
+.presentation-control,
+.lesson-tools,
+.lesson-ayah-nav button,
+.lesson-ayah-nav strong {
+  overflow-wrap: anywhere;
+}
+.lesson-ayah-nav button,
+.lesson-ayah-nav strong {
+  min-width: 0;
+}
+@media (max-width: 780px) {
+  .lesson-topline {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .lesson-topline > div:first-child {
+    min-width: 0;
+  }
+  .lesson-tools {
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .lesson-ayah-nav {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  }
+  .lesson-ayah-nav button:first-child {
+    justify-self: end;
+  }
+  .lesson-ayah-nav button:last-child {
+    justify-self: start;
+  }
+  .ayah-heading {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 16px;
+  }
+  .ayah-heading > div {
+    flex: 0 1 auto;
+    width: 100%;
+  }
+  .ayah-label {
+    left: auto;
+    position: static;
+    top: auto;
+    transform: none;
+  }
+}
+
 @media print {
   .print-page {
     background: #fff;

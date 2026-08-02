@@ -7,6 +7,7 @@ import {
   getProgressKey,
   getSurah,
   getWordLesson,
+  orderLessonForms,
   surahs,
   type Surah,
   type WordOccurrence,
@@ -457,9 +458,7 @@ export function PrototypeApp({
                     setSelectedWordIndex(0);
                   }}
                 >
-                  <span className="ayah-index">
-                    {String(item.number).padStart(2, "0")}
-                  </span>
+                  <span className="ayah-index">Āyah {item.number}</span>
                   <span className="ayah-preview" dir="rtl">
                     {item.arabic}
                   </span>
@@ -539,12 +538,32 @@ export function PrototypeApp({
                   </div>
                 </details>
                 <Link
+                  className="presentation-control"
                   href={`/presentation?surah=${surah.number}&ayah=${ayah.number}`}
                 >
                   Presentation ↗
                 </Link>
               </div>
             </div>
+            <nav className="lesson-ayah-nav" aria-label="Āyah navigation">
+              <button
+                type="button"
+                onClick={() => stepAyah("previous")}
+                disabled={selectedAyah === 1}
+              >
+                ← Previous
+              </button>
+              <strong>
+                Āyah {selectedAyah} of {surah.ayahCount}
+              </strong>
+              <button
+                type="button"
+                onClick={() => stepAyah("next")}
+                disabled={selectedAyah === surah.ayahCount}
+              >
+                Next →
+              </button>
+            </nav>
             <div className="ayah-heading">
               <span className="ayah-label">
                 {String(ayah.number).padStart(2, "0")}
@@ -787,6 +806,7 @@ export function PresentationWordView({
   }
 
   const sectionNames = ["Whole word", "Root", "Grammar", "Ṣarf"];
+  const orderedForms = orderLessonForms(lesson, word);
   const nextSection = () =>
     setSectionIndex((value) => Math.min(value + 1, sectionNames.length - 1));
   const previousSection = () =>
@@ -888,7 +908,7 @@ export function PresentationWordView({
               What stays recognisable?
             </p>
             <div className="presentation-form-list">
-              {lesson.forms.map((item) => (
+              {orderedForms.map((item) => (
                 <div key={`${item.form}-${item.meaning}`}>
                   <strong dir="rtl">{item.form}</strong>
                   <span>{item.meaning}</span>
@@ -949,6 +969,7 @@ function WordFocus({
   expandedExplanations: boolean;
 }) {
   const hasComponents = lesson.components.length > 0;
+  const orderedForms = orderLessonForms(lesson, word);
   const grammarItems = hasComponents
     ? lesson.components
     : [
@@ -1102,13 +1123,9 @@ function WordFocus({
             </div>
           </div>
           <div className="form-table">
-            {lesson.forms.map((item, index) => (
+            {orderedForms.map((item, index) => (
               <div
-                className={
-                  index === lesson.forms.length - 1
-                    ? "form-row current"
-                    : "form-row"
-                }
+                className={index === 0 ? "form-row current" : "form-row"}
                 key={`${item.form}-${item.meaning}`}
               >
                 <strong dir="rtl">{item.form}</strong>
@@ -1118,10 +1135,10 @@ function WordFocus({
             ))}
           </div>
           {expandedExplanations && (
-            <p className="takeaway">
+            <div className="takeaway">
               <span>Takeaway</span>
-              {lesson.takeaway}
-            </p>
+              <p>{lesson.takeaway}</p>
+            </div>
           )}
         </section>
       </div>
