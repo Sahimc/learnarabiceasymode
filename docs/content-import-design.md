@@ -58,12 +58,14 @@ The Zod package schema and semantic validator must check:
 5. Word positions are contiguous and ordered.
 6. Every word has exact Arabic text and a stable occurrence ID.
 7. Every complete word has meaning, type, construction, grammar, sentence role, recognition clue and at least one form-family entry.
-8. Every component has an order, text, label and meaning.
-9. Every repeated-word reference points to a valid shared teaching ID.
-10. Every drill points to an existing scope and has an answer.
-11. Provider records retain provider name, version/date, source ID and raw-record checksum.
-12. Tanzil text is not silently normalised or rewritten.
-13. Unknown fields fail validation unless the package schema explicitly allows an extension namespace.
+8. Every authored word breakdown has a sourceText equal to the complete word, and its ordered parts concatenate to that sourceText.
+9. Every breakdown part stores sourceText, displayText, label, meaning and kind. displayText may add a joining line such as `أَـ`, but sourceText must remain the exact Qur’anic segment.
+10. Legacy or incomplete component data must never silently hide the remainder of a word; the application falls back to the complete word and the validator reports the missing breakdown for authoring.
+11. Every repeated-word reference points to a valid shared teaching ID.
+12. Every drill points to an existing scope and has an answer.
+13. Provider records retain provider name, version/date, source ID and raw-record checksum.
+14. Tanzil text is not silently normalised or rewritten.
+15. Unknown fields fail validation unless the package schema explicitly allows an extension namespace.
 
 ## Import commands
 

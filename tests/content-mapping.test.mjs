@@ -4,6 +4,29 @@ import test from "node:test";
 
 const root = new URL("../", import.meta.url);
 
+test("authored breakdowns cover the complete word and preserve display joins", async () => {
+  for (const directory of ["113-al-falaq", "114-al-nas"]) {
+    const packageData = JSON.parse(
+      await readFile(
+        new URL(`content-import/surahs/${directory}/surah.json`, root),
+        "utf8",
+      ),
+    );
+    const word = packageData.ayahs[0].words[1];
+    assert.equal(word.arabic, "أَعُوذُ");
+    assert.equal(word.breakdown.sourceText, word.arabic);
+    assert.deepEqual(
+      word.breakdown.parts.map((part) => part.sourceText),
+      ["أَ", "عُوذُ"],
+    );
+    assert.equal(
+      word.breakdown.parts.map((part) => part.sourceText).join(""),
+      word.breakdown.sourceText,
+    );
+    assert.equal(word.breakdown.parts[0].displayText, "أَـ");
+  }
+});
+
 test("complete starter packages keep each word mapped to a teaching lesson", async () => {
   const directories = ["112-al-ikhlas", "113-al-falaq", "114-al-nas"];
 

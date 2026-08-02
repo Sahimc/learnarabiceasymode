@@ -26,6 +26,7 @@ Prompt 2 is complete only when every item below is checked against the running a
 - [ ] Ayah navigation labels say `Āyah x` and no lesson route has horizontal overflow or overlapping controls at mobile, tablet or desktop widths.
 - [ ] Word order matches source records.
 - [ ] Arabic word controls and lesson content render right-to-left, with the English gloss below each word.
+- [ ] Every authored word breakdown covers the complete source word; attached prefixes use a display-only joining line without changing source text.
 - [ ] Full āyah Arabic and English translation are centered, and the selected word metadata is centered beneath it.
 - [ ] Lesson progress explicitly distinguishes `Āyah x of y` from `Word x of y`.
 - [ ] The selected-word audio control is a clear `Listen` control rather than an ambiguous loading spinner.

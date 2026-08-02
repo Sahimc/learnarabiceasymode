@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://word-tree.local/schema/word.schema.json",
+  "title": "Word Tree word record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "position", "arabic", "teachingId"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "position": { "type": "integer", "minimum": 1 },
+    "arabic": { "type": "string", "minLength": 1 },
+    "teachingId": { "type": "string", "pattern": "^lesson:.+" },
+    "breakdown": {
+      "$ref": "#/$defs/wordBreakdown"
+    }
+  },
+  "$defs": {
+    "wordBreakdown": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceText", "parts"],
+      "properties": {
+        "sourceText": { "type": "string", "minLength": 1 },
+        "parts": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/breakdownPart" }
+        }
+      }
+    },
+    "breakdownPart": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "order",
+        "sourceText",
+        "displayText",
+        "label",
+        "meaning",
+        "kind"
+      ],
+      "properties": {
+        "order": { "type": "integer", "minimum": 1 },
+        "sourceText": { "type": "string", "minLength": 1 },
+        "displayText": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "meaning": { "type": "string", "minLength": 1 },
+        "kind": {
+          "enum": [
+            "prefix",
+            "stem",
+            "suffix",
+            "article",
+            "ending",
+            "connector",
+            "whole"
+          ]
+        }
+      }
+    }
+  }
+}

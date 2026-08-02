@@ -4,6 +4,35 @@ export type LessonForm = {
   difference: string;
 };
 
+export type LessonComponent = {
+  text: string;
+  displayText?: string;
+  label: string;
+  meaning: string;
+  kind?:
+    | "prefix"
+    | "stem"
+    | "suffix"
+    | "article"
+    | "ending"
+    | "connector"
+    | "whole";
+};
+
+export type WordBreakdownPart = {
+  order: number;
+  sourceText: string;
+  displayText: string;
+  label: string;
+  meaning: string;
+  kind: LessonComponent["kind"];
+};
+
+export type WordBreakdown = {
+  sourceText: string;
+  parts: WordBreakdownPart[];
+};
+
 export type WordLesson = {
   id: string;
   meaning: string;
@@ -11,7 +40,8 @@ export type WordLesson = {
   root: string;
   rootPicture: string;
   construction: string;
-  components: { text: string; label: string; meaning: string }[];
+  components: LessonComponent[];
+  breakdown?: WordBreakdown;
   grammar: string;
   sentenceRole: string;
   recognitionClue: string;
@@ -29,6 +59,7 @@ export type WordOccurrence = {
   lesson?: WordLesson;
   occurrenceRole?: string;
   sourceRoot?: string;
+  breakdown?: WordBreakdown;
 };
 
 export type Ayah = {
@@ -69,7 +100,8 @@ const lesson = (
   recognitionClue: string,
   takeaway: string,
   items: LessonForm[],
-  components: { text: string; label: string; meaning: string }[] = [],
+  components: LessonComponent[] = [],
+  breakdown?: WordBreakdown,
 ): WordLesson => ({
   id,
   meaning,
@@ -78,6 +110,7 @@ const lesson = (
   rootPicture,
   construction,
   components,
+  breakdown,
   grammar,
   sentenceRole,
   recognitionClue,
@@ -141,6 +174,108 @@ export function orderLessonForms(lesson: WordLesson, word: WordOccurrence) {
     .sort((left, right) => right.score - left.score || left.index - right.index)
     .map((item) => item.form);
 }
+
+export function validateWordBreakdown(
+  word: WordOccurrence,
+  breakdown: WordBreakdown,
+) {
+  const errors: string[] = [];
+  const sourceText = normalizeArabicForm(breakdown.sourceText);
+  const targetText = normalizeArabicForm(word.arabic);
+  const composedText = breakdown.parts
+    .slice()
+    .sort((left, right) => left.order - right.order)
+    .map((part) => normalizeArabicForm(part.sourceText))
+    .join("");
+
+  if (sourceText !== targetText) {
+    errors.push("sourceText does not match the complete Qur’anic word");
+  }
+  if (composedText !== sourceText) {
+    errors.push("parts do not concatenate to sourceText");
+  }
+  if (
+    breakdown.parts.length === 0 ||
+    breakdown.parts.some(
+      (part, index) =>
+        part.order !== index + 1 ||
+        !part.sourceText ||
+        !part.displayText ||
+        !part.label ||
+        !part.meaning ||
+        !part.kind,
+    )
+  ) {
+    errors.push("parts must be ordered and fully described");
+  }
+
+  return errors;
+}
+
+export function getWordBreakdown(
+  word: WordOccurrence,
+  lesson: WordLesson,
+): LessonComponent[] {
+  const authoredBreakdown = word.breakdown ?? lesson.breakdown;
+  if (authoredBreakdown) {
+    const errors = validateWordBreakdown(word, authoredBreakdown);
+    if (errors.length > 0) {
+      throw new Error(
+        `Invalid word breakdown for ${word.id}: ${errors.join("; ")}`,
+      );
+    }
+    return authoredBreakdown.parts
+      .slice()
+      .sort((left, right) => left.order - right.order)
+      .map((part) => ({
+        text: part.sourceText,
+        displayText: part.displayText,
+        label: part.label,
+        meaning: part.meaning,
+        kind: part.kind,
+      }));
+  }
+
+  const legacySource = lesson.components.map((part) => part.text).join("");
+  if (
+    lesson.components.length > 0 &&
+    normalizeArabicForm(legacySource) === normalizeArabicForm(word.arabic)
+  ) {
+    return lesson.components;
+  }
+
+  return [
+    {
+      text: word.arabic,
+      displayText: word.arabic,
+      label: "Whole word",
+      meaning: lesson.meaning,
+      kind: "whole",
+    },
+  ];
+}
+
+const audhuBreakdown: WordBreakdown = {
+  sourceText: "أَعُوذُ",
+  parts: [
+    {
+      order: 1,
+      sourceText: "أَ",
+      displayText: "أَـ",
+      label: "I",
+      meaning: "the person doing the action",
+      kind: "prefix",
+    },
+    {
+      order: 2,
+      sourceText: "عُوذُ",
+      displayText: "عُوذُ",
+      label: "seek refuge",
+      meaning: "the main verb stem",
+      kind: "stem",
+    },
+  ],
+};
 
 const sharedLessons: Record<string, WordLesson> = {
   qul: lesson(
@@ -452,7 +587,14 @@ const sharedLessons: Record<string, WordLesson> = {
         difference: "derived noun",
       },
     ),
-    [{ text: "أَ", label: "I", meaning: "first-person marker" }],
+    audhuBreakdown.parts.map((part) => ({
+      text: part.sourceText,
+      displayText: part.displayText,
+      label: part.label,
+      meaning: part.meaning,
+      kind: part.kind,
+    })),
+    audhuBreakdown,
   ),
   birabbi: lesson(
     "lesson:birabbi",
@@ -1036,6 +1178,7 @@ const occurrence = (
   gloss: string,
   sharedLessonId: string,
   occurrenceRole?: string,
+  breakdown?: WordBreakdown,
 ): WordOccurrence => ({
   id,
   position,
@@ -1044,6 +1187,7 @@ const occurrence = (
   gloss,
   sharedLessonId,
   occurrenceRole,
+  breakdown,
 });
 
 const ayah = (

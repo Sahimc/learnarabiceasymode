@@ -6,9 +6,11 @@ import {
   getAyah,
   getProgressKey,
   getSurah,
+  getWordBreakdown,
   getWordLesson,
   orderLessonForms,
   surahs,
+  type LessonComponent,
   type Surah,
   type WordOccurrence,
 } from "./data/fixtures";
@@ -20,6 +22,33 @@ type PrototypeAppProps = {
   initialSurah?: number;
   initialAyah?: number;
 };
+
+function LessonBreakdownParts({
+  parts,
+  presentation = false,
+}: {
+  parts: LessonComponent[];
+  presentation?: boolean;
+}) {
+  return (
+    <div
+      className={
+        presentation ? "presentation-breakdown-parts" : "breakdown-parts"
+      }
+      dir="ltr"
+    >
+      {parts.map((component) => (
+        <span
+          className="breakdown-part"
+          key={`${component.text}-${component.label}`}
+        >
+          <b dir="rtl">{component.displayText ?? component.text}</b>
+          <small>{component.label}</small>
+        </span>
+      ))}
+    </div>
+  );
+}
 
 type LessonSettings = {
   showRoot: boolean;
@@ -807,6 +836,7 @@ export function PresentationWordView({
 
   const sectionNames = ["Whole word", "Root", "Grammar", "Ṣarf"];
   const orderedForms = orderLessonForms(lesson, word);
+  const breakdownParts = getWordBreakdown(word, lesson);
   const nextSection = () =>
     setSectionIndex((value) => Math.min(value + 1, sectionNames.length - 1));
   const previousSection = () =>
@@ -841,18 +871,11 @@ export function PresentationWordView({
             <p className="presentation-word-context">
               In this āyah: {word.gloss}
             </p>
-            {lesson.components.length > 0 && (
+            {breakdownParts.length > 0 && (
               <div className="presentation-breakdown">
                 <strong dir="rtl">{word.arabic}</strong>
                 <span aria-hidden="true">↓</span>
-                <b dir="rtl">
-                  {lesson.components.map((component, index) => (
-                    <span key={component.text}>
-                      {component.text}
-                      {index < lesson.components.length - 1 ? " + " : ""}
-                    </span>
-                  ))}
-                </b>
+                <LessonBreakdownParts parts={breakdownParts} presentation />
               </div>
             )}
           </div>
@@ -880,8 +903,8 @@ export function PresentationWordView({
             </span>
             <p className="presentation-section-copy">{lesson.grammar}</p>
             <div className="presentation-grammar-list">
-              {(lesson.components.length > 0
-                ? lesson.components
+              {(breakdownParts.length > 0
+                ? breakdownParts
                 : [
                     {
                       text: lesson.construction,
@@ -891,7 +914,9 @@ export function PresentationWordView({
                   ]
               ).map((component) => (
                 <div key={`${component.text}-${component.label}`}>
-                  <strong dir="rtl">{component.text}</strong>
+                  <strong dir="rtl">
+                    {component.displayText ?? component.text}
+                  </strong>
                   <span>{component.label}</span>
                   <small>{component.meaning}</small>
                 </div>
@@ -968,17 +993,19 @@ function WordFocus({
   showTransliteration: boolean;
   expandedExplanations: boolean;
 }) {
-  const hasComponents = lesson.components.length > 0;
+  const breakdownParts = getWordBreakdown(word, lesson);
+  const hasComponents = breakdownParts.length > 0;
   const orderedForms = orderLessonForms(lesson, word);
-  const grammarItems = hasComponents
-    ? lesson.components
-    : [
-        {
-          text: lesson.construction,
-          label: "Structure",
-          meaning: lesson.grammar,
-        },
-      ];
+  const grammarItems =
+    lesson.components.length > 0
+      ? breakdownParts
+      : [
+          {
+            text: lesson.construction,
+            label: "Structure",
+            meaning: lesson.grammar,
+          },
+        ];
 
   return (
     <section className="word-focus" aria-labelledby="word-focus-title">
@@ -1015,14 +1042,7 @@ function WordFocus({
           <span className="breakdown-arrow" aria-hidden="true">
             ↓
           </span>
-          <div className="breakdown-parts" dir="rtl">
-            {lesson.components.map((component, index) => (
-              <span key={component.text}>
-                <b>{component.text}</b>
-                {index < lesson.components.length - 1 && <i> + </i>}
-              </span>
-            ))}
-          </div>
+          <LessonBreakdownParts parts={breakdownParts} />
           <p>{lesson.meaning}</p>
         </div>
       )}
@@ -1101,7 +1121,9 @@ function WordFocus({
                 className="grammar-row"
                 key={`${component.text}-${component.label}`}
               >
-                <strong dir="rtl">{component.text}</strong>
+                <strong dir="rtl">
+                  {component.displayText ?? component.text}
+                </strong>
                 <div>
                   <b>{component.label}</b>
                   {expandedExplanations && <p>{component.meaning}</p>}
