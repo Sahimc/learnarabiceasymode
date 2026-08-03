@@ -77,3 +77,44 @@ test("mobile lesson has no uncontrolled horizontal overflow", async ({
   );
   expect(overflow).toBeLessThanOrEqual(1);
 });
+
+test("word breakdowns preserve Arabic right-to-left component order", async ({
+  page,
+}) => {
+  await page.goto("/learn/114/1");
+
+  const wordChip = page.locator(".word-chip").filter({ hasText: "أَعُوذُ" });
+  await wordChip.click();
+
+  const parts = page.locator(".selected-word-breakdown .breakdown-part");
+  await expect(parts).toHaveCount(2);
+  await expect(parts.first().locator("b")).toHaveText("أَـ");
+  await expect(parts.nth(1).locator("b")).toHaveText("عُوذُ");
+
+  const positions = await parts.evaluateAll((items) =>
+    items.map((item) => item.getBoundingClientRect().left),
+  );
+  expect(positions[0]).toBeGreaterThan(positions[1]);
+});
+
+test("presentation grammar and sarf rows are centered and readable", async ({
+  page,
+}) => {
+  await page.goto("/presentation/114/1/word/1");
+  const nextSection = page.locator(".presentation-next");
+  await nextSection.click();
+  await nextSection.click();
+
+  const grammarRow = page.locator(".presentation-grammar-list > div").first();
+  await expect(grammarRow).toHaveCSS("display", "flex");
+  await expect(grammarRow).toHaveCSS("text-align", "center");
+  await expect(grammarRow.locator("span")).toHaveCSS(
+    "font-size",
+    /^(17|18)px$/,
+  );
+
+  await nextSection.click();
+  const formRow = page.locator(".presentation-form-list > div").first();
+  await expect(formRow).toHaveCSS("display", "flex");
+  await expect(formRow).toHaveCSS("text-align", "center");
+});

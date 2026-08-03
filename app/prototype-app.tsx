@@ -35,7 +35,7 @@ function LessonBreakdownParts({
       className={
         presentation ? "presentation-breakdown-parts" : "breakdown-parts"
       }
-      dir="ltr"
+      dir="rtl"
     >
       {parts.map((component) => (
         <span
