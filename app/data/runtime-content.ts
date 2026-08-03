@@ -10,7 +10,10 @@ export async function getClientContent(
     all.find((surah) => surah.number === selectedNumber) ?? all[all.length - 1];
   const candidates =
     scope === "all" ? all : all.filter((surah) => surah.number >= 109);
-  return candidates.map((surah) =>
+  const visible = candidates.some((surah) => surah.number === selected.number)
+    ? candidates
+    : [selected, ...candidates];
+  return visible.map((surah) =>
     surah.number === selected.number ? selected : { ...surah, ayahs: [] },
   );
 }

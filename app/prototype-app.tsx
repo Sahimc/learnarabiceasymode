@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState, useSyncExternalStore } from "react";
+import { QuranSearch } from "./components/quran-search";
 import {
   getProgressKey,
   getWordBreakdown,
@@ -382,7 +383,7 @@ export function PrototypeApp({
                 Open the lesson <span>↓</span>
               </a>
               <Link className="text-action" href="/surahs">
-                Browse the six sūrahs <span>→</span>
+                Browse all surahs <span>→</span>
               </Link>
             </div>
           </div>
@@ -422,20 +423,28 @@ export function PrototypeApp({
             </p>
             <h2>Start with the whole word.</h2>
           </div>
-          <div className="workspace-summary">
-            <span>
-              <strong>{completeCount}</strong> complete starter sūrahs
-            </span>
-            <span className="summary-divider" />
-            <span>
-              <strong>0</strong> accounts required
-            </span>
+          <div className="workspace-heading-actions">
+            <div className="workspace-summary">
+              <span>
+                <strong>{completeCount}</strong> complete starter sūrahs
+              </span>
+              <span className="summary-divider" />
+              <span>
+                <strong>0</strong> accounts required
+              </span>
+            </div>
+            <Link className="workspace-all-link" href="/surahs">
+              View all surahs <span>→</span>
+            </Link>
           </div>
         </div>
 
+        {view === "surahs" && <QuranSearch />}
+
         <div className="surah-rail" aria-label="Sūrah selector">
           <div className="rail-label">
-            Starter scope <span>109–114</span>
+            {view === "surahs" ? "All sūrahs" : "Starter scope"}
+            <span>{view === "surahs" ? "1–114" : "109–114"}</span>
           </div>
           <div className="surah-cards">
             {visibleSurahs.map((item) => (
