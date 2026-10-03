@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "entries": [
+    {
+      "id": "breakdown-display-versus-source",
+      "problem": "A joining line or visual decoration changes the stored Arabic component.",
+      "safeguard": "Keep canonical sourceText separate from displayText and reconstruct only from sourceText."
+    },
+    {
+      "id": "incomplete-segmentation",
+      "problem": "Only a prefix or partial component is shown for a complete word.",
+      "safeguard": "Validate that ordered parts reconstruct the complete visible occurrence; use truthful atomic mode when a reviewed split is unavailable."
+    },
+    {
+      "id": "repeated-word-context",
+      "problem": "A repeated word inherits an unrelated occurrence explanation.",
+      "safeguard": "Reuse shared lexical data only where appropriate and retain occurrence-specific grammar, meaning and overrides."
+    },
+    {
+      "id": "placeholder-teaching",
+      "problem": "Labels such as Whole word or Main word are mistaken for reviewed analysis.",
+      "safeguard": "Reject placeholder labels for custom-complete content and block publication until reviewed data exists."
+    },
+    {
+      "id": "parallel-file-conflict",
+      "problem": "Multiple workers edit the same sūrah package or canonical database rows.",
+      "safeguard": "Workers write unique immutable packet revisions; one deterministic assembler and serialized importer own canonical writes."
+    }
+  ]
+}
