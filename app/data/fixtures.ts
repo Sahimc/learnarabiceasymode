@@ -227,15 +227,6 @@ export function getWordBreakdown(
   word: WordOccurrence,
   lesson: WordLesson,
 ): LessonComponent[] {
-  if (word.morphology?.segmentation?.length) {
-    return word.morphology.segmentation.map((part) => ({
-      text: part.sourceText,
-      displayText: part.displayText,
-      label: part.label,
-      meaning: part.meaning,
-      kind: part.kind,
-    }));
-  }
   const authoredBreakdown = word.breakdown ?? lesson.breakdown;
   if (authoredBreakdown) {
     const errors = validateWordBreakdown(word, authoredBreakdown);
@@ -256,23 +247,9 @@ export function getWordBreakdown(
       }));
   }
 
-  const legacySource = lesson.components.map((part) => part.text).join("");
-  if (
-    lesson.components.length > 0 &&
-    normalizeArabicForm(legacySource) === normalizeArabicForm(word.arabic)
-  ) {
-    return lesson.components;
-  }
-
-  return [
-    {
-      text: word.arabic,
-      displayText: word.arabic,
-      label: word.gloss || lesson.meaning,
-      meaning: word.gloss || lesson.meaning,
-      kind: "whole",
-    },
-  ];
+  throw new Error(
+    `Missing explicit WordBreakdown for custom word ${word.id}; provider or legacy fallback is not allowed.`,
+  );
 }
 
 const audhuBreakdown: WordBreakdown = {

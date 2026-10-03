@@ -3,6 +3,8 @@ import { expect, test } from "@playwright/test";
 test("public source and reviewed lesson routes remain usable", async ({
   page,
 }) => {
+  test.setTimeout(60_000);
+
   await page.goto("/");
   const browseAllSurahsLink = page.getByRole("link", {
     name: "Browse all surahs",
@@ -64,6 +66,29 @@ test("public source and reviewed lesson routes remain usable", async ({
   );
   await expect(page.locator("body")).not.toContainText("accounts required");
   await expect(page.locator(".current-surah-count")).toHaveText("6 āyāt");
+
+  await page.goto("/learn/111/1");
+  await expect(page.locator("body")).toContainText("Complete Word Tree");
+  await expect(page.locator("body")).not.toContainText(
+    "Custom content in progress",
+  );
+  await expect(page.locator("body")).toContainText("perished / was ruined");
+  await expect(
+    page.locator(".selected-word-breakdown .breakdown-part"),
+  ).toHaveCount(2);
+  await expect(page.locator(".selected-word-breakdown")).toContainText(
+    "feminine marker",
+  );
+  await page.locator(".word-chip").nth(4).click();
+  await expect(page.locator(".selected-word-breakdown")).toContainText(
+    "he perished",
+  );
+  await page.goto("/learn/111/5");
+  await expect(page.locator("body")).toContainText("twisted fibre");
+  await page.locator(".word-chip").nth(1).click();
+  await expect(page.locator(".selected-word-breakdown")).toContainText(
+    "her",
+  );
 
   await page.setViewportSize({ width: 390, height: 844 });
   const wordHeaderBounds = await page

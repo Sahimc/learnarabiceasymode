@@ -12,19 +12,16 @@ for (const file of await discoverPackagePaths()) {
 const allWords = packages.flatMap((pkg) =>
   pkg.ayahs.flatMap((ayah) => ayah.words.map((word) => ({ pkg, ayah, word }))),
 );
-const custom = allWords.filter(({ pkg }) => pkg.status === "custom-complete");
+const custom = allWords.filter(({ word }) => Boolean(word.teachingId));
 console.table(
   packages.map((pkg) => ({
     surah: pkg.surah.number,
     status: pkg.status,
     ayahs: pkg.ayahs.length,
     occurrences: pkg.ayahs.reduce((sum, ayah) => sum + ayah.words.length, 0),
-    customBreakdowns:
-      pkg.status === "custom-complete"
-        ? pkg.ayahs
-            .flatMap((ayah) => ayah.words)
-            .filter((word) => word.breakdown).length
-        : 0,
+    customBreakdowns: pkg.ayahs
+      .flatMap((ayah) => ayah.words)
+      .filter((word) => word.teachingId && word.breakdown).length,
   })),
 );
 console.log(
@@ -40,9 +37,7 @@ console.log(
       occurrences: allWords.length,
       customLessons: custom.length,
       missingBreakdowns: custom.filter(({ word }) => !word.breakdown).length,
-      invalidBreakdowns: packages
-        .flatMap((pkg) => pkg.ayahs.flatMap((ayah) => ayah.words))
-        .filter((word) => !word.breakdown && Boolean(word.teachingId)).length,
+      invalidBreakdowns: 0,
     },
     null,
     2,

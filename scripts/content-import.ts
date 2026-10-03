@@ -555,7 +555,7 @@ async function insertPackage(
         | WordBreakdown
         | undefined;
       const breakdown = word.teachingId
-        ? (morphologyByOccurrence.get(word.id) ?? incomingBreakdown)
+        ? (incomingBreakdown ?? morphologyByOccurrence.get(word.id))
         : incomingBreakdown;
       if (
         pkg.status === "custom-complete" &&

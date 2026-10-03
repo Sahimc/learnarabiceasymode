@@ -22,12 +22,10 @@ for (const file of selected) {
       (sum, ayah) => sum + ayah.words.length,
       0,
     );
-    if (result.package.status === "custom-complete")
-      customWords += result.package.ayahs.reduce(
-        (sum, ayah) =>
-          sum + ayah.words.filter((word) => word.teachingId).length,
-        0,
-      );
+    customWords += result.package.ayahs.reduce(
+      (sum, ayah) => sum + ayah.words.filter((word) => word.teachingId).length,
+      0,
+    );
   }
   if (result.errors.length) {
     totalErrors += result.errors.length;

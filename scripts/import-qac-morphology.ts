@@ -410,9 +410,9 @@ const analyses = occurrences.flatMap((occurrence) => {
     ? [{ occurrence, key, analysis: makeAnalysis(key, occurrence, segments) }]
     : [];
 });
-const custom = analyses.filter(
-  ({ occurrence }) => occurrence.status === "custom-complete",
-);
+// Provider morphology is evidence only. Authored WordBreakdowns are owned by
+// content packages and must not be replaced during a provider refresh.
+const custom: typeof analyses = [];
 
 await withTransaction(async (client) => {
   const sourceChecksum = crypto
@@ -574,6 +574,6 @@ await withTransaction(async (client) => {
 });
 
 console.log(
-  `Imported ${analyses.length} QAC morphology records and refreshed ${custom.length} custom surface breakdowns.`,
+  `Imported ${analyses.length} QAC morphology records; authored WordBreakdowns were left unchanged.`,
 );
 await pool.end();

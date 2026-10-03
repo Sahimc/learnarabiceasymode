@@ -51,13 +51,13 @@ export async function readPackage(filePath: string) {
 
 export function semanticErrors(pkg: SurahPackage) {
   const errors: string[] = [];
-  const expectedStatus =
-    pkg.surah.number >= 112 && pkg.surah.number <= 114
-      ? "custom-complete"
-      : "source-only";
-  if (pkg.status !== expectedStatus)
+  const allowedStatuses =
+    pkg.surah.number >= 111 && pkg.surah.number <= 114
+      ? ["custom-complete"]
+      : ["source-only", "custom-partial"];
+  if (!allowedStatuses.includes(pkg.status))
     errors.push(
-      `status should be ${expectedStatus} for sūrah ${pkg.surah.number}`,
+      `status should be one of ${allowedStatuses.join(", ")} for sūrah ${pkg.surah.number}`,
     );
   const seenAyahs = new Set<number>();
   for (const ayah of pkg.ayahs) {
@@ -71,13 +71,19 @@ export function semanticErrors(pkg: SurahPackage) {
       seenPositions.add(word.position);
       if (word.position !== [...seenPositions].sort((a, b) => a - b).length)
         errors.push(`${word.id}: word positions must be contiguous`);
-      if (pkg.status === "custom-complete") {
+      const hasCustomTeaching = Boolean(
+        word.teachingId || word.breakdown || word.breakdownOverride,
+      );
+      if (
+        pkg.status === "custom-complete" ||
+        (pkg.status === "custom-partial" && hasCustomTeaching)
+      ) {
         const resolvedBreakdown = word.breakdownOverride ?? word.breakdown;
         if (!word.teachingId)
-          errors.push(`${word.id}: custom-complete word is missing teachingId`);
+          errors.push(`${word.id}: custom teaching word is missing teachingId`);
         if (!resolvedBreakdown)
           errors.push(
-            `${word.id}: custom-complete word is missing explicit WordBreakdown`,
+            `${word.id}: custom teaching word is missing explicit WordBreakdown`,
           );
         if (word.teachingId && !pkg.teachingEntries[word.teachingId])
           errors.push(`${word.id}: missing teaching entry ${word.teachingId}`);
@@ -104,7 +110,7 @@ export function semanticErrors(pkg: SurahPackage) {
       }
     }
   }
-  if (pkg.status === "custom-complete") {
+  if (pkg.status === "custom-complete" || pkg.status === "custom-partial") {
     for (const [id, lesson] of Object.entries(pkg.teachingEntries))
       if (id !== lesson.id)
         errors.push(`teaching entry key ${id} does not match lesson id`);
