@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "1.0.0",
+  "draftId": "draft:packet:107:7-7:revision:1",
+  "packetId": "packet:107:7-7",
+  "sourceFingerprint": "420ab85989c57904de7fa4173adf41483e12c52a87301f99c87f71ac6ee4f626",
+  "knowledgeSnapshot": {
+    "snapshotId": "ffabdaa3cda73da9c03837131ceabaec2ba348914404725cb0d4b7eebd74fcff",
+    "version": "1.0.0",
+    "files": [
+      {
+        "path": "content-authoring/production-knowledge/knowledge-version.json",
+        "checksum": "31aedfc7a9316f665ca3b37bdfe8fd80010047315033b5e4fca0f4561fd9e681"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/form-families.json",
+        "checksum": "2ba13ff2e862b39cf955c459e1d15dbde29a1e05f548b7f0a2a817cd35907294"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/grammar-concepts.json",
+        "checksum": "7a950597fde0abb1cdcfc1f2f8cb8e1a2e9124aa584c823865f74c25258dabc2"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/particles.json",
+        "checksum": "44b87ade17fc3e43d15ff22384f509ca74a0fa2ec36212bb0c6fb27e5c81b818"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/terminology.json",
+        "checksum": "b0cabd6b4ad77f3c569572eca1982d289d6a40afc6b26078edb4e34cda42b0c4"
+      },
+      {
+        "path": "content-authoring/production-knowledge/lexical-registry/occurrence-exceptions.json",
+        "checksum": "68cc21608704da4e28ff5a6a1ad76b4104868b91d711c1212be4af48aa9684f9"
+      },
+      {
+        "path": "content-authoring/production-knowledge/lexical-registry/shared-lessons.json",
+        "checksum": "68cc21608704da4e28ff5a6a1ad76b4104868b91d711c1212be4af48aa9684f9"
+      },
+      {
+        "path": "content-authoring/production-knowledge/safeguards/common-problems.json",
+        "checksum": "ba934a2cfaf24171b31167f05d1527cbc276bb459cd050cf0a01c89c12a8cb9a"
+      },
+      {
+        "path": "content-authoring/production-knowledge/safeguards/reviewer-rules.json",
+        "checksum": "cb1dd530f2da3dec8165d65cca48b5b72e00c1b2aef28cab467c82bdf5c9149f"
+      },
+      {
+        "path": "content-authoring/production-knowledge/safeguards/source-policy.json",
+        "checksum": "be859c8cca897ed1d186816bdd591460ab20922084550466de34132647770dda"
+      },
+      {
+        "path": "content-import/sources/qac/morphology-overrides.json",
+        "checksum": "c70b8010c2b5f7df042967c0374af3b4c4b7f4c179f133c4e61ab021c1481f64"
+      }
+    ]
+  },
+  "revision": 1,
+  "status": "draft",
+  "createdBy": "worker-4",
+  "ayahs": [
+    {
+      "ayahId": "ayah:107:7",
+      "ayahLayers": {
+        "grammar": "A coordinated verbal clause: وَ links this final clause to the preceding description; يَمْنَعُونَ is a present-tense verb with an explicit masculine-plural subject marker, and ٱلْمَاعُونَ is its definite accusative object.",
+        "contextualMeaning": "And they withhold ordinary acts of help—the small, useful things people lend or do for one another.",
+        "sentenceMap": [
+          "وَيَمْنَعُونَ — coordinated verb phrase: and they withhold",
+          "ٱلْمَاعُونَ — definite direct object: the ordinary aid or small kindnesses"
+        ]
+      },
+      "words": [
+        {
+          "wordId": "word:107:7:1",
+          "teachingId": "teaching:107:7:1",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:107:7:1",
+              "mode": "segmented",
+              "sourceText": "وَيَمْنَعُونَ",
+              "parts": [
+                {
+                  "id": "breakdown:107:7:1:part:1",
+                  "order": 1,
+                  "sourceText": "وَ",
+                  "displayText": "وَ",
+                  "label": "and",
+                  "meaning": "and",
+                  "kind": "connector"
+                },
+                {
+                  "id": "breakdown:107:7:1:part:2",
+                  "order": 2,
+                  "sourceText": "يَمْنَعُ",
+                  "displayText": "يَمْنَعُ",
+                  "label": "verb stem",
+                  "meaning": "withholds or prevents",
+                  "kind": "stem"
+                },
+                {
+                  "id": "breakdown:107:7:1:part:3",
+                  "order": 3,
+                  "sourceText": "ونَ",
+                  "displayText": "ونَ",
+                  "label": "masculine plural subject marker",
+                  "meaning": "they, masculine plural",
+                  "kind": "subject-marker"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:7:1",
+              "meaning": "and they withhold or prevent",
+              "type": "present-tense verb with attached conjunction and subject marker",
+              "root": "م ن ع",
+              "rootPicture": "The root conveys holding something back or preventing access.",
+              "construction": "وَ (and) + يَمْنَعُ (he withholds or prevents) + ونَ (they, masculine plural).",
+              "grammar": "Form I imperfect verb, third-person masculine plural, active and indicative; the واو الجماعة is the explicit subject marker.",
+              "sentenceRole": "The coordinated predicate continuing the description of the heedless people; its subject is the masculine plural group understood from the preceding context.",
+              "recognitionClue": "A present verb ending in ـونَ commonly signals a third-person masculine plural subject, while وَ at the front means ‘and.’",
+              "forms": [
+                {
+                  "form": "Form I",
+                  "meaning": "basic verb stem: to withhold or prevent",
+                  "difference": "The root meaning is expressed directly in the basic stem without a derived-pattern prefix."
+                }
+              ],
+              "takeaway": "Recognize وَيَمْنَعُونَ as ‘and they withhold’: وَ joins the clause, and ـونَ identifies ‘they.’"
+            },
+            "occurrenceRole": "Coordinated verb phrase; the subject is the masculine plural people described in the preceding verses.",
+            "morphology": {
+              "root": "م ن ع",
+              "lemma": "مَنَعَ",
+              "pattern": "Form I imperfect",
+              "partOfSpeech": "verb",
+              "features": [
+                "person: third",
+                "number: masculine plural",
+                "tense: imperfect / present",
+                "mood: indicative",
+                "voice: active"
+              ],
+              "notes": "The initial وَ is a coordinating conjunction; the final ونَ carries the masculine-plural subject marking in this present-tense form."
+            },
+            "grammar": "A coordinated active imperfect verb in the third-person masculine plural; وَ connects it to the preceding clause and the attached plural marker supplies the subject.",
+            "meaning": "and they withhold or prevent",
+            "learnerConnections": [
+              "وَ commonly joins a new action or description to what came before.",
+              "The ending ـونَ is a strong recognition clue for a third-person masculine plural present verb."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Look for وَ at the beginning for ‘and’ and ـونَ at the end for ‘they’ in a present-tense verb.",
+              "explanation": "The stem يَمْنَعُ means ‘he withholds or prevents’; adding the masculine-plural ending changes the subject to ‘they,’ and وَ links the action to the previous description.",
+              "takeaway": "وَيَمْنَعُونَ = وَ + يَمْنَعُ + ونَ: and + withholds + they."
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:7:2",
+          "teachingId": "teaching:107:7:2",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:107:7:2",
+              "mode": "segmented",
+              "sourceText": "ٱلْمَاعُونَ",
+              "parts": [
+                {
+                  "id": "breakdown:107:7:2:part:1",
+                  "order": 1,
+                  "sourceText": "ٱلْ",
+                  "displayText": "ٱلْ",
+                  "label": "definite article",
+                  "meaning": "the",
+                  "kind": "article"
+                },
+                {
+                  "id": "breakdown:107:7:2:part:2",
+                  "order": 2,
+                  "sourceText": "مَاعُونَ",
+                  "displayText": "مَاعُونَ",
+                  "label": "noun stem",
+                  "meaning": "ordinary aid or small helpful necessities",
+                  "kind": "stem"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:7:2",
+              "meaning": "the ordinary aid or small kindnesses",
+              "type": "definite noun",
+              "root": "م ع ن",
+              "rootPicture": "The lexical root is associated with benefit or assistance; here the noun points to ordinary helpful things.",
+              "construction": "ٱلْ (the) + مَاعُونَ (ordinary aid or small helpful necessities).",
+              "grammar": "A definite noun in the accusative case, functioning as the direct object of يَمْنَعُونَ; the final ـَ reflects the accusative ending in this fully vocalized occurrence.",
+              "sentenceRole": "Definite direct object: it names the aid or small helpful things that they withhold.",
+              "recognitionClue": "ٱلْ at the beginning marks the noun as definite, ‘the’; the final ـَ is consistent with its object role here.",
+              "forms": [],
+              "takeaway": "ٱلْمَاعُونَ is ‘the ordinary aid’: identify ٱلْ as ‘the’ and let the clause show that this is what they withhold."
+            },
+            "occurrenceRole": "Definite direct object of يَمْنَعُونَ; it names the ordinary aid or small helpful things being withheld.",
+            "morphology": {
+              "root": "م ع ن",
+              "lemma": "مَاعُون",
+              "partOfSpeech": "noun",
+              "features": [
+                "definiteness: definite with ٱلْ",
+                "case: accusative",
+                "syntactic role: direct object"
+              ],
+              "notes": "The noun is read here in its Qur'anic context as ordinary aid or small helpful necessities; its broader lexical range should remain visible during review."
+            },
+            "grammar": "Definite accusative noun serving as the direct object of يَمْنَعُونَ.",
+            "meaning": "the ordinary aid or small kindnesses",
+            "learnerConnections": [
+              "ٱلْ marks definiteness: ‘the.’",
+              "The lexical meaning of الماعون is broader than one English noun; in this context it can be learned as ordinary aid or small helpful necessities."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Spot ٱلْ at the front as the definite article ‘the’; the noun follows it as one lexical unit.",
+              "explanation": "The word names useful, ordinary assistance or small things people help one another with. In the sentence it is the object of ‘they withhold.’",
+              "takeaway": "ٱلْمَاعُونَ = the ordinary aid; its role becomes clear because it follows the verb ‘they withhold.’"
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0.0",
+  "manifestId": "issues:packet:107:7-7:revision:1:packet:107:7-7:pedagogy:pedagogy-reviewer-1",
+  "packetId": "packet:107:7-7",
+  "draftId": "draft:packet:107:7-7:revision:1",
+  "revision": 1,
+  "scope": {"type":"packet","ayahIds":["ayah:107:7"]},
+  "status": "open",
+  "issues": [
+    {"id":"issue:packet:107:7-7:revision:1:pedagogy:001","code":"MISLEADING_MORPHEME_GLOSS","severity":"error","scopeId":"ayah:107:7","path":"ayahs[0].words[0].layers.teaching.takeaway","message":"The morpheme formula ends with the English sequence ‘and + withholds + they,’ which is not a usable learner translation and reverses the relationship between the Arabic stem and its plural subject marker.","requiredAction":"Rewrite the cue as وَ + يَمْنَعُ + ـونَ → and they withhold, and state that the English gloss is reordered rather than translating the suffix as a separate final word.","evidence":{"occurrence":"word:107:7:1","canonicalArabic":"وَيَمْنَعُونَ","draftText":"وَيَمْنَعُونَ = وَ + يَمْنَعُ + ونَ: and + withholds + they.","learnerRisk":"A beginner may memorize an ungrammatical English mapping or think the suffix means a separate word ‘they’ after the verb."}},
+    {"id":"issue:packet:107:7-7:revision:1:pedagogy:002","code":"TENSE_TERMINOLOGY_INCONSISTENCY","severity":"warning","scopeId":"ayah:107:7","path":"ayahs[0].words[0].layers.teaching.type","message":"This lesson calls يَمْنَعُونَ a present-tense verb, while the parallel authored lessons for يَحُضُّ and يُرَآءُونَ consistently call the same Arabic category imperfect. The inconsistency can make learners treat Arabic tense and English tense as identical categories.","requiredAction":"Use one label across the batch, preferably imperfect verb with a note that it is present-time in this context, and update the corresponding ayah-level and morphology wording if needed.","evidence":{"occurrence":"word:107:7:1","draftType":"present-tense verb with attached conjunction and subject marker","parallelDraftTypes":["imperfect verb, third-person masculine singular","imperfect verb"],"discipline":"terminology consistency"}}
+  ]
+}

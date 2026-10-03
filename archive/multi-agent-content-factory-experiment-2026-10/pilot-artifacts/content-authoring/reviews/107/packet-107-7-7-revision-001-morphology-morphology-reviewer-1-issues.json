@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "manifestId": "issues:packet:107:7-7:revision:1:packet:107:7-7:morphology:morphology-reviewer-1",
+  "packetId": "packet:107:7-7",
+  "draftId": "draft:packet:107:7-7:revision:1",
+  "revision": 1,
+  "scope": {
+    "type": "packet",
+    "ayahIds": ["ayah:107:7"]
+  },
+  "status": "open",
+  "issues": [
+    {
+      "id": "issue:packet:107:7-7:revision:1:morphology:001",
+      "code": "MORPHOLOGY_SUFFIX_ROLE_CONFLATED",
+      "severity": "error",
+      "scopeId": "word:107:7:1",
+      "path": "ayahs[0].words[0].layers.surfaceBreakdown.parts[2].label",
+      "message": "ونَ is labeled as the masculine-plural subject marker, conflating the attached subject wāw and the indicative nūn.",
+      "requiredAction": "Relabel or resplit the ending so the wāw subject pronoun and nūn indicative marker are distinguished while sourceText remains exact.",
+      "evidence": {
+        "ayahId": "ayah:107:7",
+        "occurrence": "وَيَمْنَعُونَ",
+        "provider": "quranic-arabic-corpus",
+        "providerRecordKey": "107:7:1"
+      }
+    },
+    {
+      "id": "issue:packet:107:7-7:revision:1:morphology:002",
+      "code": "MORPHOLOGY_SUFFIX_ROLE_CONFLATED",
+      "severity": "error",
+      "scopeId": "word:107:7:1",
+      "path": "ayahs[0].words[0].layers.morphology.notes",
+      "message": "The morphology note assigns the whole final ونَ sequence the masculine-plural subject function.",
+      "requiredAction": "Rewrite the note to identify the attached wāw as the subject pronoun/marker and nūn as the indicative marker.",
+      "evidence": {
+        "ayahId": "ayah:107:7",
+        "occurrence": "وَيَمْنَعُونَ",
+        "provider": "quranic-arabic-corpus",
+        "providerRecordKey": "107:7:1"
+      }
+    },
+    {
+      "id": "issue:packet:107:7-7:revision:1:morphology:003",
+      "code": "MORPHOLOGY_SUFFIX_ROLE_CONFLATED",
+      "severity": "error",
+      "scopeId": "word:107:7:1",
+      "path": "ayahs[0].words[0].layers.teaching.construction",
+      "message": "The construction glosses ونَ as ‘they, masculine plural’ instead of distinguishing the attached subject wāw from the indicative nūn.",
+      "requiredAction": "Revise the construction and dependent morphology-facing prose to distinguish وَ, the verb stem, the attached plural subject wāw, and the indicative nūn.",
+      "evidence": {
+        "ayahId": "ayah:107:7",
+        "occurrence": "وَيَمْنَعُونَ",
+        "provider": "quranic-arabic-corpus",
+        "providerRecordKey": "107:7:1"
+      }
+    }
+  ]
+}

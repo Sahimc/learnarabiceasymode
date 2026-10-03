@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "manifestId": "issues:packet:107:1-2:revision:1:packet:107:1-2:pedagogy:pedagogy-reviewer-1",
+  "packetId": "packet:107:1-2",
+  "draftId": "draft:packet:107:1-2:revision:1",
+  "revision": 1,
+  "scope": {
+    "type": "packet",
+    "ayahIds": ["ayah:107:1", "ayah:107:2"]
+  },
+  "status": "open",
+  "issues": [
+    {
+      "id": "issue:packet:107:1-2:revision:1:pedagogy:001",
+      "code": "TEACHING_ID_CONTEXT_COLLISION",
+      "severity": "error",
+      "scopeId": "ayah:107:2",
+      "path": "ayahs[1].words[1].teachingId",
+      "message": "The second occurrence of ٱلَّذِى reuses the first occurrence's teachingId even though its authored sentence role and learner takeaway are occurrence-specific. This can collapse the 107:2 context during lesson assembly or runtime lookup.",
+      "requiredAction": "Assign 107:2:2 an occurrence-specific teaching ID, or use an explicit shared lexical lesson plus an occurrence override so the identifying role after ذَٰلِكَ remains attached to this occurrence.",
+      "evidence": {"occurrence":"word:107:2:2","arabic":"ٱلَّذِى","currentTeachingId":"teaching:107:1:2:alladhi","comparison":"107:1:2 introduces the person being considered; 107:2:2 identifies ذَٰلِكَ through يَدُعُّ ٱلْيَتِيمَ.","breakdownScope":"occurrence"}
+    },
+    {
+      "id": "issue:packet:107:1-2:revision:1:pedagogy:002",
+      "code": "NONCANONICAL_LEARNER_EXAMPLE",
+      "severity": "warning",
+      "scopeId": "ayah:107:1",
+      "path": "ayahs[0].words[0].layers.teaching.construction",
+      "message": "The learner-facing construction writes رَأَيْتَ, while the canonical occurrence is أَرَءَيْتَ and the segmented stem is رَءَيْتَ. Without a normalization note, the learner sees an unexplained spelling change inside the same lesson.",
+      "requiredAction": "Use the canonical رَءَيْتَ in the Arabic construction, or explicitly label رَأَيْتَ as a normalized citation spelling and show how it corresponds to the preserved Qur'anic form.",
+      "evidence": {"occurrence":"word:107:1:1","canonicalArabic":"أَرَءَيْتَ","canonicalStemPart":"رَءَيْتَ","draftConstruction":"أَ + رَأَيْتَ"}
+    },
+    {
+      "id": "issue:packet:107:1-2:revision:1:pedagogy:003",
+      "code": "ROOT_NOTATION_INCONSISTENCY",
+      "severity": "warning",
+      "scopeId": "ayah:107:1",
+      "path": "ayahs[0].words[0].layers.teaching.root",
+      "message": "Root letters are formatted inconsistently across the seven-ayah batch: this field uses spaces (ر أ ي), while other authored fields use hyphens (ر-أ-ي, ص-ل-و, م ن ع). The same root therefore appears in two learner-facing conventions.",
+      "requiredAction": "Choose one root-letter separator and apply it consistently to every authored root, root picture, form entry, and learner connection in ayat 1–7.",
+      "evidence": {"currentValue":"ر أ ي","otherBatchValues":["ر-أ-ي","ص-ل-و","س-ه-و","م ن ع"],"discipline":"terminology consistency"}
+    },
+    {
+      "id": "issue:packet:107:1-2:revision:1:pedagogy:004",
+      "code": "NONSTANDARD_RECOGNITION_TERMINOLOGY",
+      "severity": "warning",
+      "scopeId": "ayah:107:2",
+      "path": "ayahs[1].words[3].layers.learnerConnections[0]",
+      "message": "The phrase sun-letter-free noun is not a clear learner recognition term and incorrectly puts the focus on the noun rather than on the article's pronunciation before ي.",
+      "requiredAction": "Replace it with a standard, concrete cue such as: ٱلْ is pronounced clearly here because ي is a moon letter; or omit the sun/moon-letter aside if it is not needed for this lesson.",
+      "evidence": {"occurrence":"word:107:2:4","canonicalArabic":"ٱلْيَتِيمَ","draftText":"Recognize ٱلْ as the definite article before a sun-letter-free noun.","learnerRisk":"The learner may not know whether the noun or article is being classified, or why the lām remains audible."}
+    }
+  ]
+}

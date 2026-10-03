@@ -1,0 +1,696 @@
+{
+  "schemaVersion": "1.0.0",
+  "draftId": "draft:packet:107:1-2:revision:1",
+  "packetId": "packet:107:1-2",
+  "sourceFingerprint": "eef97be82f350d43bb8c26b7aa779e87dd59d6f11f507d894f5990fce21e2038",
+  "knowledgeSnapshot": {
+    "snapshotId": "ffabdaa3cda73da9c03837131ceabaec2ba348914404725cb0d4b7eebd74fcff",
+    "version": "1.0.0",
+    "files": [
+      {
+        "path": "content-authoring/production-knowledge/knowledge-version.json",
+        "checksum": "31aedfc7a9316f665ca3b37bdfe8fd80010047315033b5e4fca0f4561fd9e681"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/form-families.json",
+        "checksum": "2ba13ff2e862b39cf955c459e1d15dbde29a1e05f548b7f0a2a817cd35907294"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/grammar-concepts.json",
+        "checksum": "7a950597fde0abb1cdcfc1f2f8cb8e1a2e9124aa584c823865f74c25258dabc2"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/particles.json",
+        "checksum": "44b87ade17fc3e43d15ff22384f509ca74a0fa2ec36212bb0c6fb27e5c81b818"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/terminology.json",
+        "checksum": "b0cabd6b4ad77f3c569572eca1982d289d6a40afc6b26078edb4e34cda42b0c4"
+      },
+      {
+        "path": "content-authoring/production-knowledge/lexical-registry/occurrence-exceptions.json",
+        "checksum": "68cc21608704da4e28ff5a6a1ad76b4104868b91d711c1212be4af48aa9684f9"
+      },
+      {
+        "path": "content-authoring/production-knowledge/lexical-registry/shared-lessons.json",
+        "checksum": "68cc21608704da4e28ff5a6a1ad76b4104868b91d711c1212be4af48aa9684f9"
+      },
+      {
+        "path": "content-authoring/production-knowledge/safeguards/common-problems.json",
+        "checksum": "ba934a2cfaf24171b31167f05d1527cbc276bb459cd050cf0a01c89c12a8cb9a"
+      },
+      {
+        "path": "content-authoring/production-knowledge/safeguards/reviewer-rules.json",
+        "checksum": "cb1dd530f2da3dec8165d65cca48b5b72e00c1b2aef28cab467c82bdf5c9149f"
+      },
+      {
+        "path": "content-authoring/production-knowledge/safeguards/source-policy.json",
+        "checksum": "be859c8cca897ed1d186816bdd591460ab20922084550466de34132647770dda"
+      },
+      {
+        "path": "content-import/sources/qac/morphology-overrides.json",
+        "checksum": "c70b8010c2b5f7df042967c0374af3b4c4b7f4c179f133c4e61ab021c1481f64"
+      }
+    ]
+  },
+  "revision": 1,
+  "status": "draft",
+  "createdBy": "worker-1",
+  "ayahs": [
+    {
+      "ayahId": "ayah:107:1",
+      "ayahLayers": {
+        "grammar": "A rhetorical question is formed by أَ attached to رَأَيْتَ, followed by a relative phrase: ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ. The relative clause identifies the person being considered.",
+        "contextualMeaning": "Have you considered the one who denies the Judgment or recompense?",
+        "sentenceMap": [
+          "أَ + رَأَيْتَ: rhetorical question, Have you considered?",
+          "ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ: the one who denies the Judgment or recompense"
+        ]
+      },
+      "words": [
+        {
+          "wordId": "word:107:1:1",
+          "teachingId": "teaching:107:1:1:araayta",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:1:1",
+              "mode": "segmented",
+              "sourceText": "أَرَءَيْتَ",
+              "parts": [
+                {
+                  "id": "breakdown:word:107:1:1:part:1",
+                  "order": 1,
+                  "sourceText": "أَ",
+                  "displayText": "أَ",
+                  "label": "interrogative hamza",
+                  "meaning": "do / did / have ...?",
+                  "kind": "prefix"
+                },
+                {
+                  "id": "breakdown:word:107:1:1:part:2",
+                  "order": 2,
+                  "sourceText": "رَءَيْتَ",
+                  "displayText": "رَءَيْتَ",
+                  "label": "perfect verb",
+                  "meaning": "you saw or considered",
+                  "kind": "stem"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:1:1:araayta",
+              "meaning": "Have you considered?",
+              "type": "verb with interrogative prefix",
+              "root": "ر أ ي",
+              "rootPicture": "The root ر-أ-ي centers on seeing, and by extension considering or recognizing.",
+              "construction": "أَ + رَأَيْتَ: an interrogative hamza attached to the perfect verb رَأَى.",
+              "grammar": "The verb is perfect, second person masculine singular; the initial أَ turns the clause into a question.",
+              "sentenceRole": "Main verb of the rhetorical question; the following relative phrase is what the listener is asked to consider.",
+              "recognitionClue": "An initial أَ before a verb often signals a yes-or-no question; the ending تَ marks you, masculine singular, in the perfect tense.",
+              "forms": [
+                {
+                  "form": "رَأَى (Form I)",
+                  "meaning": "to see or consider",
+                  "difference": "The attached أَ changes the verb into a question asking the listener to consider the case."
+                }
+              ],
+              "takeaway": "Read أَرَءَيْتَ as a prompt to reflect: Have you considered?"
+            },
+            "occurrenceRole": "Main verb of the rhetorical question.",
+            "morphology": {
+              "root": "ر أ ي",
+              "lemma": "رَأَى",
+              "pattern": "فَعَلَ (perfect stem)",
+              "partOfSpeech": "verb",
+              "features": [
+                "interrogative hamza أَ",
+                "perfect verb",
+                "second person masculine singular",
+                "weak final root radical in the lemma"
+              ],
+              "notes": "The interrogative hamza is written attached to the perfect verb; the context supports the sense Have you considered? rather than only the literal Have you seen?"
+            },
+            "grammar": "Interrogative أَ is prefixed to a perfect second-person masculine singular verb.",
+            "meaning": "Have you considered?",
+            "learnerConnections": [
+              "Recognize أَ at the beginning of a verb as a common interrogative marker.",
+              "Connect the ending تَ with a masculine singular you-form in the perfect tense."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Look first for the opening أَ, then read رَأَيْتَ as you saw/considered.",
+              "explanation": "The Quranic spelling joins the question marker to the verb, so the full word begins with a question even though the verb itself is رَأَيْتَ.",
+              "takeaway": "أَرَءَيْتَ = Have you considered?"
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:1:2",
+          "teachingId": "teaching:107:1:2:alladhi",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:1:2",
+              "mode": "atomic",
+              "sourceText": "ٱلَّذِى",
+              "parts": [
+                {
+                  "id": "breakdown:word:107:1:2:part:1",
+                  "order": 1,
+                  "sourceText": "ٱلَّذِى",
+                  "displayText": "ٱلَّذِى",
+                  "label": "relative pronoun",
+                  "meaning": "who / that",
+                  "kind": "whole"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:1:2:alladhi",
+              "meaning": "the one who / that which",
+              "type": "relative pronoun",
+              "root": "",
+              "rootPicture": "Rootless grammatical word: learn ٱلَّذِى as a fixed relative pronoun rather than searching for a triliteral root.",
+              "construction": "ٱلَّذِى is a fixed relative-pronoun form that introduces a describing clause.",
+              "grammar": "Definite relative pronoun, masculine singular; it introduces يُكَذِّبُ بِٱلدِّينِ and refers to the person being considered.",
+              "sentenceRole": "Introduces the relative clause that identifies the person under discussion.",
+              "recognitionClue": "The fixed form ٱلَّذِى commonly means who or that for one masculine referent.",
+              "forms": [],
+              "takeaway": "ٱلَّذِى links a noun or person to the clause that describes it: the one who..."
+            },
+            "occurrenceRole": "Relative-clause marker referring to the person being considered.",
+            "morphology": {
+              "lemma": "ٱلَّذِى",
+              "partOfSpeech": "relative pronoun",
+              "features": [
+                "definite",
+                "masculine singular",
+                "introduces a relative clause"
+              ],
+              "notes": "This is a fixed grammatical word with no productive triliteral root for learner analysis."
+            },
+            "grammar": "Masculine singular relative pronoun introducing the clause يُكَذِّبُ بِٱلدِّينِ.",
+            "meaning": "the one who",
+            "learnerConnections": [
+              "Recognize ٱلَّذِى as the singular masculine counterpart of a relative-pronoun pattern.",
+              "Use the following verb clause to identify the person introduced by ٱلَّذِى."
+            ],
+            "pedagogy": {
+              "recognitionClue": "When ٱلَّذِى appears, expect a describing clause immediately after it.",
+              "explanation": "It does not name an action by itself; it opens the who/that clause that follows.",
+              "takeaway": "ٱلَّذِى = the one who / that"
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:1:3",
+          "teachingId": "teaching:107:1:3:yukadhdhibu",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:1:3",
+              "mode": "atomic",
+              "sourceText": "يُكَذِّبُ",
+              "parts": [
+                {
+                  "id": "breakdown:word:107:1:3:part:1",
+                  "order": 1,
+                  "sourceText": "يُكَذِّبُ",
+                  "displayText": "يُكَذِّبُ",
+                  "label": "imperfect verb",
+                  "meaning": "he denies or calls false",
+                  "kind": "whole"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:1:3:yukadhdhibu",
+              "meaning": "he denies or calls false",
+              "type": "verb",
+              "root": "ك ذ ب",
+              "rootPicture": "The root ك-ذ-ب is associated with lying and treating a claim as false.",
+              "construction": "Form II imperfect: the initial ي marks the third-person masculine singular, and the doubled middle radical is visible in ذِّ.",
+              "grammar": "Imperfect indicative, active voice, third person masculine singular, Form II; it agrees with the masculine singular relative pronoun ٱلَّذِى.",
+              "sentenceRole": "Predicate of the relative clause introduced by ٱلَّذِى.",
+              "recognitionClue": "The initial ي marks a third-person imperfect verb, while the doubled middle consonant signals the Form II pattern.",
+              "forms": [
+                {
+                  "form": "كَذَبَ (Form I)",
+                  "meaning": "to lie",
+                  "difference": "Form II كَذَّبَ intensifies or causes the idea, giving deny or declare false rather than simply lie."
+                }
+              ],
+              "takeaway": "يُكَذِّبُ describes an ongoing act of rejecting something as false."
+            },
+            "occurrenceRole": "Predicate of the relative clause; its complement is بِٱلدِّينِ.",
+            "morphology": {
+              "root": "ك ذ ب",
+              "lemma": "كَذَّبَ",
+              "pattern": "فَعَّلَ / Form II",
+              "partOfSpeech": "verb",
+              "features": [
+                "imperfect",
+                "indicative",
+                "active voice",
+                "third person masculine singular",
+                "doubled middle radical"
+              ],
+              "notes": "The shadda on ذ is a visible clue to the doubled middle radical of Form II."
+            },
+            "grammar": "Imperfect indicative, third person masculine singular, active Form II verb agreeing with ٱلَّذِى.",
+            "meaning": "he denies / calls false",
+            "learnerConnections": [
+              "Connect initial يـ with a third-person masculine singular imperfect verb.",
+              "Use the doubled middle consonant to recognize the Form II pattern."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Find يـ at the front and the shadda on ذ in the middle.",
+              "explanation": "The word is not simply lie: the Form II pattern presents the subject as declaring the following matter false.",
+              "takeaway": "يُكَذِّبُ = he denies / calls false"
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:1:4",
+          "teachingId": "teaching:107:1:4:biddin",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:1:4",
+              "mode": "segmented",
+              "sourceText": "بِٱلدِّينِ",
+              "parts": [
+                {
+                  "id": "breakdown:word:107:1:4:part:1",
+                  "order": 1,
+                  "sourceText": "بِ",
+                  "displayText": "بِ",
+                  "label": "preposition",
+                  "meaning": "in / of / concerning",
+                  "kind": "preposition"
+                },
+                {
+                  "id": "breakdown:word:107:1:4:part:2",
+                  "order": 2,
+                  "sourceText": "ٱل",
+                  "displayText": "ٱل",
+                  "label": "definite article",
+                  "meaning": "the",
+                  "kind": "article"
+                },
+                {
+                  "id": "breakdown:word:107:1:4:part:3",
+                  "order": 3,
+                  "sourceText": "دِّينِ",
+                  "displayText": "دِّينِ",
+                  "label": "noun",
+                  "meaning": "judgment, recompense, or religion",
+                  "kind": "stem"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:1:4:biddin",
+              "meaning": "the Judgment or recompense",
+              "type": "preposition plus definite noun",
+              "root": "د ي ن",
+              "rootPicture": "The root د-ي-ن is associated with debt, judgment, and recompense; this context points to accountability before God.",
+              "construction": "بِ + ٱل + دِينِ: a preposition joined to the definite noun دِينِ.",
+              "grammar": "بِ is a preposition, so the definite masculine singular noun after it is genitive; the phrase is attached to يُكَذِّبُ.",
+              "sentenceRole": "Prepositional complement specifying what is denied.",
+              "recognitionClue": "Initial بِ often marks the matter a verb is directed toward, and the final kasra on دِينِ signals genitive in this occurrence.",
+              "forms": [],
+              "takeaway": "بِٱلدِّينِ identifies the matter being denied: the Judgment or recompense."
+            },
+            "occurrenceRole": "Prepositional complement of يُكَذِّبُ, specifying what is denied.",
+            "morphology": {
+              "root": "د ي ن",
+              "lemma": "دِين",
+              "pattern": "فِعْل",
+              "partOfSpeech": "preposition + noun",
+              "features": [
+                "بِ: preposition",
+                "ٱل: definite article",
+                "masculine singular noun",
+                "genitive after بِ"
+              ],
+              "notes": "The sun-letter pronunciation of the article before د is represented in the preserved canonical spelling ٱلدِّينِ; the learner breakdown keeps the article as a meaningful component."
+            },
+            "grammar": "بِ is a preposition followed by the definite noun دِينِ in the genitive, forming a complement to يُكَذِّبُ.",
+            "meaning": "the Judgment or recompense",
+            "learnerConnections": [
+              "Recognize بِ as a preposition that attaches directly to the following word.",
+              "Notice that a preposition makes the following noun genitive, shown here by the final kasra."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Split the word as بِ + ٱل + دِّينِ and let the final kasra remind you of the preposition.",
+              "explanation": "The phrase can be translated as concerning the Judgment or recompense; the exact English noun depends on the intended contextual emphasis.",
+              "takeaway": "بِٱلدِّينِ = the Judgment/recompense as the object of denial"
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        }
+      ]
+    },
+    {
+      "ayahId": "ayah:107:2",
+      "ayahLayers": {
+        "grammar": "فَ links the statement as a consequence or identification. ذَٰلِكَ is a demonstrative subject, and ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ identifies it through a relative clause whose verb takes ٱلْيَتِيمَ as a direct object.",
+        "contextualMeaning": "That is the one who repulses the orphan.",
+        "sentenceMap": [
+          "فَ: so / then, linking this statement to the preceding description",
+          "ذَٰلِكَ ٱلَّذِى...: that is the one who...",
+          "يَدُعُّ ٱلْيَتِيمَ: repulses the orphan"
+        ]
+      },
+      "words": [
+        {
+          "wordId": "word:107:2:1",
+          "teachingId": "teaching:107:2:1:fadhalika",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:2:1",
+              "mode": "segmented",
+              "sourceText": "فَذَٰلِكَ",
+              "parts": [
+                {
+                  "id": "breakdown:word:107:2:1:part:1",
+                  "order": 1,
+                  "sourceText": "فَ",
+                  "displayText": "فَ",
+                  "label": "consequence connector",
+                  "meaning": "so / then",
+                  "kind": "connector"
+                },
+                {
+                  "id": "breakdown:word:107:2:1:part:2",
+                  "order": 2,
+                  "sourceText": "ذَٰلِكَ",
+                  "displayText": "ذَٰلِكَ",
+                  "label": "demonstrative pronoun",
+                  "meaning": "that one / that is",
+                  "kind": "whole"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:2:1:fadhalika",
+              "meaning": "so that is the one / that person",
+              "type": "connector plus demonstrative pronoun",
+              "root": "",
+              "rootPicture": "Both pieces are rootless grammatical words: فَ links the statement, while ذَٰلِكَ points to a masculine singular referent.",
+              "construction": "فَ + ذَٰلِكَ: a consequence connector written directly before the demonstrative.",
+              "grammar": "فَ is a linking particle; ذَٰلِكَ is a masculine singular demonstrative pronoun functioning as the subject of the nominal structure.",
+              "sentenceRole": "Connects the identification to ayah 1 and points back to the person just described.",
+              "recognitionClue": "An attached فَ often means so/then; ذَٰلِكَ is the familiar that masculine singular form.",
+              "forms": [],
+              "takeaway": "فَذَٰلِكَ turns the previous description into an identification: so that is the one..."
+            },
+            "occurrenceRole": "Consequence connector plus demonstrative subject pointing back to the person in ayah 1.",
+            "morphology": {
+              "lemma": "فَ + ذَٰلِكَ",
+              "partOfSpeech": "particle + demonstrative pronoun",
+              "features": [
+                "فَ: consequence or linking connector",
+                "ذَٰلِكَ: masculine singular demonstrative",
+                "written as one orthographic word"
+              ],
+              "notes": "The two grammatical units are meaningfully separable even though the connector is written attached."
+            },
+            "grammar": "فَ links the clause to what precedes; ذَٰلِكَ is a masculine singular demonstrative subject.",
+            "meaning": "so that is the one / that person",
+            "learnerConnections": [
+              "Recognize attached فَ as a connector meaning so or then.",
+              "Recall ذَٰلِكَ as the masculine singular demonstrative that."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Read the first two letters as فَ = so, then identify ذَٰلِكَ = that one.",
+              "explanation": "The word points back to the person described in the previous ayah instead of introducing a new person.",
+              "takeaway": "فَذَٰلِكَ = so that is the one"
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:2:2",
+          "teachingId": "teaching:107:1:2:alladhi",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:2:2",
+              "mode": "atomic",
+              "sourceText": "ٱلَّذِى",
+              "parts": [
+                {
+                  "id": "breakdown:word:107:2:2:part:1",
+                  "order": 1,
+                  "sourceText": "ٱلَّذِى",
+                  "displayText": "ٱلَّذِى",
+                  "label": "relative pronoun",
+                  "meaning": "who / that",
+                  "kind": "whole"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:1:2:alladhi",
+              "meaning": "the one who / that which",
+              "type": "relative pronoun",
+              "root": "",
+              "rootPicture": "Rootless grammatical word: learn ٱلَّذِى as a fixed relative pronoun rather than searching for a triliteral root.",
+              "construction": "ٱلَّذِى is a fixed relative-pronoun form that introduces a describing clause.",
+              "grammar": "Masculine singular relative pronoun; here it identifies ذَٰلِكَ and introduces يَدُعُّ ٱلْيَتِيمَ.",
+              "sentenceRole": "Identifying predicate/complement of ذَٰلِكَ and marker of the relative clause.",
+              "recognitionClue": "The fixed form ٱلَّذِى commonly means who or that for one masculine referent.",
+              "forms": [],
+              "takeaway": "ٱلَّذِى links the demonstrative to the clause that tells which person it is."
+            },
+            "occurrenceRole": "Relative pronoun identifying ذَٰلِكَ and introducing the clause يَدُعُّ ٱلْيَتِيمَ.",
+            "morphology": {
+              "lemma": "ٱلَّذِى",
+              "partOfSpeech": "relative pronoun",
+              "features": [
+                "definite",
+                "masculine singular",
+                "introduces a relative clause"
+              ],
+              "notes": "This repeated occurrence keeps its own sentence role even though the shared teaching identity is the same."
+            },
+            "grammar": "Masculine singular relative pronoun functioning as the identifier of ذَٰلِكَ and introducing يَدُعُّ ٱلْيَتِيمَ.",
+            "meaning": "the one who",
+            "learnerConnections": [
+              "Use ٱلَّذِى after a demonstrative to hear the pattern that is the one who...",
+              "Expect the following verb clause to supply the identifying action."
+            ],
+            "pedagogy": {
+              "recognitionClue": "After ذَٰلِكَ, read ٱلَّذِى as the one who and look for the action that follows.",
+              "explanation": "Here the relative pronoun does not repeat the person; it identifies that person by the action of repulsing the orphan.",
+              "takeaway": "ٱلَّذِى = the one who, introducing the identifying action"
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:2:3",
+          "teachingId": "teaching:107:2:3:yaduu",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:2:3",
+              "mode": "atomic",
+              "sourceText": "يَدُعُّ",
+              "parts": [
+                {
+                  "id": "breakdown:word:107:2:3:part:1",
+                  "order": 1,
+                  "sourceText": "يَدُعُّ",
+                  "displayText": "يَدُعُّ",
+                  "label": "imperfect verb",
+                  "meaning": "he pushes away or repulses",
+                  "kind": "whole"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:2:3:yaduu",
+              "meaning": "he pushes away or repulses",
+              "type": "verb",
+              "root": "د ع ع",
+              "rootPicture": "The doubled final ع gives the verb a compact, forceful sound that suits pushing or repelling away.",
+              "construction": "Imperfect verb with the third-person prefix يـ and a doubled final root consonant: يَدُعُّ.",
+              "grammar": "Imperfect indicative, active voice, third person masculine singular; it is the predicate of the relative clause and takes ٱلْيَتِيمَ as its direct object.",
+              "sentenceRole": "Predicate of the relative clause introduced by ٱلَّذِى.",
+              "recognitionClue": "The initial يـ marks he in the imperfect, and the shadda on the final ع signals the doubled final radical.",
+              "forms": [
+                {
+                  "form": "دَعَّ (Form I)",
+                  "meaning": "to push away or repel",
+                  "difference": "The final doubled radical is retained in the imperfect يَدُعُّ and helps convey the forceful action."
+                }
+              ],
+              "takeaway": "يَدُعُّ depicts the harsh rejection of the orphan that the passage condemns."
+            },
+            "occurrenceRole": "Predicate of the relative clause, taking ٱلْيَتِيمَ as its direct object.",
+            "morphology": {
+              "root": "د ع ع",
+              "lemma": "دَعَّ",
+              "pattern": "فَعَّ / Form I with doubled final radical",
+              "partOfSpeech": "verb",
+              "features": [
+                "imperfect",
+                "indicative",
+                "active voice",
+                "third person masculine singular",
+                "doubled final radical"
+              ],
+              "notes": "The translation can range from pushes away to repulses; the exact force is contextual and should remain reviewable."
+            },
+            "grammar": "Imperfect indicative, third person masculine singular, active verb; its direct object is ٱلْيَتِيمَ.",
+            "meaning": "he pushes away / repulses",
+            "learnerConnections": [
+              "Recognize يـ as the third-person masculine singular imperfect prefix.",
+              "Notice the final shadda as a clue that the final root consonant is doubled."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Look for يـ at the front and the doubled ع at the end.",
+              "explanation": "The word is kept atomic because its force is best learned through the complete verb shape; the following noun supplies its direct object.",
+              "takeaway": "يَدُعُّ = he pushes away / repulses"
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:2:4",
+          "teachingId": "teaching:107:2:4:alyatim",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:2:4",
+              "mode": "segmented",
+              "sourceText": "ٱلْيَتِيمَ",
+              "parts": [
+                {
+                  "id": "breakdown:word:107:2:4:part:1",
+                  "order": 1,
+                  "sourceText": "ٱلْ",
+                  "displayText": "ٱلْ",
+                  "label": "definite article",
+                  "meaning": "the",
+                  "kind": "article"
+                },
+                {
+                  "id": "breakdown:word:107:2:4:part:2",
+                  "order": 2,
+                  "sourceText": "يَتِيمَ",
+                  "displayText": "يَتِيمَ",
+                  "label": "noun",
+                  "meaning": "orphan",
+                  "kind": "stem"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:2:4:alyatim",
+              "meaning": "the orphan",
+              "type": "definite noun",
+              "root": "ي ت م",
+              "rootPicture": "The root ي-ت-م is associated with being solitary or without a parent, giving orphan its central image.",
+              "construction": "ٱلْ + يَتِيمَ: the definite article followed by the noun يَتِيمَ.",
+              "grammar": "Definite masculine singular noun in the accusative; it is the direct object of يَدُعُّ.",
+              "sentenceRole": "Direct object receiving the action of being pushed away or repulsed.",
+              "recognitionClue": "ٱلْ marks definiteness, and the final fatḥa on يَتِيمَ marks the accusative direct-object ending here.",
+              "forms": [],
+              "takeaway": "ٱلْيَتِيمَ is the vulnerable person who is being rejected in the scene."
+            },
+            "occurrenceRole": "Direct object of يَدُعُّ, the orphan being pushed away or repulsed.",
+            "morphology": {
+              "root": "ي ت م",
+              "lemma": "يَتِيم",
+              "pattern": "فَعِيل",
+              "partOfSpeech": "noun",
+              "features": [
+                "definite",
+                "masculine singular",
+                "accusative",
+                "direct object"
+              ],
+              "notes": "The final fatḥa is the accusative ending in this occurrence; the article is preserved as a separate meaningful surface component."
+            },
+            "grammar": "Definite masculine singular accusative noun functioning as the direct object of يَدُعُّ.",
+            "meaning": "the orphan",
+            "learnerConnections": [
+              "Recognize ٱلْ as the definite article before a sun-letter-free noun.",
+              "Use the final fatḥa to identify the noun as the direct object of the verb."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Split ٱلْيَتِيمَ into ٱلْ + يَتِيمَ and notice the final fatḥa.",
+              "explanation": "The noun is definite and receives the action of يَدُعُّ, so its accusative ending is visible at the end.",
+              "takeaway": "ٱلْيَتِيمَ = the orphan, direct object"
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "manifestId": "issues:packet:107:1-2:revision:1:packet:107:1-2:source:source-reviewer-1-root2",
+  "packetId": "packet:107:1-2",
+  "draftId": "draft:packet:107:1-2:revision:1",
+  "revision": 1,
+  "scope": {
+    "type": "packet",
+    "ayahIds": [
+      "ayah:107:1",
+      "ayah:107:2"
+    ]
+  },
+  "status": "open",
+  "issues": [
+    {
+      "id": "issue:packet:107:1-2:revision:1:source:teaching-id-conflict:107-2-2",
+      "code": "CONFLICTING_OCCURRENCE_TEACHING_ID",
+      "severity": "blocker",
+      "scopeId": "ayah:107:2",
+      "path": "ayahs[1].words[1].teachingId",
+      "message": "Occurrence word:107:2:2 reuses teaching ID teaching:107:1:2:alladhi from word:107:1:2, but its occurrence-specific teaching payload differs in grammar, sentence role, learner connections, takeaway, and occurrence role. The assembler keys teaching entries by ID and rejects conflicting payloads.",
+      "requiredAction": "Assign word:107:2:2 its own stable teaching ID in both ayahs[1].words[1].teachingId and ayahs[1].words[1].layers.teaching.id, or make the two teaching payloads exactly identical and keep the contextual difference only in occurrence-specific fields; rerun assembly validation.",
+      "evidence": {
+        "occurrence": "word:107:2:2",
+        "otherOccurrence": "word:107:1:2",
+        "reusedTeachingId": "teaching:107:1:2:alladhi",
+        "currentPath": "content-authoring/drafts/107/packet-107-1-2-revision-001.json#ayahs[1].words[1]",
+        "otherPath": "content-authoring/drafts/107/packet-107-1-2-revision-001.json#ayahs[0].words[1]",
+        "currentTeachingIdPath": "ayahs[1].words[1].layers.teaching.id",
+        "otherTeachingIdPath": "ayahs[0].words[1].layers.teaching.id",
+        "differingFields": [
+          "layers.teaching.grammar",
+          "layers.teaching.sentenceRole",
+          "layers.teaching.learnerConnections",
+          "layers.teaching.takeaway",
+          "layers.occurrenceRole"
+        ],
+        "assemblerRule": "app/data/content-production-assembler.ts mergeTeachingEntry compares entries by teaching.id and throws on a non-identical existing payload."
+      }
+    }
+  ]
+}

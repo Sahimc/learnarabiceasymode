@@ -1,0 +1,417 @@
+{
+  "schemaVersion": "1.0.0",
+  "draftId": "draft:107:5-6:revision-001",
+  "packetId": "packet:107:5-6",
+  "sourceFingerprint": "53a9250f5e79debe93502dd5fad9d5600082f0768081b3dd26d30af6ebdbecaa",
+  "knowledgeSnapshot": {
+    "snapshotId": "ffabdaa3cda73da9c03837131ceabaec2ba348914404725cb0d4b7eebd74fcff",
+    "version": "1.0.0",
+    "files": [
+      { "path": "content-authoring/production-knowledge/knowledge-version.json", "checksum": "31aedfc7a9316f665ca3b37bdfe8fd80010047315033b5e4fca0f4561fd9e681" },
+      { "path": "content-authoring/production-knowledge/learner-context/form-families.json", "checksum": "2ba13ff2e862b39cf955c459e1d15dbde29a1e05f548b7f0a2a817cd35907294" },
+      { "path": "content-authoring/production-knowledge/learner-context/grammar-concepts.json", "checksum": "7a950597fde0abb1cdcfc1f2f8cb8e1a2e9124aa584c823865f74c25258dabc2" },
+      { "path": "content-authoring/production-knowledge/learner-context/particles.json", "checksum": "44b87ade17fc3e43d15ff22384f509ca74a0fa2ec36212bb0c6fb27e5c81b818" },
+      { "path": "content-authoring/production-knowledge/learner-context/terminology.json", "checksum": "b0cabd6b4ad77f3c569572eca1982d289d6a40afc6b26078edb4e34cda42b0c4" },
+      { "path": "content-authoring/production-knowledge/lexical-registry/occurrence-exceptions.json", "checksum": "68cc21608704da4e28ff5a6a1ad76b4104868b91d711c1212be4af48aa9684f9" },
+      { "path": "content-authoring/production-knowledge/lexical-registry/shared-lessons.json", "checksum": "68cc21608704da4e28ff5a6a1ad76b4104868b91d711c1212be4af48aa9684f9" },
+      { "path": "content-authoring/production-knowledge/safeguards/common-problems.json", "checksum": "ba934a2cfaf24171b31167f05d1527cbc276bb459cd050cf0a01c89c12a8cb9a" },
+      { "path": "content-authoring/production-knowledge/safeguards/reviewer-rules.json", "checksum": "cb1dd530f2da3dec8165d65cca48b5b72e00c1b2aef28cab467c82bdf5c9149f" },
+      { "path": "content-authoring/production-knowledge/safeguards/source-policy.json", "checksum": "be859c8cca897ed1d186816bdd591460ab20922084550466de34132647770dda" },
+      { "path": "content-import/sources/qac/morphology-overrides.json", "checksum": "c70b8010c2b5f7df042967c0374af3b4c4b7f4c179f133c4e61ab021c1481f64" }
+    ]
+  },
+  "revision": 1,
+  "status": "draft",
+  "createdBy": "worker-3",
+  "ayahs": [
+    {
+      "ayahId": "ayah:107:5",
+      "ayahLayers": {
+        "grammar": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ is a relative clause identifying the people mentioned in the preceding verse. هُمْ begins a nominal sentence; عَن صَلَاتِهِمْ is a prepositional phrase linked to سَاهُونَ, which is its predicate.",
+        "contextualMeaning": "Those who are heedless and neglectful regarding their prayer.",
+        "sentenceMap": [
+          "ٱلَّذِينَ — relative pronoun introducing the description",
+          "هُمْ — detached pronoun, the topic of the nominal clause",
+          "عَن صَلَاتِهِمْ — prepositional phrase, away from/regarding their prayer",
+          "سَاهُونَ — nominative predicate: heedless"
+        ]
+      },
+      "words": [
+        {
+          "wordId": "word:107:5:1",
+          "teachingId": "teaching:107:5:1",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:107:5:1",
+              "mode": "atomic",
+              "sourceText": "ٱلَّذِينَ",
+              "parts": [
+                { "id": "part:107:5:1:1", "order": 1, "sourceText": "ٱلَّذِينَ", "displayText": "ٱلَّذِينَ", "label": "masculine-plural relative pronoun", "meaning": "those who", "kind": "whole" }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:5:1",
+              "meaning": "those who",
+              "type": "relative pronoun",
+              "root": "",
+              "rootPicture": "Rootless fixed grammatical form: memorize ٱلَّذِينَ as the masculine-plural form meaning those who.",
+              "construction": "A fixed masculine-plural relative pronoun that introduces a describing clause.",
+              "grammar": "It introduces the relative clause and identifies the people described as heedless of prayer; it connects back to the preceding mention of those who pray.",
+              "sentenceRole": "Relative-clause introducer and modifier of the preceding noun phrase.",
+              "recognitionClue": "The ending ـذِينَ is a strong clue for the masculine-plural relative pronoun ٱلَّذِينَ.",
+              "forms": [],
+              "takeaway": "Recognize ٱلَّذِينَ as the gateway to a description of a group: those who ..."
+            },
+            "occurrenceRole": "Introduces the relative description of the people addressed in the preceding verse.",
+            "morphology": {
+              "lemma": "ٱلَّذِي",
+              "partOfSpeech": "relative pronoun",
+              "features": ["masculine plural", "fixed/indeclinable form", "relative clause introducer"],
+              "notes": "The plural form is used for a masculine or mixed-gender group."
+            },
+            "grammar": "Masculine-plural relative pronoun introducing a relative clause.",
+            "meaning": "those who",
+            "learnerConnections": ["Connect ٱلَّذِينَ with the singular relative pronoun ٱلَّذِي: the ending marks a plural group."],
+            "pedagogy": {
+              "recognitionClue": "Spot ٱلَّذِينَ before a clause that explains which people are meant.",
+              "explanation": "It is not a derived noun with a root here; it is a fixed connector that opens the description.",
+              "takeaway": "Read ٱلَّذِينَ as those who and expect the following words to describe them."
+            }
+          },
+          "layerState": { "segmentation": "draft", "morphology": "draft", "grammar": "draft", "meaning": "draft", "learnerConnections": "draft", "pedagogy": "draft" }
+        },
+        {
+          "wordId": "word:107:5:2",
+          "teachingId": "teaching:107:5:2",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:107:5:2",
+              "mode": "atomic",
+              "sourceText": "هُمْ",
+              "parts": [
+                { "id": "part:107:5:2:1", "order": 1, "sourceText": "هُمْ", "displayText": "هُمْ", "label": "detached third-person plural pronoun", "meaning": "they", "kind": "whole" }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:5:2",
+              "meaning": "they",
+              "type": "detached pronoun",
+              "root": "",
+              "rootPicture": "Rootless grammatical form: هُمْ is a fixed pronoun for a masculine or mixed group.",
+              "construction": "A standalone third-person masculine-plural pronoun used here before its predicate.",
+              "grammar": "It is the topic/subject of the nominal sentence هُمْ ... سَاهُونَ.",
+              "sentenceRole": "Topic of the nominal clause whose predicate is سَاهُونَ.",
+              "recognitionClue": "The final مْ identifies the familiar detached pronoun هُمْ: they.",
+              "forms": [],
+              "takeaway": "هُمْ can stand alone as they and can set up a nominal sentence."
+            },
+            "occurrenceRole": "Topic of the nominal sentence describing the group.",
+            "morphology": {
+              "partOfSpeech": "detached pronoun",
+              "features": ["third person", "masculine plural", "independent pronoun"],
+              "notes": "The same form can refer to a masculine or mixed-gender plural group."
+            },
+            "grammar": "Detached third-person masculine-plural pronoun functioning as the topic of the nominal clause.",
+            "meaning": "they",
+            "learnerConnections": ["Compare هُمْ with the suffix ـهِمْ in صَلَاتِهِمْ: both point to the same they/their group."],
+            "pedagogy": {
+              "recognitionClue": "When هُمْ appears independently, first test the meaning they before treating it as a verb ending.",
+              "explanation": "Arabic can place a detached pronoun before a verbal sentence or predicate to make the subject explicit.",
+              "takeaway": "Separate هُمْ as the pronoun they; do not attach it to the neighboring word."
+            }
+          },
+          "layerState": { "segmentation": "draft", "morphology": "draft", "grammar": "draft", "meaning": "draft", "learnerConnections": "draft", "pedagogy": "draft" }
+        },
+        {
+          "wordId": "word:107:5:3",
+          "teachingId": "teaching:107:5:3",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:107:5:3",
+              "mode": "atomic",
+              "sourceText": "عَن",
+              "parts": [
+                { "id": "part:107:5:3:1", "order": 1, "sourceText": "عَن", "displayText": "عَن", "label": "preposition", "meaning": "from; regarding; away from", "kind": "preposition" }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:5:3",
+              "meaning": "from, regarding, or away from",
+              "type": "preposition",
+              "root": "",
+              "rootPicture": "Rootless function word: عَن signals relation or distance rather than naming an action.",
+              "construction": "A standalone preposition governing the following noun phrase صَلَاتِهِمْ.",
+              "grammar": "It places صَلَاتِهِمْ in the genitive and forms the phrase عَن صَلَاتِهِمْ.",
+              "sentenceRole": "Introduces the prepositional phrase linked to the predicate سَاهُونَ.",
+              "recognitionClue": "عَن before a noun often gives a meaning such as from, about, or away from.",
+              "forms": [],
+              "takeaway": "Read عَن صَلَاتِهِمْ as a unit: regarding or away from their prayer."
+            },
+            "occurrenceRole": "Preposition introducing the object of heedlessness: their prayer.",
+            "morphology": {
+              "partOfSpeech": "preposition",
+              "features": ["indeclinable particle", "governs a genitive phrase"],
+              "notes": "Its contextual force here is distance or neglect in relation to prayer."
+            },
+            "grammar": "Preposition governing صَلَاتِهِمْ and connecting the phrase to سَاهُونَ.",
+            "meaning": "from; regarding; away from",
+            "learnerConnections": ["Learn عَن as a relation word whose exact English rendering depends on the surrounding verb or adjective."],
+            "pedagogy": {
+              "recognitionClue": "A short standalone word before a noun is often a preposition; عَن commonly carries from/about/away from meanings.",
+              "explanation": "Here the phrase is not simply about the prayer as a topic; it describes heedlessness in relation to it.",
+              "takeaway": "Keep عَن attached in meaning to the phrase that follows it."
+            }
+          },
+          "layerState": { "segmentation": "draft", "morphology": "draft", "grammar": "draft", "meaning": "draft", "learnerConnections": "draft", "pedagogy": "draft" }
+        },
+        {
+          "wordId": "word:107:5:4",
+          "teachingId": "teaching:107:5:4",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:107:5:4",
+              "mode": "segmented",
+              "sourceText": "صَلَاتِهِمْ",
+              "parts": [
+                { "id": "part:107:5:4:1", "order": 1, "sourceText": "صَلَاتِ", "displayText": "صَلَاتِ", "label": "noun stem in construct form", "meaning": "prayer", "kind": "stem" },
+                { "id": "part:107:5:4:2", "order": 2, "sourceText": "هِمْ", "displayText": "هِمْ", "label": "third-person masculine-plural possessive pronoun", "meaning": "their", "kind": "possessive-pronoun" }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:5:4",
+              "meaning": "their prayer",
+              "type": "possessive noun phrase",
+              "root": "ص-ل-و",
+              "rootPicture": "ص ل و is associated with prayer and connection in ṣalāh; picture an act of prayer connecting the worshipper to Allah.",
+              "construction": "صَلَاة with the attached third-person plural possessive suffix ـهِمْ; the noun is in the construct relationship and appears genitive after عَن.",
+              "grammar": "The phrase is governed by عَن. صَلَاتِ is the noun, and ـهِمْ means their; the kasra before the suffix reflects the phrase's genitive position.",
+              "sentenceRole": "Object of the preposition عَن within the predicate phrase عَن صَلَاتِهِمْ.",
+              "recognitionClue": "The ending ـهِمْ is the attached their/them suffix; the noun before it carries the possessed item.",
+              "forms": [],
+              "takeaway": "صَلَاتِهِمْ = صَلَاة + هِمْ: their prayer; the suffix turns prayer into a possessed noun."
+            },
+            "occurrenceRole": "Genitive object of عَن and the prayer that the group is heedless regarding.",
+            "morphology": {
+              "root": "ص-ل-و",
+              "lemma": "صَلَاة",
+              "pattern": "فَعَالَة",
+              "partOfSpeech": "noun",
+              "features": ["feminine singular", "genitive after عَن", "construct with attached possessive pronoun"],
+              "notes": "The final ة of the citation form appears as ت when the possessive suffix is attached: صَلَاتِهِمْ."
+            },
+            "grammar": "A noun plus attached third-person masculine-plural possessive pronoun, governed by عَن in a genitive prepositional phrase.",
+            "meaning": "their prayer",
+            "learnerConnections": ["Compare ـهِمْ here with standalone هُمْ in the same ayah: the suffix means their, while the independent form means they."],
+            "pedagogy": {
+              "recognitionClue": "When ـهِمْ is attached to a noun, translate it as their and look left for what they possess.",
+              "explanation": "The surface form صَلَاتِهِمْ is complete: prayer plus their. The ت is the visible form of the feminine ending before the suffix.",
+              "takeaway": "Read the phrase as one meaning unit: their prayer, while still noticing the possessive suffix."
+            }
+          },
+          "layerState": { "segmentation": "draft", "morphology": "draft", "grammar": "draft", "meaning": "draft", "learnerConnections": "draft", "pedagogy": "draft" }
+        },
+        {
+          "wordId": "word:107:5:5",
+          "teachingId": "teaching:107:5:5",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:107:5:5",
+              "mode": "segmented",
+              "sourceText": "سَاهُونَ",
+              "parts": [
+                { "id": "part:107:5:5:1", "order": 1, "sourceText": "سَاهُ", "displayText": "سَاهُ", "label": "active-participle stem", "meaning": "heedless; inattentive", "kind": "stem" },
+                { "id": "part:107:5:5:2", "order": 2, "sourceText": "ونَ", "displayText": "ونَ", "label": "nominative masculine-plural ending", "meaning": "masculine plural in the nominative", "kind": "ending" }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:5:5",
+              "meaning": "heedless; inattentive",
+              "type": "active participle / derived adjective",
+              "root": "س-ه-و",
+              "rootPicture": "س ه و evokes drifting into forgetfulness or inattention; picture the mind wandering away from what it should attend to.",
+              "construction": "Active participle سَاهٍ from the root س-ه-و, here in the sound masculine plural form سَاهُونَ.",
+              "grammar": "It is the nominative predicate of هُمْ. The ending ـونَ marks masculine plural in the nominative.",
+              "sentenceRole": "Predicate describing the group's heedlessness regarding prayer.",
+              "recognitionClue": "The ending ـونَ commonly signals a sound masculine plural in the nominative; the stem سَاهُ carries the lexical meaning.",
+              "forms": [],
+              "takeaway": "سَاهُونَ describes an ongoing quality: being heedless or inattentive toward prayer."
+            },
+            "occurrenceRole": "Predicate of هُمْ, completing the description of the people as heedless.",
+            "morphology": {
+              "root": "س-ه-و",
+              "lemma": "سَاهٍ",
+              "pattern": "فَاعِل",
+              "partOfSpeech": "active participle / adjective",
+              "features": ["masculine sound plural", "nominative", "predicate"],
+              "notes": "The singular citation form is سَاهٍ; this occurrence is the nominative plural سَاهُونَ."
+            },
+            "grammar": "Nominative predicate of the nominal sentence هُمْ سَاهُونَ.",
+            "meaning": "heedless; inattentive",
+            "learnerConnections": ["Recognize ـونَ as a nominative masculine-plural ending and compare it with the accusative/genitive ـينَ pattern."],
+            "pedagogy": {
+              "recognitionClue": "See ـونَ at the end and test a sound masculine plural; then read سَاهُ as the stem meaning heedless.",
+              "explanation": "The word describes a settled quality or behavior, not just a one-time act of forgetting.",
+              "takeaway": "The clause says they are characterized by heedlessness toward prayer."
+            }
+          },
+          "layerState": { "segmentation": "draft", "morphology": "draft", "grammar": "draft", "meaning": "draft", "learnerConnections": "draft", "pedagogy": "draft" }
+        }
+      ]
+    },
+    {
+      "ayahId": "ayah:107:6",
+      "ayahLayers": {
+        "grammar": "ٱلَّذِينَ هُمْ يُرَآءُونَ adds a second relative description. ٱلَّذِينَ introduces the clause, هُمْ makes the group explicit, and يُرَآءُونَ is the plural imperfect verb describing their act of showing off.",
+        "contextualMeaning": "Those who show off, performing religious acts for the sight or praise of others.",
+        "sentenceMap": [
+          "ٱلَّذِينَ — relative pronoun introducing the second description",
+          "هُمْ — detached pronoun making the subject explicit",
+          "يُرَآءُونَ — third-person masculine-plural imperfect verb: they show off"
+        ]
+      },
+      "words": [
+        {
+          "wordId": "word:107:6:1",
+          "teachingId": "teaching:107:6:1",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:107:6:1",
+              "mode": "atomic",
+              "sourceText": "ٱلَّذِينَ",
+              "parts": [
+                { "id": "part:107:6:1:1", "order": 1, "sourceText": "ٱلَّذِينَ", "displayText": "ٱلَّذِينَ", "label": "masculine-plural relative pronoun", "meaning": "those who", "kind": "whole" }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:6:1",
+              "meaning": "those who",
+              "type": "relative pronoun",
+              "root": "",
+              "rootPicture": "Rootless fixed grammatical form: memorize ٱلَّذِينَ as the masculine-plural form meaning those who.",
+              "construction": "A fixed masculine-plural relative pronoun that introduces another description of the same group.",
+              "grammar": "It opens the relative clause whose predicate is the verbal sentence هُمْ يُرَآءُونَ.",
+              "sentenceRole": "Relative-clause introducer for the description of those who show off.",
+              "recognitionClue": "The ending ـذِينَ is a strong clue for the masculine-plural relative pronoun ٱلَّذِينَ.",
+              "forms": [],
+              "takeaway": "The repeated ٱلَّذِينَ signals another identifying description of the people."
+            },
+            "occurrenceRole": "Introduces a second relative description parallel to the description in ayah 5.",
+            "morphology": {
+              "lemma": "ٱلَّذِي",
+              "partOfSpeech": "relative pronoun",
+              "features": ["masculine plural", "fixed/indeclinable form", "relative clause introducer"],
+              "notes": "Its repeated occurrence preserves the parallel structure of the two descriptions."
+            },
+            "grammar": "Masculine-plural relative pronoun introducing a relative clause.",
+            "meaning": "those who",
+            "learnerConnections": ["Compare this occurrence with ٱلَّذِينَ in 107:5: the form is unchanged, while the following clause supplies a new description."],
+            "pedagogy": {
+              "recognitionClue": "Repeated ٱلَّذِينَ means the reader should look for another clause describing the same kind of group.",
+              "explanation": "Arabic repeats the relative pronoun here to add a parallel characterization: those who show off.",
+              "takeaway": "Use the repeated connector to see the parallel relationship between ayahs 5 and 6."
+            }
+          },
+          "layerState": { "segmentation": "draft", "morphology": "draft", "grammar": "draft", "meaning": "draft", "learnerConnections": "draft", "pedagogy": "draft" }
+        },
+        {
+          "wordId": "word:107:6:2",
+          "teachingId": "teaching:107:6:2",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:107:6:2",
+              "mode": "atomic",
+              "sourceText": "هُمْ",
+              "parts": [
+                { "id": "part:107:6:2:1", "order": 1, "sourceText": "هُمْ", "displayText": "هُمْ", "label": "detached third-person plural pronoun", "meaning": "they", "kind": "whole" }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:6:2",
+              "meaning": "they",
+              "type": "detached pronoun",
+              "root": "",
+              "rootPicture": "Rootless grammatical form: هُمْ is a fixed pronoun for a masculine or mixed group.",
+              "construction": "A standalone third-person masculine-plural pronoun placed before the verbal predicate يُرَآءُونَ.",
+              "grammar": "It makes the subject explicit; the following plural verb agrees with the same group.",
+              "sentenceRole": "Explicit subject/topic of the verbal sentence describing their showing off.",
+              "recognitionClue": "The final مْ identifies the detached pronoun هُمْ: they.",
+              "forms": [],
+              "takeaway": "Here هُمْ points forward to the people who perform the action in يُرَآءُونَ."
+            },
+            "occurrenceRole": "Explicit subject of the clause whose verb is يُرَآءُونَ.",
+            "morphology": {
+              "partOfSpeech": "detached pronoun",
+              "features": ["third person", "masculine plural", "independent pronoun"],
+              "notes": "The pronoun is repeated to make the subject of the second description explicit."
+            },
+            "grammar": "Detached third-person masculine-plural pronoun functioning as the explicit subject/topic before the verbal predicate.",
+            "meaning": "they",
+            "learnerConnections": ["Compare the same هُمْ in 107:5: the form stays the same while the following predicate changes from سَاهُونَ to يُرَآءُونَ."],
+            "pedagogy": {
+              "recognitionClue": "When هُمْ appears before a plural verb, use it as the explicit they and confirm agreement in the verb.",
+              "explanation": "The detached pronoun and the plural verb together make the actors unmistakable.",
+              "takeaway": "Read هُمْ ... يُرَآءُونَ as they show off."
+            }
+          },
+          "layerState": { "segmentation": "draft", "morphology": "draft", "grammar": "draft", "meaning": "draft", "learnerConnections": "draft", "pedagogy": "draft" }
+        },
+        {
+          "wordId": "word:107:6:3",
+          "teachingId": "teaching:107:6:3",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:107:6:3",
+              "mode": "segmented",
+              "sourceText": "يُرَآءُونَ",
+              "parts": [
+                { "id": "part:107:6:3:1", "order": 1, "sourceText": "يُرَآءُ", "displayText": "يُرَآءُ", "label": "imperfect verb stem with third-person prefix", "meaning": "show off; seek to be seen", "kind": "stem" },
+                { "id": "part:107:6:3:2", "order": 2, "sourceText": "ونَ", "displayText": "ونَ", "label": "third-person masculine-plural indicative ending", "meaning": "they, in the imperfect indicative", "kind": "ending" }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:107:6:3",
+              "meaning": "they show off; they seek to be seen",
+              "type": "imperfect verb",
+              "root": "ر-أ-ي",
+              "rootPicture": "ر أ ي is connected with seeing; رَاءَى turns that idea into acting so that others see the act.",
+              "construction": "Form III verb رَاءَى, with the imperfect prefix يُـ and the third-person masculine-plural ending ـونَ: يُرَآءُونَ.",
+              "grammar": "Third-person masculine-plural imperfect indicative. The wāw in ـونَ is the plural subject marker and the nūn is retained in the indicative.",
+              "sentenceRole": "Verbal predicate describing the action performed by هُمْ.",
+              "recognitionClue": "The prefix يُـ marks a third-person masculine imperfect verb; ـونَ marks they in the plural indicative.",
+              "forms": [
+                { "form": "Form III: فَاعَلَ / يُفَاعِلُ", "meaning": "to engage in or deliberately perform an action toward another", "difference": "Here رَاءَى means to act for display, seeking to be seen or praised by people." }
+              ],
+              "takeaway": "يُرَآءُونَ describes deliberate public display: they show off rather than act solely for Allah."
+            },
+            "occurrenceRole": "Plural imperfect predicate describing the group's ostentatious action.",
+            "morphology": {
+              "root": "ر-أ-ي",
+              "lemma": "رَاءَى",
+              "pattern": "يُفَاعِلُ",
+              "partOfSpeech": "verb",
+              "features": ["Form III", "imperfect", "third person masculine plural", "indicative", "active voice"],
+              "notes": "The wāw of ـونَ marks the plural subject; the nūn is the indicative ending."
+            },
+            "grammar": "Third-person masculine-plural imperfect indicative verb functioning as the predicate of هُمْ.",
+            "meaning": "they show off; they seek to be seen",
+            "learnerConnections": ["Connect the root ر-أ-ي with seeing and notice how Form III gives the idea of making an action visible to others."],
+            "pedagogy": {
+              "recognitionClue": "ُيـ at the beginning plus ـونَ at the end is a useful frame for a third-person masculine-plural imperfect verb.",
+              "explanation": "The meaning is more than simply doing: the verb expresses displaying an act so that people notice it.",
+              "takeaway": "Hear the contrast between sincere worship and يُرَآءُونَ, acting for public appearance."
+            }
+          },
+          "layerState": { "segmentation": "draft", "morphology": "draft", "grammar": "draft", "meaning": "draft", "learnerConnections": "draft", "pedagogy": "draft" }
+        }
+      ]
+    }
+  ]
+}

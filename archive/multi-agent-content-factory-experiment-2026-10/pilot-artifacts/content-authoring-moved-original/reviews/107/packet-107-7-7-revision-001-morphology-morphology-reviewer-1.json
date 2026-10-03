@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "review:packet:107:7-7:revision:1:morphology:morphology-reviewer-1",
+  "packetId": "packet:107:7-7",
+  "draftId": "draft:packet:107:7-7:revision:1",
+  "revision": 1,
+  "scope": {
+    "type": "packet",
+    "ayahIds": ["ayah:107:7"]
+  },
+  "reviewerRole": "morphology",
+  "reviewerId": "morphology-reviewer-1",
+  "independent": true,
+  "status": "revision-required",
+  "issues": [
+    {
+      "id": "issue:packet:107:7-7:revision:1:morphology:001",
+      "code": "MORPHOLOGY_SUFFIX_ROLE_CONFLATED",
+      "severity": "error",
+      "scopeId": "word:107:7:1",
+      "path": "ayahs[0].words[0].layers.surfaceBreakdown.parts[2].label",
+      "message": "The part ونَ is labeled as the masculine-plural subject marker. In the provider analysis, the attached wāw is the subject pronoun/marker and the nūn is part of the indicative imperfect ending; ونَ should not be taught as a single subject marker.",
+      "requiredAction": "Relabel this part as the third-person masculine-plural imperfect indicative ending, or otherwise distinguish the wāw subject pronoun from the nūn mood marker while preserving the exact sourceText يَمْنَعُونَ.",
+      "evidence": {
+        "ayahId": "ayah:107:7",
+        "occurrence": "وَيَمْنَعُونَ",
+        "sourceText": "ونَ",
+        "provider": "quranic-arabic-corpus",
+        "providerRecordKey": "107:7:1",
+        "providerFinding": "وَ is a prefixed conjunction; the verb is third-person masculine plural imperfect; the attached wāw is the subject pronoun.",
+        "draftValue": "masculine plural subject marker"
+      }
+    },
+    {
+      "id": "issue:packet:107:7-7:revision:1:morphology:002",
+      "code": "MORPHOLOGY_SUFFIX_ROLE_CONFLATED",
+      "severity": "error",
+      "scopeId": "word:107:7:1",
+      "path": "ayahs[0].words[0].layers.morphology.notes",
+      "message": "The morphology note says the final ونَ carries the masculine-plural subject marking, conflating the wāw subject pronoun with the nūn indicative marker.",
+      "requiredAction": "Rewrite the note to identify the wāw of واو الجماعة as the attached subject pronoun/marker and the nūn as the indicative marker; do not assign the whole ونَ sequence the subject function.",
+      "evidence": {
+        "ayahId": "ayah:107:7",
+        "occurrence": "وَيَمْنَعُونَ",
+        "provider": "quranic-arabic-corpus",
+        "providerRecordKey": "107:7:1",
+        "providerFinding": "The attached wāw is the subject pronoun in the third-person masculine plural imperfect verb.",
+        "draftValue": "The final ونَ carries the masculine-plural subject marking in this present-tense form."
+      }
+    },
+    {
+      "id": "issue:packet:107:7-7:revision:1:morphology:003",
+      "code": "MORPHOLOGY_SUFFIX_ROLE_CONFLATED",
+      "severity": "error",
+      "scopeId": "word:107:7:1",
+      "path": "ayahs[0].words[0].layers.teaching.construction",
+      "message": "The construction glosses ونَ as ‘they, masculine plural’, presenting the ending as the pronoun instead of distinguishing the attached subject wāw and indicative nūn.",
+      "requiredAction": "Revise the construction and any dependent recognition/grammar prose so it teaches وَ + يَمْنَعُ + ونَ accurately: وَ is the conjunction, the wāw in ونَ carries the plural subject, and nūn marks the indicative ending.",
+      "evidence": {
+        "ayahId": "ayah:107:7",
+        "occurrence": "وَيَمْنَعُونَ",
+        "provider": "quranic-arabic-corpus",
+        "providerRecordKey": "107:7:1",
+        "providerFinding": "The conjunction وَ is prefixed, the verb is third-person masculine plural imperfect, and the attached wāw is the subject pronoun.",
+        "draftValue": "وَ (and) + يَمْنَعُ (he withholds or prevents) + ونَ (they, masculine plural)."
+      }
+    }
+  ],
+  "reviewedAt": "2026-10-03T20:23:11.217Z"
+}

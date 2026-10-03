@@ -1,0 +1,620 @@
+{
+  "schemaVersion": "1.0.0",
+  "draftId": "draft:packet:107:3-4:revision:1",
+  "packetId": "packet:107:3-4",
+  "sourceFingerprint": "959701c8f10b1d49d588b33d9f6a1ebf266f570b3f12b493919aa7d6d7e5a0db",
+  "knowledgeSnapshot": {
+    "snapshotId": "ffabdaa3cda73da9c03837131ceabaec2ba348914404725cb0d4b7eebd74fcff",
+    "version": "1.0.0",
+    "files": [
+      {
+        "path": "content-authoring/production-knowledge/knowledge-version.json",
+        "checksum": "31aedfc7a9316f665ca3b37bdfe8fd80010047315033b5e4fca0f4561fd9e681"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/form-families.json",
+        "checksum": "2ba13ff2e862b39cf955c459e1d15dbde29a1e05f548b7f0a2a817cd35907294"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/grammar-concepts.json",
+        "checksum": "7a950597fde0abb1cdcfc1f2f8cb8e1a2e9124aa584c823865f74c25258dabc2"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/particles.json",
+        "checksum": "44b87ade17fc3e43d15ff22384f509ca74a0fa2ec36212bb0c6fb27e5c81b818"
+      },
+      {
+        "path": "content-authoring/production-knowledge/learner-context/terminology.json",
+        "checksum": "b0cabd6b4ad77f3c569572eca1982d289d6a40afc6b26078edb4e34cda42b0c4"
+      },
+      {
+        "path": "content-authoring/production-knowledge/lexical-registry/occurrence-exceptions.json",
+        "checksum": "68cc21608704da4e28ff5a6a1ad76b4104868b91d711c1212be4af48aa9684f9"
+      },
+      {
+        "path": "content-authoring/production-knowledge/lexical-registry/shared-lessons.json",
+        "checksum": "68cc21608704da4e28ff5a6a1ad76b4104868b91d711c1212be4af48aa9684f9"
+      },
+      {
+        "path": "content-authoring/production-knowledge/safeguards/common-problems.json",
+        "checksum": "ba934a2cfaf24171b31167f05d1527cbc276bb459cd050cf0a01c89c12a8cb9a"
+      },
+      {
+        "path": "content-authoring/production-knowledge/safeguards/reviewer-rules.json",
+        "checksum": "cb1dd530f2da3dec8165d65cca48b5b72e00c1b2aef28cab467c82bdf5c9149f"
+      },
+      {
+        "path": "content-authoring/production-knowledge/safeguards/source-policy.json",
+        "checksum": "be859c8cca897ed1d186816bdd591460ab20922084550466de34132647770dda"
+      },
+      {
+        "path": "content-import/sources/qac/morphology-overrides.json",
+        "checksum": "c70b8010c2b5f7df042967c0374af3b4c4b7f4c179f133c4e61ab021c1481f64"
+      }
+    ]
+  },
+  "revision": 1,
+  "status": "draft",
+  "createdBy": "worker-2",
+  "ayahs": [
+    {
+      "ayahId": "ayah:107:3",
+      "ayahLayers": {
+        "grammar": "A coordinated negative verbal clause: وَلَا links this description to the preceding one and لَا negates the imperfect verb يَحُضُّ. The prepositional phrase عَلَىٰ طَعَامِ ٱلْمِسْكِينِ is the complement of urging; طَعَامِ is genitive after عَلَىٰ and ٱلْمِسْكِينِ is its genitive مُضَافٌ إِلَيْهِ.",
+        "contextualMeaning": "And he does not encourage others to feed the poor. In the context of the preceding ayahs, the person who denies the Judgment is shown not only mistreating the orphan but also failing to promote care for people in need.",
+        "sentenceMap": [
+          "وَلَا يَحُضُّ: coordinated negative verbal clause with an implicit masculine singular subject.",
+          "عَلَىٰ طَعَامِ ٱلْمِسْكِينِ: prepositional complement of urging; the final noun specifies the needy person whose food or feeding is meant."
+        ]
+      },
+      "words": [
+        {
+          "wordId": "word:107:3:1",
+          "teachingId": "teaching:wa-la",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:3:1",
+              "mode": "segmented",
+              "sourceText": "وَلَا",
+              "parts": [
+                {
+                  "id": "part:word:107:3:1:1",
+                  "order": 1,
+                  "sourceText": "وَ",
+                  "displayText": "وَ",
+                  "label": "conjunction wāw",
+                  "meaning": "and",
+                  "kind": "connector"
+                },
+                {
+                  "id": "part:word:107:3:1:2",
+                  "order": 2,
+                  "sourceText": "لَا",
+                  "displayText": "لَا",
+                  "label": "negative particle",
+                  "meaning": "not",
+                  "kind": "other"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:wa-la",
+              "meaning": "and not",
+              "type": "conjunction plus negative particle",
+              "root": "",
+              "rootPicture": "These are rootless function words: one connects, and the other negates.",
+              "construction": "وَ (and) + لَا (not), followed here by the imperfect verb يَحُضُّ.",
+              "grammar": "وَ is a coordinating conjunction; لَا is a negating particle that precedes the imperfect verb and does not govern a case ending.",
+              "sentenceRole": "Connects this negative description to the preceding clause and negates the following action.",
+              "recognitionClue": "A short وَ followed by لَا commonly signals ‘and not’ before a verb or phrase.",
+              "forms": [],
+              "takeaway": "Read وَلَا as one connected thought: ‘and he does not …’"
+            },
+            "occurrenceRole": "Coordinating conjunction plus negation of the following imperfect verb.",
+            "morphology": {
+              "provider": "quranic-arabic-corpus",
+              "lemma": "وَ / لَا",
+              "partOfSpeech": "conjunction + negative particle",
+              "features": [
+                "وَ: coordinating conjunction",
+                "لَا: negative particle",
+                "combined orthographic token"
+              ],
+              "notes": "Provider evidence is recorded for the combined surface occurrence; no root is assigned to these function words."
+            },
+            "grammar": "وَ connects the clause; لَا negates يَحُضُّ.",
+            "meaning": "and not",
+            "learnerConnections": [
+              "Compare لَا in other present-tense negative clauses.",
+              "The conjunction وَ keeps the description moving without starting a new subject."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Spot the familiar pair وَ + لَا and translate it as ‘and not’ before checking the verb.",
+              "explanation": "The two particles have separate jobs even though they are written together: وَ links, while لَا negates.",
+              "takeaway": "Function words can carry the logic of the whole clause."
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:3:2",
+          "teachingId": "teaching:ya-huddu",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:3:2",
+              "mode": "atomic",
+              "sourceText": "يَحُضُّ",
+              "parts": [
+                {
+                  "id": "part:word:107:3:2:1",
+                  "order": 1,
+                  "sourceText": "يَحُضُّ",
+                  "displayText": "يَحُضُّ",
+                  "label": "whole imperfect verb",
+                  "meaning": "he urges / encourages",
+                  "kind": "whole"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:ya-huddu",
+              "meaning": "he urges or encourages",
+              "type": "imperfect verb, third-person masculine singular",
+              "root": "ح ض ض",
+              "rootPicture": "The doubled ض gives the root a sense of pressing or urging someone onward.",
+              "construction": "Present/imperfect form of حَضَّ, with يَـ marking third-person masculine singular; the final shaddah reflects the doubled ض in the root.",
+              "grammar": "Imperfect indicative verb, third-person masculine singular; its subject is an implicit هُوَ, and the preceding لَا negates it.",
+              "sentenceRole": "The main predicate describing the person's failure to encourage care for the poor.",
+              "recognitionClue": "The initial يَـ often marks a third-person masculine singular imperfect verb; the doubled final consonant belongs to the geminate root.",
+              "forms": [
+                {
+                  "form": "حَضَّ",
+                  "meaning": "he urged",
+                  "difference": "Perfect form for a completed urging action; يَحُضُّ presents the action as ongoing or habitual."
+                },
+                {
+                  "form": "يَحُضُّ",
+                  "meaning": "he urges",
+                  "difference": "Imperfect form used here under negation for a characteristic or continuing failure to urge."
+                }
+              ],
+              "takeaway": "يَحُضُّ is a strong action verb: the criticism is not merely that he gives no food, but that he does not urge others to help."
+            },
+            "occurrenceRole": "Main imperfect predicate with an implicit masculine singular subject.",
+            "morphology": {
+              "provider": "quranic-arabic-corpus",
+              "root": "ح ض ض",
+              "lemma": "حَضَّ",
+              "pattern": "فَعَلَ / يَفْعُلُ (geminate root)",
+              "partOfSpeech": "verb",
+              "features": [
+                "imperfect",
+                "third-person masculine singular",
+                "indicative",
+                "geminate root"
+              ],
+              "notes": "Provider morphology is evidence for the verbal analysis; the teaching explanation separately highlights the repeated final root consonant."
+            },
+            "grammar": "Imperfect indicative, third-person masculine singular, with an implicit هو subject; negated by لَا.",
+            "meaning": "he urges, encourages, or promotes",
+            "learnerConnections": [
+              "Recognize يَـ as a common imperfect marker for ‘he’.",
+              "A doubled final consonant can signal a geminate root, as in ح ض ض."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Look for يَـ at the front and the shaddah on the final ض.",
+              "explanation": "This is an imperfect verb even though English may use a simple present phrase such as ‘he encourages.’",
+              "takeaway": "Verb form and sentence context together produce ‘he does not encourage.’"
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:3:3",
+          "teachingId": "teaching:ala",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:3:3",
+              "mode": "atomic",
+              "sourceText": "عَلَىٰ",
+              "parts": [
+                {
+                  "id": "part:word:107:3:3:1",
+                  "order": 1,
+                  "sourceText": "عَلَىٰ",
+                  "displayText": "عَلَىٰ",
+                  "label": "whole preposition",
+                  "meaning": "upon / toward; here, to",
+                  "kind": "whole"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:ala",
+              "meaning": "upon, toward, or to",
+              "type": "preposition",
+              "root": "",
+              "rootPicture": "Rootless preposition; picture a direction being placed toward a target.",
+              "construction": "Standalone preposition عَلَىٰ introducing the phrase طَعَامِ ٱلْمِسْكِينِ.",
+              "grammar": "حَرْفُ جَرٍّ (preposition); it governs the following noun طَعَامِ in the genitive.",
+              "sentenceRole": "Introduces the object or target toward which urging would be directed.",
+              "recognitionClue": "The final alif maqṣūrah shape ٰ is part of the familiar preposition عَلَىٰ.",
+              "forms": [],
+              "takeaway": "After عَلَىٰ, expect the following noun to be read in the genitive."
+            },
+            "occurrenceRole": "Preposition introducing the complement of يَحُضُّ.",
+            "morphology": {
+              "provider": "quranic-arabic-corpus",
+              "lemma": "عَلَىٰ",
+              "partOfSpeech": "preposition",
+              "features": [
+                "governs genitive",
+                "prepositional complement marker"
+              ],
+              "notes": "Rootless function word; the provider evidence is kept separate from the authored directional teaching picture."
+            },
+            "grammar": "Preposition governing the genitive noun طَعَامِ.",
+            "meaning": "to / toward",
+            "learnerConnections": [
+              "Use عَلَىٰ as a cue to inspect the case ending of the next noun.",
+              "Its basic spatial sense ‘upon’ extends naturally to a target or concern."
+            ],
+            "pedagogy": {
+              "recognitionClue": "The word is often recognizable by عَلَىٰ and its final ىٰ.",
+              "explanation": "Here عَلَىٰ does not mean physical ‘on’; it marks what the urging is directed toward.",
+              "takeaway": "Prepositions can shift from a physical direction to a figurative target."
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:3:4",
+          "teachingId": "teaching:taam",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:3:4",
+              "mode": "atomic",
+              "sourceText": "طَعَامِ",
+              "parts": [
+                {
+                  "id": "part:word:107:3:4:1",
+                  "order": 1,
+                  "sourceText": "طَعَامِ",
+                  "displayText": "طَعَامِ",
+                  "label": "whole noun",
+                  "meaning": "food; feeding",
+                  "kind": "whole"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:taam",
+              "meaning": "food or feeding",
+              "type": "noun",
+              "root": "ط ع م",
+              "rootPicture": "The root points to tasting and eating; طَعَام is what is eaten or provided as food.",
+              "construction": "Lexical noun طَعَام with a genitive ـِ ending here because it follows عَلَىٰ; it is also the first term of an iḍāfah.",
+              "grammar": "Singular noun in the genitive after عَلَىٰ; it is مُضَافٌ (the first term of a possessive/genitive construction).",
+              "sentenceRole": "Names the food or feeding that the person does not encourage.",
+              "recognitionClue": "The familiar root ط ع م is associated with eating and taste; the final kasrah marks this occurrence as genitive.",
+              "forms": [],
+              "takeaway": "طَعَامِ is not an isolated object here: its genitive ending and following noun form the phrase ‘the poor person's food/feeding.’"
+            },
+            "occurrenceRole": "Genitive noun after عَلَىٰ and first term of an iḍāfah.",
+            "morphology": {
+              "provider": "quranic-arabic-corpus",
+              "root": "ط ع م",
+              "lemma": "طَعَام",
+              "pattern": "فَعَال",
+              "partOfSpeech": "noun",
+              "features": [
+                "singular",
+                "genitive",
+                "first term of iḍāfah"
+              ],
+              "notes": "Provider evidence identifies the lexical noun and case features; the broader ‘feeding’ sense is an authored contextual gloss."
+            },
+            "grammar": "Genitive singular after عَلَىٰ and مُضَافٌ before ٱلْمِسْكِينِ.",
+            "meaning": "food; feeding",
+            "learnerConnections": [
+              "Connect طَعَام to the root family of taste and eating.",
+              "A final kasrah can reflect a preposition as well as an iḍāfah relationship."
+            ],
+            "pedagogy": {
+              "recognitionClue": "The root sequence ط ع م is visible in the consonants of طَعَام.",
+              "explanation": "English ‘feeding’ captures the social action in this context, while the Arabic noun literally centers on food.",
+              "takeaway": "Let the surrounding verb turn the noun ‘food’ into the wider idea of providing food."
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:3:5",
+          "teachingId": "teaching:al-miskeen",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:3:5",
+              "mode": "segmented",
+              "sourceText": "ٱلْمِسْكِينِ",
+              "parts": [
+                {
+                  "id": "part:word:107:3:5:1",
+                  "order": 1,
+                  "sourceText": "ٱلْ",
+                  "displayText": "ٱلْ",
+                  "label": "definite article",
+                  "meaning": "the",
+                  "kind": "article"
+                },
+                {
+                  "id": "part:word:107:3:5:2",
+                  "order": 2,
+                  "sourceText": "مِسْكِينِ",
+                  "displayText": "مِسْكِينِ",
+                  "label": "noun stem",
+                  "meaning": "needy person; poor person",
+                  "kind": "stem"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:al-miskeen",
+              "meaning": "the needy person; the poor",
+              "type": "definite singular noun",
+              "root": "س ك ن",
+              "rootPicture": "The root evokes stillness or being held back; the lexical word names a person left in need or constrained by lack of means.",
+              "construction": "ٱلْ (the) + مِسْكِينِ (needy person), with a genitive ـِ ending because it is the second term of an iḍāfah.",
+              "grammar": "Definite masculine singular noun in the genitive as مُضَافٌ إِلَيْهِ, specifying whose food or feeding is meant.",
+              "sentenceRole": "The genitive possessor/qualifier attached to طَعَامِ; it identifies the people whose needs are at issue.",
+              "recognitionClue": "The attached ٱلْ marks definiteness; the final kasrah is required by the iḍāfah construction.",
+              "forms": [],
+              "takeaway": "The phrase ends by putting the needy person at the center of the food-related concern."
+            },
+            "occurrenceRole": "Definite genitive second term of the iḍāfah طَعَامِ ٱلْمِسْكِينِ.",
+            "morphology": {
+              "provider": "quranic-arabic-corpus",
+              "root": "س ك ن",
+              "lemma": "مِسْكِين",
+              "partOfSpeech": "noun",
+              "features": [
+                "masculine singular",
+                "definite",
+                "genitive",
+                "second term of iḍāfah"
+              ],
+              "notes": "The root connection س ك ن is retained as a learner-facing lexical connection; an exact derivational pattern is intentionally not asserted here."
+            },
+            "grammar": "Definite masculine singular genitive noun, functioning as مُضَافٌ إِلَيْهِ after طَعَامِ.",
+            "meaning": "the needy person; the poor",
+            "learnerConnections": [
+              "The root connection س ك ن can suggest being restricted or unable to move freely, a useful memory aid for neediness.",
+              "In an iḍāfah, the second noun is genitive and the first noun loses tanwīn."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Look for ٱلْ at the front and a final kasrah after the iḍāfah first term.",
+              "explanation": "The definite article makes the noun ‘the needy person,’ while the case ending comes from its position in the genitive construction.",
+              "takeaway": "Case endings can reveal relationships even when English uses a preposition such as ‘of’ or an infinitive such as ‘to feed.’"
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        }
+      ]
+    },
+    {
+      "ayahId": "ayah:107:4",
+      "ayahLayers": {
+        "grammar": "فَ links the warning to the preceding description as a consequence. وَيْلٌ is a nominative warning noun, and لِـ introduces the definite sound masculine plural noun الْمُصَلِّينَ in the genitive. The compressed spelling لِّلْمُصَلِّينَ reflects the meeting of لِـ with the definite article.",
+        "contextualMeaning": "So woe to those who pray. The warning is intentionally completed by the following ayahs, which identify the blameworthy worshippers as those heedless of their prayer, seeking to be seen, and withholding ordinary help.",
+        "sentenceMap": [
+          "فَ: consequence marker linking the warning to the preceding portrait.",
+          "وَيْلٌ: nominative warning noun.",
+          "لِّلْمُصَلِّينَ: prepositional phrase naming the recipients of the warning; the next ayahs provide their defining traits."
+        ]
+      },
+      "words": [
+        {
+          "wordId": "word:107:4:1",
+          "teachingId": "teaching:fawayl",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:4:1",
+              "mode": "segmented",
+              "sourceText": "فَوَيْلٌ",
+              "parts": [
+                {
+                  "id": "part:word:107:4:1:1",
+                  "order": 1,
+                  "sourceText": "فَ",
+                  "displayText": "فَ",
+                  "label": "consequence connector",
+                  "meaning": "so / then",
+                  "kind": "connector"
+                },
+                {
+                  "id": "part:word:107:4:1:2",
+                  "order": 2,
+                  "sourceText": "وَيْلٌ",
+                  "displayText": "وَيْلٌ",
+                  "label": "warning noun",
+                  "meaning": "woe",
+                  "kind": "stem"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:fawayl",
+              "meaning": "so woe; then woe",
+              "type": "consequence connector plus warning noun",
+              "root": "و ي ل",
+              "rootPicture": "وَيْلٌ is a forceful cry of ruin or woe; فَ presents it as the consequence of what has just been described.",
+              "construction": "فَ (so/then) + وَيْلٌ (woe), followed by لِـ identifying the recipients.",
+              "grammar": "فَ links the result to the preceding context; وَيْلٌ is an indefinite nominative noun in the warning clause.",
+              "sentenceRole": "Introduces the emphatic consequence or warning before naming its recipients.",
+              "recognitionClue": "An initial فَ often signals consequence; the ending ٌ shows the noun is nominative and indefinite here.",
+              "forms": [],
+              "takeaway": "فَوَيْلٌ is a connected warning: ‘so woe,’ not merely an isolated noun."
+            },
+            "occurrenceRole": "Consequence marker followed by the nominative warning noun.",
+            "morphology": {
+              "provider": "quranic-arabic-corpus",
+              "root": "و ي ل",
+              "lemma": "وَيْل",
+              "partOfSpeech": "connector + noun",
+              "features": [
+                "فَ: consequence connector",
+                "indefinite",
+                "nominative",
+                "singular noun"
+              ],
+              "notes": "Provider evidence is kept separate from the authored explanation of the rhetorical consequence."
+            },
+            "grammar": "فَ is a consequence connector; وَيْلٌ is nominative and indefinite in the warning expression.",
+            "meaning": "so woe; then woe",
+            "learnerConnections": [
+              "Compare فَ as a connector of consequence in other clauses.",
+              "Tanwīn ḍammah on وَيْلٌ signals an indefinite nominative noun."
+            ],
+            "pedagogy": {
+              "recognitionClue": "Hear the pause after the emphatic فَ and notice the tanwīn at the end of وَيْلٌ.",
+              "explanation": "The connector makes the warning feel like a stated result of the conduct described earlier.",
+              "takeaway": "Arabic connectors often reveal how one ayah's idea flows into the next."
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        },
+        {
+          "wordId": "word:107:4:2",
+          "teachingId": "teaching:lil-musalleen",
+          "layers": {
+            "surfaceBreakdown": {
+              "id": "breakdown:word:107:4:2",
+              "mode": "atomic",
+              "sourceText": "لِّلْمُصَلِّينَ",
+              "parts": [
+                {
+                  "id": "part:word:107:4:2:1",
+                  "order": 1,
+                  "sourceText": "لِّلْمُصَلِّينَ",
+                  "displayText": "لِّلْمُصَلِّينَ",
+                  "label": "whole contracted prepositional phrase",
+                  "meaning": "for those who pray",
+                  "kind": "whole"
+                }
+              ]
+            },
+            "breakdownScope": "occurrence",
+            "teaching": {
+              "id": "teaching:lil-musalleen",
+              "meaning": "for the ones who pray; for the prayerful ones",
+              "type": "preposition plus definite active participle, sound masculine plural",
+              "root": "ص ل و",
+              "rootPicture": "The root is connected with ṣalāh, turning to worship and prayer; the active participle names people who pray.",
+              "construction": "لِـ (for/to) + the definite article + مُصَلِّيـنَ (those who pray, sound masculine plural in the genitive). The two lām sounds meet in the written contraction لِّلْـ.",
+              "grammar": "لِـ is a preposition, so الْمُصَلِّينَ is genitive; مُصَلِّيـنَ is the sound masculine plural form with ـِينَ in this case. The doubled first lām represents the contracted لِـ + ال.",
+              "sentenceRole": "Prepositional phrase specifying the people for whom the warning is stated; the following ayahs qualify which worshippers are meant.",
+              "recognitionClue": "The ending ـِينَ commonly marks a sound masculine plural in the genitive or accusative; the initial doubled lām signals لِـ before the definite article.",
+              "forms": [
+                {
+                  "form": "صَلَّى",
+                  "meaning": "he prayed",
+                  "difference": "Perfect Form II verb; مُصَلٍّ is the active participle naming the person who performs the action."
+                },
+                {
+                  "form": "يُصَلِّي",
+                  "meaning": "he prays",
+                  "difference": "Imperfect Form II verb; the source noun is derived as an active participle rather than a finite verb."
+                }
+              ],
+              "takeaway": "The warning is not a blanket condemnation of prayer: the next ayahs identify the heedless, performative worshippers being warned."
+            },
+            "occurrenceRole": "Prepositional phrase naming the recipients of وَيْلٌ; genitive sound masculine plural noun after لِـ.",
+            "morphology": {
+              "provider": "quranic-arabic-corpus",
+              "root": "ص ل و",
+              "lemma": "مُصَلٍّ",
+              "pattern": "مُفَعِّل (active participle of Form II)",
+              "partOfSpeech": "preposition + definite active participle noun",
+              "features": [
+                "لِـ: preposition",
+                "definite",
+                "active participle",
+                "sound masculine plural",
+                "genitive",
+                "orthographic contraction of لِـ + ال"
+              ],
+              "notes": "The provider evidence is kept separate from the authored explanation of the contracted surface. The complete surface is intentionally treated atomically in WordBreakdown."
+            },
+            "grammar": "لِـ governs the genitive; الْمُصَلِّينَ is a definite sound masculine plural active participle in ـِينَ.",
+            "meaning": "for those who pray",
+            "learnerConnections": [
+              "Connect مُصَلٍّ to صَلَّى and the prayer noun صَلَاة.",
+              "Recognize ـِينَ as the sound masculine plural oblique ending.",
+              "Watch for doubled ل when لِـ meets the definite article in this orthography."
+            ],
+            "pedagogy": {
+              "recognitionClue": "The combination of initial لِّلْ and final ـِينَ points to ‘for the [plural] …’ in this occurrence.",
+              "explanation": "The word is kept atomic in the surface breakdown because the written contraction merges the preposition and article; its internal grammar is still explained in the teaching layer.",
+              "takeaway": "A surface token can be orthographically contracted while its grammatical parts remain recoverable."
+            }
+          },
+          "layerState": {
+            "segmentation": "draft",
+            "morphology": "draft",
+            "grammar": "draft",
+            "meaning": "draft",
+            "learnerConnections": "draft",
+            "pedagogy": "draft"
+          }
+        }
+      ]
+    }
+  ]
+}

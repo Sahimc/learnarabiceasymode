@@ -1,5 +1,4 @@
 import crypto from "node:crypto";
-import path from "node:path";
 import { readPackage, discoverPackagePaths } from "./lib/packages";
 import { pool, withTransaction } from "./lib/db";
 import type { SurahPackage, WordBreakdown } from "../app/data/content-contract";
@@ -10,11 +9,6 @@ const force = args.includes("--force");
 const surahArgIndex = args.indexOf("--surah");
 const surahFilter =
   surahArgIndex >= 0 ? Number(args[surahArgIndex + 1]) : undefined;
-const packageArgIndex = args.indexOf("--package");
-if (packageArgIndex >= 0 && !args[packageArgIndex + 1])
-  throw new Error("--package requires a surah.json path");
-const packagePath =
-  packageArgIndex >= 0 ? path.resolve(args[packageArgIndex + 1]) : undefined;
 
 function checksum(value: string) {
   return crypto.createHash("sha256").update(value).digest("hex");
@@ -670,7 +664,7 @@ async function insertPackage(
   });
 }
 
-const paths = packagePath ? [packagePath] : await discoverPackagePaths();
+const paths = await discoverPackagePaths();
 const selectedPaths = surahFilter
   ? paths.filter(
       (file) =>

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "review:packet:107:5-6:revision:1:pedagogy:pedagogy-reviewer-1",
+  "packetId": "packet:107:5-6",
+  "draftId": "draft:107:5-6:revision-001",
+  "revision": 1,
+  "scope": {"type":"packet","ayahIds":["ayah:107:5","ayah:107:6"]},
+  "reviewerRole": "pedagogy",
+  "reviewerId": "pedagogy-reviewer-1",
+  "independent": true,
+  "status": "revision-required",
+  "issues": [
+    {
+      "id": "issue:packet:107:5-6:revision:1:pedagogy:001",
+      "code": "DEVOTIONAL_ROOT_PICTURE_OVERREACH",
+      "severity": "warning",
+      "scopeId": "ayah:107:5",
+      "path": "ayahs[0].words[3].layers.teaching.rootPicture",
+      "message": "The root picture for صَلَاتِهِمْ presents connection to Allah as a root-based lexical association. That devotional explanation may be meaningful, but it is not clearly separated from morphology and can mislead learners about what the root itself encodes.",
+      "requiredAction": "Replace it with a neutral lexical mnemonic, or explicitly label the connection-to-Allah wording as a devotional/contextual association rather than a root meaning.",
+      "evidence": {"occurrence":"word:107:5:4","canonicalArabic":"صَلَاتِهِمْ","draftText":"ص ل و is associated with prayer and connection in ṣalāh; picture an act of prayer connecting the worshipper to Allah.","learnerRisk":"The learner may treat a devotional association as the lexical derivation of the root."}
+    }
+  ],
+  "reviewedAt": "2026-10-03T20:20:25.331Z"
+}

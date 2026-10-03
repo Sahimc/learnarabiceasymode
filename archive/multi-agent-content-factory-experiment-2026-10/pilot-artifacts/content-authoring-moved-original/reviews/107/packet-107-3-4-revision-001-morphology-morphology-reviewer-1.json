@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "review:packet:107:3-4:revision:1:morphology:morphology-reviewer-1",
+  "packetId": "packet:107:3-4",
+  "draftId": "draft:packet:107:3-4:revision:1",
+  "revision": 1,
+  "scope": {
+    "type": "packet",
+    "ayahIds": ["ayah:107:3", "ayah:107:4"]
+  },
+  "reviewerRole": "morphology",
+  "reviewerId": "morphology-reviewer-1",
+  "independent": true,
+  "status": "revision-required",
+  "issues": [
+    {
+      "id": "issue:packet:107:3-4:revision:1:morphology:001",
+      "code": "MORPHOLOGY_SEGMENTATION_INCOMPLETE",
+      "severity": "blocker",
+      "scopeId": "word:107:4:2",
+      "path": "ayahs[1].words[1].layers.surfaceBreakdown",
+      "message": "لِّلْمُصَلِّينَ is marked atomic even though the provider analysis divides the occurrence into a prefixed lām preposition and a Form II active participle; the draft's own morphology also claims that attached structure.",
+      "requiredAction": "Replace atomic mode with a provider-supported segmented breakdown that exposes the prefixed لِـ and the following definite active-participle phrase. Preserve the canonical marks and make the ordered part sourceText values concatenate exactly to لِّلْمُصَلِّينَ.",
+      "evidence": {
+        "ayahId": "ayah:107:4",
+        "occurrence": "لِّلْمُصَلِّينَ",
+        "canonicalSource": "content-authoring/source-packets/107/packet-107-3-4.json:word:107:4:2",
+        "provider": "quranic-arabic-corpus",
+        "providerRecordKey": "107:4:2",
+        "providerFinding": "The word is divided into two morphological segments: prefixed preposition lām and masculine plural Form II active participle in the genitive.",
+        "draftValue": "layers.surfaceBreakdown.mode=atomic"
+      }
+    },
+    {
+      "id": "issue:packet:107:3-4:revision:1:morphology:002",
+      "code": "MORPHOLOGY_PARTICLE_ROLE_OVERSTATED",
+      "severity": "error",
+      "scopeId": "word:107:4:1",
+      "path": "ayahs[1].words[0].layers.morphology.features[0]",
+      "message": "The morphology feature labels فَ in فَوَيْلٌ as a consequence connector, but the provider analysis identifies it as a prefixed resumption particle. Consequence may be a contextual reading, not the morphology label.",
+      "requiredAction": "Change the morphology feature to a neutral provider-aligned label such as prefixed resumption/linking particle; keep any consequence nuance in the meaning or grammar layer rather than asserting it as the particle's morphology.",
+      "evidence": {
+        "ayahId": "ayah:107:4",
+        "occurrence": "فَوَيْلٌ",
+        "provider": "quranic-arabic-corpus",
+        "providerRecordKey": "107:4:1",
+        "providerFinding": "REM – prefixed resumption particle; وَيْلٌ is a nominative indefinite noun.",
+        "draftValue": "فَ: consequence connector"
+      }
+    },
+    {
+      "id": "issue:packet:107:3-4:revision:1:morphology:003",
+      "code": "MORPHOLOGY_PARTICLE_ROLE_OVERSTATED",
+      "severity": "error",
+      "scopeId": "word:107:4:1",
+      "path": "ayahs[1].words[0].layers.surfaceBreakdown.parts[0].label",
+      "message": "The surface part for فَ in فَوَيْلٌ repeats the unsupported consequence label, so the attached-element teaching does not match the provider's resumption-particle analysis.",
+      "requiredAction": "Relabel the first surface part as a prefixed resumption/linking particle and synchronize dependent morphology-facing prose without changing the canonical sourceText.",
+      "evidence": {
+        "ayahId": "ayah:107:4",
+        "occurrence": "فَوَيْلٌ",
+        "sourceText": "فَ",
+        "provider": "quranic-arabic-corpus",
+        "providerRecordKey": "107:4:1",
+        "providerFinding": "The initial فَ is a prefixed resumption particle.",
+        "draftValue": "consequence connector"
+      }
+    }
+  ],
+  "reviewedAt": "2026-10-03T20:23:11.217Z"
+}

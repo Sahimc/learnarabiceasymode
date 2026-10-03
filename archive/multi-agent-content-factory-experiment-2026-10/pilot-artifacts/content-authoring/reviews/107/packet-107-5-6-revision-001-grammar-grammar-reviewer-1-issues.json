@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "manifestId": "issues:packet:107:5-6:revision:1:packet:107:5-6:grammar:grammar-reviewer-1",
+  "packetId": "packet:107:5-6",
+  "draftId": "draft:107:5-6:revision-001",
+  "revision": 1,
+  "scope": {
+    "type": "packet",
+    "ayahIds": ["ayah:107:5", "ayah:107:6"]
+  },
+  "status": "open",
+  "issues": [
+    {
+      "id": "issue:packet:107:5-6:revision:1:ayah:107:6:grammar:topic-subject-distinction",
+      "code": "GRAMMAR_TOPIC_SUBJECT_DISTINCTION",
+      "severity": "error",
+      "scopeId": "ayah:107:6",
+      "path": "/ayahs/1/words/1/layers/occurrenceRole",
+      "message": "The detached pronoun هُمْ is described as the explicit subject of the clause, but in ٱلَّذِينَ هُمْ يُرَآءُونَ it is the topic/nominal subject of the clause whose predicate is the verbal sentence يُرَآءُونَ. The verb itself carries its grammatical subject in the attached واو الجماعة of ـونَ.",
+      "requiredAction": "Rewrite the occurrence role and all linked explanations so هُمْ is identified as the topic/nominal subject, and distinguish it from the attached plural subject marker in يُرَآءُونَ.",
+      "evidence": {
+        "ayahArabic": "ٱلَّذِينَ هُمْ يُرَآءُونَ",
+        "occurrenceArabic": "هُمْ",
+        "followingVerbArabic": "يُرَآءُونَ",
+        "draftText": "Explicit subject of the clause whose verb is يُرَآءُونَ.",
+        "correctRelationship": "هُمْ is a detached third-person masculine-plural pronoun functioning as the topic/nominal subject; يُرَآءُونَ is the predicate verbal sentence and its واو الجماعة supplies the verb's subject.",
+        "relatedPaths": [
+          "/ayahs/1/ayahLayers/grammar",
+          "/ayahs/1/ayahLayers/sentenceMap/1",
+          "/ayahs/1/words/1/layers/teaching/grammar",
+          "/ayahs/1/words/1/layers/teaching/sentenceRole",
+          "/ayahs/1/words/2/layers/grammar"
+        ]
+      }
+    }
+  ]
+}
