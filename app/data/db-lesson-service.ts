@@ -9,6 +9,7 @@ import type {
   WordLesson,
   WordOccurrence,
 } from "./fixtures";
+import type { MorphologyAnalysis } from "./morphology";
 
 type DbRow = Record<string, any>;
 
@@ -81,6 +82,7 @@ async function loadRuntimeSurahs(): Promise<Surah[]> {
     lessonsResult,
     breakdownsResult,
     partsResult,
+    morphologyResult,
   ] = await Promise.all([
     pool.query("select * from surahs order by number"),
     pool.query("select * from ayahs order by surah_id, number"),
@@ -90,6 +92,7 @@ async function loadRuntimeSurahs(): Promise<Surah[]> {
     pool.query(
       "select * from word_breakdown_parts order by breakdown_id, part_order",
     ),
+    pool.query("select * from morphology_records order by occurrence_id"),
   ]);
 
   const lessonRows = new Map<string, DbRow>(
@@ -113,6 +116,34 @@ async function loadRuntimeSurahs(): Promise<Surah[]> {
       occurrenceBreakdowns.set(row.word_occurrence_id, breakdown);
     if (row.teaching_entry_id)
       sharedBreakdowns.set(row.teaching_entry_id, breakdown);
+  }
+  const morphologyByOccurrence = new Map<string, MorphologyAnalysis>();
+  for (const row of morphologyResult.rows) {
+    const details = parseJson<{
+      recordKey?: string;
+      version?: string;
+      sourceText?: string;
+      lemma?: string;
+      root?: string;
+      pattern?: string;
+      features?: MorphologyAnalysis["features"];
+      segmentation?: MorphologyAnalysis["segmentation"];
+      formation?: MorphologyAnalysis["formation"];
+    }>(row.features, {});
+    morphologyByOccurrence.set(row.occurrence_id, {
+      id: row.id,
+      provider: row.provider,
+      recordKey: details.recordKey ?? row.occurrence_id,
+      version: details.version ?? "unknown",
+      sourceText: details.sourceText ?? "",
+      lemma: details.lemma,
+      root: details.root,
+      pattern: details.pattern,
+      partOfSpeech: row.part_of_speech,
+      features: details.features ?? [],
+      segmentation: details.segmentation,
+      formation: details.formation,
+    });
   }
 
   const wordsByAyah = new Map<string, WordOccurrence[]>();
@@ -139,6 +170,7 @@ async function loadRuntimeSurahs(): Promise<Surah[]> {
       occurrenceRole: row.occurrence_role ?? undefined,
       sourceRoot: row.root_id ?? undefined,
       breakdown,
+      morphology: morphologyByOccurrence.get(row.id),
     };
     const list = wordsByAyah.get(row.ayah_id) ?? [];
     list.push(word);

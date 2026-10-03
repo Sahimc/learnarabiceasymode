@@ -23,6 +23,10 @@
     "breakdownOverride": {
       "$ref": "#/$defs/wordBreakdown",
       "description": "Occurrence-specific override resolved before a shared teaching-entry breakdown."
+    },
+    "morphology": {
+      "$ref": "#/$defs/morphology",
+      "description": "Provider-backed morphological evidence. This is separate from project-authored teaching prose."
     }
   },
   "$defs": {
@@ -87,6 +91,89 @@
         "recordKey": { "type": "string", "minLength": 1 },
         "version": { "type": "string" },
         "attribution": { "type": "string" }
+      }
+    },
+    "morphology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "provider",
+        "recordKey",
+        "version",
+        "sourceText",
+        "features"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "provider": { "type": "string", "minLength": 1 },
+        "recordKey": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 },
+        "sourceText": { "type": "string", "minLength": 1 },
+        "lemma": { "type": "string", "minLength": 1 },
+        "root": { "type": "string", "minLength": 1 },
+        "pattern": { "type": "string", "minLength": 1 },
+        "partOfSpeech": { "type": "string", "minLength": 1 },
+        "features": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/morphologyFeature" }
+        },
+        "segmentation": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/morphologySurfacePart" }
+        },
+        "formation": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/morphologyFormationPart" }
+        }
+      }
+    },
+    "morphologyFeature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "label", "value"],
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "value": { "type": "string", "minLength": 1 }
+      }
+    },
+    "morphologySurfacePart": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceText", "displayText", "label", "meaning", "kind"],
+      "properties": {
+        "sourceText": { "type": "string", "minLength": 1 },
+        "displayText": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "meaning": { "type": "string", "minLength": 1 },
+        "kind": {
+          "enum": [
+            "whole",
+            "prefix",
+            "stem",
+            "suffix",
+            "article",
+            "preposition",
+            "subject-marker",
+            "object-pronoun",
+            "possessive-pronoun",
+            "ending",
+            "connector",
+            "other"
+          ]
+        }
+      }
+    },
+    "morphologyFormationPart": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["displayText", "label", "meaning", "kind"],
+      "properties": {
+        "displayText": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "meaning": { "type": "string", "minLength": 1 },
+        "kind": { "enum": ["lemma", "ending", "pattern", "other"] }
       }
     }
   }

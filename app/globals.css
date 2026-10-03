@@ -1269,6 +1269,27 @@ p {
   font-size: 9px;
   padding: 5px 7px;
 }
+.source-morphology {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 18px;
+  padding-top: 16px;
+  text-align: center;
+}
+.source-morphology > strong {
+  color: var(--teal-dark);
+  font-family: var(--arabic);
+  font-size: 28px;
+  font-weight: 500;
+}
+.source-morphology .morphology-analysis {
+  border-top: 0;
+  margin-top: 8px;
+  padding-top: 0;
+}
 .lesson-footer {
   align-items: center;
   border-top: 1px solid var(--line);
@@ -2375,6 +2396,101 @@ p {
   font-size: 12px;
   margin: 3px 0 0;
 }
+.morphology-analysis {
+  border-top: 1px solid #eadfd3;
+  margin-top: 12px;
+  max-width: 680px;
+  padding-top: 14px;
+  width: 100%;
+}
+.morphology-formation {
+  display: grid;
+  gap: 8px;
+}
+.morphology-formation-parts {
+  align-items: flex-start;
+  display: flex;
+  gap: 17px;
+  justify-content: center;
+  width: 100%;
+}
+.morphology-formation-part {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 92px;
+  position: relative;
+  text-align: center;
+}
+.morphology-formation-part i {
+  color: var(--orange);
+  font-family: var(--sans);
+  font-size: 18px;
+  font-style: normal;
+  left: -13px;
+  position: absolute;
+  top: 7px;
+}
+.morphology-formation-part b {
+  color: var(--teal-dark);
+  font-family: var(--arabic);
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.morphology-formation-part strong {
+  color: var(--teal-dark);
+  font-size: 11px;
+  font-weight: 600;
+}
+.morphology-formation-part small,
+.morphology-source {
+  color: #526761;
+  font-size: 11px;
+  line-height: 1.35;
+}
+.morphology-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  margin-top: 15px;
+}
+.morphology-fact,
+.morphology-features {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-align: center;
+}
+.morphology-fact strong {
+  color: var(--teal-dark);
+  font-size: 13px;
+  font-weight: 600;
+}
+.morphology-features {
+  gap: 7px;
+  margin-top: 14px;
+}
+.morphology-features > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  justify-content: center;
+}
+.morphology-feature {
+  color: #526761;
+  font-size: 11px;
+}
+.morphology-feature b {
+  color: var(--teal-dark);
+  font-weight: 600;
+}
+.morphology-source {
+  display: block;
+  margin-top: 14px;
+}
 .lesson-sequence {
   display: block;
 }
@@ -3089,6 +3205,18 @@ p {
   color: #c3d8ce;
 }
 
+@media (max-width: 520px) {
+  .morphology-formation-parts {
+    gap: 10px;
+  }
+  .morphology-formation-part {
+    min-width: 74px;
+  }
+  .morphology-formation-part i {
+    left: -8px;
+  }
+}
+
 @media print {
   .print-page {
     background: #fff;
@@ -3102,5 +3230,112 @@ p {
     max-width: none;
     min-height: auto;
     padding: 0;
+  }
+}
+/* Lesson explorer cleanup and overlap-safe typography. */
+.workspace-heading {
+  align-items: start;
+}
+
+.workspace-heading h2 {
+  line-height: 1.08;
+  max-width: 720px;
+}
+
+.surah-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.surah-rail-all-link {
+  margin-top: 12px;
+}
+
+.current-surah-header {
+  border-bottom: 1px solid var(--line);
+  min-height: 106px;
+  padding: 18px 4px;
+  position: relative;
+}
+
+.current-surah-name {
+  border-bottom: 0;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.current-surah-count {
+  color: var(--ink-soft);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  position: absolute;
+  right: 4px;
+  text-transform: uppercase;
+  top: 21px;
+  white-space: nowrap;
+}
+
+.word-focus-head {
+  min-height: 190px;
+  padding-bottom: 24px;
+  padding-top: 32px;
+}
+
+.word-focus-copy {
+  gap: 6px;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.word-focus-copy .card-kicker {
+  line-height: 1.4;
+  margin: 0;
+}
+
+.word-focus-head h4 {
+  line-height: 1.35;
+  margin: 0;
+}
+
+.selected-word-meta {
+  line-height: 1.4;
+  margin: 0 !important;
+}
+
+.morphology-source {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .workspace-heading h2 {
+    max-width: 560px;
+  }
+
+  .current-surah-header {
+    min-height: 96px;
+    padding-top: 15px;
+  }
+
+  .current-surah-name {
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+  }
+
+  .current-surah-count {
+    right: 4px;
+    top: 18px;
+  }
+
+  .word-focus-head {
+    min-height: 185px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 31px;
+  }
+
+  .word-focus-copy {
+    max-width: calc(100% - 72px);
   }
 }

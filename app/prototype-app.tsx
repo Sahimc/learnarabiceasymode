@@ -50,6 +50,72 @@ function LessonBreakdownParts({
   );
 }
 
+function MorphologyDetails({
+  morphology,
+}: {
+  morphology: NonNullable<WordOccurrence["morphology"]>;
+}) {
+  const formation = morphology.formation ?? [];
+  const facts = [
+    ["Root", morphology.root],
+    ["Lemma", morphology.lemma],
+    ["Pattern", morphology.pattern],
+    ["Part of speech", morphology.partOfSpeech],
+  ].filter((item): item is [string, string] => Boolean(item[1]));
+
+  return (
+    <div className="morphology-analysis" aria-label="Deeper morphology">
+      {formation.length > 0 && (
+        <div className="morphology-formation">
+          <span className="field-label">Deeper formation</span>
+          <div className="morphology-formation-parts" dir="rtl">
+            {formation.map((part, index) => (
+              <span
+                className="morphology-formation-part"
+                key={`${part.displayText}-${part.label}`}
+              >
+                {index > 0 && <i aria-hidden="true">+</i>}
+                <b dir="rtl">{part.displayText}</b>
+                <strong>{part.label}</strong>
+                <small>{part.meaning}</small>
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+      {facts.length > 0 && (
+        <div className="morphology-grid">
+          {facts.map(([label, value]) => (
+            <div className="morphology-fact" key={label}>
+              <span className="field-label">{label}</span>
+              <strong
+                dir={label === "Root" || label === "Lemma" ? "rtl" : undefined}
+              >
+                {value}
+              </strong>
+            </div>
+          ))}
+        </div>
+      )}
+      {morphology.features.length > 0 && (
+        <div className="morphology-features">
+          <span className="field-label">Grammar features</span>
+          <div>
+            {morphology.features.map((feature) => (
+              <span
+                className="morphology-feature"
+                key={`${feature.key}-${feature.value}`}
+              >
+                <b>{feature.label}:</b> {feature.value}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 type LessonSettings = {
   showRoot: boolean;
   showTransliteration: boolean;
@@ -231,10 +297,6 @@ export function PrototypeApp({
   const selectedLesson = selectedWord.lesson;
   const progressKey = getProgressKey(selectedSurah, selectedAyah);
   const hasCompleted = completed.includes(progressKey);
-  const completeCount = content.filter(
-    (item) => item.status === "complete",
-  ).length;
-
   function chooseSurah(item: Surah) {
     if (item.ayahs.length === 0) {
       window.location.assign(`/learn/${item.number}/1`);
@@ -273,7 +335,18 @@ export function PrototypeApp({
   }
 
   const sectionLabel = "Lesson explorer";
-  const visibleSurahs = useMemo(() => content, [content]);
+  const visibleSurahs = useMemo(() => {
+    if (view === "surahs") return content;
+    const currentIndex = Math.max(
+      0,
+      content.findIndex((item) => item.number === selectedSurah),
+    );
+    const start = Math.min(
+      Math.max(0, currentIndex - 1),
+      Math.max(0, content.length - 3),
+    );
+    return content.slice(start, start + 3);
+  }, [content, selectedSurah, view]);
 
   if (view === "print") {
     return <PrintPreview surah={surah} ayah={ayah} />;
@@ -421,31 +494,13 @@ export function PrototypeApp({
             <p className="eyebrow">
               <span className="eyebrow-line" /> {sectionLabel}
             </p>
-            <h2>Start with the whole word.</h2>
-          </div>
-          <div className="workspace-heading-actions">
-            <div className="workspace-summary">
-              <span>
-                <strong>{completeCount}</strong> complete starter sūrahs
-              </span>
-              <span className="summary-divider" />
-              <span>
-                <strong>0</strong> accounts required
-              </span>
-            </div>
-            <Link className="workspace-all-link" href="/surahs">
-              View all surahs <span>→</span>
-            </Link>
+            <h2>Learn meaning, roots and grammar — one word at a time.</h2>
           </div>
         </div>
 
         {view === "surahs" && <QuranSearch />}
 
         <div className="surah-rail" aria-label="Sūrah selector">
-          <div className="rail-label">
-            {view === "surahs" ? "All sūrahs" : "Starter scope"}
-            <span>{view === "surahs" ? "1–114" : "109–114"}</span>
-          </div>
           <div className="surah-cards">
             {visibleSurahs.map((item) => (
               <button
@@ -475,20 +530,29 @@ export function PrototypeApp({
               </button>
             ))}
           </div>
+          {view !== "surahs" && (
+            <Link
+              className="workspace-all-link surah-rail-all-link"
+              href="/surahs"
+            >
+              View all surahs <span>→</span>
+            </Link>
+          )}
         </div>
 
         <div className="lesson-grid">
           <aside className="ayah-sidebar" aria-label="Āyah navigation">
-            <div className="sidebar-topline">
-              <span>Current sūrah</span>
-              <span>{surah.ayahCount} āyāt</span>
-            </div>
-            <div className="current-surah-name">
-              <span className="arabic-mini" dir="rtl">
-                {surah.arabicName}
+            <div className="current-surah-header">
+              <div className="current-surah-name">
+                <span className="arabic-mini" dir="rtl">
+                  {surah.arabicName}
+                </span>
+                <strong>{surah.transliteration}</strong>
+                <small>{surah.englishLabel}</small>
+              </div>
+              <span className="current-surah-count">
+                {surah.ayahCount} āyāt
               </span>
-              <strong>{surah.transliteration}</strong>
-              <small>{surah.englishLabel}</small>
             </div>
             <div className="ayah-list">
               {surah.ayahs.map((item) => (
@@ -1069,6 +1133,9 @@ function WordFocus({
           </span>
           <LessonBreakdownParts parts={breakdownParts} />
           <p>{lesson.meaning}</p>
+          {word.morphology && (
+            <MorphologyDetails morphology={word.morphology} />
+          )}
         </div>
       )}
       <div className="lesson-sequence">
@@ -1194,6 +1261,16 @@ function WordFocus({
 }
 
 function SourceOnlyState({ word }: { word: WordOccurrence }) {
+  const morphology = word.morphology;
+  const surfaceParts = morphology?.segmentation ?? [];
+  const displayParts = surfaceParts.map((part) => ({
+    text: part.sourceText,
+    displayText: part.displayText,
+    label: part.label,
+    meaning: part.meaning,
+    kind: part.kind,
+  }));
+
   return (
     <section className="source-only-state" aria-label="Custom lesson pending">
       <div className="pending-icon">○</div>
@@ -1209,6 +1286,24 @@ function SourceOnlyState({ word }: { word: WordOccurrence }) {
           <span>Word position ✓</span>
           <span>Custom teaching pending</span>
         </div>
+        {morphology && (
+          <div
+            className="source-morphology"
+            aria-label="Imported morphology evidence"
+          >
+            <span className="field-label">Imported morphology evidence</span>
+            <strong dir="rtl">{word.arabic}</strong>
+            {surfaceParts.length > 1 && (
+              <>
+                <span className="breakdown-arrow" aria-hidden="true">
+                  ↓
+                </span>
+                <LessonBreakdownParts parts={displayParts} />
+              </>
+            )}
+            <MorphologyDetails morphology={morphology} />
+          </div>
+        )}
       </div>
     </section>
   );

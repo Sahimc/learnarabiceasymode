@@ -67,7 +67,7 @@ function makeAtomic(word: string, occurrenceId: string, meaning: string) {
         order: 1,
         sourceText: word,
         displayText: word,
-        label: "Whole word",
+        label: meaning,
         meaning,
         kind: "whole",
       },
@@ -173,6 +173,23 @@ function resolveBreakdown(
         label: "humankind",
         meaning: "the people / humankind",
         kind: "article",
+      },
+    ]);
+  }
+  if (normalize(word) === normalize("ٱلنَّاسِ")) {
+    return makeSegmented(word, occurrenceId, [
+      {
+        sourceText: "ٱل",
+        displayText: "ٱلْ",
+        label: "the",
+        meaning: "a definite article prefix",
+        kind: "article",
+      },
+      {
+        sourceText: "نَّاسِ",
+        label: "humankind",
+        meaning: "the people / humankind",
+        kind: "stem",
       },
     ]);
   }

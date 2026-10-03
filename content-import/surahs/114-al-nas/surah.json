@@ -53,7 +53,7 @@
                 "order": 1,
                 "sourceText": "قُلْ",
                 "displayText": "قُلْ",
-                "label": "Whole word",
+                "label": "Say",
                 "meaning": "Say",
                 "kind": "whole"
               }
@@ -159,17 +159,26 @@
           ],
           "breakdown": {
             "id": "breakdown:word:114:1:4",
-            "mode": "atomic",
+            "mode": "segmented",
             "sourceText": "ٱلنَّاسِ",
             "parts": [
               {
-                "id": "breakdown:word:114:1:4:part:whole",
+                "id": "breakdown:word:114:1:4:part:1",
                 "order": 1,
-                "sourceText": "ٱلنَّاسِ",
-                "displayText": "ٱلنَّاسِ",
-                "label": "Whole word",
-                "meaning": "Humankind / people",
-                "kind": "whole"
+                "sourceText": "ٱل",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "a definite article prefix",
+                "kind": "article"
+              },
+              {
+                "id": "breakdown:word:114:1:4:part:2",
+                "order": 2,
+                "sourceText": "نَّاسِ",
+                "displayText": "نَّاسِ",
+                "label": "humankind",
+                "meaning": "the people / humankind",
+                "kind": "stem"
               }
             ]
           }
@@ -243,17 +252,26 @@
           ],
           "breakdown": {
             "id": "breakdown:word:114:2:2",
-            "mode": "atomic",
+            "mode": "segmented",
             "sourceText": "ٱلنَّاسِ",
             "parts": [
               {
-                "id": "breakdown:word:114:2:2:part:whole",
+                "id": "breakdown:word:114:2:2:part:1",
                 "order": 1,
-                "sourceText": "ٱلنَّاسِ",
-                "displayText": "ٱلنَّاسِ",
-                "label": "Whole word",
-                "meaning": "Humankind / people",
-                "kind": "whole"
+                "sourceText": "ٱل",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "a definite article prefix",
+                "kind": "article"
+              },
+              {
+                "id": "breakdown:word:114:2:2:part:2",
+                "order": 2,
+                "sourceText": "نَّاسِ",
+                "displayText": "نَّاسِ",
+                "label": "humankind",
+                "meaning": "the people / humankind",
+                "kind": "stem"
               }
             ]
           }
@@ -327,17 +345,26 @@
           ],
           "breakdown": {
             "id": "breakdown:word:114:3:2",
-            "mode": "atomic",
+            "mode": "segmented",
             "sourceText": "ٱلنَّاسِ",
             "parts": [
               {
-                "id": "breakdown:word:114:3:2:part:whole",
+                "id": "breakdown:word:114:3:2:part:1",
                 "order": 1,
-                "sourceText": "ٱلنَّاسِ",
-                "displayText": "ٱلنَّاسِ",
-                "label": "Whole word",
-                "meaning": "Humankind / people",
-                "kind": "whole"
+                "sourceText": "ٱل",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "a definite article prefix",
+                "kind": "article"
+              },
+              {
+                "id": "breakdown:word:114:3:2:part:2",
+                "order": 2,
+                "sourceText": "نَّاسِ",
+                "displayText": "نَّاسِ",
+                "label": "humankind",
+                "meaning": "the people / humankind",
+                "kind": "stem"
               }
             ]
           }
@@ -377,7 +404,7 @@
                 "order": 1,
                 "sourceText": "مِن",
                 "displayText": "مِن",
-                "label": "Whole word",
+                "label": "From / among",
                 "meaning": "From / among",
                 "kind": "whole"
               }
@@ -409,7 +436,7 @@
                 "order": 1,
                 "sourceText": "شَرِّ",
                 "displayText": "شَرِّ",
-                "label": "Whole word",
+                "label": "The evil / harm",
                 "meaning": "The evil / harm",
                 "kind": "whole"
               }
@@ -441,7 +468,7 @@
                 "order": 1,
                 "sourceText": "ٱلْوَسْوَاسِ",
                 "displayText": "ٱلْوَسْوَاسِ",
-                "label": "Whole word",
+                "label": "The whisperer / persistent whispering",
                 "meaning": "The whisperer / persistent whispering",
                 "kind": "whole"
               }
@@ -473,7 +500,7 @@
                 "order": 1,
                 "sourceText": "ٱلْخَنَّاسِ",
                 "displayText": "ٱلْخَنَّاسِ",
-                "label": "Whole word",
+                "label": "The one who repeatedly retreats",
                 "meaning": "The one who repeatedly retreats",
                 "kind": "whole"
               }
@@ -515,7 +542,7 @@
                 "order": 1,
                 "sourceText": "ٱلَّذِي",
                 "displayText": "ٱلَّذِي",
-                "label": "Whole word",
+                "label": "The one who / which",
                 "meaning": "The one who / which",
                 "kind": "whole"
               }
@@ -547,7 +574,7 @@
                 "order": 1,
                 "sourceText": "يُوَسْوِسُ",
                 "displayText": "يُوَسْوِسُ",
-                "label": "Whole word",
+                "label": "He whispers",
                 "meaning": "He whispers",
                 "kind": "whole"
               }
@@ -579,7 +606,7 @@
                 "order": 1,
                 "sourceText": "فِي",
                 "displayText": "فِي",
-                "label": "Whole word",
+                "label": "In",
                 "meaning": "In",
                 "kind": "whole"
               }
@@ -611,7 +638,7 @@
                 "order": 1,
                 "sourceText": "صُدُورِ",
                 "displayText": "صُدُورِ",
-                "label": "Whole word",
+                "label": "Chests · breasts",
                 "meaning": "Chests · breasts",
                 "kind": "whole"
               }
@@ -636,17 +663,26 @@
           ],
           "breakdown": {
             "id": "breakdown:word:114:5:5",
-            "mode": "atomic",
+            "mode": "segmented",
             "sourceText": "ٱلنَّاسِ",
             "parts": [
               {
-                "id": "breakdown:word:114:5:5:part:whole",
+                "id": "breakdown:word:114:5:5:part:1",
                 "order": 1,
-                "sourceText": "ٱلنَّاسِ",
-                "displayText": "ٱلنَّاسِ",
-                "label": "Whole word",
-                "meaning": "Humankind / people",
-                "kind": "whole"
+                "sourceText": "ٱل",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "a definite article prefix",
+                "kind": "article"
+              },
+              {
+                "id": "breakdown:word:114:5:5:part:2",
+                "order": 2,
+                "sourceText": "نَّاسِ",
+                "displayText": "نَّاسِ",
+                "label": "humankind",
+                "meaning": "the people / humankind",
+                "kind": "stem"
               }
             ]
           }
@@ -686,7 +722,7 @@
                 "order": 1,
                 "sourceText": "مِنَ",
                 "displayText": "مِنَ",
-                "label": "Whole word",
+                "label": "From / among",
                 "meaning": "From / among",
                 "kind": "whole"
               }
@@ -718,7 +754,7 @@
                 "order": 1,
                 "sourceText": "ٱلْجِنَّةِ",
                 "displayText": "ٱلْجِنَّةِ",
-                "label": "Whole word",
+                "label": "The jinn",
                 "meaning": "The jinn",
                 "kind": "whole"
               }

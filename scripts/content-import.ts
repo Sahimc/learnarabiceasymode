@@ -5,6 +5,7 @@ import type { SurahPackage, WordBreakdown } from "../app/data/content-contract";
 
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
+const force = args.includes("--force");
 const surahArgIndex = args.indexOf("--surah");
 const surahFilter =
   surahArgIndex >= 0 ? Number(args[surahArgIndex + 1]) : undefined;
@@ -53,6 +54,56 @@ function packageWords(pkg: SurahPackage) {
   );
 }
 
+type MorphologySurfacePart = {
+  sourceText: string;
+  displayText: string;
+  label: string;
+  meaning: string;
+  kind: NonNullable<WordBreakdown["parts"][number]["kind"]>;
+};
+
+function parseJson<T>(value: unknown, fallback: T): T {
+  if (value === null || value === undefined) return fallback;
+  if (typeof value === "string") {
+    try {
+      return JSON.parse(value) as T;
+    } catch {
+      return fallback;
+    }
+  }
+  return value as T;
+}
+
+function morphologyBreakdown(
+  word: { id: string; arabic: string },
+  segmentationValue: unknown,
+) {
+  const parts = parseJson<MorphologySurfacePart[]>(segmentationValue, []);
+  if (!parts.length) return undefined;
+  return {
+    id: `breakdown:${word.id}:morphology`,
+    mode: parts.length > 1 ? "segmented" : "atomic",
+    sourceText: word.arabic,
+    parts: parts.map((part, index) => ({
+      id: `morphology:${word.id}:part:${index + 1}`,
+      order: index + 1,
+      sourceText: part.sourceText,
+      displayText: part.displayText,
+      label: part.label,
+      meaning: part.meaning,
+      kind: part.kind,
+    })),
+  } satisfies WordBreakdown;
+}
+
+function isPlaceholderBreakdown(breakdown: WordBreakdown) {
+  return breakdown.parts.some((part) =>
+    ["whole word", "main word", "lexical meaning"].includes(
+      part.label.trim().toLowerCase(),
+    ),
+  );
+}
+
 async function currentChecksum(packageId: string) {
   const result = await pool.query<{ checksum: string; variant_count: string }>(
     `select cp.checksum, count(qtv.id)::text as variant_count
@@ -87,8 +138,8 @@ async function insertPackage(
       [surahId],
     );
     const oldBreakdowns = await client.query<{ id: string }>(
-      "select id from word_breakdowns where package_id=$1",
-      [packageId],
+      "select id from word_breakdowns where package_id=$1 or word_occurrence_id = any($2::text[])",
+      [packageId, oldWords.rows.map((row) => row.id)],
     );
     const oldTeachings = await client.query<{ id: string }>(
       "select id from teaching_word_entries where package_id=$1",
@@ -113,9 +164,11 @@ async function insertPackage(
         "delete from word_breakdown_parts where breakdown_id = any($1::text[])",
         [oldBreakdowns.rows.map((row) => row.id)],
       );
-    await client.query("delete from word_breakdowns where package_id=$1", [
-      packageId,
-    ]);
+    if (oldBreakdowns.rows.length)
+      await client.query(
+        "delete from word_breakdowns where id = any($1::text[])",
+        [oldBreakdowns.rows.map((row) => row.id)],
+      );
     if (removableTeachingIds.length) {
       await client.query(
         "delete from root_picture_terms where id = any($1::text[])",
@@ -446,6 +499,22 @@ async function insertPackage(
         ];
       }),
     );
+    const morphologyByOccurrence = new Map<string, WordBreakdown>();
+    const morphologyRows = await client.query<{
+      occurrence_id: string;
+      segmentation: unknown;
+    }>(
+      "select occurrence_id, segmentation from morphology_records where occurrence_id = any($1::text[])",
+      [words.map((word) => word.id)],
+    );
+    for (const row of morphologyRows.rows) {
+      const word = words.find(
+        (candidate) => candidate.id === row.occurrence_id,
+      );
+      if (!word) continue;
+      const breakdown = morphologyBreakdown(word, row.segmentation);
+      if (breakdown) morphologyByOccurrence.set(word.id, breakdown);
+    }
     await insertMany(
       client,
       "translations",
@@ -482,9 +551,22 @@ async function insertPackage(
     const breakdownRows: unknown[][] = [];
     const partRows: unknown[][] = [];
     for (const word of words) {
-      const breakdown = (word.breakdownOverride ?? word.breakdown) as
+      const incomingBreakdown = (word.breakdownOverride ?? word.breakdown) as
         | WordBreakdown
         | undefined;
+      const breakdown = word.teachingId
+        ? (morphologyByOccurrence.get(word.id) ?? incomingBreakdown)
+        : incomingBreakdown;
+      if (
+        pkg.status === "custom-complete" &&
+        breakdown &&
+        !morphologyByOccurrence.has(word.id) &&
+        isPlaceholderBreakdown(breakdown)
+      ) {
+        throw new Error(
+          `Custom breakdown for ${word.id} is still a placeholder. Import morphology evidence first.`,
+        );
+      }
       if (!breakdown) continue;
       breakdownRows.push([
         breakdown.id,
@@ -597,7 +679,7 @@ for (const filePath of selectedPaths) {
     throw new Error(`${filePath}\n${read.errors.join("\n")}`);
   const digest = checksum(read.raw);
   const existing = await currentChecksum(read.package.packageId);
-  if (existing === digest) {
+  if (!force && existing === digest) {
     console.log(`NOOP ${read.package.packageId} (${digest.slice(0, 12)})`);
     continue;
   }

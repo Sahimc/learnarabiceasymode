@@ -87,6 +87,16 @@ export function semanticErrors(pkg: SurahPackage) {
               (item) => `${word.id}: ${item}`,
             ),
           );
+        if (
+          resolvedBreakdown?.parts.some((part) =>
+            ["whole word", "main word", "lexical meaning"].includes(
+              part.label.trim().toLowerCase(),
+            ),
+          )
+        )
+          errors.push(
+            `${word.id}: custom WordBreakdown contains a placeholder label`,
+          );
       } else if (word.teachingId || word.breakdown || word.breakdownOverride) {
         errors.push(
           `${word.id}: source-only package contains custom teaching data`,

@@ -1,3 +1,5 @@
+import type { MorphologyAnalysis } from "./morphology";
+
 export type LessonForm = {
   form: string;
   meaning: string;
@@ -68,6 +70,7 @@ export type WordOccurrence = {
   occurrenceRole?: string;
   sourceRoot?: string;
   breakdown?: WordBreakdown;
+  morphology?: MorphologyAnalysis;
 };
 
 export type Ayah = {
@@ -224,6 +227,15 @@ export function getWordBreakdown(
   word: WordOccurrence,
   lesson: WordLesson,
 ): LessonComponent[] {
+  if (word.morphology?.segmentation?.length) {
+    return word.morphology.segmentation.map((part) => ({
+      text: part.sourceText,
+      displayText: part.displayText,
+      label: part.label,
+      meaning: part.meaning,
+      kind: part.kind,
+    }));
+  }
   const authoredBreakdown = word.breakdown ?? lesson.breakdown;
   if (authoredBreakdown) {
     const errors = validateWordBreakdown(word, authoredBreakdown);
@@ -256,8 +268,8 @@ export function getWordBreakdown(
     {
       text: word.arabic,
       displayText: word.arabic,
-      label: "Whole word",
-      meaning: lesson.meaning,
+      label: word.gloss || lesson.meaning,
+      meaning: word.gloss || lesson.meaning,
       kind: "whole",
     },
   ];

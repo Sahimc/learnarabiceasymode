@@ -1,5 +1,59 @@
 import { z } from "zod";
 
+const MorphologyFeatureSchema = z.object({
+  key: z.string().min(1),
+  label: z.string().min(1),
+  value: z.string().min(1),
+});
+
+const MorphologySurfacePartKindSchema = z.enum([
+  "whole",
+  "prefix",
+  "stem",
+  "suffix",
+  "article",
+  "preposition",
+  "subject-marker",
+  "object-pronoun",
+  "possessive-pronoun",
+  "ending",
+  "connector",
+  "other",
+]);
+
+const MorphologySurfacePartSchema = z.object({
+  sourceText: z.string().min(1),
+  displayText: z.string().min(1),
+  label: z.string().min(1),
+  meaning: z.string().min(1),
+  kind: MorphologySurfacePartKindSchema,
+});
+
+const MorphologyFormationPartSchema = z.object({
+  displayText: z.string().min(1),
+  label: z.string().min(1),
+  meaning: z.string().min(1),
+  kind: z.enum(["lemma", "ending", "pattern", "other"]),
+});
+
+export const MorphologyAnalysisSchema = z.object({
+  id: z.string().min(1),
+  provider: z.string().min(1),
+  recordKey: z.string().min(1),
+  version: z.string().min(1),
+  sourceText: z.string().min(1),
+  lemma: z.string().optional(),
+  root: z.string().optional(),
+  pattern: z.string().optional(),
+  partOfSpeech: z.string().optional(),
+  features: z.array(MorphologyFeatureSchema),
+  segmentation: z.array(MorphologySurfacePartSchema).optional(),
+  formation: z.array(MorphologyFormationPartSchema).optional(),
+});
+export type ContentMorphologyAnalysis = z.infer<
+  typeof MorphologyAnalysisSchema
+>;
+
 export const WordBreakdownModeSchema = z.enum(["atomic", "segmented"]);
 export type WordBreakdownMode = z.infer<typeof WordBreakdownModeSchema>;
 
@@ -99,6 +153,7 @@ export const SourceWordSchema = z.object({
   sourceReferences: z.array(ProviderReferenceSchema).default([]),
   breakdown: WordBreakdownSchema.optional(),
   breakdownOverride: WordBreakdownSchema.optional(),
+  morphology: MorphologyAnalysisSchema.optional(),
 });
 export type SourceWord = z.infer<typeof SourceWordSchema>;
 

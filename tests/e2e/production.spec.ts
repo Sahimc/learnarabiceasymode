@@ -51,6 +51,31 @@ test("public source and reviewed lesson routes remain usable", async ({
   await page.goto("/learn/114/1");
   await expect(page.locator("body")).toContainText("Word 1 of 4");
   await expect(page.locator("body")).toContainText("Root");
+  await expect(page.locator(".selected-word-breakdown")).not.toContainText(
+    "Source morphology",
+  );
+
+  await page.goto("/learn/114/3");
+  await expect(page.locator(".surah-card")).toHaveCount(3);
+  await expect(page.locator(".surah-card.selected")).toContainText("An-Nās");
+  await expect(page.locator("body")).not.toContainText("Starter scope");
+  await expect(page.locator("body")).not.toContainText(
+    "complete starter sūrahs",
+  );
+  await expect(page.locator("body")).not.toContainText("accounts required");
+  await expect(page.locator(".current-surah-count")).toHaveText("6 āyāt");
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  const wordHeaderBounds = await page
+    .locator(".word-focus-copy")
+    .evaluate((copy) => {
+      const label = copy.querySelector(".card-kicker")?.getBoundingClientRect();
+      const arabic = copy.querySelector("h4")?.getBoundingClientRect();
+      return { labelBottom: label?.bottom ?? 0, arabicTop: arabic?.top ?? 0 };
+    });
+  expect(wordHeaderBounds.labelBottom).toBeLessThanOrEqual(
+    wordHeaderBounds.arabicTop,
+  );
 
   await page.goto("/learn/109/1");
   await expect(page.locator("body")).toContainText("Source layer available");
@@ -95,6 +120,66 @@ test("word breakdowns preserve Arabic right-to-left component order", async ({
     items.map((item) => item.getBoundingClientRect().left),
   );
   expect(positions[0]).toBeGreaterThan(positions[1]);
+});
+
+test("selected words show source-backed surface and deeper morphology", async ({
+  page,
+}) => {
+  await page.goto("/learn/113/1");
+  await page.locator(".word-chip").nth(1).click();
+  await expect(
+    page.locator(".selected-word-breakdown .breakdown-part"),
+  ).toHaveCount(2);
+  await expect(page.locator(".selected-word-breakdown")).toContainText("أَـ");
+  await expect(page.locator(".selected-word-breakdown")).toContainText("عُوذُ");
+  await expect(page.locator(".morphology-analysis")).toContainText("Root");
+
+  await page.goto("/learn/113/4");
+  await page.locator(".word-chip").nth(2).click();
+  await expect(
+    page.locator(".selected-word-breakdown .breakdown-part"),
+  ).toHaveCount(2);
+  await expect(page.locator(".selected-word-breakdown")).toContainText("ٱلْ");
+  await expect(page.locator(".morphology-analysis")).toContainText(
+    "Deeper formation",
+  );
+  await expect(page.locator(".morphology-analysis")).toContainText("نَفَّاثَة");
+
+  await page.goto("/learn/114/2");
+  await page.locator(".word-chip").first().click();
+  await expect(
+    page.locator(".selected-word-breakdown .breakdown-part"),
+  ).toHaveCount(1);
+  await expect(page.locator(".morphology-analysis")).toContainText("genitive");
+  await expect(page.locator(".morphology-analysis")).not.toContainText(
+    "Source morphology",
+  );
+  await page.goto("/learn/109/1");
+  await expect(page.locator(".source-morphology")).toContainText(
+    "Imported morphology evidence",
+  );
+  await expect(
+    page.locator(".source-morphology .morphology-analysis"),
+  ).toContainText("Root");
+
+  for (const [ayah, position] of [
+    [1, 3],
+    [2, 1],
+    [3, 1],
+    [5, 4],
+  ]) {
+    await page.goto(`/learn/114/${ayah}`);
+    await page.locator(".word-chip").nth(position).click();
+    await expect(
+      page.locator(".selected-word-breakdown .breakdown-part"),
+    ).toHaveCount(2);
+    await expect(page.locator(".selected-word-breakdown")).toContainText(
+      "humankind",
+    );
+    await expect(page.locator(".selected-word-breakdown")).not.toContainText(
+      "main word",
+    );
+  }
 });
 
 test("presentation grammar and sarf rows are centered and readable", async ({
