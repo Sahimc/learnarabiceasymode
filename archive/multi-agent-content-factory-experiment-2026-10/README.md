@@ -6,8 +6,11 @@ workflow.
 
 ## Boundary and commits
 
-- Pre-experiment baseline: `de3558e` — `Complete Surah 111 Word Tree content`
+- Pre-experiment baseline: `de3558eb9f1b1d7c3e5b9a58ab5cac358b82cf88` —
+  `Complete Surah 111 Word Tree content`
 - Experiment commit: `73158eb198639b96e57e7193aba3a2b14639f55e` — `Build deterministic content production factory`
+- Cleanup commits: `4a44ef9` archived the experiment and restored the active
+  tree; `f2f7d46` kept the archive out of active TypeScript and lint discovery.
 - Uncommitted pilot state: Sūrah 107 packets, four revision-001 drafts, and
   the Sūrah 107 review/issue artifacts created after the experiment commit.
 
@@ -54,6 +57,9 @@ been restored to the `de3558e` behavior.
 - `pilot-artifacts/content-authoring/`: the complete tracked Sūrah 108 pilot,
   knowledge/factory workspace, and uncommitted Sūrah 107 packets, drafts, and
   reviews.
+- `pilot-artifacts/content-authoring-moved-original/`: the original working
+  `content-authoring/` tree moved into the archive during cleanup; it is kept
+  as an exact recovery copy alongside the verified archive copy above.
 - `database/experiment-ledger-state.json`: exported experiment ledger rows,
   experiment migration rows, and the factory-only `word_breakdowns` check
   constraint before cleanup.
