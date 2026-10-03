@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "rules": [
+    {
+      "id": "canonical-source-preserved",
+      "rule": "Canonical Arabic sourceText is preserved exactly; display-only joining marks never enter source reconstruction."
+    },
+    {
+      "id": "stable-occurrence-identity",
+      "rule": "A word occurrence is identified by its stable surah, ayah and position identity."
+    },
+    {
+      "id": "no-runtime-fallback-promotion",
+      "rule": "A runtime or provider fallback cannot be promoted to completed custom teaching."
+    }
+  ]
+}

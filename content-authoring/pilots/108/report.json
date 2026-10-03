@@ -1,0 +1,15 @@
+{
+  "pilot": "systems-only",
+  "surah": 108,
+  "sourceOnly": true,
+  "customContentImported": false,
+  "commands": [
+    "npm run content:factory -- packet --surah 108",
+    "npm run content:factory -- draft --surah 108",
+    "npm run content:factory -- review --surah 108 --role source",
+    "npm run content:factory -- assemble --surah 108",
+    "npm run content:import -- --package content-authoring/assembled/108/surah.json --dry-run"
+  ],
+  "assembledPath": "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-authoring\\assembled\\108\\surah.json",
+  "nextState": "awaiting-authored-content"
+}

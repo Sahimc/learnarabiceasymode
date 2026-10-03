@@ -1,5 +1,6 @@
 import {
   boolean,
+  check,
   integer,
   jsonb,
   pgTable,
@@ -9,6 +10,7 @@ import {
   uniqueIndex,
   index,
 } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
 
 const timestamps = {
   createdAt: timestamp("created_at", { withTimezone: true })
@@ -59,6 +61,102 @@ export const contentImportItems = pgTable("content_import_items", {
   action: text("action").notNull(),
   detail: jsonb("detail").$type<Record<string, unknown>>(),
 });
+
+/**
+ * Content-production workflow metadata. These tables track packet/revision
+ * state and review evidence; they are deliberately coarser than individual
+ * field-level content and are not part of the learner-facing runtime model.
+ */
+export const contentWorkUnits = pgTable(
+  "content_work_units",
+  {
+    id: text("id").primaryKey(),
+    packetId: text("packet_id").notNull(),
+    scopeType: text("scope_type").notNull(),
+    surahNumber: integer("surah_number").notNull(),
+    ayahStart: integer("ayah_start").notNull(),
+    ayahEnd: integer("ayah_end").notNull(),
+    sourceFingerprint: text("source_fingerprint").notNull(),
+    status: text("status").notNull(),
+    currentRevision: integer("current_revision").notNull().default(1),
+    assignedWorker: text("assigned_worker"),
+    packetPath: text("packet_path"),
+    approvedArtifactPath: text("approved_artifact_path"),
+    importPackageId: text("import_package_id"),
+    ...timestamps,
+  },
+  (table) => [
+    uniqueIndex("content_work_units_packet_idx").on(table.packetId),
+    index("content_work_units_status_idx").on(table.status),
+  ],
+);
+
+export const contentWorkRevisions = pgTable(
+  "content_work_revisions",
+  {
+    id: text("id").primaryKey(),
+    workUnitId: text("work_unit_id").notNull(),
+    revision: integer("revision").notNull(),
+    sourceFingerprint: text("source_fingerprint").notNull(),
+    status: text("status").notNull(),
+    draftPath: text("draft_path"),
+    assembledPath: text("assembled_path"),
+    layerState: jsonb("layer_state").$type<Record<string, unknown>>(),
+    createdBy: text("created_by"),
+    ...timestamps,
+  },
+  (table) => [
+    uniqueIndex("content_work_revisions_unit_revision_idx").on(
+      table.workUnitId,
+      table.revision,
+    ),
+    index("content_work_revisions_status_idx").on(table.status),
+  ],
+);
+
+export const contentWorkReviews = pgTable(
+  "content_work_reviews",
+  {
+    id: text("id").primaryKey(),
+    revisionId: text("revision_id").notNull(),
+    scopeId: text("scope_id").notNull(),
+    reviewerRole: text("reviewer_role").notNull(),
+    reviewerId: text("reviewer_id").notNull(),
+    independent: boolean("independent").notNull().default(true),
+    status: text("status").notNull(),
+    artifactPath: text("artifact_path"),
+    issueCount: integer("issue_count").notNull().default(0),
+    ...timestamps,
+  },
+  (table) => [
+    uniqueIndex("content_work_reviews_revision_scope_reviewer_idx").on(
+      table.revisionId,
+      table.scopeId,
+      table.reviewerRole,
+      table.reviewerId,
+    ),
+    index("content_work_reviews_status_idx").on(table.status),
+  ],
+);
+
+export const contentWorkIssues = pgTable(
+  "content_work_issues",
+  {
+    id: text("id").primaryKey(),
+    revisionId: text("revision_id").notNull(),
+    issueCode: text("issue_code").notNull(),
+    severity: text("severity").notNull(),
+    scopeId: text("scope_id").notNull(),
+    message: text("message").notNull(),
+    status: text("status").notNull(),
+    detail: jsonb("detail").$type<Record<string, unknown>>(),
+    ...timestamps,
+  },
+  (table) => [
+    index("content_work_issues_revision_idx").on(table.revisionId),
+    index("content_work_issues_status_idx").on(table.status),
+  ],
+);
 
 export const sourceProviders = pgTable("source_providers", {
   id: text("id").primaryKey(),
@@ -330,6 +428,10 @@ export const wordBreakdowns = pgTable(
   (table) => [
     uniqueIndex("word_breakdowns_shared_idx").on(table.teachingEntryId),
     uniqueIndex("word_breakdowns_override_idx").on(table.wordOccurrenceId),
+    check(
+      "word_breakdowns_exactly_one_scope",
+      sql`num_nonnulls(${table.teachingEntryId}, ${table.wordOccurrenceId}) = 1`,
+    ),
   ],
 );
 

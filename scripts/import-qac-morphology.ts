@@ -1,4 +1,6 @@
 import crypto from "node:crypto";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { loadLocalEnv } from "./lib/env";
 import { pool, withTransaction } from "./lib/db";
 import type {
@@ -213,37 +215,21 @@ function componentCopy(
   };
 }
 
-const surfaceOverrides: Record<string, string[]> = {
-  "113:1:2": ["أَ", "عُوذُ"],
-  "114:1:2": ["أَ", "عُوذُ"],
-  "113:1:3": ["بِ", "رَبِّ"],
-  "114:1:3": ["بِ", "رَبِّ"],
-  "114:6:3": ["وَ", "ٱلنَّاسِ"],
-  "113:4:3": ["ٱل", "نَّفَّاثَاتِ"],
+const overrideFile = path.join(
+  process.cwd(),
+  "content-import",
+  "sources",
+  "qac",
+  "morphology-overrides.json",
+);
+const overrides = JSON.parse(await readFile(overrideFile, "utf8")) as {
+  surfaceByOccurrence: Record<string, string[]>;
+  surfaceByArabic: Record<string, string[]>;
+  formationByOccurrence: Record<string, MorphologyFormationPart[]>;
 };
-
-const surfaceOverridesByArabic: Record<string, string[]> = {
-  // QAC can retain the article and noun as one provider segment for this
-  // repeated word. The authored learning rule is stable across occurrences.
-  ٱلنَّاسِ: ["ٱل", "نَّاسِ"],
-};
-
-const formationOverrides: Record<string, MorphologyFormationPart[]> = {
-  "113:4:3": [
-    {
-      displayText: "نَفَّاثَة",
-      label: "lemma / singular",
-      meaning: "female blower",
-      kind: "lemma",
-    },
-    {
-      displayText: "ـاتِ",
-      label: "ending",
-      meaning: "feminine plural with a genitive ending here",
-      kind: "ending",
-    },
-  ],
-};
+const surfaceOverrides = overrides.surfaceByOccurrence;
+const surfaceOverridesByArabic = overrides.surfaceByArabic;
+const formationOverrides = overrides.formationByOccurrence;
 
 function parseSource(raw: string) {
   const grouped = new Map<string, RawSegment[]>();

@@ -11,6 +11,7 @@
     "start": "next start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs tests/content-mapping.test.mjs",
     "test:unit": "node --test tests",
+    "test:factory": "tsx --test tests/content-factory.test.ts",
     "test:e2e": "playwright test",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "typecheck": "tsc --noEmit",
@@ -27,12 +28,14 @@
     "content:validate": "tsx scripts/content-validate.ts",
     "content:status": "tsx scripts/content-status.ts",
     "content:coverage": "tsx scripts/content-coverage.ts",
+    "content:manifest": "tsx scripts/content-manifest.ts",
     "content:scaffold": "tsx scripts/content-scaffold.ts",
+    "content:factory": "tsx scripts/content-factory.ts",
     "content:import": "tsx scripts/content-import.ts",
     "pdf:ayah": "tsx scripts/generate-pdf.ts ayah",
     "pdf:surah": "tsx scripts/generate-pdf.ts surah",
     "pdf:volume": "tsx scripts/generate-pdf.ts volume",
-    "verify": "npm run format && npm run lint && npm run typecheck && npm run test:unit && npm run build && npm run test:e2e"
+    "verify": "npm run format && npm run lint && npm run typecheck && npm run test:unit && npm run test:factory && npm run build && npm run test:e2e"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

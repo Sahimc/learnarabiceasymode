@@ -51,10 +51,7 @@ export async function readPackage(filePath: string) {
 
 export function semanticErrors(pkg: SurahPackage) {
   const errors: string[] = [];
-  const allowedStatuses =
-    pkg.surah.number >= 111 && pkg.surah.number <= 114
-      ? ["custom-complete"]
-      : ["source-only", "custom-partial"];
+  const allowedStatuses = ["source-only", "custom-partial", "custom-complete"];
   if (!allowedStatuses.includes(pkg.status))
     errors.push(
       `status should be one of ${allowedStatuses.join(", ")} for sūrah ${pkg.surah.number}`,

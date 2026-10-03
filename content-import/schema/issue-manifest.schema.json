@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://word-tree.local/schema/issue-manifest.schema.json",
+  "title": "Word Tree content issue manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "manifestId",
+    "packetId",
+    "draftId",
+    "revision",
+    "scope",
+    "status",
+    "issues"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "manifestId": { "type": "string", "minLength": 1 },
+    "packetId": { "type": "string", "minLength": 1 },
+    "draftId": { "type": "string", "minLength": 1 },
+    "revision": { "type": "integer", "minimum": 1 },
+    "scope": { "$ref": "review-artifact.schema.json#/$defs/scope" },
+    "status": { "enum": ["open", "resolved"] },
+    "issues": {
+      "type": "array",
+      "items": { "$ref": "review-artifact.schema.json#/$defs/issue" }
+    }
+  }
+}
