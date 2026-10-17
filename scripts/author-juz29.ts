@@ -158,7 +158,7 @@ function canonical(value: string) {
   return value
     .normalize("NFC")
     .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED\u0640\s\u200C\u200D]/gu, "")
-    .replace(/[ۖۗۘۙۚۛۜ۩]/gu, "")
+    .replace(/[ۖۗۘۙۚۛۜ۩\u061C\u200E\u200F\u202A-\u202E\u2066-\u2069]/gu, "")
     .replace(/ٱ/gu, "ا")
     .replace(/ى/gu, "ا");
 }

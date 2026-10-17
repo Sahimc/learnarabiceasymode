@@ -131,6 +131,11 @@
       "id": "rootless-locative-adverb-misclassified",
       "problem": "A fixed locative adverb such as حَيْثُ is copied from provider noun/root metadata and taught as a lexical root family, even though it has no productive lexical root for the learner to expand.",
       "safeguard": "Review fixed locative adverbs independently of provider labels. When the Arabic item is genuinely indeclinable and rootless, set the lesson root to empty, use No lexical root (locative adverb), mark the breakdown component rootless, and keep its fixed form as a confirmed-limited grammatical lesson. Never invent ح ي ث Ṣarf rows merely because a provider emitted a root-like label."
+    },
+    {
+      "id": "api-arabic-bidi-mark-alignment",
+      "problem": "Canonical API Arabic can include verse-stop symbols and invisible bidirectional control marks that are not present in the stored source word, causing a valid word to fail source/API alignment.",
+      "safeguard": "Normalize only decorative Qur'anic marks and Unicode bidirectional controls for alignment while preserving the original sourceText and API text for display/provenance. Fail closed for any remaining substantive mismatch, and add a regression case whenever a new provider mark appears."
     }
   ]
 }
