@@ -171,6 +171,256 @@ function trustedDifference(root: string, form: string, existing: string) {
 
 function curatedCandidates(root: string): Candidate[] {
   const families: Record<string, Array<Omit<Candidate, "score" | "sourceKind"> & { score?: number }>> = {
+    ["فيل"]: [
+      {
+        form: "فِيلَةٌ",
+        meaning: "elephants",
+        difference:
+          "Plural noun with the feminine ending used as an established plural of فِيل; it contrasts with the singular current occurrence.",
+        relationship: "A genuine plural of فِيل within the ف ي ل lexical family, listed by the Arabic Academy.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ف ي ل entry and Arabic Academy evidence listing أَفْيَالٌ، فِيلَةٌ، وفُيُولٌ.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:plural"],
+        baseDistinct: true,
+        lexicalKey: "فيلة",
+      },
+      {
+        form: "أَفْيَالٌ",
+        meaning: "elephants",
+        difference:
+          "Broken plural pattern; it shows an alternate plural formation for the singular noun فِيل.",
+        relationship: "An established broken plural of فِيل in the ف ي ل lexical family.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ف ي ل entry and Arabic Academy evidence listing أَفْيَالٌ.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "أفيال",
+      },
+      {
+        form: "فُيُولٌ",
+        meaning: "elephants",
+        difference:
+          "A second established broken plural pattern; its distinct vowel pattern gives the learner a real plural-form contrast rather than case-ending padding.",
+        relationship: "An established alternate broken plural of فِيل in the ف ي ل lexical family.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ف ي ل entry and Arabic Academy evidence listing فُيُولٌ.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:alternate-broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "فيول",
+      },
+      {
+        form: "فَيَّالٌ",
+        meaning: "elephant trainer",
+        difference:
+          "Agent noun; it names a person who trains or handles elephants rather than the animal itself.",
+        relationship: "A genuine agent noun derived from فِيل within the ف ي ل lexical family.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence defining الفَيَّالُ as مُرَوِّضُ الفيل.",
+        featureSignal: ["partofspeech:agent-noun", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "فيال",
+      },
+    ],
+    ["أبل"]: [
+      {
+        form: "إِبِلٌ",
+        meaning: "camels or a herd of camels",
+        difference:
+          "Collective noun; it names camels as a herd, contrasting with the current adjective/noun أَبَابِيلَ meaning flocks.",
+        relationship: "A genuine noun of the أ ب ل root, attested in Qur'anic occurrences 6:144 and 88:17.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus canonical occurrences 6:144 and 88:17 and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "number:collective", "derivation:base-form"],
+        baseDistinct: true,
+        lexicalKey: "إبل",
+      },
+      {
+        form: "أَبَلَ",
+        meaning: "he kept or tended camels",
+        difference:
+          "Form I perfect; it presents the completed action of keeping, tending or managing camels.",
+        relationship: "Form I perfect of the أ ب ل root, listed in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for أَبَلَ and the approved project root meaning.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "أبل",
+      },
+      {
+        form: "أَبَّلَ",
+        meaning: "he acquired or fattened camels",
+        difference:
+          "Form II perfect; the doubled middle radical marks the derived action of acquiring or fattening camels.",
+        relationship: "Form II of the أ ب ل root, explicitly listed in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for أَبَّلَ and the approved project root meaning.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "أبل",
+      },
+      {
+        form: "آبِلٌ",
+        meaning: "a camel herder or one skilled with camels",
+        difference:
+          "Agent noun; it describes a person associated with tending or managing camels rather than naming a flock.",
+        relationship: "A genuine agent noun of the أ ب ل family, listed among the established related forms of the root.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing آبَلَ and related أ ب ل forms and the approved project root meaning.",
+        featureSignal: ["partofspeech:agent-noun", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "آبل",
+      },
+    ],
+    ["رمي"]: [
+      {
+        form: "رَمَى",
+        meaning: "he threw or cast",
+        difference:
+          "Form I perfect; it states the completed act of throwing, contrasting with the current imperfect form with an attached object pronoun.",
+        relationship: "Form I perfect of the ر م ي root; the completed counterpart of تَرْمِيهِم.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences including 8:17 and 105:4 and Arabic Academy evidence for رَمَى.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "رمى",
+      },
+      {
+        form: "يَرْمِي",
+        meaning: "he throws or casts",
+        difference:
+          "Form I imperfect, third-person masculine singular; it removes the attached object and shows the ongoing action.",
+        relationship: "Form I imperfect of the ر م ي root; the unelided counterpart of the current verb stem.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 4:112:7 and aligned Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يرمي",
+      },
+      {
+        form: "رَامٍ",
+        meaning: "one who throws or shoots",
+        difference:
+          "Active participle; it describes the agent performing the throwing rather than expressing the action as a finite verb.",
+        relationship: "A genuine active participle of the ر م ي root, listed in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing الرّامي and standard weak-verb active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "رام",
+      },
+      {
+        form: "رَمْيٌ",
+        meaning: "throwing or casting",
+        difference:
+          "Verbal noun; it names the act of throwing rather than the current inflected verb with its attached object.",
+        relationship: "A genuine verbal noun of the ر م ي root, listed in Arabic Academy evidence as الرَّمْي.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing الرَّمْي and the approved project root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "رمي",
+      },
+    ],
+    ["سجل"]: [
+      {
+        form: "سِجِلٌّ",
+        meaning: "a scroll or register",
+        difference:
+          "A distinct lexical noun in the same reviewed root entry; it contrasts with سِجِّيلٍ, whose Qur'anic sense is baked or hardened clay.",
+        relationship: "A genuine Qur'anic noun of the س ج ل entry, attested in 21:104; the semantic sense differs from the current baked-clay noun.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 21:104 and 105:4 and Arabic Academy evidence distinguishing السِّجِلّ from السِّجِّيل.",
+        featureSignal: ["partofspeech:noun", "derivation:distinct-lexical-sense"],
+        baseDistinct: true,
+        lexicalKey: "سجل",
+      },
+      {
+        form: "سَجَّلَ",
+        meaning: "he recorded or registered",
+        difference:
+          "Form II perfect; the doubled middle radical marks the action of writing or entering something in a register, distinct from the baked-clay noun.",
+        relationship: "Form II perfect of the س ج ل root, defined by the Arabic Academy as writing or recording in a register.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for سَجَّلَ and the approved project root meaning.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "سجل",
+      },
+      {
+        form: "يُسَجِّلُ",
+        meaning: "he records or registers",
+        difference:
+          "Form II imperfect; it presents the recording action as ongoing and makes the semantic contrast with baked clay explicit.",
+        relationship: "Form II imperfect of the س ج ل root; the ongoing counterpart of سَجَّلَ.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for يُسَجِّلُ and the approved project root meaning.",
+        featureSignal: ["pattern:form-2", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يسجل",
+      },
+      {
+        form: "مُسَجَّلٌ",
+        meaning: "recorded or registered",
+        difference:
+          "Form II passive participle; it describes something entered in a register, contrasting with the current material noun.",
+        relationship: "A genuine passive participle of the س ج ل root, defined by the Arabic Academy as formally registered.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for المُسَجَّلُ and standard Form II passive-participle morphology.",
+        featureSignal: ["pattern:form-2", "partofspeech:passive-participle", "voice:passive"],
+        baseDistinct: true,
+        lexicalKey: "مسجل",
+      },
+    ],
+    ["عصف"]: [
+      {
+        form: "عَصَفَ",
+        meaning: "it blew violently or moved forcefully",
+        difference:
+          "Form I perfect; it states the completed action of wind blowing violently, contrasting with the current noun عَصْفٍ.",
+        relationship: "Form I perfect of the ع ص ف root, defined by the Arabic Academy as wind blowing strongly.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for عَصَفَ and Quranic Arabic Corpus occurrences of the ع ص ف family.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "عصف",
+      },
+      {
+        form: "يَعْصِفُ",
+        meaning: "it blows violently or moves forcefully",
+        difference:
+          "Form I imperfect; it presents the forceful blowing as ongoing or habitual rather than naming the current noun.",
+        relationship: "Form I imperfect of the ع ص ف root; the ongoing counterpart of عَصَفَ.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for عَصَفَ and regular Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يعصف",
+      },
+      {
+        form: "عَاصِفٌ",
+        meaning: "stormy or blowing violently",
+        difference:
+          "Active participle/adjective; it describes a stormy or forcefully blowing thing rather than naming the action as a noun.",
+        relationship: "A genuine active participle/adjective of the ع ص ف root, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 10:22 and 14:18 and Arabic Academy evidence for عَاصِفٌ.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent-or-descriptor"],
+        baseDistinct: true,
+        lexicalKey: "عاصف",
+      },
+      {
+        form: "عَاصِفَةٌ",
+        meaning: "a storm or a stormy force",
+        difference:
+          "Feminine active participle/noun; it shows the feminine counterpart and the noun use for a storm, distinct from the current husk/straw sense.",
+        relationship: "A genuine feminine active participle/noun of the ع ص ف root, attested in Qur'an 21:81.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 21:81 and Arabic Academy evidence for العاصفة.",
+        featureSignal: ["partofspeech:noun", "gender:feminine", "derivation:agent-or-descriptor"],
+        baseDistinct: true,
+        lexicalKey: "عاصفة",
+      },
+    ],
     ["ألف"]: [
       {
         form: "أَلِفَ",
