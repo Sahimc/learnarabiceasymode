@@ -102,12 +102,63 @@
     "lessonForm": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["form", "meaning", "difference"],
+      "required": [
+        "form",
+        "meaning",
+        "difference",
+        "relationship",
+        "provenance"
+      ],
       "properties": {
-        "form": { "type": "string" },
-        "meaning": { "type": "string" },
-        "difference": { "type": "string" }
+        "form": { "type": "string", "minLength": 1 },
+        "meaning": { "type": "string", "minLength": 1 },
+        "difference": { "type": "string", "minLength": 1 },
+        "relationship": { "type": "string", "minLength": 1 },
+        "provenance": { "type": "string", "minLength": 1 }
       }
+    },
+    "sarfReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "provenance", "reviewedBy", "reviewedAt"],
+      "properties": {
+        "status": { "enum": ["full", "limited"] },
+        "limitedReason": { "type": "string", "minLength": 1 },
+        "auditDecision": {
+          "enum": [
+            "confirmed-limited",
+            "upgraded-to-full",
+            "blocked-for-genuine-ambiguity"
+          ]
+        },
+        "provenance": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "reviewedBy": { "type": "string", "minLength": 1 },
+        "reviewedAt": { "type": "string", "minLength": 1 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "limited" } } },
+          "then": {
+            "required": ["limitedReason", "auditDecision"],
+            "properties": {
+              "auditDecision": {
+                "enum": [
+                  "confirmed-limited",
+                  "blocked-for-genuine-ambiguity"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "status": { "const": "full" } } },
+          "then": { "not": { "required": ["limitedReason"] } }
+        }
+      ]
     },
     "component": {
       "type": "object",
@@ -119,6 +170,22 @@
         "label": { "type": "string" },
         "meaning": { "type": "string" },
         "kind": { "type": "string" }
+      }
+    },
+    "rootReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "providerRoot", "reviewedRoot", "rationale", "provenance"],
+      "properties": {
+        "status": { "const": "reviewed-override" },
+        "providerRoot": { "type": "string", "minLength": 1 },
+        "reviewedRoot": { "type": "string", "minLength": 1 },
+        "rationale": { "type": "string", "minLength": 1 },
+        "provenance": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
       }
     },
     "teachingLesson": {
@@ -136,6 +203,7 @@
         "sentenceRole",
         "recognitionClue",
         "forms",
+        "sarfReview",
         "takeaway"
       ],
       "properties": {
@@ -144,6 +212,7 @@
         "type": { "type": "string" },
         "root": { "type": "string" },
         "rootPicture": { "type": "string" },
+        "rootReview": { "$ref": "#/$defs/rootReview" },
         "construction": { "type": "string" },
         "components": {
           "type": "array",
@@ -153,7 +222,12 @@
         "grammar": { "type": "string" },
         "sentenceRole": { "type": "string" },
         "recognitionClue": { "type": "string" },
-        "forms": { "type": "array", "items": { "$ref": "#/$defs/lessonForm" } },
+        "forms": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/lessonForm" }
+        },
+        "sarfReview": { "$ref": "#/$defs/sarfReview" },
         "takeaway": { "type": "string" }
       }
     }

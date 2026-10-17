@@ -98,6 +98,11 @@
       "safeguard": "Treat provider roots as evidence, not an automatic teaching answer. When the lesson has been explicitly reviewed as rootless and every breakdown component is marked rootless with a category-specific explanation, allow the provider root to remain evidence without promoting it to a lexical lesson root. Fail closed when the rootless decision is not explicit or any lexical component is present."
     },
     {
+      "id": "provider-root-needs-reviewed-override",
+      "problem": "A provider assigns a lexical root that conflicts with the reviewed Arabic root family, often because a rare or quadriliteral form is conflated with a visually similar root. Blind provider agreement would preserve the wrong root and teach unrelated Ṣarf forms.",
+      "safeguard": "Treat provider roots as evidence rather than an automatic answer. When Codex independently establishes a different root from canonical Arabic, approved lexicons and the form's morphology, record an explicit reviewed root override with the provider root, reviewed root, rationale and provenance. Import and audit may accept the mismatch only when that override is present; every other lexical mismatch fails closed."
+    },
+    {
       "id": "sarf-row-root-family-mismatch",
       "problem": "A structurally valid Ṣarf row belongs to a different Arabic root family than the lesson, so a wrong-root form can be taught as a related form.",
       "safeguard": "Check every retained row's Arabic form, meaning and provenance against the lesson root and lexeme. Reject wrong-root rows even when they share a surface pattern; require approved lexicon, canonical evidence or explicit Codex linguistic provenance for every retained row."

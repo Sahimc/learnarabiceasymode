@@ -73,15 +73,89 @@ export const WordBreakdownPartKindSchema = z.enum([
 ]);
 export type WordBreakdownPartKind = z.infer<typeof WordBreakdownPartKindSchema>;
 
-export const WordBreakdownPartSchema = z.object({
-  id: z.string().min(1),
-  order: z.number().int().min(1),
-  sourceText: z.string().min(1),
-  displayText: z.string().min(1),
-  label: z.string().min(1),
-  meaning: z.string().min(1),
-  kind: WordBreakdownPartKindSchema,
-});
+export const RootStatusSchema = z.enum(["lexical", "rootless"]);
+export type RootStatus = z.infer<typeof RootStatusSchema>;
+
+const ARABIC_SCRIPT_PATTERN =
+  /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/u;
+
+function normalizeRootForValidation(root: string) {
+  return root.replace(/\s+/gu, "").trim();
+}
+
+export function validateRootPicture(root: string, rootPicture: string) {
+  const errors: string[] = [];
+  const trimmedPicture = rootPicture.trim();
+
+  if (!/[A-Za-z]/u.test(trimmedPicture))
+    errors.push("rootPicture must contain an English learner-facing meaning");
+  if (ARABIC_SCRIPT_PATTERN.test(trimmedPicture))
+    errors.push("rootPicture must not contain Arabic root letters");
+
+  if (root.trim()) {
+    if (
+      normalizeRootForValidation(root) ===
+      normalizeRootForValidation(trimmedPicture)
+    )
+      errors.push("rootPicture must not repeat the Arabic root");
+    if (/^No lexical root\b/u.test(trimmedPicture))
+      errors.push("a lexical lesson cannot use a rootless rootPicture");
+  } else {
+    const marker = trimmedPicture.match(/^No lexical root \(([^()]+)\)/u);
+    if (!marker)
+      errors.push(
+        "a rootless lesson rootPicture must begin with 'No lexical root (category)'",
+      );
+    else if (trimmedPicture.slice(marker[0].length).includes(`(${marker[1]})`))
+      errors.push("rootPicture must not repeat its rootless category marker");
+  }
+
+  return errors;
+}
+
+const RootAnnotationShape = {
+  rootStatus: RootStatusSchema.optional(),
+  root: z.string().min(1).optional(),
+  rootExplanation: z.string().min(1).optional(),
+};
+
+export const WordBreakdownPartSchema = z
+  .object({
+    id: z.string().min(1),
+    order: z.number().int().min(1),
+    sourceText: z.string().min(1),
+    displayText: z.string().min(1),
+    label: z.string().min(1),
+    meaning: z.string().min(1),
+    kind: WordBreakdownPartKindSchema,
+    ...RootAnnotationShape,
+  })
+  .superRefine((part, context) => {
+    if (part.rootStatus === "lexical" && !part.root) {
+      context.addIssue({
+        code: "custom",
+        path: ["root"],
+        message: "lexical parts must record their root",
+      });
+    }
+    if (part.rootStatus === "rootless") {
+      if (part.root) {
+        context.addIssue({
+          code: "custom",
+          path: ["root"],
+          message: "rootless parts cannot also record a lexical root",
+        });
+      }
+      if (!/^No lexical root \([^()]+\)$/u.test(part.rootExplanation ?? "")) {
+        context.addIssue({
+          code: "custom",
+          path: ["rootExplanation"],
+          message:
+            "rootless parts must explain the category as 'No lexical root (category)'",
+        });
+      }
+    }
+  });
 export type WordBreakdownPart = z.infer<typeof WordBreakdownPartSchema>;
 
 export const WordBreakdownSchema = z
@@ -161,32 +235,291 @@ export const LessonFormSchema = z.object({
   form: z.string().min(1),
   meaning: z.string().min(1),
   difference: z.string().min(1),
+  relationship: z.string().min(1),
+  provenance: z.string().min(1),
 });
+export type LessonForm = z.infer<typeof LessonFormSchema>;
 
-export const LessonComponentSchema = z.object({
-  text: z.string().min(1),
-  displayText: z.string().optional(),
-  label: z.string().min(1),
-  meaning: z.string().min(1),
-  kind: WordBreakdownPartKindSchema.optional(),
-});
+export const SarfFamilyStatusSchema = z.enum(["full", "limited"]);
+export type SarfFamilyStatus = z.infer<typeof SarfFamilyStatusSchema>;
 
-export const TeachingLessonSchema = z.object({
-  id: z.string().min(1),
-  meaning: z.string().min(1),
-  type: z.string().min(1),
-  root: z.string(),
-  rootPicture: z.string(),
-  construction: z.string().min(1),
-  components: z.array(LessonComponentSchema),
-  breakdown: WordBreakdownSchema.optional(),
-  grammar: z.string().min(1),
-  sentenceRole: z.string().min(1),
-  recognitionClue: z.string().min(1),
-  forms: z.array(LessonFormSchema),
-  takeaway: z.string().min(1),
+export const SarfAuditDecisionSchema = z.enum([
+  "confirmed-limited",
+  "upgraded-to-full",
+  "blocked-for-genuine-ambiguity",
+]);
+export type SarfAuditDecision = z.infer<typeof SarfAuditDecisionSchema>;
+
+const UNREVIEWED_SARF_REVIEW_PATTERN =
+  /legacy database row|re-import required|unreviewed|placeholder|pending review/iu;
+
+export const SarfReviewSchema = z
+  .object({
+    status: SarfFamilyStatusSchema,
+    limitedReason: z.string().min(1).optional(),
+    auditDecision: SarfAuditDecisionSchema.optional(),
+    provenance: z.array(z.string().min(1)).min(1),
+    reviewedBy: z.string().min(1),
+    reviewedAt: z.string().min(1),
+  })
+  .superRefine((review, context) => {
+    if (
+      UNREVIEWED_SARF_REVIEW_PATTERN.test(
+        [...review.provenance, review.reviewedBy, review.reviewedAt].join(" "),
+      )
+    ) {
+      context.addIssue({
+        code: "custom",
+        path: ["provenance"],
+        message:
+          "Ṣarf review provenance must identify an actual linguistic review, not a legacy or placeholder state",
+      });
+    }
+    if (review.status === "limited" && !review.limitedReason) {
+      context.addIssue({
+        code: "custom",
+        path: ["limitedReason"],
+        message:
+          "limited Ṣarf families must explain why five forms are not appropriate",
+      });
+    }
+    if (
+      review.status === "limited" &&
+      (!review.auditDecision || review.auditDecision === "upgraded-to-full")
+    ) {
+      context.addIssue({
+        code: "custom",
+        path: ["auditDecision"],
+        message:
+          "every limited Ṣarf family must have a current confirmed-limited or blocked-for-genuine-ambiguity audit decision",
+      });
+    }
+    if (
+      review.status === "full" &&
+      (review.auditDecision === "confirmed-limited" ||
+        review.auditDecision === "blocked-for-genuine-ambiguity")
+    ) {
+      context.addIssue({
+        code: "custom",
+        path: ["auditDecision"],
+        message:
+          "a full Ṣarf family cannot carry a limited or blocked audit decision",
+      });
+    }
+    if (review.status === "full" && review.limitedReason) {
+      context.addIssue({
+        code: "custom",
+        path: ["limitedReason"],
+        message: "full Ṣarf families cannot carry a limited-family reason",
+      });
+    }
+  });
+export type SarfReview = z.infer<typeof SarfReviewSchema>;
+
+export const RootReviewSchema = z.object({
+  status: z.literal("reviewed-override"),
+  providerRoot: z.string().min(1),
+  reviewedRoot: z.string().min(1),
+  rationale: z.string().min(1),
+  provenance: z.array(z.string().min(1)).min(1),
 });
+export type RootReview = z.infer<typeof RootReviewSchema>;
+
+export type SarfValidationOptions = {
+  status?: SarfFamilyStatus;
+  currentForm?: string;
+  root?: string;
+};
+
+const SARF_PLACEHOLDER_PATTERN =
+  /root[- ]letter|root skeleton|dictionary form connected|lemma \/ dictionary|case or pattern used|(?:nominative|accusative|genitive) ending(?: pattern)?|related verbal ending|recognition variant|related grammatical (?:word|form)|the form used in this occurrence|^lexical stem$|^additional root|^base grammatical form$/iu;
+
+const ARABIC_FORM_PATTERN =
+  /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/u;
+
+function normalizeSarfForm(value: string) {
+  return value.normalize("NFC").replace(/[\u0640\s]/gu, "");
+}
+
+function normalizeSarfBase(value: string) {
+  return normalizeSarfForm(value).replace(
+    /[\u064B-\u065F\u0670\u06D6-\u06ED]/gu,
+    "",
+  );
+}
+
+const ARABIC_DIACRITIC_PATTERN = /[\u064B-\u065F\u0670\u06D6-\u06ED]/u;
+
+function isBareRootRadicals(form: string, root: string) {
+  return (
+    normalizeSarfBase(form) === normalizeSarfBase(root) &&
+    !ARABIC_DIACRITIC_PATTERN.test(form)
+  );
+}
+
+export function validateSarfForms(
+  forms: LessonForm[],
+  options: SarfValidationOptions = {},
+) {
+  const errors: string[] = [];
+  const status = options.status ?? "full";
+  if (status === "full" && forms.length !== 5)
+    errors.push("a full Ṣarf family must contain exactly five reviewed forms");
+  if (status === "limited" && (forms.length < 1 || forms.length >= 5))
+    errors.push("a limited Ṣarf family must contain one to four genuine forms");
+  if (options.currentForm && forms.length > 0) {
+    if (
+      normalizeSarfForm(forms[0].form) !==
+      normalizeSarfForm(options.currentForm)
+    )
+      errors.push("the current Qur'anic form must be the first Ṣarf row");
+  }
+  // Preserve harakat: vocalic, case and mood changes are meaningful recognition data.
+  const normalizedForms = forms.map((item) => normalizeSarfForm(item.form));
+  if (new Set(normalizedForms).size !== normalizedForms.length)
+    errors.push("Ṣarf form family must contain distinct forms");
+  forms.forEach((item, index) => {
+    if (!ARABIC_FORM_PATTERN.test(item.form))
+      errors.push(`Ṣarf row ${index + 1} must contain a real Arabic form`);
+    if (!item.meaning.trim())
+      errors.push(`Ṣarf row ${index + 1} must contain a form-specific meaning`);
+    if (!item.difference.trim())
+      errors.push(
+        `Ṣarf row ${index + 1} must explain a meaningful distinction`,
+      );
+    if (!item.relationship.trim())
+      errors.push(
+        `Ṣarf row ${index + 1} must record its lexeme/root relationship`,
+      );
+    if (!item.provenance.trim())
+      errors.push(`Ṣarf row ${index + 1} must record review provenance`);
+    if (
+      SARF_PLACEHOLDER_PATTERN.test(
+        `${item.meaning} ${item.difference} ${item.relationship}`,
+      )
+    )
+      errors.push(
+        `Ṣarf row ${index + 1} contains a synthetic or placeholder description`,
+      );
+    if (
+      index > 0 &&
+      options.root &&
+      isBareRootRadicals(item.form, options.root)
+    )
+      errors.push(
+        `Ṣarf row ${index + 1} cannot be the bare Arabic root radicals`,
+      );
+  });
+  return errors;
+}
+
+export const LessonComponentSchema = z
+  .object({
+    text: z.string().min(1),
+    displayText: z.string().optional(),
+    label: z.string().min(1),
+    meaning: z.string().min(1),
+    kind: WordBreakdownPartKindSchema.optional(),
+    ...RootAnnotationShape,
+  })
+  .superRefine((component, context) => {
+    if (component.rootStatus === "lexical" && !component.root) {
+      context.addIssue({
+        code: "custom",
+        path: ["root"],
+        message: "lexical lesson components must record their root",
+      });
+    }
+    if (component.rootStatus === "rootless") {
+      if (component.root) {
+        context.addIssue({
+          code: "custom",
+          path: ["root"],
+          message: "rootless lesson components cannot record a lexical root",
+        });
+      }
+      if (
+        !/^No lexical root \([^()]+\)$/u.test(component.rootExplanation ?? "")
+      ) {
+        context.addIssue({
+          code: "custom",
+          path: ["rootExplanation"],
+          message:
+            "rootless lesson components must explain the category as 'No lexical root (category)'",
+        });
+      }
+    }
+  });
+
+export const TeachingLessonSchema = z
+  .object({
+    id: z.string().min(1),
+    meaning: z.string().min(1),
+    type: z.string().min(1),
+    root: z.string(),
+    rootPicture: z.string().min(1),
+    rootReview: RootReviewSchema.optional(),
+    construction: z.string().min(1),
+    components: z.array(LessonComponentSchema),
+    breakdown: WordBreakdownSchema.optional(),
+    grammar: z.string().min(1),
+    sentenceRole: z.string().min(1),
+    recognitionClue: z.string().min(1),
+    forms: z.array(LessonFormSchema).min(1),
+    sarfReview: SarfReviewSchema,
+    takeaway: z.string().min(1),
+  })
+  .superRefine((lesson, context) => {
+    for (const message of validateRootPicture(lesson.root, lesson.rootPicture))
+      context.addIssue({
+        code: "custom",
+        path: ["rootPicture"],
+        message,
+      });
+    for (const message of validateSarfForms(lesson.forms, lesson.sarfReview))
+      context.addIssue({
+        code: "custom",
+        path: ["forms"],
+        message,
+      });
+  });
 export type TeachingLesson = z.infer<typeof TeachingLessonSchema>;
+
+export function validateVocativeWording(
+  word: SourceWord,
+  lesson: TeachingLesson,
+) {
+  const normalizedArabic = word.arabic
+    .normalize("NFC")
+    .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED\u0640\s]/gu, "");
+  if (normalizedArabic !== "يا") return [];
+
+  const errors: string[] = [];
+  if (word.gloss !== "Oh")
+    errors.push("the يَا gloss must use the approved learner wording 'Oh'");
+
+  const teachingText = [
+    word.occurrenceRole,
+    lesson.meaning,
+    lesson.sentenceRole,
+    lesson.recognitionClue,
+    lesson.takeaway,
+    ...lesson.forms.map((form) => form.meaning),
+    ...(word.breakdown?.parts ?? []).flatMap((part) => [
+      part.label,
+      part.meaning,
+    ]),
+    ...(word.breakdownOverride?.parts ?? []).flatMap((part) => [
+      part.label,
+      part.meaning,
+    ]),
+  ]
+    .filter(Boolean)
+    .join(" ");
+  if (/\bO\b/u.test(teachingText))
+    errors.push("the يَا teaching text must not shorten 'Oh' to 'O'");
+  return errors;
+}
 
 export const AyahPackageSchema = z.object({
   id: z.string().min(1),

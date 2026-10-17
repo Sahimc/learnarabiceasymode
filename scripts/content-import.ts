@@ -73,6 +73,25 @@ function isExplicitlyRootlessLesson(
   return parts.length > 0 && parts.every((part) => part.rootStatus === "rootless");
 }
 
+function isReviewedRootOverride(
+  pkg: SurahPackage,
+  word: ReturnType<typeof packageWords>[number],
+  providerRoot: string,
+) {
+  const lesson = word.teachingId
+    ? pkg.teachingEntries[word.teachingId]
+    : undefined;
+  const review = lesson?.rootReview;
+  return Boolean(
+    review &&
+      review.status === "reviewed-override" &&
+      normalizeRoot(review.providerRoot) === providerRoot &&
+      normalizeRoot(review.reviewedRoot) === normalizeRoot(lesson.root) &&
+      review.rationale.trim() &&
+      review.provenance.length,
+  );
+}
+
 async function validateProviderRoots(
   client: QueryClient,
   pkg: SurahPackage,
@@ -99,7 +118,11 @@ async function validateProviderRoots(
     const lessonRoot = normalizeRoot(
       pkg.teachingEntries[word.teachingId!]?.root,
     );
-    if (isExplicitlyRootlessLesson(pkg, word)) continue;
+    if (
+      isExplicitlyRootlessLesson(pkg, word) ||
+      isReviewedRootOverride(pkg, word, providerRoot)
+    )
+      continue;
     if (lessonRoot !== providerRoot)
       mismatches.push(
         `${word.id} ${word.arabic}: teaching root ${lessonRoot || "(empty)"} does not match provider root ${providerRoot}`,

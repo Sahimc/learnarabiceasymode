@@ -6476,6 +6476,300 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "مجنب",
       },
     ],
+    ["ضرع"]: [
+      {
+        form: "تَضَرَّعَ",
+        meaning: "he pleaded humbly or supplicated",
+        difference: "Form V perfect; the doubled middle radical marks the completed act of humbly pleading or supplicating.",
+        relationship: "Form V perfect of the ض ر ع family, related to ضَرِيعٌ through the root's attested semantic range but not identical in lexical sense.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus ض ر ع entry, the approved root meaning and standard Form V morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:perfect", "voice:active"],
+        baseDistinct: true,
+        lexicalKey: "تضرع",
+      },
+      {
+        form: "يَتَضَرَّعُ",
+        meaning: "he pleads humbly or supplicates",
+        difference: "Form V imperfect; the imperfect prefix presents the act of humble pleading as ongoing or repeated.",
+        relationship: "Form V imperfect of the ض ر ع family, showing the imperfect counterpart of تَضَرَّعَ.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus ض ر ع entry, the approved root meaning and standard Form V morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يتضرع",
+      },
+      {
+        form: "تَضَرُّعٌ",
+        meaning: "humble pleading or supplication",
+        difference: "Form V verbal noun; it names the act of humble pleading rather than expressing it as a finite verb.",
+        relationship: "A genuine verbal noun of the ض ر ع family, derived from تَضَرَّعَ.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus ض ر ع entry, the approved root meaning and standard Form V verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:form-5", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "تضرع",
+      },
+      {
+        form: "مُتَضَرِّعٌ",
+        meaning: "one who pleads humbly",
+        difference: "Form V active participle; it describes the person engaged in humble pleading rather than the thorny plant named by the current noun.",
+        relationship: "The active participle of تَضَرَّعَ in the ض ر ع family.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus ض ر ع entry, the approved root meaning and standard Form V participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-5", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "متضرع",
+      },
+    ],
+    ["سمن"]: [
+      {
+        form: "سَمِنَ",
+        meaning: "he became fat",
+        difference: "Form I perfect; it states the completed change of becoming fat or plump, contrasting with the current causative Form IV verb.",
+        relationship: "Form I perfect of the س م ن family, the intransitive counterpart of يُسْمِنُ.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus س م ن entry, the approved root meaning and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "voice:active"],
+        baseDistinct: true,
+        lexicalKey: "سمن",
+      },
+      {
+        form: "يَسْمَنُ",
+        meaning: "he becomes fat",
+        difference: "Form I imperfect; it presents becoming fat as an ongoing or expected change rather than causing someone else to gain weight.",
+        relationship: "Form I imperfect of the س م ن family, contrasting with the current Form IV causative.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus س م ن entry, the approved root meaning and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يسمن",
+      },
+      {
+        form: "سَمَّنَ",
+        meaning: "he fattened",
+        difference: "Form II perfect; the doubled middle radical marks the causative act of making someone or something fat.",
+        relationship: "Form II perfect of the س م ن family, a genuine derived causative related to يُسْمِنُ.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus س م ن entry, the approved root meaning and standard Form II morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "سمن-form-2",
+      },
+      {
+        form: "تَسْمِينٌ",
+        meaning: "fattening",
+        difference: "Form II verbal noun; it names the causative act of fattening rather than expressing it as a finite verb.",
+        relationship: "A genuine verbal noun of سَمَّنَ in the س م ن family.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus س م ن entry, the approved root meaning and standard Form II verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:form-2", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "تسمين",
+      },
+    ],
+    ["لغو"]: [
+      {
+        form: "لَغَا",
+        meaning: "he spoke idly",
+        difference: "Form I perfect; it presents the completed act of speaking idly or engaging in vain speech.",
+        relationship: "Form I perfect of the ل غ و family, related to the current feminine active-participle noun.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus ل غ و entry, the approved root meaning and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "voice:active"],
+        baseDistinct: true,
+        lexicalKey: "لغا",
+      },
+      {
+        form: "يَلْغُو",
+        meaning: "he speaks idly",
+        difference: "Form I imperfect; it presents idle speech as ongoing or habitual.",
+        relationship: "Form I imperfect of the ل غ و family, the imperfect counterpart of لَغَا.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus ل غ و entry, the approved root meaning and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يلغو",
+      },
+      {
+        form: "أَلْغَى",
+        meaning: "he nullified or disregarded",
+        difference: "Form IV perfect; the derived pattern expresses making something void or disregarding it, a distinct causative development of the root.",
+        relationship: "Form IV perfect of the ل غ و family, attested in Arabic lexical usage.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus ل غ و entry, the approved root meaning and standard Form IV morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "ألغى",
+      },
+      {
+        form: "لَاغٍ",
+        meaning: "one speaking idly",
+        difference: "Form I active participle; it describes a person characterized by idle speech rather than expressing the action as a finite verb.",
+        relationship: "The active participle of لَغَا in the ل غ و family.",
+        provenance: "Codex-authored after review of the Quranic Arabic Corpus ل غ و entry, the approved root meaning and standard Form I participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-1", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "لاغ",
+      },
+    ],
+    ["صفف"]: [
+      {
+        form: "صَفَّ",
+        meaning: "he lined up or arranged in a row",
+        difference: "Form I perfect; it presents the completed act of lining up or arranging something in a row.",
+        relationship: "Form I perfect of the ص ف ف family, related to the current passive participle.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus ص ف ف evidence and the approved root meaning.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "voice:active"],
+        baseDistinct: true,
+        lexicalKey: "صف",
+      },
+      {
+        form: "يَصُفُّ",
+        meaning: "he lines up or arranges in a row",
+        difference: "Form I imperfect; it presents the lining-up action as ongoing or repeated.",
+        relationship: "Form I imperfect of the ص ف ف family, the imperfect counterpart of صَفَّ.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus ص ف ف evidence and the approved root meaning.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يصف",
+      },
+      {
+        form: "صَفٌّ",
+        meaning: "a row or lining-up",
+        difference: "Form I verbal noun/lexical noun; it names the row or act of lining up rather than describing the object as already arranged.",
+        relationship: "A genuine noun of the ص ف ف family, attested in Qur'anic usage.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus ص ف ف evidence and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "صف",
+      },
+      {
+        form: "صَافٌّ",
+        meaning: "lining up or spreading in a row",
+        difference: "Form I active participle; it describes one who is lining up or spreading in a row rather than something already arranged.",
+        relationship: "The active participle of صَفَّ in the ص ف ف family, attested in Qur'anic usage.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus ص ف ف evidence and the approved root meaning.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-1", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "صاف",
+      },
+    ],
+    ["بثث"]: [
+      {
+        form: "بَثَّ",
+        meaning: "he spread or scattered",
+        difference: "Form I perfect; it presents the completed act of spreading or scattering.",
+        relationship: "Form I perfect of the ب ث ث family, related to the current passive participle.",
+        provenance: "Codex-authored after review of the approved root meaning, canonical Qur'anic evidence and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "voice:active"],
+        baseDistinct: true,
+        lexicalKey: "بث",
+      },
+      {
+        form: "يَبُثُّ",
+        meaning: "he spreads or scatters",
+        difference: "Form I imperfect; it presents spreading or scattering as ongoing or repeated.",
+        relationship: "Form I imperfect of the ب ث ث family, the imperfect counterpart of بَثَّ.",
+        provenance: "Codex-authored after review of the approved root meaning, canonical Qur'anic evidence and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يبث",
+      },
+      {
+        form: "بَثٌّ",
+        meaning: "spreading or scattering",
+        difference: "Form I verbal noun; it names the spreading action rather than expressing it as a finite verb.",
+        relationship: "A genuine verbal noun of بَثَّ in the ب ث ث family.",
+        provenance: "Codex-authored after review of the approved root meaning, canonical Qur'anic evidence and standard Form I verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "بث",
+      },
+      {
+        form: "بَاثٌّ",
+        meaning: "one who spreads or disseminates",
+        difference: "Form I active participle; it describes the agent who spreads something rather than the spread-out result.",
+        relationship: "The active participle of بَثَّ in the ب ث ث family.",
+        provenance: "Codex-authored after review of the approved root meaning, canonical Qur'anic evidence and standard Form I participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "باث",
+      },
+    ],
+    ["سطح"]: [
+      {
+        form: "سَطَحَ",
+        meaning: "he flattened or spread out",
+        difference: "Form I perfect active; it presents the completed act that produces the current passive result.",
+        relationship: "Form I perfect of the س ط ح family, the active counterpart of سُطِحَتْ.",
+        provenance: "Codex-authored after review of the approved root meaning, canonical Qur'anic occurrence 88:20 and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "voice:active"],
+        baseDistinct: true,
+        lexicalKey: "سطح",
+      },
+      {
+        form: "يَسْطَحُ",
+        meaning: "he flattens or spreads out",
+        difference: "Form I imperfect active; it presents the flattening action as ongoing rather than the current completed passive result.",
+        relationship: "Form I imperfect of the س ط ح family.",
+        provenance: "Codex-authored after review of the approved root meaning, canonical Qur'anic occurrence 88:20 and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يسطح",
+      },
+      {
+        form: "سَطْحٌ",
+        meaning: "a surface or flattening",
+        difference: "Lexical noun; it names the surface or result associated with flattening rather than expressing the passive verb.",
+        relationship: "A genuine noun of the س ط ح family, related to the current passive occurrence.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Arabic derivational morphology.",
+        featureSignal: ["partofspeech:noun", "derivation:result-noun"],
+        baseDistinct: true,
+        lexicalKey: "سطح",
+      },
+      {
+        form: "مَسْطُوحٌ",
+        meaning: "flattened or spread out",
+        difference: "Form I passive participle; it describes the flattened result without finite-tense marking.",
+        relationship: "The passive participle of سَطَحَ in the س ط ح family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Form I passive-participle morphology.",
+        featureSignal: ["partofspeech:passive-participle", "pattern:form-1", "voice:passive"],
+        baseDistinct: true,
+        lexicalKey: "مسطوح",
+      },
+    ],
+    ["أوب"]: [
+      {
+        form: "آبَ",
+        meaning: "he returned",
+        difference: "Form I perfect; it presents the completed act of returning, contrasting with the current verbal noun plus attached pronoun.",
+        relationship: "Form I perfect of the أ و ب family, the finite counterpart of إِيَاب.",
+        provenance: "Codex-authored after review of the approved root meaning, canonical Qur'anic evidence and standard weak-verb morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "voice:active"],
+        baseDistinct: true,
+        lexicalKey: "آب",
+      },
+      {
+        form: "يَؤُوبُ",
+        meaning: "he returns",
+        difference: "Form I imperfect; it presents returning as ongoing or habitual rather than naming the return as a noun.",
+        relationship: "Form I imperfect of the أ و ب family.",
+        provenance: "Codex-authored after review of the approved root meaning, canonical Qur'anic evidence and standard weak-verb morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يؤوب",
+      },
+      {
+        form: "أَوْبٌ",
+        meaning: "returning or return",
+        difference: "Form I verbal noun; it names the act of returning without the attached pronoun found in the current occurrence.",
+        relationship: "A genuine verbal noun of آبَ in the أ و ب family.",
+        provenance: "Codex-authored after review of the approved root meaning, canonical Qur'anic evidence and standard Arabic verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "أوب",
+      },
+      {
+        form: "مَآبٌ",
+        meaning: "a return or destination",
+        difference: "Derived noun of place/result; it names the destination or end to which one returns rather than the act itself.",
+        relationship: "A genuine derived noun of the أ و ب family, attested in Qur'anic usage.",
+        provenance: "Codex-authored after review of the approved root meaning, canonical Qur'anic evidence and standard Arabic derivational morphology.",
+        featureSignal: ["partofspeech:noun", "derivation:place-or-result"],
+        baseDistinct: true,
+        lexicalKey: "مآب",
+      },
+    ],
   };
   return (families[root] ?? []).map((candidate) => ({
     ...candidate,
@@ -6849,7 +7143,64 @@ function limitedReason(
   return `${word} is a rootful ${category} with root ${occurrence.lesson.root}. The audit found ${candidateCount} safe related form${candidateCount === 1 ? "" : "s"}, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.`;
 }
 
-const REVIEWED_RESTRICTED_LEXICAL_ROOTS = new Set(["أبد", "تين"]);
+const REVIEWED_RESTRICTED_LEXICAL_ROOTS = new Set(["أبد", "تين", "كوب", "نمرق", "زرب", "صيطر"]);
+
+function reviewedRestrictedCandidates(root: string): Candidate[] {
+  const families: Record<string, Array<Omit<Candidate, "score" | "sourceKind">>> = {
+    ["كوب"]: [
+      {
+        form: "كَوْبٌ",
+        meaning: "a cup or goblet",
+        difference: "Singular lexical noun; it contrasts with the current broken plural أَكْوَابٌ while preserving the same drinking-vessel meaning.",
+        relationship: "Established singular of أَكْوَابٌ in the ك و ب lexical family.",
+        provenance: "Codex-authored after review of the approved root meaning and canonical Qur'anic evidence for ك و ب; no unrelated lexical form was added.",
+        featureSignal: ["partofspeech:noun", "number:singular", "derivation:singular-of-broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "كوب",
+      },
+      {
+        form: "كَوْبَانِ",
+        meaning: "two cups or goblets",
+        difference: "Dual lexical inflection; it gives a genuine number contrast between the current broken plural and the dual form without treating case endings as new morphology.",
+        relationship: "Genuine dual of كَوْبٌ in the restricted ك و ب lexical family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Arabic dual formation for ك و ب.",
+        featureSignal: ["partofspeech:noun", "number:dual"],
+        baseDistinct: true,
+        lexicalKey: "كوبان",
+      },
+    ],
+    ["نمرق"]: [
+      {
+        form: "نُمْرُقَةٌ",
+        meaning: "a cushion or pillow",
+        difference: "Singular lexical noun; it contrasts with the current broken plural نَمَارِقُ and makes the number relationship visible.",
+        relationship: "Established singular of نَمَارِقُ in the restricted ن م ر ق lexical family.",
+        provenance: "Codex-authored after review of the approved root meaning and canonical Qur'anic evidence for نَمَارِقُ.",
+        featureSignal: ["partofspeech:noun", "number:singular", "derivation:singular-of-broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "نمرقة",
+      },
+    ],
+    ["زرب"]: [
+      {
+        form: "زَرْبِيَّةٌ",
+        meaning: "a carpet or rug",
+        difference: "Singular lexical noun; it contrasts with the current plural زَرَابِيُّ while keeping the same carpet/rug sense.",
+        relationship: "Established singular related to زَرَابِيُّ in the restricted ز ر ب lexical family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Arabic lexical morphology for ز ر ب.",
+        featureSignal: ["partofspeech:noun", "number:singular", "derivation:singular-of-plural"],
+        baseDistinct: true,
+        lexicalKey: "زربية",
+      },
+    ],
+  };
+  return (families[root] ?? []).map((candidate) => ({
+    ...candidate,
+    score: 92,
+    sourceKind: "codex-authored-lexicon",
+    sourceOccurrence: `restricted-root-family:${root}`,
+  }));
+}
 
 async function packageFiles() {
   const entries = await fs.readdir(packagesRoot, { withFileTypes: true });
@@ -6972,7 +7323,7 @@ for (const occurrence of limited) {
   const existingForms: LessonForm[] = [];
   const seen = new Set([normalized(rebuiltCurrent.form)]);
   for (const row of oldSafeRows) {
-    if (REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root)) continue;
+    if (REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root) && root !== "صيطر") continue;
     if (normalized(row.form) === normalized(rebuiltCurrent.form)) continue;
     if (inflectionalKey(row.form) === inflectionalKey(rebuiltCurrent.form)) continue;
     if (isKnownWrongRootForm(root, row.form)) continue;
@@ -7017,6 +7368,8 @@ for (const occurrence of limited) {
       );
       if (candidate) candidatePool.push(candidate);
     }
+  } else if (root && REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root)) {
+    candidatePool.push(...reviewedRestrictedCandidates(root).filter((candidate) => safeForm(candidate, root)));
   }
 
   const chosen = root
@@ -7052,7 +7405,16 @@ for (const occurrence of limited) {
     decisions.upgradedToFull += 1;
   } else if (!root || category === "proper noun" || REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root)) {
     decision = "confirmed-limited";
-    afterForms = [rebuiltCurrent, ...existingForms].slice(0, 4);
+    const restrictedForms = candidatePool.map((candidate) => ({
+      form: candidate.form,
+      meaning: candidate.meaning,
+      difference: candidate.difference,
+      relationship: candidate.relationship ?? `Related to the ${root} root/lexeme.`,
+      provenance: candidate.provenance ?? "Codex-reviewed restricted-family evidence.",
+    }));
+    afterForms = [rebuiltCurrent, ...existingForms, ...restrictedForms]
+      .filter((row, index, rows) => rows.findIndex((item) => inflectionalKey(item.form) === inflectionalKey(row.form)) === index)
+      .slice(0, 4);
     afterReview = {
       status: "limited",
       auditDecision: "confirmed-limited",

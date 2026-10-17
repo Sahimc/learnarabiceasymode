@@ -45,6 +45,21 @@ function isRootlessKind(kind: string | undefined) {
   ]).has(kind ?? "");
 }
 
+function isReviewedRootOverride(
+  lesson: SurahPackage["teachingEntries"][string],
+  providerRoot: string,
+) {
+  const review = lesson.rootReview;
+  return Boolean(
+    review &&
+      review.status === "reviewed-override" &&
+      normalizeRoot(review.providerRoot) === providerRoot &&
+      normalizeRoot(review.reviewedRoot) === normalizeRoot(lesson.root) &&
+      review.rationale.trim() &&
+      review.provenance.length,
+  );
+}
+
 const packages: SurahPackage[] = [];
 for (const file of await discoverPackagePaths()) {
   const result = await readPackage(file);
@@ -158,7 +173,12 @@ for (const pkg of packages) {
       issues.push(
         `${word.id} ${word.arabic}: provider root ${provider.providerRoot} is hidden by an empty teaching root`,
       );
-    } else if (expected && actual && actual !== expected) {
+    } else if (
+      expected &&
+      actual &&
+      actual !== expected &&
+      !isReviewedRootOverride(lesson, expected)
+    ) {
       issues.push(
         `${word.id} ${word.arabic}: teaching root ${lesson.root || "(empty)"} does not match provider root ${provider.providerRoot}`,
       );

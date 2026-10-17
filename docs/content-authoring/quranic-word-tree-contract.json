@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.2.0",
   "contractId": "quranic-word-tree-authoring",
-  "contractVersion": "1.3.4",
-  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0", "1.3.1", "1.3.2", "1.3.3"],
+  "contractVersion": "1.3.5",
+  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0", "1.3.1", "1.3.2", "1.3.3", "1.3.4"],
   "status": "active",
   "purpose": "The single governing contract for authoring, repairing, importing, auditing and rendering every Qur'anic Arabic Word Tree lesson.",
   "authority": {
@@ -154,6 +154,12 @@
         "consideration": "A provider may assign a root-like analysis to a grammatical or otherwise explicitly rootless occurrence.",
         "rule": "Treat provider roots as evidence, not an automatic teaching answer. When a reviewed lesson has an empty lexical root and every breakdown component is explicitly rootless with a category-specific explanation, preserve that rootless teaching decision while retaining the provider analysis as evidence. Fail closed when the rootless decision is not explicit or any lexical component is present.",
         "evidence": "Rootless/provider conflict regression fixture, importer validation and component-level root audit."
+      },
+      {
+        "id": "provider-root-needs-reviewed-override",
+        "consideration": "A provider can assign a wrong or conflated lexical root to a rare form, especially where a quadriliteral or orthographic variant resembles a more common root.",
+        "rule": "Treat provider roots as evidence, not an automatic answer. If independent review establishes a different canonical root, record an explicit reviewed override naming the provider root, reviewed root, rationale and provenance. Accept the mismatch only with that override; otherwise fail closed.",
+        "evidence": "Reviewed root-override metadata, importer validation, provider-root audit and wrong-root Ṣarf regression checks."
       },
       {
         "id": "no-placeholders-or-synthetic-content",
