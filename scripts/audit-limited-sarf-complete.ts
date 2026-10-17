@@ -4178,6 +4178,438 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "ممسود",
       },
     ],
+    ["جلو"]: [
+      {
+        form: "يَتَجَلَّىٰ",
+        meaning: "he/it becomes manifest or appears",
+        difference:
+          "Form V imperfect; the prefix يـ presents the becoming-manifest action as ongoing rather than the current perfect form.",
+        relationship:
+          "The Form V imperfect of تَجَلَّىٰ in the ج ل و family; it keeps the same reflexive/becoming-manifest pattern while changing tense.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ج ل و evidence for تَجَلَّىٰ and standard Form V imperfect morphology.",
+        featureSignal: ["pattern:form-5", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يتجلى",
+      },
+      {
+        form: "جَلَّىٰ",
+        meaning: "he revealed or displayed",
+        difference:
+          "Form II perfect; the doubled middle radical marks an agent causing something to become clear, contrasting with the current self-becoming form.",
+        relationship:
+          "A canonical Form II counterpart in the ج ل و family, attested in جَلَّاهَا ‘He displayed it’.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 7:187 and 91:3 and the aligned Form II pattern.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "جلى-form-2",
+      },
+      {
+        form: "يُجَلِّي",
+        meaning: "he reveals or displays",
+        difference:
+          "Form II imperfect; it presents the causative revealing action as ongoing and contrasts with both the current Form V perfect and the Form II perfect.",
+        relationship:
+          "The canonical Form II imperfect of the ج ل و family, attested in يُجَلِّيها.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 7:187 and standard Form II imperfect morphology.",
+        featureSignal: ["pattern:form-2", "tense:imperfect", "person:third-person", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "يجلي",
+      },
+      {
+        form: "جَلَاءٌ",
+        meaning: "removal, departure or exile",
+        difference:
+          "Verbal noun/lexical noun; it names the result or event of making something clear or removing it, rather than expressing a finite verb.",
+        relationship:
+          "A canonical noun of the ج ل و family, attested in الْجَلَاءِ in Qur'an 59:3.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 59:3 and the approved ج ل و root meaning range.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun", "tense:not-applicable"],
+        baseDistinct: true,
+        lexicalKey: "جلاء",
+      },
+    ],
+    ["أنث"]: [
+      {
+        form: "أُنْثَىٰ",
+        meaning: "a female",
+        difference:
+          "Bare indefinite feminine noun; it removes the conjunction and definite article from the current occurrence and shows the lexical base.",
+        relationship:
+          "The basic feminine noun of the أ ن ث family, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus أ ن ث occurrences and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "state:indefinite", "attached-prefixes:removed"],
+        baseDistinct: true,
+        lexicalKey: "أنثى",
+      },
+      {
+        form: "أُنْثَيَيْنِ",
+        meaning: "two females",
+        difference:
+          "Dual noun in the accusative/genitive form; the ending marks exactly two females rather than one.",
+        relationship:
+          "A canonical dual form of أُنْثَىٰ in the أ ن ث family, attested in Qur'anic usage.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus evidence for أُنْثَيَيْنِ and standard feminine-dual morphology.",
+        featureSignal: ["partofspeech:noun", "number:dual", "case:accusative-or-genitive"],
+        baseDistinct: true,
+        lexicalKey: "أنثيين",
+      },
+      {
+        form: "إِنَاثٌ",
+        meaning: "females",
+        difference:
+          "Broken plural noun; it changes the singular feminine noun into the established plural form.",
+        relationship:
+          "A canonical plural in the أ ن ث family, attested in Qur'an 4:117.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 4:117 and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "إناث",
+      },
+      {
+        form: "أَنَّثَ",
+        meaning: "he feminized or made feminine",
+        difference:
+          "Form II perfect verb; the doubled middle radical marks the action of making something feminine, contrasting with the current noun.",
+        relationship:
+          "A genuine derived Form II verb of the أ ن ث lexical family, formed from the feminine root meaning.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for أَنَّثَ and standard Form II morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "أنث-form-2",
+      },
+    ],
+    ["شتت"]: [
+      {
+        form: "أَشْتَاتٌ",
+        meaning: "scattered groups",
+        difference:
+          "Broken plural noun; it expresses separate groups rather than the current singular feminine adjective meaning diverse.",
+        relationship:
+          "A canonical plural of the ش ت ت family, attested in Qur'anic occurrences 24:61 and 99:6.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ش ت ت occurrences and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "أشتات",
+      },
+      {
+        form: "تَشَتَّتَ",
+        meaning: "he became scattered",
+        difference:
+          "Form V perfect verb; the تفعّل pattern presents scattering as a change of state rather than the current adjective.",
+        relationship:
+          "A genuine Form V verb in the ش ت ت lexical family, derived from the meaning of becoming dispersed.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for تَشَتَّتَ and standard Form V morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:perfect", "derivation:change-of-state"],
+        baseDistinct: true,
+        lexicalKey: "تشتت-perfect",
+      },
+      {
+        form: "يَتَشَتَّتُ",
+        meaning: "he becomes scattered",
+        difference:
+          "Form V imperfect verb; it presents the scattering as ongoing, contrasting with the completed Form V and the current adjective.",
+        relationship:
+          "The imperfect counterpart of تَشَتَّتَ in the ش ت ت family.",
+        provenance:
+          "Codex-authored after review of standard Form V imperfect morphology and the approved ش ت ت root meaning.",
+        featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يتشتت",
+      },
+      {
+        form: "تَشْتِيتٌ",
+        meaning: "scattering or dispersal",
+        difference:
+          "Form II verbal noun; it names the causative act of scattering rather than describing something as diverse.",
+        relationship:
+          "A genuine Form II action noun in the ش ت ت lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for تَشْتِيتٌ and standard Form II verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:form-2", "derivation:action-noun", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "تشتيت",
+      },
+    ],
+    ["بخل"]: [
+      {
+        form: "يَبْخَلُ",
+        meaning: "he is stingy or withholds",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents the withholding as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of بَخِلَ in the ب خ ل family, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ب خ ل occurrences and standard Form I imperfect morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يبخل",
+      },
+      {
+        form: "تَبْخَلُ",
+        meaning: "you (masculine singular) are stingy or withhold",
+        difference:
+          "Form I imperfect, second-person masculine singular; the prefix تـ changes the person from the current third-person perfect.",
+        relationship:
+          "A genuine person contrast within the Form I ب خ ل verb family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus Form I ب خ ل evidence and regular imperfect-person inflection.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:second-person"],
+        baseDistinct: true,
+        lexicalKey: "تبخل",
+      },
+      {
+        form: "بُخْلٌ",
+        meaning: "stinginess or withholding",
+        difference:
+          "Verbal noun/abstract noun; it names the quality or act of withholding rather than expressing it as a finite verb.",
+        relationship:
+          "A canonical noun of the ب خ ل family, attested in Qur'anic usage.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ب خ ل evidence for البخل and the approved root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:quality-noun", "tense:not-applicable"],
+        baseDistinct: true,
+        lexicalKey: "بخل-noun",
+      },
+      {
+        form: "بَخِيلٌ",
+        meaning: "stingy or miserly",
+        difference:
+          "Adjective; it describes a person characterised by withholding rather than naming the completed action.",
+        relationship:
+          "A genuine adjective in the ب خ ل lexical family, derived from the withholding root.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for بَخِيلٌ and the established adjective pattern.",
+        featureSignal: ["partofspeech:adjective", "derivation:descriptor", "gender:masculine"],
+        baseDistinct: true,
+        lexicalKey: "بخيل",
+      },
+    ],
+    ["ردي"]: [
+      {
+        form: "تَرْدَىٰ",
+        meaning: "you perish or fall",
+        difference:
+          "Form I imperfect; it expresses perishing in the basic pattern, contrasting with the current Form V verb of falling.",
+        relationship:
+          "A canonical Form I form of the ر د ي family, attested in Qur'an 20:16.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ر د ي occurrence 20:16 and standard weak-final Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:second-person"],
+        baseDistinct: true,
+        lexicalKey: "ترْدى",
+      },
+      {
+        form: "أَرْدَىٰ",
+        meaning: "he ruined or caused to perish",
+        difference:
+          "Form IV perfect; the prefixed hamza marks a causative action, changing basic perishing into causing someone or something to perish.",
+        relationship:
+          "A canonical Form IV verb of the ر د ي family, attested in Qur'anic occurrences including 6:137 and 41:23.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ر د ي Form IV evidence and standard Form IV morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "أردى",
+      },
+      {
+        form: "يُرْدِي",
+        meaning: "he ruins or causes to perish",
+        difference:
+          "Form IV imperfect; it presents the causative ruining action as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of أَرْدَىٰ in the ر د ي family.",
+        provenance:
+          "Codex-authored after review of standard weak-final Form IV imperfect morphology and the canonical ر د ي root evidence.",
+        featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:imperfect", "person:third-person", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "يردي",
+      },
+      {
+        form: "مُتَرَدِّيَةٌ",
+        meaning: "falling fatally",
+        difference:
+          "Form V active participle, feminine singular; it describes the one undergoing the fall rather than expressing the action as a finite verb.",
+        relationship:
+          "A canonical Form V active participle of the ر د ي family, attested in Qur'an 5:3.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 5:3 and standard Form V active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-5", "gender:feminine", "derivation:descriptor"],
+        baseDistinct: true,
+        lexicalKey: "متردية",
+      },
+    ],
+    ["لظي"]: [
+      {
+        form: "لَظَىٰ",
+        meaning: "blazing fire",
+        difference:
+          "Lexical noun; it names the blazing fire itself rather than expressing blazing as a verb.",
+        relationship:
+          "A canonical noun of the ل ظ ي family, attested in Qur'an 70:15.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ل ظ ي evidence and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "derivation:related-noun", "tense:not-applicable"],
+        baseDistinct: true,
+        lexicalKey: "لظى",
+      },
+      {
+        form: "تَتَلَظَّىٰ",
+        meaning: "it blazes",
+        difference:
+          "Form V imperfect, third-person feminine singular; the repeated تـ pattern presents a feminine subject blazing as an ongoing action.",
+        relationship:
+          "A regular feminine Form V imperfect related to تَلَظَّىٰ in the ل ظ ي family.",
+        provenance:
+          "Codex-authored after review of the canonical Form V verb تَلَظَّىٰ and standard feminine imperfect morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:imperfect", "gender:feminine"],
+        baseDistinct: true,
+        lexicalKey: "تتلظى",
+      },
+      {
+        form: "تَلَظٍّ",
+        meaning: "blazing or flaming",
+        difference:
+          "Form V verbal noun; it names the state or action of blazing rather than expressing it as a finite verb.",
+        relationship:
+          "The action noun of تَلَظَّىٰ in the ل ظ ي lexical family.",
+        provenance:
+          "Codex-authored after review of standard Form V verbal-noun morphology for تَلَظَّىٰ and the approved root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:form-5", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "تلظ",
+      },
+      {
+        form: "مُتَلَظٍّ",
+        meaning: "blazing or flaming",
+        difference:
+          "Form V active participle; it describes something that is blazing rather than presenting the action as a finite verb.",
+        relationship:
+          "The active participle of تَلَظَّىٰ in the ل ظ ي lexical family.",
+        provenance:
+          "Codex-authored after review of standard Form V active-participle morphology and the approved ل ظ ي root meaning.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-5", "derivation:descriptor"],
+        baseDistinct: true,
+        lexicalKey: "متلظ",
+      },
+    ],
+    ["شقو"]: [
+      {
+        form: "شَقِيَ",
+        meaning: "he was wretched or distressed",
+        difference:
+          "Form I perfect; it states the completed state of wretchedness behind the current elative noun.",
+        relationship:
+          "The singular Form I perfect counterpart of canonical شَقُوا in the ش ق و family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ش ق و Form I evidence and standard weak-final perfect morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "شقي-perfect",
+      },
+      {
+        form: "يَشْقَىٰ",
+        meaning: "he suffers or is wretched",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents distress as ongoing rather than naming the superlative degree.",
+        relationship:
+          "A canonical Form I imperfect of the ش ق و family, attested in Qur'anic occurrences including 20:2 and 20:123.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ش ق و occurrences and standard weak-final imperfect morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يشقى",
+      },
+      {
+        form: "شِقْوَةٌ",
+        meaning: "wretchedness or misery",
+        difference:
+          "Abstract noun; it names the condition of wretchedness rather than expressing it as a verb or degree adjective.",
+        relationship:
+          "A canonical noun of the ش ق و family, attested in شِقْوَتُنَا in Qur'an 23:106.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 23:106 and the approved ش ق و root meaning.",
+        featureSignal: ["partofspeech:abstract-noun", "derivation:quality-noun", "tense:not-applicable"],
+        baseDistinct: true,
+        lexicalKey: "شقوة",
+      },
+      {
+        form: "شَقِيٌّ",
+        meaning: "wretched or unhappy",
+        difference:
+          "Adjective/noun; it describes an individual as wretched without the superlative meaning of أَشْقَى.",
+        relationship:
+          "A canonical adjective/noun in the ش ق و family, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ش ق و occurrences including 11:105 and 19:32.",
+        featureSignal: ["partofspeech:adjective", "derivation:descriptor", "degree:positive"],
+        baseDistinct: true,
+        lexicalKey: "شقي-adjective",
+      },
+    ],
+    ["جنب"]: [
+      {
+        form: "جَنَّبَ",
+        meaning: "he kept or removed someone away",
+        difference:
+          "Form II perfect active; the doubled middle radical presents the completed causative action behind the current passive future.",
+        relationship:
+          "The active Form II counterpart of وَسَيُجَنَّبُهَا in the ج ن ب family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 92:17 and standard Form II perfect morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect", "voice:active"],
+        baseDistinct: true,
+        lexicalKey: "جنب-form-2-perfect",
+      },
+      {
+        form: "يُجَنِّبُ",
+        meaning: "he keeps or removes someone away",
+        difference:
+          "Form II imperfect active; it presents the causative action as ongoing and contrasts with the current passive future form.",
+        relationship:
+          "The active Form II imperfect counterpart of the current passive verb in the ج ن ب family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 92:17 and standard Form II imperfect morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:imperfect", "voice:active"],
+        baseDistinct: true,
+        lexicalKey: "يجنب-form-2",
+      },
+      {
+        form: "اِجْتَنَبَ",
+        meaning: "he avoided",
+        difference:
+          "Form VIII perfect; the derived pattern expresses deliberately keeping oneself away, contrasting with Form II causative removal.",
+        relationship:
+          "A canonical Form VIII verb of the ج ن ب family, attested repeatedly in Qur'anic usage.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ج ن ب Form VIII occurrences and the approved root meaning.",
+        featureSignal: ["partofspeech:verb", "pattern:form-8", "tense:perfect", "voice:reflexive"],
+        baseDistinct: true,
+        lexicalKey: "اجتنب",
+      },
+      {
+        form: "مُجَنَّبٌ",
+        meaning: "kept or removed away",
+        difference:
+          "Form II passive participle; it describes the person or thing affected by the keeping-away action, clarifying the passive meaning of the current occurrence.",
+        relationship:
+          "The passive participle of جَنَّبَ in the ج ن ب family, directly related to the current passive Form II verb.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 92:17 and standard Form II passive-participle morphology.",
+        featureSignal: ["partofspeech:passive-participle", "pattern:form-2", "voice:passive", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "مجنب",
+      },
+    ],
   };
   return (families[root] ?? []).map((candidate) => ({
     ...candidate,
