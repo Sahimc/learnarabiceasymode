@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.2.0",
   "contractId": "quranic-word-tree-authoring",
-  "contractVersion": "1.3.6",
-  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5"],
+  "contractVersion": "1.3.7",
+  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5", "1.3.6"],
   "status": "active",
   "purpose": "The single governing contract for authoring, repairing, importing, auditing and rendering every Qur'anic Arabic Word Tree lesson.",
   "authority": {
@@ -549,6 +549,11 @@
       "id": "sarf-dedup-case-only-row-assembly",
       "problem": "Different candidate sources can retain the same lexical form with different case endings, causing the assembled Ṣarf family to contain duplicate rows and fail validation or falsely consume one of the four related-form slots.",
       "safeguard": "After merging provider, existing-reviewed and Codex-authored candidates, deduplicate by the reviewed part-of-speech-aware inflectional key before selecting rows and again after assembly. Treat case-only and tanwin-only variants as one form; if deduplication leaves fewer than five meaningful rows, author or select another genuinely distinct reviewed form rather than padding."
+    },
+    {
+      "id": "rootless-locative-adverb-misclassified",
+      "problem": "A fixed locative adverb such as حَيْثُ is copied from provider noun/root metadata and taught as a lexical root family, even though it has no productive lexical root for the learner to expand.",
+      "safeguard": "Review fixed locative adverbs independently of provider labels. When the Arabic item is genuinely indeclinable and rootless, set the lesson root to empty, use No lexical root (locative adverb), mark the breakdown component rootless, and keep its fixed form as a confirmed-limited grammatical lesson. Never invent ح ي ث Ṣarf rows merely because a provider emitted a root-like label."
     },
     {
       "id": "repeated-word-context",
