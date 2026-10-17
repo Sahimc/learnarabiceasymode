@@ -674,6 +674,384 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "تكافؤ",
       },
     ],
+    ["تبب"]: [
+      {
+        form: "تَبَّ",
+        meaning: "he perished or was ruined",
+        difference:
+          "Form I perfect, third-person masculine singular; it states the completed ruin without the feminine agreement ending in تَبَّتْ.",
+        relationship:
+          "Form I perfect of the ت ب ب root; it is the masculine counterpart of the current feminine-marked occurrence.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and canonical Qur'anic occurrences in Sūrah 111.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "gender:masculine"],
+        baseDistinct: true,
+        lexicalKey: "تب",
+      },
+      {
+        form: "يَتِبُّ",
+        meaning: "he perishes or is ruined",
+        difference:
+          "Form I imperfect, third-person masculine singular; the imperfect form presents ruin as ongoing or expected.",
+        relationship:
+          "Form I imperfect of the ت ب ب root, the ongoing counterpart of تَبَّ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يتب",
+      },
+      {
+        form: "تَبَابٌ",
+        meaning: "ruin or destruction",
+        difference:
+          "Verbal noun; it names the state or result of perishing rather than expressing it as a finite verb.",
+        relationship:
+          "A genuine verbal noun of the ت ب ب root, naming ruin and destruction as a concept.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and Arabic Academy lexicon evidence.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "تباب",
+      },
+      {
+        form: "تَبَّبَ",
+        meaning: "he destroyed or caused to perish",
+        difference:
+          "Form II perfect; the doubled middle radical presents a causative/intensive act of bringing about ruin.",
+        relationship:
+          "A genuine Form II derived verb of the ت ب ب root, related to the root's ruin meaning but showing an agent causing destruction.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form II morphology.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "تبب",
+      },
+    ],
+    ["كسب"]: [
+      {
+        form: "يَكْسِبُ",
+        meaning: "he earns or gains",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents earning or acquiring as ongoing or habitual.",
+        relationship:
+          "Form I imperfect of the ك س ب root, the ongoing counterpart of كَسَبَ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and canonical Qur'anic occurrences.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يكسب",
+      },
+      {
+        form: "كَسْبٌ",
+        meaning: "earning or acquisition",
+        difference:
+          "Verbal noun; it names the act or result of earning rather than expressing it as a finite verb.",
+        relationship:
+          "A genuine verbal noun of the ك س ب root, naming earning, gaining or acquiring.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and Arabic Academy lexicon evidence.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "كسب",
+      },
+      {
+        form: "كَاسِبٌ",
+        meaning: "one who earns or gains",
+        difference:
+          "Active participle; it describes the person or thing performing the earning or acquiring action.",
+        relationship:
+          "A genuine active participle of the ك س ب root, related to كَسَبَ and يَكْسِبُ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and Arabic Academy lexicon evidence.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "كاسب",
+      },
+      {
+        form: "اكْتَسَبَ",
+        meaning: "he acquired or earned",
+        difference:
+          "Form VIII perfect; the derived pattern presents acquiring or earning through one's effort.",
+        relationship:
+          "A genuine Form VIII derived verb of the ك س ب root, related to the basic earning family.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form VIII morphology.",
+        featureSignal: ["pattern:form-8", "tense:perfect", "derivation:acquisition"],
+        baseDistinct: true,
+        lexicalKey: "اكتسب",
+      },
+    ],
+    ["لهب"]: [
+      {
+        form: "أَلْهَبَ",
+        meaning: "he ignited or inflamed",
+        difference:
+          "Form IV perfect; the derived pattern expresses causing a flame or heat to rise.",
+        relationship:
+          "A genuine Form IV derived verb of the ل ه ب root, related to the flame noun لَهَبٌ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form IV morphology.",
+        featureSignal: ["pattern:form-4", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "ألهب",
+      },
+      {
+        form: "يُلْهِبُ",
+        meaning: "he ignites or inflames",
+        difference:
+          "Form IV imperfect, third-person masculine singular; it presents igniting or inflaming as ongoing.",
+        relationship:
+          "Form IV imperfect of the ل ه ب root, the ongoing counterpart of أَلْهَبَ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form IV imperfect morphology.",
+        featureSignal: ["pattern:form-4", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يلهب",
+      },
+      {
+        form: "الْتَهَبَ",
+        meaning: "it blazed or caught fire",
+        difference:
+          "Form VIII perfect; the derived pattern presents the fire as becoming intensely aflame.",
+        relationship:
+          "A genuine Form VIII derived verb of the ل ه ب root, related to the state of blazing.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form VIII morphology.",
+        featureSignal: ["pattern:form-8", "tense:perfect", "voice:inchoative"],
+        baseDistinct: true,
+        lexicalKey: "التهاب",
+      },
+      {
+        form: "لَهِيبٌ",
+        meaning: "flame heat or blazing fire",
+        difference:
+          "Related noun; it focuses on the heat or blaze of the fire rather than the flame-tongue noun in the current occurrence.",
+        relationship:
+          "A genuine noun of the ل ه ب family, directly related to لَهَبٌ and the flame semantic range.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and Arabic Academy lexicon evidence.",
+        featureSignal: ["partofspeech:noun", "derivation:related-noun"],
+        baseDistinct: true,
+        lexicalKey: "لهيب",
+      },
+    ],
+    ["حطب"]: [
+      {
+        form: "حَطَبَ",
+        meaning: "he gathered firewood",
+        difference:
+          "Form I perfect; it states the completed act of gathering or collecting firewood.",
+        relationship:
+          "Form I perfect of the ح ط ب root, the action from which the firewood noun is understood.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "حطب",
+      },
+      {
+        form: "حَاطِبٌ",
+        meaning: "one who gathers firewood",
+        difference:
+          "Active participle; it describes the person performing the gathering action.",
+        relationship:
+          "A genuine active participle of the ح ط ب root, related to the act of gathering firewood.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and Arabic Academy lexicon evidence.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "حاطب",
+      },
+      {
+        form: "حَطَّابٌ",
+        meaning: "a woodcutter or firewood collector",
+        difference:
+          "Intensive occupational noun; the doubled middle radical identifies one habitually engaged in collecting or selling firewood.",
+        relationship:
+          "A genuine intensive/occupational derivative of the ح ط ب root, attested in Arabic lexicon evidence.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and Arabic Academy lexicon evidence.",
+        featureSignal: ["pattern:intensive", "partofspeech:occupational-noun", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "حطاب",
+      },
+      {
+        form: "احْتَطَبَ",
+        meaning: "he gathered firewood",
+        difference:
+          "Form VIII perfect; the derived pattern presents the act of going out and gathering firewood.",
+        relationship:
+          "A genuine Form VIII derived verb of the ح ط ب root, related to collecting the firewood named by الْحَطَبِ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form VIII morphology.",
+        featureSignal: ["pattern:form-8", "tense:perfect", "derivation:acquisition"],
+        baseDistinct: true,
+        lexicalKey: "احتطب",
+      },
+    ],
+    ["جيد"]: [
+      {
+        form: "جِيدٌ",
+        meaning: "a neck",
+        difference:
+          "Basic singular noun; it gives the lexical form without the attached feminine pronoun in جِيدِهَا.",
+        relationship:
+          "The base noun of the ج ي د family, meaning a neck or nape.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and Arabic Academy entry for الجِيد.",
+        featureSignal: ["partofspeech:noun", "number:singular", "derivation:base-form"],
+        baseDistinct: true,
+        lexicalKey: "جيد",
+      },
+      {
+        form: "أَجْيَادٌ",
+        meaning: "necks",
+        difference:
+          "Broken plural; it refers to more than one neck rather than the singular neck in the current occurrence.",
+        relationship:
+          "An established broken plural of جِيدٌ in the ج ي د lexical family.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and Arabic Academy evidence listing أَجْيَادٌ as the plural of الجِيد.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "أجياد",
+      },
+      {
+        form: "أَجْيَدُ",
+        meaning: "long-necked or having a beautiful neck",
+        difference:
+          "Descriptive adjective; it describes a person by the quality of the neck rather than naming the neck itself.",
+        relationship:
+          "A genuine adjective associated with the ج ي د neck family and its classical descriptive range.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and classical Arabic lexicon evidence for أَجْيَدُ.",
+        featureSignal: ["partofspeech:adjective", "derivation:descriptor", "gender:masculine"],
+        baseDistinct: true,
+        lexicalKey: "أجيد",
+      },
+      {
+        form: "جَيْدَاءُ",
+        meaning: "a woman with a long or beautiful neck",
+        difference:
+          "Feminine descriptive adjective; it applies the same neck-quality relationship to a feminine subject.",
+        relationship:
+          "The feminine counterpart of أَجْيَدُ in the classical ج ي د descriptive family.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and classical Arabic lexicon evidence for جَيْدَاءُ.",
+        featureSignal: ["partofspeech:adjective", "derivation:descriptor", "gender:feminine"],
+        baseDistinct: true,
+        lexicalKey: "جيداء",
+      },
+    ],
+    ["حبل"]: [
+      {
+        form: "أَحْبَالٌ",
+        meaning: "ropes",
+        difference:
+          "Broken plural; it names multiple ropes rather than the singular rope in the current occurrence.",
+        relationship:
+          "An established broken plural of حَبْلٌ in the ح ب ل lexical family.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and Arabic Academy evidence for حَبْلٌ and أَحْبَالٌ.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "أحبال",
+      },
+      {
+        form: "حَبَلَ",
+        meaning: "he tied or trapped with a rope",
+        difference:
+          "Form I perfect; it expresses the completed act of tying or ensnaring with a rope.",
+        relationship:
+          "Form I perfect of the ح ب ل root, showing an action related to the rope noun.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "حبل",
+      },
+      {
+        form: "حَبَّلَ",
+        meaning: "he braided or entangled",
+        difference:
+          "Form II perfect; the doubled middle radical presents an intensive or causative act of making something rope-like or entangled.",
+        relationship:
+          "A genuine Form II derived verb of the ح ب ل root, related to tying and entangling.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form II morphology.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "حبل",
+      },
+      {
+        form: "احْتَبَلَ",
+        meaning: "he trapped or ensnared",
+        difference:
+          "Form VIII perfect; the derived pattern expresses using a snare or rope to catch something.",
+        relationship:
+          "A genuine Form VIII derived verb of the ح ب ل root, related to the rope and snare semantic family.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form VIII morphology.",
+        featureSignal: ["pattern:form-8", "tense:perfect", "derivation:instrumental-action"],
+        baseDistinct: true,
+        lexicalKey: "احتبل",
+      },
+    ],
+    ["مسد"]: [
+      {
+        form: "مَسَدَ",
+        meaning: "he twisted or plaited",
+        difference:
+          "Form I perfect; it states the completed act of twisting or plaiting fibres into a rope.",
+        relationship:
+          "Form I perfect of the م س د root, the action underlying the palm-fibre noun مَسَدٌ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and Arabic Academy evidence listing مَسَدَ in the مَسَد family.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "مسد",
+      },
+      {
+        form: "مَسْدٌ",
+        meaning: "twisting or plaiting",
+        difference:
+          "Verbal noun; it names the act of twisting or plaiting rather than the finished fibre or rope.",
+        relationship:
+          "A genuine verbal noun associated with the م س د twisting/plaiting family.",
+        provenance:
+          "Codex-authored after review of classical Arabic lexicon evidence for the م س د family and the approved project root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "مسد",
+      },
+      {
+        form: "مِسَادٌ",
+        meaning: "plaited ropes or fibres",
+        difference:
+          "Plural noun; it refers to multiple ropes or fibre strands rather than one palm-fibre rope.",
+        relationship:
+          "An established plural associated with مَسَدٌ, the palm-fibre and plaited-rope noun.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy entry for المَسَد, which lists مِسَادٌ as a plural.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:plural"],
+        baseDistinct: true,
+        lexicalKey: "مساد",
+      },
+      {
+        form: "مَمْسُودٌ",
+        meaning: "twisted or plaited",
+        difference:
+          "Passive participle; it describes fibre or rope that has undergone the twisting or plaiting action.",
+        relationship:
+          "A genuine passive-participle relationship in the م س د family, contrasting the action with its finished result.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy entry for المَسَد, which lists المَمْسُودُ, and the approved project root meaning.",
+        featureSignal: ["partofspeech:passive-participle", "voice:passive", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "ممسود",
+      },
+    ],
   };
   return (families[root] ?? []).map((candidate) => ({
     ...candidate,
@@ -891,6 +1269,12 @@ function occurrenceCandidate(
   const changes = changedFeatures(current.provider, source.provider);
   const currentBase = lexicalBase(current.provider, current.word.arabic);
   const sourceBase = lexicalBase(source.provider, source.word.arabic);
+  const sourceSurface = comparableBase(source.word.arabic);
+  const sourceStem = comparableBase(sourceBase);
+  const hasOnlyConjunctionPrefix =
+    (sourceSurface.startsWith("و") || sourceSurface.startsWith("ف")) &&
+    (sourceSurface.slice(1) === sourceStem || sourceSurface.slice(1) === currentBase);
+  if (hasOnlyConjunctionPrefix && sourceBase === currentBase) return undefined;
   const distinct = normalized(current.word.arabic) !== normalized(source.word.arabic);
   const signals = signalFor(changes, source.provider);
   const difference = changes.length
@@ -928,6 +1312,13 @@ function existingCandidate(
 ): Candidate | undefined {
   const root = rootKey(current.lesson.root);
   if (normalized(row.form) === normalized(current.word.arabic)) return undefined;
+  const rowSurface = comparableBase(row.form);
+  const currentStem = lexicalBase(current.provider, current.word.arabic);
+  if (
+    (rowSurface.startsWith("و") || rowSurface.startsWith("ف")) &&
+    rowSurface.slice(1) === currentStem
+  )
+    return undefined;
   if (!safeForm(row, root)) return undefined;
   const observedRoots = observedRootsByBase.get(base(row.form));
   if (!observedRoots?.has(root) && !TRUSTED_AUTHORED_LESSONS.has(source.id)) return undefined;
@@ -938,7 +1329,6 @@ function existingCandidate(
       .map((value) => `${value}: changed`),
     undefined,
   );
-  const currentStem = lexicalBase(current.provider, current.word.arabic);
   const candidateStems = observedStemsByBase.get(base(row.form)) ?? new Set([base(row.form)]);
   const baseDistinct = [...candidateStems].some((stem) => stem !== currentStem);
   const difference = trustedDifference(root, row.form, row.difference);
@@ -968,7 +1358,15 @@ function dedupeCandidates(candidates: Candidate[]) {
 }
 
 function chooseFour(candidates: Candidate[]) {
-  const sorted = [...dedupeCandidates(candidates)].sort((left, right) => right.score - left.score);
+  const deduped = dedupeCandidates(candidates);
+  const sorted = deduped
+    .filter((candidate) => {
+      const key = inflectionalKey(candidate.form);
+      if (!key.startsWith("و") && !key.startsWith("ف")) return true;
+      const stemKey = key.replace(/^[وف][\u064B-\u065F\u0670\u06D6-\u06ED]*/u, "");
+      return !deduped.some((other) => other !== candidate && inflectionalKey(other.form) === stemKey);
+    })
+    .sort((left, right) => right.score - left.score);
   const selected: Candidate[] = [];
   const covered = new Set<string>();
   for (const candidate of sorted) {

@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.2.0",
   "contractId": "quranic-word-tree-authoring",
-  "contractVersion": "1.3.1",
-  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0"],
+  "contractVersion": "1.3.2",
+  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0", "1.3.1"],
   "status": "active",
   "purpose": "The single governing contract for authoring, repairing, importing, auditing and rendering every Qur'anic Arabic Word Tree lesson.",
   "authority": {
@@ -512,6 +512,11 @@
       "id": "provider-root-absence-is-not-rootlessness",
       "problem": "A morphology provider may omit a root tag for a lexicalized content word. Treating a missing provider field as proof that the word has no lexical root would replace a reviewed lexical root with an incorrect whole-word 'No lexical root' message.",
       "safeguard": "Treat provider-root absence as a review state, not as rootlessness. Keep a manually verified lexical root only when the author records the independent evidence and leave the occurrence visible in the root audit until that review is complete. Use 'No lexical root (category)' only when the component itself is a grammatical/rootless item or the reviewed evidence genuinely supports no lexical root."
+    },
+    {
+      "id": "sarf-clitic-is-not-family-form",
+      "problem": "A conjunction clitic such as وَ or فَ can be counted as a new Ṣarf family form when it merely attaches to an otherwise unchanged lexical stem.",
+      "safeguard": "Separate conjunction clitics from lexical morphology. Do not count a canonical occurrence whose provider lexical stem is unchanged and whose only added material is وَ or فَ; explain the clitic in the word breakdown instead."
     },
     {
       "id": "repeated-word-context",

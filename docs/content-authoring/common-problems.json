@@ -1,5 +1,6 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.2.0",
+  "sourceOfTruth": "docs/content-authoring/quranic-word-tree-contract.json",
   "entries": [
     {
       "id": "breakdown-display-versus-source",
@@ -25,6 +26,76 @@
       "id": "parallel-file-conflict",
       "problem": "Multiple workers edit the same sūrah package or canonical database rows.",
       "safeguard": "Workers write unique immutable packet revisions; one deterministic assembler and serialized importer own canonical writes."
+    },
+    {
+      "id": "limited-family-misclassified",
+      "problem": "A structural Ṣarf pass labels a family limited because it found too few Qur'anic candidates, because authoring effort was missing, or because an outer compound label contains a preposition. This wrongly treats a rootful lexical noun, verb or adjective as a restricted grammatical item.",
+      "safeguard": "Treat every existing limited family as pending independent linguistic audit. Separate rootless grammatical components from rootful lexical stems, inspect canonical forms and approved linguistic evidence, and either author exactly five useful reviewed forms or record a specific confirmed-limited/blocked decision. Never use provider candidate count, an outer preposition label, missing authoring effort or boilerplate as a linguistic limitation reason."
+    },
+    {
+      "id": "limited-family-boilerplate-reason",
+      "problem": "The same generic limitedReason is copied onto unrelated particles, proper nouns and lexical families, so the record does not explain why this particular family is limited.",
+      "safeguard": "Require a lexeme- and category-specific reason that names the actual grammatical or lexical restriction, the genuine forms reviewed, the missing useful contrast and the evidence checked."
+    },
+    {
+      "id": "limited-family-unreviewed-status",
+      "problem": "A limited family passes structural validation without a current human-quality linguistic decision, leaving the old classification unchallenged.",
+      "safeguard": "Every limited occurrence must carry a current audit decision: confirmed-limited, upgraded-to-full or blocked-for-genuine-ambiguity. Unknown and pending are not complete; blocked families cannot be custom-complete."
+    },
+    {
+      "id": "sarf-family-too-narrow",
+      "problem": "A lesson's Ṣarf / form-family section contains too few useful reviewed forms, so the learner cannot compare the pattern and morphological changes.",
+      "safeguard": "The normal target is exactly five distinct reviewed forms: the current Qur'anic form first plus four useful related forms. Accuracy outranks row count; use a specific reviewed limited family only when five would require fabrication, duplication, irrelevant forms, misleading morphology or weak padding."
+    },
+    {
+      "id": "sarf-family-must-be-linguistically-reviewed",
+      "problem": "A generic authoring fallback manufactures Ṣarf rows from the current word, bare root letters, a provider lemma or grammatical case endings.",
+      "safeguard": "Automatically generated forms are candidates only. Every approved row needs a real appropriately vocalised Arabic form, form-specific English meaning, meaningful distinction, root/lexeme relationship and provenance. If reliable evidence remains conflicting, block rather than guess."
+    },
+    {
+      "id": "compound-root-hidden-by-grammar-part",
+      "problem": "A compound surface word contains a lexical stem plus a grammatical part, but the whole lesson is marked rootless because the grammatical part has no root.",
+      "safeguard": "Keep the lexical stem/root as the lesson root and explain each attached grammatical part separately as No lexical root (category)."
+    },
+    {
+      "id": "root-picture-must-be-english-meaning",
+      "problem": "The Root Picture card repeats Arabic root letters or a rootless marker instead of teaching an English root meaning.",
+      "safeguard": "Keep root radicals and rootPicture separate. Lexical rootPicture must be an English semantic range; rootless rootPicture must begin with one category-specific No lexical root marker."
+    },
+    {
+      "id": "root-picture-must-not-use-occurrence-gloss",
+      "problem": "The current occurrence gloss is copied into Root Picture as if it were the stable root meaning.",
+      "safeguard": "Use content-import/root-meanings.json or an approved lexicon, and author a concise accurate semantic range when missing. Never derive rootPicture from the occurrence translation."
+    },
+    {
+      "id": "certified-translation-must-be-primary",
+      "problem": "An explanatory paraphrase appears beneath the complete Arabic āyah instead of the certified direct translation.",
+      "safeguard": "Render the approved certified direct translation as the primary translation; keep naturalMeaning explanatory only and verify representative routes after import."
+    },
+    {
+      "id": "basmalah-must-not-enter-visible-ayah",
+      "problem": "The basmalah is accidentally retained in the visible first āyah, shifting words and invalidating the translation relationship.",
+      "safeguard": "Preserve it only in sourceRawArabic where appropriate, remove it from visible āyah data for sūrahs other than 1 and 9, and validate the first visible word positions."
+    },
+    {
+      "id": "vocative-interjection-shortened",
+      "problem": "يَا is shortened to O rather than preserving the approved learner wording Oh.",
+      "safeguard": "Use Oh consistently in the gloss, lesson, form row, sentence role, recognition clue and takeaway, and validate the wording."
+    },
+    {
+      "id": "provider-morphology-token-alignment",
+      "problem": "Provider morphology is attached by position even though its segments do not reconstruct the canonical occurrence.",
+      "safeguard": "Reconstruct and compare exact sourceText before using provider root, lemma or segmentation; quarantine failed alignments."
+    },
+    {
+      "id": "provider-root-absence-is-not-rootlessness",
+      "problem": "A missing provider root is treated as proof that a lexical content word is rootless.",
+      "safeguard": "Treat provider-root absence as a review state. Use No lexical root only for a reviewed grammatical/rootless component or a genuinely rootless item."
+    },
+    {
+      "id": "sarf-clitic-is-not-family-form",
+      "problem": "A conjunction clitic such as وَ or فَ is counted as a new Ṣarf family form when it merely attaches to an otherwise unchanged lexical stem.",
+      "safeguard": "Separate conjunction clitics from lexical morphology. Do not count a canonical occurrence whose provider lexical stem is unchanged and whose only added material is وَ or فَ; explain the clitic in the word breakdown instead."
     }
   ]
 }
