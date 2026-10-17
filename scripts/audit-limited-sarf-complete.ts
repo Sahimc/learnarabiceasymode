@@ -3854,6 +3854,276 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "راغب",
       },
     ],
+    ["سجو"]: [
+      {
+        form: "سَجَا",
+        meaning: "it became still or covered",
+        difference:
+          "Form I perfect; it states the completed stillness or covering behind the current weak-final form.",
+        relationship:
+          "A regularised Form I perfect of سَجَىٰ in the س ج و family, whose Qur'anic occurrence describes night covering with darkness.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 93:2:3 and standard weak-final Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "سجا",
+      },
+      {
+        form: "يَسْجُو",
+        meaning: "it becomes still or covers",
+        difference:
+          "Form I imperfect; it presents the covering or stillness as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of سَجَا in the س ج و lexical family.",
+        provenance:
+          "Codex-authored after review of standard weak-final Form I imperfect morphology and the Quranic root meaning.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يسجو",
+      },
+      {
+        form: "اُسْجُ",
+        meaning: "become still or cover!",
+        difference:
+          "Form I imperative; it turns the root into a direct command and contrasts with the current indicative-like occurrence.",
+        relationship:
+          "The imperative of يَسْجُو in the س ج و family, formed by regular weak-final morphology.",
+        provenance:
+          "Codex-authored after review of standard Form I imperative morphology for the س ج و root.",
+        featureSignal: ["pattern:form-1", "mood:imperative", "person:second-person"],
+        baseDistinct: true,
+        lexicalKey: "اسجو",
+      },
+      {
+        form: "سُجُوٌّ",
+        meaning: "stillness or covering",
+        difference:
+          "Verbal noun; it names the state or action of becoming still or covering rather than expressing it as a verb.",
+        relationship:
+          "The verbal noun of سَجَا/سَجَىٰ in the س ج و lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for سُجُوٌّ and the Quranic root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "سجو",
+      },
+    ],
+    ["ودع"]: [
+      {
+        form: "وَدَّعَ",
+        meaning: "he bade farewell or forsook",
+        difference:
+          "Form II perfect without the attached object pronoun; it isolates the verb from the current form وَدَّعَكَ.",
+        relationship:
+          "The base Form II perfect behind the current Qur'anic occurrence in the و د ع family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 93:3:2 and the Form II verb وَدَّعَ.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "attached-pronoun:removed"],
+        baseDistinct: true,
+        lexicalKey: "ودع",
+      },
+      {
+        form: "يُوَدِّعُ",
+        meaning: "he bids farewell or forsakes",
+        difference:
+          "Form II imperfect; it presents bidding farewell as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of وَدَّعَ in the و د ع family.",
+        provenance:
+          "Codex-authored after review of standard Form II imperfect morphology and the Quranic root meaning.",
+        featureSignal: ["pattern:form-2", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يودع",
+      },
+      {
+        form: "تَوْدِيعٌ",
+        meaning: "bidding farewell",
+        difference:
+          "Form II verbal noun; it names the act of bidding farewell rather than expressing it as a finite verb.",
+        relationship:
+          "The verbal noun of وَدَّعَ in the و د ع lexical family.",
+        provenance:
+          "Codex-authored after review of standard Form II verbal-noun morphology and Quranic Arabic Corpus root evidence.",
+        featureSignal: ["pattern:form-2", "partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "توديع",
+      },
+      {
+        form: "مُوَدِّعٌ",
+        meaning: "one who bids farewell",
+        difference:
+          "Form II active participle; it names the agent performing the farewell action rather than the action itself.",
+        relationship:
+          "The active participle of وَدَّعَ in the و د ع family.",
+        provenance:
+          "Codex-authored after review of standard Form II active-participle morphology and the Quranic root evidence.",
+        featureSignal: ["pattern:form-2", "partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "مودع",
+      },
+    ],
+    ["قلي"]: [
+      {
+        form: "قَلَيْنَا",
+        meaning: "we detested",
+        difference:
+          "Form I perfect, first-person plural; it gives a real person-and-number contrast with the current third-person perfect form.",
+        relationship:
+          "A genuine inflected Form I perfect of قَلَىٰ in the ق ل ي family.",
+        provenance:
+          "Codex-authored after review of standard weak-final Form I perfect inflection and the Quranic ق ل ي root evidence.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "person:first-person", "number:plural"],
+        baseDistinct: true,
+        lexicalKey: "قلينا",
+      },
+      {
+        form: "يَقْلَى",
+        meaning: "he detests",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents detestation as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of قَلَىٰ, from the same ق ل ي lexical family.",
+        provenance:
+          "Codex-authored after review of standard weak-final Form I imperfect morphology and the approved root meaning.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يقلى",
+      },
+      {
+        form: "قِلًى",
+        meaning: "detestation",
+        difference:
+          "Verbal noun; it names the feeling or act of detesting rather than expressing it as a finite verb.",
+        relationship:
+          "A genuine verbal noun related to قَلَىٰ, attested in the reviewed lesson evidence.",
+        provenance:
+          "Codex-authored after review of the existing reviewed row and approved Arabic lexical evidence for قِلًى.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "قلى",
+      },
+      {
+        form: "قَالٍ",
+        meaning: "detesting",
+        difference:
+          "Active participle; it names one who detests, contrasting with the current finite verb.",
+        relationship:
+          "The active participle of قَلَىٰ, attested in Qur'an 26:168 as الْقَالِينَ.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 26:168:5 and standard weak-final active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "قال",
+      },
+    ],
+    ["عيل"]: [
+      {
+        form: "عَالَ",
+        meaning: "he became needy",
+        difference:
+          "Form I perfect; it states becoming needy as a completed event, contrasting with the current active participle.",
+        relationship:
+          "A genuine Form I verb of the ع ي ل family related to need and poverty.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for عَالَ and the Quranic root entry.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "عال",
+      },
+      {
+        form: "يَعِيلُ",
+        meaning: "he is needy",
+        difference:
+          "Form I imperfect; it presents need as an ongoing state rather than as a completed event.",
+        relationship:
+          "The imperfect counterpart of عَالَ in the ع ي ل family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for يَعِيلُ and standard weak-verb morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يعيل",
+      },
+      {
+        form: "عَيْلَةٌ",
+        meaning: "poverty or need",
+        difference:
+          "Noun; it names the state of poverty or need rather than describing the needy person.",
+        relationship:
+          "A Qur'anic noun in the ع ي ل family, attested in Qur'an 9:28.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 9:28:16 and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "derivation:state-noun", "meaning:poverty"],
+        baseDistinct: true,
+        lexicalKey: "عيلة",
+      },
+      {
+        form: "عَائِلُونَ",
+        meaning: "needy people",
+        difference:
+          "Masculine plural active participle; it contrasts with the current masculine singular active participle.",
+        relationship:
+          "A regular plural of عَائِلٌ within the ع ي ل lexical family.",
+        provenance:
+          "Codex-authored after review of the canonical active-participle form عَائِلٌ and standard Arabic plural formation.",
+        featureSignal: ["partofspeech:active-participle", "number:plural", "gender:masculine"],
+        baseDistinct: true,
+        lexicalKey: "عائلون",
+      },
+    ],
+    ["قهر"]: [
+      {
+        form: "قَهَرَ",
+        meaning: "he subdued or oppressed",
+        difference:
+          "Form I perfect; it states the completed act of subduing, contrasting with the current jussive/command form.",
+        relationship:
+          "Form I perfect of the ق ه ر root behind تَقْهَرْ.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ق ه ر evidence and standard Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "قهر",
+      },
+      {
+        form: "يَقْهَرُ",
+        meaning: "he subdues or oppresses",
+        difference:
+          "Form I imperfect; it presents oppression as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of قَهَرَ in the ق ه ر family.",
+        provenance:
+          "Codex-authored after review of standard Form I imperfect morphology and the Quranic root evidence.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يقهر",
+      },
+      {
+        form: "قَهْرٌ",
+        meaning: "subduing or oppression",
+        difference:
+          "Verbal noun; it names the act of subduing rather than expressing it as a finite verb.",
+        relationship:
+          "The standard verbal noun of قَهَرَ in the ق ه ر lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for قَهْرٌ and the Quranic root range.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "قهر",
+      },
+      {
+        form: "قَاهِرٌ",
+        meaning: "subduing or dominant",
+        difference:
+          "Active participle; it names one who subdues or dominates, contrasting with the finite verb.",
+        relationship:
+          "The active participle of قَهَرَ, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 6:18, 6:61 and 7:127.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "قاهر",
+      },
+    ],
     ["مسد"]: [
       {
         form: "مَسَدَ",
