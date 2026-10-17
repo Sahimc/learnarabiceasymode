@@ -8169,6 +8169,92 @@ function clone<T>(value: T): T {
   return JSON.parse(JSON.stringify(value)) as T;
 }
 
+type AdditionalCuratedCandidate = Omit<Candidate, "score" | "sourceKind" | "sourceOccurrence">;
+
+const ADDITIONAL_CURATED_FAMILIES: Record<string, AdditionalCuratedCandidate[]> = {
+  ["كور"]: [
+    { form: "كَوَّرَ", meaning: "he wrapped or rolled", difference: "Form II perfect; it names the completed wrapping action behind the current passive form.", relationship: "Form II perfect of the ك و ر family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ك و ر evidence, including يُكَوِّرُ and كُوِّرَتْ.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect"], baseDistinct: true, lexicalKey: "كوّر" },
+    { form: "يُكَوِّرُ", meaning: "he wraps or rolls", difference: "Form II imperfect; it presents the wrapping action as ongoing.", relationship: "Form II imperfect of the ك و ر family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ك و ر evidence, including يُكَوِّرُ.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:imperfect"], baseDistinct: true, lexicalKey: "يكوّر" },
+    { form: "تَكْوِيرٌ", meaning: "wrapping or rolling", difference: "Form II verbal noun; it names the action rather than the thing being wrapped.", relationship: "Form II verbal noun of the ك و ر family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "pattern:form-2", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "تكوير" },
+    { form: "مُكَوِّرٌ", meaning: "one who wraps or rolls", difference: "Form II active participle; it names the agent performing the wrapping.", relationship: "Form II active participle of the ك و ر family.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ك و ر evidence and standard Form II active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-2"], baseDistinct: true, lexicalKey: "مكوّر" },
+  ],
+  ["عطل"]: [
+    { form: "عَطَّلَ", meaning: "he left unused or abandoned", difference: "Form II perfect; it names the completed act behind the current passive verb.", relationship: "Form II perfect of the ع ط ل family, related to the Qur'anic forms عُطِّلَتْ and مُعَطَّلَة.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ع ط ل evidence and standard Form II morphology.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect"], baseDistinct: true, lexicalKey: "عطّل" },
+    { form: "يُعَطِّلُ", meaning: "he leaves unused or abandons", difference: "Form II imperfect; it presents abandonment as ongoing.", relationship: "Form II imperfect of the ع ط ل family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:imperfect"], baseDistinct: true, lexicalKey: "يعطّل" },
+    { form: "تَعْطِيلٌ", meaning: "leaving unused or abandonment", difference: "Form II verbal noun; it names the act or state of leaving something idle.", relationship: "Form II verbal noun of the ع ط ل family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "pattern:form-2", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "تعطيل" },
+    { form: "مُعَطَّلٌ", meaning: "left unused or abandoned", difference: "Form II passive participle; it describes the thing left idle or abandoned.", relationship: "Form II passive participle of the ع ط ل family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ع ط ل evidence, including مُعَطَّلَة.", featureSignal: ["partofspeech:passive-participle", "pattern:form-2", "voice:passive"], baseDistinct: true, lexicalKey: "معطّل" },
+  ],
+  ["وحش"]: [
+    { form: "وَحْشٌ", meaning: "a wild animal", difference: "Basic singular noun; it contrasts with the current broken plural الوحوش.", relationship: "Singular noun of the و ح ش family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic broken-plural relationship.", featureSignal: ["partofspeech:noun", "number:singular"], baseDistinct: true, lexicalKey: "وحش" },
+    { form: "تَوَحَّشَ", meaning: "he became wild or solitary", difference: "Form V perfect; it expresses becoming wild or estranged from people.", relationship: "Form V verb of the و ح ش family.", provenance: "Codex-authored after review of the approved root meaning and standard Form V morphology.", featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:perfect"], baseDistinct: true, lexicalKey: "توحّش" },
+    { form: "يَتَوَحَّشُ", meaning: "he becomes wild or solitary", difference: "Form V imperfect; it presents the change as ongoing.", relationship: "Form V imperfect of the و ح ش family.", provenance: "Codex-authored after review of the approved root meaning and standard Form V imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:imperfect"], baseDistinct: true, lexicalKey: "يتوحّش" },
+    { form: "مُتَوَحِّشٌ", meaning: "wild, feral or solitary", difference: "Form V active participle; it describes one who has become wild or isolated.", relationship: "Form V active participle of the و ح ش family.", provenance: "Codex-authored after review of the approved root meaning and standard Form V active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-5"], baseDistinct: true, lexicalKey: "متوحّش" },
+  ],
+  ["سجر"]: [
+    { form: "سَجَرَ", meaning: "he kindled or filled", difference: "Form I perfect; it names the basic burning or filling action behind the current Form II passive verb.", relationship: "Form I perfect of the س ج ر family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root س ج ر evidence, including يُسْجَرُ and سُجِّرَتْ.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "سجر" },
+    { form: "يَسْجُرُ", meaning: "he kindles or fills", difference: "Form I imperfect; it presents the action as ongoing.", relationship: "Form I imperfect of the س ج ر family.", provenance: "Codex-authored after review of Quranic Arabic Corpus root س ج ر evidence and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يسجر" },
+    { form: "سَجْرٌ", meaning: "kindling or filling", difference: "Verbal noun; it names the action rather than the sea or fire being affected.", relationship: "Verbal noun of the س ج ر family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "سجر-noun" },
+    { form: "مَسْجُورٌ", meaning: "filled, kindled or overflowing", difference: "Form I passive participle; it describes what has been filled or kindled.", relationship: "Passive participle of the س ج ر family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root س ج ر evidence, including الْمَسْجُور.", featureSignal: ["partofspeech:passive-participle", "voice:passive"], baseDistinct: true, lexicalKey: "مسجور" },
+  ],
+  ["وأد"]: [
+    { form: "وَأَدَ", meaning: "he buried alive", difference: "Form I perfect; it names the completed act behind the current passive participle.", relationship: "Form I perfect of the و أ د family, related to مَوْءُودَة.", provenance: "Codex-authored after review of Quranic Arabic Corpus root و أ د evidence and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "وأد" },
+    { form: "يَئِدُ", meaning: "he buries alive", difference: "Form I imperfect; it presents the act as ongoing or habitual.", relationship: "Form I imperfect of the و أ د family.", provenance: "Codex-authored after review of the approved root meaning and standard weak-verb morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يئد" },
+    { form: "وَأْدٌ", meaning: "burying alive", difference: "Verbal noun; it names the act rather than the infant subjected to it.", relationship: "Verbal noun of the و أ د family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "وأد-noun" },
+    { form: "وَائِدٌ", meaning: "one who buries alive", difference: "Form I active participle; it names the agent performing the burial.", relationship: "Active participle of the و أ د family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "وائِد" },
+  ],
+  ["كشط"]: [
+    { form: "كَشَطَ", meaning: "he stripped or peeled away", difference: "Form I perfect; it names the completed stripping action behind the current passive verb.", relationship: "Form I perfect of the ك ش ط family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "كشط" },
+    { form: "يَكْشِطُ", meaning: "he strips or peels away", difference: "Form I imperfect; it presents stripping as ongoing.", relationship: "Form I imperfect of the ك ش ط family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يكشط" },
+    { form: "كَشْطٌ", meaning: "stripping or peeling away", difference: "Verbal noun; it names the act of removing a covering.", relationship: "Verbal noun of the ك ش ط family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "كشط-noun" },
+    { form: "كَاشِطٌ", meaning: "stripping or removing", difference: "Form I active participle; it describes the agent that removes the covering.", relationship: "Active participle of the ك ش ط family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "كاشط" },
+  ],
+  ["زلف"]: [
+    { form: "أَزْلَفَ", meaning: "he brought near", difference: "Form IV perfect; it names the completed act of bringing near behind the current passive form.", relationship: "Form IV perfect of the ز ل ف family, related to أُزْلِفَتْ.", provenance: "Codex-authored after review of the approved root meaning and standard Form IV morphology.", featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:perfect"], baseDistinct: true, lexicalKey: "أزلف" },
+    { form: "يُزْلِفُ", meaning: "he brings near", difference: "Form IV imperfect; it presents bringing near as ongoing.", relationship: "Form IV imperfect of the ز ل ف family.", provenance: "Codex-authored after review of the approved root meaning and standard Form IV imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:imperfect"], baseDistinct: true, lexicalKey: "يزلف" },
+    { form: "إِزْلَافٌ", meaning: "bringing near or drawing close", difference: "Form IV verbal noun; it names the act of bringing something near.", relationship: "Form IV verbal noun of the ز ل ف family.", provenance: "Codex-authored after review of the approved root meaning and standard Form IV verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "pattern:form-4", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "إزلاف" },
+    { form: "مُزْلِفٌ", meaning: "bringing near or drawing close", difference: "Form IV active participle; it names the one who brings near.", relationship: "Form IV active participle of the ز ل ف family.", provenance: "Codex-authored after review of the approved root meaning and standard Form IV active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-4"], baseDistinct: true, lexicalKey: "مزلف" },
+  ],
+  ["حضر"]: [
+    { form: "حَضَرَ", meaning: "he was present or attended", difference: "Form I perfect; it names being present behind the current causative Form IV verb.", relationship: "Form I perfect of the ح ض ر family, repeatedly attested in Qur'anic usage.", provenance: "Codex-authored after review of the approved root meaning and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "حضر" },
+    { form: "يَحْضُرُ", meaning: "he is present or attends", difference: "Form I imperfect; it presents presence as ongoing or expected.", relationship: "Form I imperfect of the ح ض ر family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يحضر" },
+    { form: "حُضُورٌ", meaning: "presence or attendance", difference: "Verbal noun; it names the state of being present rather than the person who brings something.", relationship: "Verbal noun of the ح ض ر family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "حضور" },
+    { form: "حَاضِرٌ", meaning: "present or attending", difference: "Form I active participle/adjective; it describes one who is present.", relationship: "Active participle/adjective of the ح ض ر family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "حاضر" },
+  ],
+  ["كنس"]: [
+    { form: "كَنَسَ", meaning: "he swept or withdrew", difference: "Form I perfect; it names the basic sweeping or withdrawing action behind the current plural noun.", relationship: "Form I perfect of the ك ن س family, related to الكُنَّس.", provenance: "Codex-authored after review of the approved root meaning and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "كنس" },
+    { form: "يَكْنِسُ", meaning: "he sweeps or withdraws", difference: "Form I imperfect; it presents the action as ongoing.", relationship: "Form I imperfect of the ك ن س family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يكنس" },
+    { form: "كَنْسٌ", meaning: "sweeping or withdrawal", difference: "Verbal noun; it names the action rather than the thing that withdraws.", relationship: "Verbal noun of the ك ن س family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "كنس-noun" },
+    { form: "كَانِسٌ", meaning: "sweeping or withdrawing", difference: "Form I active participle; it describes the agent or thing that sweeps or withdraws.", relationship: "Active participle of the ك ن س family, related to the Qur'anic plural الكُنَّس.", provenance: "Codex-authored after review of the approved root meaning and standard Form I active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "كانس" },
+  ],
+  ["مكن"]: [
+    { form: "مَكَّنَ", meaning: "he established or gave power", difference: "Form II perfect; it names the completed empowering action related to the current adjective مَكِين.", relationship: "Form II perfect of the م ك ن family, repeatedly attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root م ك ن evidence and standard Form II morphology.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect"], baseDistinct: true, lexicalKey: "مكّن" },
+    { form: "يُمَكِّنُ", meaning: "he establishes or empowers", difference: "Form II imperfect; it presents establishing or empowering as ongoing.", relationship: "Form II imperfect of the م ك ن family.", provenance: "Codex-authored after review of Quranic Arabic Corpus root م ك ن evidence and standard Form II imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:imperfect"], baseDistinct: true, lexicalKey: "يمكن" },
+    { form: "تَمْكِينٌ", meaning: "establishing or granting power", difference: "Form II verbal noun; it names the act or process of establishing someone firmly.", relationship: "Form II verbal noun of the م ك ن family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "pattern:form-2", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "تمكين" },
+    { form: "مُمَكَّنٌ", meaning: "firmly established or empowered", difference: "Form II passive participle; it describes one who has been given authority or secure position.", relationship: "Form II passive participle of the م ك ن family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II passive-participle morphology.", featureSignal: ["partofspeech:passive-participle", "pattern:form-2", "voice:passive"], baseDistinct: true, lexicalKey: "ممكن" },
+  ],
+  ["رجم"]: [
+    { form: "رَجَمَ", meaning: "he stoned or cast stones", difference: "Form I perfect; it names the completed action behind the adjective رَجِيم and passive forms.", relationship: "Form I perfect of the ر ج م family, repeatedly attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ر ج م evidence and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "رجم" },
+    { form: "يَرْجُمُ", meaning: "he stones or casts stones", difference: "Form I imperfect; it presents stoning as ongoing.", relationship: "Form I imperfect of the ر ج م family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يرجم" },
+    { form: "رَجْمٌ", meaning: "stoning or casting stones", difference: "Verbal noun; it names the action rather than the person or thing stoned.", relationship: "Verbal noun of the ر ج م family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ر ج م evidence and standard Arabic verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "رجم-noun" },
+    { form: "مَرْجُومٌ", meaning: "stoned or cursed", difference: "Form I passive participle; it describes one subjected to stoning, contrasting with رَجِيم as an established epithet.", relationship: "Passive participle of the ر ج م family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I passive-participle morphology.", featureSignal: ["partofspeech:passive-participle", "voice:passive"], baseDistinct: true, lexicalKey: "مرجوم" },
+  ],
+  ["ذهب"]: [
+    { form: "ذَهَبَ", meaning: "he went or departed", difference: "Form I perfect; it names the completed departure behind the current imperfect verb.", relationship: "Form I perfect of the ذ ه ب family, repeatedly attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ذ ه ب evidence and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "ذهب" },
+    { form: "يَذْهَبُ", meaning: "he goes or departs", difference: "Form I imperfect; it presents going as ongoing or intended.", relationship: "Form I imperfect of the ذ ه ب family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ذ ه ب evidence and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يذهب" },
+    { form: "ذَهَابٌ", meaning: "going or departure", difference: "Verbal noun; it names the act of departing rather than its subject.", relationship: "Verbal noun of the ذ ه ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "ذهاب" },
+    { form: "ذَاهِبٌ", meaning: "going or departing", difference: "Form I active participle; it describes one who is going or departing.", relationship: "Active participle of the ذ ه ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "ذاهب" },
+  ],
+};
+
+function additionalCuratedCandidates(root: string): Candidate[] {
+  return (ADDITIONAL_CURATED_FAMILIES[root] ?? []).map((candidate) => ({
+    ...candidate,
+    score: 96,
+    sourceKind: "codex-authored-lexicon",
+    sourceOccurrence: `additional-curated-root-family:${root}`,
+  }));
+}
+
 function hash(value: unknown) {
   return crypto.createHash("sha256").update(JSON.stringify(value)).digest("hex");
 }
@@ -8551,10 +8637,113 @@ const REVIEWED_RESTRICTED_LEXICAL_ROOTS = new Set([
   "رين",
   "أرك",
   "رحق",
+  "شمس",
+  "كدر",
+  "أفق",
+  "عسعس",
+  "ضنن",
 ]);
 
 function reviewedRestrictedCandidates(root: string): Candidate[] {
   const families: Record<string, Array<Omit<Candidate, "score" | "sourceKind">>> = {
+    ["كدر"]: [
+      {
+        form: "كَدِرَ",
+        meaning: "it became turbid or lost its luster",
+        difference: "Form I perfect; it names the change behind the current Form VII perfect, which presents the sky becoming dark or disturbed.",
+        relationship: "Form I perfect of the restricted ك د ر family, related to ٱنكَدَرَتْ.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus root ك د ر evidence and the standard Form I lexical family; no unrelated root was substituted.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"],
+        baseDistinct: true,
+        lexicalKey: "كدر",
+      },
+      {
+        form: "يَكْدَرُ",
+        meaning: "it becomes turbid or loses its luster",
+        difference: "Form I imperfect; it presents the change as ongoing rather than as the current completed Form VII occurrence.",
+        relationship: "Form I imperfect of the restricted ك د ر family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology for ك د ر.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"],
+        baseDistinct: true,
+        lexicalKey: "يكدر",
+      },
+      {
+        form: "كَدَرٌ",
+        meaning: "turbidity, cloudiness or loss of luster",
+        difference: "Lexical noun; it names the resulting turbidity rather than the verbal change expressed by the current occurrence.",
+        relationship: "Noun of the restricted ك د ر family, semantically related to ٱنكَدَرَتْ.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Arabic lexical morphology for ك د ر.",
+        featureSignal: ["partofspeech:noun", "derivation:lexical-noun"],
+        baseDistinct: true,
+        lexicalKey: "كدر-noun",
+      },
+    ],
+    ["أفق"]: [
+      {
+        form: "آفَاقٌ",
+        meaning: "horizons",
+        difference: "Broken plural; it contrasts with the current singular الْأُفُقِ and makes the number relationship visible.",
+        relationship: "Established broken plural of أُفُق in the restricted أ ف ق lexical family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Arabic plural morphology for أُفُق; the family remains limited because only the singular/plural lexical contrast is useful here.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "آفاق",
+      },
+    ],
+    ["عسعس"]: [
+      {
+        form: "يُعَسْعِسُ",
+        meaning: "it advances or recedes at twilight",
+        difference: "Imperfect verb; it presents the twilight movement as ongoing rather than the current perfect occurrence.",
+        relationship: "Imperfect counterpart of the restricted quadriliteral ع س ع س family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard quadriliteral verb inflection for ع س ع س.",
+        featureSignal: ["partofspeech:verb", "pattern:quadriliteral", "tense:imperfect"],
+        baseDistinct: true,
+        lexicalKey: "يعسعس",
+      },
+      {
+        form: "عَسْعَسَةٌ",
+        meaning: "twilight’s darkening or departure",
+        difference: "Verbal noun; it names the twilight process rather than presenting it as a finite verb.",
+        relationship: "Verbal noun of the restricted quadriliteral ع س ع س family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard quadriliteral verbal-noun morphology for ع س ع س.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:quadriliteral", "derivation:verbal-noun"],
+        baseDistinct: true,
+        lexicalKey: "عسعسة",
+      },
+    ],
+    ["ضنن"]: [
+      {
+        form: "ضَنَّ",
+        meaning: "he withheld or was stingy",
+        difference: "Form I perfect; it names the completed act behind the current active participle.",
+        relationship: "Form I perfect of the restricted ض ن ن family, related to بِضَنِينٍ.",
+        provenance: "Codex-authored after review of the approved root meaning and standard doubled Form I morphology for ض ن ن.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"],
+        baseDistinct: true,
+        lexicalKey: "ضنّ",
+      },
+      {
+        form: "يَضَنُّ",
+        meaning: "he withholds or is stingy",
+        difference: "Form I imperfect; it presents withholding as an ongoing disposition or action.",
+        relationship: "Form I imperfect of the restricted ض ن ن family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard doubled Form I imperfect morphology for ض ن ن.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"],
+        baseDistinct: true,
+        lexicalKey: "يَضَنُّ",
+      },
+      {
+        form: "ضَنٌّ",
+        meaning: "withholding or stinginess",
+        difference: "Verbal noun; it names the quality or act of withholding rather than the person described by the current participle.",
+        relationship: "Verbal noun of the restricted ض ن ن family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard doubled Form I verbal-noun morphology for ض ن ن.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"],
+        baseDistinct: true,
+        lexicalKey: "ضنّ-noun",
+      },
+    ],
     ["كوكب"]: [
       {
         form: "كَوْكَبٌ",
@@ -8959,6 +9148,7 @@ for (const occurrence of limited) {
   const candidatePool: Candidate[] = [];
   if (root && !REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root)) {
     candidatePool.push(...curatedCandidates(root).filter((candidate) => safeForm(candidate, root)));
+    candidatePool.push(...additionalCuratedCandidates(root).filter((candidate) => safeForm(candidate, root)));
     for (const source of occurrencesByRoot.get(root) ?? []) {
       if (source.word.id === occurrence.word.id) continue;
       if (source.provider?.root && rootKey(source.provider.root) !== root) continue;
