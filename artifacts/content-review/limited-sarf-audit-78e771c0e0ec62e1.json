@@ -1,0 +1,702 @@
+{
+  "auditBatchId": "limited-sarf-audit-78e771c0e0ec62e1",
+  "contractId": "quranic-word-tree-authoring",
+  "contractVersion": "1.3.2",
+  "reviewedAt": "2026-10-17T12:54:49.403Z",
+  "mode": "dry-run",
+  "scope": {
+    "authoredPackages": 1,
+    "limitedOccurrences": 6,
+    "distinctLimitedTeachingEntries": 6
+  },
+  "before": {
+    "limitedOccurrences": 6,
+    "limitedTeachingEntries": 6,
+    "forms": {
+      "2": 2,
+      "3": 4
+    }
+  },
+  "decisions": {
+    "confirmedLimited": 5,
+    "upgradedToFull": 1,
+    "blocked": 0
+  },
+  "after": {
+    "confirmedLimited": 5,
+    "upgradedToFull": 1,
+    "blocked": 0,
+    "fullFamiliesAfter": 1
+  },
+  "byCategory": {
+    "article": {
+      "before": 1,
+      "confirmedLimited": 1,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "proper noun": {
+      "before": 2,
+      "confirmedLimited": 2,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "preposition": {
+      "before": 1,
+      "confirmedLimited": 1,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "noun": {
+      "before": 1,
+      "confirmedLimited": 0,
+      "upgradedToFull": 1,
+      "blocked": 0
+    },
+    "pronoun": {
+      "before": 1,
+      "confirmedLimited": 1,
+      "upgradedToFull": 0,
+      "blocked": 0
+    }
+  },
+  "byReason": {
+    "rootless:article": 1,
+    "proper-noun-restricted": 2,
+    "rootless:preposition": 1,
+    "rootless:pronoun": 1
+  },
+  "packageChanges": [
+    {
+      "packageId": "surah:110",
+      "surah": 110,
+      "statusAfter": "custom-complete",
+      "demotedFromCustomComplete": false
+    }
+  ],
+  "items": [
+    {
+      "occurrenceId": "word:110:1:1",
+      "packageId": "surah:110",
+      "surah": 110,
+      "ayah": 1,
+      "position": 1,
+      "teachingId": "lesson:110-1-1",
+      "word": "إِذَا",
+      "category": "article",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "إِذَا",
+          "meaning": "when",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:110:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:1:1) was checked as evidence."
+        },
+        {
+          "form": "إِذْ",
+          "meaning": "when",
+          "difference": "past-time connector",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَتَى",
+          "meaning": "when?",
+          "difference": "question word",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "إِذَا",
+            "meaning": "when",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:1:1) was checked as evidence."
+          },
+          {
+            "form": "إِذْ",
+            "meaning": "when",
+            "difference": "past-time connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "مَتَى",
+            "meaning": "when?",
+            "difference": "question word",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "إِذَا is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "إِذَا",
+            "meaning": "when",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:1:1) was checked as evidence."
+          },
+          {
+            "form": "إِذْ",
+            "meaning": "when",
+            "difference": "past-time connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "مَتَى",
+            "meaning": "when?",
+            "difference": "question word",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "إِذَا is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "846c34c3c547b742f977091d3567b65b0494798059f3ff6bb3388205f9ff5db8",
+      "contentHash": "a34d552f6c9b931e8194fb90bf8a4e732a81f904ca3ab55fdc7d2aa4b460c9b9"
+    },
+    {
+      "occurrenceId": "word:110:1:4",
+      "packageId": "surah:110",
+      "surah": 110,
+      "ayah": 1,
+      "position": 4,
+      "teachingId": "lesson:110-1-4",
+      "word": "اللَّهِ",
+      "category": "proper noun",
+      "root": "أ ل ه",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "اللَّهِ",
+          "meaning": "Allah",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the أله lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:110:1:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:1:4) was checked as evidence."
+        },
+        {
+          "form": "ٱللَّه",
+          "meaning": "Allah",
+          "difference": "unique proper name",
+          "relationship": "Existing project-reviewed relationship to the أله family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "اللَّهِ",
+            "meaning": "Allah",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the أله lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:1:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:1:4) was checked as evidence."
+          },
+          {
+            "form": "ٱللَّه",
+            "meaning": "Allah",
+            "difference": "unique proper name",
+            "relationship": "Existing project-reviewed relationship to the أله family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "اللَّهِ is a proper noun associated with أله; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 2 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "اللَّهِ",
+            "meaning": "Allah",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the أله lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:1:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:1:4) was checked as evidence."
+          },
+          {
+            "form": "ٱللَّه",
+            "meaning": "Allah",
+            "difference": "unique proper name",
+            "relationship": "Existing project-reviewed relationship to the أله family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "اللَّهِ is a proper noun associated with أله; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 2 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "caee3dcc46afda9467ecfc6b222383c107e8e925de272fbb367516d5e3ad2417",
+      "contentHash": "498992673a2be91b2115806bf2a51f56021fcad0a212cc38dda3abfaa44b386f"
+    },
+    {
+      "occurrenceId": "word:110:2:4",
+      "packageId": "surah:110",
+      "surah": 110,
+      "ayah": 2,
+      "position": 4,
+      "teachingId": "lesson:110-2-4",
+      "word": "فِي",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "فِي",
+          "meaning": "in",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:110:2:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:2:4) was checked as evidence."
+        },
+        {
+          "form": "فِيهِ",
+          "meaning": "in it",
+          "difference": "attached masculine pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فِيهَا",
+          "meaning": "in her / it",
+          "difference": "attached feminine pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فِي",
+            "meaning": "in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:2:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:2:4) was checked as evidence."
+          },
+          {
+            "form": "فِيهِ",
+            "meaning": "in it",
+            "difference": "attached masculine pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فِيهَا",
+            "meaning": "in her / it",
+            "difference": "attached feminine pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فِي is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فِي",
+            "meaning": "in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:2:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:2:4) was checked as evidence."
+          },
+          {
+            "form": "فِيهِ",
+            "meaning": "in it",
+            "difference": "attached masculine pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فِيهَا",
+            "meaning": "in her / it",
+            "difference": "attached feminine pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فِي is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "eb27bef6b2bd3247e7ed2a0215a0bb9ae5ca8781a54dd12bc4a8cd1f39b32e77",
+      "contentHash": "463143680a90eab85113e7f6f7f06227b81da98a62b85cb9aae8136916c84fbc"
+    },
+    {
+      "occurrenceId": "word:110:2:6",
+      "packageId": "surah:110",
+      "surah": 110,
+      "ayah": 2,
+      "position": 6,
+      "teachingId": "lesson:110-2-6",
+      "word": "اللَّهِ",
+      "category": "proper noun",
+      "root": "أ ل ه",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "اللَّهِ",
+          "meaning": "Allah",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the أله lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:110:2:6. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:2:6) was checked as evidence."
+        },
+        {
+          "form": "ٱللَّه",
+          "meaning": "Allah",
+          "difference": "unique proper name",
+          "relationship": "Existing project-reviewed relationship to the أله family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "اللَّهِ",
+            "meaning": "Allah",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the أله lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:2:6. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:2:6) was checked as evidence."
+          },
+          {
+            "form": "ٱللَّه",
+            "meaning": "Allah",
+            "difference": "unique proper name",
+            "relationship": "Existing project-reviewed relationship to the أله family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "اللَّهِ is a proper noun associated with أله; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 2 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "اللَّهِ",
+            "meaning": "Allah",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the أله lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:2:6. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:2:6) was checked as evidence."
+          },
+          {
+            "form": "ٱللَّه",
+            "meaning": "Allah",
+            "difference": "unique proper name",
+            "relationship": "Existing project-reviewed relationship to the أله family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "اللَّهِ is a proper noun associated with أله; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 2 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "f933765a8a59169d35ff7729ae881223568f3b5c2d0715d234ff20503dbf5304",
+      "contentHash": "9a1a4e801179a79caf3911e3a8c83db3cee10addfead67480ee48148832c9c2b"
+    },
+    {
+      "occurrenceId": "word:110:2:7",
+      "packageId": "surah:110",
+      "surah": 110,
+      "ayah": 2,
+      "position": 7,
+      "teachingId": "lesson:110-2-7",
+      "word": "أَفْوَاجًا",
+      "category": "noun",
+      "root": "ف و ج",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "فَوْجٌ",
+          "meaning": "a group or troop",
+          "difference": "Singular noun; it names one group, while the current Qur'anic form is a plural meaning groups.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فوج",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "number:singular",
+            "derivation:base-form"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "فوج"
+        },
+        {
+          "form": "فُؤُوجٌ",
+          "meaning": "groups or troops",
+          "difference": "Alternate broken plural; it expresses the same group concept through a different established plural pattern from أَفْوَاجًا.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فوج",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "number:plural",
+            "derivation:broken-plural"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "فؤوج"
+        },
+        {
+          "form": "أَفَاوِجُ",
+          "meaning": "groups or crowds",
+          "difference": "Plural-of-plural noun; it refers to multiple groups, giving a genuine number/derivation contrast beyond the current broken plural.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فوج",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "number:plural-of-plural",
+            "derivation:plural-of-plural"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "افاوج"
+        },
+        {
+          "form": "فَوَّجَ",
+          "meaning": "he sent or divided into groups",
+          "difference": "Form II perfect; the doubled middle radical turns the group noun into a derived action of sending or arranging people in groups.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فوج",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-2",
+            "tense:perfect",
+            "partofspeech:verb",
+            "voice:causative"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "فوج"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "أَفْوَاجًا",
+          "meaning": "groups",
+          "difference": "Current Qur'anic occurrence; state: indefinite; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the فوج lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:110:2:7. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:2:7) was checked as evidence."
+        },
+        {
+          "form": "فَوْجٌ",
+          "meaning": "a group or troop",
+          "difference": "Singular noun; it names one group, while the current Qur'anic form is a plural meaning groups.",
+          "relationship": "The singular noun of the ف و ج family; it contrasts one group with the current plural أَفْوَاجًا.",
+          "provenance": "Codex-authored after review of the approved project root meaning, canonical Qur'anic occurrences of فَوْجٌ and the Arabic Academy lexicon entry for الفَوْج."
+        },
+        {
+          "form": "فُؤُوجٌ",
+          "meaning": "groups or troops",
+          "difference": "Alternate broken plural; it expresses the same group concept through a different established plural pattern from أَفْوَاجًا.",
+          "relationship": "An established broken plural of فَوْجٌ in the ف و ج family, listed with أَفْوَاجٌ in the Arabic Academy lexicon.",
+          "provenance": "Codex-authored after review of the Arabic Academy lexicon entry for الفَوْج, which lists فُؤُوجٌ as an established plural, and the approved project root meaning."
+        },
+        {
+          "form": "أَفَاوِجُ",
+          "meaning": "groups or crowds",
+          "difference": "Plural-of-plural noun; it refers to multiple groups, giving a genuine number/derivation contrast beyond the current broken plural.",
+          "relationship": "An established plural-of-plural associated with فَوْجٌ in the Arabic Academy lexicon entry for الفَوْج.",
+          "provenance": "Codex-authored after review of the Arabic Academy lexicon entry for الفَوْج, which lists أَفَاوِجُ as a plural-of-plural, and the approved project root meaning."
+        },
+        {
+          "form": "فَوَّجَ",
+          "meaning": "he sent or divided into groups",
+          "difference": "Form II perfect; the doubled middle radical turns the group noun into a derived action of sending or arranging people in groups.",
+          "relationship": "A genuine Form II verb of the ف و ج root; the Arabic Academy lexicon defines فَوَّجَ القومَ as أَفاجَهم and gives sending pilgrims in groups as an example.",
+          "provenance": "Codex-authored after review of the Arabic Academy lexicon entry for فَوَّجَ, the approved project root meaning and standard Arabic Form II morphology."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "أَفْوَاجًا",
+            "meaning": "groups",
+            "difference": "Current Qur'anic occurrence; state: indefinite; case: accusative.",
+            "relationship": "Current Qur'anic occurrence of the فوج lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:2:7. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:2:7) was checked as evidence."
+          },
+          {
+            "form": "أَفْوَاج",
+            "meaning": "groups / troops",
+            "difference": "plural noun",
+            "relationship": "Existing project-reviewed relationship to the فوج family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَوْجًا",
+            "meaning": "a group",
+            "difference": "indefinite accusative form",
+            "relationship": "Existing project-reviewed relationship to the فوج family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "أَفْوَاجًا is a rootful noun with root ف و ج. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "أَفْوَاجًا",
+            "meaning": "groups",
+            "difference": "Current Qur'anic occurrence; state: indefinite; case: accusative.",
+            "relationship": "Current Qur'anic occurrence of the فوج lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:2:7. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:2:7) was checked as evidence."
+          },
+          {
+            "form": "فَوْجٌ",
+            "meaning": "a group or troop",
+            "difference": "Singular noun; it names one group, while the current Qur'anic form is a plural meaning groups.",
+            "relationship": "The singular noun of the ف و ج family; it contrasts one group with the current plural أَفْوَاجًا.",
+            "provenance": "Codex-authored after review of the approved project root meaning, canonical Qur'anic occurrences of فَوْجٌ and the Arabic Academy lexicon entry for الفَوْج."
+          },
+          {
+            "form": "فُؤُوجٌ",
+            "meaning": "groups or troops",
+            "difference": "Alternate broken plural; it expresses the same group concept through a different established plural pattern from أَفْوَاجًا.",
+            "relationship": "An established broken plural of فَوْجٌ in the ف و ج family, listed with أَفْوَاجٌ in the Arabic Academy lexicon.",
+            "provenance": "Codex-authored after review of the Arabic Academy lexicon entry for الفَوْج, which lists فُؤُوجٌ as an established plural, and the approved project root meaning."
+          },
+          {
+            "form": "أَفَاوِجُ",
+            "meaning": "groups or crowds",
+            "difference": "Plural-of-plural noun; it refers to multiple groups, giving a genuine number/derivation contrast beyond the current broken plural.",
+            "relationship": "An established plural-of-plural associated with فَوْجٌ in the Arabic Academy lexicon entry for الفَوْج.",
+            "provenance": "Codex-authored after review of the Arabic Academy lexicon entry for الفَوْج, which lists أَفَاوِجُ as a plural-of-plural, and the approved project root meaning."
+          },
+          {
+            "form": "فَوَّجَ",
+            "meaning": "he sent or divided into groups",
+            "difference": "Form II perfect; the doubled middle radical turns the group noun into a derived action of sending or arranging people in groups.",
+            "relationship": "A genuine Form II verb of the ف و ج root; the Arabic Academy lexicon defines فَوَّجَ القومَ as أَفاجَهم and gives sending pilgrims in groups as an example.",
+            "provenance": "Codex-authored after review of the Arabic Academy lexicon entry for فَوَّجَ, the approved project root meaning and standard Arabic Form II morphology."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "34bed59f7c327dd59909e5229316c3903b52b63767daf0ff2c777b3d95ca4a9a",
+      "contentHash": "f33bb516f3cba32a36bd9855d7e18203b86baf9656907872db5f89e93afb6e66"
+    },
+    {
+      "occurrenceId": "word:110:3:5",
+      "packageId": "surah:110",
+      "surah": 110,
+      "ayah": 3,
+      "position": 5,
+      "teachingId": "lesson:110-3-5",
+      "word": "إِنَّهُ",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "إِنَّهُ",
+          "meaning": "indeed He",
+          "difference": "Current Qur'anic occurrence; case: accusative; person: third-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:110:3:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:3:5) was checked as evidence."
+        },
+        {
+          "form": "إِنَّا",
+          "meaning": "indeed We",
+          "difference": "first-person plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِنَّهُمْ",
+          "meaning": "indeed they",
+          "difference": "third-person masculine plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "إِنَّهُ",
+            "meaning": "indeed He",
+            "difference": "Current Qur'anic occurrence; case: accusative; person: third-person masculine singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:3:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:3:5) was checked as evidence."
+          },
+          {
+            "form": "إِنَّا",
+            "meaning": "indeed We",
+            "difference": "first-person plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "إِنَّهُمْ",
+            "meaning": "indeed they",
+            "difference": "third-person masculine plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "إِنَّهُ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "إِنَّهُ",
+            "meaning": "indeed He",
+            "difference": "Current Qur'anic occurrence; case: accusative; person: third-person masculine singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:110:3:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (110:3:5) was checked as evidence."
+          },
+          {
+            "form": "إِنَّا",
+            "meaning": "indeed We",
+            "difference": "first-person plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "إِنَّهُمْ",
+            "meaning": "indeed they",
+            "difference": "third-person masculine plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "إِنَّهُ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "70774cf74adc38f7f06409e7574a3836065064c15b750a3ebbcd6652193d3d54",
+      "contentHash": "dc1185bcab80aa355df1bcc8236eaf1624d43f6d86d594f91fd08c066ecbed89"
+    }
+  ]
+}

@@ -728,6 +728,60 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "تبب",
       },
     ],
+    ["فوج"]: [
+      {
+        form: "فَوْجٌ",
+        meaning: "a group or troop",
+        difference:
+          "Singular noun; it names one group, while the current Qur'anic form is a plural meaning groups.",
+        relationship:
+          "The singular noun of the ف و ج family; it contrasts one group with the current plural أَفْوَاجًا.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, canonical Qur'anic occurrences of فَوْجٌ and the Arabic Academy lexicon entry for الفَوْج.",
+        featureSignal: ["partofspeech:noun", "number:singular", "derivation:base-form"],
+        baseDistinct: true,
+        lexicalKey: "فوج",
+      },
+      {
+        form: "فُؤُوجٌ",
+        meaning: "groups or troops",
+        difference:
+          "Alternate broken plural; it expresses the same group concept through a different established plural pattern from أَفْوَاجًا.",
+        relationship:
+          "An established broken plural of فَوْجٌ in the ف و ج family, listed with أَفْوَاجٌ in the Arabic Academy lexicon.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy lexicon entry for الفَوْج, which lists فُؤُوجٌ as an established plural, and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "فؤوج",
+      },
+      {
+        form: "أَفَاوِجُ",
+        meaning: "groups or crowds",
+        difference:
+          "Plural-of-plural noun; it refers to multiple groups, giving a genuine number/derivation contrast beyond the current broken plural.",
+        relationship:
+          "An established plural-of-plural associated with فَوْجٌ in the Arabic Academy lexicon entry for الفَوْج.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy lexicon entry for الفَوْج, which lists أَفَاوِجُ as a plural-of-plural, and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "number:plural-of-plural", "derivation:plural-of-plural"],
+        baseDistinct: true,
+        lexicalKey: "افاوج",
+      },
+      {
+        form: "فَوَّجَ",
+        meaning: "he sent or divided into groups",
+        difference:
+          "Form II perfect; the doubled middle radical turns the group noun into a derived action of sending or arranging people in groups.",
+        relationship:
+          "A genuine Form II verb of the ف و ج root; the Arabic Academy lexicon defines فَوَّجَ القومَ as أَفاجَهم and gives sending pilgrims in groups as an example.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy lexicon entry for فَوَّجَ, the approved project root meaning and standard Arabic Form II morphology.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "partofspeech:verb", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "فوج",
+      },
+    ],
     ["كسب"]: [
       {
         form: "يَكْسِبُ",
