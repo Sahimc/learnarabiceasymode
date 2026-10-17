@@ -4178,6 +4178,665 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "ممسود",
       },
     ],
+    ["ضحو"]: [
+      {
+        form: "ضُحًى",
+        meaning: "daylight or morning brightness",
+        difference:
+          "Bare nominal form; it removes the conjunction, attached pronoun and case context from the current occurrence and shows the lexical time/brightness noun.",
+        relationship:
+          "The basic noun of the ض ح و family, attested repeatedly in the Qur'an for daylight or morning brightness.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ض ح و occurrences and Arabic Academy lexical evidence for الضُّحَى والضَّحْو.",
+        featureSignal: ["partofspeech:noun", "attached-pronoun:removed", "state:indefinite"],
+        baseDistinct: true,
+        lexicalKey: "ضحى",
+      },
+      {
+        form: "تَضْحَىٰ",
+        meaning: "you are exposed to the sun's heat",
+        difference:
+          "Form I imperfect, second-person masculine singular; it changes the brightness noun into an ongoing exposure-to-sun action.",
+        relationship:
+          "A canonical Form I verb of the ض ح و family, attested in Qur'an 20:119.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 20:119 and the approved ض ح و root range.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:second-person"],
+        baseDistinct: true,
+        lexicalKey: "تضحى",
+      },
+      {
+        form: "ضَاحٍ",
+        meaning: "exposed to sunlight or in the open",
+        difference:
+          "Form I active participle; it describes a person or thing exposed to the sun rather than naming the daylight period.",
+        relationship:
+          "A genuine active participle of ضَحَا in the ض ح و lexical family, supported by Arabic Academy lexical evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing ضَاحٍ and standard weak-final Form I active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-1", "derivation:descriptor"],
+        baseDistinct: true,
+        lexicalKey: "ضاح",
+      },
+      {
+        form: "ضُحُوٌّ",
+        meaning: "exposure to sunlight or the forenoon",
+        difference:
+          "Verbal noun; it names the state or action associated with appearing in sunlight rather than the current time noun.",
+        relationship:
+          "A genuine verbal noun in the ض ح و family, listed in approved Arabic lexical evidence alongside الضُّحَى.",
+        provenance:
+          "Codex-authored after review of Arabic Academy and classical lexicon evidence for ضُحُوٌّ and the approved root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun", "tense:not-applicable"],
+        baseDistinct: true,
+        lexicalKey: "ضحو",
+      },
+    ],
+    ["قمر"]: [
+      {
+        form: "قَمَرٌ",
+        meaning: "a moon",
+        difference:
+          "Indefinite masculine singular noun; it shows the lexical base behind the current conjunction, article and genitive ending.",
+        relationship:
+          "The basic noun of the ق م ر family, attested throughout the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ق م ر evidence and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "number:singular", "state:indefinite", "attached-prefixes:removed"],
+        baseDistinct: true,
+        lexicalKey: "قمر",
+      },
+      {
+        form: "قَمَرَانِ",
+        meaning: "two moons",
+        difference:
+          "Regular dual, nominative form; the ending marks exactly two moons instead of one.",
+        relationship:
+          "A genuine dual of قَمَرٌ in the ق م ر lexical family.",
+        provenance:
+          "Codex-authored after review of standard Arabic dual formation for قَمَرٌ and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "number:dual", "case:nominative"],
+        baseDistinct: true,
+        lexicalKey: "قمران",
+      },
+      {
+        form: "أَقْمَارٌ",
+        meaning: "moons",
+        difference:
+          "Broken plural noun; it changes the singular moon into the established plural form.",
+        relationship:
+          "A genuine broken plural of قَمَرٌ in the ق م ر family, supported by approved Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy lexical evidence listing أَقْمَارٌ and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "أقمار",
+      },
+      {
+        form: "قَمَرِيٌّ",
+        meaning: "lunar or moon-related",
+        difference:
+          "Nisbah adjective; the ـيّ ending derives an adjective meaning ‘related to the moon’ rather than naming the object itself.",
+        relationship:
+          "A genuine nisbah adjective derived from قَمَرٌ in the ق م ر lexical family.",
+        provenance:
+          "Codex-authored after review of Arabic Academy lexical evidence for القَمَرِيّ and the standard nisbah pattern.",
+        featureSignal: ["partofspeech:adjective", "derivation:nisbah", "meaning:related-adjective"],
+        baseDistinct: true,
+        lexicalKey: "قمري",
+      },
+      {
+        form: "أَقْمَرَ",
+        meaning: "it became a moon or reached the moon stage",
+        difference:
+          "Form IV perfect verb; the prefixed hamza marks a change into the moon stage, adding a real verb contrast to the noun family.",
+        relationship:
+          "A genuine Form IV verb in the ق م ر family, listed in Arabic Academy lexical evidence for أَقْمَرَ.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing أَقْمَرَ and the established Form IV pattern.",
+        featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:perfect", "derivation:change-of-state"],
+        baseDistinct: true,
+        lexicalKey: "أقمر",
+      },
+    ],
+    ["تلو"]: [
+      {
+        form: "تَلَا",
+        meaning: "he recited or followed",
+        difference:
+          "Form I perfect without the attached object pronoun; it isolates the completed root action behind the current occurrence.",
+        relationship:
+          "The Form I perfect of the ت ل و family, attested throughout the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ت ل و evidence and standard weak-final Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "attached-pronoun:removed"],
+        baseDistinct: true,
+        lexicalKey: "تلا-perfect",
+      },
+      {
+        form: "يَتْلُو",
+        meaning: "he recites or follows",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents the action as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of تَلَا in the ت ل و family, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ت ل و occurrences and standard weak-final Form I imperfect morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يتلو",
+      },
+      {
+        form: "اِتْلُ",
+        meaning: "recite or follow!",
+        difference:
+          "Form I imperative, second-person masculine singular; it turns the root into a direct command.",
+        relationship:
+          "The canonical imperative of تَلَا, attested repeatedly in Qur'anic commands to recite.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences including 5:27 and standard Form I imperative morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "mood:imperative", "person:second-person"],
+        baseDistinct: true,
+        lexicalKey: "اتل",
+      },
+      {
+        form: "تِلَاوَةٌ",
+        meaning: "recitation",
+        difference:
+          "Verbal noun; it names the act of reciting rather than expressing the action as a finite verb with an object pronoun.",
+        relationship:
+          "A canonical verbal noun of the ت ل و family, attested in Qur'an 2:121.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 2:121 and the approved ت ل و root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun", "tense:not-applicable"],
+        baseDistinct: true,
+        lexicalKey: "تلاوة",
+      },
+      {
+        form: "تَالٍ",
+        meaning: "one who recites or follows",
+        difference:
+          "Form I active participle; it describes the agent performing the reciting or following rather than expressing a finite verb.",
+        relationship:
+          "A canonical active participle of the ت ل و family, attested in التَّالِيَاتِ in Qur'an 37:3.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 37:3 and standard weak-final Form I active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-1", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "تال",
+      },
+    ],
+    ["طحو"]: [
+      {
+        form: "طَحَا",
+        meaning: "he spread or extended",
+        difference:
+          "Form I perfect without the attached object pronoun; it isolates the completed spreading action behind the current occurrence.",
+        relationship:
+          "The Form I perfect of the ط ح و family, attested in the Qur'anic occurrence طَحَاهَا.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 91:6 and approved Arabic lexical evidence for طَحَا.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "attached-pronoun:removed"],
+        baseDistinct: true,
+        lexicalKey: "طحا-perfect",
+      },
+      {
+        form: "يَطْحُو",
+        meaning: "he spreads or extends",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents spreading as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of طَحَا in the ط ح و lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for يَطْحُو and regular weak-final Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يطحو",
+      },
+      {
+        form: "اِطْحُ",
+        meaning: "spread or extend!",
+        difference:
+          "Form I imperative, second-person masculine singular; it turns the spreading root into a direct command.",
+        relationship:
+          "The imperative of طَحَا in the ط ح و family, supported by standard weak-final imperative morphology.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for اِطْحُ and the regular Form I imperative pattern.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "mood:imperative", "person:second-person"],
+        baseDistinct: true,
+        lexicalKey: "اطح",
+      },
+      {
+        form: "طَحْوٌ",
+        meaning: "spreading or extending",
+        difference:
+          "Verbal noun; it names the spreading action rather than expressing it as a finite verb with an attached object.",
+        relationship:
+          "A genuine verbal noun of طَحَا in the ط ح و lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence listing طَحْوًا for طَحَا.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun", "tense:not-applicable"],
+        baseDistinct: true,
+        lexicalKey: "طحو",
+      },
+      {
+        form: "مَطْحُوٌّ",
+        meaning: "spread or extended",
+        difference:
+          "Form I passive participle; it describes something that has undergone the spreading action rather than the agent doing it.",
+        relationship:
+          "A genuine passive participle of طَحَا in the ط ح و lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for مَطْحُوٌّ and weak-final passive-participle morphology.",
+        featureSignal: ["partofspeech:passive-participle", "pattern:form-1", "voice:passive", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "مطحوي",
+      },
+    ],
+    ["لهم"]: [
+      {
+        form: "أَلْهَمَ",
+        meaning: "he inspired",
+        difference:
+          "Form IV perfect without the conjunction and attached object pronoun; it isolates the completed inspiration action.",
+        relationship:
+          "The Form IV perfect behind فَأَلْهَمَهَا in the ل ه م family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 91:8 and the aligned Form IV pattern.",
+        featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:perfect", "attached-pronoun:removed"],
+        baseDistinct: true,
+        lexicalKey: "ألهم-perfect",
+      },
+      {
+        form: "يُلْهِمُ",
+        meaning: "he inspires",
+        difference:
+          "Form IV imperfect, third-person masculine singular; it presents inspiration as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of أَلْهَمَ in the ل ه م family.",
+        provenance:
+          "Codex-authored after review of standard Form IV imperfect morphology and the canonical ل ه م root evidence.",
+        featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يلهم",
+      },
+      {
+        form: "إِلْهَامٌ",
+        meaning: "inspiration",
+        difference:
+          "Form IV verbal noun; it names the act or result of inspiring rather than expressing it as a finite verb.",
+        relationship:
+          "The standard Form IV verbal noun of أَلْهَمَ in the ل ه م lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for إِلْهَامٌ and Form IV verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:form-4", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "إلهام",
+      },
+      {
+        form: "مُلْهِمٌ",
+        meaning: "inspiring or one who inspires",
+        difference:
+          "Form IV active participle; it describes the source or agent of inspiration rather than expressing the verb itself.",
+        relationship:
+          "The active participle of أَلْهَمَ in the ل ه م lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for مُلْهِمٌ and standard Form IV active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-4", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "ملهم",
+      },
+    ],
+    ["فلح"]: [
+      {
+        form: "يُفْلِحُ",
+        meaning: "he succeeds",
+        difference:
+          "Form IV imperfect, third-person masculine singular; it presents success as ongoing or expected rather than completed.",
+        relationship:
+          "The imperfect counterpart of أَفْلَحَ in the ف ل ح family, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ف ل ح occurrences and standard Form IV imperfect morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يفلح",
+      },
+      {
+        form: "تُفْلِحُ",
+        meaning: "you (masculine singular) succeed",
+        difference:
+          "Form IV imperfect, second-person masculine singular; the prefix تـ changes the person from the current third-person perfect.",
+        relationship:
+          "A genuine person contrast within the Form IV ف ل ح verb family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences including تُفْلِحُونَ and regular singular imperfect inflection.",
+        featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:imperfect", "person:second-person"],
+        baseDistinct: true,
+        lexicalKey: "تفلح",
+      },
+      {
+        form: "إِفْلَاحٌ",
+        meaning: "success or causing success",
+        difference:
+          "Form IV verbal noun; it names the action or result of succeeding rather than expressing it as a finite verb.",
+        relationship:
+          "The standard Form IV verbal noun of أَفْلَحَ in the ف ل ح lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence and the canonical Form IV ف ل ح pattern.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:form-4", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "إفلاح",
+      },
+      {
+        form: "مُفْلِحٌ",
+        meaning: "successful or one who succeeds",
+        difference:
+          "Form IV active participle; it describes a successful person rather than expressing success as a finite verb.",
+        relationship:
+          "The singular active participle behind the canonical plural الْمُفْلِحُونَ in the ف ل ح family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences of الْمُفْلِحُونَ and standard Form IV active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-4", "derivation:descriptor", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "مفلح",
+      },
+    ],
+    ["خيب"]: [
+      {
+        form: "يَخِيبُ",
+        meaning: "he fails or is disappointed",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents failure as ongoing or expected rather than completed.",
+        relationship:
+          "The imperfect counterpart of خَابَ in the خ ي ب family, supported by canonical and Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus خ ي ب evidence and Arabic Academy entries for خَابَ يَخِيبُ.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يخيب",
+      },
+      {
+        form: "خَيْبَةٌ",
+        meaning: "failure or disappointment",
+        difference:
+          "Verbal noun; it names the experience or result of failing rather than expressing it as a finite verb.",
+        relationship:
+          "A genuine verbal noun of خَابَ in the خ ي ب lexical family, listed by Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for خَيْبَةٌ and the approved root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:result-noun", "tense:not-applicable"],
+        baseDistinct: true,
+        lexicalKey: "خيبة",
+      },
+      {
+        form: "خَائِبٌ",
+        meaning: "disappointed or unsuccessful",
+        difference:
+          "Form I active participle; it describes one who has failed or been disappointed rather than stating the event.",
+        relationship:
+          "The singular active participle behind the canonical plural خَائِبِينَ in the خ ي ب family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 3:127 and Arabic Academy evidence for خَائِبٌ.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-1", "derivation:descriptor"],
+        baseDistinct: true,
+        lexicalKey: "خائب",
+      },
+      {
+        form: "خَيَّبَ",
+        meaning: "he disappointed or frustrated",
+        difference:
+          "Form II perfect; the doubled middle radical marks causing someone to become disappointed, contrasting with the intransitive current verb.",
+        relationship:
+          "A genuine Form II causative verb in the خ ي ب lexical family, listed by Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for خَيَّبَ and standard Form II morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "خيب-form-2",
+      },
+    ],
+    ["دسو"]: [
+      {
+        form: "دَسَا",
+        meaning: "he concealed or buried",
+        difference:
+          "Form I perfect without the attached object pronoun; it isolates the completed concealment action behind the current occurrence.",
+        relationship:
+          "The Form I perfect of the د س و family, supported by Arabic Academy lexical evidence for دَسَا يَدْسُو.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 91:10 and Arabic Academy evidence for دَسَا.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "attached-pronoun:removed"],
+        baseDistinct: true,
+        lexicalKey: "دسا-perfect",
+      },
+      {
+        form: "يَدْسُو",
+        meaning: "he conceals or buries",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents concealing as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of دَسَا in the د س و lexical family.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for يَدْسُو and standard weak-final Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يدسو",
+      },
+      {
+        form: "دَسْوٌ",
+        meaning: "concealment or burying",
+        difference:
+          "Verbal noun; it names the act of concealing or burying rather than expressing it as a finite verb with an object pronoun.",
+        relationship:
+          "A genuine verbal noun of دَسَا, explicitly listed in Arabic Academy evidence for the د س و family.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing دَسْوًا and the approved root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun", "tense:not-applicable"],
+        baseDistinct: true,
+        lexicalKey: "دسو",
+      },
+      {
+        form: "مَدْسُوٌّ",
+        meaning: "concealed or buried",
+        difference:
+          "Form I passive participle; it describes something hidden or buried by the action rather than the agent doing it.",
+        relationship:
+          "A genuine weak-final passive participle of دَسَا in the د س و lexical family.",
+        provenance:
+          "Codex-authored after review of Arabic Academy lexical evidence for دَسَا and standard weak-final passive-participle morphology.",
+        featureSignal: ["partofspeech:passive-participle", "pattern:form-1", "voice:passive", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "مدسو",
+      },
+    ],
+    ["نوق"]: [
+      {
+        form: "نَاقَةٌ",
+        meaning: "a she-camel",
+        difference:
+          "Indefinite feminine singular noun; it shows the lexical base behind the current definite accusative form.",
+        relationship:
+          "The basic noun of the ن و ق family, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ن و ق evidence and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "gender:feminine", "number:singular", "state:indefinite"],
+        baseDistinct: true,
+        lexicalKey: "ناقة",
+      },
+      {
+        form: "نَاقَتَانِ",
+        meaning: "two she-camels",
+        difference:
+          "Regular dual, nominative form; the ending marks exactly two she-camels instead of one.",
+        relationship:
+          "A genuine dual of نَاقَةٌ in the ن و ق lexical family.",
+        provenance:
+          "Codex-authored after review of standard Arabic dual formation for نَاقَةٌ and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "gender:feminine", "number:dual", "case:nominative"],
+        baseDistinct: true,
+        lexicalKey: "ناقتان",
+      },
+      {
+        form: "نُوقٌ",
+        meaning: "she-camels",
+        difference:
+          "Broken plural noun; it changes the feminine singular into the established plural form.",
+        relationship:
+          "A classical plural of نَاقَةٌ, supported by Arabic Academy and Lisān al-ʿArab evidence for the ن و ق family.",
+        provenance:
+          "Codex-authored after review of Arabic Academy and Lisān al-ʿArab evidence listing نُوقٌ as a plural of نَاقَةٌ.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "نوق",
+      },
+      {
+        form: "نِيَاقٌ",
+        meaning: "she-camels",
+        difference:
+          "Alternate broken plural; it gives a second established plural pattern without relying on case-ending variation.",
+        relationship:
+          "An established alternate plural of نَاقَةٌ in the ن و ق lexical family, supported by classical Arabic lexicon evidence.",
+        provenance:
+          "Codex-authored after review of Lisān al-ʿArab evidence listing نِيَاقٌ among the plurals of نَاقَةٌ.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:alternate-broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "نياق",
+      },
+      {
+        form: "نَوَّقَ",
+        meaning: "he trained or prepared camels",
+        difference:
+          "Form II perfect verb; the doubled middle radical adds a genuine action contrast to the noun’s singular, dual and plural forms.",
+        relationship:
+          "A genuine Form II verb in the ن و ق lexical family, listed in Arabic Academy evidence under نَوَّقَ.",
+        provenance:
+          "Codex-authored after review of Arabic Academy lexical evidence for نَوَّقَ and standard Form II morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "نوق-form-2",
+      },
+    ],
+    ["عقر"]: [
+      {
+        form: "عَقَرَ",
+        meaning: "he hamstrung",
+        difference:
+          "Form I perfect without the conjunction, plural subject or attached object pronoun; it isolates the completed action.",
+        relationship:
+          "The Form I perfect of the ع ق ر family, attested in Qur'anic occurrences of hamstringing.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ع ق ر evidence including 7:77 and 91:14.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "attached-pronoun:removed"],
+        baseDistinct: true,
+        lexicalKey: "عقر-perfect",
+      },
+      {
+        form: "يَعْقِرُ",
+        meaning: "he hamstrings",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents the hamstringing action as ongoing.",
+        relationship:
+          "The imperfect counterpart of عَقَرَ in the ع ق ر family.",
+        provenance:
+          "Codex-authored after review of standard Form I imperfect morphology and the canonical ع ق ر root range.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يعقر",
+      },
+      {
+        form: "عَقْرٌ",
+        meaning: "hamstringing",
+        difference:
+          "Verbal noun; it names the act of hamstringing rather than expressing it as a finite verb with attached material.",
+        relationship:
+          "The verbal noun of عَقَرَ in the ع ق ر lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for عَقْرٌ and the canonical Qur'anic verb.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun", "tense:not-applicable"],
+        baseDistinct: true,
+        lexicalKey: "عقر-noun",
+      },
+      {
+        form: "مَعْقُورٌ",
+        meaning: "hamstrung",
+        difference:
+          "Form I passive participle; it describes the animal affected by hamstringing rather than the agent performing it.",
+        relationship:
+          "A genuine passive participle of عَقَرَ in the ع ق ر family, supported by Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of Arabic lexical evidence for مَعْقُورٌ and standard Form I passive-participle morphology.",
+        featureSignal: ["partofspeech:passive-participle", "pattern:form-1", "voice:passive", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "معقور",
+      },
+    ],
+    ["دمدم"]: [
+      {
+        form: "دَمْدَمَ",
+        meaning: "he destroyed or crushed",
+        difference:
+          "Quadriliteral Form I perfect without the conjunction; it isolates the completed destructive action in the current occurrence.",
+        relationship:
+          "The base quadriliteral verb of the د م د م family, attested in Qur'an 91:14.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus quadriliteral د م د م evidence and standard quadriliteral morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:quadriliteral-form-1", "tense:perfect", "attached-prefixes:removed"],
+        baseDistinct: true,
+        lexicalKey: "دمدم-perfect",
+      },
+      {
+        form: "يُدَمْدِمُ",
+        meaning: "he destroys or crushes",
+        difference:
+          "Quadriliteral imperfect; it presents the destructive action as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of دَمْدَمَ in the quadriliteral د م د م family.",
+        provenance:
+          "Codex-authored after review of standard Arabic quadriliteral imperfect morphology and the canonical root evidence.",
+        featureSignal: ["partofspeech:verb", "pattern:quadriliteral-form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يدمدم",
+      },
+      {
+        form: "دَمْدِمْ",
+        meaning: "destroy or crush!",
+        difference:
+          "Quadriliteral imperative, second-person masculine singular; it changes the destructive root into a direct command.",
+        relationship:
+          "The regular imperative of the quadriliteral verb دَمْدَمَ.",
+        provenance:
+          "Codex-authored after review of standard Arabic quadriliteral imperative morphology and the approved root meaning.",
+        featureSignal: ["partofspeech:verb", "pattern:quadriliteral-form-1", "mood:imperative", "person:second-person"],
+        baseDistinct: true,
+        lexicalKey: "دمدم-imperative",
+      },
+      {
+        form: "دَمْدَمَةٌ",
+        meaning: "destruction or crushing",
+        difference:
+          "Quadriliteral verbal noun; it names the destructive event rather than expressing it as a finite verb.",
+        relationship:
+          "The verbal noun of دَمْدَمَ in the quadriliteral د م د م family.",
+        provenance:
+          "Codex-authored after review of standard quadriliteral verbal-noun morphology and the approved root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:quadriliteral-form-1", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "دمدمة",
+      },
+      {
+        form: "مُدَمْدَمٌ",
+        meaning: "destroyed or crushed",
+        difference:
+          "Quadriliteral passive participle; it describes something affected by the destructive action rather than the agent doing it.",
+        relationship:
+          "The passive participle of دَمْدَمَ in the quadriliteral د م د م family.",
+        provenance:
+          "Codex-authored after review of standard quadriliteral passive-participle morphology and the canonical root evidence.",
+        featureSignal: ["partofspeech:passive-participle", "pattern:quadriliteral-form-1", "voice:passive", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "مدمدم",
+      },
+    ],
     ["جلو"]: [
       {
         form: "يَتَجَلَّىٰ",
