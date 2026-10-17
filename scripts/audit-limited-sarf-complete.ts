@@ -12374,13 +12374,22 @@ for (const occurrence of occurrences) {
   }
 }
 
+function needsFamilyReview(occurrence: Occurrence) {
+  const review = occurrence.lesson.sarfReview;
+  if (review.status === "limited") return true;
+  if (review.status !== "full") return false;
+  const forms = occurrence.lesson.forms ?? [];
+  const distinct = new Set(forms.map((row) => normalized(row.form)));
+  return forms.length !== 5 || distinct.size !== forms.length;
+}
+
 // A scoped audit limits the lessons we are allowed to change, not the
 // evidence available for the linguistic decision.  Cross-surah evidence is
 // essential: a family may be fully represented in another authored surah even
 // when the target occurrence was previously classified as limited.
 const limited = occurrences.filter(
   (occurrence) =>
-    occurrence.lesson.sarfReview.status === "limited" &&
+    needsFamilyReview(occurrence) &&
     (!auditSurahNumbers.size || auditSurahNumbers.has(occurrence.pkg.surah.number)),
 );
 const beforeCounts = {
@@ -12502,6 +12511,7 @@ for (const occurrence of limited) {
   const eligibleCandidates = candidatePool.filter(
     (candidate) =>
       candidateInflectionalKey(candidate) !== currentFormKey &&
+      normalized(candidate.form) !== normalized(rebuiltCurrent.form) &&
       !existingExactFormKeys.has(normalized(candidate.form)),
   );
   const chosen = root
