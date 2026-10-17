@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.2.0",
   "contractId": "quranic-word-tree-authoring",
-  "contractVersion": "1.3.7",
-  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5", "1.3.6"],
+  "contractVersion": "1.3.8",
+  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5", "1.3.6", "1.3.7"],
   "status": "active",
   "purpose": "The single governing contract for authoring, repairing, importing, auditing and rendering every Qur'anic Arabic Word Tree lesson.",
   "authority": {
@@ -413,7 +413,8 @@
   ],
   "auditLedger": {
     "path": "artifacts/content-review/ledger.jsonl",
-    "format": "append-only JSON Lines",
+    "format": "append-only JSON Lines (primary ledger plus numbered shards)",
+    "shardPattern": "artifacts/content-review/ledger-####.jsonl",
     "purpose": "Durable black-box record of contract version, scope, lesson status, checks, evidence, changes and verification results.",
     "requiredRecordFields": [
       "recordId",
