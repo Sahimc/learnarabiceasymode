@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.2.0",
   "contractId": "quranic-word-tree-authoring",
-  "contractVersion": "1.3.0",
-  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1"],
+  "contractVersion": "1.3.1",
+  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0"],
   "status": "active",
   "purpose": "The single governing contract for authoring, repairing, importing, auditing and rendering every Qur'anic Arabic Word Tree lesson.",
   "authority": {
@@ -208,7 +208,29 @@
         "consideration": "The finished work must be recoverable and distinguishable from unrelated dirty-worktree changes.",
         "rule": "Inspect the diff, preserve unrelated user changes, commit only the scoped completed work, record commit IDs in the audit record, and push only after all completion gates pass. Never claim a remote push without confirmed remote output.",
         "evidence": "Scoped commit(s), commit SHA(s), push result and clean/known worktree report."
+      },
+      {
+        "id": "push-at-every-juz-or-surah-boundary",
+        "consideration": "A long whole-Qur’an run must not leave a completed sūrah or Juz only in the local worktree while authoring continues.",
+        "rule": "Create a Git checkpoint at whichever boundary comes first: a completed sūrah or a completed Juz. Commit and push all scoped work for that completed unit before beginning the next unit. If a Juz boundary falls inside a sūrah, push at the Juz boundary and then continue only after the push is confirmed.",
+        "evidence": "The unit manifest, completed-unit audit record, commit SHA, confirmed push output and remote comparison before the next unit starts."
       }
+    ]
+  },
+  "gitDeliveryPolicy": {
+    "pushEverythingProducedByGoal": true,
+    "checkpointBoundary": "whichever comes first: completed sūrah or completed Juz",
+    "pushBeforeNextUnit": true,
+    "currentStateRule": "At every checkpoint, every change produced by this goal must be committed and pushed so the remote branch reflects the verified local state.",
+    "failureRule": "If commit, push, remote comparison or required verification fails, stop before starting the next sūrah or Juz and record the failure.",
+    "scopeRule": "Do not accidentally include unrelated pre-existing worktree changes; isolate them while ensuring all goal-produced changes are pushed.",
+    "completionEvidence": [
+      "completed unit identifier",
+      "commit SHA",
+      "remote branch",
+      "confirmed push output",
+      "local-versus-remote comparison",
+      "audit record linking the checkpoint to the unit"
     ]
   },
   "sectionContract": {
@@ -325,6 +347,7 @@
     "contract-loaded-and-version-recorded",
     "custom-authorship-matrix-checked",
     "whole-quran-safeguards-checked",
+    "git-checkpoint-pushed-before-next-unit",
     "canonical-arabic-and-letter-level-integrity",
     "certified-ayah-translation",
     "occurrence-position-and-context",
