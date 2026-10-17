@@ -1,0 +1,1530 @@
+{
+  "auditBatchId": "limited-sarf-audit-24d722cfd70e3ed1",
+  "contractId": "quranic-word-tree-authoring",
+  "contractVersion": "1.3.2",
+  "reviewedAt": "2026-10-17T12:56:26.633Z",
+  "mode": "apply",
+  "scope": {
+    "authoredPackages": 1,
+    "limitedOccurrences": 14,
+    "distinctLimitedTeachingEntries": 14
+  },
+  "before": {
+    "limitedOccurrences": 14,
+    "limitedTeachingEntries": 14,
+    "forms": {
+      "1": 1,
+      "3": 6,
+      "4": 7
+    }
+  },
+  "decisions": {
+    "confirmedLimited": 14,
+    "upgradedToFull": 0,
+    "blocked": 0
+  },
+  "after": {
+    "confirmedLimited": 14,
+    "upgradedToFull": 0,
+    "blocked": 0,
+    "fullFamiliesAfter": 0
+  },
+  "byCategory": {
+    "vocative": {
+      "before": 1,
+      "confirmedLimited": 1,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "article": {
+      "before": 1,
+      "confirmedLimited": 1,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "pronoun": {
+      "before": 7,
+      "confirmedLimited": 7,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "connector/conjunction": {
+      "before": 3,
+      "confirmedLimited": 3,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "preposition": {
+      "before": 2,
+      "confirmedLimited": 2,
+      "upgradedToFull": 0,
+      "blocked": 0
+    }
+  },
+  "byReason": {
+    "rootless:vocative": 1,
+    "rootless:article": 1,
+    "rootless:pronoun": 7,
+    "rootless:connector/conjunction": 3,
+    "rootless:preposition": 2
+  },
+  "packageChanges": [
+    {
+      "packageId": "surah:109",
+      "surah": 109,
+      "statusAfter": "custom-complete",
+      "demotedFromCustomComplete": false
+    }
+  ],
+  "items": [
+    {
+      "occurrenceId": "word:109:1:2",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 1,
+      "position": 2,
+      "teachingId": "lesson:109-1-2",
+      "word": "يَا",
+      "category": "vocative",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "يَا",
+          "meaning": "Oh",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:1:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:1:2) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "يَا",
+            "meaning": "Oh",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:1:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:1:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "يَا is a rootless vocative rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "يَا",
+            "meaning": "Oh",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:1:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:1:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "يَا is a rootless vocative rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "3944b0cf25f08f3e4164ce2fdee009e27aa90eabf927076d4f4397b18dad9380",
+      "contentHash": "c9156db373a18e41b03b97567b5a8587fc97530920823da13f34e5977b0247ed"
+    },
+    {
+      "occurrenceId": "word:109:2:1",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 2,
+      "position": 1,
+      "teachingId": "lesson:109-2-1",
+      "word": "لَا",
+      "category": "article",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "لَا",
+          "meaning": "not",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:2:1) was checked as evidence."
+        },
+        {
+          "form": "لَمْ",
+          "meaning": "did not",
+          "difference": "completed negative",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "لَنْ",
+          "meaning": "will not",
+          "difference": "future negative",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "لَا",
+            "meaning": "not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:2:1) was checked as evidence."
+          },
+          {
+            "form": "لَمْ",
+            "meaning": "did not",
+            "difference": "completed negative",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "لَنْ",
+            "meaning": "will not",
+            "difference": "future negative",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "لَا is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "لَا",
+            "meaning": "not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:2:1) was checked as evidence."
+          },
+          {
+            "form": "لَمْ",
+            "meaning": "did not",
+            "difference": "completed negative",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "لَنْ",
+            "meaning": "will not",
+            "difference": "future negative",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "لَا is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "a68a0be37ee49ff92ffac3b35244f0fff1b2dccaa71bdd45fdb1518c967531b3",
+      "contentHash": "025a72243b3d8f60b95a8aa3341ae6c451a652fc5a40edf91d477d2d02d59aac"
+    },
+    {
+      "occurrenceId": "word:109:2:3",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 2,
+      "position": 3,
+      "teachingId": "lesson:109-2-3",
+      "word": "مَا",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:2:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:2:3) was checked as evidence."
+        },
+        {
+          "form": "ٱلَّذِي",
+          "meaning": "the one who",
+          "difference": "masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّتِي",
+          "meaning": "the one who",
+          "difference": "feminine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّذِينَ",
+          "meaning": "those who",
+          "difference": "masculine or mixed plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:2:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:2:3) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "masculine or mixed plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:2:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:2:3) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "masculine or mixed plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "d1e29ddc6073880c037f1142abf286407efb954e7f5e8613fedd928a1bfaa974",
+      "contentHash": "a080089696bef3d678a24e430779995dc0d38ec22cba91f57f991e152f4f3d8d"
+    },
+    {
+      "occurrenceId": "word:109:3:1",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 3,
+      "position": 1,
+      "teachingId": "lesson:109-3-1",
+      "word": "وَلَا",
+      "category": "connector/conjunction",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَلَا",
+          "meaning": "and not",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:3:1) was checked as evidence."
+        },
+        {
+          "form": "لَا",
+          "meaning": "not / does not",
+          "difference": "without the connector",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فَلَا",
+          "meaning": "so do not",
+          "difference": "فَ adds result or sequence",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَلَا",
+            "meaning": "and not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:3:1) was checked as evidence."
+          },
+          {
+            "form": "لَا",
+            "meaning": "not / does not",
+            "difference": "without the connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَلَا",
+            "meaning": "so do not",
+            "difference": "فَ adds result or sequence",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَلَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَلَا",
+            "meaning": "and not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:3:1) was checked as evidence."
+          },
+          {
+            "form": "لَا",
+            "meaning": "not / does not",
+            "difference": "without the connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَلَا",
+            "meaning": "so do not",
+            "difference": "فَ adds result or sequence",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَلَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "b39882f43d1afcebc7ea724f1923e9fddf0c1730a050847d4af53ac793861109",
+      "contentHash": "6d3443b434c0227e1be5b8caba728abb5661c335bb91a32736ec410fd4ff0649"
+    },
+    {
+      "occurrenceId": "word:109:3:2",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 3,
+      "position": 2,
+      "teachingId": "lesson:109-3-2",
+      "word": "أَنْتُمْ",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "أَنْتُمْ",
+          "meaning": "you all",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:3:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:3:2) was checked as evidence."
+        },
+        {
+          "form": "أَنَا",
+          "meaning": "I",
+          "difference": "first-person singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَنْتَ",
+          "meaning": "you",
+          "difference": "second-person masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "هُوَ",
+          "meaning": "he",
+          "difference": "third-person masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "أَنْتُمْ",
+            "meaning": "you all",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:3:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:3:2) was checked as evidence."
+          },
+          {
+            "form": "أَنَا",
+            "meaning": "I",
+            "difference": "first-person singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أَنْتَ",
+            "meaning": "you",
+            "difference": "second-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هُوَ",
+            "meaning": "he",
+            "difference": "third-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "أَنْتُمْ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "أَنْتُمْ",
+            "meaning": "you all",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:3:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:3:2) was checked as evidence."
+          },
+          {
+            "form": "أَنَا",
+            "meaning": "I",
+            "difference": "first-person singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أَنْتَ",
+            "meaning": "you",
+            "difference": "second-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هُوَ",
+            "meaning": "he",
+            "difference": "third-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "أَنْتُمْ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "cbe5fde0146916139a0630b3147c048a31c5b9f0892fe86a189e757d480df3fa",
+      "contentHash": "5ca80f4cbbb058ef2b4b05607273a58c81ed1553a88c782497b874b854effe7e"
+    },
+    {
+      "occurrenceId": "word:109:3:4",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 3,
+      "position": 4,
+      "teachingId": "lesson:109-3-4",
+      "word": "مَا",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:3:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:3:4) was checked as evidence."
+        },
+        {
+          "form": "ٱلَّذِي",
+          "meaning": "the one who",
+          "difference": "masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّتِي",
+          "meaning": "the one who",
+          "difference": "feminine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّذِينَ",
+          "meaning": "those who",
+          "difference": "masculine or mixed plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:3:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:3:4) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "masculine or mixed plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:3:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:3:4) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "masculine or mixed plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "52d32421e849779fc1d398d58e53befe011e036f9471e0064cb0ad007f27c6b4",
+      "contentHash": "c1f379b54227bbf0da6c73d778dea0fb8052aa8477066c78e6e00d1271a6c5d7"
+    },
+    {
+      "occurrenceId": "word:109:4:1",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 4,
+      "position": 1,
+      "teachingId": "lesson:109-4-1",
+      "word": "وَلَا",
+      "category": "connector/conjunction",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَلَا",
+          "meaning": "and not",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:4:1) was checked as evidence."
+        },
+        {
+          "form": "لَا",
+          "meaning": "not / does not",
+          "difference": "without the connector",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فَلَا",
+          "meaning": "so do not",
+          "difference": "فَ adds result or sequence",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَلَا",
+            "meaning": "and not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:4:1) was checked as evidence."
+          },
+          {
+            "form": "لَا",
+            "meaning": "not / does not",
+            "difference": "without the connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَلَا",
+            "meaning": "so do not",
+            "difference": "فَ adds result or sequence",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَلَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَلَا",
+            "meaning": "and not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:4:1) was checked as evidence."
+          },
+          {
+            "form": "لَا",
+            "meaning": "not / does not",
+            "difference": "without the connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَلَا",
+            "meaning": "so do not",
+            "difference": "فَ adds result or sequence",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَلَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "5e03ee495f3f541bd747062be170d36abb47dcf69d5736dffb328fbd76238c36",
+      "contentHash": "06e75513a46207d9edeaa81f12ca25bea2d73a43d24cb67132826570d52f2a86"
+    },
+    {
+      "occurrenceId": "word:109:4:2",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 4,
+      "position": 2,
+      "teachingId": "lesson:109-4-2",
+      "word": "أَنَا",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "أَنَا",
+          "meaning": "I",
+          "difference": "Current Qur'anic occurrence; person: first-person singular.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:4:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:4:2) was checked as evidence."
+        },
+        {
+          "form": "أَنْتَ",
+          "meaning": "you",
+          "difference": "second-person masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "هُوَ",
+          "meaning": "he",
+          "difference": "third-person masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "هُمْ",
+          "meaning": "they",
+          "difference": "third-person masculine plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "أَنَا",
+            "meaning": "I",
+            "difference": "Current Qur'anic occurrence; person: first-person singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:4:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:4:2) was checked as evidence."
+          },
+          {
+            "form": "أَنْتَ",
+            "meaning": "you",
+            "difference": "second-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هُوَ",
+            "meaning": "he",
+            "difference": "third-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هُمْ",
+            "meaning": "they",
+            "difference": "third-person masculine plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "أَنَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "أَنَا",
+            "meaning": "I",
+            "difference": "Current Qur'anic occurrence; person: first-person singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:4:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:4:2) was checked as evidence."
+          },
+          {
+            "form": "أَنْتَ",
+            "meaning": "you",
+            "difference": "second-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هُوَ",
+            "meaning": "he",
+            "difference": "third-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هُمْ",
+            "meaning": "they",
+            "difference": "third-person masculine plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "أَنَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "c8ed95cb95821c89af5e35701888da4ab3734958903553f122986a517a6aefcd",
+      "contentHash": "52a769e0e14d872d73d7d2f5deb65b5c1f4249520d25ab871e54e03a7030cfe0"
+    },
+    {
+      "occurrenceId": "word:109:4:4",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 4,
+      "position": 4,
+      "teachingId": "lesson:109-4-4",
+      "word": "مَا",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:4:4) was checked as evidence."
+        },
+        {
+          "form": "ٱلَّذِي",
+          "meaning": "the one who",
+          "difference": "masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّتِي",
+          "meaning": "the one who",
+          "difference": "feminine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّذِينَ",
+          "meaning": "those who",
+          "difference": "masculine or mixed plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:4:4) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "masculine or mixed plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:4:4) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "masculine or mixed plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "9834874c0cd6caee0de8f9f4264d0efa61f2691ccbf705d1790730ceeb00eded",
+      "contentHash": "47f2499b5620be032d4cebca1e4d6b8d06cf5e70295f83688e4224f187ef2513"
+    },
+    {
+      "occurrenceId": "word:109:5:1",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 5,
+      "position": 1,
+      "teachingId": "lesson:109-5-1",
+      "word": "وَلَا",
+      "category": "connector/conjunction",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَلَا",
+          "meaning": "and not",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:5:1) was checked as evidence."
+        },
+        {
+          "form": "لَا",
+          "meaning": "not / does not",
+          "difference": "without the connector",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فَلَا",
+          "meaning": "so do not",
+          "difference": "فَ adds result or sequence",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَلَا",
+            "meaning": "and not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:5:1) was checked as evidence."
+          },
+          {
+            "form": "لَا",
+            "meaning": "not / does not",
+            "difference": "without the connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَلَا",
+            "meaning": "so do not",
+            "difference": "فَ adds result or sequence",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَلَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَلَا",
+            "meaning": "and not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:5:1) was checked as evidence."
+          },
+          {
+            "form": "لَا",
+            "meaning": "not / does not",
+            "difference": "without the connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَلَا",
+            "meaning": "so do not",
+            "difference": "فَ adds result or sequence",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَلَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "692b6e6a8143f03d27be3700ffd609d46ada67d2f7e0c744cd37dae0f0311a5b",
+      "contentHash": "20969499cd036098989a1d97a1e56eff45b1eac02b2a09aa5a00e96248e1c678"
+    },
+    {
+      "occurrenceId": "word:109:5:2",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 5,
+      "position": 2,
+      "teachingId": "lesson:109-5-2",
+      "word": "أَنْتُمْ",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "أَنْتُمْ",
+          "meaning": "you all",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:5:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:5:2) was checked as evidence."
+        },
+        {
+          "form": "أَنَا",
+          "meaning": "I",
+          "difference": "first-person singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَنْتَ",
+          "meaning": "you",
+          "difference": "second-person masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "هُوَ",
+          "meaning": "he",
+          "difference": "third-person masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "أَنْتُمْ",
+            "meaning": "you all",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:5:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:5:2) was checked as evidence."
+          },
+          {
+            "form": "أَنَا",
+            "meaning": "I",
+            "difference": "first-person singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أَنْتَ",
+            "meaning": "you",
+            "difference": "second-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هُوَ",
+            "meaning": "he",
+            "difference": "third-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "أَنْتُمْ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "أَنْتُمْ",
+            "meaning": "you all",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:5:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:5:2) was checked as evidence."
+          },
+          {
+            "form": "أَنَا",
+            "meaning": "I",
+            "difference": "first-person singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أَنْتَ",
+            "meaning": "you",
+            "difference": "second-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هُوَ",
+            "meaning": "he",
+            "difference": "third-person masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "أَنْتُمْ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "608850152883d8e4e8e70a5f599104074425634481d4ddc729a3143a0c0ffb2a",
+      "contentHash": "ec17d826224701e4588a0a7a05bc653fc5b29fbcd17afedb9b284c770f21322e"
+    },
+    {
+      "occurrenceId": "word:109:5:4",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 5,
+      "position": 4,
+      "teachingId": "lesson:109-5-4",
+      "word": "مَا",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:5:4) was checked as evidence."
+        },
+        {
+          "form": "ٱلَّذِي",
+          "meaning": "the one who",
+          "difference": "masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّتِي",
+          "meaning": "the one who",
+          "difference": "feminine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّذِينَ",
+          "meaning": "those who",
+          "difference": "masculine or mixed plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:5:4) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "masculine or mixed plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:5:4) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "masculine or mixed plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "7d0ad44d128724be1b8c8d4a7bb83f89b769f6af9cf2e27b36bea048705a0fb6",
+      "contentHash": "65f27b18f67c77ff8dc3b14cfee76362583ce8e06ff2c6f9804f9b25178dbced"
+    },
+    {
+      "occurrenceId": "word:109:6:1",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 6,
+      "position": 1,
+      "teachingId": "lesson:109-6-1",
+      "word": "لَكُمْ",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "لَكُمْ",
+          "meaning": "for you",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:6:1) was checked as evidence."
+        },
+        {
+          "form": "لِي",
+          "meaning": "for me",
+          "difference": "first-person pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "لَكَ",
+          "meaning": "for you",
+          "difference": "second-person singular pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "لَكُمْ",
+            "meaning": "for you",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:6:1) was checked as evidence."
+          },
+          {
+            "form": "لِي",
+            "meaning": "for me",
+            "difference": "first-person pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "لَكَ",
+            "meaning": "for you",
+            "difference": "second-person singular pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "لَكُمْ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "لَكُمْ",
+            "meaning": "for you",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:6:1) was checked as evidence."
+          },
+          {
+            "form": "لِي",
+            "meaning": "for me",
+            "difference": "first-person pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "لَكَ",
+            "meaning": "for you",
+            "difference": "second-person singular pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "لَكُمْ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "23c47c24ef48a12465fe9907fcbe1246fb6f1ed1ab2ef5be84cb09fbbc2e83bb",
+      "contentHash": "410395138e19b0ffed2ebe4bc07b65d20015e2d0f60b183821ed274586a58580"
+    },
+    {
+      "occurrenceId": "word:109:6:3",
+      "packageId": "surah:109",
+      "surah": 109,
+      "ayah": 6,
+      "position": 3,
+      "teachingId": "lesson:109-6-3",
+      "word": "وَلِيَ",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَلِيَ",
+          "meaning": "and for me",
+          "difference": "Current Qur'anic occurrence; person: first-person singular.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:109:6:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:6:3) was checked as evidence."
+        },
+        {
+          "form": "لِي",
+          "meaning": "for me",
+          "difference": "without the connector",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فَلِي",
+          "meaning": "so for me",
+          "difference": "فَ adds result or sequence",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَلِيَ",
+            "meaning": "and for me",
+            "difference": "Current Qur'anic occurrence; person: first-person singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:6:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:6:3) was checked as evidence."
+          },
+          {
+            "form": "لِي",
+            "meaning": "for me",
+            "difference": "without the connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَلِي",
+            "meaning": "so for me",
+            "difference": "فَ adds result or sequence",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَلِيَ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَلِيَ",
+            "meaning": "and for me",
+            "difference": "Current Qur'anic occurrence; person: first-person singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:109:6:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (109:6:3) was checked as evidence."
+          },
+          {
+            "form": "لِي",
+            "meaning": "for me",
+            "difference": "without the connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَلِي",
+            "meaning": "so for me",
+            "difference": "فَ adds result or sequence",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَلِيَ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "9766c3d28246e625f2bd6c1b2cdbc450c0daa21862592123b60478df9c469c57",
+      "contentHash": "f34875d157336252f530c6d1ffd9f08ca3c64e13c6c317b305bdf2286e352ab6"
+    }
+  ]
+}
