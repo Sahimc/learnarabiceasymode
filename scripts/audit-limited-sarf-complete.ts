@@ -3584,6 +3584,276 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "أسفلين",
       },
     ],
+    ["شرح"]: [
+      {
+        form: "شَرَحَ",
+        meaning: "he expanded or opened",
+        difference:
+          "Form I perfect; it states the completed action behind the current first-person plural jussive form.",
+        relationship:
+          "Form I perfect of the ش ر ح root, attested in Qur'anic occurrences for expanding or opening the chest.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ش ر ح evidence and standard Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "شرح",
+      },
+      {
+        form: "يَشْرَحُ",
+        meaning: "he expands or opens",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents the expansion as ongoing rather than completed.",
+        relationship:
+          "The imperfect counterpart of شَرَحَ in the ش ر ح family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 6:125:6 and standard Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يشرح",
+      },
+      {
+        form: "اِشْرَحْ",
+        meaning: "expand or open!",
+        difference:
+          "Form I imperative, second-person masculine singular; it turns the root into a direct command.",
+        relationship:
+          "The imperative of شَرَحَ in the ش ر ح family, attested in Qur'an 20:25.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 20:25:3 and standard Form I imperative morphology.",
+        featureSignal: ["pattern:form-1", "mood:imperative", "person:second-person"],
+        baseDistinct: true,
+        lexicalKey: "اشرح",
+      },
+      {
+        form: "شَرْحٌ",
+        meaning: "expansion or explanation",
+        difference:
+          "Verbal noun; it names the action or result of expanding and explaining rather than expressing it as a verb.",
+        relationship:
+          "The standard verbal noun of شَرَحَ in the ش ر ح lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for شَرْحٌ and the Quranic root range.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "شرح",
+      },
+    ],
+    ["نقض"]: [
+      {
+        form: "نَقَضَ",
+        meaning: "he broke or untwisted",
+        difference:
+          "Form I perfect; it states the completed breaking action, contrasting with the current Form IV verb meaning weighed down.",
+        relationship:
+          "Form I perfect of the ن ق ض root, attested for breaking a covenant or untwisting yarn.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ن ق ض evidence and standard Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "نقض",
+      },
+      {
+        form: "يَنْقُضُ",
+        meaning: "he breaks or untwists",
+        difference:
+          "Form I imperfect; it presents the breaking action as ongoing, contrasting with the current Form IV perfect.",
+        relationship:
+          "The imperfect counterpart of نَقَضَ in the ن ق ض family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences of يَنْقُضُ and standard Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "ينقض",
+      },
+      {
+        form: "نَقْضٌ",
+        meaning: "breaking or undoing",
+        difference:
+          "Verbal noun; it names the act of breaking or undoing rather than expressing it as a finite verb.",
+        relationship:
+          "The verbal noun of نَقَضَ, attested in Qur'anic usage.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 4:155 and 5:13 and the approved root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "نقض",
+      },
+      {
+        form: "مَنْقُوضٌ",
+        meaning: "broken or undone",
+        difference:
+          "Passive participle; it describes something that has undergone the breaking action rather than the agent who performs it.",
+        relationship:
+          "A genuine passive participle of نَقَضَ in the ن ق ض lexical family.",
+        provenance:
+          "Codex-authored after review of standard Form I passive-participle morphology and the Quranic ن ق ض root range.",
+        featureSignal: ["partofspeech:passive-participle", "voice:passive", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "منقوض",
+      },
+    ],
+    ["فرغ"]: [
+      {
+        form: "فَرَغَ",
+        meaning: "he finished or became free",
+        difference:
+          "Form I perfect, third-person masculine singular; it contrasts with the current second-person perfect form.",
+        relationship:
+          "Form I perfect of the ف ر غ root, the basic verb of finishing or becoming free.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ف ر غ evidence and standard Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "فرغ",
+      },
+      {
+        form: "يَفْرُغُ",
+        meaning: "he finishes or becomes free",
+        difference:
+          "Form I imperfect; it presents finishing as ongoing or expected rather than completed.",
+        relationship:
+          "The imperfect counterpart of فَرَغَ in the ف ر غ family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 55:31:1 and standard Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يفرغ",
+      },
+      {
+        form: "فَرَاغٌ",
+        meaning: "finishing or free time",
+        difference:
+          "Verbal noun; it names the state or action of finishing and being free rather than expressing it as a verb.",
+        relationship:
+          "A genuine verbal noun of فَرَغَ in the ف ر غ lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for فَرَاغٌ and the Quranic root range.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "فراغ",
+      },
+      {
+        form: "فَارِغٌ",
+        meaning: "empty or free",
+        difference:
+          "Active participle/adjective; it describes a person or thing that is empty or free, contrasting with the finite verb.",
+        relationship:
+          "The active participle of فَرَغَ, attested in Qur'an 28:10.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 28:10:5 and standard Form I active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent-or-descriptor"],
+        baseDistinct: true,
+        lexicalKey: "فارغ",
+      },
+    ],
+    ["نصب"]: [
+      {
+        form: "نُصِبَتْ",
+        meaning: "it was set up",
+        difference:
+          "Form I passive perfect, third-person feminine singular; it shows the affected state in contrast with the current imperative.",
+        relationship:
+          "A canonical passive Form I form of the ن ص ب root, attested in Qur'an 88:19.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 88:19:4 and standard Form I passive morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "voice:passive"],
+        baseDistinct: true,
+        lexicalKey: "نصبت",
+      },
+      {
+        form: "نَصَبٌ",
+        meaning: "fatigue or hardship",
+        difference:
+          "Noun; it names the fatigue or hardship associated with exertion rather than expressing the action as a command.",
+        relationship:
+          "A Qur'anic noun of the ن ص ب family, repeatedly glossed as fatigue.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 9:120, 15:48, 18:62 and 35:35.",
+        featureSignal: ["partofspeech:noun", "derivation:related-noun", "meaning:fatigue"],
+        baseDistinct: true,
+        lexicalKey: "نصب",
+      },
+      {
+        form: "نَاصِبٌ",
+        meaning: "laboring or exhausting",
+        difference:
+          "Active participle/adjective, masculine singular; it describes one who labors or causes exertion rather than giving a command.",
+        relationship:
+          "The masculine counterpart of the Qur'anic active participle نَّاصِبَةٌ in the ن ص ب family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 88:3:2 and standard Form I active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "gender:masculine", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "ناصب",
+      },
+      {
+        form: "مَنْصُوبٌ",
+        meaning: "set up or erected",
+        difference:
+          "Passive participle; it describes something placed or erected, giving a result-state contrast with the active command.",
+        relationship:
+          "A genuine passive participle of نَصَبَ in the ن ص ب lexical family.",
+        provenance:
+          "Codex-authored after review of standard Form I passive-participle morphology and the canonical ن ص ب root range.",
+        featureSignal: ["partofspeech:passive-participle", "voice:passive", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "منصوب",
+      },
+    ],
+    ["رغب"]: [
+      {
+        form: "رَغِبَ",
+        meaning: "he desired or preferred",
+        difference:
+          "Form I perfect; it states the completed act of desiring or preferring, contrasting with the current imperative.",
+        relationship:
+          "Form I perfect of the ر غ ب root, the verbal base of the current command.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ر غ ب evidence and standard Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "رغب",
+      },
+      {
+        form: "يَرْغَبُ",
+        meaning: "he desires or prefers",
+        difference:
+          "Form I imperfect; it presents desire or preference as ongoing rather than as a direct command.",
+        relationship:
+          "The imperfect counterpart of رَغِبَ in the ر غ ب family, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 2:130, 4:127 and 9:120.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يرغب",
+      },
+      {
+        form: "رَغْبَةٌ",
+        meaning: "desire or hope",
+        difference:
+          "Verbal noun/related noun; it names the desire or hope rather than expressing it as a verb.",
+        relationship:
+          "A genuine noun in the ر غ ب family, related to the Qur'anic رَغَبًا.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 21:90:15 and approved Arabic lexical evidence.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "رغبة",
+      },
+      {
+        form: "رَاغِبٌ",
+        meaning: "desiring or turning devoutly",
+        difference:
+          "Active participle, masculine singular; it names one who desires or turns toward something rather than issuing the command.",
+        relationship:
+          "The active participle of رَغِبَ, attested in Qur'anic usage as رَاغِبُونَ.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 9:59, 19:46 and 68:32 and standard Form I active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "number:singular", "gender:masculine"],
+        baseDistinct: true,
+        lexicalKey: "راغب",
+      },
+    ],
     ["مسد"]: [
       {
         form: "مَسَدَ",
