@@ -93,6 +93,11 @@
       "safeguard": "Treat provider-root absence as a review state. Use No lexical root only for a reviewed grammatical/rootless component or a genuinely rootless item."
     },
     {
+      "id": "provider-root-does-not-override-reviewed-rootlessness",
+      "problem": "A morphology provider supplies a root for a grammatical or otherwise explicitly rootless occurrence, and the importer rejects the reviewed rootless teaching decision as a root mismatch.",
+      "safeguard": "Treat provider roots as evidence, not an automatic teaching answer. When the lesson has been explicitly reviewed as rootless and every breakdown component is marked rootless with a category-specific explanation, allow the provider root to remain evidence without promoting it to a lexical lesson root. Fail closed when the rootless decision is not explicit or any lexical component is present."
+    },
+    {
       "id": "sarf-row-root-family-mismatch",
       "problem": "A structurally valid Ṣarf row belongs to a different Arabic root family than the lesson, so a wrong-root form can be taught as a related form.",
       "safeguard": "Check every retained row's Arabic form, meaning and provenance against the lesson root and lexeme. Reject wrong-root rows even when they share a surface pattern; require approved lexicon, canonical evidence or explicit Codex linguistic provenance for every retained row."

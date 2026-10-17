@@ -1,7 +1,10 @@
 import crypto from "node:crypto";
 import { readPackage, discoverPackagePaths } from "./lib/packages";
 import { pool, withTransaction } from "./lib/db";
+import { assertAuthoringContract } from "./lib/authoring-contract";
 import type { SurahPackage, WordBreakdown } from "../app/data/content-contract";
+
+assertAuthoringContract("content import");
 
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
@@ -52,6 +55,60 @@ function packageWords(pkg: SurahPackage) {
   return pkg.ayahs.flatMap((ayah) =>
     ayah.words.map((word) => ({ ...word, ayahId: ayah.id })),
   );
+}
+
+function normalizeRoot(root: string | null | undefined) {
+  return (root ?? "").replace(/\s+/gu, "").trim();
+}
+
+function isExplicitlyRootlessLesson(
+  pkg: SurahPackage,
+  word: ReturnType<typeof packageWords>[number],
+) {
+  const lesson = word.teachingId
+    ? pkg.teachingEntries[word.teachingId]
+    : undefined;
+  if (!lesson || normalizeRoot(lesson.root)) return false;
+  const parts = word.breakdown?.parts ?? [];
+  return parts.length > 0 && parts.every((part) => part.rootStatus === "rootless");
+}
+
+async function validateProviderRoots(
+  client: QueryClient,
+  pkg: SurahPackage,
+  words: ReturnType<typeof packageWords>,
+) {
+  const customWords = words.filter((word) => word.teachingId);
+  if (!customWords.length) return;
+  const providerRows = (await client.query(
+    `select occurrence_id, nullif(features->>'root', '') as provider_root
+     from morphology_records
+     where provider='quranic-arabic-corpus'
+       and occurrence_id = any($1::text[])`,
+    [customWords.map((word) => word.id)],
+  )) as {
+    rows: Array<{ occurrence_id: string; provider_root: string | null }>;
+  };
+  const providerById = new Map(
+    providerRows.rows.map((row) => [row.occurrence_id, row.provider_root]),
+  );
+  const mismatches: string[] = [];
+  for (const word of customWords) {
+    const providerRoot = normalizeRoot(providerById.get(word.id));
+    if (!providerRoot) continue;
+    const lessonRoot = normalizeRoot(
+      pkg.teachingEntries[word.teachingId!]?.root,
+    );
+    if (isExplicitlyRootlessLesson(pkg, word)) continue;
+    if (lessonRoot !== providerRoot)
+      mismatches.push(
+        `${word.id} ${word.arabic}: teaching root ${lessonRoot || "(empty)"} does not match provider root ${providerRoot}`,
+      );
+  }
+  if (mismatches.length)
+    throw new Error(
+      `Provider-root agreement failed for ${pkg.packageId}:\n${mismatches.join("\n")}`,
+    );
 }
 
 type MorphologySurfacePart = {
@@ -197,7 +254,9 @@ async function insertPackage(
     );
     await client.query("delete from drills where package_id=$1", [packageId]);
     await client.query(
-      "delete from translations where scope_id = any($1::text[])",
+      `delete from translations
+       where scope_id = any($1::text[])
+         and provider = 'project'`,
       [oldAyahs.rows.map((row) => row.id)],
     );
     await client.query(
@@ -325,6 +384,7 @@ async function insertPackage(
       ]),
     );
     const words = packageWords(pkg);
+    await validateProviderRoots(client, pkg, words);
     const roots = new Map<string, string>();
     for (const lesson of Object.values(pkg.teachingEntries))
       if (lesson.root.trim()) roots.set(`root:${lesson.root}`, lesson.root);
@@ -365,6 +425,7 @@ async function insertPackage(
         "sentence_role",
         "recognition_clue",
         "forms",
+        "sarf_review",
         "takeaway",
         "created_at",
         "updated_at",
@@ -382,11 +443,12 @@ async function insertPackage(
         lesson.sentenceRole,
         lesson.recognitionClue,
         JSON.stringify(lesson.forms),
+        JSON.stringify(lesson.sarfReview),
         lesson.takeaway,
         new Date(),
         new Date(),
       ]),
-      "on conflict (id) do update set package_id=excluded.package_id, meaning=excluded.meaning, type=excluded.type, root=excluded.root, root_picture=excluded.root_picture, construction=excluded.construction, components=excluded.components, grammar=excluded.grammar, sentence_role=excluded.sentence_role, recognition_clue=excluded.recognition_clue, forms=excluded.forms, takeaway=excluded.takeaway, updated_at=now()",
+      "on conflict (id) do update set package_id=excluded.package_id, meaning=excluded.meaning, type=excluded.type, root=excluded.root, root_picture=excluded.root_picture, construction=excluded.construction, components=excluded.components, grammar=excluded.grammar, sentence_role=excluded.sentence_role, recognition_clue=excluded.recognition_clue, forms=excluded.forms, sarf_review=excluded.sarf_review, takeaway=excluded.takeaway, updated_at=now()",
     );
     await insertMany(
       client,
@@ -423,6 +485,8 @@ async function insertPackage(
         "form",
         "meaning",
         "difference",
+        "relationship",
+        "provenance",
         "created_at",
         "updated_at",
       ],
@@ -433,11 +497,13 @@ async function insertPackage(
           form.form,
           form.meaning,
           form.difference,
+          form.relationship,
+          form.provenance,
           new Date(),
           new Date(),
         ]),
       ),
-      "on conflict (id) do update set form=excluded.form, meaning=excluded.meaning, difference=excluded.difference, updated_at=now()",
+      "on conflict (id) do update set form=excluded.form, meaning=excluded.meaning, difference=excluded.difference, relationship=excluded.relationship, provenance=excluded.provenance, updated_at=now()",
     );
     await insertMany(
       client,
@@ -588,6 +654,9 @@ async function insertPackage(
           part.displayText,
           part.label,
           part.meaning,
+          part.rootStatus ?? null,
+          part.root ?? null,
+          part.rootExplanation ?? null,
           part.kind,
         ]);
     }
@@ -618,6 +687,9 @@ async function insertPackage(
         "display_text",
         "label",
         "meaning",
+        "root_status",
+        "root",
+        "root_explanation",
         "kind",
       ],
       partRows,
