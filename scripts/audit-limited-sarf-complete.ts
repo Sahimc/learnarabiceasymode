@@ -171,6 +171,256 @@ function trustedDifference(root: string, form: string, existing: string) {
 
 function curatedCandidates(root: string): Candidate[] {
   const families: Record<string, Array<Omit<Candidate, "score" | "sourceKind"> & { score?: number }>> = {
+    ["ألف"]: [
+      {
+        form: "أَلِفَ",
+        meaning: "he became familiar or accustomed",
+        difference:
+          "Form I perfect; it presents becoming familiar as a completed state, contrasting with the current Form IV verbal noun of familiarising and securing.",
+        relationship: "Form I perfect of the أ ل ف root; the basic verb related to familiarity and becoming accustomed.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus أ ل ف root entry, the approved project root meaning and Arabic Academy lexicon evidence.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "ألف",
+      },
+      {
+        form: "يَأْلَفُ",
+        meaning: "he becomes familiar or is accustomed",
+        difference:
+          "Form I imperfect; it presents familiarity as ongoing or habitual rather than naming the current Form IV verbal noun.",
+        relationship: "Form I imperfect of the أ ل ف root; the ongoing counterpart of أَلِفَ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and regular Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يألف",
+      },
+      {
+        form: "أَلَّفَ",
+        meaning: "he joined or reconciled",
+        difference:
+          "Form II perfect; the doubled middle radical marks the derived act of joining or bringing together, distinct from the Form IV verbal noun.",
+        relationship: "Form II perfect of the أ ل ف root, attested in the Qur'an for joining hearts and things together.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus canonical occurrences 3:103, 8:63 and 24:43 and the approved project root meaning.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "voice:active"],
+        baseDistinct: true,
+        lexicalKey: "ألف",
+      },
+      {
+        form: "تَآلَفَ",
+        meaning: "he became mutually familiar or formed an affinity",
+        difference:
+          "Form VI perfect; the reciprocal pattern shows mutual familiarity or affinity rather than the current Form IV verbal noun naming familiarising or security.",
+        relationship: "Form VI derived verb of the أ ل ف root; a genuine reciprocal relationship within the familiarity family.",
+        provenance:
+          "Codex-authored after review of Arabic Academy lexicon evidence listing تآلف and the approved project root meaning.",
+        featureSignal: ["pattern:form-6", "tense:perfect", "voice:reciprocal"],
+        baseDistinct: true,
+        lexicalKey: "تآلف",
+      },
+    ],
+    ["رحل"]: [
+      {
+        form: "رَحَلَ",
+        meaning: "he departed or traveled",
+        difference:
+          "Form I perfect; it states the completed act of departing or traveling, while the current form is the related journey noun.",
+        relationship: "Form I perfect of the ر ح ل root; the verb underlying travel and departure.",
+        provenance:
+          "Codex-authored after review of Arabic Academy lexicon evidence for رَحَلَ and the approved project root meaning.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "رحل",
+      },
+      {
+        form: "يَرْحَلُ",
+        meaning: "he departs or travels",
+        difference:
+          "Form I imperfect; it presents departing or traveling as ongoing or expected rather than naming the current journey noun.",
+        relationship: "Form I imperfect of the ر ح ل root; the ongoing counterpart of رَحَلَ.",
+        provenance:
+          "Codex-authored after review of Arabic Academy lexicon evidence for رَحَلَ and regular Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يرحل",
+      },
+      {
+        form: "رَحِيلٌ",
+        meaning: "departure or traveling",
+        difference:
+          "Verbal noun; it names the act of departing or traveling rather than the concrete journey noun رِحْلَةَ.",
+        relationship: "A genuine verbal noun of the ر ح ل root, listed with رَحَلَ and رِحْلَةٌ in Arabic lexicon evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy lexicon evidence listing الرَّحِيل and the approved project root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "رحيل",
+      },
+      {
+        form: "رَاحِلٌ",
+        meaning: "departing or traveling",
+        difference:
+          "Active participle; it describes a person or thing that departs, contrasting with the current noun naming a journey.",
+        relationship: "A genuine active participle related to the Form I verb رَحَلَ within the ر ح ل family.",
+        provenance:
+          "Codex-authored after review of Arabic Academy lexicon evidence listing الرّاحلة and related رحل forms and the approved project root meaning.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent-or-descriptor"],
+        baseDistinct: true,
+        lexicalKey: "راحل",
+      },
+    ],
+    ["شتو"]: [
+      {
+        form: "شَتَا",
+        meaning: "he spent the winter",
+        difference:
+          "Form I perfect; it presents wintering as an action, contrasting with the current noun naming the winter season.",
+        relationship: "Form I perfect of the ش ت و root; a genuine verb listed in Arabic Academy evidence for the winter family.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for الشتاء and الشتوي and the approved project root meaning.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "شتا",
+      },
+      {
+        form: "شَتْوَةٌ",
+        meaning: "a winter season or winter period",
+        difference:
+          "Feminine seasonal noun; it names a winter period rather than the unmodified season noun in the current occurrence.",
+        relationship: "A genuine related noun of the ش ت و family, listed as الشَّتْوةُ in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing الشَّتْوةُ and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "gender:feminine", "derivation:related-noun"],
+        baseDistinct: true,
+        lexicalKey: "شتوة",
+      },
+      {
+        form: "شَتَوِيٌّ",
+        meaning: "wintry or of winter",
+        difference:
+          "Relational adjective; it describes something belonging to or associated with winter rather than naming the season itself.",
+        relationship: "A genuine relational adjective of the ش ت و root, listed in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy entry for الشَّتَوِيّ and the approved project root meaning.",
+        featureSignal: ["partofspeech:adjective", "derivation:relational-adjective"],
+        baseDistinct: true,
+        lexicalKey: "شتوي",
+      },
+      {
+        form: "مَشْتًى",
+        meaning: "a winter resort or place for wintering",
+        difference:
+          "Place noun; it names a place associated with spending winter, contrasting with the season noun الشِّتَاء.",
+        relationship: "A genuine place noun of the ش ت و family, listed as المَشْتَى in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing المَشْتَى and the approved project root meaning.",
+        featureSignal: ["partofspeech:place-noun", "derivation:place"],
+        baseDistinct: true,
+        lexicalKey: "مشتى",
+      },
+    ],
+    ["صيف"]: [
+      {
+        form: "صَيَّفَ",
+        meaning: "he spent the summer or stayed for summer",
+        difference:
+          "Form II perfect; the doubled middle radical marks the derived act of spending or providing for a summer period.",
+        relationship: "Form II perfect of the ص ي ف root, listed in Arabic Academy evidence for the summer family.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for صَيَّفَ and the approved project root meaning.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "صيف",
+      },
+      {
+        form: "اصْطَافَ",
+        meaning: "he spent the summer",
+        difference:
+          "Form VIII perfect; the derived pattern presents taking up a summer stay, contrasting with the current season noun.",
+        relationship: "A genuine Form VIII verb of the ص ي ف family, listed as اصْطافَ in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing اصْطافَ and the approved project root meaning.",
+        featureSignal: ["pattern:form-8", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "اصطاف",
+      },
+      {
+        form: "صَيْفِيٌّ",
+        meaning: "summery or of summer",
+        difference:
+          "Relational adjective; it describes something associated with summer rather than naming the season itself.",
+        relationship: "A genuine relational adjective of the ص ي ف root, listed in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing الصَّيْفِيّ and the approved project root meaning.",
+        featureSignal: ["partofspeech:adjective", "derivation:relational-adjective"],
+        baseDistinct: true,
+        lexicalKey: "صيفي",
+      },
+      {
+        form: "مَصِيفٌ",
+        meaning: "a summer resort or summer residence",
+        difference:
+          "Place noun; it names a place where one spends the summer, contrasting with the current noun naming the season.",
+        relationship: "A genuine place noun of the ص ي ف root, listed as المَصِيف in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing المَصِيف and the approved project root meaning.",
+        featureSignal: ["partofspeech:place-noun", "derivation:place"],
+        baseDistinct: true,
+        lexicalKey: "مصيف",
+      },
+    ],
+    ["جوع"]: [
+      {
+        form: "جَاعَ",
+        meaning: "he became hungry",
+        difference:
+          "Form I perfect; it presents becoming hungry as a completed state, contrasting with the current noun جُوعٍ.",
+        relationship: "Form I perfect of the ج و ع root; the finite verb underlying hunger.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for جَاعَ and the approved project root meaning.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "جاع",
+      },
+      {
+        form: "يَجُوعُ",
+        meaning: "he is hungry or becomes hungry",
+        difference:
+          "Form I imperfect; it presents hunger as ongoing or expected rather than naming the current noun.",
+        relationship: "Form I imperfect of the ج و ع root and the ongoing counterpart of جَاعَ.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 20:118:4 and regular Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يجوع",
+      },
+      {
+        form: "جَائِعٌ",
+        meaning: "hungry",
+        difference:
+          "Active participle/adjective; it describes a person experiencing hunger rather than naming hunger as a state or noun.",
+        relationship: "A genuine active-participle adjective of the ج و ع root, listed in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for جَائِعٌ and the approved project root meaning.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent-or-descriptor"],
+        baseDistinct: true,
+        lexicalKey: "جائع",
+      },
+      {
+        form: "جَوَّعَ",
+        meaning: "he made someone hungry",
+        difference:
+          "Form II perfect; the doubled middle radical marks causing or making someone hungry, contrasting with the intransitive state noun جُوعٍ.",
+        relationship: "Form II causative verb of the ج و ع root, explicitly listed in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for جَوَّعَ and the approved project root meaning.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "جوع",
+      },
+    ],
     ["وصي"]: [
       {
         form: "وَصَّىٰ",
