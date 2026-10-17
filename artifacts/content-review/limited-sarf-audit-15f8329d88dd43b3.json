@@ -1,0 +1,2198 @@
+{
+  "auditBatchId": "limited-sarf-audit-15f8329d88dd43b3",
+  "contractId": "quranic-word-tree-authoring",
+  "contractVersion": "1.3.3",
+  "reviewedAt": "2026-10-17T14:10:02.177Z",
+  "mode": "dry-run",
+  "scope": {
+    "authoredPackages": 1,
+    "limitedOccurrences": 16,
+    "distinctLimitedTeachingEntries": 16
+  },
+  "before": {
+    "limitedOccurrences": 16,
+    "limitedTeachingEntries": 16,
+    "forms": {
+      "2": 2,
+      "3": 6,
+      "4": 8
+    }
+  },
+  "decisions": {
+    "confirmedLimited": 11,
+    "upgradedToFull": 5,
+    "blocked": 0
+  },
+  "after": {
+    "confirmedLimited": 11,
+    "upgradedToFull": 5,
+    "blocked": 0,
+    "fullFamiliesAfter": 5
+  },
+  "byCategory": {
+    "noun": {
+      "before": 6,
+      "confirmedLimited": 1,
+      "upgradedToFull": 5,
+      "blocked": 0
+    },
+    "proper noun": {
+      "before": 2,
+      "confirmedLimited": 2,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "pronoun": {
+      "before": 2,
+      "confirmedLimited": 2,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "preposition": {
+      "before": 4,
+      "confirmedLimited": 4,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "article": {
+      "before": 2,
+      "confirmedLimited": 2,
+      "upgradedToFull": 0,
+      "blocked": 0
+    }
+  },
+  "byReason": {
+    "restricted-lexical-family": 1,
+    "rootless:proper noun": 1,
+    "rootless:pronoun": 2,
+    "rootless:preposition": 4,
+    "rootless:article": 2,
+    "proper-noun-restricted": 1
+  },
+  "packageChanges": [
+    {
+      "packageId": "surah:95",
+      "surah": 95,
+      "statusAfter": "custom-complete",
+      "demotedFromCustomComplete": false
+    }
+  ],
+  "items": [
+    {
+      "occurrenceId": "word:95:1:1",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 1,
+      "position": 1,
+      "teachingId": "lesson:95:1:1",
+      "word": "وَٱلتِّينِ",
+      "category": "noun",
+      "root": "ت ي ن",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَٱلتِّينِ",
+          "meaning": "and the fig",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the تين lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:1:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "وَٱلتِّينِ",
+            "meaning": "and the fig",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the تين lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:1:1) was checked as evidence."
+          },
+          {
+            "form": "أَتْيَانٌ",
+            "meaning": "figs",
+            "difference": "plural noun",
+            "relationship": "Existing project-reviewed relationship to the تين family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَٱلتِّينِ is a rootful noun with root ت ي ن. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَٱلتِّينِ",
+            "meaning": "and the fig",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the تين lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:1:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَٱلتِّينِ is a reviewed restricted lexical item in the تين family. Canonical and approved lexical evidence support this lexeme, but do not provide four additional learner-useful lexical Ṣarf contrasts; case-only, annotation-only or fabricated variants would be padding. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "38461ccf83bc8a023969a2c627f0deb37a5c37b662b195a3473ce324ff85dc60",
+      "contentHash": "f4fb02c9f227a904bd1280c5cf274e00522991e7f4d0a259f1f909ebdefe63dd"
+    },
+    {
+      "occurrenceId": "word:95:1:2",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 1,
+      "position": 2,
+      "teachingId": "lesson:95:1:2",
+      "word": "وَٱلزَّيْتُونِ",
+      "category": "noun",
+      "root": "ز ي ت",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "زَيْتٌ",
+          "meaning": "oil",
+          "difference": "Basic mass noun; it names oil, contrasting with the current collective noun for the olive tree or olives.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:زيت",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "derivation:base-form",
+            "meaning:oil"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "زيت"
+        },
+        {
+          "form": "زَيْتُونَةٌ",
+          "meaning": "an olive",
+          "difference": "Feminine singular noun; it names one olive, contrasting with the current collective/uncountable form.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:زيت",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "gender:feminine",
+            "number:singular"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "زيتونة"
+        },
+        {
+          "form": "زَيْتُونَاتٌ",
+          "meaning": "olives",
+          "difference": "Sound feminine plural; it shows the countable plural of زَيْتُونَةٌ rather than the current collective form.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:زيت",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "gender:feminine",
+            "number:plural"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "زيتونات"
+        },
+        {
+          "form": "زَيَّتَ",
+          "meaning": "he oiled",
+          "difference": "Form II perfect; the doubled middle radical marks the action of applying or supplying oil, contrasting with the noun forms.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:زيت",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-2",
+            "tense:perfect",
+            "partofspeech:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "زيت"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "وَٱلزَّيْتُونِ",
+          "meaning": "and the olive",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the زيت lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:1:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:1:2) was checked as evidence."
+        },
+        {
+          "form": "زَيْتٌ",
+          "meaning": "oil",
+          "difference": "Basic mass noun; it names oil, contrasting with the current collective noun for the olive tree or olives.",
+          "relationship": "A genuine noun of the ز ي ت family, attested in Qur'anic usage for oil.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for the ز ي ت family and the approved project root meaning."
+        },
+        {
+          "form": "زَيْتُونَةٌ",
+          "meaning": "an olive",
+          "difference": "Feminine singular noun; it names one olive, contrasting with the current collective/uncountable form.",
+          "relationship": "The feminine singular noun in the ز ي ت family, listed among the established related Qur'anic forms.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for زَيْتُونَةٌ and the approved project root meaning."
+        },
+        {
+          "form": "زَيْتُونَاتٌ",
+          "meaning": "olives",
+          "difference": "Sound feminine plural; it shows the countable plural of زَيْتُونَةٌ rather than the current collective form.",
+          "relationship": "A genuine plural of زَيْتُونَةٌ within the ز ي ت lexical family.",
+          "provenance": "Codex-authored after review of standard Arabic plural formation for زَيْتُونَةٌ and the approved project root meaning."
+        },
+        {
+          "form": "زَيَّتَ",
+          "meaning": "he oiled",
+          "difference": "Form II perfect; the doubled middle radical marks the action of applying or supplying oil, contrasting with the noun forms.",
+          "relationship": "A genuine Form II verb of the ز ي ت root in the oil family.",
+          "provenance": "Codex-authored after review of standard Arabic Form II morphology, approved lexical evidence and the project root meaning."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "وَٱلزَّيْتُونِ",
+            "meaning": "and the olive",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the زيت lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:1:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:1:2) was checked as evidence."
+          },
+          {
+            "form": "زَيْتُونٌ",
+            "meaning": "olive",
+            "difference": "collective noun",
+            "relationship": "Existing project-reviewed relationship to the زيت family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "مَزِيدٌ",
+            "meaning": "increased",
+            "difference": "derived form",
+            "relationship": "Existing project-reviewed relationship to the زيت family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "وَزَيْتُونًا",
+            "meaning": "And olive",
+            "difference": "Compared with وَٱلزَّيْتُونِ, this form changes case: genitive → accusative; state: not marked → indefinite.",
+            "relationship": "Related to the ز ي ت root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:80:29:1.",
+            "provenance": "Codex-reviewed form for the ز ي ت family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "وَٱلزَّيْتُونِ is a rootful noun with root ز ي ت. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "وَٱلزَّيْتُونِ",
+            "meaning": "and the olive",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the زيت lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:1:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:1:2) was checked as evidence."
+          },
+          {
+            "form": "زَيْتٌ",
+            "meaning": "oil",
+            "difference": "Basic mass noun; it names oil, contrasting with the current collective noun for the olive tree or olives.",
+            "relationship": "A genuine noun of the ز ي ت family, attested in Qur'anic usage for oil.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for the ز ي ت family and the approved project root meaning."
+          },
+          {
+            "form": "زَيْتُونَةٌ",
+            "meaning": "an olive",
+            "difference": "Feminine singular noun; it names one olive, contrasting with the current collective/uncountable form.",
+            "relationship": "The feminine singular noun in the ز ي ت family, listed among the established related Qur'anic forms.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for زَيْتُونَةٌ and the approved project root meaning."
+          },
+          {
+            "form": "زَيْتُونَاتٌ",
+            "meaning": "olives",
+            "difference": "Sound feminine plural; it shows the countable plural of زَيْتُونَةٌ rather than the current collective form.",
+            "relationship": "A genuine plural of زَيْتُونَةٌ within the ز ي ت lexical family.",
+            "provenance": "Codex-authored after review of standard Arabic plural formation for زَيْتُونَةٌ and the approved project root meaning."
+          },
+          {
+            "form": "زَيَّتَ",
+            "meaning": "he oiled",
+            "difference": "Form II perfect; the doubled middle radical marks the action of applying or supplying oil, contrasting with the noun forms.",
+            "relationship": "A genuine Form II verb of the ز ي ت root in the oil family.",
+            "provenance": "Codex-authored after review of standard Arabic Form II morphology, approved lexical evidence and the project root meaning."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "b975c4a450a3c6bb46f9f0c262066e06f3e52815b8b9ab788afa550f413b0394",
+      "contentHash": "94bcebb42a750d0f345df509e64e54cc288126d9444d3cc16118b0c5916885db"
+    },
+    {
+      "occurrenceId": "word:95:2:2",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 2,
+      "position": 2,
+      "teachingId": "lesson:95:2:2",
+      "word": "سِينِينَ",
+      "category": "proper noun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "سِينِينَ",
+          "meaning": "Sinai",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:2:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:2:2) was checked as evidence."
+        },
+        {
+          "form": "سِيناء",
+          "meaning": "Sinai",
+          "difference": "place name variant",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "سِينِينَ",
+            "meaning": "Sinai",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:2:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:2:2) was checked as evidence."
+          },
+          {
+            "form": "سِيناء",
+            "meaning": "Sinai",
+            "difference": "place name variant",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "سِينِينَ is a proper noun; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 2 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "سِينِينَ",
+            "meaning": "Sinai",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:2:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:2:2) was checked as evidence."
+          },
+          {
+            "form": "سِيناء",
+            "meaning": "Sinai",
+            "difference": "place name variant",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "سِينِينَ is a proper noun; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 2 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "8cdc27de382c7cb98adff537f963fad703d2b7beccd6bdbb24bf6da578c768e7",
+      "contentHash": "39004ad2943ef0e7d373533b562f2fa8fb95a25c65fcd0b7d7a29e5dc6b9c112"
+    },
+    {
+      "occurrenceId": "word:95:3:1",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 3,
+      "position": 1,
+      "teachingId": "lesson:95:3:1",
+      "word": "وَهَـٰذَا",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَهَـٰذَا",
+          "meaning": "and this",
+          "difference": "Current Qur'anic occurrence; number: masculine singular.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:3:1) was checked as evidence."
+        },
+        {
+          "form": "هَذَا",
+          "meaning": "this",
+          "difference": "masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "هَذِهِ",
+          "meaning": "this",
+          "difference": "feminine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "هَؤُلَاءِ",
+          "meaning": "these",
+          "difference": "plural demonstrative",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "وَهَـٰذَا",
+            "meaning": "and this",
+            "difference": "Current Qur'anic occurrence; number: masculine singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:3:1) was checked as evidence."
+          },
+          {
+            "form": "هَذَا",
+            "meaning": "this",
+            "difference": "masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هَذِهِ",
+            "meaning": "this",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هَؤُلَاءِ",
+            "meaning": "these",
+            "difference": "plural demonstrative",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَهَـٰذَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "وَهَـٰذَا",
+            "meaning": "and this",
+            "difference": "Current Qur'anic occurrence; number: masculine singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:3:1) was checked as evidence."
+          },
+          {
+            "form": "هَذَا",
+            "meaning": "this",
+            "difference": "masculine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هَذِهِ",
+            "meaning": "this",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هَؤُلَاءِ",
+            "meaning": "these",
+            "difference": "plural demonstrative",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَهَـٰذَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "12ca87ca561a6b5e5aa433d63d8bb88c3b2040f7ecccb6b41f97d16322597eb9",
+      "contentHash": "f4bac9f7c3a173ce0f07733bfc625de49902ccd31dcd2111654a8630e0e08f84"
+    },
+    {
+      "occurrenceId": "word:95:3:2",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 3,
+      "position": 2,
+      "teachingId": "lesson:95:3:2",
+      "word": "ٱلْبَلَدِ",
+      "category": "noun",
+      "root": "ب ل د",
+      "decision": "upgraded-to-full",
+      "candidatePool": 5,
+      "candidateEvidence": [
+        {
+          "form": "بَلَدٌ",
+          "meaning": "a city or land",
+          "difference": "Indefinite masculine singular; it shows the unmarked singular behind the current definite genitive form.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:بلد",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "number:singular",
+            "state:indefinite"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "بلد"
+        },
+        {
+          "form": "بَلْدَةٌ",
+          "meaning": "a town or locality",
+          "difference": "Feminine singular noun; the feminine ending marks a related locality noun distinct from the masculine singular.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:بلد",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "gender:feminine",
+            "number:singular"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "بلدة"
+        },
+        {
+          "form": "بِلَادٌ",
+          "meaning": "lands or countries",
+          "difference": "Broken plural; it changes the singular noun into the established plural form used for multiple lands or countries.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:بلد",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "number:plural",
+            "derivation:broken-plural"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "بلاد"
+        },
+        {
+          "form": "بَلَدَانِ",
+          "meaning": "two cities or lands",
+          "difference": "Dual noun; it marks exactly two cities or lands, giving a clear number contrast with the singular and plural forms.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:بلد",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "number:dual"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "بلدان"
+        },
+        {
+          "form": "ٱلْبِلَـٰدِ",
+          "meaning": "the cities",
+          "difference": "Compared with ٱلْبَلَدِ, this form changes gender: masculine → not marked; number: not marked → masculine plural.",
+          "sourceKind": "existing-reviewed-row",
+          "sourceOccurrence": "lesson:95:3:2",
+          "score": 88,
+          "featureSignal": [
+            "Compared with ٱلْبَلَدِ, this form changes gender",
+            " number"
+          ],
+          "baseDistinct": false,
+          "lexicalKey": "بلد"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "ٱلْبَلَدِ",
+          "meaning": "the city",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the بلد lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:3:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:3:2) was checked as evidence."
+        },
+        {
+          "form": "بَلَدٌ",
+          "meaning": "a city or land",
+          "difference": "Indefinite masculine singular; it shows the unmarked singular behind the current definite genitive form.",
+          "relationship": "The basic masculine singular noun of the ب ل د family, attested repeatedly in the Qur'an.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for بَلَدٌ and the approved project root meaning."
+        },
+        {
+          "form": "بَلْدَةٌ",
+          "meaning": "a town or locality",
+          "difference": "Feminine singular noun; the feminine ending marks a related locality noun distinct from the masculine singular.",
+          "relationship": "A genuine feminine noun in the ب ل د family, attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for بَلْدَةٌ and the approved project root meaning."
+        },
+        {
+          "form": "بِلَادٌ",
+          "meaning": "lands or countries",
+          "difference": "Broken plural; it changes the singular noun into the established plural form used for multiple lands or countries.",
+          "relationship": "A genuine broken plural of بَلَدٌ in the ب ل د family, attested in the Qur'an.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for بِلَادٌ and the approved project root meaning."
+        },
+        {
+          "form": "بَلَدَانِ",
+          "meaning": "two cities or lands",
+          "difference": "Dual noun; it marks exactly two cities or lands, giving a clear number contrast with the singular and plural forms.",
+          "relationship": "A regular dual of بَلَدٌ within the ب ل د lexical family.",
+          "provenance": "Codex-authored after review of standard Arabic dual formation for بَلَدٌ and the approved project root meaning."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "ٱلْبَلَدِ",
+            "meaning": "the city",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the بلد lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:3:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:3:2) was checked as evidence."
+          },
+          {
+            "form": "بِلَادٌ",
+            "meaning": "lands",
+            "difference": "plural noun",
+            "relationship": "Existing project-reviewed relationship to the بلد family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "تَبَلَّدَ",
+            "meaning": "he became settled",
+            "difference": "derived verb",
+            "relationship": "Existing project-reviewed relationship to the بلد family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلْبِلَـٰدِ",
+            "meaning": "the cities",
+            "difference": "Compared with ٱلْبَلَدِ, this form changes gender: masculine → not marked; number: not marked → masculine plural.",
+            "relationship": "Related to the ب ل د root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:89:8:6.",
+            "provenance": "Codex-reviewed form for the ب ل د family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "ٱلْبَلَدِ is a rootful noun with root ب ل د. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱلْبَلَدِ",
+            "meaning": "the city",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the بلد lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:3:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:3:2) was checked as evidence."
+          },
+          {
+            "form": "بَلَدٌ",
+            "meaning": "a city or land",
+            "difference": "Indefinite masculine singular; it shows the unmarked singular behind the current definite genitive form.",
+            "relationship": "The basic masculine singular noun of the ب ل د family, attested repeatedly in the Qur'an.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for بَلَدٌ and the approved project root meaning."
+          },
+          {
+            "form": "بَلْدَةٌ",
+            "meaning": "a town or locality",
+            "difference": "Feminine singular noun; the feminine ending marks a related locality noun distinct from the masculine singular.",
+            "relationship": "A genuine feminine noun in the ب ل د family, attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for بَلْدَةٌ and the approved project root meaning."
+          },
+          {
+            "form": "بِلَادٌ",
+            "meaning": "lands or countries",
+            "difference": "Broken plural; it changes the singular noun into the established plural form used for multiple lands or countries.",
+            "relationship": "A genuine broken plural of بَلَدٌ in the ب ل د family, attested in the Qur'an.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for بِلَادٌ and the approved project root meaning."
+          },
+          {
+            "form": "بَلَدَانِ",
+            "meaning": "two cities or lands",
+            "difference": "Dual noun; it marks exactly two cities or lands, giving a clear number contrast with the singular and plural forms.",
+            "relationship": "A regular dual of بَلَدٌ within the ب ل د lexical family.",
+            "provenance": "Codex-authored after review of standard Arabic dual formation for بَلَدٌ and the approved project root meaning."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "db6ffa7484140de4de8111bd5c968e976f5eba9538799d4400f7ad9169650a88",
+      "contentHash": "b6e0e58ab7e4af38ac673031a4d171cd4221b54554f9f6b1cb56b111e49f4539"
+    },
+    {
+      "occurrenceId": "word:95:4:1",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 4,
+      "position": 1,
+      "teachingId": "lesson:95:4:1",
+      "word": "لَقَدْ",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "لَقَدْ",
+          "meaning": "certainly",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:4:1) was checked as evidence."
+        },
+        {
+          "form": "قَدْ",
+          "meaning": "already / indeed",
+          "difference": "particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِنَّ",
+          "meaning": "indeed",
+          "difference": "emphasis particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "لَقَدْ",
+            "meaning": "certainly",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:4:1) was checked as evidence."
+          },
+          {
+            "form": "قَدْ",
+            "meaning": "already / indeed",
+            "difference": "particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "إِنَّ",
+            "meaning": "indeed",
+            "difference": "emphasis particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "لَقَدْ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "لَقَدْ",
+            "meaning": "certainly",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:4:1) was checked as evidence."
+          },
+          {
+            "form": "قَدْ",
+            "meaning": "already / indeed",
+            "difference": "particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "إِنَّ",
+            "meaning": "indeed",
+            "difference": "emphasis particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "لَقَدْ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "1729bc60e8a80f67d144aa58d4b6b1dafaeec7daa07f658f7da8cbaff13039e5",
+      "contentHash": "a8d4abec098e0edd664b617dfabcfbf52aa1e52d11d85f5b9496ecab2d13b748"
+    },
+    {
+      "occurrenceId": "word:95:4:4",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 4,
+      "position": 4,
+      "teachingId": "lesson:95:4:4",
+      "word": "فِىٓ",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "فِىٓ",
+          "meaning": "in",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:4:4) was checked as evidence."
+        },
+        {
+          "form": "فِي",
+          "meaning": "in",
+          "difference": "preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فِيهِ",
+          "meaning": "in it",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِلَىٰ",
+          "meaning": "to",
+          "difference": "preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "فِىٓ",
+            "meaning": "in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:4:4) was checked as evidence."
+          },
+          {
+            "form": "فِي",
+            "meaning": "in",
+            "difference": "preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فِيهِ",
+            "meaning": "in it",
+            "difference": "preposition with pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "إِلَىٰ",
+            "meaning": "to",
+            "difference": "preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فِىٓ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "فِىٓ",
+            "meaning": "in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:4:4) was checked as evidence."
+          },
+          {
+            "form": "فِي",
+            "meaning": "in",
+            "difference": "preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فِيهِ",
+            "meaning": "in it",
+            "difference": "preposition with pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "إِلَىٰ",
+            "meaning": "to",
+            "difference": "preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فِىٓ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "0a49b23a1e687f8e31dfa9d8b1ff3d8ed02566fbd9be045cea3ef531033ddbf7",
+      "contentHash": "e937173bc834675d7b66a19a56f10cf7f711dd240c82419bdabd2a87f0353f50"
+    },
+    {
+      "occurrenceId": "word:95:5:1",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 5,
+      "position": 1,
+      "teachingId": "lesson:95:5:1",
+      "word": "ثُمَّ",
+      "category": "article",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "ثُمَّ",
+          "meaning": "then",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:1) was checked as evidence."
+        },
+        {
+          "form": "إِذَا",
+          "meaning": "when",
+          "difference": "temporal particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "حَتَّى",
+          "meaning": "until",
+          "difference": "temporal particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "ثُمَّ",
+            "meaning": "then",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:1) was checked as evidence."
+          },
+          {
+            "form": "إِذَا",
+            "meaning": "when",
+            "difference": "temporal particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "حَتَّى",
+            "meaning": "until",
+            "difference": "temporal particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "ثُمَّ is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "ثُمَّ",
+            "meaning": "then",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:1) was checked as evidence."
+          },
+          {
+            "form": "إِذَا",
+            "meaning": "when",
+            "difference": "temporal particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "حَتَّى",
+            "meaning": "until",
+            "difference": "temporal particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "ثُمَّ is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "7da992df6daf5ac938e7d0f1caddcde6d83a63acddf78782b83d282a02240e03",
+      "contentHash": "4bbf845d55dd5eb92f5ffc91e66c99b7bf8798280c5141ee2e315ac39650c50f"
+    },
+    {
+      "occurrenceId": "word:95:5:3",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 5,
+      "position": 3,
+      "teachingId": "lesson:95:5:3",
+      "word": "أَسْفَلَ",
+      "category": "noun",
+      "root": "س ف ل",
+      "decision": "upgraded-to-full",
+      "candidatePool": 6,
+      "candidateEvidence": [
+        {
+          "form": "سَافِلٌ",
+          "meaning": "low or lowly",
+          "difference": "Masculine singular active participle/adjective; it contrasts with the current superlative/degree form and plural form.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:سفل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "number:singular",
+            "gender:masculine"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "سافل"
+        },
+        {
+          "form": "سَافِلَةٌ",
+          "meaning": "low or lowly (feminine)",
+          "difference": "Feminine singular active participle/adjective; the feminine ending provides a genuine gender contrast.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:سفل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "number:singular",
+            "gender:feminine"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "سافلة"
+        },
+        {
+          "form": "سُفْلَىٰ",
+          "meaning": "lower or lowest (feminine)",
+          "difference": "Feminine elative/adjective form; it expresses the lower or lowest degree rather than the active-participle meaning.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:سفل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:adjective",
+            "gender:feminine",
+            "derivation:elative"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "سفلى"
+        },
+        {
+          "form": "أَسْفَلِينَ",
+          "meaning": "the lowest ones",
+          "difference": "Masculine plural degree form; it contrasts with the current plural active participle سَافِلِينَ by showing the elative pattern.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:سفل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:adjective",
+            "number:plural",
+            "derivation:elative"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "أسفلين"
+        },
+        {
+          "form": "سَـٰفِلِينَ",
+          "meaning": "of the low",
+          "difference": "Compared with أَسْفَلَ, this form changes number: masculine singular → masculine plural; case: accusative → genitive; verbform: not marked → Form 1; pattern: not marked → Form 1.",
+          "sourceKind": "existing-reviewed-row",
+          "sourceOccurrence": "word:95:5:4",
+          "score": 146,
+          "featureSignal": [
+            "number",
+            "verbform",
+            "pattern",
+            "pos:noun/pronoun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "سفلين"
+        },
+        {
+          "form": "سَـٰفِلِينَ",
+          "meaning": "of the low",
+          "difference": "Compared with أَسْفَلَ, this form changes number: masculine singular → masculine plural; case: accusative → genitive; verbform: not marked → Form 1.",
+          "sourceKind": "existing-reviewed-row",
+          "sourceOccurrence": "lesson:95:5:3",
+          "score": 108,
+          "featureSignal": [
+            "Compared with أَسْفَلَ, this form changes number",
+            " verbform"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "سفلين"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "أَسْفَلَ",
+          "meaning": "lowest",
+          "difference": "Current Qur'anic occurrence; number: masculine singular; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the سفل lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:3) was checked as evidence."
+        },
+        {
+          "form": "سَـٰفِلِينَ",
+          "meaning": "of the low",
+          "difference": "Compared with أَسْفَلَ, this form changes number: masculine singular → masculine plural; case: accusative → genitive; verbform: not marked → Form 1; pattern: not marked → Form 1.",
+          "relationship": "Current Qur'anic occurrence of the سفل lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:4) was checked as evidence."
+        },
+        {
+          "form": "سَافِلٌ",
+          "meaning": "low or lowly",
+          "difference": "Masculine singular active participle/adjective; it contrasts with the current superlative/degree form and plural form.",
+          "relationship": "A genuine active participle/adjective of the س ف ل root.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for سَافِلٌ and standard Form I active-participle morphology."
+        },
+        {
+          "form": "سَافِلَةٌ",
+          "meaning": "low or lowly (feminine)",
+          "difference": "Feminine singular active participle/adjective; the feminine ending provides a genuine gender contrast.",
+          "relationship": "The feminine counterpart of سَافِلٌ in the س ف ل lexical family.",
+          "provenance": "Codex-authored after review of standard Arabic feminine formation for سَافِلٌ and the approved project root meaning."
+        },
+        {
+          "form": "سُفْلَىٰ",
+          "meaning": "lower or lowest (feminine)",
+          "difference": "Feminine elative/adjective form; it expresses the lower or lowest degree rather than the active-participle meaning.",
+          "relationship": "A genuine feminine degree form in the س ف ل family, attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for سُفْلَىٰ and the approved project root meaning."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "أَسْفَلَ",
+            "meaning": "lowest",
+            "difference": "Current Qur'anic occurrence; number: masculine singular; case: accusative.",
+            "relationship": "Current Qur'anic occurrence of the سفل lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:3) was checked as evidence."
+          },
+          {
+            "form": "يَسْفُلُ",
+            "meaning": "he is low",
+            "difference": "imperfect verb",
+            "relationship": "Existing project-reviewed relationship to the سفل family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أَسْفَلُ",
+            "meaning": "lower / lowest",
+            "difference": "comparative adjective",
+            "relationship": "Existing project-reviewed relationship to the سفل family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "سَـٰفِلِينَ",
+            "meaning": "of the low",
+            "difference": "Compared with أَسْفَلَ, this form changes number: masculine singular → masculine plural; case: accusative → genitive; verbform: not marked → Form 1.",
+            "relationship": "Related to the س ف ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:95:5:4.",
+            "provenance": "Codex-reviewed form for the س ف ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "أَسْفَلَ is a rootful noun with root س ف ل. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "أَسْفَلَ",
+            "meaning": "lowest",
+            "difference": "Current Qur'anic occurrence; number: masculine singular; case: accusative.",
+            "relationship": "Current Qur'anic occurrence of the سفل lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:3) was checked as evidence."
+          },
+          {
+            "form": "سَـٰفِلِينَ",
+            "meaning": "of the low",
+            "difference": "Compared with أَسْفَلَ, this form changes number: masculine singular → masculine plural; case: accusative → genitive; verbform: not marked → Form 1; pattern: not marked → Form 1.",
+            "relationship": "Current Qur'anic occurrence of the سفل lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:4) was checked as evidence."
+          },
+          {
+            "form": "سَافِلٌ",
+            "meaning": "low or lowly",
+            "difference": "Masculine singular active participle/adjective; it contrasts with the current superlative/degree form and plural form.",
+            "relationship": "A genuine active participle/adjective of the س ف ل root.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for سَافِلٌ and standard Form I active-participle morphology."
+          },
+          {
+            "form": "سَافِلَةٌ",
+            "meaning": "low or lowly (feminine)",
+            "difference": "Feminine singular active participle/adjective; the feminine ending provides a genuine gender contrast.",
+            "relationship": "The feminine counterpart of سَافِلٌ in the س ف ل lexical family.",
+            "provenance": "Codex-authored after review of standard Arabic feminine formation for سَافِلٌ and the approved project root meaning."
+          },
+          {
+            "form": "سُفْلَىٰ",
+            "meaning": "lower or lowest (feminine)",
+            "difference": "Feminine elative/adjective form; it expresses the lower or lowest degree rather than the active-participle meaning.",
+            "relationship": "A genuine feminine degree form in the س ف ل family, attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for سُفْلَىٰ and the approved project root meaning."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "98bc595700e3682faaac6c7d0aed2f262657a52aced46f4ce1ab233170863b92",
+      "contentHash": "f769f8561356a2c547dbbe49189810863d52ce031dc9d66bc5e4b2ffa6f751c9"
+    },
+    {
+      "occurrenceId": "word:95:5:4",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 5,
+      "position": 4,
+      "teachingId": "lesson:95:5:4",
+      "word": "سَـٰفِلِينَ",
+      "category": "noun",
+      "root": "س ف ل",
+      "decision": "upgraded-to-full",
+      "candidatePool": 7,
+      "candidateEvidence": [
+        {
+          "form": "سَافِلٌ",
+          "meaning": "low or lowly",
+          "difference": "Masculine singular active participle/adjective; it contrasts with the current superlative/degree form and plural form.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:سفل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "number:singular",
+            "gender:masculine"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "سافل"
+        },
+        {
+          "form": "سَافِلَةٌ",
+          "meaning": "low or lowly (feminine)",
+          "difference": "Feminine singular active participle/adjective; the feminine ending provides a genuine gender contrast.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:سفل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "number:singular",
+            "gender:feminine"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "سافلة"
+        },
+        {
+          "form": "سُفْلَىٰ",
+          "meaning": "lower or lowest (feminine)",
+          "difference": "Feminine elative/adjective form; it expresses the lower or lowest degree rather than the active-participle meaning.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:سفل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:adjective",
+            "gender:feminine",
+            "derivation:elative"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "سفلى"
+        },
+        {
+          "form": "أَسْفَلِينَ",
+          "meaning": "the lowest ones",
+          "difference": "Masculine plural degree form; it contrasts with the current plural active participle سَافِلِينَ by showing the elative pattern.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:سفل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:adjective",
+            "number:plural",
+            "derivation:elative"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "أسفلين"
+        },
+        {
+          "form": "أَسْفَلَ",
+          "meaning": "lowest",
+          "difference": "Compared with سَـٰفِلِينَ, this form changes number: masculine plural → masculine singular; case: genitive → accusative; verbform: Form 1 → not marked; pattern: Form 1 → not marked.",
+          "sourceKind": "existing-reviewed-row",
+          "sourceOccurrence": "word:95:5:3",
+          "score": 146,
+          "featureSignal": [
+            "number",
+            "verbform",
+            "pattern",
+            "pos:noun/pronoun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "اسفل"
+        },
+        {
+          "form": "أَسْفَلُ",
+          "meaning": "lower / lowest",
+          "difference": "comparative adjective",
+          "sourceKind": "existing-reviewed-row",
+          "sourceOccurrence": "lesson:95:5:4",
+          "score": 98,
+          "featureSignal": [],
+          "baseDistinct": true,
+          "lexicalKey": "اسفل"
+        },
+        {
+          "form": "أَسْفَلَ",
+          "meaning": "lowest",
+          "difference": "Compared with سَـٰفِلِينَ, this form changes number: masculine plural → masculine singular; case: genitive → accusative; verbform: Form 1 → not marked.",
+          "sourceKind": "existing-reviewed-row",
+          "sourceOccurrence": "lesson:95:5:4",
+          "score": 108,
+          "featureSignal": [
+            "Compared with سَـٰفِلِينَ, this form changes number",
+            " verbform"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "اسفل"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "سَـٰفِلِينَ",
+          "meaning": "of the low",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: genitive; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the سفل lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:4) was checked as evidence."
+        },
+        {
+          "form": "أَسْفَلَ",
+          "meaning": "lowest",
+          "difference": "Compared with سَـٰفِلِينَ, this form changes number: masculine plural → masculine singular; case: genitive → accusative; verbform: Form 1 → not marked; pattern: Form 1 → not marked.",
+          "relationship": "Current Qur'anic occurrence of the سفل lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:3) was checked as evidence."
+        },
+        {
+          "form": "سَافِلٌ",
+          "meaning": "low or lowly",
+          "difference": "Masculine singular active participle/adjective; it contrasts with the current superlative/degree form and plural form.",
+          "relationship": "A genuine active participle/adjective of the س ف ل root.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for سَافِلٌ and standard Form I active-participle morphology."
+        },
+        {
+          "form": "سَافِلَةٌ",
+          "meaning": "low or lowly (feminine)",
+          "difference": "Feminine singular active participle/adjective; the feminine ending provides a genuine gender contrast.",
+          "relationship": "The feminine counterpart of سَافِلٌ in the س ف ل lexical family.",
+          "provenance": "Codex-authored after review of standard Arabic feminine formation for سَافِلٌ and the approved project root meaning."
+        },
+        {
+          "form": "سُفْلَىٰ",
+          "meaning": "lower or lowest (feminine)",
+          "difference": "Feminine elative/adjective form; it expresses the lower or lowest degree rather than the active-participle meaning.",
+          "relationship": "A genuine feminine degree form in the س ف ل family, attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for سُفْلَىٰ and the approved project root meaning."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "سَـٰفِلِينَ",
+            "meaning": "of the low",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: genitive; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the سفل lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:4) was checked as evidence."
+          },
+          {
+            "form": "يَسْفُلُ",
+            "meaning": "he is low",
+            "difference": "imperfect verb",
+            "relationship": "Existing project-reviewed relationship to the سفل family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أَسْفَلُ",
+            "meaning": "lower / lowest",
+            "difference": "comparative adjective",
+            "relationship": "Existing project-reviewed relationship to the سفل family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أَسْفَلَ",
+            "meaning": "lowest",
+            "difference": "Compared with سَـٰفِلِينَ, this form changes number: masculine plural → masculine singular; case: genitive → accusative; verbform: Form 1 → not marked.",
+            "relationship": "Related to the س ف ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:95:5:3.",
+            "provenance": "Codex-reviewed form for the س ف ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "سَـٰفِلِينَ is a rootful noun with root س ف ل. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "سَـٰفِلِينَ",
+            "meaning": "of the low",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: genitive; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the سفل lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:4) was checked as evidence."
+          },
+          {
+            "form": "أَسْفَلَ",
+            "meaning": "lowest",
+            "difference": "Compared with سَـٰفِلِينَ, this form changes number: masculine plural → masculine singular; case: genitive → accusative; verbform: Form 1 → not marked; pattern: Form 1 → not marked.",
+            "relationship": "Current Qur'anic occurrence of the سفل lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:5:3) was checked as evidence."
+          },
+          {
+            "form": "سَافِلٌ",
+            "meaning": "low or lowly",
+            "difference": "Masculine singular active participle/adjective; it contrasts with the current superlative/degree form and plural form.",
+            "relationship": "A genuine active participle/adjective of the س ف ل root.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for سَافِلٌ and standard Form I active-participle morphology."
+          },
+          {
+            "form": "سَافِلَةٌ",
+            "meaning": "low or lowly (feminine)",
+            "difference": "Feminine singular active participle/adjective; the feminine ending provides a genuine gender contrast.",
+            "relationship": "The feminine counterpart of سَافِلٌ in the س ف ل lexical family.",
+            "provenance": "Codex-authored after review of standard Arabic feminine formation for سَافِلٌ and the approved project root meaning."
+          },
+          {
+            "form": "سُفْلَىٰ",
+            "meaning": "lower or lowest (feminine)",
+            "difference": "Feminine elative/adjective form; it expresses the lower or lowest degree rather than the active-participle meaning.",
+            "relationship": "A genuine feminine degree form in the س ف ل family, attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus evidence for سُفْلَىٰ and the approved project root meaning."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "6d3456c609591c281d2d3ca6f4fd5ac05592eeb8de8eaa482b0b460208bd7dd5",
+      "contentHash": "89756972ecb0e826da42af8a759f2131a831a16630c0d34bacc8c62f1e0fb63c"
+    },
+    {
+      "occurrenceId": "word:95:6:1",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 6,
+      "position": 1,
+      "teachingId": "lesson:95:6:1",
+      "word": "إِلَّا",
+      "category": "article",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "إِلَّا",
+          "meaning": "except",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:1) was checked as evidence."
+        },
+        {
+          "form": "غَيْرُ",
+          "meaning": "other than",
+          "difference": "exception noun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "سِوَىٰ",
+          "meaning": "other than",
+          "difference": "exception word",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "إِلَّا",
+            "meaning": "except",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:1) was checked as evidence."
+          },
+          {
+            "form": "غَيْرُ",
+            "meaning": "other than",
+            "difference": "exception noun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "سِوَىٰ",
+            "meaning": "other than",
+            "difference": "exception word",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "إِلَّا is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "إِلَّا",
+            "meaning": "except",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:1) was checked as evidence."
+          },
+          {
+            "form": "غَيْرُ",
+            "meaning": "other than",
+            "difference": "exception noun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "سِوَىٰ",
+            "meaning": "other than",
+            "difference": "exception word",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "إِلَّا is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "575e4ba3ff8bbd438647ad5793fa5e295e6e8400e772f531055be01859c7a6b3",
+      "contentHash": "c9538f6dfadc65e5f725dc507a8217c40b9b03a66735a225fab41e047c539582"
+    },
+    {
+      "occurrenceId": "word:95:6:2",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 6,
+      "position": 2,
+      "teachingId": "lesson:95:6:2",
+      "word": "ٱلَّذِينَ",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "ٱلَّذِينَ",
+          "meaning": "those who",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun; number: masculine plural.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:2) was checked as evidence."
+        },
+        {
+          "form": "ٱلَّذِي",
+          "meaning": "the one who",
+          "difference": "masculine relative pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّتِي",
+          "meaning": "the one who",
+          "difference": "feminine relative pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun; number: masculine plural.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:2) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "masculine relative pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine relative pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "ٱلَّذِينَ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun; number: masculine plural.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:2) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "masculine relative pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine relative pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "ٱلَّذِينَ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "1db5e49374a8ae70ac07465186b89d3db9820e14e60856f794083bf5c852c425",
+      "contentHash": "af898a249892405bee0a93923ccac3ed213eda975da5c56ae15c212b3056ca2e"
+    },
+    {
+      "occurrenceId": "word:95:6:6",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 6,
+      "position": 6,
+      "teachingId": "lesson:95:6:6",
+      "word": "فَلَهُمْ",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "فَلَهُمْ",
+          "meaning": "so for them",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:6. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:6) was checked as evidence."
+        },
+        {
+          "form": "لَهُمْ",
+          "meaning": "for them",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "لَهُ",
+          "meaning": "for him",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "عَلَيْهِمْ",
+          "meaning": "upon them",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "فَلَهُمْ",
+            "meaning": "so for them",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:6. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:6) was checked as evidence."
+          },
+          {
+            "form": "لَهُمْ",
+            "meaning": "for them",
+            "difference": "preposition with pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "لَهُ",
+            "meaning": "for him",
+            "difference": "preposition with pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "عَلَيْهِمْ",
+            "meaning": "upon them",
+            "difference": "preposition with pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فَلَهُمْ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "فَلَهُمْ",
+            "meaning": "so for them",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:6. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:6) was checked as evidence."
+          },
+          {
+            "form": "لَهُمْ",
+            "meaning": "for them",
+            "difference": "preposition with pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "لَهُ",
+            "meaning": "for him",
+            "difference": "preposition with pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "عَلَيْهِمْ",
+            "meaning": "upon them",
+            "difference": "preposition with pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فَلَهُمْ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "3ba48c6b4091642d069a3f34b0a0f9403062931606f75445ad37ef3fd9ccf4f1",
+      "contentHash": "9200d6cee59b3d7ab410760c1dfe3793b15eec8d01d8033e0ac95d85619ada40"
+    },
+    {
+      "occurrenceId": "word:95:6:8",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 6,
+      "position": 8,
+      "teachingId": "lesson:95:6:8",
+      "word": "غَيْرُ",
+      "category": "noun",
+      "root": "غ ي ر",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "أَغَارَ",
+          "meaning": "he raided or attacked",
+          "difference": "Form IV perfect; it states a completed raid or attack, contrasting with the current feminine plural active participle.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:غير",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-4",
+            "tense:perfect",
+            "partofspeech:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "اغار"
+        },
+        {
+          "form": "يُغِيرُ",
+          "meaning": "he raids or attacks",
+          "difference": "Form IV imperfect, third-person masculine singular; it presents raiding as ongoing or expected.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:غير",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-4",
+            "tense:imperfect",
+            "person:third-person"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يغير"
+        },
+        {
+          "form": "إِغَارَةٌ",
+          "meaning": "a raid or attack",
+          "difference": "Form IV verbal noun; it names the raid as an event rather than describing the raiders.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:غير",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-4",
+            "partofspeech:verbal-noun",
+            "derivation:action-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "اغارة"
+        },
+        {
+          "form": "مُغِيرٌ",
+          "meaning": "a raider or attacker",
+          "difference": "Form IV active participle; it names one who performs the raid, contrasting with the current feminine plural form.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:غير",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-4",
+            "partofspeech:active-participle",
+            "number:singular"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "مغير"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "غَيْرُ",
+          "meaning": "without",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the غير lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:8) was checked as evidence."
+        },
+        {
+          "form": "أَغَارَ",
+          "meaning": "he raided or attacked",
+          "difference": "Form IV perfect; it states a completed raid or attack, contrasting with the current feminine plural active participle.",
+          "relationship": "Form IV perfect of the غ ي ر root in the raid/attack family behind مُغِيرَاتٍ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus غ ي ر evidence and Arabic Academy evidence defining أَغَارَ عَلَى القوم as attacking them."
+        },
+        {
+          "form": "يُغِيرُ",
+          "meaning": "he raids or attacks",
+          "difference": "Form IV imperfect, third-person masculine singular; it presents raiding as ongoing or expected.",
+          "relationship": "Form IV imperfect of the غ ي ر root, the ongoing counterpart of أَغَارَ.",
+          "provenance": "Codex-authored after review of the Arabic Academy غ ي ر evidence and standard Form IV imperfect morphology."
+        },
+        {
+          "form": "إِغَارَةٌ",
+          "meaning": "a raid or attack",
+          "difference": "Form IV verbal noun; it names the raid as an event rather than describing the raiders.",
+          "relationship": "The genuine Form IV verbal noun of أَغَارَ in the غ ي ر raid/attack family.",
+          "provenance": "Codex-authored after review of the Arabic Academy entry for أَغَارَ and standard Form IV verbal-noun morphology."
+        },
+        {
+          "form": "مُغِيرٌ",
+          "meaning": "a raider or attacker",
+          "difference": "Form IV active participle; it names one who performs the raid, contrasting with the current feminine plural form.",
+          "relationship": "A genuine Form IV active participle of أَغَارَ, the singular counterpart of مُغِيرَاتٍ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus occurrence and Arabic Academy evidence for مُغِيرٌ."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "غَيْرُ",
+            "meaning": "without",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the غير lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:8) was checked as evidence."
+          },
+          {
+            "form": "تَغْيِيرٌ",
+            "meaning": "changing",
+            "difference": "verbal noun",
+            "relationship": "Existing project-reviewed relationship to the غير family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَٱلْمُغِيرَٰتِ",
+            "meaning": "the chargers",
+            "difference": "Compared with غَيْرُ, this form changes gender: masculine → not marked; case: nominative → genitive; number: not marked → feminine plural.",
+            "relationship": "Related to the غ ي ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:100:3:1.",
+            "provenance": "Codex-reviewed form for the غ ي ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "غَيْرُ is a rootful noun with root غ ي ر. The audit found 7 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "غَيْرُ",
+            "meaning": "without",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the غير lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:6:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:6:8) was checked as evidence."
+          },
+          {
+            "form": "أَغَارَ",
+            "meaning": "he raided or attacked",
+            "difference": "Form IV perfect; it states a completed raid or attack, contrasting with the current feminine plural active participle.",
+            "relationship": "Form IV perfect of the غ ي ر root in the raid/attack family behind مُغِيرَاتٍ.",
+            "provenance": "Codex-authored after review of the Quranic Arabic Corpus غ ي ر evidence and Arabic Academy evidence defining أَغَارَ عَلَى القوم as attacking them."
+          },
+          {
+            "form": "يُغِيرُ",
+            "meaning": "he raids or attacks",
+            "difference": "Form IV imperfect, third-person masculine singular; it presents raiding as ongoing or expected.",
+            "relationship": "Form IV imperfect of the غ ي ر root, the ongoing counterpart of أَغَارَ.",
+            "provenance": "Codex-authored after review of the Arabic Academy غ ي ر evidence and standard Form IV imperfect morphology."
+          },
+          {
+            "form": "إِغَارَةٌ",
+            "meaning": "a raid or attack",
+            "difference": "Form IV verbal noun; it names the raid as an event rather than describing the raiders.",
+            "relationship": "The genuine Form IV verbal noun of أَغَارَ in the غ ي ر raid/attack family.",
+            "provenance": "Codex-authored after review of the Arabic Academy entry for أَغَارَ and standard Form IV verbal-noun morphology."
+          },
+          {
+            "form": "مُغِيرٌ",
+            "meaning": "a raider or attacker",
+            "difference": "Form IV active participle; it names one who performs the raid, contrasting with the current feminine plural form.",
+            "relationship": "A genuine Form IV active participle of أَغَارَ, the singular counterpart of مُغِيرَاتٍ.",
+            "provenance": "Codex-authored after review of the Quranic Arabic Corpus occurrence and Arabic Academy evidence for مُغِيرٌ."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "90985320d986d955480806cbc834f180968409ce4731e562908d85d98e08264f",
+      "contentHash": "e33fe34e137deb968ef34669db466623322da8343b26ca87dbbe9068eb94a4ed"
+    },
+    {
+      "occurrenceId": "word:95:7:1",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 7,
+      "position": 1,
+      "teachingId": "lesson:95:7:1",
+      "word": "فَمَا",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "فَمَا",
+          "meaning": "so what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:7:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:7:1) was checked as evidence."
+        },
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "interrogative",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَمَا",
+          "meaning": "and what",
+          "difference": "connector plus interrogative",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فَمَا",
+            "meaning": "so what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:7:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:7:1) was checked as evidence."
+          },
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "interrogative",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "وَمَا",
+            "meaning": "and what",
+            "difference": "connector plus interrogative",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فَمَا is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فَمَا",
+            "meaning": "so what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:7:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:7:1) was checked as evidence."
+          },
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "interrogative",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "وَمَا",
+            "meaning": "and what",
+            "difference": "connector plus interrogative",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فَمَا is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "95eed534ff950e447083c7a28e654e6baf00667cdbc8ab25a8bc7677a36fa751",
+      "contentHash": "6b326209a3370d8e51b83e040b3c6c8f2fc0e93ca90a65ed31cebfb9d26f1767"
+    },
+    {
+      "occurrenceId": "word:95:8:2",
+      "packageId": "surah:95",
+      "surah": 95,
+      "ayah": 8,
+      "position": 2,
+      "teachingId": "lesson:95:8:2",
+      "word": "ٱللَّهُ",
+      "category": "proper noun",
+      "root": "أ ل ه",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "ٱللَّهُ",
+          "meaning": "Allah",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the أله lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:95:8:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:8:2) was checked as evidence."
+        },
+        {
+          "form": "إِلَٰهٌ",
+          "meaning": "a deity",
+          "difference": "noun",
+          "relationship": "Existing project-reviewed relationship to the أله family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "آلِهَةٌ",
+          "meaning": "deities",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the أله family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تَأَلَّهَ",
+          "meaning": "he worshipped",
+          "difference": "Form V verb",
+          "relationship": "Existing project-reviewed relationship to the أله family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "ٱللَّهُ",
+            "meaning": "Allah",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the أله lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:8:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:8:2) was checked as evidence."
+          },
+          {
+            "form": "إِلَٰهٌ",
+            "meaning": "a deity",
+            "difference": "noun",
+            "relationship": "Existing project-reviewed relationship to the أله family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "آلِهَةٌ",
+            "meaning": "deities",
+            "difference": "broken plural",
+            "relationship": "Existing project-reviewed relationship to the أله family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "تَأَلَّهَ",
+            "meaning": "he worshipped",
+            "difference": "Form V verb",
+            "relationship": "Existing project-reviewed relationship to the أله family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "ٱللَّهُ is a proper noun associated with أله; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "ٱللَّهُ",
+            "meaning": "Allah",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the أله lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:95:8:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (95:8:2) was checked as evidence."
+          },
+          {
+            "form": "إِلَٰهٌ",
+            "meaning": "a deity",
+            "difference": "noun",
+            "relationship": "Existing project-reviewed relationship to the أله family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "آلِهَةٌ",
+            "meaning": "deities",
+            "difference": "broken plural",
+            "relationship": "Existing project-reviewed relationship to the أله family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "تَأَلَّهَ",
+            "meaning": "he worshipped",
+            "difference": "Form V verb",
+            "relationship": "Existing project-reviewed relationship to the أله family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "ٱللَّهُ is a proper noun associated with أله; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "9138f70a5c6344b560c6ffb3f1be7ff7d1d081ce512b57b152e12c1a00a5ce87",
+      "contentHash": "5a7343f18b07259917043aaedbe119b773dbd57cbdcd6df198a78fd1fd7f9559"
+    }
+  ]
+}

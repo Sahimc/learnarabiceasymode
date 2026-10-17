@@ -3422,6 +3422,168 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "زابن",
       },
     ],
+    ["زيت"]: [
+      {
+        form: "زَيْتٌ",
+        meaning: "oil",
+        difference:
+          "Basic mass noun; it names oil, contrasting with the current collective noun for the olive tree or olives.",
+        relationship:
+          "A genuine noun of the ز ي ت family, attested in Qur'anic usage for oil.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus evidence for the ز ي ت family and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "derivation:base-form", "meaning:oil"],
+        baseDistinct: true,
+        lexicalKey: "زيت",
+      },
+      {
+        form: "زَيْتُونَةٌ",
+        meaning: "an olive",
+        difference:
+          "Feminine singular noun; it names one olive, contrasting with the current collective/uncountable form.",
+        relationship:
+          "The feminine singular noun in the ز ي ت family, listed among the established related Qur'anic forms.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus evidence for زَيْتُونَةٌ and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "gender:feminine", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "زيتونة",
+      },
+      {
+        form: "زَيْتُونَاتٌ",
+        meaning: "olives",
+        difference:
+          "Sound feminine plural; it shows the countable plural of زَيْتُونَةٌ rather than the current collective form.",
+        relationship:
+          "A genuine plural of زَيْتُونَةٌ within the ز ي ت lexical family.",
+        provenance:
+          "Codex-authored after review of standard Arabic plural formation for زَيْتُونَةٌ and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "gender:feminine", "number:plural"],
+        baseDistinct: true,
+        lexicalKey: "زيتونات",
+      },
+      {
+        form: "زَيَّتَ",
+        meaning: "he oiled",
+        difference:
+          "Form II perfect; the doubled middle radical marks the action of applying or supplying oil, contrasting with the noun forms.",
+        relationship:
+          "A genuine Form II verb of the ز ي ت root in the oil family.",
+        provenance:
+          "Codex-authored after review of standard Arabic Form II morphology, approved lexical evidence and the project root meaning.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "زيت",
+      },
+    ],
+    ["بلد"]: [
+      {
+        form: "بَلَدٌ",
+        meaning: "a city or land",
+        difference:
+          "Indefinite masculine singular; it shows the unmarked singular behind the current definite genitive form.",
+        relationship:
+          "The basic masculine singular noun of the ب ل د family, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus evidence for بَلَدٌ and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "number:singular", "state:indefinite"],
+        baseDistinct: true,
+        lexicalKey: "بلد",
+      },
+      {
+        form: "بَلْدَةٌ",
+        meaning: "a town or locality",
+        difference:
+          "Feminine singular noun; the feminine ending marks a related locality noun distinct from the masculine singular.",
+        relationship:
+          "A genuine feminine noun in the ب ل د family, attested in Qur'anic usage.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus evidence for بَلْدَةٌ and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "gender:feminine", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "بلدة",
+      },
+      {
+        form: "بِلَادٌ",
+        meaning: "lands or countries",
+        difference:
+          "Broken plural; it changes the singular noun into the established plural form used for multiple lands or countries.",
+        relationship:
+          "A genuine broken plural of بَلَدٌ in the ب ل د family, attested in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus evidence for بِلَادٌ and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "بلاد",
+      },
+      {
+        form: "بَلَدَانِ",
+        meaning: "two cities or lands",
+        difference:
+          "Dual noun; it marks exactly two cities or lands, giving a clear number contrast with the singular and plural forms.",
+        relationship:
+          "A regular dual of بَلَدٌ within the ب ل د lexical family.",
+        provenance:
+          "Codex-authored after review of standard Arabic dual formation for بَلَدٌ and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "number:dual"],
+        baseDistinct: true,
+        lexicalKey: "بلدان",
+      },
+    ],
+    ["سفل"]: [
+      {
+        form: "سَافِلٌ",
+        meaning: "low or lowly",
+        difference:
+          "Masculine singular active participle/adjective; it contrasts with the current superlative/degree form and plural form.",
+        relationship:
+          "A genuine active participle/adjective of the س ف ل root.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus evidence for سَافِلٌ and standard Form I active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "number:singular", "gender:masculine"],
+        baseDistinct: true,
+        lexicalKey: "سافل",
+      },
+      {
+        form: "سَافِلَةٌ",
+        meaning: "low or lowly (feminine)",
+        difference:
+          "Feminine singular active participle/adjective; the feminine ending provides a genuine gender contrast.",
+        relationship:
+          "The feminine counterpart of سَافِلٌ in the س ف ل lexical family.",
+        provenance:
+          "Codex-authored after review of standard Arabic feminine formation for سَافِلٌ and the approved project root meaning.",
+        featureSignal: ["partofspeech:active-participle", "number:singular", "gender:feminine"],
+        baseDistinct: true,
+        lexicalKey: "سافلة",
+      },
+      {
+        form: "سُفْلَىٰ",
+        meaning: "lower or lowest (feminine)",
+        difference:
+          "Feminine elative/adjective form; it expresses the lower or lowest degree rather than the active-participle meaning.",
+        relationship:
+          "A genuine feminine degree form in the س ف ل family, attested in Qur'anic usage.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus evidence for سُفْلَىٰ and the approved project root meaning.",
+        featureSignal: ["partofspeech:adjective", "gender:feminine", "derivation:elative"],
+        baseDistinct: true,
+        lexicalKey: "سفلى",
+      },
+      {
+        form: "أَسْفَلِينَ",
+        meaning: "the lowest ones",
+        difference:
+          "Masculine plural degree form; it contrasts with the current plural active participle سَافِلِينَ by showing the elative pattern.",
+        relationship:
+          "A genuine plural degree form of أَسْفَل in the س ف ل family, attested in Qur'anic usage.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences of الْأَسْفَلِينَ and the approved project root meaning.",
+        featureSignal: ["partofspeech:adjective", "number:plural", "derivation:elative"],
+        baseDistinct: true,
+        lexicalKey: "أسفلين",
+      },
+    ],
     ["مسد"]: [
       {
         form: "مَسَدَ",
@@ -3843,13 +4005,13 @@ function limitedReason(
     if (category === "proper noun")
       return `${word} is a proper noun${root ? ` associated with ${root}` : ""}; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains ${forms.length} genuine reviewed form${forms.length === 1 ? "" : "s"}.`;
     if (REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root))
-      return `${word} is a reviewed restricted lexical item in the ${root} family. Canonical and lexicon evidence support the time-adverb lexeme, but do not provide four additional learner-useful lexical Ṣarf contrasts; case-only or annotation-only variants would be padding. The family retains ${forms.length} genuine reviewed form${forms.length === 1 ? "" : "s"}.`;
+      return `${word} is a reviewed restricted lexical item in the ${root} family. Canonical and approved lexical evidence support this lexeme, but do not provide four additional learner-useful lexical Ṣarf contrasts; case-only, annotation-only or fabricated variants would be padding. The family retains ${forms.length} genuine reviewed form${forms.length === 1 ? "" : "s"}.`;
     return `${word} is a rootless ${category} rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains ${forms.length} genuine reviewed form${forms.length === 1 ? "" : "s"}.`;
   }
   return `${word} is a rootful ${category} with root ${occurrence.lesson.root}. The audit found ${candidateCount} safe related form${candidateCount === 1 ? "" : "s"}, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.`;
 }
 
-const REVIEWED_RESTRICTED_LEXICAL_ROOTS = new Set(["أبد"]);
+const REVIEWED_RESTRICTED_LEXICAL_ROOTS = new Set(["أبد", "تين"]);
 
 async function packageFiles() {
   const entries = await fs.readdir(packagesRoot, { withFileTypes: true });
@@ -3972,6 +4134,7 @@ for (const occurrence of limited) {
   const existingForms: LessonForm[] = [];
   const seen = new Set([normalized(rebuiltCurrent.form)]);
   for (const row of oldSafeRows) {
+    if (REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root)) continue;
     if (normalized(row.form) === normalized(rebuiltCurrent.form)) continue;
     if (inflectionalKey(row.form) === inflectionalKey(rebuiltCurrent.form)) continue;
     if (isKnownWrongRootForm(root, row.form)) continue;
@@ -3985,7 +4148,7 @@ for (const occurrence of limited) {
   }
 
   const candidatePool: Candidate[] = [];
-  if (root) {
+  if (root && !REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root)) {
     candidatePool.push(...curatedCandidates(root).filter((candidate) => safeForm(candidate, root)));
     for (const source of occurrencesByRoot.get(root) ?? []) {
       if (source.word.id === occurrence.word.id) continue;
