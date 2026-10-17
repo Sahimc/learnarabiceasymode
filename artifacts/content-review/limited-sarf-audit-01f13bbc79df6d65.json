@@ -1,0 +1,1101 @@
+{
+  "auditBatchId": "limited-sarf-audit-01f13bbc79df6d65",
+  "contractId": "quranic-word-tree-authoring",
+  "contractVersion": "1.3.1",
+  "reviewedAt": "2026-10-17T12:35:26.842Z",
+  "mode": "dry-run",
+  "scope": {
+    "authoredPackages": 1,
+    "limitedOccurrences": 7,
+    "distinctLimitedTeachingEntries": 7
+  },
+  "before": {
+    "limitedOccurrences": 7,
+    "limitedTeachingEntries": 7,
+    "forms": {
+      "3": 4,
+      "4": 3
+    }
+  },
+  "decisions": {
+    "confirmedLimited": 4,
+    "upgradedToFull": 3,
+    "blocked": 0
+  },
+  "after": {
+    "confirmedLimited": 4,
+    "upgradedToFull": 3,
+    "blocked": 0,
+    "fullFamiliesAfter": 3
+  },
+  "byCategory": {
+    "preposition": {
+      "before": 3,
+      "confirmedLimited": 3,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "noun": {
+      "before": 2,
+      "confirmedLimited": 0,
+      "upgradedToFull": 2,
+      "blocked": 0
+    },
+    "pronoun": {
+      "before": 1,
+      "confirmedLimited": 1,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "verb": {
+      "before": 1,
+      "confirmedLimited": 0,
+      "upgradedToFull": 1,
+      "blocked": 0
+    }
+  },
+  "byReason": {
+    "rootless:preposition": 3,
+    "rootless:pronoun": 1
+  },
+  "packageChanges": [
+    {
+      "packageId": "surah:114",
+      "surah": 114,
+      "statusAfter": "custom-partial",
+      "demotedFromCustomComplete": false
+    }
+  ],
+  "items": [
+    {
+      "occurrenceId": "word:114:4:1",
+      "packageId": "surah:114",
+      "surah": 114,
+      "ayah": 4,
+      "position": 1,
+      "teachingId": "lesson:114:4:1",
+      "word": "مِن",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مِن",
+          "meaning": "from",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:114:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:4:1) was checked as evidence."
+        },
+        {
+          "form": "مِنْ",
+          "meaning": "from",
+          "difference": "base preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مِنَ",
+          "meaning": "from among",
+          "difference": "vowel before the next word",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مِنْهُ",
+          "meaning": "from him / it",
+          "difference": "attached pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "مِن",
+            "meaning": "from",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:4:1) was checked as evidence."
+          },
+          {
+            "form": "مِنْ",
+            "meaning": "from",
+            "difference": "base preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "مِنَ",
+            "meaning": "from among",
+            "difference": "vowel before the next word",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "مِنْهُ",
+            "meaning": "from him / it",
+            "difference": "attached pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مِن is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "مِن",
+            "meaning": "from",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:4:1) was checked as evidence."
+          },
+          {
+            "form": "مِنْ",
+            "meaning": "from",
+            "difference": "base preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "مِنَ",
+            "meaning": "from among",
+            "difference": "vowel before the next word",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "مِنْهُ",
+            "meaning": "from him / it",
+            "difference": "attached pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مِن is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "19540bf0c1329160c4ccb5679ef288472530cad48ba46579de2e45265825f0fe",
+      "contentHash": "4900fe48cd7bb1b81704d9e30b6989cd644ec1c58ece04d5c305d93b5d24a3d7"
+    },
+    {
+      "occurrenceId": "word:114:4:3",
+      "packageId": "surah:114",
+      "surah": 114,
+      "ayah": 4,
+      "position": 3,
+      "teachingId": "lesson:waswas",
+      "word": "ٱلْوَسْوَاسِ",
+      "category": "noun",
+      "root": "و س و س",
+      "decision": "upgraded-to-full",
+      "candidatePool": 6,
+      "candidateEvidence": [
+        {
+          "form": "وَسْوَسَ",
+          "meaning": "he whispered",
+          "difference": "Form I perfect of the quadriliteral root; it describes a completed act of whispering or prompting inwardly.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:وسوس",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:perfect",
+            "partofspeech:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "وسوس"
+        },
+        {
+          "form": "يُوَسْوِسُ",
+          "meaning": "he whispers",
+          "difference": "Form I imperfect, third-person masculine singular; the imperfect prefix marks an ongoing or repeated whispering action.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:وسوس",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:imperfect",
+            "person:third-person"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يوسوس"
+        },
+        {
+          "form": "وَسْوَسَةٌ",
+          "meaning": "whispering or inward prompting",
+          "difference": "Verbal noun; it names the act or process of whispering rather than expressing it as a finite verb.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:وسوس",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verbal-noun",
+            "derivation:action-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "وسوسة"
+        },
+        {
+          "form": "مُوَسْوِسٌ",
+          "meaning": "a whisperer or one who whispers",
+          "difference": "Active participle; it describes the agent characterized by performing the whispering action.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:وسوس",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "derivation:agent"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "موسوس"
+        },
+        {
+          "form": "يُوَسْوِسُ",
+          "meaning": "he whispers",
+          "difference": "Compared with ٱلْوَسْوَاسِ, this form changes number: masculine singular → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb; tense: not marked → imperfect verb.",
+          "sourceKind": "existing-reviewed-row",
+          "sourceOccurrence": "word:114:5:2",
+          "score": 182,
+          "featureSignal": [
+            "number",
+            "partofspeech",
+            "tense",
+            "person",
+            "verbform",
+            "pattern",
+            "pos:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يوسوس"
+        },
+        {
+          "form": "ٱلْوَسْوَاس",
+          "meaning": "the whisperer",
+          "difference": "definite form",
+          "sourceKind": "existing-reviewed-row",
+          "sourceOccurrence": "lesson:waswas",
+          "score": 78,
+          "featureSignal": [],
+          "baseDistinct": false,
+          "lexicalKey": "وسواس"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "ٱلْوَسْوَاسِ",
+          "meaning": "the whisperer",
+          "difference": "Current Qur'anic occurrence; number: masculine singular; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the وسوس lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:114:4:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:4:3) was checked as evidence."
+        },
+        {
+          "form": "يُوَسْوِسُ",
+          "meaning": "he whispers",
+          "difference": "Compared with ٱلْوَسْوَاسِ, this form changes number: masculine singular → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb; tense: not marked → imperfect verb.",
+          "relationship": "Current Qur'anic occurrence of the وسوس lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:114:5:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:5:2) was checked as evidence."
+        },
+        {
+          "form": "وَسْوَسَ",
+          "meaning": "he whispered",
+          "difference": "Form I perfect of the quadriliteral root; it describes a completed act of whispering or prompting inwardly.",
+          "relationship": "Form I perfect of the و س و س root; the finite verb names the completed whispering action.",
+          "provenance": "Codex-authored after review of the approved project root meaning, canonical Qur'anic occurrences of و س و س and standard Arabic quadriliteral morphology."
+        },
+        {
+          "form": "وَسْوَسَةٌ",
+          "meaning": "whispering or inward prompting",
+          "difference": "Verbal noun; it names the act or process of whispering rather than expressing it as a finite verb.",
+          "relationship": "A genuine verbal noun of the و س و س root, expressing the whispering action as a noun.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic quadriliteral verbal-noun morphology."
+        },
+        {
+          "form": "مُوَسْوِسٌ",
+          "meaning": "a whisperer or one who whispers",
+          "difference": "Active participle; it describes the agent characterized by performing the whispering action.",
+          "relationship": "A genuine active-participle form of the و س و س root, related to the agent noun ٱلْوَسْوَاسِ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic quadriliteral active-participle morphology."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "ٱلْوَسْوَاسِ",
+            "meaning": "the whisperer",
+            "difference": "Current Qur'anic occurrence; number: masculine singular; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the وسوس lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:4:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:4:3) was checked as evidence."
+          },
+          {
+            "form": "وَسْوَاسَة",
+            "meaning": "whispering",
+            "difference": "action noun",
+            "relationship": "Existing project-reviewed relationship to the وسوس family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلْوَسْوَاس",
+            "meaning": "the whisperer",
+            "difference": "definite form",
+            "relationship": "Existing project-reviewed relationship to the وسوس family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "ٱلْوَسْوَاسِ is a rootful noun with root و س و س. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱلْوَسْوَاسِ",
+            "meaning": "the whisperer",
+            "difference": "Current Qur'anic occurrence; number: masculine singular; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the وسوس lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:4:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:4:3) was checked as evidence."
+          },
+          {
+            "form": "يُوَسْوِسُ",
+            "meaning": "he whispers",
+            "difference": "Compared with ٱلْوَسْوَاسِ, this form changes number: masculine singular → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb; tense: not marked → imperfect verb.",
+            "relationship": "Current Qur'anic occurrence of the وسوس lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:5:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:5:2) was checked as evidence."
+          },
+          {
+            "form": "وَسْوَسَ",
+            "meaning": "he whispered",
+            "difference": "Form I perfect of the quadriliteral root; it describes a completed act of whispering or prompting inwardly.",
+            "relationship": "Form I perfect of the و س و س root; the finite verb names the completed whispering action.",
+            "provenance": "Codex-authored after review of the approved project root meaning, canonical Qur'anic occurrences of و س و س and standard Arabic quadriliteral morphology."
+          },
+          {
+            "form": "وَسْوَسَةٌ",
+            "meaning": "whispering or inward prompting",
+            "difference": "Verbal noun; it names the act or process of whispering rather than expressing it as a finite verb.",
+            "relationship": "A genuine verbal noun of the و س و س root, expressing the whispering action as a noun.",
+            "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic quadriliteral verbal-noun morphology."
+          },
+          {
+            "form": "مُوَسْوِسٌ",
+            "meaning": "a whisperer or one who whispers",
+            "difference": "Active participle; it describes the agent characterized by performing the whispering action.",
+            "relationship": "A genuine active-participle form of the و س و س root, related to the agent noun ٱلْوَسْوَاسِ.",
+            "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic quadriliteral active-participle morphology."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "948c09452f28240410094f9174d5f63c64d51b5d5a9e114dd2022cba99a67bd2",
+      "contentHash": "00a3a6212a60dace49e5f18eaeca42bb321c226952de8685cb3c853d1ce62237"
+    },
+    {
+      "occurrenceId": "word:114:4:4",
+      "packageId": "surah:114",
+      "surah": 114,
+      "ayah": 4,
+      "position": 4,
+      "teachingId": "lesson:khannas",
+      "word": "ٱلْخَنَّاسِ",
+      "category": "noun",
+      "root": "خ ن س",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "خَنَسَ",
+          "meaning": "he withdrew or retreated",
+          "difference": "Form I perfect; it expresses a completed withdrawal or retreat.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:خنس",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:perfect",
+            "partofspeech:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "خنس"
+        },
+        {
+          "form": "يَخْنِسُ",
+          "meaning": "he withdraws or retreats",
+          "difference": "Form I imperfect, third-person masculine singular; the imperfect form describes an ongoing or repeated retreat.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:خنس",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:imperfect",
+            "person:third-person"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يخنس"
+        },
+        {
+          "form": "خُنُوسٌ",
+          "meaning": "withdrawal or retreat",
+          "difference": "Verbal noun; it names the act or state of withdrawing rather than expressing it as a finite verb.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:خنس",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verbal-noun",
+            "derivation:action-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "خنوس"
+        },
+        {
+          "form": "خَنَّسَ",
+          "meaning": "he caused to withdraw",
+          "difference": "Form II perfect; the doubled middle radical marks a causative/intensive derived action of making something retreat.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:خنس",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-2",
+            "tense:perfect",
+            "voice:causative"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "خنس"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "ٱلْخَنَّاسِ",
+          "meaning": "the retreating one",
+          "difference": "Current Qur'anic occurrence; number: masculine singular; case: genitive; partOfSpeech: adjective.",
+          "relationship": "Current Qur'anic occurrence of the خنس lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:114:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:4:4) was checked as evidence."
+        },
+        {
+          "form": "خَنَسَ",
+          "meaning": "he withdrew or retreated",
+          "difference": "Form I perfect; it expresses a completed withdrawal or retreat.",
+          "relationship": "Form I perfect of the خ ن س root; the finite verb states the completed act underlying the retreating description.",
+          "provenance": "Codex-authored after review of the approved project root meaning, canonical Qur'anic occurrences of خ ن س and standard Arabic Form I morphology."
+        },
+        {
+          "form": "يَخْنِسُ",
+          "meaning": "he withdraws or retreats",
+          "difference": "Form I imperfect, third-person masculine singular; the imperfect form describes an ongoing or repeated retreat.",
+          "relationship": "Form I imperfect of the خ ن س root; it is the ongoing counterpart of خَنَسَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I imperfect morphology."
+        },
+        {
+          "form": "خُنُوسٌ",
+          "meaning": "withdrawal or retreat",
+          "difference": "Verbal noun; it names the act or state of withdrawing rather than expressing it as a finite verb.",
+          "relationship": "A genuine verbal noun of the خ ن س root, naming the retreating action.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I verbal-noun morphology."
+        },
+        {
+          "form": "خَنَّسَ",
+          "meaning": "he caused to withdraw",
+          "difference": "Form II perfect; the doubled middle radical marks a causative/intensive derived action of making something retreat.",
+          "relationship": "Form II perfect of the خ ن س root; a genuine derived causative relationship to the retreating family.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form II morphology."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "ٱلْخَنَّاسِ",
+            "meaning": "the retreating one",
+            "difference": "Current Qur'anic occurrence; number: masculine singular; case: genitive; partOfSpeech: adjective.",
+            "relationship": "Current Qur'anic occurrence of the خنس lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:4:4) was checked as evidence."
+          },
+          {
+            "form": "يَخْنِسُ",
+            "meaning": "He withdraws",
+            "difference": "present",
+            "relationship": "Existing project-reviewed relationship to the خنس family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "خَنَّاس",
+            "meaning": "one who repeatedly withdraws",
+            "difference": "intensive noun",
+            "relationship": "Existing project-reviewed relationship to the خنس family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "بِٱلْخُنَّسِ",
+            "meaning": "by the retreating planets",
+            "difference": "Compared with ٱلْخَنَّاسِ, this form changes number: masculine singular → masculine plural.",
+            "relationship": "Related to the خ ن س root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:81:15:3.",
+            "provenance": "Codex-reviewed form for the خ ن س family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "ٱلْخَنَّاسِ is a rootful noun with root خ ن س. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱلْخَنَّاسِ",
+            "meaning": "the retreating one",
+            "difference": "Current Qur'anic occurrence; number: masculine singular; case: genitive; partOfSpeech: adjective.",
+            "relationship": "Current Qur'anic occurrence of the خنس lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:4:4) was checked as evidence."
+          },
+          {
+            "form": "خَنَسَ",
+            "meaning": "he withdrew or retreated",
+            "difference": "Form I perfect; it expresses a completed withdrawal or retreat.",
+            "relationship": "Form I perfect of the خ ن س root; the finite verb states the completed act underlying the retreating description.",
+            "provenance": "Codex-authored after review of the approved project root meaning, canonical Qur'anic occurrences of خ ن س and standard Arabic Form I morphology."
+          },
+          {
+            "form": "يَخْنِسُ",
+            "meaning": "he withdraws or retreats",
+            "difference": "Form I imperfect, third-person masculine singular; the imperfect form describes an ongoing or repeated retreat.",
+            "relationship": "Form I imperfect of the خ ن س root; it is the ongoing counterpart of خَنَسَ.",
+            "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I imperfect morphology."
+          },
+          {
+            "form": "خُنُوسٌ",
+            "meaning": "withdrawal or retreat",
+            "difference": "Verbal noun; it names the act or state of withdrawing rather than expressing it as a finite verb.",
+            "relationship": "A genuine verbal noun of the خ ن س root, naming the retreating action.",
+            "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I verbal-noun morphology."
+          },
+          {
+            "form": "خَنَّسَ",
+            "meaning": "he caused to withdraw",
+            "difference": "Form II perfect; the doubled middle radical marks a causative/intensive derived action of making something retreat.",
+            "relationship": "Form II perfect of the خ ن س root; a genuine derived causative relationship to the retreating family.",
+            "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form II morphology."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "78076fc29738f96c80ccdbb47fd179efad9e01b2b73e1e65515e948bb6a7e9d7",
+      "contentHash": "18f95feb46e5da0cba9942384b427447812abf3175a968e6772cbb9e244fd972"
+    },
+    {
+      "occurrenceId": "word:114:5:1",
+      "packageId": "surah:114",
+      "surah": 114,
+      "ayah": 5,
+      "position": 1,
+      "teachingId": "lesson:alladhi",
+      "word": "ٱلَّذِي",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "ٱلَّذِي",
+          "meaning": "the one who",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun; number: masculine singular.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:114:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:5:1) was checked as evidence."
+        },
+        {
+          "form": "ٱلَّتِي",
+          "meaning": "the one who",
+          "difference": "feminine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّذِينَ",
+          "meaning": "those who",
+          "difference": "masculine or mixed plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun; number: masculine singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:5:1) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "masculine or mixed plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "ٱلَّذِي is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "ٱلَّذِي",
+            "meaning": "the one who",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun; number: masculine singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:5:1) was checked as evidence."
+          },
+          {
+            "form": "ٱلَّتِي",
+            "meaning": "the one who",
+            "difference": "feminine singular",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلَّذِينَ",
+            "meaning": "those who",
+            "difference": "masculine or mixed plural",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "ٱلَّذِي is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "f32a04780f3bdf7339c3bf56ab31d8888a35848f5d0ddbbc06b988f3623b32c3",
+      "contentHash": "94e71a581d5c7d76945c85cd2863fc196a192eda3a3d8eafae0e6d89221b5750"
+    },
+    {
+      "occurrenceId": "word:114:5:2",
+      "packageId": "surah:114",
+      "surah": 114,
+      "ayah": 5,
+      "position": 2,
+      "teachingId": "lesson:yuwaswis",
+      "word": "يُوَسْوِسُ",
+      "category": "verb",
+      "root": "و س و س",
+      "decision": "upgraded-to-full",
+      "candidatePool": 6,
+      "candidateEvidence": [
+        {
+          "form": "وَسْوَسَ",
+          "meaning": "he whispered",
+          "difference": "Form I perfect of the quadriliteral root; it describes a completed act of whispering or prompting inwardly.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:وسوس",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:perfect",
+            "partofspeech:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "وسوس"
+        },
+        {
+          "form": "يُوَسْوِسُ",
+          "meaning": "he whispers",
+          "difference": "Form I imperfect, third-person masculine singular; the imperfect prefix marks an ongoing or repeated whispering action.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:وسوس",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:imperfect",
+            "person:third-person"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يوسوس"
+        },
+        {
+          "form": "وَسْوَسَةٌ",
+          "meaning": "whispering or inward prompting",
+          "difference": "Verbal noun; it names the act or process of whispering rather than expressing it as a finite verb.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:وسوس",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verbal-noun",
+            "derivation:action-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "وسوسة"
+        },
+        {
+          "form": "مُوَسْوِسٌ",
+          "meaning": "a whisperer or one who whispers",
+          "difference": "Active participle; it describes the agent characterized by performing the whispering action.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:وسوس",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "derivation:agent"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "موسوس"
+        },
+        {
+          "form": "ٱلْوَسْوَاسِ",
+          "meaning": "the whisperer",
+          "difference": "Compared with يُوَسْوِسُ, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked; pattern: Form 1 → not marked.",
+          "sourceKind": "existing-reviewed-row",
+          "sourceOccurrence": "word:114:4:3",
+          "score": 182,
+          "featureSignal": [
+            "tense",
+            "person",
+            "verbform",
+            "pattern",
+            "partofspeech",
+            "number",
+            "pos:noun/pronoun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "وسواس"
+        },
+        {
+          "form": "ٱلْوَسْوَاسِ",
+          "meaning": "the whisperer",
+          "difference": "Compared with يُوَسْوِسُ, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked.",
+          "sourceKind": "existing-reviewed-row",
+          "sourceOccurrence": "lesson:yuwaswis",
+          "score": 113,
+          "featureSignal": [
+            "Compared with يُوَسْوِسُ, this form changes tense",
+            " person",
+            " verbform"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "وسواس"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "يُوَسْوِسُ",
+          "meaning": "he whispers",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the وسوس lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:114:5:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:5:2) was checked as evidence."
+        },
+        {
+          "form": "ٱلْوَسْوَاسِ",
+          "meaning": "the whisperer",
+          "difference": "Compared with يُوَسْوِسُ, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked; pattern: Form 1 → not marked.",
+          "relationship": "Current Qur'anic occurrence of the وسوس lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:114:4:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:4:3) was checked as evidence."
+        },
+        {
+          "form": "وَسْوَسَ",
+          "meaning": "he whispered",
+          "difference": "Form I perfect of the quadriliteral root; it describes a completed act of whispering or prompting inwardly.",
+          "relationship": "Form I perfect of the و س و س root; the finite verb names the completed whispering action.",
+          "provenance": "Codex-authored after review of the approved project root meaning, canonical Qur'anic occurrences of و س و س and standard Arabic quadriliteral morphology."
+        },
+        {
+          "form": "وَسْوَسَةٌ",
+          "meaning": "whispering or inward prompting",
+          "difference": "Verbal noun; it names the act or process of whispering rather than expressing it as a finite verb.",
+          "relationship": "A genuine verbal noun of the و س و س root, expressing the whispering action as a noun.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic quadriliteral verbal-noun morphology."
+        },
+        {
+          "form": "مُوَسْوِسٌ",
+          "meaning": "a whisperer or one who whispers",
+          "difference": "Active participle; it describes the agent characterized by performing the whispering action.",
+          "relationship": "A genuine active-participle form of the و س و س root, related to the agent noun ٱلْوَسْوَاسِ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic quadriliteral active-participle morphology."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "يُوَسْوِسُ",
+            "meaning": "he whispers",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; person: third-person masculine singular; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the وسوس lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:5:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:5:2) was checked as evidence."
+          },
+          {
+            "form": "تُوَسْوِسُ",
+            "meaning": "You / she whispers",
+            "difference": "تَ prefix",
+            "relationship": "Existing project-reviewed relationship to the وسوس family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أُوَسْوِسُ",
+            "meaning": "I whisper",
+            "difference": "أَ prefix",
+            "relationship": "Existing project-reviewed relationship to the وسوس family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "ٱلْوَسْوَاسِ",
+            "meaning": "the whisperer",
+            "difference": "Compared with يُوَسْوِسُ, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked.",
+            "relationship": "Related to the و س و س root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:114:4:3.",
+            "provenance": "Codex-reviewed form for the و س و س family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "يُوَسْوِسُ is a rootful verb with root و س و س. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "يُوَسْوِسُ",
+            "meaning": "he whispers",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; person: third-person masculine singular; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the وسوس lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:5:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:5:2) was checked as evidence."
+          },
+          {
+            "form": "ٱلْوَسْوَاسِ",
+            "meaning": "the whisperer",
+            "difference": "Compared with يُوَسْوِسُ, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked; pattern: Form 1 → not marked.",
+            "relationship": "Current Qur'anic occurrence of the وسوس lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:4:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:4:3) was checked as evidence."
+          },
+          {
+            "form": "وَسْوَسَ",
+            "meaning": "he whispered",
+            "difference": "Form I perfect of the quadriliteral root; it describes a completed act of whispering or prompting inwardly.",
+            "relationship": "Form I perfect of the و س و س root; the finite verb names the completed whispering action.",
+            "provenance": "Codex-authored after review of the approved project root meaning, canonical Qur'anic occurrences of و س و س and standard Arabic quadriliteral morphology."
+          },
+          {
+            "form": "وَسْوَسَةٌ",
+            "meaning": "whispering or inward prompting",
+            "difference": "Verbal noun; it names the act or process of whispering rather than expressing it as a finite verb.",
+            "relationship": "A genuine verbal noun of the و س و س root, expressing the whispering action as a noun.",
+            "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic quadriliteral verbal-noun morphology."
+          },
+          {
+            "form": "مُوَسْوِسٌ",
+            "meaning": "a whisperer or one who whispers",
+            "difference": "Active participle; it describes the agent characterized by performing the whispering action.",
+            "relationship": "A genuine active-participle form of the و س و س root, related to the agent noun ٱلْوَسْوَاسِ.",
+            "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic quadriliteral active-participle morphology."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "de73923d265e7166c072052960896731f911d74b41b104c91dfabf68e551f0cc",
+      "contentHash": "86bfb21ca330c2d4007a164a80651e7c0955ee3857e0f24d0028acfb9b1c716d"
+    },
+    {
+      "occurrenceId": "word:114:5:3",
+      "packageId": "surah:114",
+      "surah": 114,
+      "ayah": 5,
+      "position": 3,
+      "teachingId": "lesson:fi",
+      "word": "فِي",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "فِي",
+          "meaning": "in",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:114:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:5:3) was checked as evidence."
+        },
+        {
+          "form": "فِيهِ",
+          "meaning": "in it",
+          "difference": "attached pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فِيهَا",
+          "meaning": "in her / it",
+          "difference": "feminine pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فِي",
+            "meaning": "in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:5:3) was checked as evidence."
+          },
+          {
+            "form": "فِيهِ",
+            "meaning": "in it",
+            "difference": "attached pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فِيهَا",
+            "meaning": "in her / it",
+            "difference": "feminine pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فِي is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فِي",
+            "meaning": "in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:5:3) was checked as evidence."
+          },
+          {
+            "form": "فِيهِ",
+            "meaning": "in it",
+            "difference": "attached pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فِيهَا",
+            "meaning": "in her / it",
+            "difference": "feminine pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فِي is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "e34dbe9baf564315339211517a18175590d7b2e39a443c4b3fa632a1fd11026e",
+      "contentHash": "978d133c531fec3427c3b34bf07f4a564f208aef28d94186285d17a22fa580c1"
+    },
+    {
+      "occurrenceId": "word:114:6:1",
+      "packageId": "surah:114",
+      "surah": 114,
+      "ayah": 6,
+      "position": 1,
+      "teachingId": "lesson:114:6:1",
+      "word": "مِنَ",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مِنَ",
+          "meaning": "from among",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:114:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:6:1) was checked as evidence."
+        },
+        {
+          "form": "مِنْ",
+          "meaning": "from",
+          "difference": "base preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مِنْهُ",
+          "meaning": "from him / it",
+          "difference": "attached pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "مِنَ",
+            "meaning": "from among",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:6:1) was checked as evidence."
+          },
+          {
+            "form": "مِنْ",
+            "meaning": "from",
+            "difference": "base preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "مِنْهُ",
+            "meaning": "from him / it",
+            "difference": "attached pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مِنَ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "مِنَ",
+            "meaning": "from among",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:114:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (114:6:1) was checked as evidence."
+          },
+          {
+            "form": "مِنْ",
+            "meaning": "from",
+            "difference": "base preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "مِنْهُ",
+            "meaning": "from him / it",
+            "difference": "attached pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مِنَ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "098e1a6d0a4d2f6202b4b681a11ee20778254a9135e82b30ca18da19b570cbcd",
+      "contentHash": "d362beca6633856b8fc99b267f86c4273655e37a5d33217c14f050af05513d2e"
+    }
+  ]
+}
