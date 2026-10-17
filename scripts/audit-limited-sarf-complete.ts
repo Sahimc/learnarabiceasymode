@@ -3018,6 +3018,168 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "احتبل",
       },
     ],
+    ["خلص"]: [
+      {
+        form: "أَخْلَصَ",
+        meaning: "he made sincere or devoted",
+        difference:
+          "Form IV perfect; it presents the completed act of making something sincere or devoting it, while the current form describes sincere people.",
+        relationship:
+          "Form IV perfect of the خ ل ص root, the verbal base behind مُخْلِصِينَ.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus خ ل ص entry, including أَخْلَصُوا and أَخْلَصْنَا, and standard Form IV morphology.",
+        featureSignal: ["pattern:form-4", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "اخلص",
+      },
+      {
+        form: "إِخْلَاصٌ",
+        meaning: "sincerity or devotion",
+        difference:
+          "Form IV verbal noun; it names sincerity or devotion as a quality or action rather than describing a person.",
+        relationship:
+          "The genuine verbal noun of أَخْلَصَ in the خ ل ص family.",
+        provenance:
+          "Codex-authored after review of the خ ل ص Form IV family and standard Arabic verbal-noun morphology.",
+        featureSignal: ["pattern:form-4", "partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "اخلاص",
+      },
+      {
+        form: "مُخْلِصٌ",
+        meaning: "a sincere or devoted person",
+        difference:
+          "Form IV active participle, masculine singular; it is the singular counterpart of the current masculine plural مُخْلِصِينَ.",
+        relationship:
+          "The singular active participle corresponding to the current plural form in the خ ل ص family.",
+        provenance:
+          "Codex-authored after review of canonical Qur'anic occurrences of مُخْلِصٌ and مُخْلِصِينَ and aligned morphology.",
+        featureSignal: ["pattern:form-4", "partofspeech:active-participle", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "مخلص",
+      },
+      {
+        form: "مُخْلَصٌ",
+        meaning: "chosen or purified",
+        difference:
+          "Form IV passive participle; it describes someone chosen or purified, contrasting with the active sense of the current form.",
+        relationship:
+          "The Form IV passive participle of أَخْلَصَ, a real Qur'anic counterpart in the خ ل ص family.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus passive-participle occurrences of مُخْلَصًا and مُخْلَصِينَ.",
+        featureSignal: ["pattern:form-4", "partofspeech:passive-participle", "voice:passive", "meaning:chosen"],
+        baseDistinct: true,
+        lexicalKey: "مخلص",
+      },
+    ],
+    ["حنف"]: [
+      {
+        form: "حَنِيفٌ",
+        meaning: "an upright person",
+        difference:
+          "Masculine singular adjective/noun; it is the singular counterpart of the current masculine plural حُنَفَاءَ.",
+        relationship:
+          "The singular form of the حَنِيف / حُنَفَاءَ lexical family, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences of حَنِيفٌ and حُنَفَاءَ and standard Arabic number morphology.",
+        featureSignal: ["partofspeech:adjective", "number:singular", "gender:masculine"],
+        baseDistinct: true,
+        lexicalKey: "حنيف",
+      },
+      {
+        form: "حَنِيفَةٌ",
+        meaning: "an upright woman",
+        difference:
+          "Feminine singular adjective/noun; the feminine ending identifies one female member of the same lexical family.",
+        relationship:
+          "The regular feminine singular counterpart of حَنِيفٌ in the ح ن ف family.",
+        provenance:
+          "Codex-authored after review of the attested حَنِيفٌ / حُنَفَاءَ family and standard Arabic feminine derivation.",
+        featureSignal: ["partofspeech:adjective", "number:singular", "gender:feminine"],
+        baseDistinct: true,
+        lexicalKey: "حنيفة",
+      },
+      {
+        form: "حَنِيفَانِ",
+        meaning: "two upright persons",
+        difference:
+          "Masculine dual; it shows the number contrast between one, two and the current masculine plural.",
+        relationship:
+          "The regular masculine dual of حَنِيفٌ in the ح ن ف family.",
+        provenance:
+          "Codex-authored after review of the attested حَنِيفٌ / حُنَفَاءَ family and standard Arabic dual morphology.",
+        featureSignal: ["partofspeech:adjective", "number:dual", "gender:masculine"],
+        baseDistinct: true,
+        lexicalKey: "حنيفان",
+      },
+      {
+        form: "حَنِيفَاتٌ",
+        meaning: "upright women",
+        difference:
+          "Feminine sound plural; it shows gender and number together, contrasting with the current masculine broken plural.",
+        relationship:
+          "The regular feminine plural of حَنِيفَةٌ in the ح ن ف family.",
+        provenance:
+          "Codex-authored after review of the attested حَنِيفٌ / حُنَفَاءَ family and standard Arabic feminine-plural morphology.",
+        featureSignal: ["partofspeech:adjective", "number:plural", "gender:feminine"],
+        baseDistinct: true,
+        lexicalKey: "حنيفات",
+      },
+    ],
+    ["تحت"]: [
+      {
+        form: "تَحْتَ",
+        meaning: "under or below",
+        difference:
+          "The bare lexical form without an attached pronoun; it exposes the stem before the current feminine-singular attachment.",
+        relationship:
+          "The unattached nominal form of the ت ح ت family, attested in Qur'an 41:29.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ت ح ت entry and canonical occurrence word:41:29:12.",
+        featureSignal: ["attachment:none", "partofspeech:noun", "pronoun:none"],
+        baseDistinct: true,
+        lexicalKey: "تحت",
+      },
+      {
+        form: "تَحْتَهُ",
+        meaning: "under him or it",
+        difference:
+          "Third-person masculine singular attachment; هُ changes the reference of the base noun to him or it.",
+        relationship:
+          "A canonical attached-pronoun form of تَحْتُ, attested in Qur'an 18:82.",
+        provenance:
+          "Codex-authored after review of canonical occurrence word:18:82:9 and the Quranic Arabic Corpus ت ح ت entry.",
+        featureSignal: ["attachment:pronoun", "person:third-person", "gender:masculine", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "تحته",
+      },
+      {
+        form: "تَحْتِي",
+        meaning: "under me",
+        difference:
+          "First-person singular attachment; ي changes the reference to the speaker.",
+        relationship:
+          "A canonical attached-pronoun form of تَحْتُ, attested in Qur'an 43:51.",
+        provenance:
+          "Codex-authored after review of canonical occurrence word:43:51:15 and the Quranic Arabic Corpus ت ح ت entry.",
+        featureSignal: ["attachment:pronoun", "person:first-person", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "تحتي",
+      },
+      {
+        form: "تَحْتَهُمْ",
+        meaning: "under them",
+        difference:
+          "Third-person masculine plural attachment; هُمْ changes the reference to a group.",
+        relationship:
+          "A canonical attached-pronoun form of تَحْتُ, attested in Qur'an 6:6 and 39:16.",
+        provenance:
+          "Codex-authored after review of canonical occurrences word:6:6:24 and word:39:16:8 and the Quranic Arabic Corpus ت ح ت entry.",
+        featureSignal: ["attachment:pronoun", "person:third-person", "number:plural"],
+        baseDistinct: true,
+        lexicalKey: "تحتهم",
+      },
+    ],
     ["مسد"]: [
       {
         form: "مَسَدَ",
@@ -3099,7 +3261,9 @@ function inflectionalKey(value: string) {
   // skeleton but are different Ṣarf rows. Simple terminal fatha/damma/kasra
   // and their tanwin forms are inflectional here; shaddah, sukun and lexical
   // vowels elsewhere in the form remain significant.
-  return normalized(value).replace(/[\u064B-\u0650]$/u, "");
+  return normalized(value)
+    .replace(/[\u06D6-\u06ED]/gu, "")
+    .replace(/[\u064B-\u0650]$/u, "");
 }
 
 function base(value: string) {
@@ -3436,10 +3600,14 @@ function limitedReason(
   if (decision === "confirmed-limited") {
     if (category === "proper noun")
       return `${word} is a proper noun${root ? ` associated with ${root}` : ""}; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains ${forms.length} genuine reviewed form${forms.length === 1 ? "" : "s"}.`;
+    if (REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root))
+      return `${word} is a reviewed restricted lexical item in the ${root} family. Canonical and lexicon evidence support the time-adverb lexeme, but do not provide four additional learner-useful lexical Ṣarf contrasts; case-only or annotation-only variants would be padding. The family retains ${forms.length} genuine reviewed form${forms.length === 1 ? "" : "s"}.`;
     return `${word} is a rootless ${category} rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains ${forms.length} genuine reviewed form${forms.length === 1 ? "" : "s"}.`;
   }
   return `${word} is a rootful ${category} with root ${occurrence.lesson.root}. The audit found ${candidateCount} safe related form${candidateCount === 1 ? "" : "s"}, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.`;
 }
+
+const REVIEWED_RESTRICTED_LEXICAL_ROOTS = new Set(["أبد"]);
 
 async function packageFiles() {
   const entries = await fs.readdir(packagesRoot, { withFileTypes: true });
@@ -3563,6 +3731,7 @@ for (const occurrence of limited) {
   const seen = new Set([normalized(rebuiltCurrent.form)]);
   for (const row of oldSafeRows) {
     if (normalized(row.form) === normalized(rebuiltCurrent.form)) continue;
+    if (inflectionalKey(row.form) === inflectionalKey(rebuiltCurrent.form)) continue;
     if (isKnownWrongRootForm(root, row.form)) continue;
     if (seen.has(normalized(row.form))) continue;
     seen.add(normalized(row.form));
@@ -3638,7 +3807,7 @@ for (const occurrence of limited) {
       reviewedAt,
     };
     decisions.upgradedToFull += 1;
-  } else if (!root || category === "proper noun") {
+  } else if (!root || category === "proper noun" || REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root)) {
     decision = "confirmed-limited";
     afterForms = [rebuiltCurrent, ...existingForms].slice(0, 4);
     afterReview = {
@@ -3656,7 +3825,11 @@ for (const occurrence of limited) {
       reviewedAt,
     };
     decisions.confirmedLimited += 1;
-    const reasonKey = !root ? `rootless:${category}` : "proper-noun-restricted";
+    const reasonKey = !root
+      ? `rootless:${category}`
+      : category === "proper noun"
+        ? "proper-noun-restricted"
+        : "restricted-lexical-family";
     byReason[reasonKey] = (byReason[reasonKey] ?? 0) + 1;
   } else {
     decision = "blocked-for-genuine-ambiguity";
