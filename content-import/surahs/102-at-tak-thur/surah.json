@@ -7,10 +7,10 @@
     "arabicName": "التكاثر",
     "transliteration": "At-Takāthur",
     "englishLabel": "The Rivalry in World Increase",
-    "description": "Canonical source layer; custom teaching is not yet authored."
+    "description": "Reviewed Word Tree teaching layer."
   },
-  "contentVersion": "tanzil-1.1",
-  "status": "source-only",
+  "contentVersion": "tanzil-1.1+teaching-102-v1-sarf-1.2-limited-audit",
+  "status": "custom-complete",
   "sourceReferences": [
     {
       "provider": "tanzil",
@@ -37,7 +37,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "diverted you",
+          "teachingId": "lesson:102:alhakum",
+          "occurrenceRole": "Describes how rivalry in worldly increase diverted you.",
+          "breakdown": {
+            "id": "breakdown:word:102:1:1",
+            "mode": "segmented",
+            "sourceText": "أَلْهَىٰكُمُ",
+            "parts": [
+              {
+                "id": "word:102:1:1:part:1",
+                "order": 1,
+                "sourceText": "أَلْهَىٰ",
+                "displayText": "أَلْهَىٰ",
+                "label": "diverted",
+                "meaning": "the lexical verb stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ل ه و"
+              },
+              {
+                "id": "word:102:1:1:part:2",
+                "order": 2,
+                "sourceText": "كُمُ",
+                "displayText": "كُمُ",
+                "label": "you",
+                "meaning": "an attached second-person plural object pronoun",
+                "kind": "object-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (object pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:1:2",
@@ -50,9 +82,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "rivalry in increase",
+          "teachingId": "lesson:102:takathur",
+          "occurrenceRole": "Names the worldly competition that distracts people.",
+          "breakdown": {
+            "id": "breakdown:word:102:1:2",
+            "mode": "segmented",
+            "sourceText": "ٱلتَّكَاثُرُ",
+            "parts": [
+              {
+                "id": "word:102:1:2:part:1",
+                "order": 1,
+                "sourceText": "ٱل",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article before a sun letter",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:102:1:2:part:2",
+                "order": 2,
+                "sourceText": "تَّكَاثُرُ",
+                "displayText": "تَّكَاثُرُ",
+                "label": "rivalry in increase",
+                "meaning": "the reciprocal verbal noun",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ك ث ر"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Competition in [worldly] increase diverts you",
+      "naturalMeaning": "The pursuit of worldly increase can consume people’s attention."
     },
     {
       "id": "ayah:102:2",
@@ -71,7 +137,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "until",
+          "teachingId": "lesson:102:hatta",
+          "occurrenceRole": "Carries the meaning forward until people reach the graves.",
+          "breakdown": {
+            "id": "breakdown:word:102:2:1",
+            "mode": "atomic",
+            "sourceText": "حَتَّىٰ",
+            "parts": [
+              {
+                "id": "word:102:2:1:part:1",
+                "order": 1,
+                "sourceText": "حَتَّىٰ",
+                "displayText": "حَتَّىٰ",
+                "label": "until",
+                "meaning": "a particle marking an endpoint",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:2:2",
@@ -84,7 +171,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "you visited",
+          "teachingId": "lesson:102:zurtum",
+          "occurrenceRole": "Describes reaching the graveyards as a visit.",
+          "breakdown": {
+            "id": "breakdown:word:102:2:2",
+            "mode": "segmented",
+            "sourceText": "زُرْتُمُ",
+            "parts": [
+              {
+                "id": "word:102:2:2:part:1",
+                "order": 1,
+                "sourceText": "زُرْ",
+                "displayText": "زُرْ",
+                "label": "visited",
+                "meaning": "the lexical verb stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ز و ر"
+              },
+              {
+                "id": "word:102:2:2:part:2",
+                "order": 2,
+                "sourceText": "تُمُ",
+                "displayText": "تُمُ",
+                "label": "you",
+                "meaning": "a second-person plural subject ending",
+                "kind": "subject-marker",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (subject ending)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:2:3",
@@ -97,9 +216,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the graveyards",
+          "teachingId": "lesson:102:maqabir",
+          "occurrenceRole": "Names the graveyards that people eventually reach.",
+          "breakdown": {
+            "id": "breakdown:word:102:2:3",
+            "mode": "segmented",
+            "sourceText": "ٱلْمَقَابِرَ",
+            "parts": [
+              {
+                "id": "word:102:2:3:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:102:2:3:part:2",
+                "order": 2,
+                "sourceText": "مَقَابِرَ",
+                "displayText": "مَقَابِرَ",
+                "label": "graveyards",
+                "meaning": "the broken plural noun",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ق ب ر"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Until you visit the graveyards.",
+      "naturalMeaning": "The warning continues until life reaches the graveyards."
     },
     {
       "id": "ayah:102:3",
@@ -118,7 +271,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "No",
+          "teachingId": "lesson:102:kalla",
+          "occurrenceRole": "Rebukes the distraction before the warning that knowledge will come.",
+          "breakdown": {
+            "id": "breakdown:word:102:3:1",
+            "mode": "atomic",
+            "sourceText": "كَلَّا",
+            "parts": [
+              {
+                "id": "word:102:3:1:part:1",
+                "order": 1,
+                "sourceText": "كَلَّا",
+                "displayText": "كَلَّا",
+                "label": "No",
+                "meaning": "a fixed rebuking particle",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:3:2",
@@ -131,7 +305,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "will",
+          "teachingId": "lesson:102:sawfa",
+          "occurrenceRole": "Points to knowledge that will come later.",
+          "breakdown": {
+            "id": "breakdown:word:102:3:2",
+            "mode": "atomic",
+            "sourceText": "سَوْفَ",
+            "parts": [
+              {
+                "id": "word:102:3:2:part:1",
+                "order": 1,
+                "sourceText": "سَوْفَ",
+                "displayText": "سَوْفَ",
+                "label": "will",
+                "meaning": "a particle marking future time",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (future particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:3:3",
@@ -144,9 +339,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "you know",
+          "teachingId": "lesson:102:talamun",
+          "occurrenceRole": "Promises that the listeners will come to know the truth.",
+          "breakdown": {
+            "id": "breakdown:word:102:3:3",
+            "mode": "segmented",
+            "sourceText": "تَعْلَمُونَ",
+            "parts": [
+              {
+                "id": "word:102:3:3:part:1",
+                "order": 1,
+                "sourceText": "تَعْلَمُ",
+                "displayText": "تَعْلَمُ",
+                "label": "know",
+                "meaning": "the imperfect lexical stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ع ل م"
+              },
+              {
+                "id": "word:102:3:3:part:2",
+                "order": 2,
+                "sourceText": "ونَ",
+                "displayText": "ونَ",
+                "label": "you",
+                "meaning": "a second-person masculine plural ending",
+                "kind": "subject-marker",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (subject ending)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "No! You are going to know.",
+      "naturalMeaning": "The rebuke promises that the truth will become known."
     },
     {
       "id": "ayah:102:4",
@@ -165,7 +394,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "then",
+          "teachingId": "lesson:102:thumma",
+          "occurrenceRole": "Moves the warning to the next stage of certainty.",
+          "breakdown": {
+            "id": "breakdown:word:102:4:1",
+            "mode": "atomic",
+            "sourceText": "ثُمَّ",
+            "parts": [
+              {
+                "id": "word:102:4:1:part:1",
+                "order": 1,
+                "sourceText": "ثُمَّ",
+                "displayText": "ثُمَّ",
+                "label": "then",
+                "meaning": "a connector marking sequence",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:4:2",
@@ -178,7 +428,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "No",
+          "teachingId": "lesson:102:kalla",
+          "occurrenceRole": "Rebukes the distraction before the warning that knowledge will come.",
+          "breakdown": {
+            "id": "breakdown:word:102:4:2",
+            "mode": "atomic",
+            "sourceText": "كَلَّا",
+            "parts": [
+              {
+                "id": "word:102:4:2:part:1",
+                "order": 1,
+                "sourceText": "كَلَّا",
+                "displayText": "كَلَّا",
+                "label": "No",
+                "meaning": "a fixed rebuking particle",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:4:3",
@@ -191,7 +462,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "will",
+          "teachingId": "lesson:102:sawfa",
+          "occurrenceRole": "Points to knowledge that will come later.",
+          "breakdown": {
+            "id": "breakdown:word:102:4:3",
+            "mode": "atomic",
+            "sourceText": "سَوْفَ",
+            "parts": [
+              {
+                "id": "word:102:4:3:part:1",
+                "order": 1,
+                "sourceText": "سَوْفَ",
+                "displayText": "سَوْفَ",
+                "label": "will",
+                "meaning": "a particle marking future time",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (future particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:4:4",
@@ -204,9 +496,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "you know",
+          "teachingId": "lesson:102:talamun",
+          "occurrenceRole": "Promises that the listeners will come to know the truth.",
+          "breakdown": {
+            "id": "breakdown:word:102:4:4",
+            "mode": "segmented",
+            "sourceText": "تَعْلَمُونَ",
+            "parts": [
+              {
+                "id": "word:102:4:4:part:1",
+                "order": 1,
+                "sourceText": "تَعْلَمُ",
+                "displayText": "تَعْلَمُ",
+                "label": "know",
+                "meaning": "the imperfect lexical stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ع ل م"
+              },
+              {
+                "id": "word:102:4:4:part:2",
+                "order": 2,
+                "sourceText": "ونَ",
+                "displayText": "ونَ",
+                "label": "you",
+                "meaning": "a second-person masculine plural ending",
+                "kind": "subject-marker",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (subject ending)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Then no! You are going to know.",
+      "naturalMeaning": "The repeated warning gives the consequence greater force."
     },
     {
       "id": "ayah:102:5",
@@ -225,7 +551,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "No",
+          "teachingId": "lesson:102:kalla",
+          "occurrenceRole": "Rebukes the distraction before the warning that knowledge will come.",
+          "breakdown": {
+            "id": "breakdown:word:102:5:1",
+            "mode": "atomic",
+            "sourceText": "كَلَّا",
+            "parts": [
+              {
+                "id": "word:102:5:1:part:1",
+                "order": 1,
+                "sourceText": "كَلَّا",
+                "displayText": "كَلَّا",
+                "label": "No",
+                "meaning": "a fixed rebuking particle",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:5:2",
@@ -238,7 +585,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "if only",
+          "teachingId": "lesson:102:law",
+          "occurrenceRole": "Introduces the unrealized condition of knowing with certainty.",
+          "breakdown": {
+            "id": "breakdown:word:102:5:2",
+            "mode": "atomic",
+            "sourceText": "لَوْ",
+            "parts": [
+              {
+                "id": "word:102:5:2:part:1",
+                "order": 1,
+                "sourceText": "لَوْ",
+                "displayText": "لَوْ",
+                "label": "if only",
+                "meaning": "a particle introducing a hypothetical condition",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (conditional particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:5:3",
@@ -251,7 +619,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "you know",
+          "teachingId": "lesson:102:talamun",
+          "occurrenceRole": "Promises that the listeners will come to know the truth.",
+          "breakdown": {
+            "id": "breakdown:word:102:5:3",
+            "mode": "segmented",
+            "sourceText": "تَعْلَمُونَ",
+            "parts": [
+              {
+                "id": "word:102:5:3:part:1",
+                "order": 1,
+                "sourceText": "تَعْلَمُ",
+                "displayText": "تَعْلَمُ",
+                "label": "know",
+                "meaning": "the imperfect lexical stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ع ل م"
+              },
+              {
+                "id": "word:102:5:3:part:2",
+                "order": 2,
+                "sourceText": "ونَ",
+                "displayText": "ونَ",
+                "label": "you",
+                "meaning": "a second-person masculine plural ending",
+                "kind": "subject-marker",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (subject ending)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:5:4",
@@ -264,7 +664,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "knowledge",
+          "teachingId": "lesson:102:ilm",
+          "occurrenceRole": "Names knowledge as the quality that would have changed the listeners’ conduct.",
+          "breakdown": {
+            "id": "breakdown:word:102:5:4",
+            "mode": "atomic",
+            "sourceText": "عِلْمَ",
+            "parts": [
+              {
+                "id": "word:102:5:4:part:1",
+                "order": 1,
+                "sourceText": "عِلْمَ",
+                "displayText": "عِلْمَ",
+                "label": "knowledge",
+                "meaning": "the complete noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ع ل م"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:5:5",
@@ -277,9 +698,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "certainty",
+          "teachingId": "lesson:102:yaqin",
+          "occurrenceRole": "Defines the certainty that should have awakened the listeners.",
+          "breakdown": {
+            "id": "breakdown:word:102:5:5",
+            "mode": "segmented",
+            "sourceText": "ٱلْيَقِينِ",
+            "parts": [
+              {
+                "id": "word:102:5:5:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:102:5:5:part:2",
+                "order": 2,
+                "sourceText": "يَقِينِ",
+                "displayText": "يَقِينِ",
+                "label": "certainty",
+                "meaning": "the certainty noun",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ي ق ن"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "No! If you only knew with knowledge of certainty...",
+      "naturalMeaning": "True certainty would have changed the way the listeners lived."
     },
     {
       "id": "ayah:102:6",
@@ -298,7 +753,50 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "you will surely see",
+          "teachingId": "lesson:102:latarawunna",
+          "occurrenceRole": "States emphatically that the listeners will see the Hellfire.",
+          "breakdown": {
+            "id": "breakdown:word:102:6:1",
+            "mode": "segmented",
+            "sourceText": "لَتَرَوُنَّ",
+            "parts": [
+              {
+                "id": "word:102:6:1:part:1",
+                "order": 1,
+                "sourceText": "لَ",
+                "displayText": "لَ",
+                "label": "surely",
+                "meaning": "an emphatic prefix",
+                "kind": "prefix",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphasis prefix)"
+              },
+              {
+                "id": "word:102:6:1:part:2",
+                "order": 2,
+                "sourceText": "تَرَوُ",
+                "displayText": "تَرَوُ",
+                "label": "see",
+                "meaning": "the imperfect lexical stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ر أ ي"
+              },
+              {
+                "id": "word:102:6:1:part:3",
+                "order": 3,
+                "sourceText": "نَّ",
+                "displayText": "نَّ",
+                "label": "surely",
+                "meaning": "an emphatic verbal ending",
+                "kind": "ending",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphatic ending)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:6:2",
@@ -311,9 +809,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the Hellfire",
+          "teachingId": "lesson:102:jahim",
+          "occurrenceRole": "Identifies the Hellfire as the object of the promised sight.",
+          "breakdown": {
+            "id": "breakdown:word:102:6:2",
+            "mode": "segmented",
+            "sourceText": "ٱلْجَحِيمَ",
+            "parts": [
+              {
+                "id": "word:102:6:2:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:102:6:2:part:2",
+                "order": 2,
+                "sourceText": "جَحِيمَ",
+                "displayText": "جَحِيمَ",
+                "label": "blazing fire",
+                "meaning": "the noun for the Hellfire",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ج ح م"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "You will surely see the Hellfire.",
+      "naturalMeaning": "The Hellfire is presented as an unavoidable future sight."
     },
     {
       "id": "ayah:102:7",
@@ -332,7 +864,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "then",
+          "teachingId": "lesson:102:thumma",
+          "occurrenceRole": "Moves the warning to the next stage of certainty.",
+          "breakdown": {
+            "id": "breakdown:word:102:7:1",
+            "mode": "atomic",
+            "sourceText": "ثُمَّ",
+            "parts": [
+              {
+                "id": "word:102:7:1:part:1",
+                "order": 1,
+                "sourceText": "ثُمَّ",
+                "displayText": "ثُمَّ",
+                "label": "then",
+                "meaning": "a connector marking sequence",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:7:2",
@@ -345,7 +898,61 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "you will surely see it",
+          "teachingId": "lesson:102:latarawunnaha",
+          "occurrenceRole": "Reinforces that the Hellfire will be seen with direct certainty.",
+          "breakdown": {
+            "id": "breakdown:word:102:7:2",
+            "mode": "segmented",
+            "sourceText": "لَتَرَوُنَّهَا",
+            "parts": [
+              {
+                "id": "word:102:7:2:part:1",
+                "order": 1,
+                "sourceText": "لَ",
+                "displayText": "لَ",
+                "label": "surely",
+                "meaning": "an emphatic prefix",
+                "kind": "prefix",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphasis prefix)"
+              },
+              {
+                "id": "word:102:7:2:part:2",
+                "order": 2,
+                "sourceText": "تَرَوُ",
+                "displayText": "تَرَوُ",
+                "label": "see",
+                "meaning": "the imperfect lexical stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ر أ ي"
+              },
+              {
+                "id": "word:102:7:2:part:3",
+                "order": 3,
+                "sourceText": "نَّ",
+                "displayText": "نَّ",
+                "label": "surely",
+                "meaning": "an emphatic verbal ending",
+                "kind": "ending",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphatic ending)"
+              },
+              {
+                "id": "word:102:7:2:part:4",
+                "order": 4,
+                "sourceText": "هَا",
+                "displayText": "هَا",
+                "label": "it",
+                "meaning": "an attached feminine singular object pronoun",
+                "kind": "object-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (object pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:7:3",
@@ -358,7 +965,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "eye",
+          "teachingId": "lesson:102:ayn",
+          "occurrenceRole": "Adds direct visual certainty to the promise of seeing.",
+          "breakdown": {
+            "id": "breakdown:word:102:7:3",
+            "mode": "atomic",
+            "sourceText": "عَيْنَ",
+            "parts": [
+              {
+                "id": "word:102:7:3:part:1",
+                "order": 1,
+                "sourceText": "عَيْنَ",
+                "displayText": "عَيْنَ",
+                "label": "eye",
+                "meaning": "the complete noun in the expression",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ع ي ن"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:7:4",
@@ -371,9 +999,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "certainty",
+          "teachingId": "lesson:102:yaqin",
+          "occurrenceRole": "Defines the certainty that should have awakened the listeners.",
+          "breakdown": {
+            "id": "breakdown:word:102:7:4",
+            "mode": "segmented",
+            "sourceText": "ٱلْيَقِينِ",
+            "parts": [
+              {
+                "id": "word:102:7:4:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:102:7:4:part:2",
+                "order": 2,
+                "sourceText": "يَقِينِ",
+                "displayText": "يَقِينِ",
+                "label": "certainty",
+                "meaning": "the certainty noun",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ي ق ن"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Then you will surely see it with the eye of certainty.",
+      "naturalMeaning": "The sight is described as direct, unmistakable certainty."
     },
     {
       "id": "ayah:102:8",
@@ -392,7 +1054,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "then",
+          "teachingId": "lesson:102:thumma",
+          "occurrenceRole": "Moves the warning to the next stage of certainty.",
+          "breakdown": {
+            "id": "breakdown:word:102:8:1",
+            "mode": "atomic",
+            "sourceText": "ثُمَّ",
+            "parts": [
+              {
+                "id": "word:102:8:1:part:1",
+                "order": 1,
+                "sourceText": "ثُمَّ",
+                "displayText": "ثُمَّ",
+                "label": "then",
+                "meaning": "a connector marking sequence",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:8:2",
@@ -405,7 +1088,50 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "you will surely be asked",
+          "teachingId": "lesson:102:latusalunna",
+          "occurrenceRole": "Concludes the warning with accountability for the blessings received.",
+          "breakdown": {
+            "id": "breakdown:word:102:8:2",
+            "mode": "segmented",
+            "sourceText": "لَتُسْـَٔلُنَّ",
+            "parts": [
+              {
+                "id": "word:102:8:2:part:1",
+                "order": 1,
+                "sourceText": "لَ",
+                "displayText": "لَ",
+                "label": "surely",
+                "meaning": "an emphatic prefix",
+                "kind": "prefix",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphasis prefix)"
+              },
+              {
+                "id": "word:102:8:2:part:2",
+                "order": 2,
+                "sourceText": "تُسْـَٔلُ",
+                "displayText": "تُسْـَٔلُ",
+                "label": "be asked",
+                "meaning": "the passive lexical verb stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "س أ ل"
+              },
+              {
+                "id": "word:102:8:2:part:3",
+                "order": 3,
+                "sourceText": "نَّ",
+                "displayText": "نَّ",
+                "label": "surely",
+                "meaning": "an emphatic verbal ending",
+                "kind": "ending",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphatic ending)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:8:3",
@@ -418,7 +1144,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "that Day",
+          "teachingId": "lesson:102:yawmaidin",
+          "occurrenceRole": "Sets the time when the questioning will take place.",
+          "breakdown": {
+            "id": "breakdown:word:102:8:3",
+            "mode": "segmented",
+            "sourceText": "يَوْمَئِذٍ",
+            "parts": [
+              {
+                "id": "word:102:8:3:part:1",
+                "order": 1,
+                "sourceText": "يَوْمَ",
+                "displayText": "يَوْمَ",
+                "label": "day",
+                "meaning": "the time noun",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ي و م"
+              },
+              {
+                "id": "word:102:8:3:part:2",
+                "order": 2,
+                "sourceText": "ئِذٍ",
+                "displayText": "ئِذٍ",
+                "label": "then / at that time",
+                "meaning": "a time adverbial element",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (adverbial element)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:8:4",
@@ -431,7 +1189,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "about",
+          "teachingId": "lesson:102:ani",
+          "occurrenceRole": "Connects the questioning to the blessings that follow.",
+          "breakdown": {
+            "id": "breakdown:word:102:8:4",
+            "mode": "atomic",
+            "sourceText": "عَنِ",
+            "parts": [
+              {
+                "id": "word:102:8:4:part:1",
+                "order": 1,
+                "sourceText": "عَنِ",
+                "displayText": "عَنِ",
+                "label": "about",
+                "meaning": "a preposition marking the topic",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              }
+            ]
+          }
         },
         {
           "id": "word:102:8:5",
@@ -444,11 +1223,1441 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the pleasure",
+          "teachingId": "lesson:102:naim",
+          "occurrenceRole": "Names the worldly blessings that carry responsibility.",
+          "breakdown": {
+            "id": "breakdown:word:102:8:5",
+            "mode": "segmented",
+            "sourceText": "ٱلنَّعِيمِ",
+            "parts": [
+              {
+                "id": "word:102:8:5:part:1",
+                "order": 1,
+                "sourceText": "ٱل",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article before a sun letter",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:102:8:5:part:2",
+                "order": 2,
+                "sourceText": "نَّعِيمِ",
+                "displayText": "نَّعِيمِ",
+                "label": "pleasure / blessing",
+                "meaning": "the noun for comfort and enjoyment",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ن ع م"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Then you will surely be asked that Day about pleasure.",
+      "naturalMeaning": "Every blessing carries a question of responsibility and gratitude."
     }
   ],
-  "teachingEntries": {},
+  "teachingEntries": {
+    "lesson:102:alhakum": {
+      "id": "lesson:102:alhakum",
+      "meaning": "diverted you",
+      "type": "Past verb with attached object pronoun",
+      "root": "ل ه و",
+      "rootPicture": "distraction · diversion · heedlessness",
+      "construction": "أَلْهَىٰ + كُمُ",
+      "components": [
+        {
+          "text": "أَلْهَىٰ",
+          "displayText": "أَلْهَىٰ",
+          "label": "diverted",
+          "meaning": "the lexical verb stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ل ه و"
+        },
+        {
+          "text": "كُمُ",
+          "displayText": "كُمُ",
+          "label": "you",
+          "meaning": "an attached second-person plural object pronoun",
+          "kind": "object-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (object pronoun)"
+        }
+      ],
+      "grammar": "The past verb names the diversion, while كُمُ identifies the people affected.",
+      "sentenceRole": "Describes how rivalry in worldly increase diverted you.",
+      "recognitionClue": "Connect لَهْو with diversion, then recognise كُمُ as ‘you’ attached to the verb.",
+      "forms": [
+        {
+          "form": "أَلْهَىٰكُمُ",
+          "meaning": "diverted you",
+          "difference": "Current Qur'anic occurrence; pattern: Form 4; tense: perfect verb; person: third-person masculine singular; verb form: Form 4.",
+          "relationship": "Current Qur'anic occurrence of the ل ه و root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:1:1."
+        },
+        {
+          "form": "أَلْهَىٰ",
+          "meaning": "he diverted",
+          "difference": "past Form IV verb",
+          "relationship": "Existing project-reviewed relationship to the لهو family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يُلْهِي",
+          "meaning": "he diverts",
+          "difference": "present Form IV verb",
+          "relationship": "Existing project-reviewed relationship to the لهو family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَلَهْوٌ",
+          "meaning": "and amusement",
+          "difference": "Compared with أَلْهَىٰكُمُ, this form changes tense: perfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 4 → not marked.",
+          "relationship": "Related to the ل ه و root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:20:6.",
+          "provenance": "Codex-reviewed form for the ل ه و family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "لَهْوًا",
+          "meaning": "a sport",
+          "difference": "Compared with أَلْهَىٰكُمُ, this form changes tense: perfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 4 → not marked.",
+          "relationship": "Related to the ل ه و root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:62:11:5.",
+          "provenance": "Codex-reviewed form for the ل ه و family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root connects the verb to distraction; the attached pronoun shows who was diverted.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:1:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:1:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:takathur": {
+      "id": "lesson:102:takathur",
+      "meaning": "rivalry in increase",
+      "type": "Definite verbal noun",
+      "root": "ك ث ر",
+      "rootPicture": "increase · abundance · more",
+      "construction": "ٱلْ + تَّكَاثُرُ",
+      "components": [
+        {
+          "text": "ٱل",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article before a sun letter",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "تَّكَاثُرُ",
+          "displayText": "تَّكَاثُرُ",
+          "label": "rivalry in increase",
+          "meaning": "the reciprocal verbal noun",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ك ث ر"
+        }
+      ],
+      "grammar": "The definite article identifies the concept of mutual rivalry in seeking increase.",
+      "sentenceRole": "Names the worldly competition that distracts people.",
+      "recognitionClue": "Recognise كَثِير as ‘many’ and connect تَكَاثُر with competing to have more.",
+      "forms": [
+        {
+          "form": "ٱلتَّكَاثُرُ",
+          "meaning": "rivalry in increase",
+          "difference": "Current Qur'anic occurrence; pattern: Form 3; gender: masculine; case: nominative; verb form: Form 3.",
+          "relationship": "Current Qur'anic occurrence of the ك ث ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:1:2."
+        },
+        {
+          "form": "تَكَاثَرَ",
+          "meaning": "he competed in increase",
+          "difference": "past reciprocal form",
+          "relationship": "Existing project-reviewed relationship to the كثر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَكْثُرُ",
+          "meaning": "he becomes more",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the كثر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "كَثِيرٌ",
+          "meaning": "much / many",
+          "difference": "adjective from the root",
+          "relationship": "Existing project-reviewed relationship to the كثر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَكْثَرَهُمْ",
+          "meaning": "most of them",
+          "difference": "Compared with ٱلتَّكَاثُرُ, this form changes gender: masculine → not marked; case: nominative → accusative; verbform: Form 3 → not marked.",
+          "relationship": "Related to the ك ث ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:47:8.",
+          "provenance": "Codex-reviewed form for the ك ث ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root carries the idea of abundance; the pattern makes the increase a mutual rivalry.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:1:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:1:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:hatta": {
+      "id": "lesson:102:hatta",
+      "meaning": "until",
+      "type": "Subordinating particle",
+      "root": "",
+      "rootPicture": "No lexical root (particle) — until / up to the point when.",
+      "construction": "حَتَّىٰ",
+      "components": [
+        {
+          "text": "حَتَّىٰ",
+          "displayText": "حَتَّىٰ",
+          "label": "until",
+          "meaning": "a particle marking an endpoint",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (particle)"
+        }
+      ],
+      "grammar": "The particle sets the point reached by the action in the following clause.",
+      "sentenceRole": "Carries the meaning forward until people reach the graves.",
+      "recognitionClue": "Treat حَتَّىٰ as a fixed grammatical particle meaning ‘until’, not as a derived root word.",
+      "forms": [
+        {
+          "form": "حَتَّىٰ",
+          "meaning": "until",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:102:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (102:2:1) was checked as evidence."
+        },
+        {
+          "form": "حَتَّى",
+          "meaning": "until",
+          "difference": "short-vowel spelling in connected writing",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This grammar word has no lexical root; it marks the endpoint of the preceding action.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "حَتَّىٰ is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-d8f97f1e0e07a4b6 reviewed word:102:2:1.",
+          "The item was checked as article; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (102:2:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:27:39.196Z"
+      }
+    },
+    "lesson:102:zurtum": {
+      "id": "lesson:102:zurtum",
+      "meaning": "you visited",
+      "type": "Past verb with attached subject pronoun",
+      "root": "ز و ر",
+      "rootPicture": "visit · call upon · turn toward",
+      "construction": "زُرْ + تُمُ",
+      "components": [
+        {
+          "text": "زُرْ",
+          "displayText": "زُرْ",
+          "label": "visited",
+          "meaning": "the lexical verb stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ز و ر"
+        },
+        {
+          "text": "تُمُ",
+          "displayText": "تُمُ",
+          "label": "you",
+          "meaning": "a second-person plural subject ending",
+          "kind": "subject-marker",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (subject ending)"
+        }
+      ],
+      "grammar": "The past verb describes visiting, and تُمُ marks the second-person plural subject.",
+      "sentenceRole": "Describes reaching the graveyards as a visit.",
+      "recognitionClue": "Connect زِيَارَة with visiting and recognise تُمْ as ‘you’ in the past tense.",
+      "forms": [
+        {
+          "form": "زُرْتُمُ",
+          "meaning": "you visited",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ز و ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:2:2."
+        },
+        {
+          "form": "زَارَ",
+          "meaning": "he visited",
+          "difference": "past verb",
+          "relationship": "Existing project-reviewed relationship to the زور family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَزُورُ",
+          "meaning": "he visits",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the زور family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "زِيَارَةٌ",
+          "meaning": "a visit",
+          "difference": "verbal noun",
+          "relationship": "Existing project-reviewed relationship to the زور family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَزُورًا",
+          "meaning": "and a lie",
+          "difference": "Compared with زُرْتُمُ, this form changes tense: perfect verb → not marked; verbform: Form 1 → not marked; pattern: Form 1 → not marked.",
+          "relationship": "Related to the ز و ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:58:2:19.",
+          "provenance": "Codex-reviewed form for the ز و ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root gives the idea of visiting; the ending identifies ‘you’ as the visitors.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:2:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:2:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:maqabir": {
+      "id": "lesson:102:maqabir",
+      "meaning": "the graveyards",
+      "type": "Definite plural noun",
+      "root": "ق ب ر",
+      "rootPicture": "grave · burial · tomb",
+      "construction": "ٱلْ + مَقَابِرَ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "مَقَابِرَ",
+          "displayText": "مَقَابِرَ",
+          "label": "graveyards",
+          "meaning": "the broken plural noun",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ق ب ر"
+        }
+      ],
+      "grammar": "The article makes the plural noun definite; the broken plural names the graveyards.",
+      "sentenceRole": "Names the graveyards that people eventually reach.",
+      "recognitionClue": "Connect قَبْر with a grave and recognise مَقَابِر as its plural graveyards.",
+      "forms": [
+        {
+          "form": "ٱلْمَقَابِرَ",
+          "meaning": "the graveyards",
+          "difference": "Current Qur'anic occurrence; number: masculine plural; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the ق ب ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:2:3."
+        },
+        {
+          "form": "مَقْبَرَةٌ",
+          "meaning": "a cemetery",
+          "difference": "place noun",
+          "relationship": "Existing project-reviewed relationship to the قبر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَقَابِرُ",
+          "meaning": "graveyards",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the قبر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فَأَقْبَرَهُۥ",
+          "meaning": "and provides a grave for him",
+          "difference": "Compared with ٱلْمَقَابِرَ, this form changes number: masculine plural → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Related to the ق ب ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:80:21:3.",
+          "provenance": "Codex-reviewed form for the ق ب ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلْقُبُورِ",
+          "meaning": "(of) the graves",
+          "difference": "Compared with ٱلْمَقَابِرَ, this form changes case: accusative → genitive.",
+          "relationship": "Related to the ق ب ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:60:13:19.",
+          "provenance": "Codex-reviewed form for the ق ب ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root points to burial and graves; the plural pattern expands it to graveyards.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:2:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:2:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:kalla": {
+      "id": "lesson:102:kalla",
+      "meaning": "No",
+      "type": "Rebuking particle",
+      "root": "",
+      "rootPicture": "No lexical root (particle) — no / never / certainly not.",
+      "construction": "كَلَّا",
+      "components": [
+        {
+          "text": "كَلَّا",
+          "displayText": "كَلَّا",
+          "label": "No",
+          "meaning": "a fixed rebuking particle",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (particle)"
+        }
+      ],
+      "grammar": "The fixed particle rejects the heedless attitude and interrupts the mistaken assumption.",
+      "sentenceRole": "Rebukes the distraction before the warning that knowledge will come.",
+      "recognitionClue": "Recognise كَلَّا as a fixed rejection particle rather than searching for a lexical root.",
+      "forms": [
+        {
+          "form": "كَلَّا",
+          "meaning": "No",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:102:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (102:5:1) was checked as evidence."
+        }
+      ],
+      "takeaway": "It is a grammar word with no lexical root; its force is a firm ‘No!’ or ‘Certainly not!’.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "كَلَّا is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-d8f97f1e0e07a4b6 reviewed word:102:5:1.",
+          "The item was checked as article; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (102:5:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:27:39.196Z"
+      }
+    },
+    "lesson:102:sawfa": {
+      "id": "lesson:102:sawfa",
+      "meaning": "will",
+      "type": "Future particle",
+      "root": "",
+      "rootPicture": "No lexical root (future particle) — will / in the future.",
+      "construction": "سَوْفَ",
+      "components": [
+        {
+          "text": "سَوْفَ",
+          "displayText": "سَوْفَ",
+          "label": "will",
+          "meaning": "a particle marking future time",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (future particle)"
+        }
+      ],
+      "grammar": "The fixed particle places the following verb in the future.",
+      "sentenceRole": "Points to knowledge that will come later.",
+      "recognitionClue": "Recognise سَوْفَ as the future marker that comes before the imperfect verb.",
+      "forms": [
+        {
+          "form": "سَوْفَ",
+          "meaning": "will",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:102:4:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (102:4:3) was checked as evidence."
+        }
+      ],
+      "takeaway": "This is a rootless grammar word; it contributes future time rather than a lexical image.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "سَوْفَ is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-d8f97f1e0e07a4b6 reviewed word:102:4:3.",
+          "The item was checked as article; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (102:4:3) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:27:39.196Z"
+      }
+    },
+    "lesson:102:talamun": {
+      "id": "lesson:102:talamun",
+      "meaning": "you know",
+      "type": "Imperfect verb with plural subject ending",
+      "root": "ع ل م",
+      "rootPicture": "know · learn · mark",
+      "construction": "تَعْلَمُ + ونَ",
+      "components": [
+        {
+          "text": "تَعْلَمُ",
+          "displayText": "تَعْلَمُ",
+          "label": "know",
+          "meaning": "the imperfect lexical stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ع ل م"
+        },
+        {
+          "text": "ونَ",
+          "displayText": "ونَ",
+          "label": "you",
+          "meaning": "a second-person masculine plural ending",
+          "kind": "subject-marker",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (subject ending)"
+        }
+      ],
+      "grammar": "The imperfect stem expresses knowing, and ونَ marks the second-person masculine plural.",
+      "sentenceRole": "Promises that the listeners will come to know the truth.",
+      "recognitionClue": "Connect عِلْم with knowledge and recognise تَعْلَمُونَ as ‘you know’ addressed to a group.",
+      "forms": [
+        {
+          "form": "تَعْلَمُونَ",
+          "meaning": "you know",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ع ل م root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:5:3."
+        },
+        {
+          "form": "يَعْلَمُ",
+          "meaning": "he knows",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the علم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَعْلُومٌ",
+          "meaning": "known",
+          "difference": "passive participle",
+          "relationship": "Existing project-reviewed relationship to the علم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلْعَـٰلَمِينَ",
+          "meaning": "the worlds",
+          "difference": "Compared with تَعْلَمُونَ, this form changes tense: imperfect verb → not marked; verbform: Form 1 → not marked; pattern: Form 1 → not marked.",
+          "relationship": "Related to the ع ل م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:1:2:4.",
+          "provenance": "Codex-reviewed form for the ع ل م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "عَلَّمَهُۥ",
+          "meaning": "Has taught him",
+          "difference": "Compared with تَعْلَمُونَ, this form changes tense: imperfect verb → perfect verb; verbform: Form 1 → Form 2; pattern: Form 1 → Form 2.",
+          "relationship": "Related to the ع ل م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:5:1.",
+          "provenance": "Codex-reviewed form for the ع ل م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root makes the meaning knowledge; the imperfect pattern and ending identify the listeners.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:5:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:5:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:thumma": {
+      "id": "lesson:102:thumma",
+      "meaning": "then",
+      "type": "Sequential connector",
+      "root": "",
+      "rootPicture": "No lexical root (connector) — then / afterward.",
+      "construction": "ثُمَّ",
+      "components": [
+        {
+          "text": "ثُمَّ",
+          "displayText": "ثُمَّ",
+          "label": "then",
+          "meaning": "a connector marking sequence",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        }
+      ],
+      "grammar": "The fixed connector marks a later stage after what came before.",
+      "sentenceRole": "Moves the warning to the next stage of certainty.",
+      "recognitionClue": "Recognise ثُمَّ as the connector ‘then’, including a time gap between events.",
+      "forms": [
+        {
+          "form": "ثُمَّ",
+          "meaning": "then",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:102:8:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (102:8:1) was checked as evidence."
+        }
+      ],
+      "takeaway": "This connector has no lexical root; it organizes the sequence of the warning.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "ثُمَّ is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-d8f97f1e0e07a4b6 reviewed word:102:8:1.",
+          "The item was checked as connector/conjunction; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (102:8:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:27:39.196Z"
+      }
+    },
+    "lesson:102:law": {
+      "id": "lesson:102:law",
+      "meaning": "if only",
+      "type": "Conditional particle",
+      "root": "",
+      "rootPicture": "No lexical root (conditional particle) — if only / if.",
+      "construction": "لَوْ",
+      "components": [
+        {
+          "text": "لَوْ",
+          "displayText": "لَوْ",
+          "label": "if only",
+          "meaning": "a particle introducing a hypothetical condition",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (conditional particle)"
+        }
+      ],
+      "grammar": "The fixed particle introduces a hypothetical condition that is not being fulfilled.",
+      "sentenceRole": "Introduces the unrealized condition of knowing with certainty.",
+      "recognitionClue": "Recognise لَوْ as ‘if only’ and notice that it introduces a hypothetical condition.",
+      "forms": [
+        {
+          "form": "لَوْ",
+          "meaning": "if only",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:102:5:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (102:5:2) was checked as evidence."
+        },
+        {
+          "form": "وَلَوْ",
+          "meaning": "even if",
+          "difference": "connector plus conditional particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "It is rootless grammar: the particle frames a condition rather than naming a lexical idea.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "لَوْ is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-d8f97f1e0e07a4b6 reviewed word:102:5:2.",
+          "The item was checked as article; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (102:5:2) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:27:39.196Z"
+      }
+    },
+    "lesson:102:ilm": {
+      "id": "lesson:102:ilm",
+      "meaning": "knowledge",
+      "type": "Noun",
+      "root": "ع ل م",
+      "rootPicture": "know · learn · mark",
+      "construction": "عِلْمَ",
+      "components": [
+        {
+          "text": "عِلْمَ",
+          "displayText": "عِلْمَ",
+          "label": "knowledge",
+          "meaning": "the complete noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ع ل م"
+        }
+      ],
+      "grammar": "The noun names knowledge and is linked to certainty by the following definite noun.",
+      "sentenceRole": "Names knowledge as the quality that would have changed the listeners’ conduct.",
+      "recognitionClue": "Connect عِلْم with knowing and compare it with عَلِمَ and يَعْلَمُ from the same root.",
+      "forms": [
+        {
+          "form": "عِلْمَ",
+          "meaning": "knowledge",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the ع ل م root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:5:4."
+        },
+        {
+          "form": "يَعْلَمُ",
+          "meaning": "he knows",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the علم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلْعَـٰلَمِينَ",
+          "meaning": "the worlds",
+          "difference": "Compared with عِلْمَ, this form changes gender: masculine → not marked; case: accusative → genitive; number: not marked → masculine plural.",
+          "relationship": "Related to the ع ل م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:1:2:4.",
+          "provenance": "Codex-reviewed form for the ع ل م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "يَعْلَمُونَ",
+          "meaning": "know",
+          "difference": "Compared with عِلْمَ, this form changes gender: masculine → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Related to the ع ل م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:47:10.",
+          "provenance": "Codex-reviewed form for the ع ل م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "عَلَّمَهُۥ",
+          "meaning": "Has taught him",
+          "difference": "Compared with عِلْمَ, this form changes gender: masculine → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Related to the ع ل م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:5:1.",
+          "provenance": "Codex-reviewed form for the ع ل م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root keeps the meaning anchored in knowledge; the noun form names knowledge itself.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:5:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:5:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:yaqin": {
+      "id": "lesson:102:yaqin",
+      "meaning": "certainty",
+      "type": "Definite noun",
+      "root": "ي ق ن",
+      "rootPicture": "certainty · sure knowledge · conviction",
+      "construction": "ٱلْ + يَقِينِ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "يَقِينِ",
+          "displayText": "يَقِينِ",
+          "label": "certainty",
+          "meaning": "the certainty noun",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ي ق ن"
+        }
+      ],
+      "grammar": "The definite noun specifies certainty as the quality of knowledge and sight.",
+      "sentenceRole": "Defines the certainty that should have awakened the listeners.",
+      "recognitionClue": "Connect يَقِين with certainty and notice the article marking the definite concept.",
+      "forms": [
+        {
+          "form": "ٱلْيَقِينِ",
+          "meaning": "certainty",
+          "difference": "Current Qur'anic occurrence; number: masculine singular; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ي ق ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:7:4."
+        },
+        {
+          "form": "يَقِينٌ",
+          "meaning": "certainty",
+          "difference": "basic noun",
+          "relationship": "Existing project-reviewed relationship to the يقن family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَيْقَنَ",
+          "meaning": "he became certain",
+          "difference": "Form IV verb",
+          "relationship": "Existing project-reviewed relationship to the يقن family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَسْتَيْقِنُ",
+          "meaning": "he seeks certainty",
+          "difference": "Form X verb",
+          "relationship": "Existing project-reviewed relationship to the يقن family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يُوقِنُونَ",
+          "meaning": "they are certain",
+          "difference": "Compared with ٱلْيَقِينِ, this form changes number: masculine singular → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Related to the ي ق ن root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:36:7.",
+          "provenance": "Codex-reviewed form for the ي ق ن family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root carries firm certainty; the definite noun makes that certainty specific in the warning.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:7:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:7:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:latarawunna": {
+      "id": "lesson:102:latarawunna",
+      "meaning": "you will surely see",
+      "type": "Emphatic future verb",
+      "root": "ر أ ي",
+      "rootPicture": "see · notice · perceive",
+      "construction": "لَ + تَرَوُ + نَّ",
+      "components": [
+        {
+          "text": "لَ",
+          "displayText": "لَ",
+          "label": "surely",
+          "meaning": "an emphatic prefix",
+          "kind": "prefix",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphasis prefix)"
+        },
+        {
+          "text": "تَرَوُ",
+          "displayText": "تَرَوُ",
+          "label": "see",
+          "meaning": "the imperfect lexical stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ر أ ي"
+        },
+        {
+          "text": "نَّ",
+          "displayText": "نَّ",
+          "label": "surely",
+          "meaning": "an emphatic verbal ending",
+          "kind": "ending",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphatic ending)"
+        }
+      ],
+      "grammar": "The prefix لَ adds emphasis, the stem expresses seeing, and نَّ reinforces the future assertion.",
+      "sentenceRole": "States emphatically that the listeners will see the Hellfire.",
+      "recognitionClue": "Connect رُؤْيَة with seeing; separate the emphatic prefix and ending from the lexical stem.",
+      "forms": [
+        {
+          "form": "لَتَرَوُنَّ",
+          "meaning": "you will surely see",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ر أ ي root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:6:1."
+        },
+        {
+          "form": "رَأَى",
+          "meaning": "he saw",
+          "difference": "past verb",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَرَى",
+          "meaning": "he sees",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تَرَوْنَ",
+          "meaning": "you see",
+          "difference": "second-person plural form",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "رَأَىٰٓ",
+          "meaning": "it saw",
+          "difference": "Compared with لَتَرَوُنَّ, this form changes tense: imperfect verb → perfect verb; person: not marked → third-person masculine singular.",
+          "relationship": "Related to the ر أ ي root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:11:5.",
+          "provenance": "Codex-reviewed form for the ر أ ي family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root gives sight; the surrounding grammatical markers make the future statement emphatic.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:6:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:6:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:jahim": {
+      "id": "lesson:102:jahim",
+      "meaning": "the Hellfire",
+      "type": "Definite noun",
+      "root": "ج ح م",
+      "rootPicture": "blazing fire · fierce heat · Hellfire",
+      "construction": "ٱلْ + جَحِيمَ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "جَحِيمَ",
+          "displayText": "جَحِيمَ",
+          "label": "blazing fire",
+          "meaning": "the noun for the Hellfire",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ج ح م"
+        }
+      ],
+      "grammar": "The definite noun names the blazing Fire that will be seen.",
+      "sentenceRole": "Identifies the Hellfire as the object of the promised sight.",
+      "recognitionClue": "Connect جَحِيم with a blazing fire and recognise the article before the noun.",
+      "forms": [
+        {
+          "form": "ٱلْجَحِيمَ",
+          "meaning": "the Hellfire",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the ج ح م root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:6:2."
+        },
+        {
+          "form": "جَحِيمٌ",
+          "meaning": "a blazing fire",
+          "difference": "nominative noun",
+          "relationship": "Existing project-reviewed relationship to the جحم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "جَحِيمًا",
+          "meaning": "a blazing fire",
+          "difference": "accusative noun",
+          "relationship": "Existing project-reviewed relationship to the جحم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "جَحِيمٍ",
+          "meaning": "a blazing fire",
+          "difference": "genitive noun",
+          "relationship": "Existing project-reviewed relationship to the جحم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَجَحِيمًا",
+          "meaning": "and burning fire",
+          "difference": "Compared with ٱلْجَحِيمَ, this form changes state: not marked → indefinite.",
+          "relationship": "Related to the ج ح م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:73:12:4.",
+          "provenance": "Codex-reviewed form for the ج ح م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root evokes fierce blazing heat; the definite noun identifies the promised Hellfire.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:6:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:6:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:latarawunnaha": {
+      "id": "lesson:102:latarawunnaha",
+      "meaning": "you will surely see it",
+      "type": "Emphatic future verb with object pronoun",
+      "root": "ر أ ي",
+      "rootPicture": "see · notice · perceive",
+      "construction": "لَ + تَرَوُ + نَّ + هَا",
+      "components": [
+        {
+          "text": "لَ",
+          "displayText": "لَ",
+          "label": "surely",
+          "meaning": "an emphatic prefix",
+          "kind": "prefix",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphasis prefix)"
+        },
+        {
+          "text": "تَرَوُ",
+          "displayText": "تَرَوُ",
+          "label": "see",
+          "meaning": "the imperfect lexical stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ر أ ي"
+        },
+        {
+          "text": "نَّ",
+          "displayText": "نَّ",
+          "label": "surely",
+          "meaning": "an emphatic verbal ending",
+          "kind": "ending",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphatic ending)"
+        },
+        {
+          "text": "هَا",
+          "displayText": "هَا",
+          "label": "it",
+          "meaning": "an attached feminine singular object pronoun",
+          "kind": "object-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (object pronoun)"
+        }
+      ],
+      "grammar": "The emphatic verb expresses seeing, while هَا points back to the Hellfire as its object.",
+      "sentenceRole": "Reinforces that the Hellfire will be seen with direct certainty.",
+      "recognitionClue": "Recognise the same seeing stem as لَتَرَوُنَّ and add هَا for ‘it’.",
+      "forms": [
+        {
+          "form": "لَتَرَوُنَّهَا",
+          "meaning": "you will surely see it",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ر أ ي root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:7:2."
+        },
+        {
+          "form": "رَأَى",
+          "meaning": "he saw",
+          "difference": "past verb",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَرَى",
+          "meaning": "he sees",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تَرَوْنَهَا",
+          "meaning": "you see it",
+          "difference": "plural verb with object pronoun",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "رَأَىٰٓ",
+          "meaning": "it saw",
+          "difference": "Compared with لَتَرَوُنَّهَا, this form changes tense: imperfect verb → perfect verb; person: not marked → third-person masculine singular.",
+          "relationship": "Related to the ر أ ي root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:11:5.",
+          "provenance": "Codex-reviewed form for the ر أ ي family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root remains seeing; the attached pronoun makes the Hellfire the directly seen object.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:7:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:7:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:ayn": {
+      "id": "lesson:102:ayn",
+      "meaning": "eye",
+      "type": "Noun in an idiomatic expression",
+      "root": "ع ي ن",
+      "rootPicture": "eye · source · essence",
+      "construction": "عَيْنَ",
+      "components": [
+        {
+          "text": "عَيْنَ",
+          "displayText": "عَيْنَ",
+          "label": "eye",
+          "meaning": "the complete noun in the expression",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ع ي ن"
+        }
+      ],
+      "grammar": "The noun ‘eye’ forms the expression ‘the eye of certainty’, meaning direct seeing.",
+      "sentenceRole": "Adds direct visual certainty to the promise of seeing.",
+      "recognitionClue": "Connect عَيْن with an eye and recognize the idiom for direct, unmistakable certainty.",
+      "forms": [
+        {
+          "form": "عَيْنَ",
+          "meaning": "eye",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the ع ي ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:7:3."
+        },
+        {
+          "form": "بِأَعْيُنِنَا",
+          "meaning": "(are) in Our Eyes",
+          "difference": "Compared with عَيْنَ, this form changes gender: feminine → not marked; case: accusative → genitive; number: not marked → feminine plural.",
+          "relationship": "Related to the ع ي ن root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:48:5.",
+          "provenance": "Codex-reviewed form for the ع ي ن family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "عُيُونًا",
+          "meaning": "(with) springs",
+          "difference": "Compared with عَيْنَ, this form changes gender: feminine → not marked; number: not marked → feminine plural; state: not marked → indefinite.",
+          "relationship": "Related to the ع ي ن root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:12:3.",
+          "provenance": "Codex-reviewed form for the ع ي ن family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "أَعْيُنَهُمْ",
+          "meaning": "their eyes",
+          "difference": "Compared with عَيْنَ, this form changes gender: feminine → not marked; number: not marked → feminine plural.",
+          "relationship": "Related to the ع ي ن root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:37:6.",
+          "provenance": "Codex-reviewed form for the ع ي ن family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "عَيْنَانِ",
+          "meaning": "(are) two springs",
+          "difference": "Compared with عَيْنَ, this form changes gender: feminine → not marked; case: accusative → nominative.",
+          "relationship": "Related to the ع ي ن root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:55:50:2.",
+          "provenance": "Codex-reviewed form for the ع ي ن family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root can name an eye or source; here it makes certainty vivid as something seen directly.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:7:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:7:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:latusalunna": {
+      "id": "lesson:102:latusalunna",
+      "meaning": "you will surely be asked",
+      "type": "Emphatic passive future verb",
+      "root": "س أ ل",
+      "rootPicture": "asking · questioning · requesting",
+      "construction": "لَ + تُسْـَٔلُ + نَّ",
+      "components": [
+        {
+          "text": "لَ",
+          "displayText": "لَ",
+          "label": "surely",
+          "meaning": "an emphatic prefix",
+          "kind": "prefix",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphasis prefix)"
+        },
+        {
+          "text": "تُسْـَٔلُ",
+          "displayText": "تُسْـَٔلُ",
+          "label": "be asked",
+          "meaning": "the passive lexical verb stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "س أ ل"
+        },
+        {
+          "text": "نَّ",
+          "displayText": "نَّ",
+          "label": "surely",
+          "meaning": "an emphatic verbal ending",
+          "kind": "ending",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphatic ending)"
+        }
+      ],
+      "grammar": "The emphatic prefix and ending frame the passive verb: the listeners will certainly be questioned.",
+      "sentenceRole": "Concludes the warning with accountability for the blessings received.",
+      "recognitionClue": "Connect سُؤَال with asking; recognize the passive stem and the emphatic markers around it.",
+      "forms": [
+        {
+          "form": "لَتُسْـَٔلُنَّ",
+          "meaning": "you will surely be asked",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; voice: passive; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the س أ ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:8:2."
+        },
+        {
+          "form": "يَسْأَلُ",
+          "meaning": "he asks",
+          "difference": "present active verb",
+          "relationship": "Existing project-reviewed relationship to the سأل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "سُئِلَ",
+          "meaning": "he was asked",
+          "difference": "past passive verb",
+          "relationship": "Existing project-reviewed relationship to the سأل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَتَسَآءَلُونَ",
+          "meaning": "inquiring",
+          "difference": "Compared with لَتُسْـَٔلُنَّ, this form changes voice: passive → not marked; verbform: Form 1 → Form 6; pattern: Form 1 → Form 6.",
+          "relationship": "Related to the س أ ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:25:5.",
+          "provenance": "Codex-reviewed form for the س أ ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "تَسْـَٔلُهُمْ",
+          "meaning": "(do) you ask from them",
+          "difference": "Compared with لَتُسْـَٔلُنَّ, this form changes voice: passive → not marked; person: not marked → second-person masculine singular.",
+          "relationship": "Related to the س أ ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:40:2.",
+          "provenance": "Codex-reviewed form for the س أ ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root gives questioning; the passive form shifts attention to the people who must answer.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:8:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:8:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:yawmaidin": {
+      "id": "lesson:102:yawmaidin",
+      "meaning": "that Day",
+      "type": "Time expression",
+      "root": "ي و م",
+      "rootPicture": "day · time · appointed period",
+      "construction": "يَوْمَ + ئِذٍ",
+      "components": [
+        {
+          "text": "يَوْمَ",
+          "displayText": "يَوْمَ",
+          "label": "day",
+          "meaning": "the time noun",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ي و م"
+        },
+        {
+          "text": "ئِذٍ",
+          "displayText": "ئِذٍ",
+          "label": "then / at that time",
+          "meaning": "a time adverbial element",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (adverbial element)"
+        }
+      ],
+      "grammar": "The noun day is joined to the time element ‘then’ to form ‘on that Day’.",
+      "sentenceRole": "Sets the time when the questioning will take place.",
+      "recognitionClue": "Recognise يَوْم as ‘day’ and notice the attached time element that makes it ‘that Day’.",
+      "forms": [
+        {
+          "form": "يَوْمَئِذٍ",
+          "meaning": "that Day",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of the ي و م root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:8:3."
+        },
+        {
+          "form": "يَوْمًا",
+          "meaning": "a day",
+          "difference": "accusative noun",
+          "relationship": "Existing project-reviewed relationship to the يوم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَيَّامٌ",
+          "meaning": "days",
+          "difference": "plural noun",
+          "relationship": "Existing project-reviewed relationship to the يوم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَوْمِهِمُ",
+          "meaning": "their Day",
+          "difference": "Compared with يَوْمَئِذٍ, this form changes gender: not marked → masculine; case: not marked → genitive.",
+          "relationship": "Related to the ي و م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:60:5.",
+          "provenance": "Codex-reviewed form for the ي و م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "يَوْمَهُمُ",
+          "meaning": "their Day",
+          "difference": "Compared with يَوْمَئِذٍ, this form changes gender: not marked → masculine; case: not marked → accusative.",
+          "relationship": "Related to the ي و م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:45:4.",
+          "provenance": "Codex-reviewed form for the ي و م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The lexical root names the day; the attached time element narrows it to the appointed Day.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:8:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:8:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:102:ani": {
+      "id": "lesson:102:ani",
+      "meaning": "about",
+      "type": "Preposition",
+      "root": "",
+      "rootPicture": "No lexical root (preposition) — about / concerning.",
+      "construction": "عَنِ",
+      "components": [
+        {
+          "text": "عَنِ",
+          "displayText": "عَنِ",
+          "label": "about",
+          "meaning": "a preposition marking the topic",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        }
+      ],
+      "grammar": "The preposition introduces what the listeners will be questioned about.",
+      "sentenceRole": "Connects the questioning to the blessings that follow.",
+      "recognitionClue": "Recognise عَنْ / عَنِ as the preposition ‘about’ and do not search for a lexical root.",
+      "forms": [
+        {
+          "form": "عَنِ",
+          "meaning": "about",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:102:8:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (102:8:4) was checked as evidence."
+        },
+        {
+          "form": "عَنْ",
+          "meaning": "about",
+          "difference": "citation form of the preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This is a rootless grammar word; it marks the topic of the questioning.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "عَنِ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-d8f97f1e0e07a4b6 reviewed word:102:8:4.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (102:8:4) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:27:39.196Z"
+      }
+    },
+    "lesson:102:naim": {
+      "id": "lesson:102:naim",
+      "meaning": "the pleasure",
+      "type": "Definite noun",
+      "root": "ن ع م",
+      "rootPicture": "comfort · blessing · enjoyment",
+      "construction": "ٱلْ + نَّعِيمِ",
+      "components": [
+        {
+          "text": "ٱل",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article before a sun letter",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "نَّعِيمِ",
+          "displayText": "نَّعِيمِ",
+          "label": "pleasure / blessing",
+          "meaning": "the noun for comfort and enjoyment",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ن ع م"
+        }
+      ],
+      "grammar": "The definite noun names the comfort and blessings about which people will be questioned.",
+      "sentenceRole": "Names the worldly blessings that carry responsibility.",
+      "recognitionClue": "Connect نِعْمَة with a blessing and recognize نَعِيم as comfort and enjoyment.",
+      "forms": [
+        {
+          "form": "ٱلنَّعِيمِ",
+          "meaning": "the pleasure",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ن ع م root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:102:8:5."
+        },
+        {
+          "form": "نَعِيمٌ",
+          "meaning": "comfort / bliss",
+          "difference": "basic noun",
+          "relationship": "Existing project-reviewed relationship to the نعم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "نِعْمَةٌ",
+          "meaning": "a blessing",
+          "difference": "related noun",
+          "relationship": "Existing project-reviewed relationship to the نعم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَنْعَمَ",
+          "meaning": "he bestowed blessing",
+          "difference": "Form IV verb",
+          "relationship": "Existing project-reviewed relationship to the نعم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَنْعَمْتَ",
+          "meaning": "You bestowed favor",
+          "difference": "Compared with ٱلنَّعِيمِ, this form changes gender: masculine → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Related to the ن ع م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:1:7:3.",
+          "provenance": "Codex-reviewed form for the ن ع م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root points to blessing and ease; the definite noun gathers those blessings into the final question.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:102:8:5.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (102:8:5)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    }
+  },
   "volumeReferences": []
 }
