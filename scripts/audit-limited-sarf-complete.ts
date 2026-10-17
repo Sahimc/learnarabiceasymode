@@ -3193,6 +3193,235 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "تحتهم",
       },
     ],
+    ["علق"]: [
+      {
+        form: "عَلَقَةٌ",
+        meaning: "a clinging substance",
+        difference:
+          "Feminine singular noun; it is the singular counterpart of the current عَلَقٍ form naming clinging substances.",
+        relationship:
+          "The singular noun of the عَلَق / عَلَقَة family, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ع ل ق entry, which distinguishes عَلَق and عَلَقَة.",
+        featureSignal: ["partofspeech:noun", "number:singular", "gender:feminine"],
+        baseDistinct: true,
+        lexicalKey: "علقة",
+      },
+      {
+        form: "عَلَقَاتٌ",
+        meaning: "clinging substances",
+        difference:
+          "Feminine sound plural; it makes the number contrast explicit rather than repeating the current plural pattern.",
+        relationship:
+          "A regular feminine plural built from the attested عَلَقَة noun in the ع ل ق family.",
+        provenance:
+          "Codex-authored after review of the canonical عَلَقَة family and standard Arabic feminine-plural morphology.",
+        featureSignal: ["partofspeech:noun", "number:plural", "gender:feminine", "derivation:plural"],
+        baseDistinct: true,
+        lexicalKey: "علقات",
+      },
+      {
+        form: "مُعَلَّقٌ",
+        meaning: "suspended or hanging",
+        difference:
+          "Form II passive participle, masculine singular; it shows the result of causing something to hang rather than naming the clinging substance.",
+        relationship:
+          "The masculine passive participle corresponding to the canonical feminine مُعَلَّقَةٌ in the ع ل ق family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 4:129:14 مُعَلَّقَةِ and standard Form II passive-participle morphology.",
+        featureSignal: ["pattern:form-2", "partofspeech:passive-participle", "voice:passive", "gender:masculine"],
+        baseDistinct: true,
+        lexicalKey: "معلق",
+      },
+      {
+        form: "مُعَلَّقَةٌ",
+        meaning: "suspended or hanging",
+        difference:
+          "Form II passive participle, feminine singular; it is the feminine counterpart of مُعَلَّقٌ and a clear derived-pattern contrast.",
+        relationship:
+          "A canonical Form II passive participle of the ع ل ق root, attested in Qur'an 4:129.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 4:129:14 and aligned Form II morphology.",
+        featureSignal: ["pattern:form-2", "partofspeech:passive-participle", "voice:passive", "gender:feminine"],
+        baseDistinct: true,
+        lexicalKey: "معلقة",
+      },
+    ],
+    ["قلم"]: [
+      {
+        form: "قَلَمٌ",
+        meaning: "a pen",
+        difference:
+          "Bare masculine singular noun; it exposes the lexical base beneath the current preposition-plus-definite-noun form.",
+        relationship:
+          "The singular noun corresponding to the current بِٱلْقَلَمِ, attested in the Quranic Arabic Corpus.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ق ل م entry and canonical occurrences of قَلَمٌ.",
+        featureSignal: ["partofspeech:noun", "number:singular", "attachment:none"],
+        baseDistinct: true,
+        lexicalKey: "قلم",
+      },
+      {
+        form: "أَقْلَامٌ",
+        meaning: "pens",
+        difference:
+          "Broken plural; it changes the noun from one pen to multiple pens.",
+        relationship:
+          "A canonical broken plural of قَلَمٌ, attested in Qur'an 3:44 and 31:27.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 3:44:12 and 31:27:7.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "اقلام",
+      },
+      {
+        form: "مَقْلَمَةٌ",
+        meaning: "a pen case",
+        difference:
+          "Derived noun; it names a container or place associated with pens rather than a pen itself.",
+        relationship:
+          "A genuine derived noun of the ق ل م root in the established Arabic lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for مَقْلَمَةٌ and the project root meaning.",
+        featureSignal: ["partofspeech:noun", "derivation:place-or-container"],
+        baseDistinct: true,
+        lexicalKey: "مقلمة",
+      },
+      {
+        form: "قَلَّمَ",
+        meaning: "he trimmed or pruned",
+        difference:
+          "Form II perfect; the doubled middle radical creates a derived action of trimming or shaping, distinct from the pen noun.",
+        relationship:
+          "A genuine Form II verb of the ق ل م root, showing a derived action from the same root.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for قَلَّمَ and standard Form II morphology.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "partofspeech:verb", "meaning:trim"],
+        baseDistinct: true,
+        lexicalKey: "قلم-form-2",
+      },
+      {
+        form: "تَقْلِيمٌ",
+        meaning: "trimming or pruning",
+        difference:
+          "Form II verbal noun; it names the trimming action produced by قَلَّمَ.",
+        relationship:
+          "The genuine verbal noun of قَلَّمَ in the ق ل م family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for تَقْلِيمٌ and standard Form II verbal-noun morphology.",
+        featureSignal: ["pattern:form-2", "partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "تقليم",
+      },
+    ],
+    ["سفع"]: [
+      {
+        form: "سَفَعَ",
+        meaning: "he dragged or seized",
+        difference:
+          "Form I perfect; it presents the completed dragging or seizing action behind the current future-imperfect threat.",
+        relationship:
+          "Form I perfect of the س ف ع root, the verbal base of لَنَسْفَعًا.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus س ف ع entry and standard Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "سفع",
+      },
+      {
+        form: "يَسْفَعُ",
+        meaning: "he drags or seizes",
+        difference:
+          "Form I imperfect, third-person masculine singular; it contrasts with the current first-person plural form.",
+        relationship:
+          "The singular imperfect counterpart of the canonical لَنَسْفَعًا.",
+        provenance:
+          "Codex-authored after review of canonical occurrence word:96:15:5 and standard Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "يسفع",
+      },
+      {
+        form: "سَافِعٌ",
+        meaning: "dragging or seizing",
+        difference:
+          "Form I active participle; it describes an agent performing the dragging rather than expressing a finite verb.",
+        relationship:
+          "The active participle of سَفَعَ in the س ف ع family.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus س ف ع root entry and standard Form I active-participle morphology.",
+        featureSignal: ["pattern:form-1", "partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "سافع",
+      },
+      {
+        form: "مَسْفُوعٌ",
+        meaning: "dragged or seized",
+        difference:
+          "Form I passive participle; it describes the person or thing affected by the dragging action.",
+        relationship:
+          "The passive participle of سَفَعَ, giving the affected-state contrast within the same root family.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus س ف ع entry and standard Form I passive-participle morphology.",
+        featureSignal: ["pattern:form-1", "partofspeech:passive-participle", "voice:passive", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "مسفوع",
+      },
+    ],
+    ["زبن"]: [
+      {
+        form: "زَبَنَ",
+        meaning: "he drove or pushed away",
+        difference:
+          "Form I perfect; it presents the completed driving-away action associated with the angels’ role in the current noun.",
+        relationship:
+          "Form I perfect of the ز ب ن root, the action underlying زَبَانِيَةٌ.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for زَبَنَ and the Quranic Arabic Corpus ز ب ن entry.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "زَبَن",
+      },
+      {
+        form: "يَزْبِنُ",
+        meaning: "he drives or pushes away",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents the driving-away action as ongoing.",
+        relationship:
+          "The imperfect counterpart of زَبَنَ in the ز ب ن family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for يَزْبِنُ and standard Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يزبن",
+      },
+      {
+        form: "زَبْنٌ",
+        meaning: "driving or pushing away",
+        difference:
+          "Verbal noun; it names the driving-away action rather than the beings associated with it.",
+        relationship:
+          "The verbal noun of زَبَنَ in the ز ب ن family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for زَبْنٌ and standard Form I verbal-noun morphology.",
+        featureSignal: ["pattern:form-1", "partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "زَبْن",
+      },
+      {
+        form: "زَابِنٌ",
+        meaning: "one who drives or pushes away",
+        difference:
+          "Active participle; it names an agent performing the driving-away action.",
+        relationship:
+          "The active participle of زَبَنَ in the ز ب ن family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for زَابِنٌ and standard Form I active-participle morphology.",
+        featureSignal: ["pattern:form-1", "partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "زابن",
+      },
+    ],
     ["مسد"]: [
       {
         form: "مَسَدَ",
