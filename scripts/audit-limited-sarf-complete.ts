@@ -944,6 +944,168 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "انبتَر",
       },
     ],
+    ["حضض"]: [
+      {
+        form: "حَضَّ",
+        meaning: "he urged or encouraged",
+        difference:
+          "Form I perfect; it states a completed act of urging or encouraging, while the current occurrence is the imperfect form.",
+        relationship:
+          "Form I perfect of the ح ض ض root; it is the completed counterpart of يَحُضُّ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, canonical Qur'anic evidence and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "حضض",
+      },
+      {
+        form: "حَضٌّ",
+        meaning: "urging or encouragement",
+        difference:
+          "Verbal noun; it names the act of urging rather than expressing it as a finite verb.",
+        relationship:
+          "A genuine verbal noun of the ح ض ض root, naming the encouragement expressed by حَضَّ and يَحُضُّ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, canonical Qur'anic evidence and standard Arabic Form I verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "حضض",
+      },
+      {
+        form: "حَاضٌّ",
+        meaning: "one who urges or encourages",
+        difference:
+          "Active participle; it describes the agent who performs the urging, contrasting with the finite imperfect يَحُضُّ.",
+        relationship:
+          "A genuine active participle of the ح ض ض root, corresponding to the project’s reviewed حَاضّ form.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, the existing reviewed project form and standard Arabic active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "حاضض",
+      },
+      {
+        form: "تَحَاضُّونَ",
+        meaning: "you urge one another",
+        difference:
+          "Form VI imperfect, second-person masculine plural; the reciprocal pattern shows people mutually urging one another, as in the Qur'anic occurrence 89:18.",
+        relationship:
+          "A genuine Qur'anic Form VI reciprocal form of the ح ض ض root, contrasting the singular imperfect يَحُضُّ with mutual urging.",
+        provenance:
+          "Codex-authored after review of canonical Qur'anic occurrence word:89:18:2 and aligned Quranic Arabic Corpus morphology.",
+        featureSignal: ["pattern:form-6", "tense:imperfect", "person:second-person", "number:plural", "voice:reciprocal"],
+        baseDistinct: true,
+        lexicalKey: "تحاضض",
+      },
+    ],
+    ["ويل"]: [
+      {
+        form: "وَيْلٌ",
+        meaning: "woe or ruin",
+        difference:
+          "Bare lexical noun; it gives the core woe expression without the current فَ connector.",
+        relationship:
+          "The core noun of the و ي ل family, directly underlying the current فَوَيْلٌ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, canonical Qur'anic occurrences of وَيْلٌ and Arabic lexicon evidence for the و ي ل noun.",
+        featureSignal: ["partofspeech:noun", "derivation:base-form"],
+        baseDistinct: true,
+        lexicalKey: "ويل",
+      },
+      {
+        form: "وَيْلَةٌ",
+        meaning: "a calamity or misfortune",
+        difference:
+          "Feminine derivative noun; it expresses an individual calamity or misfortune rather than the fixed woe expression وَيْلٌ.",
+        relationship:
+          "A genuine feminine derivative of the و ي ل family, attested in Qur'anic exclamations such as يَا وَيْلَتَنَا.",
+        provenance:
+          "Codex-authored after review of canonical Qur'anic evidence for وَيْلَةٌ and Arabic lexicon evidence defining وَيْلَةٌ as calamity or misfortune.",
+        featureSignal: ["partofspeech:noun", "gender:feminine", "derivation:related-noun"],
+        baseDistinct: true,
+        lexicalKey: "ويلة",
+      },
+      {
+        form: "وَيْلَاتٌ",
+        meaning: "calamities or misfortunes",
+        difference:
+          "Sound plural of وَيْلَةٌ; it marks multiple calamities rather than the singular woe noun in the current occurrence.",
+        relationship:
+          "The established plural of وَيْلَةٌ within the و ي ل lexical family.",
+        provenance:
+          "Codex-authored after review of Arabic lexicon evidence listing وَيْلَاتٌ as the plural of وَيْلَةٌ and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:plural"],
+        baseDistinct: true,
+        lexicalKey: "ويلات",
+      },
+      {
+        form: "وَيْلَكَ",
+        meaning: "woe to you",
+        difference:
+          "The woe noun with an attached second-person masculine pronoun; it teaches how the fixed expression addresses a specific person.",
+        relationship:
+          "A genuine attached-pronoun construction of وَيْلٌ in the و ي ل family, distinct from the current فَ + وَيْلٌ construction.",
+        provenance:
+          "Codex-authored after review of canonical Arabic usage and lexicon evidence recording وَيْلَكَ as ‘woe to you’; the attached pronoun is taught as grammar, not a new root.",
+        featureSignal: ["partofspeech:noun-plus-pronoun", "attachment:second-person-masculine", "derivation:attached-expression"],
+        baseDistinct: true,
+        lexicalKey: "ويلك",
+      },
+    ],
+    ["سهو"]: [
+      {
+        form: "سَهَا",
+        meaning: "he was heedless or forgot",
+        difference:
+          "Form I perfect; it states a completed act or state of heedlessness, while the current occurrence is an active participle plural.",
+        relationship:
+          "Form I perfect of the س ه و root; it is the finite verb underlying سَاهٍ and سَاهُونَ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, classical Arabic lexicon evidence and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "سها",
+      },
+      {
+        form: "يَسْهُو",
+        meaning: "he is heedless or forgets",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents heedlessness as ongoing or habitual.",
+        relationship:
+          "Form I imperfect of the س ه و root; it is the ongoing counterpart of سَهَا.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, classical Arabic lexicon evidence and standard Arabic Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يسهو",
+      },
+      {
+        form: "سَهْوٌ",
+        meaning: "heedlessness or forgetfulness",
+        difference:
+          "Verbal noun; it names the state or act of heedlessness rather than describing a heedless person.",
+        relationship:
+          "A genuine verbal noun of the س ه و root, naming the state behind سَاهُونَ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning and classical Arabic lexicon evidence for سَهْوٌ.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "سهو",
+      },
+      {
+        form: "سَاهٍ",
+        meaning: "heedless or inattentive",
+        difference:
+          "Singular active participle; it describes one heedless person, contrasting with the current masculine plural سَاهُونَ.",
+        relationship:
+          "The singular active participle corresponding to the current plural سَاهُونَ in the س ه و family.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, classical Arabic lexicon evidence and the singular/plural relationship سَاهٍ → سَاهُونَ.",
+        featureSignal: ["partofspeech:active-participle", "number:singular", "derivation:agent-or-descriptor"],
+        baseDistinct: true,
+        lexicalKey: "ساه",
+      },
+    ],
     ["كسب"]: [
       {
         form: "يَكْسِبُ",
@@ -1290,7 +1452,10 @@ function normalized(value: string) {
 }
 
 function inflectionalKey(value: string) {
-  return normalized(value).replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]+$/gu, "");
+  // Remove only terminal tanwin used for an indefinite case ending. Do not
+  // strip every final harakah: forms such as حَضَّ (perfect verb) and حَضٌّ
+  // (verbal noun) share an unvocalised skeleton but are different Ṣarf rows.
+  return normalized(value).replace(/[\u064B-\u064D]$/u, "");
 }
 
 function base(value: string) {

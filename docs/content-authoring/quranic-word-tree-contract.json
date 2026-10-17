@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.2.0",
   "contractId": "quranic-word-tree-authoring",
-  "contractVersion": "1.3.2",
-  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0", "1.3.1"],
+  "contractVersion": "1.3.3",
+  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0", "1.3.1", "1.3.2"],
   "status": "active",
   "purpose": "The single governing contract for authoring, repairing, importing, auditing and rendering every Qur'anic Arabic Word Tree lesson.",
   "authority": {
@@ -517,6 +517,11 @@
       "id": "sarf-clitic-is-not-family-form",
       "problem": "A conjunction clitic such as وَ or فَ can be counted as a new Ṣarf family form when it merely attaches to an otherwise unchanged lexical stem.",
       "safeguard": "Separate conjunction clitics from lexical morphology. Do not count a canonical occurrence whose provider lexical stem is unchanged and whose only added material is وَ or فَ; explain the clitic in the word breakdown instead."
+    },
+    {
+      "id": "sarf-dedup-preserves-lexical-diacritics",
+      "problem": "A deduplication key can remove every final Arabic diacritic and collapse genuinely different lexical forms that share an unvocalised skeleton, such as حَضَّ (perfect verb) and حَضٌّ (verbal noun).",
+      "safeguard": "For duplicate detection, remove only terminal tanwin/case markers when they are the sole inflectional distinction. Preserve lexical vowels, shaddah and morphological pattern markers; require separate reviewed rows when the vocalised forms, meanings or morphological roles differ."
     },
     {
       "id": "repeated-word-context",

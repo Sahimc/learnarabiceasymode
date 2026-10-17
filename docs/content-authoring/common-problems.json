@@ -96,6 +96,11 @@
       "id": "sarf-clitic-is-not-family-form",
       "problem": "A conjunction clitic such as وَ or فَ is counted as a new Ṣarf family form when it merely attaches to an otherwise unchanged lexical stem.",
       "safeguard": "Separate conjunction clitics from lexical morphology. Do not count a canonical occurrence whose provider lexical stem is unchanged and whose only added material is وَ or فَ; explain the clitic in the word breakdown instead."
+    },
+    {
+      "id": "sarf-dedup-preserves-lexical-diacritics",
+      "problem": "A deduplication key removes every final Arabic diacritic and collapses genuinely different lexical forms that share an unvocalised skeleton, such as حَضَّ (perfect verb) and حَضٌّ (verbal noun).",
+      "safeguard": "For duplicate detection, remove only terminal tanwin/case markers when they are the sole inflectional distinction. Preserve lexical vowels, shaddah and morphological pattern markers; require separate reviewed rows when the vocalised forms, meanings or morphological roles differ."
     }
   ]
 }
