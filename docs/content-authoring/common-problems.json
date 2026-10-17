@@ -121,6 +121,11 @@
       "id": "sarf-dedup-verb-noun-final-vowel",
       "problem": "A verb such as نَفَرَ can be incorrectly treated as the same form as a noun such as نَفَرٌ when the audit strips the final vowel before comparing candidates, causing a genuine lexical contrast to disappear and leaving a family blocked.",
       "safeguard": "Make Ṣarf candidate deduplication and current-form comparison part-of-speech-aware. Preserve the final lexical vowel for reviewed verb and verbal-noun candidates; strip terminal case/tanwin only for forms where it is genuinely inflectional. Add a regression case whenever a verb/noun pair shares an unvocalised skeleton."
+    },
+    {
+      "id": "sarf-dedup-case-only-row-assembly",
+      "problem": "Different candidate sources can retain the same lexical form with different case endings, causing the assembled Ṣarf family to contain duplicate rows and fail validation or falsely consume one of the four related-form slots.",
+      "safeguard": "After merging provider, existing-reviewed and Codex-authored candidates, deduplicate by the reviewed part-of-speech-aware inflectional key before selecting rows and again after assembly. Treat case-only and tanwin-only variants as one form; if deduplication leaves fewer than five meaningful rows, author or select another genuinely distinct reviewed form rather than padding."
     }
   ]
 }
