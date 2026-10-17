@@ -1505,6 +1505,60 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "تحاضض",
       },
     ],
+    ["عصر"]: [
+      {
+        form: "عَصَرَ",
+        meaning: "he pressed or squeezed",
+        difference:
+          "Form I perfect; it presents the completed act of pressing or squeezing, contrasting with the current time noun.",
+        relationship:
+          "Form I perfect of the ع ص ر root, the basic verb behind the pressing and time-related lexical family.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ع ص ر entry and Arabic Academy evidence for عَصَرَ.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "عصر",
+      },
+      {
+        form: "يَعْصِرُ",
+        meaning: "he presses or squeezes",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents pressing or squeezing as ongoing or expected.",
+        relationship:
+          "Form I imperfect of the ع ص ر root, attested in Qur'an 12:36 and 12:49.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 12:36:9 and 12:49:11 and aligned morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "يعصر",
+      },
+      {
+        form: "إِعْصَارٌ",
+        meaning: "a whirlwind",
+        difference:
+          "Form IV verbal noun; it names a powerful swirling wind, showing a derived pattern rather than the current time noun.",
+        relationship:
+          "A genuine Form IV verbal noun of the ع ص ر root, attested in Qur'an 2:266.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 2:266:25 and Arabic Academy evidence for الإعصار.",
+        featureSignal: ["pattern:form-4", "partofspeech:verbal-noun", "derivation:derived-noun"],
+        baseDistinct: true,
+        lexicalKey: "اعصار",
+      },
+      {
+        form: "مُعْصِرَةٌ",
+        meaning: "a rain cloud",
+        difference:
+          "Form IV feminine active participle; it names a cloud associated with producing rain, contrasting with the current masculine time noun.",
+        relationship:
+          "The singular feminine counterpart of the Qur'anic Form IV active participle مُعْصِرَات, the rain clouds in 78:14.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 78:14:3 and Arabic Academy evidence defining المُعْصِرات as rain-bearing clouds.",
+        featureSignal: ["pattern:form-4", "partofspeech:active-participle", "gender:feminine", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "معصرة",
+      },
+    ],
     ["ويل"]: [
       {
         form: "وَيْلٌ",

@@ -7,10 +7,10 @@
     "arabicName": "العصر",
     "transliteration": "Al-ʿAṣr",
     "englishLabel": "The Declining Day",
-    "description": "Canonical source layer; custom teaching is not yet authored."
+    "description": "Reviewed Word Tree teaching layer."
   },
-  "contentVersion": "tanzil-1.1",
-  "status": "source-only",
+  "contentVersion": "tanzil-1.1+teaching-103-v1-sarf-1.2-limited-audit",
+  "status": "custom-complete",
   "sourceReferences": [
     {
       "provider": "tanzil",
@@ -37,9 +37,54 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "By time",
+          "teachingId": "lesson:103:wal-asr",
+          "occurrenceRole": "Introduces the oath by time.",
+          "breakdown": {
+            "id": "breakdown:word:103:1:1",
+            "mode": "segmented",
+            "sourceText": "وَٱلْعَصْرِ",
+            "parts": [
+              {
+                "id": "word:103:1:1:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَ",
+                "label": "by / and",
+                "meaning": "a connector introducing the oath",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:103:1:1:part:2",
+                "order": 2,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:103:1:1:part:3",
+                "order": 3,
+                "sourceText": "عَصْرِ",
+                "displayText": "عَصْرِ",
+                "label": "time",
+                "meaning": "the noun naming time or an age",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ع ص ر"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "By time,",
+      "naturalMeaning": "Time is invoked as a witness to the human condition."
     },
     {
       "id": "ayah:103:2",
@@ -58,7 +103,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "Indeed",
+          "teachingId": "lesson:103:inna",
+          "occurrenceRole": "Strengthens the warning that follows.",
+          "breakdown": {
+            "id": "breakdown:word:103:2:1",
+            "mode": "atomic",
+            "sourceText": "إِنَّ",
+            "parts": [
+              {
+                "id": "word:103:2:1:part:1",
+                "order": 1,
+                "sourceText": "إِنَّ",
+                "displayText": "إِنَّ",
+                "label": "indeed",
+                "meaning": "an emphatic particle",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphasis particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:103:2:2",
@@ -71,7 +137,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "mankind",
+          "teachingId": "lesson:103:insan",
+          "occurrenceRole": "Names mankind as the subject of the warning.",
+          "breakdown": {
+            "id": "breakdown:word:103:2:2",
+            "mode": "segmented",
+            "sourceText": "ٱلْإِنسَـٰنَ",
+            "parts": [
+              {
+                "id": "word:103:2:2:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:103:2:2:part:2",
+                "order": 2,
+                "sourceText": "إِنسَـٰنَ",
+                "displayText": "إِنسَـٰنَ",
+                "label": "mankind",
+                "meaning": "the noun for the human being",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "أ ن س"
+              }
+            ]
+          }
         },
         {
           "id": "word:103:2:3",
@@ -84,7 +182,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "surely in",
+          "teachingId": "lesson:103:lafi",
+          "occurrenceRole": "Places mankind emphatically inside the state of loss.",
+          "breakdown": {
+            "id": "breakdown:word:103:2:3",
+            "mode": "segmented",
+            "sourceText": "لَفِى",
+            "parts": [
+              {
+                "id": "word:103:2:3:part:1",
+                "order": 1,
+                "sourceText": "لَ",
+                "displayText": "لَ",
+                "label": "surely",
+                "meaning": "an emphatic prefix",
+                "kind": "prefix",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphasis marker)"
+              },
+              {
+                "id": "word:103:2:3:part:2",
+                "order": 2,
+                "sourceText": "فِى",
+                "displayText": "فِى",
+                "label": "in",
+                "meaning": "a preposition marking containment",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              }
+            ]
+          }
         },
         {
           "id": "word:103:2:4",
@@ -97,9 +227,32 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "loss",
+          "teachingId": "lesson:103:khusr",
+          "occurrenceRole": "Names the loss that encompasses mankind in general.",
+          "breakdown": {
+            "id": "breakdown:word:103:2:4",
+            "mode": "atomic",
+            "sourceText": "خُسْرٍ",
+            "parts": [
+              {
+                "id": "word:103:2:4:part:1",
+                "order": 1,
+                "sourceText": "خُسْرٍ",
+                "displayText": "خُسْرٍ",
+                "label": "loss",
+                "meaning": "the complete noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "خ س ر"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Indeed, mankind is in loss,",
+      "naturalMeaning": "The surah states that people are naturally moving toward loss unless they take a different path."
     },
     {
       "id": "ayah:103:3",
@@ -118,7 +271,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "Except",
+          "teachingId": "lesson:103:illa",
+          "occurrenceRole": "Opens the exception to the universal loss.",
+          "breakdown": {
+            "id": "breakdown:word:103:3:1",
+            "mode": "atomic",
+            "sourceText": "إِلَّا",
+            "parts": [
+              {
+                "id": "word:103:3:1:part:1",
+                "order": 1,
+                "sourceText": "إِلَّا",
+                "displayText": "إِلَّا",
+                "label": "except",
+                "meaning": "a particle marking an exception",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (exception particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:103:3:2",
@@ -131,7 +305,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "those who",
+          "teachingId": "lesson:103:alladhina",
+          "occurrenceRole": "Identifies the people described in the exception.",
+          "breakdown": {
+            "id": "breakdown:word:103:3:2",
+            "mode": "atomic",
+            "sourceText": "ٱلَّذِينَ",
+            "parts": [
+              {
+                "id": "word:103:3:2:part:1",
+                "order": 1,
+                "sourceText": "ٱلَّذِينَ",
+                "displayText": "ٱلَّذِينَ",
+                "label": "those who",
+                "meaning": "a masculine plural relative pronoun",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (relative pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:103:3:3",
@@ -144,7 +339,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "believed",
+          "teachingId": "lesson:103:amanu",
+          "occurrenceRole": "Names faith as the first quality of those saved from loss.",
+          "breakdown": {
+            "id": "breakdown:word:103:3:3",
+            "mode": "segmented",
+            "sourceText": "ءَامَنُوا۟",
+            "parts": [
+              {
+                "id": "word:103:3:3:part:1",
+                "order": 1,
+                "sourceText": "ءَامَنُ",
+                "displayText": "ءَامَنُ",
+                "label": "believed",
+                "meaning": "the lexical verb stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "أ م ن"
+              },
+              {
+                "id": "word:103:3:3:part:2",
+                "order": 2,
+                "sourceText": "وا۟",
+                "displayText": "وا۟",
+                "label": "they",
+                "meaning": "a masculine plural subject ending",
+                "kind": "subject-marker",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (plural subject ending)"
+              }
+            ]
+          }
         },
         {
           "id": "word:103:3:4",
@@ -157,7 +384,50 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "and did",
+          "teachingId": "lesson:103:amilu",
+          "occurrenceRole": "Names righteous action as the second quality of those saved.",
+          "breakdown": {
+            "id": "breakdown:word:103:3:4",
+            "mode": "segmented",
+            "sourceText": "وَعَمِلُوا۟",
+            "parts": [
+              {
+                "id": "word:103:3:4:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَ",
+                "label": "and",
+                "meaning": "a connector joining the next quality",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:103:3:4:part:2",
+                "order": 2,
+                "sourceText": "عَمِلُ",
+                "displayText": "عَمِلُ",
+                "label": "did",
+                "meaning": "the lexical verb stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ع م ل"
+              },
+              {
+                "id": "word:103:3:4:part:3",
+                "order": 3,
+                "sourceText": "وا۟",
+                "displayText": "وا۟",
+                "label": "they",
+                "meaning": "a masculine plural subject ending",
+                "kind": "subject-marker",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (plural subject ending)"
+              }
+            ]
+          }
         },
         {
           "id": "word:103:3:5",
@@ -170,7 +440,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "righteous deeds",
+          "teachingId": "lesson:103:salihat",
+          "occurrenceRole": "Names the righteous deeds that accompany faith.",
+          "breakdown": {
+            "id": "breakdown:word:103:3:5",
+            "mode": "segmented",
+            "sourceText": "ٱلصَّـٰلِحَـٰتِ",
+            "parts": [
+              {
+                "id": "word:103:3:5:part:1",
+                "order": 1,
+                "sourceText": "ٱل",
+                "displayText": "ٱل",
+                "label": "the",
+                "meaning": "the definite article before a sun letter",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:103:3:5:part:2",
+                "order": 2,
+                "sourceText": "صَّـٰلِحَـٰتِ",
+                "displayText": "صَّـٰلِحَـٰتِ",
+                "label": "righteous deeds",
+                "meaning": "the feminine plural noun",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ص ل ح"
+              }
+            ]
+          }
         },
         {
           "id": "word:103:3:6",
@@ -183,7 +485,50 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "advised each other",
+          "teachingId": "lesson:103:tawasaw",
+          "occurrenceRole": "Names mutual advice as a quality of those saved from loss.",
+          "breakdown": {
+            "id": "breakdown:word:103:3:6",
+            "mode": "segmented",
+            "sourceText": "وَتَوَاصَوْا۟",
+            "parts": [
+              {
+                "id": "word:103:3:6:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَ",
+                "label": "and",
+                "meaning": "a connector joining the next quality",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:103:3:6:part:2",
+                "order": 2,
+                "sourceText": "تَوَاصَ",
+                "displayText": "تَوَاصَ",
+                "label": "advised each other",
+                "meaning": "the reciprocal verb stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "و ص ي"
+              },
+              {
+                "id": "word:103:3:6:part:3",
+                "order": 3,
+                "sourceText": "وْا۟",
+                "displayText": "وْا۟",
+                "label": "they",
+                "meaning": "a masculine plural subject ending",
+                "kind": "subject-marker",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (plural subject ending)"
+              }
+            ]
+          }
         },
         {
           "id": "word:103:3:7",
@@ -196,7 +541,50 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "to truth",
+          "teachingId": "lesson:103:bilhaqq",
+          "occurrenceRole": "Names truth and right as the first subject of mutual advice.",
+          "breakdown": {
+            "id": "breakdown:word:103:3:7",
+            "mode": "segmented",
+            "sourceText": "بِٱلْحَقِّ",
+            "parts": [
+              {
+                "id": "word:103:3:7:part:1",
+                "order": 1,
+                "sourceText": "بِ",
+                "displayText": "بِ",
+                "label": "to / with",
+                "meaning": "a preposition marking association",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              },
+              {
+                "id": "word:103:3:7:part:2",
+                "order": 2,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:103:3:7:part:3",
+                "order": 3,
+                "sourceText": "حَقِّ",
+                "displayText": "حَقِّ",
+                "label": "truth",
+                "meaning": "the noun for truth or what is right",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ح ق ق"
+              }
+            ]
+          }
         },
         {
           "id": "word:103:3:8",
@@ -209,7 +597,50 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "advised each other",
+          "teachingId": "lesson:103:tawasaw",
+          "occurrenceRole": "Repeats mutual advice before naming patience.",
+          "breakdown": {
+            "id": "breakdown:word:103:3:8",
+            "mode": "segmented",
+            "sourceText": "وَتَوَاصَوْا۟",
+            "parts": [
+              {
+                "id": "word:103:3:8:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَ",
+                "label": "and",
+                "meaning": "a connector joining the next quality",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:103:3:8:part:2",
+                "order": 2,
+                "sourceText": "تَوَاصَ",
+                "displayText": "تَوَاصَ",
+                "label": "advised each other",
+                "meaning": "the reciprocal verb stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "و ص ي"
+              },
+              {
+                "id": "word:103:3:8:part:3",
+                "order": 3,
+                "sourceText": "وْا۟",
+                "displayText": "وْا۟",
+                "label": "they",
+                "meaning": "a masculine plural subject ending",
+                "kind": "subject-marker",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (plural subject ending)"
+              }
+            ]
+          }
         },
         {
           "id": "word:103:3:9",
@@ -222,11 +653,1052 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "to patience",
+          "teachingId": "lesson:103:bisabr",
+          "occurrenceRole": "Names patience as the final subject of mutual advice.",
+          "breakdown": {
+            "id": "breakdown:word:103:3:9",
+            "mode": "segmented",
+            "sourceText": "بِٱلصَّبْرِ",
+            "parts": [
+              {
+                "id": "word:103:3:9:part:1",
+                "order": 1,
+                "sourceText": "بِ",
+                "displayText": "بِ",
+                "label": "to / with",
+                "meaning": "a preposition marking association",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              },
+              {
+                "id": "word:103:3:9:part:2",
+                "order": 2,
+                "sourceText": "ٱل",
+                "displayText": "ٱل",
+                "label": "the",
+                "meaning": "the definite article before a sun letter",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:103:3:9:part:3",
+                "order": 3,
+                "sourceText": "صَّبْرِ",
+                "displayText": "صَّبْرِ",
+                "label": "patience",
+                "meaning": "the noun for patient endurance",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ص ب ر"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.",
+      "naturalMeaning": "Faith, righteous action, mutual commitment to truth and mutual patience form the exception to that loss."
     }
   ],
-  "teachingEntries": {},
+  "teachingEntries": {
+    "lesson:103:wal-asr": {
+      "id": "lesson:103:wal-asr",
+      "meaning": "By time",
+      "type": "Connector plus definite noun",
+      "root": "ع ص ر",
+      "rootPicture": "time · age · press",
+      "construction": "وَ + ٱلْ + عَصْرِ",
+      "components": [
+        {
+          "text": "وَ",
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "by / and",
+          "meaning": "a connector introducing the oath",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "ٱلْ",
+          "sourceText": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "عَصْرِ",
+          "sourceText": "عَصْرِ",
+          "displayText": "عَصْرِ",
+          "label": "time",
+          "meaning": "the noun naming time or an age",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ع ص ر"
+        }
+      ],
+      "grammar": "The connector opens an oath, while the definite noun names time as the thing invoked.",
+      "sentenceRole": "Opens the surah with an oath by time.",
+      "recognitionClue": "Separate وَ as the opening connector, ٱلْ as the article, and عَصْر as time or an age.",
+      "forms": [
+        {
+          "form": "وَٱلْعَصْرِ",
+          "meaning": "By time",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the عصر lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:103:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (103:1:1) was checked as evidence."
+        },
+        {
+          "form": "عَصَرَ",
+          "meaning": "he pressed or squeezed",
+          "difference": "Form I perfect; it presents the completed act of pressing or squeezing, contrasting with the current time noun.",
+          "relationship": "Form I perfect of the ع ص ر root, the basic verb behind the pressing and time-related lexical family.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ع ص ر entry and Arabic Academy evidence for عَصَرَ."
+        },
+        {
+          "form": "يَعْصِرُ",
+          "meaning": "he presses or squeezes",
+          "difference": "Form I imperfect, third-person masculine singular; it presents pressing or squeezing as ongoing or expected.",
+          "relationship": "Form I imperfect of the ع ص ر root, attested in Qur'an 12:36 and 12:49.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrences 12:36:9 and 12:49:11 and aligned morphology."
+        },
+        {
+          "form": "إِعْصَارٌ",
+          "meaning": "a whirlwind",
+          "difference": "Form IV verbal noun; it names a powerful swirling wind, showing a derived pattern rather than the current time noun.",
+          "relationship": "A genuine Form IV verbal noun of the ع ص ر root, attested in Qur'an 2:266.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrence 2:266:25 and Arabic Academy evidence for الإعصار."
+        },
+        {
+          "form": "مُعْصِرَةٌ",
+          "meaning": "a rain cloud",
+          "difference": "Form IV feminine active participle; it names a cloud associated with producing rain, contrasting with the current masculine time noun.",
+          "relationship": "The singular feminine counterpart of the Qur'anic Form IV active participle مُعْصِرَات, the rain clouds in 78:14.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrence 78:14:3 and Arabic Academy evidence defining المُعْصِرات as rain-bearing clouds."
+        }
+      ],
+      "takeaway": "Separate وَ as the opening connector, ٱلْ as the article, and عَصْر as time or an age.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-91eb8ede00926461 reviewed word:103:1:1.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the عصر root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:25:19.072Z"
+      }
+    },
+    "lesson:103:inna": {
+      "id": "lesson:103:inna",
+      "meaning": "Indeed",
+      "type": "Emphasis particle",
+      "root": "",
+      "rootPicture": "No lexical root (emphasis particle) — strengthens the statement that follows.",
+      "construction": "إِنَّ",
+      "components": [
+        {
+          "text": "إِنَّ",
+          "sourceText": "إِنَّ",
+          "displayText": "إِنَّ",
+          "label": "indeed",
+          "meaning": "an emphatic particle",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphasis particle)"
+        }
+      ],
+      "grammar": "This grammar word adds certainty to the judgment about mankind.",
+      "sentenceRole": "Emphasizes the universal statement that mankind is in loss.",
+      "recognitionClue": "Recognise إِنَّ as the emphatic word indeed at the start of a clause.",
+      "forms": [
+        {
+          "form": "إِنَّ",
+          "meaning": "Indeed",
+          "difference": "Current Qur'anic occurrence; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:103:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (103:2:1) was checked as evidence."
+        },
+        {
+          "form": "أَنَّ",
+          "meaning": "that",
+          "difference": "subordinating particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "كَأَنَّ",
+          "meaning": "as if",
+          "difference": "comparison particle built on the same family",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Recognise إِنَّ as the emphatic word indeed at the start of a clause.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "إِنَّ is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-91eb8ede00926461 reviewed word:103:2:1.",
+          "The item was checked as article; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (103:2:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:25:19.072Z"
+      }
+    },
+    "lesson:103:insan": {
+      "id": "lesson:103:insan",
+      "meaning": "mankind",
+      "type": "Definite noun",
+      "root": "أ ن س",
+      "rootPicture": "humanity · people · familiarity",
+      "construction": "ٱلْ + إِنسَـٰنَ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "sourceText": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "إِنسَـٰنَ",
+          "sourceText": "إِنسَـٰنَ",
+          "displayText": "إِنسَـٰنَ",
+          "label": "mankind",
+          "meaning": "the noun for the human being",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "أ ن س"
+        }
+      ],
+      "grammar": "The definite article makes the statement general: mankind as a whole.",
+      "sentenceRole": "Identifies the group subject of the universal judgment.",
+      "recognitionClue": "Connect إِنسَان with the human being and its root family of familiarity and people.",
+      "forms": [
+        {
+          "form": "ٱلْإِنسَـٰنَ",
+          "meaning": "mankind",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the أ ن س root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:103:2:2."
+        },
+        {
+          "form": "إِنسَانٌ",
+          "meaning": "a human being",
+          "difference": "singular noun",
+          "relationship": "Existing project-reviewed relationship to the أنس family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أُنَاسٌ",
+          "meaning": "people",
+          "difference": "plural noun",
+          "relationship": "Existing project-reviewed relationship to the أنس family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِنْسٌ",
+          "meaning": "humankind",
+          "difference": "shorter collective form",
+          "relationship": "Existing project-reviewed relationship to the أنس family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلنَّاسَ",
+          "meaning": "men",
+          "difference": "Compared with ٱلْإِنسَـٰنَ, this form changes gender: masculine → not marked; number: not marked → masculine plural.",
+          "relationship": "Related to the أ ن س root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:20:2.",
+          "provenance": "Codex-reviewed form for the أ ن س family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Connect إِنسَان with the human being and its root family of familiarity and people.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:103:2:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (103:2:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:103:lafi": {
+      "id": "lesson:103:lafi",
+      "meaning": "surely in",
+      "type": "Emphasis marker plus preposition",
+      "root": "",
+      "rootPicture": "No lexical root (emphasis marker + preposition) — firmly places mankind within the condition named next.",
+      "construction": "لَ + فِى",
+      "components": [
+        {
+          "text": "لَ",
+          "sourceText": "لَ",
+          "displayText": "لَ",
+          "label": "surely",
+          "meaning": "an emphatic prefix",
+          "kind": "prefix",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphasis marker)"
+        },
+        {
+          "text": "فِى",
+          "sourceText": "فِى",
+          "displayText": "فِى",
+          "label": "in",
+          "meaning": "a preposition marking containment",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        }
+      ],
+      "grammar": "The emphatic لَ adds certainty, while فِى places mankind inside the state of loss.",
+      "sentenceRole": "Connects mankind firmly to the condition of loss.",
+      "recognitionClue": "Notice لَ for emphasis joined to فِى, the preposition in.",
+      "forms": [
+        {
+          "form": "لَفِى",
+          "meaning": "surely in",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:103:2:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (103:2:3) was checked as evidence."
+        },
+        {
+          "form": "فِى",
+          "meaning": "in",
+          "difference": "the preposition by itself",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "لَفِيهِ",
+          "meaning": "surely in it",
+          "difference": "the same frame with an attached pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Notice لَ for emphasis joined to فِى, the preposition in.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "لَفِى is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-91eb8ede00926461 reviewed word:103:2:3.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (103:2:3) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:25:19.072Z"
+      }
+    },
+    "lesson:103:khusr": {
+      "id": "lesson:103:khusr",
+      "meaning": "loss",
+      "type": "Noun",
+      "root": "خ س ر",
+      "rootPicture": "loss · ruin · deficit",
+      "construction": "خُسْرٍ",
+      "components": [
+        {
+          "text": "خُسْرٍ",
+          "sourceText": "خُسْرٍ",
+          "displayText": "خُسْرٍ",
+          "label": "loss",
+          "meaning": "the complete noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "خ س ر"
+        }
+      ],
+      "grammar": "An indefinite noun names the condition in which mankind is placed.",
+      "sentenceRole": "States the universal condition from which the exceptions are then made.",
+      "recognitionClue": "Connect خُسْر with losing, ruin and a deficit that diminishes what was possessed.",
+      "forms": [
+        {
+          "form": "خُسْرٍ",
+          "meaning": "loss",
+          "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the خ س ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:103:2:4."
+        },
+        {
+          "form": "يَخْسَرُ",
+          "meaning": "he loses",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the خسر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تُخْسِرُوا۟",
+          "meaning": "make deficient",
+          "difference": "Compared with خُسْرٍ, this form changes gender: masculine → not marked; state: indefinite → not marked; case: genitive → not marked.",
+          "relationship": "Related to the خ س ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:55:9:5.",
+          "provenance": "Codex-reviewed form for the خ س ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلْخَـٰسِرُونَ",
+          "meaning": "(will be) the losers",
+          "difference": "Compared with خُسْرٍ, this form changes gender: masculine → not marked; state: indefinite → not marked; case: genitive → nominative.",
+          "relationship": "Related to the خ س ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:58:19:15.",
+          "provenance": "Codex-reviewed form for the خ س ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "خَاسِرَةٌ",
+          "meaning": "losing",
+          "difference": "Compared with خُسْرٍ, this form changes gender: masculine → feminine; case: genitive → nominative; verbform: not marked → Form 1.",
+          "relationship": "Related to the خ س ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:79:12:5.",
+          "provenance": "Codex-reviewed form for the خ س ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Connect خُسْر with losing, ruin and a deficit that diminishes what was possessed.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:103:2:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (103:2:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:103:illa": {
+      "id": "lesson:103:illa",
+      "meaning": "Except",
+      "type": "Exception particle",
+      "root": "",
+      "rootPicture": "No lexical root (exception particle) — opens the group excluded from the general judgment.",
+      "construction": "إِلَّا",
+      "components": [
+        {
+          "text": "إِلَّا",
+          "sourceText": "إِلَّا",
+          "displayText": "إِلَّا",
+          "label": "except",
+          "meaning": "a particle marking an exception",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (exception particle)"
+        }
+      ],
+      "grammar": "This fixed grammar word begins the exception to the universal statement.",
+      "sentenceRole": "Introduces the four qualities that rescue a person from loss.",
+      "recognitionClue": "Recognise إِلَّا as the exception word except or except for.",
+      "forms": [
+        {
+          "form": "إِلَّا",
+          "meaning": "Except",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:103:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (103:3:1) was checked as evidence."
+        }
+      ],
+      "takeaway": "Recognise إِلَّا as the exception word except or except for.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "إِلَّا is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-91eb8ede00926461 reviewed word:103:3:1.",
+          "The item was checked as article; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (103:3:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:25:19.072Z"
+      }
+    },
+    "lesson:103:alladhina": {
+      "id": "lesson:103:alladhina",
+      "meaning": "those who",
+      "type": "Plural relative pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (relative pronoun) — identifies the people described by the actions that follow.",
+      "construction": "ٱلَّذِينَ",
+      "components": [
+        {
+          "text": "ٱلَّذِينَ",
+          "sourceText": "ٱلَّذِينَ",
+          "displayText": "ٱلَّذِينَ",
+          "label": "those who",
+          "meaning": "a masculine plural relative pronoun",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (relative pronoun)"
+        }
+      ],
+      "grammar": "The relative pronoun opens a description of the people who are excepted.",
+      "sentenceRole": "Introduces the believing and active group that escapes loss.",
+      "recognitionClue": "Recognise ٱلَّذِينَ as the plural form those who before a series of actions.",
+      "forms": [
+        {
+          "form": "ٱلَّذِينَ",
+          "meaning": "those who",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun; number: masculine plural.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:103:3:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (103:3:2) was checked as evidence."
+        },
+        {
+          "form": "ٱلَّذِى",
+          "meaning": "who",
+          "difference": "masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّتِى",
+          "meaning": "who / which",
+          "difference": "feminine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Recognise ٱلَّذِينَ as the plural form those who before a series of actions.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "ٱلَّذِينَ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-91eb8ede00926461 reviewed word:103:3:2.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (103:3:2) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:25:19.072Z"
+      }
+    },
+    "lesson:103:amanu": {
+      "id": "lesson:103:amanu",
+      "meaning": "believed",
+      "type": "Perfect verb plus plural subject ending",
+      "root": "أ م ن",
+      "rootPicture": "safety · trust · faith",
+      "construction": "ءَامَنُ + وا۟",
+      "components": [
+        {
+          "text": "ءَامَنُ",
+          "sourceText": "ءَامَنُ",
+          "displayText": "ءَامَنُ",
+          "label": "believed",
+          "meaning": "the lexical verb stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "أ م ن"
+        },
+        {
+          "text": "وا۟",
+          "sourceText": "وا۟",
+          "displayText": "وا۟",
+          "label": "they",
+          "meaning": "a masculine plural subject ending",
+          "kind": "subject-marker",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (plural subject ending)"
+        }
+      ],
+      "grammar": "The verb names completed belief, and the ending marks a masculine plural subject.",
+      "sentenceRole": "Gives the first quality of those excepted from loss: faith.",
+      "recognitionClue": "Connect أ م ن with safety and trust; وا۟ shows they as a plural subject.",
+      "forms": [
+        {
+          "form": "ءَامَنُوا۟",
+          "meaning": "believed",
+          "difference": "Current Qur'anic occurrence; pattern: Form 4; tense: perfect verb; verb form: Form 4.",
+          "relationship": "Current Qur'anic occurrence of the أ م ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:103:3:3."
+        },
+        {
+          "form": "ءَامَنَ",
+          "meaning": "he believed",
+          "difference": "singular past verb",
+          "relationship": "Existing project-reviewed relationship to the أمن family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يُؤْمِنُ",
+          "meaning": "he believes",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the أمن family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِيمَانٌ",
+          "meaning": "faith",
+          "difference": "verbal noun",
+          "relationship": "Existing project-reviewed relationship to the أمن family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلْمُؤْمِنِينَ",
+          "meaning": "the believers",
+          "difference": "Compared with ءَامَنُوا۟, this form changes tense: perfect verb → not marked; partofspeech: verb → noun/pronoun; number: not marked → masculine plural.",
+          "relationship": "Related to the أ م ن root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:35:6.",
+          "provenance": "Codex-reviewed form for the أ م ن family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Connect أ م ن with safety and trust; وا۟ shows they as a plural subject.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:103:3:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (103:3:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:103:amilu": {
+      "id": "lesson:103:amilu",
+      "meaning": "and did",
+      "type": "Connector plus perfect verb and plural ending",
+      "root": "ع م ل",
+      "rootPicture": "work · act · do",
+      "construction": "وَ + عَمِلُ + وا۟",
+      "components": [
+        {
+          "text": "وَ",
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "a connector joining the next quality",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "عَمِلُ",
+          "sourceText": "عَمِلُ",
+          "displayText": "عَمِلُ",
+          "label": "did",
+          "meaning": "the lexical verb stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ع م ل"
+        },
+        {
+          "text": "وا۟",
+          "sourceText": "وا۟",
+          "displayText": "وا۟",
+          "label": "they",
+          "meaning": "a masculine plural subject ending",
+          "kind": "subject-marker",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (plural subject ending)"
+        }
+      ],
+      "grammar": "The connector adds action to faith, while the ending keeps the same plural subject.",
+      "sentenceRole": "Gives the second quality: righteous action rather than belief as a claim only.",
+      "recognitionClue": "Connect عَمِلَ with work and action, and notice وَ as and plus وا۟ for they.",
+      "forms": [
+        {
+          "form": "وَعَمِلُوا۟",
+          "meaning": "and did",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ع م ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:103:3:4."
+        },
+        {
+          "form": "يَعْمَلُ",
+          "meaning": "he works",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the عمل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تَعْمَلُونَ",
+          "meaning": "do",
+          "difference": "Compared with وَعَمِلُوا۟, this form changes tense: perfect verb → imperfect verb.",
+          "relationship": "Related to the ع م ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:16:12.",
+          "provenance": "Codex-reviewed form for the ع م ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "عَمَلِهِم",
+          "meaning": "their deeds",
+          "difference": "Compared with وَعَمِلُوا۟, this form changes tense: perfect verb → not marked; verbform: Form 1 → not marked; pattern: Form 1 → not marked.",
+          "relationship": "Related to the ع م ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:21:12.",
+          "provenance": "Codex-reviewed form for the ع م ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "يَعْمَلُونَ",
+          "meaning": "do",
+          "difference": "Compared with وَعَمِلُوا۟, this form changes tense: perfect verb → imperfect verb.",
+          "relationship": "Related to the ع م ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:56:24:4.",
+          "provenance": "Codex-reviewed form for the ع م ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Connect عَمِلَ with work and action, and notice وَ as and plus وا۟ for they.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:103:3:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (103:3:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:103:salihat": {
+      "id": "lesson:103:salihat",
+      "meaning": "righteous deeds",
+      "type": "Definite feminine plural noun",
+      "root": "ص ل ح",
+      "rootPicture": "soundness · righteousness · repair",
+      "construction": "ٱل + صَّـٰلِحَـٰتِ",
+      "components": [
+        {
+          "text": "ٱل",
+          "sourceText": "ٱل",
+          "displayText": "ٱل",
+          "label": "the",
+          "meaning": "the definite article before a sun letter",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "صَّـٰلِحَـٰتِ",
+          "sourceText": "صَّـٰلِحَـٰتِ",
+          "displayText": "صَّـٰلِحَـٰتِ",
+          "label": "righteous deeds",
+          "meaning": "the feminine plural noun",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ص ل ح"
+        }
+      ],
+      "grammar": "The definite plural names the recognized category of sound and righteous actions.",
+      "sentenceRole": "Specifies the deeds done by those who believe.",
+      "recognitionClue": "Link صَالِح with what is sound, right and righteous; the ending marks a feminine plural.",
+      "forms": [
+        {
+          "form": "ٱلصَّـٰلِحَـٰتِ",
+          "meaning": "righteous deeds",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; number: feminine plural; case: accusative; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ص ل ح root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:103:3:5."
+        },
+        {
+          "form": "صَالِحٌ",
+          "meaning": "righteous",
+          "difference": "singular describing form",
+          "relationship": "Existing project-reviewed relationship to the صلح family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَصْلَحَ",
+          "meaning": "he made right",
+          "difference": "causative past verb",
+          "relationship": "Existing project-reviewed relationship to the صلح family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلصَّـٰلِحِينَ",
+          "meaning": "the righteous",
+          "difference": "Compared with ٱلصَّـٰلِحَـٰتِ, this form changes number: feminine plural → masculine plural; case: accusative → genitive.",
+          "relationship": "Related to the ص ل ح root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:63:10:21.",
+          "provenance": "Codex-reviewed form for the ص ل ح family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "صَـٰلِحًا",
+          "meaning": "righteous deeds",
+          "difference": "Compared with ٱلصَّـٰلِحَـٰتِ, this form changes number: feminine plural → not marked; gender: not marked → masculine; state: not marked → indefinite.",
+          "relationship": "Related to the ص ل ح root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:64:9:12.",
+          "provenance": "Codex-reviewed form for the ص ل ح family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Link صَالِح with what is sound, right and righteous; the ending marks a feminine plural.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:103:3:5.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (103:3:5)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:103:tawasaw": {
+      "id": "lesson:103:tawasaw",
+      "meaning": "advised each other",
+      "type": "Connector plus reciprocal verb and plural ending",
+      "root": "و ص ي",
+      "rootPicture": "advise · instruct · entrust",
+      "construction": "وَ + تَوَاصَ + وْا۟",
+      "components": [
+        {
+          "text": "وَ",
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "a connector joining the next quality",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "تَوَاصَ",
+          "sourceText": "تَوَاصَ",
+          "displayText": "تَوَاصَ",
+          "label": "advised each other",
+          "meaning": "the reciprocal verb stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "و ص ي"
+        },
+        {
+          "text": "وْا۟",
+          "sourceText": "وْا۟",
+          "displayText": "وْا۟",
+          "label": "they",
+          "meaning": "a masculine plural subject ending",
+          "kind": "subject-marker",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (plural subject ending)"
+        }
+      ],
+      "grammar": "The reciprocal pattern describes people advising one another, and the ending marks the plural subject.",
+      "sentenceRole": "Introduces the shared responsibility of encouraging one another.",
+      "recognitionClue": "Connect وَصِيَّة with advice and notice the reciprocal pattern in تَوَاصَىٰ.",
+      "forms": [
+        {
+          "form": "وَتَوَاصَوْا۟",
+          "meaning": "advised each other",
+          "difference": "Current Qur'anic occurrence; pattern: Form 6; tense: perfect verb; verb form: Form 6.",
+          "relationship": "Current Qur'anic occurrence of the و ص ي root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:103:3:8."
+        },
+        {
+          "form": "تَوَاصَىٰ",
+          "meaning": "he advised mutually",
+          "difference": "singular reciprocal form",
+          "relationship": "Existing project-reviewed relationship to the وصي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَتَوَاصَىٰ",
+          "meaning": "he advises mutually",
+          "difference": "present reciprocal form",
+          "relationship": "Existing project-reviewed relationship to the وصي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَصِيَّةٌ",
+          "meaning": "advice / instruction",
+          "difference": "noun from the same root",
+          "relationship": "Existing project-reviewed relationship to the وصي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَتَوَاصَوْا۟",
+          "meaning": "Have they transmitted it to them",
+          "difference": "A distinct vocalised form in the same root family; its surface pattern and form-specific meaning change to “Have they transmitted it to them”.",
+          "relationship": "Related to the و ص ي root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:53:1.",
+          "provenance": "Codex-reviewed form for the و ص ي family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Connect وَصِيَّة with advice and notice the reciprocal pattern in تَوَاصَىٰ.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:103:3:8.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (103:3:8)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:103:bilhaqq": {
+      "id": "lesson:103:bilhaqq",
+      "meaning": "to truth",
+      "type": "Preposition plus definite noun",
+      "root": "ح ق ق",
+      "rootPicture": "truth · reality · right",
+      "construction": "بِ + ٱلْ + حَقِّ",
+      "components": [
+        {
+          "text": "بِ",
+          "sourceText": "بِ",
+          "displayText": "بِ",
+          "label": "to / with",
+          "meaning": "a preposition marking association",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        },
+        {
+          "text": "ٱلْ",
+          "sourceText": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "حَقِّ",
+          "sourceText": "حَقِّ",
+          "displayText": "حَقِّ",
+          "label": "truth",
+          "meaning": "the noun for truth or what is right",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ح ق ق"
+        }
+      ],
+      "grammar": "The preposition connects the advice to the definite noun truth and right.",
+      "sentenceRole": "Identifies the subject matter of the first mutual advice.",
+      "recognitionClue": "Separate بِـ and ٱلْ from حَقّ, the word for truth, reality and right.",
+      "forms": [
+        {
+          "form": "بِٱلْحَقِّ",
+          "meaning": "to truth",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the حقق lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:103:3:7. Aligned Quranic Arabic Corpus morphology 0.4-derived (103:3:7) was checked as evidence."
+        },
+        {
+          "form": "وَحُقَّتْ",
+          "meaning": "and was obligated",
+          "difference": "Compared with بِٱلْحَقِّ, this form changes gender: masculine → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb; tense: not marked → perfect verb.",
+          "relationship": "Current Qur'anic occurrence of the ح ق ق root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:84:2:3."
+        },
+        {
+          "form": "ٱلْحَآقَّةُ",
+          "meaning": "The Inevitable Reality",
+          "difference": "Compared with بِٱلْحَقِّ, this form changes gender: masculine → feminine; case: genitive → nominative; verbform: not marked → Form 1; pattern: not marked → Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ح ق ق root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:69:1:1."
+        },
+        {
+          "form": "حَقٌّ",
+          "meaning": "(is) a right",
+          "difference": "Compared with بِٱلْحَقِّ, this form changes case: genitive → nominative; state: not marked → indefinite.",
+          "relationship": "Current Qur'anic occurrence of the ح ق ق root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:70:24:4."
+        },
+        {
+          "form": "ٱلْحَقِّ",
+          "meaning": "the truth",
+          "difference": "This form preserves the حقق root while changing its reviewed grammatical or morphological realisation.",
+          "relationship": "Current Qur'anic occurrence of the ح ق ق root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:53:28:15."
+        }
+      ],
+      "takeaway": "Separate بِـ and ٱلْ from حَقّ, the word for truth, reality and right.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-89de645d51b8f108 reviewed word:103:3:7.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the حقق root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T15:20:49.124Z"
+      }
+    },
+    "lesson:103:bisabr": {
+      "id": "lesson:103:bisabr",
+      "meaning": "to patience",
+      "type": "Preposition plus definite noun",
+      "root": "ص ب ر",
+      "rootPicture": "patience · endurance · restraint",
+      "construction": "بِ + ٱل + صَّبْرِ",
+      "components": [
+        {
+          "text": "بِ",
+          "sourceText": "بِ",
+          "displayText": "بِ",
+          "label": "to / with",
+          "meaning": "a preposition marking association",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        },
+        {
+          "text": "ٱل",
+          "sourceText": "ٱل",
+          "displayText": "ٱل",
+          "label": "the",
+          "meaning": "the definite article before a sun letter",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "صَّبْرِ",
+          "sourceText": "صَّبْرِ",
+          "displayText": "صَّبْرِ",
+          "label": "patience",
+          "meaning": "the noun for patient endurance",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ص ب ر"
+        }
+      ],
+      "grammar": "The preposition joins the advice to patience as the final quality in the exception.",
+      "sentenceRole": "Names patience and endurance as the final subject of mutual advice.",
+      "recognitionClue": "Separate بِـ and the article from صَبْر, the noun for patient restraint and endurance.",
+      "forms": [
+        {
+          "form": "بِٱلصَّبْرِ",
+          "meaning": "to patience",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the صبر lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:103:3:9. Aligned Quranic Arabic Corpus morphology 0.4-derived (103:3:9) was checked as evidence."
+        },
+        {
+          "form": "وَٱصْبِرْ",
+          "meaning": "So be patient",
+          "difference": "Compared with بِٱلصَّبْرِ, this form changes gender: masculine → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb; mood: not marked → imperative.",
+          "relationship": "Current Qur'anic occurrence of the ص ب ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:52:48:1."
+        },
+        {
+          "form": "تَصْبِرُوا۟",
+          "meaning": "be patient",
+          "difference": "Compared with بِٱلصَّبْرِ, this form changes gender: masculine → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb; tense: not marked → imperfect verb.",
+          "relationship": "Current Qur'anic occurrence of the ص ب ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:52:16:5."
+        },
+        {
+          "form": "صَبْرًا",
+          "meaning": "a patience",
+          "difference": "Compared with بِٱلصَّبْرِ, this form changes case: genitive → accusative; state: not marked → indefinite.",
+          "relationship": "Current Qur'anic occurrence of the ص ب ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:70:5:2."
+        },
+        {
+          "form": "وَٱصْطَبِرْ",
+          "meaning": "and be patient",
+          "difference": "Compared with بِٱلصَّبْرِ, this form changes gender: masculine → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb; mood: not marked → imperative.",
+          "relationship": "Current Qur'anic occurrence of the ص ب ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:54:27:7."
+        }
+      ],
+      "takeaway": "Separate بِـ and the article from صَبْر, the noun for patient restraint and endurance.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-89de645d51b8f108 reviewed word:103:3:9.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the صبر root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T15:20:49.124Z"
+      }
+    }
+  },
   "volumeReferences": []
 }
