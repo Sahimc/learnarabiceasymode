@@ -1,0 +1,509 @@
+{
+  "schemaVersion": "1.2.0",
+  "contractId": "quranic-word-tree-authoring",
+  "contractVersion": "1.3.0",
+  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1"],
+  "status": "active",
+  "purpose": "The single governing contract for authoring, repairing, importing, auditing and rendering every Qur'anic Arabic Word Tree lesson.",
+  "authority": {
+    "mustLoadBefore": [
+      "authoring",
+      "repair",
+      "import",
+      "validation",
+      "route-verification",
+      "goal-continuation"
+    ],
+    "mustRecordAfter": [
+      "every content change",
+      "every lesson review",
+      "every batch audit",
+      "every import or verification result"
+    ],
+    "humanLinguisticReviewOwner": "Codex",
+    "unknownIsNotDone": true,
+    "noSilentFallback": true,
+    "spotChecksAreNotTheCompletionGate": true
+  },
+  "sourcePolicy": {
+    "canonicalArabic": "Preserve the approved canonical Qur'anic source exactly, including letters, hamzah, shaddah, maddah, vowels, case endings and mood markers.",
+    "certifiedTranslation": "Show the approved certified direct translation beneath the complete āyah; explanatory teaching prose cannot replace it.",
+    "morphology": "Use provider morphology as evidence only after token alignment and lesson-level review.",
+    "rootMeaning": "Use the project-reviewed root-meaning dictionary or an approved lexicon; if a meaning is missing, author an accurate concise learner-facing semantic range and record the provenance.",
+    "customTeaching": "Original learner-facing explanations are required where no existing lesson is suitable, but Arabic forms, roots, translations and grammatical claims must not be invented without linguistic evidence.",
+    "ambiguity": "When evidence is insufficient or conflicting, mark the lesson blocked for review; never fill the gap with a generic fallback."
+  },
+  "lessonContract": {
+    "scope": "Every visible Qur'anic word occurrence, not only every unique spelling or root.",
+    "wholeWordRule": "The complete surface word remains the primary lesson object and must be preserved exactly.",
+    "compoundRule": "A compound surface word may contain a lexical stem plus articles, prepositions, connectors, pronouns or endings. The lexical stem/root remains the primary focus while every grammatical component is explicitly explained.",
+    "contextRule": "Shared lexical teaching may be reused only when the visible form and teaching meaning genuinely match; grammar, case, sentence role and contextual meaning remain occurrence-aware.",
+    "displayRule": "displayText is decorative or pedagogical only. It must never replace or mutate canonical sourceText.",
+    "customCompleteRule": "A lesson may be marked custom-complete only after every required section passes this contract and its audit record is written."
+  },
+  "customAuthorship": {
+    "purpose": "The authoritative section-by-section record of whether Codex writes custom content for a lesson field. A value of yes means custom content is authored or maintained by Codex. A value of no means the field is preserved from canonical or approved source data and must not be creatively replaced.",
+    "sections": {
+      "fullAyahArabic": "no",
+      "certifiedAyahTranslation": "no",
+      "ayahWordOrderAndOccurrencePositions": "no",
+      "explanatoryAyahMeaning": "yes",
+      "completeWordSourceText": "no",
+      "wordDisplayText": "yes",
+      "occurrenceMeaning": "yes",
+      "stableOccurrenceAndTeachingIdentifiers": "no",
+      "rootArabicRadicals": "no",
+      "rootPictureEnglishMeaning": "yes",
+      "rootProvenance": "yes",
+      "rootlessCategoryExplanation": "yes",
+      "constructionAndHowItIsBuilt": "yes",
+      "orderedMeaningfulComponents": "yes",
+      "componentLabelsAndEnglishMeanings": "yes",
+      "partOfSpeech": "yes",
+      "grammarFeatures": "yes",
+      "sentenceRole": "yes",
+      "recognitionClue": "yes",
+      "sarfFamily": "yes",
+      "sarfFormSpecificEnglishMeanings": "yes",
+      "sarfFormDifferences": "yes",
+      "sarfFormRelationships": "yes",
+      "learnerTakeaway": "yes",
+      "reviewProvenance": "yes",
+      "auditDecision": "yes",
+      "packageStatus": "no"
+    },
+    "rules": [
+      "Do not author a replacement for the canonical full Arabic āyah, canonical word sourceText, certified direct translation, Arabic root radicals or occurrence positions.",
+      "Do author the learner-facing explanations and teaching fields marked yes, including occurrence meaning, root semantic range, rootless explanation, construction, grammar, sentence role, recognition clue, Ṣarf teaching, takeaway and explanatory āyah meaning.",
+      "Do record the custom review metadata marked yes, including provenance and audit decision.",
+      "A no field may be formatted for presentation only when the canonical value and meaning remain unchanged; presentation formatting must not become a substitute for custom linguistic content.",
+      "Every authored lesson must be checked against this matrix before validation, import and route verification."
+    ]
+  },
+  "wholeQuranSafeguards": {
+    "purpose": "Additional safeguards required before authoring the entire Qur'an. These are part of the governing contract, not optional workflow preferences.",
+    "considerations": [
+      {
+        "id": "complete-scope-accounting",
+        "consideration": "The scope must cover every one of the 114 sūrahs, 6,236 āyāt and every visible word occurrence.",
+        "rule": "Maintain a machine-readable inventory of every occurrence, its package, ayah, position, teaching ID, status and audit decision. Completion requires zero unknown, pending or silently skipped occurrences.",
+        "evidence": "Scope manifest, coverage report and final occurrence ledger."
+      },
+      {
+        "id": "canonical-unicode-and-diacritic-integrity",
+        "consideration": "Arabic letters, hamzah, shaddah, maddah, vowels, case endings, mood markers and Unicode normalization can change meaning or token alignment.",
+        "rule": "Preserve canonical sourceText byte-for-byte apart from explicitly approved normalization used only for comparison. Never normalize away meaningful Arabic signs or use displayText as source data.",
+        "evidence": "Canonical-source checksum, reconstruction audit and Unicode/diacritic regression tests."
+      },
+      {
+        "id": "certified-translation-coverage",
+        "consideration": "Every complete visible āyah needs the approved direct translation, not a custom paraphrase.",
+        "rule": "Preserve certified translation rows during imports and verify one-to-one coverage for all 6,236 āyāt. Custom explanatory meaning must remain separate.",
+        "evidence": "Translation coverage report and representative rendered-route comparisons."
+      },
+      {
+        "id": "basmalah-and-ayah-boundaries",
+        "consideration": "Basmalah handling and first-word boundaries can shift every word position in a sūrah.",
+        "rule": "Keep basmalah only where canonically part of the visible āyah model; preserve sourceRawArabic separately where needed and assert first-ayah word positions after every import.",
+        "evidence": "Boundary audit for all sūrahs, especially sūrahs 1 and 9 and every first āyah."
+      },
+      {
+        "id": "occurrence-identity-and-context",
+        "consideration": "The same spelling can have different meaning, grammar or teaching value in different āyāt.",
+        "rule": "Author and audit by occurrence, not by spelling alone. Shared lexical material may be reused only after occurrence-specific meaning, grammar, sentence role and construction are checked.",
+        "evidence": "Occurrence-aware teaching IDs and repeated-word context audit."
+      },
+      {
+        "id": "complete-word-reconstruction",
+        "consideration": "A lesson can look plausible while omitting an attached article, preposition, connector, pronoun or ending.",
+        "rule": "Every ordered breakdown must reconstruct the complete canonical visible word. Use atomic mode when a segmentation is not linguistically justified; never publish a partial split.",
+        "evidence": "Per-occurrence reconstruction checks with zero failures."
+      },
+      {
+        "id": "root-and-root-picture-separation",
+        "consideration": "Arabic radicals, stable root meaning and occurrence meaning are different teaching objects.",
+        "rule": "Use the reviewed normalized-root dictionary for every lexical Root Picture and root-skeleton row. Add an accurate semantic range when missing; never copy the occurrence gloss into the root meaning.",
+        "evidence": "Root dictionary coverage, root-picture provenance and reuse audit."
+      },
+      {
+        "id": "compound-and-rootless-components",
+        "consideration": "A compound may contain a lexical stem plus rootless grammatical material.",
+        "rule": "Keep the lexical stem as the lesson root and label each rootless component explicitly as No lexical root (category). Never mark the whole compound rootless merely because one component is grammatical.",
+        "evidence": "Component-level root audit and rendered root/rootless checks."
+      },
+      {
+        "id": "grammar-and-construction-accuracy",
+        "consideration": "Part of speech, gender, number, case, tense, mood, person, voice and sentence role must agree with the actual occurrence.",
+        "rule": "Author grammar and construction from aligned canonical evidence and reliable Arabic knowledge. Do not infer grammar from a provider label without checking the visible form and context.",
+        "evidence": "Grammar fields, reconstruction tests and occurrence-level linguistic review records."
+      },
+      {
+        "id": "sarf-family-quality",
+        "consideration": "The Ṣarf section must teach genuine morphology rather than fill a row count.",
+        "rule": "Use the current form first plus four genuinely useful forms where possible. Use a specific confirmed-limited decision only when further forms would be fabricated, repetitive, irrelevant, misleading or pedagogically weak; block genuine unresolved ambiguity.",
+        "evidence": "Five-row or reviewed-limited validation, provenance, decision ledger and route checks."
+      },
+      {
+        "id": "no-provider-only-teaching",
+        "consideration": "Provider morphology can be incomplete, misaligned or unsuitable for teaching.",
+        "rule": "Treat providers as evidence and candidates only. Codex must review or author forms, meanings, grammar and explanations; provider output cannot become approved teaching automatically.",
+        "evidence": "Provider alignment report and authored-over-provider precedence checks."
+      },
+      {
+        "id": "no-placeholders-or-synthetic-content",
+        "consideration": "Template labels and generated padding can make incomplete work appear finished.",
+        "rule": "Reject placeholder prose, generic fallback explanations, bare roots as Ṣarf rows, repeated occurrence glosses and synthetic case-ending padding. Missing evidence is a block, not a pass.",
+        "evidence": "Content validator, semantic validator and placeholder/synthetic-content audit."
+      },
+      {
+        "id": "provenance-and-black-box-ledger",
+        "consideration": "A whole-Qur’an project needs a durable record of what was reviewed, changed and verified.",
+        "rule": "Write append-only records for every batch and every repaired or reviewed family, including contract version, evidence, before/after state, decision, reviewer and verification results.",
+        "evidence": "Append-only audit ledger with no missing occurrence records."
+      },
+      {
+        "id": "uncertainty-and-blocked-state",
+        "consideration": "Uncertainty must remain visible instead of being hidden by guessed Arabic or English.",
+        "rule": "Use blocked-for-genuine-ambiguity only after reliable evidence has been checked. Blocked is non-publishable and must carry a reason and provenance; it is never a disguised missing-effort bucket.",
+        "evidence": "Blocked-family report and package-status gate."
+      },
+      {
+        "id": "deterministic-and-resumable-batches",
+        "consideration": "The full Qur’an cannot be safely authored as one untracked edit.",
+        "rule": "Use deterministic packet boundaries, stable IDs, idempotent scripts, checkpoints and serialized assembly/import. A resumed run must not duplicate, overwrite or silently skip content.",
+        "evidence": "Batch manifest, checksums, checkpoint state and repeat-run comparison."
+      },
+      {
+        "id": "atomic-import-and-provider-preservation",
+        "consideration": "A failed import must not leave the database half-updated or erase certified/provider source rows.",
+        "rule": "Dry-run first, inspect checksums, import transactionally, preserve certified/provider data, and abort without partial writes on validation failure.",
+        "evidence": "Dry-run report, transactional import result and database count comparison."
+      },
+      {
+        "id": "cache-and-runtime-consistency",
+        "consideration": "The files and database can be correct while the app still renders stale content.",
+        "rule": "Refresh or restart the runtime after import and verify health plus exact changed routes against the imported data.",
+        "evidence": "HTTP health response, route checks and rendered-content assertions."
+      },
+      {
+        "id": "full-regression-gates",
+        "consideration": "A new batch can break earlier lessons, shared components or source mappings.",
+        "rule": "Run package/schema validation, coverage, root/Ṣarf audits, focused tests, full tests where applicable, lint, typecheck and production build before declaring completion.",
+        "evidence": "Captured command results with zero unaccepted failures."
+      },
+      {
+        "id": "visual-and-mobile-route-review",
+        "consideration": "Correct data can still be rendered in the wrong card, order or translation location.",
+        "rule": "Check representative lexical, rootless, compound, repeated-word, full-Ṣarf, limited-Ṣarf and blocked routes on the actual rendered app, including mobile layout where relevant.",
+        "evidence": "Route checklist and rendered HTML/UI assertions."
+      },
+      {
+        "id": "contract-and-common-problem-continuity",
+        "consideration": "Context compaction or a new batch must not erase prior safeguards.",
+        "rule": "Load the active contract and common-problems register before every batch, record the contract version, and add any newly discovered recurring failure before continuing.",
+        "evidence": "Batch records naming the contract/common-problems versions and updated problem entries."
+      },
+      {
+        "id": "git-traceability-and-push-gate",
+        "consideration": "The finished work must be recoverable and distinguishable from unrelated dirty-worktree changes.",
+        "rule": "Inspect the diff, preserve unrelated user changes, commit only the scoped completed work, record commit IDs in the audit record, and push only after all completion gates pass. Never claim a remote push without confirmed remote output.",
+        "evidence": "Scoped commit(s), commit SHA(s), push result and clean/known worktree report."
+      }
+    ]
+  },
+  "sectionContract": {
+    "ayah": {
+      "required": [
+        "canonical full Arabic āyah",
+        "certified direct English translation",
+        "exact word order and occurrence positions"
+      ],
+      "forbidden": [
+        "explanatory paraphrase replacing the certified translation",
+        "basmalah accidentally included in the visible āyah",
+        "missing or shifted word positions"
+      ]
+    },
+    "word": {
+      "required": [
+        "complete canonical sourceText",
+        "presentation-only displayText where needed",
+        "occurrence-specific English meaning",
+        "stable occurrence and teaching identifiers"
+      ],
+      "invariant": "The word displayed to the learner must be the same complete occurrence that the lesson explains."
+    },
+    "root": {
+      "required": [
+        "spaced Arabic root radicals for lexical content",
+        "plain-English root semantic range",
+        "root provenance",
+        "explicit category-specific explanation for rootless components"
+      ],
+      "invariant": "Root letters, root meaning and occurrence meaning are separate fields and may not be substituted for one another.",
+      "rootlessFormat": "No lexical root (category) — followed by one clear English explanation."
+    },
+    "grammar": {
+      "required": [
+        "reviewed construction",
+        "ordered meaningful components",
+        "component labels and English meanings",
+        "part of speech and relevant grammar features",
+        "sentence role",
+        "recognition clue"
+      ],
+      "invariant": "Ordered component sourceText values must reconstruct the complete canonical word after the approved normalization rules."
+    },
+    "sarf": {
+      "defaultTarget": "Five genuinely useful reviewed forms: the current Qur'anic form first plus four related forms.",
+      "normalFamily": {
+        "status": "full",
+        "count": 5,
+        "rule": "Aim for five forms selected for maximum teaching value. Useful contrasts may include tense, person, gender, number, imperative, active/passive voice, verbal noun, derived pattern, noun/adjective relationship, inflection or attached pronoun."
+      },
+      "limitedFamily": {
+        "status": "limited",
+        "rule": "Aim for five genuinely useful reviewed forms: the current Qur'anic form plus four related forms. If five would require fabrication, repetition, irrelevant forms, misleading morphology or weak pedagogical padding, use the strongest genuine reviewed set available and explicitly record why the family is a reviewed limited family.",
+        "allowedFor": [
+          "particles",
+          "fixed grammatical words",
+          "proper nouns",
+          "genuinely restricted lexical families",
+          "forms where additional technically possible variants would mislead the learner"
+        ],
+        "requiredMetadata": [
+          "sarfStatus=limited",
+          "limitedReason",
+          "review provenance",
+          "auditDecision=confirmed-limited or blocked-for-genuine-ambiguity"
+        ]
+      },
+      "audit": {
+        "decisionValues": [
+          "confirmed-limited",
+          "upgraded-to-full",
+          "blocked-for-genuine-ambiguity"
+        ],
+        "rule": "Every limited family already present in authored content must receive a current independent decision. Existing limited status is evidence to review, not evidence of linguistic validity. Lexical nouns, verbs, adjectives and derived forms must be actively investigated for four additional useful forms; missing authoring effort is not a valid limitation reason. Rootless grammatical material may remain limited only with a category-specific explanation. A blocked decision is an explicit non-publishable ambiguity, not a hidden limited pass.",
+        "fullUpgradeRule": "An upgraded family contains exactly five strong reviewed forms, with the current Qur'anic form first, and records the before/after decision in the append-only ledger.",
+        "limitedConfirmationRule": "A confirmed-limited family contains only genuine forms, a specific non-boilerplate reason tied to this lexeme and occurrence, review provenance, and no overlooked fifth form supported by the approved evidence.",
+        "blockedRule": "Use blocked-for-genuine-ambiguity only when reliable evidence remains insufficient or conflicting after canonical Qur'anic evidence, approved dictionaries/lexicons, aligned provider evidence and Codex linguistic review have been checked. Never use blocked as a disguised missing-effort bucket."
+      },
+      "required": [
+        "the current Qur'anic form first",
+        "a full five-form reviewed family or an explicit reviewed limited family",
+        "form-specific English meaning for every row",
+        "a meaningful difference describing the morphological relationship",
+        "the linguistic relationship to the lesson lexeme or root",
+        "review provenance for every row"
+      ],
+      "forbidden": [
+        "bare root letters used as a form-family row",
+        "a provider lemma used without linguistic review",
+        "repeated occurrence glosses with no form-specific meaning",
+        "case-ending padding used only to reach a row count",
+        "generic automatically generated rows published as teaching",
+        "placeholder descriptions",
+        "forms unrelated to the actual lexeme",
+        "technically related forms that add no useful learner distinction"
+      ],
+      "currentFirstRule": "The first stored form must be the exact current Qur'anic occurrence, with its appropriate vocalisation and occurrence meaning.",
+      "accuracyOverridesCount": true,
+      "automaticGenerationRule": "Automatically generated forms are candidates for Codex review only. They are never approved teaching merely because a structural validator accepts them.",
+      "limitedFamilyRule": "A limited family is valid only when its real forms, specific limitedReason, provenance and current auditDecision are reviewed; it must be audited with status passed-limited. A blocked family is audited with status blocked and cannot make a package custom-complete."
+    },
+    "teaching": {
+      "required": [
+        "sentence role",
+        "recognition clue",
+        "takeaway connected to the root, construction and context"
+      ],
+      "invariant": "All English explanations must agree with the canonical Arabic, certified translation, root analysis, grammar and Ṣarf family."
+    }
+  },
+  "reviewChecklist": [
+    "contract-loaded-and-version-recorded",
+    "custom-authorship-matrix-checked",
+    "whole-quran-safeguards-checked",
+    "canonical-arabic-and-letter-level-integrity",
+    "certified-ayah-translation",
+    "occurrence-position-and-context",
+    "complete-word-and-component-reconstruction",
+    "root-and-english-root-meaning",
+    "rootless-category-labels",
+    "grammar-and-sentence-role",
+    "genuine-sarf-family-or-reviewed-limited-state",
+    "sarf-row-quality-and-provenance",
+    "limited-family-independent-audit-decision",
+    "recognition-clue-and-takeaway",
+    "no-common-problem-trigger",
+    "package-and-schema-validation",
+    "rendered-route-verification",
+    "audit-record-written"
+  ],
+  "failClosedRules": [
+    "A missing field, unresolved ambiguity, failed reconstruction, unreviewed form or uncertain provenance is a failure, not a pass.",
+    "A generated candidate is not custom-complete until Codex has reviewed and accepted it against this contract.",
+    "No lexical family may be confirmed limited merely because the provider exposed too few candidates or because an outer compound label contains a preposition; the lexical stem must be reviewed independently.",
+    "A blocked-for-genuine-ambiguity family is not a passed limited family and cannot be published as custom-complete.",
+    "A batch is not complete while any occurrence is pending, blocked, synthetic, source-only when custom content is required, or missing an audit record.",
+    "Do not overwrite a valid reviewed lesson merely to make it uniform; preserve the approved lesson and record any occurrence-specific override.",
+    "Do not claim completion from tests alone; verify the actual rendered lesson route and the recorded audit state."
+  ],
+  "referenceLessons": [
+    {
+      "id": "surah-114-qul",
+      "path": "content-import/surahs/114-al-nas/surah.json",
+      "lesson": "lesson:qul",
+      "purpose": "Reference for a reviewed verb form family with meaningful tense/person/command contrasts."
+    },
+    {
+      "id": "surah-113-daybreak",
+      "path": "content-import/surahs/113-al-falaq/surah.json",
+      "lesson": "lesson:daybreak",
+      "purpose": "Reference for related verb, noun and definite-noun forms."
+    },
+    {
+      "id": "surah-114-nas",
+      "path": "content-import/surahs/114-al-nas/surah.json",
+      "lesson": "lesson:nas",
+      "purpose": "Reference for repeated lexical teaching with article and connector variations."
+    },
+    {
+      "id": "surah-69-haqqah-failure-case",
+      "path": "content-import/surahs/069-al-qqah/surah.json",
+      "lesson": "lesson:69:1:1",
+      "purpose": "Known failing case: root metadata and case variants must not be mistaken for a reviewed Ṣarf family."
+    }
+  ],
+  "auditLedger": {
+    "path": "artifacts/content-review/ledger.jsonl",
+    "format": "append-only JSON Lines",
+    "purpose": "Durable black-box record of contract version, scope, lesson status, checks, evidence, changes and verification results.",
+    "requiredRecordFields": [
+      "recordId",
+      "eventType",
+      "contractId",
+      "contractVersion",
+      "scope",
+      "status",
+      "reviewedAt",
+      "checks",
+      "evidence"
+    ],
+    "lessonRecordFields": [
+      "surah",
+      "ayah",
+      "position",
+      "occurrenceId",
+      "teachingId",
+      "sourceHash",
+      "contentHash",
+      "sarfStatus"
+    ],
+    "sarfStatuses": ["full", "limited", "in-review", "blocked"],
+    "acceptedHistoricalContractVersions": ["1.0.0"],
+    "statuses": [
+      "pending",
+      "in-review",
+      "passed",
+      "passed-limited",
+      "blocked",
+      "superseded"
+    ],
+    "appendOnly": true,
+    "unknownIsNotComplete": true
+  },
+  "completionGates": {
+    "fullQuran": "Every visible occurrence has a current contract-version audit record. Every previously limited family has one of confirmed-limited, upgraded-to-full or blocked-for-genuine-ambiguity; unknown is not complete. Blocked families remain explicitly non-publishable until their ambiguity is resolved.",
+    "batch": "Every occurrence in the declared batch passes the checklist, package validation, import/dry-run and rendered-route verification. Full families contain exactly five reviewed forms; confirmed-limited families contain the strongest genuine reviewed set and a specific reason; blocked families are explicitly recorded and excluded from custom-complete publication.",
+    "contentChange": "Every changed lesson receives a before/after record and is rechecked against the full checklist, not only the changed field."
+  },
+  "entries": [
+    {
+      "id": "breakdown-display-versus-source",
+      "problem": "A joining line or visual decoration changes the stored Arabic component.",
+      "safeguard": "Keep canonical sourceText separate from displayText and reconstruct only from sourceText."
+    },
+    {
+      "id": "incomplete-segmentation",
+      "problem": "Only a prefix or partial component is shown for a complete word.",
+      "safeguard": "Validate that ordered parts reconstruct the complete visible occurrence; use truthful atomic mode when a reviewed split is unavailable."
+    },
+    {
+      "id": "compound-root-hidden-by-grammar-part",
+      "problem": "A compound Qur'anic surface word contains a lexical stem plus one or more grammatical parts, but the whole lesson is marked as having no lexical root because a preposition, connector, article or pronoun has no root. The learner then sees 'No lexical root' for the entire word even though the morphology section identifies a lexical root.",
+      "safeguard": "Preserve provider morphology at both levels. Set the lesson's primary root to the lexical stem/root, record root metadata for each lexical breakdown part, and label every rootless grammatical part explicitly as 'No lexical root (preposition)', 'No lexical root (pronoun)', or the correct grammatical category. Never leave the whole-lesson root empty when any lexical part has a provider root. Validate provider-root agreement and render the lexical root together with the explanatory rootless-part labels before importing or publishing custom content."
+    },
+    {
+      "id": "root-picture-must-be-english-meaning",
+      "problem": "The Root Picture card is rendered from the lesson's rootPicture field, while the Arabic root letters are rendered separately from the root field. If authoring copies the root letters into rootPicture, the learner sees the same Arabic letters twice instead of the English semantic range. The same template failure can repeat a rootless category label several times instead of showing one clear English explanation.",
+      "safeguard": "Treat root and rootPicture as two different required fields: root is the spaced Arabic radical display, while rootPicture is a plain-English learner meaning. For a lexical lesson, rootPicture must contain an English gloss, must not equal or repeat the Arabic root, and must not contain Arabic script. For a rootless lesson, begin with exactly 'No lexical root (category)' and follow it with one English explanation; never repeat the category marker. Validate every teaching entry before import, audit every authored lesson, and verify a live route that the Root Picture subtitle is English."
+    },
+    {
+      "id": "root-picture-must-not-use-occurrence-gloss",
+      "problem": "The Root Picture card, or a root-skeleton row in the Ṣarf family, is meant to teach the stable English semantic range of the Arabic root, but the authoring template fills it from the current word occurrence's provider gloss. A word such as ٱلْحَاقَّةُ then shows 'word-family meaning: The Inevitable Reality' for ح ق ق, confusing the contextual/lexical meaning of this occurrence with the broader root meaning and repeating the error across every generated occurrence.",
+      "safeguard": "Keep the occurrence meaning and root meaning as separate reviewed fields. The lesson meaning, word label, sentence role, forms and takeaway may remain occurrence-specific; rootPicture and any root-skeleton Ṣarf row must come from an explicit root-meaning dictionary keyed by the normalized root, such as ح ق ق → 'truth · reality · be established · be right / due'. When a root meaning is missing, look it up in an approved Quranic root lexicon and add a concise, accurate learner-facing semantic range yourself; never derive it from the current word translation. Require a stable English root gloss for every lexical root, render it in the Root Picture box without 'word-family meaning:' or the current occurrence gloss, keep 'No lexical root (category)' for rootless parts, and fail authoring/import if the dictionary entry is missing, changes for the same normalized root, or does not exactly supply rootPicture and root-skeleton meanings. Audit every custom word for root-picture provenance, root stability and accidental occurrence-gloss reuse before import."
+    },
+    {
+      "id": "certified-translation-must-be-primary",
+      "problem": "The explanatory naturalMeaning field was rendered directly beneath the full Arabic āyah instead of the certified direct translation. In addition, the content importer deleted certified translation rows whenever a sūrah was re-imported, leaving some āyāt with an explanatory sentence or no translation at all.",
+      "safeguard": "Treat the certified Tanzil/Saheeh International translation as the only primary translation shown beneath a full āyah. Load it by provider and version for every āyah, and use it in the lesson, presentation, print, PDF and search surfaces; naturalMeaning is explanatory teaching content only and must never be the primary translation fallback. During content import, delete only project-authored translation rows and preserve certified provider rows. After every import, assert certified translation coverage for all 6,236 āyāt and verify representative routes against the certified text."
+    },
+    {
+      "id": "basmalah-must-not-enter-visible-ayah",
+      "problem": "The Tanzil source row includes the basmalah before the first āyah of most sūrahs. A diacritic variant such as بِّسْمِ can defeat exact token matching, causing the basmalah to remain in the visible āyah and word list even though it is already preserved separately as raw provider source. The certified translation then appears not to translate the full visible Arabic, and every downstream word position is shifted.",
+      "safeguard": "Keep sourceRawArabic exactly as received, but remove the first four basmalah tokens from visible arabic and visible words for every sūrah except 1 and 9. Normalize Arabic combining marks and tatweel before matching variants; renumber visible word IDs after removal. Validate every package and fail if visible āyah 1 still begins with the basmalah."
+    },
+    {
+      "id": "sarf-family-too-narrow",
+      "problem": "A lesson's Ṣarf / form-family section contains too few useful reviewed forms, so the learner cannot compare the pattern and morphological changes. The old authoring rule treated three rows as sufficient and allowed a generic one-row or three-row family to pass, as happened in Sūrah 109 compared with the fuller قُلْ family in Sūrah 114.",
+      "safeguard": "The normal target is exactly five distinct reviewed forms: the current Qur'anic form first plus four useful related forms. Select them for teaching value rather than generation convenience. If five would require fabrication or misleading padding, use a reviewed limited family with the strongest genuine forms, an explicit limitedReason and provenance, and audit it as passed-limited. Compare fully vocalized Arabic surface forms: ignore only spacing and tatweel, because vowels, case endings and mood markers are part of the recognition lesson."
+    },
+    {
+      "id": "sarf-family-must-be-linguistically-reviewed",
+      "problem": "A generic authoring fallback manufactures Ṣarf rows from the current word, bare root letters, a provider lemma and grammatical case endings. This can satisfy a row-count check without producing a real, meaningful form family. The learner then sees root/grammar metadata such as ح ق ق, ال and an accusative variant instead of related Arabic forms with accurate English meanings and recognition differences.",
+      "safeguard": "Treat automatically generated forms as review candidates only; never publish them as custom-complete teaching content. Codex may author or repair related Arabic forms, meanings, differences, root ranges, grammar and teaching notes using approved project dictionaries, Qur'anic evidence, reliable Arabic knowledge, reviewed lessons and aligned provider evidence. Every approved row must contain the real vocalised form, form-specific meaning, meaningful difference, relationship to the lexeme/root and provenance. Keep bare root meaning in Root and Root Picture; it cannot count as a Ṣarf form. Remove generic root-anchor, vague dictionary-form, repeated-occurrence-gloss and case-padding fallbacks. If evidence remains uncertain or conflicting, mark the family blocked rather than guessing."
+    },
+    {
+      "id": "vocative-interjection-shortened",
+      "problem": "The Arabic vocative particle يَا is reduced to a bare or inconsistent English 'O' label, which hides that it directly addresses someone and conflicts with the learner-facing wording used for the surrounding vocative expression.",
+      "safeguard": "Preserve the vocative force in the English teaching layer: use the approved learner-facing 'Oh' wording for يَا and 'Oh you' for يَا أَيُّهَا, and keep the same wording in the word gloss, lesson meaning, form row, sentence role, recognition clue and takeaway. Validate this as a reviewed translation choice instead of silently shortening it to 'O'."
+    },
+    {
+      "id": "provider-morphology-token-alignment",
+      "problem": "A provider morphology record is keyed by a word position that does not use the same tokenisation as the imported Qur'anic source. Its segments, lemma or root can then be attached to a neighbouring word and appear authoritative when they are not evidence for that occurrence.",
+      "safeguard": "Before accepting provider morphology, reconstruct the provider segments and compare them with the exact canonical sourceText of the occurrence. Reject or quarantine any record that does not reconstruct the occurrence; never assign its root, lemma or segmentation by position alone. Record alignment failures for review and repair the source-to-provider mapping before using the evidence in authoring or import validation."
+    },
+    {
+      "id": "provider-prefix-kind-may-be-lexical",
+      "problem": "The morphology provider can label a lexical stem as kind 'prefix' when it follows an attached preposition, as in بِأَىِّ. Treating every prefix-kind part as grammatical hides the lexical root from the lesson and makes validation reject an otherwise correct compound analysis.",
+      "safeguard": "Classify provider parts by their reconstructed source and lexical evidence, not by the word 'prefix' alone. Article, preposition, connector and pronoun kinds are grammatical; a prefix-kind part with the provider root and the remaining lexical surface must retain rootStatus 'lexical' and expose the root in the lesson."
+    },
+    {
+      "id": "standalone-attached-prefix-category",
+      "problem": "A morphology provider can label a standalone attached grammar letter such as فَ or وَ as a lexical stem, or assign it the wrong grammatical category. The learner then sees a misleading 'lexical stem' label beside 'No lexical root', even though the lexical root belongs to a later component such as أَىِّ.",
+      "safeguard": "Normalize standalone attached grammar segments from their reconstructed source before authoring: فَ and وَ are rootless connectors, while بِ, لِ and كَ are rootless prepositions. Replace provider placeholder labels such as 'lexical stem' for those parts with clear English labels and category-specific root explanations. Keep a provider prefix-kind segment lexical when it contains the lexical material and provider root. Add regression fixtures for both sides of this distinction and verify the rendered breakdown."
+    },
+    {
+      "id": "provider-root-absence-is-not-rootlessness",
+      "problem": "A morphology provider may omit a root tag for a lexicalized content word. Treating a missing provider field as proof that the word has no lexical root would replace a reviewed lexical root with an incorrect whole-word 'No lexical root' message.",
+      "safeguard": "Treat provider-root absence as a review state, not as rootlessness. Keep a manually verified lexical root only when the author records the independent evidence and leave the occurrence visible in the root audit until that review is complete. Use 'No lexical root (category)' only when the component itself is a grammatical/rootless item or the reviewed evidence genuinely supports no lexical root."
+    },
+    {
+      "id": "repeated-word-context",
+      "problem": "A repeated word inherits an unrelated occurrence explanation.",
+      "safeguard": "Reuse shared lexical data only where appropriate and retain occurrence-specific grammar, meaning and overrides."
+    },
+    {
+      "id": "placeholder-teaching",
+      "problem": "Labels such as Whole word or Main word are mistaken for reviewed analysis.",
+      "safeguard": "Reject placeholder labels for custom-complete content and block publication until reviewed data exists."
+    },
+    {
+      "id": "parallel-file-conflict",
+      "problem": "Multiple workers edit the same sūrah package or canonical database rows.",
+      "safeguard": "Workers write unique immutable packet revisions; one deterministic assembler and serialized importer own canonical writes."
+    }
+  ]
+}
