@@ -12658,14 +12658,16 @@ for (const occurrence of limited) {
     root: occurrence.lesson.root,
     decision,
     candidatePool: candidatePool.length,
-    candidateEvidence: candidatePool.map((candidate) => ({
+    // Keep the durable, per-occurrence audit decision compact.  The complete
+    // candidate pool is already represented by the ledger checks/provenance;
+    // serialising every candidate for every occurrence created multi-hundred-
+    // megabyte reports that exhausted the dev server's file-watcher budget.
+    candidateEvidenceSample: candidatePool.slice(0, 5).map((candidate) => ({
       form: candidate.form,
       meaning: candidate.meaning,
       difference: candidate.difference,
       sourceKind: candidate.sourceKind,
       sourceOccurrence: candidate.sourceOccurrence,
-      score: candidate.score,
-      featureSignal: candidate.featureSignal,
       baseDistinct: candidate.baseDistinct,
       lexicalKey: candidate.lexicalKey,
     })),
