@@ -1,0 +1,2590 @@
+{
+  "auditBatchId": "limited-sarf-audit-de104311783d45a1",
+  "contractId": "quranic-word-tree-authoring",
+  "contractVersion": "1.3.3",
+  "reviewedAt": "2026-10-17T13:32:02.700Z",
+  "mode": "dry-run",
+  "scope": {
+    "authoredPackages": 1,
+    "limitedOccurrences": 20,
+    "distinctLimitedTeachingEntries": 15
+  },
+  "before": {
+    "limitedOccurrences": 20,
+    "limitedTeachingEntries": 15,
+    "forms": {
+      "1": 1,
+      "2": 7,
+      "3": 11,
+      "4": 1
+    }
+  },
+  "decisions": {
+    "confirmedLimited": 12,
+    "upgradedToFull": 8,
+    "blocked": 0
+  },
+  "after": {
+    "confirmedLimited": 12,
+    "upgradedToFull": 8,
+    "blocked": 0,
+    "fullFamiliesAfter": 8
+  },
+  "byCategory": {
+    "noun": {
+      "before": 7,
+      "confirmedLimited": 0,
+      "upgradedToFull": 7,
+      "blocked": 0
+    },
+    "pronoun": {
+      "before": 9,
+      "confirmedLimited": 9,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "connector/conjunction": {
+      "before": 2,
+      "confirmedLimited": 2,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "preposition": {
+      "before": 1,
+      "confirmedLimited": 1,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "verb": {
+      "before": 1,
+      "confirmedLimited": 0,
+      "upgradedToFull": 1,
+      "blocked": 0
+    }
+  },
+  "byReason": {
+    "rootless:pronoun": 9,
+    "rootless:connector/conjunction": 2,
+    "rootless:preposition": 1
+  },
+  "packageChanges": [
+    {
+      "packageId": "surah:101",
+      "surah": 101,
+      "statusAfter": "custom-complete",
+      "demotedFromCustomComplete": false
+    }
+  ],
+  "items": [
+    {
+      "occurrenceId": "word:101:1:1",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 1,
+      "position": 1,
+      "teachingId": "lesson:101:qariah",
+      "word": "ٱلْقَارِعَةُ",
+      "category": "noun",
+      "root": "ق ر ع",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "قَرَعَ",
+          "meaning": "he struck or knocked",
+          "difference": "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:perfect",
+            "partofspeech:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "قرع"
+        },
+        {
+          "form": "يَقْرَعُ",
+          "meaning": "he strikes or knocks",
+          "difference": "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:imperfect",
+            "person:third-person"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يقرع"
+        },
+        {
+          "form": "قَرْعٌ",
+          "meaning": "striking or knocking",
+          "difference": "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verbal-noun",
+            "derivation:action-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "قرع"
+        },
+        {
+          "form": "قَارِعٌ",
+          "meaning": "striking or one who strikes",
+          "difference": "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "derivation:agent-or-descriptor"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "قارع"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "ٱلْقَارِعَةُ",
+          "meaning": "the Striking Calamity",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the قرع lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:1:1) was checked as evidence."
+        },
+        {
+          "form": "قَرَعَ",
+          "meaning": "he struck or knocked",
+          "difference": "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+          "relationship": "Form I perfect of the ق ر ع root, the verbal base behind قَارِعَةٌ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ق ر ع entry and Arabic Academy evidence defining قَرَعَ as striking or knocking."
+        },
+        {
+          "form": "يَقْرَعُ",
+          "meaning": "he strikes or knocks",
+          "difference": "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+          "relationship": "Form I imperfect of the ق ر ع root, the ongoing counterpart of قَرَعَ.",
+          "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I imperfect morphology."
+        },
+        {
+          "form": "قَرْعٌ",
+          "meaning": "striking or knocking",
+          "difference": "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+          "relationship": "A genuine verbal noun of the ق ر ع root, listed in the Arabic Academy root entry.",
+          "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry, which lists القَرْعُ among the established family forms."
+        },
+        {
+          "form": "قَارِعٌ",
+          "meaning": "striking or one who strikes",
+          "difference": "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+          "relationship": "A genuine active-participle form of the ق ر ع root, related to قَارِعَةٌ by the same root and participial pattern.",
+          "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I active-participle morphology."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "ٱلْقَارِعَةُ",
+            "meaning": "the Striking Calamity",
+            "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the قرع lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:3:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:3:4) was checked as evidence."
+          },
+          {
+            "form": "قَارِعَةٌ",
+            "meaning": "a striking event",
+            "difference": "active-participle noun",
+            "relationship": "Existing project-reviewed relationship to the قرع family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "بِٱلْقَارِعَةِ",
+            "meaning": "the Striking Calamity",
+            "difference": "Compared with ٱلْقَارِعَةُ, this form changes case: nominative → genitive.",
+            "relationship": "Related to the ق ر ع root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:69:4:4.",
+            "provenance": "Codex-reviewed form for the ق ر ع family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "ٱلْقَارِعَةُ is a rootful noun with root ق ر ع. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱلْقَارِعَةُ",
+            "meaning": "the Striking Calamity",
+            "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the قرع lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:1:1) was checked as evidence."
+          },
+          {
+            "form": "قَرَعَ",
+            "meaning": "he struck or knocked",
+            "difference": "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+            "relationship": "Form I perfect of the ق ر ع root, the verbal base behind قَارِعَةٌ.",
+            "provenance": "Codex-authored after review of the Quranic Arabic Corpus ق ر ع entry and Arabic Academy evidence defining قَرَعَ as striking or knocking."
+          },
+          {
+            "form": "يَقْرَعُ",
+            "meaning": "he strikes or knocks",
+            "difference": "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+            "relationship": "Form I imperfect of the ق ر ع root, the ongoing counterpart of قَرَعَ.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I imperfect morphology."
+          },
+          {
+            "form": "قَرْعٌ",
+            "meaning": "striking or knocking",
+            "difference": "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+            "relationship": "A genuine verbal noun of the ق ر ع root, listed in the Arabic Academy root entry.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry, which lists القَرْعُ among the established family forms."
+          },
+          {
+            "form": "قَارِعٌ",
+            "meaning": "striking or one who strikes",
+            "difference": "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+            "relationship": "A genuine active-participle form of the ق ر ع root, related to قَارِعَةٌ by the same root and participial pattern.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I active-participle morphology."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "b96f7f1f9091aa532cbd19eabfc2b78e34c3e54e4791b405f65ec90b57d4991d",
+      "contentHash": "a527851e461c1b41993d43b1b5607878f7dae74a31f594b8a2a41d23d01e82e1"
+    },
+    {
+      "occurrenceId": "word:101:2:1",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 2,
+      "position": 1,
+      "teachingId": "lesson:101:ma",
+      "word": "مَا",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:2:1) was checked as evidence."
+        },
+        {
+          "form": "بِمَا",
+          "meaning": "with what",
+          "difference": "preposition joined to the pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:10:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:10:3) was checked as evidence."
+          },
+          {
+            "form": "بِمَا",
+            "meaning": "with what",
+            "difference": "preposition joined to the pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:2:1) was checked as evidence."
+          },
+          {
+            "form": "بِمَا",
+            "meaning": "with what",
+            "difference": "preposition joined to the pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "8959db80c614af0d590e1ccbf2fd4dc53016c7f21905760630efe01c971acf72",
+      "contentHash": "f893e94fbd091e3758695dd26ae132346dc02a824ca9f5d980c9f401ae5d5451"
+    },
+    {
+      "occurrenceId": "word:101:2:2",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 2,
+      "position": 2,
+      "teachingId": "lesson:101:qariah",
+      "word": "ٱلْقَارِعَةُ",
+      "category": "noun",
+      "root": "ق ر ع",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "قَرَعَ",
+          "meaning": "he struck or knocked",
+          "difference": "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:perfect",
+            "partofspeech:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "قرع"
+        },
+        {
+          "form": "يَقْرَعُ",
+          "meaning": "he strikes or knocks",
+          "difference": "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:imperfect",
+            "person:third-person"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يقرع"
+        },
+        {
+          "form": "قَرْعٌ",
+          "meaning": "striking or knocking",
+          "difference": "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verbal-noun",
+            "derivation:action-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "قرع"
+        },
+        {
+          "form": "قَارِعٌ",
+          "meaning": "striking or one who strikes",
+          "difference": "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "derivation:agent-or-descriptor"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "قارع"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "ٱلْقَارِعَةُ",
+          "meaning": "the Striking Calamity",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the قرع lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:2:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:2:2) was checked as evidence."
+        },
+        {
+          "form": "قَرَعَ",
+          "meaning": "he struck or knocked",
+          "difference": "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+          "relationship": "Form I perfect of the ق ر ع root, the verbal base behind قَارِعَةٌ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ق ر ع entry and Arabic Academy evidence defining قَرَعَ as striking or knocking."
+        },
+        {
+          "form": "يَقْرَعُ",
+          "meaning": "he strikes or knocks",
+          "difference": "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+          "relationship": "Form I imperfect of the ق ر ع root, the ongoing counterpart of قَرَعَ.",
+          "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I imperfect morphology."
+        },
+        {
+          "form": "قَرْعٌ",
+          "meaning": "striking or knocking",
+          "difference": "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+          "relationship": "A genuine verbal noun of the ق ر ع root, listed in the Arabic Academy root entry.",
+          "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry, which lists القَرْعُ among the established family forms."
+        },
+        {
+          "form": "قَارِعٌ",
+          "meaning": "striking or one who strikes",
+          "difference": "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+          "relationship": "A genuine active-participle form of the ق ر ع root, related to قَارِعَةٌ by the same root and participial pattern.",
+          "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I active-participle morphology."
+        }
+      ],
+      "before": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱلْقَارِعَةُ",
+            "meaning": "the Striking Calamity",
+            "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the قرع lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:1:1) was checked as evidence."
+          },
+          {
+            "form": "قَرَعَ",
+            "meaning": "he struck or knocked",
+            "difference": "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+            "relationship": "Form I perfect of the ق ر ع root, the verbal base behind قَارِعَةٌ.",
+            "provenance": "Codex-authored after review of the Quranic Arabic Corpus ق ر ع entry and Arabic Academy evidence defining قَرَعَ as striking or knocking."
+          },
+          {
+            "form": "يَقْرَعُ",
+            "meaning": "he strikes or knocks",
+            "difference": "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+            "relationship": "Form I imperfect of the ق ر ع root, the ongoing counterpart of قَرَعَ.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I imperfect morphology."
+          },
+          {
+            "form": "قَرْعٌ",
+            "meaning": "striking or knocking",
+            "difference": "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+            "relationship": "A genuine verbal noun of the ق ر ع root, listed in the Arabic Academy root entry.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry, which lists القَرْعُ among the established family forms."
+          },
+          {
+            "form": "قَارِعٌ",
+            "meaning": "striking or one who strikes",
+            "difference": "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+            "relationship": "A genuine active-participle form of the ق ر ع root, related to قَارِعَةٌ by the same root and participial pattern.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I active-participle morphology."
+          }
+        ]
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱلْقَارِعَةُ",
+            "meaning": "the Striking Calamity",
+            "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the قرع lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:2:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:2:2) was checked as evidence."
+          },
+          {
+            "form": "قَرَعَ",
+            "meaning": "he struck or knocked",
+            "difference": "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+            "relationship": "Form I perfect of the ق ر ع root, the verbal base behind قَارِعَةٌ.",
+            "provenance": "Codex-authored after review of the Quranic Arabic Corpus ق ر ع entry and Arabic Academy evidence defining قَرَعَ as striking or knocking."
+          },
+          {
+            "form": "يَقْرَعُ",
+            "meaning": "he strikes or knocks",
+            "difference": "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+            "relationship": "Form I imperfect of the ق ر ع root, the ongoing counterpart of قَرَعَ.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I imperfect morphology."
+          },
+          {
+            "form": "قَرْعٌ",
+            "meaning": "striking or knocking",
+            "difference": "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+            "relationship": "A genuine verbal noun of the ق ر ع root, listed in the Arabic Academy root entry.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry, which lists القَرْعُ among the established family forms."
+          },
+          {
+            "form": "قَارِعٌ",
+            "meaning": "striking or one who strikes",
+            "difference": "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+            "relationship": "A genuine active-participle form of the ق ر ع root, related to قَارِعَةٌ by the same root and participial pattern.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I active-participle morphology."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "5d02d14c2d766abd073ead1e9998248bb9e158f0f2d72f61b997a8b79b4b70b7",
+      "contentHash": "87b168e05568116d17744289072de99b2cbe43706baea245cd1a732fe2f64788"
+    },
+    {
+      "occurrenceId": "word:101:3:1",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 3,
+      "position": 1,
+      "teachingId": "lesson:101:wama",
+      "word": "وَمَآ",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَمَآ",
+          "meaning": "and what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:3:1) was checked as evidence."
+        },
+        {
+          "form": "وَ",
+          "meaning": "and",
+          "difference": "connector",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَمَا",
+          "meaning": "and what",
+          "difference": "connector joined to the question word",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَمَآ",
+            "meaning": "and what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:10:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:10:1) was checked as evidence."
+          },
+          {
+            "form": "وَ",
+            "meaning": "and",
+            "difference": "connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "وَمَا",
+            "meaning": "and what",
+            "difference": "connector joined to the question word",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَمَآ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَمَآ",
+            "meaning": "and what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:3:1) was checked as evidence."
+          },
+          {
+            "form": "وَ",
+            "meaning": "and",
+            "difference": "connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "وَمَا",
+            "meaning": "and what",
+            "difference": "connector joined to the question word",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَمَآ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "bd62efc43cf725c98f440a576b636bba849b2a96dc166c5929da6cef897bc1b4",
+      "contentHash": "27d00d61961145752a22964b50a2f4e0c80d3edb69938bfba3639612d90eac69"
+    },
+    {
+      "occurrenceId": "word:101:3:3",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 3,
+      "position": 3,
+      "teachingId": "lesson:101:ma",
+      "word": "مَا",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:3:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:3:3) was checked as evidence."
+        },
+        {
+          "form": "بِمَا",
+          "meaning": "with what",
+          "difference": "preposition joined to the pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:2:1) was checked as evidence."
+          },
+          {
+            "form": "بِمَا",
+            "meaning": "with what",
+            "difference": "preposition joined to the pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:3:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:3:3) was checked as evidence."
+          },
+          {
+            "form": "بِمَا",
+            "meaning": "with what",
+            "difference": "preposition joined to the pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "a68fad94b474ba1133a4fab93f9aad4c073faf1437fd9541b547c8d78cf8014c",
+      "contentHash": "d2ede86e16b5332a74f6a6ecbb2f67924234e1c3a883f19403702b18500a6ca5"
+    },
+    {
+      "occurrenceId": "word:101:3:4",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 3,
+      "position": 4,
+      "teachingId": "lesson:101:qariah",
+      "word": "ٱلْقَارِعَةُ",
+      "category": "noun",
+      "root": "ق ر ع",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "قَرَعَ",
+          "meaning": "he struck or knocked",
+          "difference": "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:perfect",
+            "partofspeech:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "قرع"
+        },
+        {
+          "form": "يَقْرَعُ",
+          "meaning": "he strikes or knocks",
+          "difference": "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:imperfect",
+            "person:third-person"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يقرع"
+        },
+        {
+          "form": "قَرْعٌ",
+          "meaning": "striking or knocking",
+          "difference": "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verbal-noun",
+            "derivation:action-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "قرع"
+        },
+        {
+          "form": "قَارِعٌ",
+          "meaning": "striking or one who strikes",
+          "difference": "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قرع",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "derivation:agent-or-descriptor"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "قارع"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "ٱلْقَارِعَةُ",
+          "meaning": "the Striking Calamity",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the قرع lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:3:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:3:4) was checked as evidence."
+        },
+        {
+          "form": "قَرَعَ",
+          "meaning": "he struck or knocked",
+          "difference": "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+          "relationship": "Form I perfect of the ق ر ع root, the verbal base behind قَارِعَةٌ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ق ر ع entry and Arabic Academy evidence defining قَرَعَ as striking or knocking."
+        },
+        {
+          "form": "يَقْرَعُ",
+          "meaning": "he strikes or knocks",
+          "difference": "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+          "relationship": "Form I imperfect of the ق ر ع root, the ongoing counterpart of قَرَعَ.",
+          "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I imperfect morphology."
+        },
+        {
+          "form": "قَرْعٌ",
+          "meaning": "striking or knocking",
+          "difference": "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+          "relationship": "A genuine verbal noun of the ق ر ع root, listed in the Arabic Academy root entry.",
+          "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry, which lists القَرْعُ among the established family forms."
+        },
+        {
+          "form": "قَارِعٌ",
+          "meaning": "striking or one who strikes",
+          "difference": "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+          "relationship": "A genuine active-participle form of the ق ر ع root, related to قَارِعَةٌ by the same root and participial pattern.",
+          "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I active-participle morphology."
+        }
+      ],
+      "before": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱلْقَارِعَةُ",
+            "meaning": "the Striking Calamity",
+            "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the قرع lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:2:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:2:2) was checked as evidence."
+          },
+          {
+            "form": "قَرَعَ",
+            "meaning": "he struck or knocked",
+            "difference": "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+            "relationship": "Form I perfect of the ق ر ع root, the verbal base behind قَارِعَةٌ.",
+            "provenance": "Codex-authored after review of the Quranic Arabic Corpus ق ر ع entry and Arabic Academy evidence defining قَرَعَ as striking or knocking."
+          },
+          {
+            "form": "يَقْرَعُ",
+            "meaning": "he strikes or knocks",
+            "difference": "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+            "relationship": "Form I imperfect of the ق ر ع root, the ongoing counterpart of قَرَعَ.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I imperfect morphology."
+          },
+          {
+            "form": "قَرْعٌ",
+            "meaning": "striking or knocking",
+            "difference": "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+            "relationship": "A genuine verbal noun of the ق ر ع root, listed in the Arabic Academy root entry.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry, which lists القَرْعُ among the established family forms."
+          },
+          {
+            "form": "قَارِعٌ",
+            "meaning": "striking or one who strikes",
+            "difference": "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+            "relationship": "A genuine active-participle form of the ق ر ع root, related to قَارِعَةٌ by the same root and participial pattern.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I active-participle morphology."
+          }
+        ]
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱلْقَارِعَةُ",
+            "meaning": "the Striking Calamity",
+            "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the قرع lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:3:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:3:4) was checked as evidence."
+          },
+          {
+            "form": "قَرَعَ",
+            "meaning": "he struck or knocked",
+            "difference": "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+            "relationship": "Form I perfect of the ق ر ع root, the verbal base behind قَارِعَةٌ.",
+            "provenance": "Codex-authored after review of the Quranic Arabic Corpus ق ر ع entry and Arabic Academy evidence defining قَرَعَ as striking or knocking."
+          },
+          {
+            "form": "يَقْرَعُ",
+            "meaning": "he strikes or knocks",
+            "difference": "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+            "relationship": "Form I imperfect of the ق ر ع root, the ongoing counterpart of قَرَعَ.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I imperfect morphology."
+          },
+          {
+            "form": "قَرْعٌ",
+            "meaning": "striking or knocking",
+            "difference": "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+            "relationship": "A genuine verbal noun of the ق ر ع root, listed in the Arabic Academy root entry.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry, which lists القَرْعُ among the established family forms."
+          },
+          {
+            "form": "قَارِعٌ",
+            "meaning": "striking or one who strikes",
+            "difference": "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+            "relationship": "A genuine active-participle form of the ق ر ع root, related to قَارِعَةٌ by the same root and participial pattern.",
+            "provenance": "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I active-participle morphology."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "afdc5c9223f5c41c10df359ebc1479313ba47f2e32489eb21e25596a0ea74dd5",
+      "contentHash": "5a7aefc3d1d6688629e56c3a273bbe945b92d27040fcf7fac63eb292c3662d1c"
+    },
+    {
+      "occurrenceId": "word:101:4:4",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 4,
+      "position": 4,
+      "teachingId": "lesson:101:farash",
+      "word": "كَٱلْفَرَاشِ",
+      "category": "noun",
+      "root": "ف ر ش",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "فَرَشَ",
+          "meaning": "he spread or laid out",
+          "difference": "Form I perfect; it presents the completed act of spreading or laying something out, contrasting with the current moth noun.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فرش",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:perfect",
+            "partofspeech:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "فرش"
+        },
+        {
+          "form": "يَفْرُشُ",
+          "meaning": "he spreads or lays out",
+          "difference": "Form I imperfect, third-person masculine singular; it presents spreading or laying out as ongoing or habitual.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فرش",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:imperfect",
+            "person:third-person"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يفرش"
+        },
+        {
+          "form": "فِرَاشٌ",
+          "meaning": "bedding or a bed",
+          "difference": "Noun with the same root but a different established lexical sense; it shows how ف ر ش names something spread out for resting.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فرش",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "derivation:related-noun",
+            "semantic:lexical-sense"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "فراش"
+        },
+        {
+          "form": "فَرَّاشٌ",
+          "meaning": "a bedding attendant",
+          "difference": "Form II-derived agent noun; it names a person who attends to bedding, showing a derived occupation noun from the same root.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فرش",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-2",
+            "partofspeech:agent-noun",
+            "derivation:occupation"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "فراش"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "كَٱلْفَرَاشِ",
+          "meaning": "like moths",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the فرش lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:4:4) was checked as evidence."
+        },
+        {
+          "form": "فَرَشَ",
+          "meaning": "he spread or laid out",
+          "difference": "Form I perfect; it presents the completed act of spreading or laying something out, contrasting with the current moth noun.",
+          "relationship": "Form I perfect of the ف ر ش root, the verbal base behind the فرش lexical family.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ف ر ش entry and Arabic Academy evidence defining فَرَشَ as spreading or laying out."
+        },
+        {
+          "form": "يَفْرُشُ",
+          "meaning": "he spreads or lays out",
+          "difference": "Form I imperfect, third-person masculine singular; it presents spreading or laying out as ongoing or habitual.",
+          "relationship": "Form I imperfect of the ف ر ش root, the ongoing counterpart of فَرَشَ.",
+          "provenance": "Codex-authored after review of the Arabic Academy ف ر ش root entry and standard Form I imperfect morphology."
+        },
+        {
+          "form": "فِرَاشٌ",
+          "meaning": "bedding or a bed",
+          "difference": "Noun with the same root but a different established lexical sense; it shows how ف ر ش names something spread out for resting.",
+          "relationship": "A genuine noun of the ف ر ش family, listed by the Arabic Academy as household bedding or a bed.",
+          "provenance": "Codex-authored after review of the Arabic Academy ف ر ش entry, which distinguishes الفِراشُ (bedding) from الفَراشُ (the insect)."
+        },
+        {
+          "form": "فَرَّاشٌ",
+          "meaning": "a bedding attendant",
+          "difference": "Form II-derived agent noun; it names a person who attends to bedding, showing a derived occupation noun from the same root.",
+          "relationship": "A genuine derived agent noun of the ف ر ش family, defined by the Arabic Academy as the worker responsible for bedding.",
+          "provenance": "Codex-authored after review of the Arabic Academy ف ر ش entry defining الفَرّاشُ and the standard Form II-derived agent pattern."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 4,
+        "forms": [
+          {
+            "form": "كَٱلْفَرَاشِ",
+            "meaning": "like moths",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the فرش lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:4:4) was checked as evidence."
+          },
+          {
+            "form": "فَرَاشَةٌ",
+            "meaning": "a moth / butterfly",
+            "difference": "singular noun",
+            "relationship": "Existing project-reviewed relationship to the فرش family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَرَاشٌ",
+            "meaning": "moths",
+            "difference": "collective noun",
+            "relationship": "Existing project-reviewed relationship to the فرش family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "فَرَشْنَـٰهَا",
+            "meaning": "We have spread it",
+            "difference": "Compared with كَٱلْفَرَاشِ, this form changes gender: masculine → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb.",
+            "relationship": "Related to the ف ر ش root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:48:2.",
+            "provenance": "Codex-reviewed form for the ف ر ش family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "كَٱلْفَرَاشِ is a rootful noun with root ف ر ش. The audit found 4 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "كَٱلْفَرَاشِ",
+            "meaning": "like moths",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the فرش lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:4:4) was checked as evidence."
+          },
+          {
+            "form": "فَرَشَ",
+            "meaning": "he spread or laid out",
+            "difference": "Form I perfect; it presents the completed act of spreading or laying something out, contrasting with the current moth noun.",
+            "relationship": "Form I perfect of the ف ر ش root, the verbal base behind the فرش lexical family.",
+            "provenance": "Codex-authored after review of the Quranic Arabic Corpus ف ر ش entry and Arabic Academy evidence defining فَرَشَ as spreading or laying out."
+          },
+          {
+            "form": "يَفْرُشُ",
+            "meaning": "he spreads or lays out",
+            "difference": "Form I imperfect, third-person masculine singular; it presents spreading or laying out as ongoing or habitual.",
+            "relationship": "Form I imperfect of the ف ر ش root, the ongoing counterpart of فَرَشَ.",
+            "provenance": "Codex-authored after review of the Arabic Academy ف ر ش root entry and standard Form I imperfect morphology."
+          },
+          {
+            "form": "فِرَاشٌ",
+            "meaning": "bedding or a bed",
+            "difference": "Noun with the same root but a different established lexical sense; it shows how ف ر ش names something spread out for resting.",
+            "relationship": "A genuine noun of the ف ر ش family, listed by the Arabic Academy as household bedding or a bed.",
+            "provenance": "Codex-authored after review of the Arabic Academy ف ر ش entry, which distinguishes الفِراشُ (bedding) from الفَراشُ (the insect)."
+          },
+          {
+            "form": "فَرَّاشٌ",
+            "meaning": "a bedding attendant",
+            "difference": "Form II-derived agent noun; it names a person who attends to bedding, showing a derived occupation noun from the same root.",
+            "relationship": "A genuine derived agent noun of the ف ر ش family, defined by the Arabic Academy as the worker responsible for bedding.",
+            "provenance": "Codex-authored after review of the Arabic Academy ف ر ش entry defining الفَرّاشُ and the standard Form II-derived agent pattern."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "b9c890f343935e831faf08acc18dc9a50c125e7b26cf897899aea68444c5b747",
+      "contentHash": "79e3560156c767f612d17c593af1c4dd2af3a4f5ab0ad9e12a583bd7b2916422"
+    },
+    {
+      "occurrenceId": "word:101:5:3",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 5,
+      "position": 3,
+      "teachingId": "lesson:101:ihn",
+      "word": "كَٱلْعِهْنِ",
+      "category": "noun",
+      "root": "ع ه ن",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "عِهْنٌ",
+          "meaning": "dyed wool",
+          "difference": "Bare indefinite singular noun; it presents the wool lexeme without the current attached preposition and definite article.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:عهن",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "state:indefinite",
+            "derivation:base-form"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "عهن"
+        },
+        {
+          "form": "عِهْنَةٌ",
+          "meaning": "a piece of dyed wool",
+          "difference": "Feminine unit noun; it names one piece of the wool rather than the collective material noun.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:عهن",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "gender:feminine",
+            "derivation:unit-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "عهنة"
+        },
+        {
+          "form": "عُهُونٌ",
+          "meaning": "pieces or kinds of dyed wool",
+          "difference": "Broken plural; it marks multiple pieces or kinds of the wool noun rather than one material noun.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:عهن",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "number:plural",
+            "derivation:broken-plural"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "عهون"
+        },
+        {
+          "form": "عِهْنِيٌّ",
+          "meaning": "woollen or related to wool",
+          "difference": "Relational adjective; it describes something made of or associated with wool rather than naming the material itself.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:عهن",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:relational-adjective",
+            "derivation:nisbah",
+            "semantic:material"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "عهني"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "كَٱلْعِهْنِ",
+          "meaning": "like wool",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the عهن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:5:3) was checked as evidence."
+        },
+        {
+          "form": "عِهْنٌ",
+          "meaning": "dyed wool",
+          "difference": "Bare indefinite singular noun; it presents the wool lexeme without the current attached preposition and definite article.",
+          "relationship": "The base noun of the ع ه ن wool family, corresponding to the current كَالْعِهْنِ construction.",
+          "provenance": "Codex-authored after review of the Arabic Academy ع ه ن entry defining العِهْنُ as wool dyed in colours."
+        },
+        {
+          "form": "عِهْنَةٌ",
+          "meaning": "a piece of dyed wool",
+          "difference": "Feminine unit noun; it names one piece of the wool rather than the collective material noun.",
+          "relationship": "An established feminine derivative of عِهْنٌ, explicitly given in the Arabic Academy entry.",
+          "provenance": "Codex-authored after review of the Arabic Academy ع ه ن entry, which defines عِهْنَةٌ as a piece of عِهْن."
+        },
+        {
+          "form": "عُهُونٌ",
+          "meaning": "pieces or kinds of dyed wool",
+          "difference": "Broken plural; it marks multiple pieces or kinds of the wool noun rather than one material noun.",
+          "relationship": "An established plural of عِهْنٌ, listed in the Arabic Academy entry.",
+          "provenance": "Codex-authored after review of the Arabic Academy ع ه ن entry, which lists عُهُونٌ as the plural of العِهْنُ."
+        },
+        {
+          "form": "عِهْنِيٌّ",
+          "meaning": "woollen or related to wool",
+          "difference": "Relational adjective; it describes something made of or associated with wool rather than naming the material itself.",
+          "relationship": "A genuine nisbah adjective built from the ع ه ن wool noun, retained from the project-reviewed family evidence.",
+          "provenance": "Codex-authored after review of the project-reviewed عِهْنِيٌّ row and the Arabic Academy definition of عِهْنٌ as wool."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "كَٱلْعِهْنِ",
+            "meaning": "like wool",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the عهن lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:5:3) was checked as evidence."
+          },
+          {
+            "form": "عِهْنِيٌّ",
+            "meaning": "made of wool",
+            "difference": "adjective",
+            "relationship": "Existing project-reviewed relationship to the عهن family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "كَٱلْعِهْنِ is a rootful noun with root ع ه ن. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "كَٱلْعِهْنِ",
+            "meaning": "like wool",
+            "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+            "relationship": "Current Qur'anic occurrence of the عهن lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:5:3) was checked as evidence."
+          },
+          {
+            "form": "عِهْنٌ",
+            "meaning": "dyed wool",
+            "difference": "Bare indefinite singular noun; it presents the wool lexeme without the current attached preposition and definite article.",
+            "relationship": "The base noun of the ع ه ن wool family, corresponding to the current كَالْعِهْنِ construction.",
+            "provenance": "Codex-authored after review of the Arabic Academy ع ه ن entry defining العِهْنُ as wool dyed in colours."
+          },
+          {
+            "form": "عِهْنَةٌ",
+            "meaning": "a piece of dyed wool",
+            "difference": "Feminine unit noun; it names one piece of the wool rather than the collective material noun.",
+            "relationship": "An established feminine derivative of عِهْنٌ, explicitly given in the Arabic Academy entry.",
+            "provenance": "Codex-authored after review of the Arabic Academy ع ه ن entry, which defines عِهْنَةٌ as a piece of عِهْن."
+          },
+          {
+            "form": "عُهُونٌ",
+            "meaning": "pieces or kinds of dyed wool",
+            "difference": "Broken plural; it marks multiple pieces or kinds of the wool noun rather than one material noun.",
+            "relationship": "An established plural of عِهْنٌ, listed in the Arabic Academy entry.",
+            "provenance": "Codex-authored after review of the Arabic Academy ع ه ن entry, which lists عُهُونٌ as the plural of العِهْنُ."
+          },
+          {
+            "form": "عِهْنِيٌّ",
+            "meaning": "woollen or related to wool",
+            "difference": "Relational adjective; it describes something made of or associated with wool rather than naming the material itself.",
+            "relationship": "A genuine nisbah adjective built from the ع ه ن wool noun, retained from the project-reviewed family evidence.",
+            "provenance": "Codex-authored after review of the project-reviewed عِهْنِيٌّ row and the Arabic Academy definition of عِهْنٌ as wool."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "93e37dbc4ac775a2e735368381d74ffb4f60b2422601ab09e63ed0f1abee300a",
+      "contentHash": "f425ee4eb72b770910e29395930b1ab2a8ed2f828f77699a440b97586d7b093a"
+    },
+    {
+      "occurrenceId": "word:101:5:4",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 5,
+      "position": 4,
+      "teachingId": "lesson:101:manfush",
+      "word": "ٱلْمَنفُوشِ",
+      "category": "noun",
+      "root": "ن ف ش",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "نَفَشَ",
+          "meaning": "he spread or pastured at night",
+          "difference": "Form I perfect; it presents the completed spreading/fluffing or nocturnal pasturing action, contrasting with the current passive participle.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:نفش",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:perfect",
+            "partofspeech:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "نفش"
+        },
+        {
+          "form": "يَنْفُشُ",
+          "meaning": "he spreads or pastures at night",
+          "difference": "Form I imperfect, third-person masculine singular; it presents the spreading or pasturing action as ongoing or habitual.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:نفش",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:imperfect",
+            "person:third-person"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "ينفش"
+        },
+        {
+          "form": "نَفْشٌ",
+          "meaning": "spreading or fluffing",
+          "difference": "Verbal noun; it names the action of spreading or fluffing wool rather than describing the wool after the action.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:نفش",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verbal-noun",
+            "derivation:action-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "نفش"
+        },
+        {
+          "form": "نَافِشٌ",
+          "meaning": "one who spreads or pastures at night",
+          "difference": "Active participle; it names the agent or animal performing the spreading or nocturnal pasturing action, contrasting with the passive result مَنْفُوشٌ.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:نفش",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "derivation:agent"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "نافش"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "ٱلْمَنفُوشِ",
+          "meaning": "fluffed up",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; gender: masculine; case: genitive; partOfSpeech: adjective; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the نفش lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:5:4) was checked as evidence."
+        },
+        {
+          "form": "نَفَشَ",
+          "meaning": "he spread or pastured at night",
+          "difference": "Form I perfect; it presents the completed spreading/fluffing or nocturnal pasturing action, contrasting with the current passive participle.",
+          "relationship": "Form I perfect of the ن ف ش root, the verbal base behind مَنْفُوشٌ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ن ف ش entry and Arabic Academy evidence defining نَفَشَ."
+        },
+        {
+          "form": "يَنْفُشُ",
+          "meaning": "he spreads or pastures at night",
+          "difference": "Form I imperfect, third-person masculine singular; it presents the spreading or pasturing action as ongoing or habitual.",
+          "relationship": "Form I imperfect of the ن ف ش root, the ongoing counterpart of نَفَشَ.",
+          "provenance": "Codex-authored after review of the Arabic Academy ن ف ش root entry and standard Form I imperfect morphology."
+        },
+        {
+          "form": "نَفْشٌ",
+          "meaning": "spreading or fluffing",
+          "difference": "Verbal noun; it names the action of spreading or fluffing wool rather than describing the wool after the action.",
+          "relationship": "A genuine verbal noun of the ن ف ش root, listed in the Arabic Academy entry.",
+          "provenance": "Codex-authored after review of the Arabic Academy ن ف ش entry, which lists النَّفْشُ and defines the underlying action."
+        },
+        {
+          "form": "نَافِشٌ",
+          "meaning": "one who spreads or pastures at night",
+          "difference": "Active participle; it names the agent or animal performing the spreading or nocturnal pasturing action, contrasting with the passive result مَنْفُوشٌ.",
+          "relationship": "A genuine active participle of the ن ف ش root, explicitly defined by the Arabic Academy entry.",
+          "provenance": "Codex-authored after review of the Arabic Academy ن ف ش entry defining نافِشٌ and the standard Form I active-participle pattern."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "ٱلْمَنفُوشِ",
+            "meaning": "fluffed up",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; gender: masculine; case: genitive; partOfSpeech: adjective; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the نفش lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:5:4) was checked as evidence."
+          },
+          {
+            "form": "مَنْفُوشٌ",
+            "meaning": "fluffed up",
+            "difference": "passive participle",
+            "relationship": "Existing project-reviewed relationship to the نفش family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "ٱلْمَنفُوشِ is a rootful noun with root ن ف ش. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱلْمَنفُوشِ",
+            "meaning": "fluffed up",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; gender: masculine; case: genitive; partOfSpeech: adjective; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the نفش lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:5:4) was checked as evidence."
+          },
+          {
+            "form": "نَفَشَ",
+            "meaning": "he spread or pastured at night",
+            "difference": "Form I perfect; it presents the completed spreading/fluffing or nocturnal pasturing action, contrasting with the current passive participle.",
+            "relationship": "Form I perfect of the ن ف ش root, the verbal base behind مَنْفُوشٌ.",
+            "provenance": "Codex-authored after review of the Quranic Arabic Corpus ن ف ش entry and Arabic Academy evidence defining نَفَشَ."
+          },
+          {
+            "form": "يَنْفُشُ",
+            "meaning": "he spreads or pastures at night",
+            "difference": "Form I imperfect, third-person masculine singular; it presents the spreading or pasturing action as ongoing or habitual.",
+            "relationship": "Form I imperfect of the ن ف ش root, the ongoing counterpart of نَفَشَ.",
+            "provenance": "Codex-authored after review of the Arabic Academy ن ف ش root entry and standard Form I imperfect morphology."
+          },
+          {
+            "form": "نَفْشٌ",
+            "meaning": "spreading or fluffing",
+            "difference": "Verbal noun; it names the action of spreading or fluffing wool rather than describing the wool after the action.",
+            "relationship": "A genuine verbal noun of the ن ف ش root, listed in the Arabic Academy entry.",
+            "provenance": "Codex-authored after review of the Arabic Academy ن ف ش entry, which lists النَّفْشُ and defines the underlying action."
+          },
+          {
+            "form": "نَافِشٌ",
+            "meaning": "one who spreads or pastures at night",
+            "difference": "Active participle; it names the agent or animal performing the spreading or nocturnal pasturing action, contrasting with the passive result مَنْفُوشٌ.",
+            "relationship": "A genuine active participle of the ن ف ش root, explicitly defined by the Arabic Academy entry.",
+            "provenance": "Codex-authored after review of the Arabic Academy ن ف ش entry defining نافِشٌ and the standard Form I active-participle pattern."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "d7b4fd98982fda8e39473865a14c5e67c102e62afdb0b179589c0eb6131fef54",
+      "contentHash": "2d0dbbfe981779a0c8240fbab9d6278d504508ab4247bff8bd7ce66645147e89"
+    },
+    {
+      "occurrenceId": "word:101:6:1",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 6,
+      "position": 1,
+      "teachingId": "lesson:101:faamma",
+      "word": "فَأَمَّا",
+      "category": "connector/conjunction",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "فَأَمَّا",
+          "meaning": "then as for",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:6:1) was checked as evidence."
+        },
+        {
+          "form": "فَ",
+          "meaning": "then / so",
+          "difference": "transition connector",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَمَّا",
+          "meaning": "as for",
+          "difference": "discourse particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فَأَمَّا",
+            "meaning": "then as for",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:6:1) was checked as evidence."
+          },
+          {
+            "form": "فَ",
+            "meaning": "then / so",
+            "difference": "transition connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أَمَّا",
+            "meaning": "as for",
+            "difference": "discourse particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فَأَمَّا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فَأَمَّا",
+            "meaning": "then as for",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:6:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:6:1) was checked as evidence."
+          },
+          {
+            "form": "فَ",
+            "meaning": "then / so",
+            "difference": "transition connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أَمَّا",
+            "meaning": "as for",
+            "difference": "discourse particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فَأَمَّا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "77906fce29ec983cc967e6aa6e8f03b85f2c3d0c8b2dadee4d97d62b0546b03a",
+      "contentHash": "446826e34241f4befe93f6aeac4e562d9b46acb2cbe614fb77388924addf69f9"
+    },
+    {
+      "occurrenceId": "word:101:6:2",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 6,
+      "position": 2,
+      "teachingId": "lesson:101:man",
+      "word": "مَن",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَن",
+          "meaning": "whoever",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:6:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:6:2) was checked as evidence."
+        },
+        {
+          "form": "مَنْ",
+          "meaning": "whoever",
+          "difference": "relative use",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "لِمَنْ",
+          "meaning": "for whoever",
+          "difference": "preposition joined to the pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "مَن",
+            "meaning": "whoever",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:6:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:6:2) was checked as evidence."
+          },
+          {
+            "form": "مَنْ",
+            "meaning": "whoever",
+            "difference": "relative use",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "لِمَنْ",
+            "meaning": "for whoever",
+            "difference": "preposition joined to the pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَن is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "مَن",
+            "meaning": "whoever",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:6:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:6:2) was checked as evidence."
+          },
+          {
+            "form": "مَنْ",
+            "meaning": "whoever",
+            "difference": "relative use",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "لِمَنْ",
+            "meaning": "for whoever",
+            "difference": "preposition joined to the pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَن is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "2c6810e02f492036171132e3516ffef9e6a11ee0d5c65bd2a0c4ec71974b91e0",
+      "contentHash": "3f4faec143abd6ab28bfb29f1ef249e2b49f8836e10e4b9ec599ed079c83230c"
+    },
+    {
+      "occurrenceId": "word:101:7:1",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 7,
+      "position": 1,
+      "teachingId": "lesson:101:fahuwa",
+      "word": "فَهُوَ",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "فَهُوَ",
+          "meaning": "then he",
+          "difference": "Current Qur'anic occurrence; person: third-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:7:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:7:1) was checked as evidence."
+        },
+        {
+          "form": "فَ",
+          "meaning": "then",
+          "difference": "result connector",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "هُوَ",
+          "meaning": "he",
+          "difference": "independent pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فَهُوَ",
+            "meaning": "then he",
+            "difference": "Current Qur'anic occurrence; person: third-person masculine singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:7:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:7:1) was checked as evidence."
+          },
+          {
+            "form": "فَ",
+            "meaning": "then",
+            "difference": "result connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هُوَ",
+            "meaning": "he",
+            "difference": "independent pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فَهُوَ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فَهُوَ",
+            "meaning": "then he",
+            "difference": "Current Qur'anic occurrence; person: third-person masculine singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:7:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:7:1) was checked as evidence."
+          },
+          {
+            "form": "فَ",
+            "meaning": "then",
+            "difference": "result connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "هُوَ",
+            "meaning": "he",
+            "difference": "independent pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فَهُوَ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "29c3d36d3ebe9c63dab1ebdb51625314c6b64ac3903770a0b337039b3f289488",
+      "contentHash": "720d77a9a2fe77b9f3c32140789046384b65321269721bf42927b9351e02b7e8"
+    },
+    {
+      "occurrenceId": "word:101:7:2",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 7,
+      "position": 2,
+      "teachingId": "lesson:101:fi",
+      "word": "فِى",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "فِى",
+          "meaning": "in",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:7:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:7:2) was checked as evidence."
+        },
+        {
+          "form": "فِي",
+          "meaning": "in",
+          "difference": "standalone preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَفِي",
+          "meaning": "and in",
+          "difference": "connector joined to the preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فِى",
+            "meaning": "in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:7:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:7:2) was checked as evidence."
+          },
+          {
+            "form": "فِي",
+            "meaning": "in",
+            "difference": "standalone preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "وَفِي",
+            "meaning": "and in",
+            "difference": "connector joined to the preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فِى is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "فِى",
+            "meaning": "in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:7:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:7:2) was checked as evidence."
+          },
+          {
+            "form": "فِي",
+            "meaning": "in",
+            "difference": "standalone preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "وَفِي",
+            "meaning": "and in",
+            "difference": "connector joined to the preposition",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "فِى is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "5fc46647ce548973b038855a30a1d2403c0f98aa4e4eaf93c91ef32a1dc2a6d2",
+      "contentHash": "d88dd98a459fbc690a77955ab823c134d522c3b938d73c43e9a25c8fba35564f"
+    },
+    {
+      "occurrenceId": "word:101:8:1",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 8,
+      "position": 1,
+      "teachingId": "lesson:101:waamma",
+      "word": "وَأَمَّا",
+      "category": "connector/conjunction",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَأَمَّا",
+          "meaning": "but as for",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:8:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:8:1) was checked as evidence."
+        },
+        {
+          "form": "وَ",
+          "meaning": "and / but",
+          "difference": "contrast connector",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَمَّا",
+          "meaning": "as for",
+          "difference": "discourse particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَأَمَّا",
+            "meaning": "but as for",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:8:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:8:1) was checked as evidence."
+          },
+          {
+            "form": "وَ",
+            "meaning": "and / but",
+            "difference": "contrast connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أَمَّا",
+            "meaning": "as for",
+            "difference": "discourse particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَأَمَّا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَأَمَّا",
+            "meaning": "but as for",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:8:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:8:1) was checked as evidence."
+          },
+          {
+            "form": "وَ",
+            "meaning": "and / but",
+            "difference": "contrast connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "أَمَّا",
+            "meaning": "as for",
+            "difference": "discourse particle",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَأَمَّا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "c3932fd6e72833dfdbb0a5c4eaad8327512edb80534f9db18f51a9766ff8ea37",
+      "contentHash": "54a9713490d7876ed1576eccc44b663c1ba91f8ac5393a034bd22fa27866900e"
+    },
+    {
+      "occurrenceId": "word:101:8:2",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 8,
+      "position": 2,
+      "teachingId": "lesson:101:man2",
+      "word": "مَنْ",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَنْ",
+          "meaning": "whoever",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:8:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:8:2) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَنْ",
+            "meaning": "whoever",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:8:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:8:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَنْ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَنْ",
+            "meaning": "whoever",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:8:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:8:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَنْ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "92245699b4a3a7e5885b69f4120bcacfcfba48f182e15ff6e87a628d9279dcdc",
+      "contentHash": "85143757d4a010b3e2bda12f9b2990506137eca88a4f9933987a808a49c6a704"
+    },
+    {
+      "occurrenceId": "word:101:8:3",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 8,
+      "position": 3,
+      "teachingId": "lesson:101:khaffat",
+      "word": "خَفَّتْ",
+      "category": "verb",
+      "root": "خ ف ف",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "خَفَّ",
+          "meaning": "he or it became light",
+          "difference": "Form I perfect; it presents the completed change to a lighter state, contrasting with the current feminine-marked verb خَفَّتْ.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:خفف",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:perfect",
+            "gender:masculine"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "خف"
+        },
+        {
+          "form": "يَخِفُّ",
+          "meaning": "he or it becomes light",
+          "difference": "Form I imperfect, third-person masculine singular; it presents becoming light as ongoing or expected.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:خفف",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:imperfect",
+            "person:third-person"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يخف"
+        },
+        {
+          "form": "خَفَّفَ",
+          "meaning": "he lightened or eased",
+          "difference": "Form II perfect; the doubled middle radical presents causing something to become lighter or easier.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:خفف",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-2",
+            "tense:perfect",
+            "voice:causative"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "خفف"
+        },
+        {
+          "form": "خَفِيفٌ",
+          "meaning": "light or slight",
+          "difference": "Adjective; it describes a light state or quality rather than expressing the change as a finite verb.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:خفف",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:adjective",
+            "derivation:quality-adjective"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "خفيف"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "خَفَّتْ",
+          "meaning": "became light",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the خفف lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:8:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:8:3) was checked as evidence."
+        },
+        {
+          "form": "خَفَّ",
+          "meaning": "he or it became light",
+          "difference": "Form I perfect; it presents the completed change to a lighter state, contrasting with the current feminine-marked verb خَفَّتْ.",
+          "relationship": "Form I perfect of the خ ف ف root, the masculine/base counterpart of the current form.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus خ ف ف entry and Arabic Academy evidence for خَفَّ."
+        },
+        {
+          "form": "يَخِفُّ",
+          "meaning": "he or it becomes light",
+          "difference": "Form I imperfect, third-person masculine singular; it presents becoming light as ongoing or expected.",
+          "relationship": "Form I imperfect of the خ ف ف root, the ongoing counterpart of خَفَّ.",
+          "provenance": "Codex-authored after review of the Arabic Academy خ ف ف root entry and standard Form I imperfect morphology."
+        },
+        {
+          "form": "خَفَّفَ",
+          "meaning": "he lightened or eased",
+          "difference": "Form II perfect; the doubled middle radical presents causing something to become lighter or easier.",
+          "relationship": "A genuine Form II derived verb of the خ ف ف root, contrasting a causative action with the intransitive current verb.",
+          "provenance": "Codex-authored after review of the Arabic Academy خ ف ف root entry defining خَفَّفَ as making something light or easing it."
+        },
+        {
+          "form": "خَفِيفٌ",
+          "meaning": "light or slight",
+          "difference": "Adjective; it describes a light state or quality rather than expressing the change as a finite verb.",
+          "relationship": "A genuine adjective of the خ ف ف root, listed in the Arabic Academy entry.",
+          "provenance": "Codex-authored after review of the Arabic Academy خ ف ف entry defining الخَفِيفُ and the approved project root meaning."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "خَفَّتْ",
+            "meaning": "became light",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the خفف lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:8:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:8:3) was checked as evidence."
+          },
+          {
+            "form": "خَفِيفٌ",
+            "meaning": "light",
+            "difference": "adjective",
+            "relationship": "Existing project-reviewed relationship to the خفف family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "خَفَّتْ is a rootful verb with root خ ف ف. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "خَفَّتْ",
+            "meaning": "became light",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the خفف lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:8:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:8:3) was checked as evidence."
+          },
+          {
+            "form": "خَفَّ",
+            "meaning": "he or it became light",
+            "difference": "Form I perfect; it presents the completed change to a lighter state, contrasting with the current feminine-marked verb خَفَّتْ.",
+            "relationship": "Form I perfect of the خ ف ف root, the masculine/base counterpart of the current form.",
+            "provenance": "Codex-authored after review of the Quranic Arabic Corpus خ ف ف entry and Arabic Academy evidence for خَفَّ."
+          },
+          {
+            "form": "يَخِفُّ",
+            "meaning": "he or it becomes light",
+            "difference": "Form I imperfect, third-person masculine singular; it presents becoming light as ongoing or expected.",
+            "relationship": "Form I imperfect of the خ ف ف root, the ongoing counterpart of خَفَّ.",
+            "provenance": "Codex-authored after review of the Arabic Academy خ ف ف root entry and standard Form I imperfect morphology."
+          },
+          {
+            "form": "خَفَّفَ",
+            "meaning": "he lightened or eased",
+            "difference": "Form II perfect; the doubled middle radical presents causing something to become lighter or easier.",
+            "relationship": "A genuine Form II derived verb of the خ ف ف root, contrasting a causative action with the intransitive current verb.",
+            "provenance": "Codex-authored after review of the Arabic Academy خ ف ف root entry defining خَفَّفَ as making something light or easing it."
+          },
+          {
+            "form": "خَفِيفٌ",
+            "meaning": "light or slight",
+            "difference": "Adjective; it describes a light state or quality rather than expressing the change as a finite verb.",
+            "relationship": "A genuine adjective of the خ ف ف root, listed in the Arabic Academy entry.",
+            "provenance": "Codex-authored after review of the Arabic Academy خ ف ف entry defining الخَفِيفُ and the approved project root meaning."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "e256ab38d7c02478328b57be77f0a211c226fa4bcdf65d34c71af7bb0220edfd",
+      "contentHash": "ee7fd03804b56569b4965c5a53f55edde647df997395c798342de4c51852f6e5"
+    },
+    {
+      "occurrenceId": "word:101:10:1",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 10,
+      "position": 1,
+      "teachingId": "lesson:101:wama",
+      "word": "وَمَآ",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَمَآ",
+          "meaning": "and what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:10:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:10:1) was checked as evidence."
+        },
+        {
+          "form": "وَ",
+          "meaning": "and",
+          "difference": "connector",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَمَا",
+          "meaning": "and what",
+          "difference": "connector joined to the question word",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَمَآ",
+            "meaning": "and what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:3:1) was checked as evidence."
+          },
+          {
+            "form": "وَ",
+            "meaning": "and",
+            "difference": "connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "وَمَا",
+            "meaning": "and what",
+            "difference": "connector joined to the question word",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَمَآ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "وَمَآ",
+            "meaning": "and what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:10:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:10:1) was checked as evidence."
+          },
+          {
+            "form": "وَ",
+            "meaning": "and",
+            "difference": "connector",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "وَمَا",
+            "meaning": "and what",
+            "difference": "connector joined to the question word",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "وَمَآ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "993fccdb34729604bb9b3f40951cd8d3c89f6a64744495ff3d29886ca8ea0adc",
+      "contentHash": "3ef5272900f11680104ece9fe48d044e99bae6592d3aee5e2484f0c0c5d941d9"
+    },
+    {
+      "occurrenceId": "word:101:10:3",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 10,
+      "position": 3,
+      "teachingId": "lesson:101:ma",
+      "word": "مَا",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:10:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:10:3) was checked as evidence."
+        },
+        {
+          "form": "بِمَا",
+          "meaning": "with what",
+          "difference": "preposition joined to the pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:3:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:3:3) was checked as evidence."
+          },
+          {
+            "form": "بِمَا",
+            "meaning": "with what",
+            "difference": "preposition joined to the pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:10:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:10:3) was checked as evidence."
+          },
+          {
+            "form": "بِمَا",
+            "meaning": "with what",
+            "difference": "preposition joined to the pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "c9c73bf77d24b68b8a0034feab0f2bb6ab7610cd5d82c8840eaf187bd2cab7ac",
+      "contentHash": "560380364ad64fe2e36048e073a85c586368971d501456c51dd09511569075d4"
+    },
+    {
+      "occurrenceId": "word:101:10:4",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 10,
+      "position": 4,
+      "teachingId": "lesson:101:hiyah",
+      "word": "هِيَهْ",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "هِيَهْ",
+          "meaning": "what that is",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:10:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:10:4) was checked as evidence."
+        },
+        {
+          "form": "هِيَ",
+          "meaning": "it",
+          "difference": "independent pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "هِيَهْ",
+            "meaning": "what that is",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:10:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:10:4) was checked as evidence."
+          },
+          {
+            "form": "هِيَ",
+            "meaning": "it",
+            "difference": "independent pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "هِيَهْ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "هِيَهْ",
+            "meaning": "what that is",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:10:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:10:4) was checked as evidence."
+          },
+          {
+            "form": "هِيَ",
+            "meaning": "it",
+            "difference": "independent pronoun",
+            "relationship": "Existing project-reviewed relationship to the grammatical family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          }
+        ],
+        "limitedReason": "هِيَهْ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "e9f6fecf180f7fd029cffb4b79063cd5cf807aced76023ac5b6060e83ab90dd3",
+      "contentHash": "6e0a5b673690afd854321c6ae750457018eb2b6f3159449b7b7c02c33d3d78dc"
+    },
+    {
+      "occurrenceId": "word:101:11:2",
+      "packageId": "surah:101",
+      "surah": 101,
+      "ayah": 11,
+      "position": 2,
+      "teachingId": "lesson:101:hamiyah",
+      "word": "حَامِيَةٌۢ",
+      "category": "noun",
+      "root": "ح م ي",
+      "decision": "upgraded-to-full",
+      "candidatePool": 5,
+      "candidateEvidence": [
+        {
+          "form": "حَمِيَ",
+          "meaning": "he or it became hot",
+          "difference": "Form I perfect; it presents the completed becoming-hot state that underlies the current adjective-like participle.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:حمي",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:perfect",
+            "partofspeech:verb"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "حمي"
+        },
+        {
+          "form": "يَحْمَىٰ",
+          "meaning": "he or it becomes hot",
+          "difference": "Form I imperfect, third-person masculine singular; it presents becoming hot as ongoing or expected.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:حمي",
+          "score": 96,
+          "featureSignal": [
+            "pattern:form-1",
+            "tense:imperfect",
+            "person:third-person"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يحمى"
+        },
+        {
+          "form": "حُمُوٌّ",
+          "meaning": "heat or intensity",
+          "difference": "Verbal noun; it names the heat or intensity itself rather than describing a hot thing as an adjective.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:حمي",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verbal-noun",
+            "derivation:action-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "حمو"
+        },
+        {
+          "form": "حَمِيٌّ",
+          "meaning": "hot or ardent",
+          "difference": "Adjective; it describes a hot or intense state, giving a direct quality contrast with the feminine current form حَامِيَةٌ.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:حمي",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:adjective",
+            "derivation:quality-adjective"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "حمي"
+        },
+        {
+          "form": "حَامِيَةً",
+          "meaning": "intensely hot",
+          "difference": "Compared with حَامِيَةٌۢ, this form changes case: nominative → accusative.",
+          "sourceKind": "existing-reviewed-row",
+          "sourceOccurrence": "lesson:101:hamiyah",
+          "score": 78,
+          "featureSignal": [],
+          "baseDistinct": false,
+          "lexicalKey": "حامية"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "حَامِيَةٌۢ",
+          "meaning": "intensely hot",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; gender: feminine; state: indefinite; case: nominative; partOfSpeech: adjective; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the حمي lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:101:11:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:11:2) was checked as evidence."
+        },
+        {
+          "form": "حَمِيَ",
+          "meaning": "he or it became hot",
+          "difference": "Form I perfect; it presents the completed becoming-hot state that underlies the current adjective-like participle.",
+          "relationship": "Form I perfect of the ح م ي root in its heat/intensity sense, the verbal base related to حَامِيَةٌ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ح م ي entry and Arabic Academy evidence defining حَمِيَ as becoming hot."
+        },
+        {
+          "form": "يَحْمَىٰ",
+          "meaning": "he or it becomes hot",
+          "difference": "Form I imperfect, third-person masculine singular; it presents becoming hot as ongoing or expected.",
+          "relationship": "Form I imperfect of حَمِيَ in the heat/intensity sense, showing the ongoing counterpart of the current form.",
+          "provenance": "Codex-authored after review of the Arabic Academy ح م ي root entry and standard Form I imperfect morphology."
+        },
+        {
+          "form": "حُمُوٌّ",
+          "meaning": "heat or intensity",
+          "difference": "Verbal noun; it names the heat or intensity itself rather than describing a hot thing as an adjective.",
+          "relationship": "A genuine verbal noun of the ح م ي heat family, listed in the Arabic Academy entry alongside حَمْيٌ and حَمِيٌّ.",
+          "provenance": "Codex-authored after review of the Arabic Academy ح م ي entry, which lists حُمُوٌّ as a verbal noun of becoming hot."
+        },
+        {
+          "form": "حَمِيٌّ",
+          "meaning": "hot or ardent",
+          "difference": "Adjective; it describes a hot or intense state, giving a direct quality contrast with the feminine current form حَامِيَةٌ.",
+          "relationship": "A genuine adjective of the ح م ي heat/intensity family, explicitly listed by the Arabic Academy.",
+          "provenance": "Codex-authored after review of the Arabic Academy ح م ي entry defining الحَمِيُّ as hot/ardent and the approved project root meaning."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "حَامِيَةٌۢ",
+            "meaning": "intensely hot",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; gender: feminine; state: indefinite; case: nominative; partOfSpeech: adjective; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the حمي lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:11:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:11:2) was checked as evidence."
+          },
+          {
+            "form": "حَامٍ",
+            "meaning": "hot / protecting",
+            "difference": "active participle",
+            "relationship": "Existing project-reviewed relationship to the حمي family.",
+            "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+          },
+          {
+            "form": "حَامِيَةً",
+            "meaning": "intensely hot",
+            "difference": "Compared with حَامِيَةٌۢ, this form changes case: nominative → accusative.",
+            "relationship": "Related to the ح م ي root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:88:4:3.",
+            "provenance": "Codex-reviewed form for the ح م ي family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "حَامِيَةٌۢ is a rootful noun with root ح م ي. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "حَامِيَةٌۢ",
+            "meaning": "intensely hot",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; gender: feminine; state: indefinite; case: nominative; partOfSpeech: adjective; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the حمي lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:101:11:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (101:11:2) was checked as evidence."
+          },
+          {
+            "form": "حَمِيَ",
+            "meaning": "he or it became hot",
+            "difference": "Form I perfect; it presents the completed becoming-hot state that underlies the current adjective-like participle.",
+            "relationship": "Form I perfect of the ح م ي root in its heat/intensity sense, the verbal base related to حَامِيَةٌ.",
+            "provenance": "Codex-authored after review of the Quranic Arabic Corpus ح م ي entry and Arabic Academy evidence defining حَمِيَ as becoming hot."
+          },
+          {
+            "form": "يَحْمَىٰ",
+            "meaning": "he or it becomes hot",
+            "difference": "Form I imperfect, third-person masculine singular; it presents becoming hot as ongoing or expected.",
+            "relationship": "Form I imperfect of حَمِيَ in the heat/intensity sense, showing the ongoing counterpart of the current form.",
+            "provenance": "Codex-authored after review of the Arabic Academy ح م ي root entry and standard Form I imperfect morphology."
+          },
+          {
+            "form": "حُمُوٌّ",
+            "meaning": "heat or intensity",
+            "difference": "Verbal noun; it names the heat or intensity itself rather than describing a hot thing as an adjective.",
+            "relationship": "A genuine verbal noun of the ح م ي heat family, listed in the Arabic Academy entry alongside حَمْيٌ and حَمِيٌّ.",
+            "provenance": "Codex-authored after review of the Arabic Academy ح م ي entry, which lists حُمُوٌّ as a verbal noun of becoming hot."
+          },
+          {
+            "form": "حَمِيٌّ",
+            "meaning": "hot or ardent",
+            "difference": "Adjective; it describes a hot or intense state, giving a direct quality contrast with the feminine current form حَامِيَةٌ.",
+            "relationship": "A genuine adjective of the ح م ي heat/intensity family, explicitly listed by the Arabic Academy.",
+            "provenance": "Codex-authored after review of the Arabic Academy ح م ي entry defining الحَمِيُّ as hot/ardent and the approved project root meaning."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "e27e7cdf69c01ca555cc9db1b8e46950f6202e755ab6f87a174104cd65008625",
+      "contentHash": "eaffbb8ab6da953fe45ea563f021d02049e2470aff4572dfbd37182b5d53147e"
+    }
+  ]
+}

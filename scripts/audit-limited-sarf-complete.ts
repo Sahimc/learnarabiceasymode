@@ -1559,6 +1559,330 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "معصرة",
       },
     ],
+    ["قرع"]: [
+      {
+        form: "قَرَعَ",
+        meaning: "he struck or knocked",
+        difference:
+          "Form I perfect; it presents the completed act of striking or knocking, while the current occurrence is the noun naming a striking calamity.",
+        relationship:
+          "Form I perfect of the ق ر ع root, the verbal base behind قَارِعَةٌ.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ق ر ع entry and Arabic Academy evidence defining قَرَعَ as striking or knocking.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "قرع",
+      },
+      {
+        form: "يَقْرَعُ",
+        meaning: "he strikes or knocks",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents striking or knocking as ongoing or expected.",
+        relationship:
+          "Form I imperfect of the ق ر ع root, the ongoing counterpart of قَرَعَ.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يقرع",
+      },
+      {
+        form: "قَرْعٌ",
+        meaning: "striking or knocking",
+        difference:
+          "Verbal noun; it names the act of striking or knocking rather than the calamity noun or a finite verb.",
+        relationship:
+          "A genuine verbal noun of the ق ر ع root, listed in the Arabic Academy root entry.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ق ر ع root entry, which lists القَرْعُ among the established family forms.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "قرع",
+      },
+      {
+        form: "قَارِعٌ",
+        meaning: "striking or one who strikes",
+        difference:
+          "Active participle/adjective; it describes a striking agent or quality, contrasting with the feminine noun naming the calamity.",
+        relationship:
+          "A genuine active-participle form of the ق ر ع root, related to قَارِعَةٌ by the same root and participial pattern.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ق ر ع root entry and standard Form I active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent-or-descriptor"],
+        baseDistinct: true,
+        lexicalKey: "قارع",
+      },
+    ],
+    ["فرش"]: [
+      {
+        form: "فَرَشَ",
+        meaning: "he spread or laid out",
+        difference:
+          "Form I perfect; it presents the completed act of spreading or laying something out, contrasting with the current moth noun.",
+        relationship:
+          "Form I perfect of the ف ر ش root, the verbal base behind the فرش lexical family.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ف ر ش entry and Arabic Academy evidence defining فَرَشَ as spreading or laying out.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "فرش",
+      },
+      {
+        form: "يَفْرُشُ",
+        meaning: "he spreads or lays out",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents spreading or laying out as ongoing or habitual.",
+        relationship:
+          "Form I imperfect of the ف ر ش root, the ongoing counterpart of فَرَشَ.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ف ر ش root entry and standard Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يفرش",
+      },
+      {
+        form: "فِرَاشٌ",
+        meaning: "bedding or a bed",
+        difference:
+          "Noun with the same root but a different established lexical sense; it shows how ف ر ش names something spread out for resting.",
+        relationship:
+          "A genuine noun of the ف ر ش family, listed by the Arabic Academy as household bedding or a bed.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ف ر ش entry, which distinguishes الفِراشُ (bedding) from الفَراشُ (the insect).",
+        featureSignal: ["partofspeech:noun", "derivation:related-noun", "semantic:lexical-sense"],
+        baseDistinct: true,
+        lexicalKey: "فراش",
+      },
+      {
+        form: "فَرَّاشٌ",
+        meaning: "a bedding attendant",
+        difference:
+          "Form II-derived agent noun; it names a person who attends to bedding, showing a derived occupation noun from the same root.",
+        relationship:
+          "A genuine derived agent noun of the ف ر ش family, defined by the Arabic Academy as the worker responsible for bedding.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ف ر ش entry defining الفَرّاشُ and the standard Form II-derived agent pattern.",
+        featureSignal: ["pattern:form-2", "partofspeech:agent-noun", "derivation:occupation"],
+        baseDistinct: true,
+        lexicalKey: "فراش",
+      },
+    ],
+    ["عهن"]: [
+      {
+        form: "عِهْنٌ",
+        meaning: "dyed wool",
+        difference:
+          "Bare indefinite singular noun; it presents the wool lexeme without the current attached preposition and definite article.",
+        relationship:
+          "The base noun of the ع ه ن wool family, corresponding to the current كَالْعِهْنِ construction.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ع ه ن entry defining العِهْنُ as wool dyed in colours.",
+        featureSignal: ["partofspeech:noun", "state:indefinite", "derivation:base-form"],
+        baseDistinct: true,
+        lexicalKey: "عهن",
+      },
+      {
+        form: "عِهْنَةٌ",
+        meaning: "a piece of dyed wool",
+        difference:
+          "Feminine unit noun; it names one piece of the wool rather than the collective material noun.",
+        relationship:
+          "An established feminine derivative of عِهْنٌ, explicitly given in the Arabic Academy entry.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ع ه ن entry, which defines عِهْنَةٌ as a piece of عِهْن.",
+        featureSignal: ["partofspeech:noun", "gender:feminine", "derivation:unit-noun"],
+        baseDistinct: true,
+        lexicalKey: "عهنة",
+      },
+      {
+        form: "عُهُونٌ",
+        meaning: "pieces or kinds of dyed wool",
+        difference:
+          "Broken plural; it marks multiple pieces or kinds of the wool noun rather than one material noun.",
+        relationship:
+          "An established plural of عِهْنٌ, listed in the Arabic Academy entry.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ع ه ن entry, which lists عُهُونٌ as the plural of العِهْنُ.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "عهون",
+      },
+      {
+        form: "عِهْنِيٌّ",
+        meaning: "woollen or related to wool",
+        difference:
+          "Relational adjective; it describes something made of or associated with wool rather than naming the material itself.",
+        relationship:
+          "A genuine nisbah adjective built from the ع ه ن wool noun, retained from the project-reviewed family evidence.",
+        provenance:
+          "Codex-authored after review of the project-reviewed عِهْنِيٌّ row and the Arabic Academy definition of عِهْنٌ as wool.",
+        featureSignal: ["partofspeech:relational-adjective", "derivation:nisbah", "semantic:material"],
+        baseDistinct: true,
+        lexicalKey: "عهني",
+      },
+    ],
+    ["نفش"]: [
+      {
+        form: "نَفَشَ",
+        meaning: "he spread or pastured at night",
+        difference:
+          "Form I perfect; it presents the completed spreading/fluffing or nocturnal pasturing action, contrasting with the current passive participle.",
+        relationship:
+          "Form I perfect of the ن ف ش root, the verbal base behind مَنْفُوشٌ.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ن ف ش entry and Arabic Academy evidence defining نَفَشَ.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "نفش",
+      },
+      {
+        form: "يَنْفُشُ",
+        meaning: "he spreads or pastures at night",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents the spreading or pasturing action as ongoing or habitual.",
+        relationship:
+          "Form I imperfect of the ن ف ش root, the ongoing counterpart of نَفَشَ.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ن ف ش root entry and standard Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "ينفش",
+      },
+      {
+        form: "نَفْشٌ",
+        meaning: "spreading or fluffing",
+        difference:
+          "Verbal noun; it names the action of spreading or fluffing wool rather than describing the wool after the action.",
+        relationship:
+          "A genuine verbal noun of the ن ف ش root, listed in the Arabic Academy entry.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ن ف ش entry, which lists النَّفْشُ and defines the underlying action.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "نفش",
+      },
+      {
+        form: "نَافِشٌ",
+        meaning: "one who spreads or pastures at night",
+        difference:
+          "Active participle; it names the agent or animal performing the spreading or nocturnal pasturing action, contrasting with the passive result مَنْفُوشٌ.",
+        relationship:
+          "A genuine active participle of the ن ف ش root, explicitly defined by the Arabic Academy entry.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ن ف ش entry defining نافِشٌ and the standard Form I active-participle pattern.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "نافش",
+      },
+    ],
+    ["خفف"]: [
+      {
+        form: "خَفَّ",
+        meaning: "he or it became light",
+        difference:
+          "Form I perfect; it presents the completed change to a lighter state, contrasting with the current feminine-marked verb خَفَّتْ.",
+        relationship:
+          "Form I perfect of the خ ف ف root, the masculine/base counterpart of the current form.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus خ ف ف entry and Arabic Academy evidence for خَفَّ.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "gender:masculine"],
+        baseDistinct: true,
+        lexicalKey: "خف",
+      },
+      {
+        form: "يَخِفُّ",
+        meaning: "he or it becomes light",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents becoming light as ongoing or expected.",
+        relationship:
+          "Form I imperfect of the خ ف ف root, the ongoing counterpart of خَفَّ.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy خ ف ف root entry and standard Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يخف",
+      },
+      {
+        form: "خَفَّفَ",
+        meaning: "he lightened or eased",
+        difference:
+          "Form II perfect; the doubled middle radical presents causing something to become lighter or easier.",
+        relationship:
+          "A genuine Form II derived verb of the خ ف ف root, contrasting a causative action with the intransitive current verb.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy خ ف ف root entry defining خَفَّفَ as making something light or easing it.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "voice:causative"],
+        baseDistinct: true,
+        lexicalKey: "خفف",
+      },
+      {
+        form: "خَفِيفٌ",
+        meaning: "light or slight",
+        difference:
+          "Adjective; it describes a light state or quality rather than expressing the change as a finite verb.",
+        relationship:
+          "A genuine adjective of the خ ف ف root, listed in the Arabic Academy entry.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy خ ف ف entry defining الخَفِيفُ and the approved project root meaning.",
+        featureSignal: ["partofspeech:adjective", "derivation:quality-adjective"],
+        baseDistinct: true,
+        lexicalKey: "خفيف",
+      },
+    ],
+    ["حمي"]: [
+      {
+        form: "حَمِيَ",
+        meaning: "he or it became hot",
+        difference:
+          "Form I perfect; it presents the completed becoming-hot state that underlies the current adjective-like participle.",
+        relationship:
+          "Form I perfect of the ح م ي root in its heat/intensity sense, the verbal base related to حَامِيَةٌ.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ح م ي entry and Arabic Academy evidence defining حَمِيَ as becoming hot.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "حمي",
+      },
+      {
+        form: "يَحْمَىٰ",
+        meaning: "he or it becomes hot",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents becoming hot as ongoing or expected.",
+        relationship:
+          "Form I imperfect of حَمِيَ in the heat/intensity sense, showing the ongoing counterpart of the current form.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ح م ي root entry and standard Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يحمى",
+      },
+      {
+        form: "حُمُوٌّ",
+        meaning: "heat or intensity",
+        difference:
+          "Verbal noun; it names the heat or intensity itself rather than describing a hot thing as an adjective.",
+        relationship:
+          "A genuine verbal noun of the ح م ي heat family, listed in the Arabic Academy entry alongside حَمْيٌ and حَمِيٌّ.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ح م ي entry, which lists حُمُوٌّ as a verbal noun of becoming hot.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "حمو",
+      },
+      {
+        form: "حَمِيٌّ",
+        meaning: "hot or ardent",
+        difference:
+          "Adjective; it describes a hot or intense state, giving a direct quality contrast with the feminine current form حَامِيَةٌ.",
+        relationship:
+          "A genuine adjective of the ح م ي heat/intensity family, explicitly listed by the Arabic Academy.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy ح م ي entry defining الحَمِيُّ as hot/ardent and the approved project root meaning.",
+        featureSignal: ["partofspeech:adjective", "derivation:quality-adjective"],
+        baseDistinct: true,
+        lexicalKey: "حمي",
+      },
+    ],
     ["ويل"]: [
       {
         form: "وَيْلٌ",
