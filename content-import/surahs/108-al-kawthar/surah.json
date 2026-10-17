@@ -7,10 +7,10 @@
     "arabicName": "الكوثر",
     "transliteration": "Al-Kawthar",
     "englishLabel": "Abundance",
-    "description": "Canonical source layer; custom teaching is not yet authored."
+    "description": "Reviewed Word Tree teaching layer."
   },
-  "contentVersion": "tanzil-1.1",
-  "status": "source-only",
+  "contentVersion": "tanzil-1.1+teaching-108-v1-sarf-1.2-limited-audit",
+  "status": "custom-complete",
   "sourceReferences": [
     {
       "provider": "tanzil",
@@ -37,7 +37,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "indeed We",
+          "teachingId": "lesson:108-1-1",
+          "occurrenceRole": "Emphasises Allah's gift of abundant good.",
+          "breakdown": {
+            "id": "breakdown:word:108:1:1",
+            "mode": "atomic",
+            "sourceText": "إِنَّآ",
+            "parts": [
+              {
+                "id": "word:108:1:1:part:1",
+                "order": 1,
+                "sourceText": "إِنَّآ",
+                "displayText": "إِنَّآ",
+                "label": "indeed We",
+                "meaning": "one complete surface word meaning indeed We",
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:108:1:2",
@@ -50,7 +71,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "We gave you",
+          "teachingId": "lesson:108-1-2",
+          "occurrenceRole": "Contributes “We gave you” to the meaning of this āyah.",
+          "breakdown": {
+            "id": "breakdown:word:108:1:2",
+            "mode": "segmented",
+            "sourceText": "أَعْطَيْنَـٰكَ",
+            "parts": [
+              {
+                "id": "word:108:1:2:part:1",
+                "order": 1,
+                "sourceText": "أَعْطَيْنَـٰ",
+                "displayText": "أَعْطَيْنَـٰ",
+                "label": "We gave",
+                "meaning": "the perfect verb stem with first-person plural subject",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ع ط و"
+              },
+              {
+                "id": "word:108:1:2:part:2",
+                "order": 2,
+                "sourceText": "كَ",
+                "displayText": "كَ",
+                "label": "you",
+                "meaning": "attached second-person masculine object pronoun",
+                "kind": "object-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:108:1:3",
@@ -63,7 +116,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the abundance",
+          "teachingId": "lesson:108-1-3",
+          "occurrenceRole": "Contributes “the abundance” to the meaning of this āyah.",
+          "breakdown": {
+            "id": "breakdown:word:108:1:3",
+            "mode": "segmented",
+            "sourceText": "ٱلْكَوْثَرَ",
+            "parts": [
+              {
+                "id": "word:108:1:3:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْـ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:108:1:3:part:2",
+                "order": 2,
+                "sourceText": "كَوْثَرَ",
+                "displayText": "كَوْثَرَ",
+                "label": "abundance",
+                "meaning": "the noun for plentiful good",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ك ث ر"
+              }
+            ]
+          }
         }
       ]
     },
@@ -84,7 +169,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "so pray",
+          "teachingId": "lesson:108-2-1",
+          "occurrenceRole": "Contributes “so pray” to the meaning of this āyah.",
+          "breakdown": {
+            "id": "breakdown:word:108:2:1",
+            "mode": "segmented",
+            "sourceText": "فَصَلِّ",
+            "parts": [
+              {
+                "id": "word:108:2:1:part:1",
+                "order": 1,
+                "sourceText": "فَ",
+                "displayText": "فَـ",
+                "label": "so",
+                "meaning": "marks the response",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:108:2:1:part:2",
+                "order": 2,
+                "sourceText": "صَلِّ",
+                "displayText": "صَلِّ",
+                "label": "pray",
+                "meaning": "the command verb",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ص ل و"
+              }
+            ]
+          }
         },
         {
           "id": "word:108:2:2",
@@ -97,7 +214,50 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "for your Lord",
+          "teachingId": "lesson:108-2-2",
+          "occurrenceRole": "Directs worship and sacrifice to the Lord alone.",
+          "breakdown": {
+            "id": "breakdown:word:108:2:2",
+            "mode": "segmented",
+            "sourceText": "لِرَبِّكَ",
+            "parts": [
+              {
+                "id": "word:108:2:2:part:1",
+                "order": 1,
+                "sourceText": "لِ",
+                "displayText": "لِـ",
+                "label": "for",
+                "meaning": "a preposition marking dedication",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              },
+              {
+                "id": "word:108:2:2:part:2",
+                "order": 2,
+                "sourceText": "رَبِّ",
+                "displayText": "رَبِّ",
+                "label": "Lord",
+                "meaning": "the noun for Lord",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ر ب ب"
+              },
+              {
+                "id": "word:108:2:2:part:3",
+                "order": 3,
+                "sourceText": "كَ",
+                "displayText": "كَ",
+                "label": "your",
+                "meaning": "attached possessive pronoun",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:108:2:3",
@@ -110,7 +270,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "and sacrifice",
+          "teachingId": "lesson:108-2-3",
+          "occurrenceRole": "Contributes “and sacrifice” to the meaning of this āyah.",
+          "breakdown": {
+            "id": "breakdown:word:108:2:3",
+            "mode": "segmented",
+            "sourceText": "وَٱنْحَرْ",
+            "parts": [
+              {
+                "id": "word:108:2:3:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَـ",
+                "label": "and",
+                "meaning": "joins the second command",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:108:2:3:part:2",
+                "order": 2,
+                "sourceText": "ٱنْحَرْ",
+                "displayText": "ٱنْحَرْ",
+                "label": "sacrifice",
+                "meaning": "the command verb",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ن ح ر"
+              }
+            ]
+          }
         }
       ]
     },
@@ -131,7 +323,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "indeed",
+          "teachingId": "lesson:108-3-1",
+          "occurrenceRole": "Contributes “indeed” to the meaning of this āyah.",
+          "breakdown": {
+            "id": "breakdown:word:108:3:1",
+            "mode": "atomic",
+            "sourceText": "إِنَّ",
+            "parts": [
+              {
+                "id": "word:108:3:1:part:1",
+                "order": 1,
+                "sourceText": "إِنَّ",
+                "displayText": "إِنَّ",
+                "label": "indeed",
+                "meaning": "one complete surface word meaning indeed",
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (grammar word)"
+              }
+            ]
+          }
         },
         {
           "id": "word:108:3:2",
@@ -144,7 +357,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "your hater / enemy",
+          "teachingId": "lesson:108-3-2",
+          "occurrenceRole": "Contributes “your hater / enemy” to the meaning of this āyah.",
+          "breakdown": {
+            "id": "breakdown:word:108:3:2",
+            "mode": "segmented",
+            "sourceText": "شَانِئَكَ",
+            "parts": [
+              {
+                "id": "word:108:3:2:part:1",
+                "order": 1,
+                "sourceText": "شَانِئَ",
+                "displayText": "شَانِئَ",
+                "label": "hater",
+                "meaning": "the active-participle stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ش ن أ"
+              },
+              {
+                "id": "word:108:3:2:part:2",
+                "order": 2,
+                "sourceText": "كَ",
+                "displayText": "كَ",
+                "label": "your",
+                "meaning": "attached possessive pronoun",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:108:3:3",
@@ -157,7 +402,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "he",
+          "teachingId": "lesson:108-3-3",
+          "occurrenceRole": "Contributes “he” to the meaning of this āyah.",
+          "breakdown": {
+            "id": "breakdown:word:108:3:3",
+            "mode": "atomic",
+            "sourceText": "هُوَ",
+            "parts": [
+              {
+                "id": "word:108:3:3:part:1",
+                "order": 1,
+                "sourceText": "هُوَ",
+                "displayText": "هُوَ",
+                "label": "he",
+                "meaning": "one complete surface word meaning he",
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:108:3:4",
@@ -170,11 +436,761 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the one cut off",
+          "teachingId": "lesson:108-3-4",
+          "occurrenceRole": "Closes the sūrah with the fate of the one who opposes the Prophet ﷺ.",
+          "breakdown": {
+            "id": "breakdown:word:108:3:4",
+            "mode": "segmented",
+            "sourceText": "ٱلْأَبْتَرُ",
+            "parts": [
+              {
+                "id": "word:108:3:4:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْـ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:108:3:4:part:2",
+                "order": 2,
+                "sourceText": "أَبْتَرُ",
+                "displayText": "أَبْتَرُ",
+                "label": "cut off",
+                "meaning": "the adjective describing one severed from lasting good",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ب ت ر"
+              }
+            ]
+          }
         }
       ]
     }
   ],
-  "teachingEntries": {},
+  "teachingEntries": {
+    "lesson:108-1-1": {
+      "id": "lesson:108-1-1",
+      "meaning": "indeed We",
+      "type": "Emphasis particle plus pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (emphasis particle / pronoun) — emphasis and first-person plural reference.",
+      "construction": "إِنَّآ",
+      "components": [],
+      "grammar": "This occurrence is taught as a emphasis particle plus pronoun; its form and ending are read with the surrounding phrase.",
+      "sentenceRole": "Emphasises Allah's gift of abundant good.",
+      "recognitionClue": "Recognise the core meaning “indeed We” in this Qur’anic form.",
+      "forms": [
+        {
+          "form": "إِنَّآ",
+          "meaning": "indeed We",
+          "difference": "Current Qur'anic occurrence; case: accusative; person: first-person plural.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:108:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (108:1:1) was checked as evidence."
+        },
+        {
+          "form": "إِنَّا",
+          "meaning": "indeed We",
+          "difference": "first-person plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِنَّهُ",
+          "meaning": "indeed He",
+          "difference": "third-person masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِنَّهُمْ",
+          "meaning": "indeed they",
+          "difference": "third-person masculine plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "The word contributes “indeed We”; the surrounding phrase completes its role in the āyah.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "إِنَّآ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-2c35e824eef80644 reviewed word:108:1:1.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (108:1:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:58:41.548Z"
+      }
+    },
+    "lesson:108-1-2": {
+      "id": "lesson:108-1-2",
+      "meaning": "We gave you",
+      "type": "Perfect verb plus object pronoun",
+      "root": "ع ط و",
+      "rootPicture": "give · grant · bestow",
+      "construction": "أَعْطَيْنَـٰ + كَ",
+      "components": [
+        {
+          "text": "أَعْطَيْنَـٰ",
+          "displayText": "أَعْطَيْنَـٰ",
+          "label": "We gave",
+          "meaning": "the perfect verb stem with first-person plural subject",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ع ط و"
+        },
+        {
+          "text": "كَ",
+          "displayText": "كَ",
+          "label": "you",
+          "meaning": "attached second-person masculine object pronoun",
+          "kind": "object-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "This occurrence is taught as a perfect verb plus object pronoun; its form and ending are read with the surrounding phrase.",
+      "sentenceRole": "Contributes “We gave you” to the meaning of this āyah.",
+      "recognitionClue": "Recognise the core meaning “We gave you” in this Qur’anic form.",
+      "forms": [
+        {
+          "form": "أَعْطَيْنَـٰكَ",
+          "meaning": "We gave you",
+          "difference": "Current Qur'anic occurrence; pattern: Form 4; tense: perfect verb; person: first-person plural; person: second-person masculine singular; verb form: Form 4.",
+          "relationship": "Current Qur'anic occurrence of the ع ط و root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:108:1:2."
+        },
+        {
+          "form": "أَعْطَى",
+          "meaning": "he gave",
+          "difference": "past verb",
+          "relationship": "Existing project-reviewed relationship to the عطو family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يُعْطِي",
+          "meaning": "he gives",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the عطو family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "عَطِيَّة",
+          "meaning": "gift / grant",
+          "difference": "related noun",
+          "relationship": "Existing project-reviewed relationship to the عطو family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَأَعْطَىٰ",
+          "meaning": "And gave",
+          "difference": "Compared with أَعْطَيْنَـٰكَ, this form changes person: second-person masculine singular → third-person masculine singular.",
+          "relationship": "Related to the ع ط و root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:34:1.",
+          "provenance": "Codex-reviewed form for the ع ط و family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The word contributes “We gave you”; the surrounding phrase completes its role in the āyah.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:108:1:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (108:1:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:108-1-3": {
+      "id": "lesson:108-1-3",
+      "meaning": "the abundance",
+      "type": "Definite noun",
+      "root": "ك ث ر",
+      "rootPicture": "increase · abundance · more",
+      "construction": "ٱلْ + كَوْثَرَ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْـ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "كَوْثَرَ",
+          "displayText": "كَوْثَرَ",
+          "label": "abundance",
+          "meaning": "the noun for plentiful good",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ك ث ر"
+        }
+      ],
+      "grammar": "This occurrence is taught as a definite noun; its form and ending are read with the surrounding phrase.",
+      "sentenceRole": "Contributes “the abundance” to the meaning of this āyah.",
+      "recognitionClue": "Recognise the core meaning “the abundance” in this Qur’anic form.",
+      "forms": [
+        {
+          "form": "ٱلْكَوْثَرَ",
+          "meaning": "the abundance",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the ك ث ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:108:1:3."
+        },
+        {
+          "form": "يَكْثُرُ",
+          "meaning": "it becomes abundant",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the كثر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "كَثِير",
+          "meaning": "many / much",
+          "difference": "adjective",
+          "relationship": "Existing project-reviewed relationship to the كثر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَكْثَرَهُمْ",
+          "meaning": "most of them",
+          "difference": "Compared with ٱلْكَوْثَرَ, this form changes gender: masculine → not marked; number: not marked → masculine singular.",
+          "relationship": "Related to the ك ث ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:47:8.",
+          "provenance": "Codex-reviewed form for the ك ث ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "كَثِيرَةٍ",
+          "meaning": "abundant",
+          "difference": "Compared with ٱلْكَوْثَرَ, this form changes gender: masculine → not marked; case: accusative → genitive; state: not marked → indefinite.",
+          "relationship": "Related to the ك ث ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:56:32:2.",
+          "provenance": "Codex-reviewed form for the ك ث ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The word contributes “the abundance”; the surrounding phrase completes its role in the āyah.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:108:1:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (108:1:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:108-2-1": {
+      "id": "lesson:108-2-1",
+      "meaning": "so pray",
+      "type": "Connector plus command verb",
+      "root": "ص ل و",
+      "rootPicture": "pray · bless · invoke blessing",
+      "construction": "فَ + صَلِّ",
+      "components": [
+        {
+          "text": "فَ",
+          "displayText": "فَـ",
+          "label": "so",
+          "meaning": "marks the response",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "صَلِّ",
+          "displayText": "صَلِّ",
+          "label": "pray",
+          "meaning": "the command verb",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ص ل و"
+        }
+      ],
+      "grammar": "This occurrence is taught as a connector plus command verb; its form and ending are read with the surrounding phrase.",
+      "sentenceRole": "Contributes “so pray” to the meaning of this āyah.",
+      "recognitionClue": "Recognise the core meaning “so pray” in this Qur’anic form.",
+      "forms": [
+        {
+          "form": "فَصَلِّ",
+          "meaning": "so pray",
+          "difference": "Current Qur'anic occurrence; pattern: Form 2; mood: imperative; person: second-person masculine singular; verb form: Form 2.",
+          "relationship": "Current Qur'anic occurrence of the ص ل و root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:108:2:1."
+        },
+        {
+          "form": "صَلَّى",
+          "meaning": "he prayed",
+          "difference": "past verb",
+          "relationship": "Existing project-reviewed relationship to the صلو family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يُصَلِّي",
+          "meaning": "he prays",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the صلو family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "صَلَاة",
+          "meaning": "prayer",
+          "difference": "verbal noun",
+          "relationship": "Existing project-reviewed relationship to the صلو family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلصَّلَوٰةَ",
+          "meaning": "the prayer",
+          "difference": "Compared with فَصَلِّ, this form changes mood: imperative → not marked; person: second-person masculine singular → not marked; verbform: Form 2 → not marked.",
+          "relationship": "Related to the ص ل و root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:58:13:15.",
+          "provenance": "Codex-reviewed form for the ص ل و family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The word contributes “so pray”; the surrounding phrase completes its role in the āyah.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:108:2:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (108:2:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:108-2-2": {
+      "id": "lesson:108-2-2",
+      "meaning": "for your Lord",
+      "type": "Preposition plus noun plus pronoun",
+      "root": "ر ب ب",
+      "rootPicture": "raise · nurture · sustain · govern",
+      "construction": "لِ + رَبِّ + كَ",
+      "components": [
+        {
+          "text": "لِ",
+          "displayText": "لِـ",
+          "label": "for",
+          "meaning": "a preposition marking dedication",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        },
+        {
+          "text": "رَبِّ",
+          "displayText": "رَبِّ",
+          "label": "Lord",
+          "meaning": "the noun for Lord",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ر ب ب"
+        },
+        {
+          "text": "كَ",
+          "displayText": "كَ",
+          "label": "your",
+          "meaning": "attached possessive pronoun",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "This occurrence is taught as a preposition plus noun plus pronoun; its form and ending are read with the surrounding phrase.",
+      "sentenceRole": "Directs worship and sacrifice to the Lord alone.",
+      "recognitionClue": "Recognise the core meaning “for your Lord” in this Qur’anic form.",
+      "forms": [
+        {
+          "form": "لِرَبِّكَ",
+          "meaning": "for your Lord",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive; person: second-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of the ربب lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:108:2:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (108:2:2) was checked as evidence."
+        },
+        {
+          "form": "رَبِّ",
+          "meaning": "Lord",
+          "difference": "Compared with لِرَبِّكَ, this form changes person: second-person masculine singular → not marked.",
+          "relationship": "Current Qur'anic occurrence of the ر ب ب root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:1:2:3."
+        },
+        {
+          "form": "رَبِّهِمْ",
+          "meaning": "(of) their Lord",
+          "difference": "Compared with لِرَبِّكَ, this form changes person: second-person masculine singular → not marked.",
+          "relationship": "Current Qur'anic occurrence of the ر ب ب root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:51:44:4."
+        },
+        {
+          "form": "رَبُّهُمْ",
+          "meaning": "their Lord",
+          "difference": "Compared with لِرَبِّكَ, this form changes case: genitive → nominative; person: second-person masculine singular → not marked.",
+          "relationship": "Current Qur'anic occurrence of the ر ب ب root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:52:18:4."
+        },
+        {
+          "form": "رَبِّهِ",
+          "meaning": "(of) his Lord",
+          "difference": "Compared with لِرَبِّكَ, this form changes person: second-person masculine singular → third-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of the ر ب ب root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:53:18:5."
+        }
+      ],
+      "takeaway": "The word contributes “for your Lord”; the surrounding phrase completes its role in the āyah.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-89de645d51b8f108 reviewed word:108:2:2.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the ربب root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T15:20:49.124Z"
+      }
+    },
+    "lesson:108-2-3": {
+      "id": "lesson:108-2-3",
+      "meaning": "and sacrifice",
+      "type": "Connector plus command verb",
+      "root": "ن ح ر",
+      "rootPicture": "sacrifice · slaughter · strike at the throat",
+      "construction": "وَ + ٱنْحَرْ",
+      "components": [
+        {
+          "text": "وَ",
+          "displayText": "وَـ",
+          "label": "and",
+          "meaning": "joins the second command",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "ٱنْحَرْ",
+          "displayText": "ٱنْحَرْ",
+          "label": "sacrifice",
+          "meaning": "the command verb",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ن ح ر"
+        }
+      ],
+      "grammar": "This occurrence is taught as a connector plus command verb; its form and ending are read with the surrounding phrase.",
+      "sentenceRole": "Contributes “and sacrifice” to the meaning of this āyah.",
+      "recognitionClue": "Recognise the core meaning “and sacrifice” in this Qur’anic form.",
+      "forms": [
+        {
+          "form": "وَٱنْحَرْ",
+          "meaning": "and sacrifice",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; mood: imperative; person: second-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the نحر lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:108:2:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (108:2:3) was checked as evidence."
+        },
+        {
+          "form": "نَحَرَ",
+          "meaning": "he sacrificed or slaughtered",
+          "difference": "Form I perfect; it states a completed act of sacrificing, slaughtering or striking at the throat, while the current occurrence is an imperative command.",
+          "relationship": "Form I perfect of the ن ح ر root; it is the completed-action counterpart of the current imperative ٱنْحَرْ.",
+          "provenance": "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for نَحَرَ and standard Arabic Form I morphology."
+        },
+        {
+          "form": "يَنْحَرُ",
+          "meaning": "he sacrifices or slaughters",
+          "difference": "Form I imperfect, third-person masculine singular; it presents sacrificing or slaughtering as ongoing or habitual.",
+          "relationship": "Form I imperfect of the ن ح ر root; it is the ongoing counterpart of نَحَرَ and the indicative counterpart of the command.",
+          "provenance": "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for نَحَرَ and standard Arabic Form I imperfect morphology."
+        },
+        {
+          "form": "نَحْرٌ",
+          "meaning": "sacrifice or slaughtering",
+          "difference": "Verbal noun; it names the act of sacrificing or slaughtering rather than expressing it as a finite verb.",
+          "relationship": "A genuine verbal noun of the ن ح ر root, naming the action expressed by نَحَرَ and ٱنْحَرْ.",
+          "provenance": "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for نَحَرَ and standard Arabic Form I verbal-noun morphology."
+        },
+        {
+          "form": "نَحَّرَ",
+          "meaning": "he slaughtered many animals",
+          "difference": "Form II perfect; the doubled middle radical marks an intensified or repeated slaughtering action.",
+          "relationship": "A genuine Form II verb of the ن ح ر root; the Arabic Academy lexicon defines نَحَّرَ الإبلَ as slaughtering many camels or similar animals.",
+          "provenance": "Codex-authored after review of the Arabic Academy lexicon entry for نَحَّرَ and standard Arabic Form II morphology."
+        }
+      ],
+      "takeaway": "The word contributes “and sacrifice”; the surrounding phrase completes its role in the āyah.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-2c35e824eef80644 reviewed word:108:2:3.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the نحر root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:58:41.548Z"
+      }
+    },
+    "lesson:108-3-1": {
+      "id": "lesson:108-3-1",
+      "meaning": "indeed",
+      "type": "Emphasis particle",
+      "root": "",
+      "rootPicture": "No lexical root (emphasis particle) — emphasis.",
+      "construction": "إِنَّ",
+      "components": [],
+      "grammar": "This occurrence is taught as a emphasis particle; its form and ending are read with the surrounding phrase.",
+      "sentenceRole": "Contributes “indeed” to the meaning of this āyah.",
+      "recognitionClue": "Recognise the core meaning “indeed” in this Qur’anic form.",
+      "forms": [
+        {
+          "form": "إِنَّ",
+          "meaning": "indeed",
+          "difference": "Current Qur'anic occurrence; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:108:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (108:3:1) was checked as evidence."
+        },
+        {
+          "form": "أَنَّ",
+          "meaning": "that / indeed",
+          "difference": "subordinating form",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِنَّمَا",
+          "meaning": "only / indeed",
+          "difference": "restrictive emphasis",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "The word contributes “indeed”; the surrounding phrase completes its role in the āyah.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "إِنَّ is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-2c35e824eef80644 reviewed word:108:3:1.",
+          "The item was checked as article; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (108:3:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:58:41.548Z"
+      }
+    },
+    "lesson:108-3-2": {
+      "id": "lesson:108-3-2",
+      "meaning": "your hater / enemy",
+      "type": "Active participle plus pronoun",
+      "root": "ش ن أ",
+      "rootPicture": "hate · detest · feel hostility",
+      "construction": "شَانِئَ + كَ",
+      "components": [
+        {
+          "text": "شَانِئَ",
+          "displayText": "شَانِئَ",
+          "label": "hater",
+          "meaning": "the active-participle stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ش ن أ"
+        },
+        {
+          "text": "كَ",
+          "displayText": "كَ",
+          "label": "your",
+          "meaning": "attached possessive pronoun",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "This occurrence is taught as a active participle plus pronoun; its form and ending are read with the surrounding phrase.",
+      "sentenceRole": "Contributes “your hater / enemy” to the meaning of this āyah.",
+      "recognitionClue": "Recognise the core meaning “your hater / enemy” in this Qur’anic form.",
+      "forms": [
+        {
+          "form": "شَانِئَكَ",
+          "meaning": "your hater / enemy",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; gender: masculine; case: accusative; person: second-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the شنأ lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:108:3:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (108:3:2) was checked as evidence."
+        },
+        {
+          "form": "شَنَأَ",
+          "meaning": "he hated or detested",
+          "difference": "Form I perfect; it states a completed act or settled attitude of hating, while the current occurrence is the active participle naming the hater.",
+          "relationship": "Form I perfect of the ش ن أ root; it is the finite verb underlying شَانِئٌ and the current شَانِئَكَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning, the Quranic Arabic Corpus root entry for ش ن أ and reliable Arabic lexicon evidence for شَنَأَ."
+        },
+        {
+          "form": "يَشْنَأُ",
+          "meaning": "he hates or detests",
+          "difference": "Form I imperfect, third-person masculine singular; it presents hatred as ongoing or habitual rather than naming the hater as a noun.",
+          "relationship": "Form I imperfect of the ش ن أ root; it is the ongoing counterpart of شَنَأَ.",
+          "provenance": "Codex-authored after review of reliable Arabic conjugation and lexicon evidence for شَنَأَ / يَشْنَأُ, together with the Quranic Arabic Corpus root entry for ش ن أ."
+        },
+        {
+          "form": "شَنَآنٌ",
+          "meaning": "hatred or hostility",
+          "difference": "Verbal noun; it names the hostility itself rather than the person who hates, and it is the Qur'anic form seen in 5:2 and 5:8.",
+          "relationship": "A genuine verbal noun of the ش ن أ root, attested in the Qur'an as شَنَآنُ قَوْمٍ and semantically connected to شَانِئَكَ.",
+          "provenance": "Codex-authored after review of canonical Qur'anic occurrences 5:2 and 5:8, the Quranic Arabic Corpus root entry for ش ن أ and reliable Arabic lexicon evidence."
+        },
+        {
+          "form": "مَشْنُوءٌ",
+          "meaning": "hated or detested",
+          "difference": "Passive participle; it describes someone or something that is hated, contrasting the object of hatred with the active hater in شَانِئَكَ.",
+          "relationship": "A genuine passive-participle form of the ش ن أ root, recorded in Arabic lexicon evidence as مَشْنُوءٌ.",
+          "provenance": "Codex-authored after review of Lane's Lexicon and classical Arabic lexicon evidence for مَشْنُوءٌ, alongside the approved project root meaning."
+        }
+      ],
+      "takeaway": "The word contributes “your hater / enemy”; the surrounding phrase completes its role in the āyah.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-2c35e824eef80644 reviewed word:108:3:2.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the شنأ root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:58:41.548Z"
+      }
+    },
+    "lesson:108-3-3": {
+      "id": "lesson:108-3-3",
+      "meaning": "he",
+      "type": "Independent pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (independent pronoun) — third-person masculine singular.",
+      "construction": "هُوَ",
+      "components": [],
+      "grammar": "This occurrence is taught as a independent pronoun; its form and ending are read with the surrounding phrase.",
+      "sentenceRole": "Contributes “he” to the meaning of this āyah.",
+      "recognitionClue": "Recognise the core meaning “he” in this Qur’anic form.",
+      "forms": [
+        {
+          "form": "هُوَ",
+          "meaning": "he",
+          "difference": "Current Qur'anic occurrence; person: third-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:108:3:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (108:3:3) was checked as evidence."
+        },
+        {
+          "form": "أَنَا",
+          "meaning": "I",
+          "difference": "first-person singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَنْتَ",
+          "meaning": "you",
+          "difference": "second-person masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "هُمْ",
+          "meaning": "they",
+          "difference": "third-person masculine plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "The word contributes “he”; the surrounding phrase completes its role in the āyah.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "هُوَ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-2c35e824eef80644 reviewed word:108:3:3.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (108:3:3) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:58:41.548Z"
+      }
+    },
+    "lesson:108-3-4": {
+      "id": "lesson:108-3-4",
+      "meaning": "the one cut off",
+      "type": "Definite adjective",
+      "root": "ب ت ر",
+      "rootPicture": "cut off · sever · leave without continuation",
+      "construction": "ٱلْ + أَبْتَرُ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْـ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "أَبْتَرُ",
+          "displayText": "أَبْتَرُ",
+          "label": "cut off",
+          "meaning": "the adjective describing one severed from lasting good",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ب ت ر"
+        }
+      ],
+      "grammar": "This occurrence is taught as a definite adjective; its form and ending are read with the surrounding phrase.",
+      "sentenceRole": "Closes the sūrah with the fate of the one who opposes the Prophet ﷺ.",
+      "recognitionClue": "Recognise the core meaning “the one cut off” in this Qur’anic form.",
+      "forms": [
+        {
+          "form": "ٱلْأَبْتَرُ",
+          "meaning": "the one cut off",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the بتر lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:108:3:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (108:3:4) was checked as evidence."
+        },
+        {
+          "form": "بَتَرَ",
+          "meaning": "he cut off or severed",
+          "difference": "Form I perfect; it states the completed act of cutting off, while the current occurrence is the resulting adjective describing one cut off.",
+          "relationship": "Form I perfect of the ب ت ر root; it is the action underlying أَبْتَرُ.",
+          "provenance": "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for بَتَرَ and standard Arabic Form I morphology."
+        },
+        {
+          "form": "يَبْتُرُ",
+          "meaning": "he cuts off or severs",
+          "difference": "Form I imperfect, third-person masculine singular; it presents severing as ongoing or habitual.",
+          "relationship": "Form I imperfect of the ب ت ر root; it is the ongoing counterpart of بَتَرَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for بَتَرَ and standard Arabic Form I imperfect morphology."
+        },
+        {
+          "form": "بَتْرٌ",
+          "meaning": "cutting off or severance",
+          "difference": "Verbal noun; it names the act or result of severing rather than describing the person or thing left cut off.",
+          "relationship": "A genuine verbal noun of the ب ت ر root, naming the severing action behind أَبْتَرُ.",
+          "provenance": "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for بَتَرَ and standard Arabic Form I verbal-noun morphology."
+        },
+        {
+          "form": "انْبَتَرَ",
+          "meaning": "it became severed or was cut off",
+          "difference": "Form VII perfect; the inchoative/intransitive pattern presents something as becoming severed or cut off rather than an agent cutting it.",
+          "relationship": "A genuine Form VII derived verb of the ب ت ر root, listed among the established related forms of بَتَرَ.",
+          "provenance": "Codex-authored after review of the Arabic Academy lexicon entry for بَتَرَ, which lists انْبَتَرَ, and standard Arabic Form VII morphology."
+        }
+      ],
+      "takeaway": "The word contributes “the one cut off”; the surrounding phrase completes its role in the āyah.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-2c35e824eef80644 reviewed word:108:3:4.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the بتر root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:58:41.548Z"
+      }
+    }
+  },
   "volumeReferences": []
 }

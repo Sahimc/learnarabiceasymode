@@ -782,6 +782,168 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "فوج",
       },
     ],
+    ["نحر"]: [
+      {
+        form: "نَحَرَ",
+        meaning: "he sacrificed or slaughtered",
+        difference:
+          "Form I perfect; it states a completed act of sacrificing, slaughtering or striking at the throat, while the current occurrence is an imperative command.",
+        relationship:
+          "Form I perfect of the ن ح ر root; it is the completed-action counterpart of the current imperative ٱنْحَرْ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for نَحَرَ and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "نحر",
+      },
+      {
+        form: "يَنْحَرُ",
+        meaning: "he sacrifices or slaughters",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents sacrificing or slaughtering as ongoing or habitual.",
+        relationship:
+          "Form I imperfect of the ن ح ر root; it is the ongoing counterpart of نَحَرَ and the indicative counterpart of the command.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for نَحَرَ and standard Arabic Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "ينحر",
+      },
+      {
+        form: "نَحْرٌ",
+        meaning: "sacrifice or slaughtering",
+        difference:
+          "Verbal noun; it names the act of sacrificing or slaughtering rather than expressing it as a finite verb.",
+        relationship:
+          "A genuine verbal noun of the ن ح ر root, naming the action expressed by نَحَرَ and ٱنْحَرْ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for نَحَرَ and standard Arabic Form I verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "نحر",
+      },
+      {
+        form: "نَحَّرَ",
+        meaning: "he slaughtered many animals",
+        difference:
+          "Form II perfect; the doubled middle radical marks an intensified or repeated slaughtering action.",
+        relationship:
+          "A genuine Form II verb of the ن ح ر root; the Arabic Academy lexicon defines نَحَّرَ الإبلَ as slaughtering many camels or similar animals.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy lexicon entry for نَحَّرَ and standard Arabic Form II morphology.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "partofspeech:verb", "voice:intensive"],
+        baseDistinct: true,
+        lexicalKey: "نحر",
+      },
+    ],
+    ["شنأ"]: [
+      {
+        form: "شَنَأَ",
+        meaning: "he hated or detested",
+        difference:
+          "Form I perfect; it states a completed act or settled attitude of hating, while the current occurrence is the active participle naming the hater.",
+        relationship:
+          "Form I perfect of the ش ن أ root; it is the finite verb underlying شَانِئٌ and the current شَانِئَكَ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, the Quranic Arabic Corpus root entry for ش ن أ and reliable Arabic lexicon evidence for شَنَأَ.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "شنأ",
+      },
+      {
+        form: "يَشْنَأُ",
+        meaning: "he hates or detests",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents hatred as ongoing or habitual rather than naming the hater as a noun.",
+        relationship:
+          "Form I imperfect of the ش ن أ root; it is the ongoing counterpart of شَنَأَ.",
+        provenance:
+          "Codex-authored after review of reliable Arabic conjugation and lexicon evidence for شَنَأَ / يَشْنَأُ, together with the Quranic Arabic Corpus root entry for ش ن أ.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يشنأ",
+      },
+      {
+        form: "شَنَآنٌ",
+        meaning: "hatred or hostility",
+        difference:
+          "Verbal noun; it names the hostility itself rather than the person who hates, and it is the Qur'anic form seen in 5:2 and 5:8.",
+        relationship:
+          "A genuine verbal noun of the ش ن أ root, attested in the Qur'an as شَنَآنُ قَوْمٍ and semantically connected to شَانِئَكَ.",
+        provenance:
+          "Codex-authored after review of canonical Qur'anic occurrences 5:2 and 5:8, the Quranic Arabic Corpus root entry for ش ن أ and reliable Arabic lexicon evidence.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun", "source:canonical-quranic"],
+        baseDistinct: true,
+        lexicalKey: "شنآن",
+      },
+      {
+        form: "مَشْنُوءٌ",
+        meaning: "hated or detested",
+        difference:
+          "Passive participle; it describes someone or something that is hated, contrasting the object of hatred with the active hater in شَانِئَكَ.",
+        relationship:
+          "A genuine passive-participle form of the ش ن أ root, recorded in Arabic lexicon evidence as مَشْنُوءٌ.",
+        provenance:
+          "Codex-authored after review of Lane's Lexicon and classical Arabic lexicon evidence for مَشْنُوءٌ, alongside the approved project root meaning.",
+        featureSignal: ["partofspeech:passive-participle", "voice:passive", "role:object-of-action"],
+        baseDistinct: true,
+        lexicalKey: "مشنوء",
+      },
+    ],
+    ["بتر"]: [
+      {
+        form: "بَتَرَ",
+        meaning: "he cut off or severed",
+        difference:
+          "Form I perfect; it states the completed act of cutting off, while the current occurrence is the resulting adjective describing one cut off.",
+        relationship:
+          "Form I perfect of the ب ت ر root; it is the action underlying أَبْتَرُ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for بَتَرَ and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "بتر",
+      },
+      {
+        form: "يَبْتُرُ",
+        meaning: "he cuts off or severs",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents severing as ongoing or habitual.",
+        relationship:
+          "Form I imperfect of the ب ت ر root; it is the ongoing counterpart of بَتَرَ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for بَتَرَ and standard Arabic Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يبتر",
+      },
+      {
+        form: "بَتْرٌ",
+        meaning: "cutting off or severance",
+        difference:
+          "Verbal noun; it names the act or result of severing rather than describing the person or thing left cut off.",
+        relationship:
+          "A genuine verbal noun of the ب ت ر root, naming the severing action behind أَبْتَرُ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, the Arabic Academy lexicon entry for بَتَرَ and standard Arabic Form I verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "بتر",
+      },
+      {
+        form: "انْبَتَرَ",
+        meaning: "it became severed or was cut off",
+        difference:
+          "Form VII perfect; the inchoative/intransitive pattern presents something as becoming severed or cut off rather than an agent cutting it.",
+        relationship:
+          "A genuine Form VII derived verb of the ب ت ر root, listed among the established related forms of بَتَرَ.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy lexicon entry for بَتَرَ, which lists انْبَتَرَ, and standard Arabic Form VII morphology.",
+        featureSignal: ["pattern:form-7", "tense:perfect", "partofspeech:verb", "voice:intransitive"],
+        baseDistinct: true,
+        lexicalKey: "انبتَر",
+      },
+    ],
     ["كسب"]: [
       {
         form: "يَكْسِبُ",
