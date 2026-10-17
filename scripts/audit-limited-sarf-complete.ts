@@ -131,6 +131,13 @@ const TRUSTED_AUTHORED_LESSONS = new Set([
   "lesson:104:yunbadhanna",
 ]);
 
+// Rows in this map were found to be structurally plausible but linguistically
+// assigned to the wrong root. They must never be reused as evidence for the
+// named family until an explicit reviewed correction replaces them.
+const KNOWN_WRONG_ROOT_FORMS: Record<string, Set<string>> = {
+  ويل: new Set(["وائل"]),
+};
+
 const ARABIC_PATTERN = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/u;
 const DIACRITIC_PATTERN = /[\u064B-\u065F\u0670\u06D6-\u06ED]/gu;
 const DIACRITIC_TEST_PATTERN = /[\u064B-\u065F\u0670\u06D6-\u06ED]/u;
@@ -1551,6 +1558,343 @@ function curatedCandidates(root: string): Candidate[] {
         baseDistinct: true,
         lexicalKey: "ويلك",
       },
+      {
+        form: "وَيَّلَ",
+        meaning: "he invoked woe upon or caused woe",
+        difference:
+          "Form II perfect; the doubled middle radical presents causing or invoking woe rather than naming the woe itself.",
+        relationship:
+          "A genuine Form II derived verb of the و ي ل family, listed with وَيْلٌ and وَيْلَةٌ in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy entry for ويل, which lists وَيَّلَ and related forms, and the approved project root meaning.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "voice:causative", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "ويل",
+      },
+    ],
+    ["همز"]: [
+      {
+        form: "هَمَزَ",
+        meaning: "he taunted or insulted",
+        difference:
+          "Form I perfect; it presents the completed act of taunting or insulting, contrasting with the current noun naming the person who does it.",
+        relationship:
+          "Form I perfect of the ه م ز root, the verbal base related to هُمَزَةٌ and هَمَّازٌ.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ه م ز entry and Arabic Academy evidence listing هَمَزَ and its related forms.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "همز",
+      },
+      {
+        form: "يَهْمِزُ",
+        meaning: "he taunts or insults",
+        difference:
+          "Form I imperfect, third-person masculine singular; it shows the taunting action as ongoing or habitual.",
+        relationship:
+          "Form I imperfect of the ه م ز root; the ongoing counterpart of هَمَزَ.",
+        provenance:
+          "Codex-authored after review of the ه م ز root evidence and standard Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "يهمز",
+      },
+      {
+        form: "هَامِزٌ",
+        meaning: "one who taunts",
+        difference:
+          "Active participle; it describes the agent performing the taunting rather than naming the action as a finite verb.",
+        relationship:
+          "A genuine active participle of the ه م ز root, listed in Arabic lexical evidence alongside هُمَزَةٌ.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing الهامز and the approved project root meaning.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "هامز",
+      },
+      {
+        form: "هَمَّازٌ",
+        meaning: "a habitual defamer",
+        difference:
+          "Intensive adjective/noun; the doubled middle radical marks a habitual or emphatic defamer, contrasting with the ordinary agent form.",
+        relationship:
+          "A genuine intensive form of the ه م ز root, attested in Qur'an 68:11 as هَمَّازٍ.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 68:11:1 and Arabic Academy evidence for الهَمّاز.",
+        featureSignal: ["pattern:form-2", "partofspeech:adjective", "derivation:intensive"],
+        baseDistinct: true,
+        lexicalKey: "هماز",
+      },
+    ],
+    ["لمز"]: [
+      {
+        form: "لَمَزَ",
+        meaning: "he found fault with or criticized",
+        difference:
+          "Form I perfect; it presents the completed act of criticizing or finding fault, contrasting with the current noun naming the fault-finder.",
+        relationship:
+          "Form I perfect of the ل م ز root, the verbal base related to لُمَزَةٌ and لَامِزٌ.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ل م ز entry and Arabic Academy evidence for لَمَزَ.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "لمز",
+      },
+      {
+        form: "يَلْمِزُ",
+        meaning: "he finds fault with or criticizes",
+        difference:
+          "Form I imperfect, third-person masculine singular; it presents criticism as ongoing or habitual.",
+        relationship:
+          "Form I imperfect of the ل م ز root, attested repeatedly in the Qur'an as يَلْمِزُ and its inflected forms.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 9:58, 9:79 and 49:11 and aligned morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "يلمز",
+      },
+      {
+        form: "لَامِزٌ",
+        meaning: "one who criticizes or finds fault",
+        difference:
+          "Active participle; it describes the agent who performs the criticism rather than expressing it as a finite verb.",
+        relationship:
+          "A genuine active participle of the ل م ز root, related to the Qur'anic noun لُّمَزَةٍ.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for اللامز and the approved project root meaning.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "لامز",
+      },
+      {
+        form: "لَمَّازٌ",
+        meaning: "a habitual fault-finder",
+        difference:
+          "Intensive adjective/noun; the doubled middle radical marks a habitual or emphatic fault-finder, contrasting with the ordinary agent form.",
+        relationship:
+          "A genuine intensive form of the ل م ز root, listed in Arabic Academy evidence as اللَّمّاز.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for اللَّمّاز and the approved project root meaning.",
+        featureSignal: ["pattern:form-2", "partofspeech:adjective", "derivation:intensive"],
+        baseDistinct: true,
+        lexicalKey: "لماز",
+      },
+    ],
+    ["حطم"]: [
+      {
+        form: "حَطَمَ",
+        meaning: "he crushed or broke",
+        difference:
+          "Form I perfect; it presents the completed act of crushing, contrasting with the current noun naming the Crusher.",
+        relationship:
+          "Form I perfect of the ح ط م root, the verbal base related to حُطَمَةٌ and حُطَامٌ.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ح ط م entry and Arabic Academy evidence for حَطَمَ.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "حطم",
+      },
+      {
+        form: "يَحْطِمُ",
+        meaning: "he crushes or breaks",
+        difference:
+          "Form I imperfect; it presents the crushing action as ongoing or expected.",
+        relationship:
+          "Form I imperfect of the ح ط م root, attested in Qur'an 27:18 as يَحْطِمَنَّكُمْ.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 27:18:14 and aligned Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "يحطم",
+      },
+      {
+        form: "حُطَامٌ",
+        meaning: "broken debris",
+        difference:
+          "Result noun; it names what has been crushed or broken rather than the force that crushes it.",
+        relationship:
+          "A genuine Qur'anic noun of the ح ط م root, attested in 39:21, 56:65 and 57:20.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus canonical occurrences 39:21, 56:65 and 57:20.",
+        featureSignal: ["partofspeech:noun", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "حطام",
+      },
+      {
+        form: "حَطَّمَ",
+        meaning: "he shattered or crushed intensely",
+        difference:
+          "Form II perfect; the doubled middle radical marks an intensified or causative crushing action beyond the basic Form I verb.",
+        relationship:
+          "A genuine Form II derived verb of the ح ط م root, listed in Arabic Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for حَطَّمَ and the approved project root meaning.",
+        featureSignal: ["pattern:form-2", "tense:perfect", "voice:causative", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "حطم",
+      },
+    ],
+    ["طلع"]: [
+      {
+        form: "طَلَعَ",
+        meaning: "he or it rose or appeared",
+        difference:
+          "Form I perfect; it presents the completed rising or appearing action, contrasting with the current derived verb.",
+        relationship:
+          "Form I perfect of the ط ل ع root, the basic verb underlying طلوع and مطلع.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ط ل ع entry and its Form I occurrences.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "طلع",
+      },
+      {
+        form: "يَطْلُعُ",
+        meaning: "he or it rises or appears",
+        difference:
+          "Form I imperfect; it presents rising or appearing as ongoing or expected.",
+        relationship:
+          "Form I imperfect of the ط ل ع root, contrasting the basic imperfect with the current derived occurrence.",
+        provenance:
+          "Codex-authored after review of the Quranic Arabic Corpus ط ل ع entry and standard Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "يطلع",
+      },
+      {
+        form: "طُلُوعٌ",
+        meaning: "rising or appearance",
+        difference:
+          "Verbal noun; it names the process of rising or appearing rather than expressing it as a finite verb.",
+        relationship:
+          "A genuine verbal noun of the ط ل ع root, attested in the Qur'an and related to the current verb.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences of طُلُوعٌ and the approved project root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "طلوع",
+      },
+      {
+        form: "مَطْلَعٌ",
+        meaning: "place or time of rising",
+        difference:
+          "Noun of place or time; it identifies where or when rising occurs rather than naming the action itself.",
+        relationship:
+          "A genuine place/time noun of the ط ل ع root, attested in the Qur'an as مَطْلَع and مَطْلِع.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences of مَطْلَع and مَطْلِع and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "derivation:place-or-time"],
+        baseDistinct: true,
+        lexicalKey: "مطلع",
+      },
+    ],
+    ["وصد"]: [
+      {
+        form: "أَوْصَدَ",
+        meaning: "he closed or shut firmly",
+        difference:
+          "Form IV perfect; the derived pattern expresses the completed act of closing or sealing, underlying the current passive participle.",
+        relationship:
+          "Form IV of the و ص د root, the verb from which مُؤْصَدَةٌ is derived.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus root و ص د, Arabic lexical evidence for أَوْصَدَ and the project root meaning.",
+        featureSignal: ["pattern:form-4", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "اوصَد",
+      },
+      {
+        form: "يُوصِدُ",
+        meaning: "he closes or shuts firmly",
+        difference:
+          "Form IV imperfect; it presents the closing or sealing action as ongoing.",
+        relationship:
+          "Form IV imperfect of أَوْصَدَ in the و ص د root family.",
+        provenance:
+          "Codex-authored after review of Arabic lexical evidence for أَوْصَدَ يُوصِدُ and the approved project root meaning.",
+        featureSignal: ["pattern:form-4", "tense:imperfect", "person:third-person", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "يوصد",
+      },
+      {
+        form: "إِيصَادٌ",
+        meaning: "closing or sealing",
+        difference:
+          "Form IV verbal noun; it names the act of closing or sealing rather than describing the closed result.",
+        relationship:
+          "The verbal noun of أَوْصَدَ within the و ص د root family.",
+        provenance:
+          "Codex-authored after review of Arabic lexical evidence listing أَوْصَدَ يُوصِدُ إِيصَادًا and the approved project root meaning.",
+        featureSignal: ["pattern:form-4", "partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "ايصاد",
+      },
+      {
+        form: "وَصِيدٌ",
+        meaning: "an entrance or enclosure",
+        difference:
+          "Noun; it names an entrance or stone enclosure, contrasting the closed-state participle in the current āyah.",
+        relationship:
+          "A genuine Qur'anic noun of the و ص د root, attested in 18:18 as بِالْوَصِيدِ.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 18:18:13 and the approved project root meaning.",
+        featureSignal: ["partofspeech:noun", "derivation:related-noun"],
+        baseDistinct: true,
+        lexicalKey: "وصيد",
+      },
+    ],
+    ["عمد"]: [
+      {
+        form: "عَمُودٌ",
+        meaning: "a column or pillar",
+        difference:
+          "Singular noun; it contrasts with the current broken plural عَمَدٍ naming multiple columns.",
+        relationship:
+          "The singular noun corresponding to the current plural within the ع م د family, attested in Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences of عَمَد and Arabic Academy evidence for عَمُودٌ.",
+        featureSignal: ["partofspeech:noun", "number:singular", "derivation:base-form"],
+        baseDistinct: true,
+        lexicalKey: "عمود",
+      },
+      {
+        form: "أَعْمِدَةٌ",
+        meaning: "columns or pillars",
+        difference:
+          "Broken plural pattern; it gives another established plural of عَمُودٌ and contrasts with the current plural عَمَدٍ.",
+        relationship:
+          "An established broken plural of عَمُودٌ in the ع م د family, listed by the Arabic Academy.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing أَعْمِدَةٌ، عُمُدٌ and عَمَدٌ as plurals of عَمُودٌ.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "اعمدة",
+      },
+      {
+        form: "عِمَادٌ",
+        meaning: "support or a pillar",
+        difference:
+          "Related noun; it focuses on the supporting function of a pillar rather than simply counting physical columns.",
+        relationship:
+          "A genuine Qur'anic noun of the ع م د family, attested in ذَاتِ الْعِمَادِ.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 89:7:3 and Arabic Academy root evidence.",
+        featureSignal: ["partofspeech:noun", "derivation:related-noun"],
+        baseDistinct: true,
+        lexicalKey: "عماد",
+      },
+      {
+        form: "مُتَعَمِّدٌ",
+        meaning: "deliberate or intentional",
+        difference:
+          "Form V active participle; the derived pattern describes someone acting deliberately, showing the intention sense of the same root.",
+        relationship:
+          "A genuine Form V active participle of the ع م د root, attested in Qur'an 4:93 and 5:95.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences 4:93:4 and 5:95:12 and aligned morphology.",
+        featureSignal: ["pattern:form-5", "partofspeech:active-participle", "derivation:agent", "meaning:intention"],
+        baseDistinct: true,
+        lexicalKey: "متعمد",
+      },
     ],
     ["سهو"]: [
       {
@@ -1952,10 +2296,12 @@ function normalized(value: string) {
 }
 
 function inflectionalKey(value: string) {
-  // Remove only terminal tanwin used for an indefinite case ending. Do not
-  // strip every final harakah: forms such as حَضَّ (perfect verb) and حَضٌّ
-  // (verbal noun) share an unvocalised skeleton but are different Ṣarf rows.
-  return normalized(value).replace(/[\u064B-\u064D]$/u, "");
+  // Remove only terminal case markers. Do not strip every diacritic: forms
+  // such as حَضَّ (perfect verb) and حَضٌّ (verbal noun) share an unvocalised
+  // skeleton but are different Ṣarf rows. Simple terminal fatha/damma/kasra
+  // and their tanwin forms are inflectional here; shaddah, sukun and lexical
+  // vowels elsewhere in the form remain significant.
+  return normalized(value).replace(/[\u064B-\u0650]$/u, "");
 }
 
 function base(value: string) {
@@ -1972,6 +2318,10 @@ function lexicalBase(provider: ProviderEvidence | undefined, fallback: string) {
 
 function rootKey(value: string | undefined) {
   return (value ?? "").replace(/\s+/gu, "").trim();
+}
+
+function isKnownWrongRootForm(root: string, form: string) {
+  return KNOWN_WRONG_ROOT_FORMS[root]?.has(base(form)) ?? false;
 }
 
 function parseJson<T>(value: unknown, fallback: T): T {
@@ -2193,6 +2543,7 @@ function existingCandidate(
 ): Candidate | undefined {
   const root = rootKey(current.lesson.root);
   if (normalized(row.form) === normalized(current.word.arabic)) return undefined;
+  if (isKnownWrongRootForm(root, row.form)) return undefined;
   const rowSurface = comparableBase(row.form);
   const currentStem = lexicalBase(current.provider, current.word.arabic);
   if (
@@ -2414,6 +2765,7 @@ for (const occurrence of limited) {
   const seen = new Set([normalized(rebuiltCurrent.form)]);
   for (const row of oldSafeRows) {
     if (normalized(row.form) === normalized(rebuiltCurrent.form)) continue;
+    if (isKnownWrongRootForm(root, row.form)) continue;
     if (seen.has(normalized(row.form))) continue;
     seen.add(normalized(row.form));
     existingForms.push({

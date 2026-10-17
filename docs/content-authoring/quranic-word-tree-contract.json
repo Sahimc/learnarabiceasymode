@@ -514,6 +514,11 @@
       "safeguard": "Treat provider-root absence as a review state, not as rootlessness. Keep a manually verified lexical root only when the author records the independent evidence and leave the occurrence visible in the root audit until that review is complete. Use 'No lexical root (category)' only when the component itself is a grammatical/rootless item or the reviewed evidence genuinely supports no lexical root."
     },
     {
+      "id": "sarf-row-root-family-mismatch",
+      "problem": "An existing Ṣarf row can be structurally valid but belong to a different Arabic root family than the lesson, such as وَائِلٌ being carried into a و ي ل lesson even though it belongs with و أ ل. Structural validity and a shared surface skeleton are not enough to prove a root relationship.",
+      "safeguard": "Review every non-current Ṣarf row against the lesson root and lexeme before retaining it. Reject rows whose Arabic form, meaning or provenance belongs to another root; do not let provider absence or an old authored row establish root membership by itself. Record the correction in the audit ledger and require an approved lexicon, canonical evidence or explicit Codex linguistic provenance for every retained row."
+    },
+    {
       "id": "sarf-clitic-is-not-family-form",
       "problem": "A conjunction clitic such as وَ or فَ can be counted as a new Ṣarf family form when it merely attaches to an otherwise unchanged lexical stem.",
       "safeguard": "Separate conjunction clitics from lexical morphology. Do not count a canonical occurrence whose provider lexical stem is unchanged and whose only added material is وَ or فَ; explain the clitic in the word breakdown instead."

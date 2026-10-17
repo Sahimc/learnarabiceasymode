@@ -7,10 +7,10 @@
     "arabicName": "الهمزة",
     "transliteration": "Al-Humazah",
     "englishLabel": "The Traducer",
-    "description": "Canonical source layer; custom teaching is not yet authored."
+    "description": "Reviewed Word Tree teaching layer."
   },
-  "contentVersion": "tanzil-1.1",
-  "status": "source-only",
+  "contentVersion": "tanzil-1.1+teaching-104-v1-sarf-1.2-limited-audit",
+  "status": "custom-complete",
   "sourceReferences": [
     {
       "provider": "tanzil",
@@ -37,7 +37,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "woe",
+          "teachingId": "lesson:104:wayl",
+          "occurrenceRole": "Opens the surah with a warning of woe.",
+          "breakdown": {
+            "id": "breakdown:word:104:1:1",
+            "mode": "atomic",
+            "sourceText": "وَيْلٌ",
+            "parts": [
+              {
+                "id": "word:104:1:1:part:1",
+                "order": 1,
+                "sourceText": "وَيْلٌ",
+                "displayText": "وَيْلٌ",
+                "label": "woe",
+                "meaning": "the complete noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "و ي ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:1:2",
@@ -50,7 +71,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "for every",
+          "teachingId": "lesson:104:likulli",
+          "occurrenceRole": "Extends the warning to every person of this kind.",
+          "breakdown": {
+            "id": "breakdown:word:104:1:2",
+            "mode": "segmented",
+            "sourceText": "لِّكُلِّ",
+            "parts": [
+              {
+                "id": "word:104:1:2:part:1",
+                "order": 1,
+                "sourceText": "لِّ",
+                "displayText": "لِّ",
+                "label": "for",
+                "meaning": "a preposition marking relation",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              },
+              {
+                "id": "word:104:1:2:part:2",
+                "order": 2,
+                "sourceText": "كُلِّ",
+                "displayText": "كُلِّ",
+                "label": "every",
+                "meaning": "the noun meaning every or all",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ك ل ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:1:3",
@@ -63,7 +116,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "slanderer",
+          "teachingId": "lesson:104:hamazah",
+          "occurrenceRole": "Describes the person who attacks others through slander.",
+          "breakdown": {
+            "id": "breakdown:word:104:1:3",
+            "mode": "atomic",
+            "sourceText": "هُمَزَةٍ",
+            "parts": [
+              {
+                "id": "word:104:1:3:part:1",
+                "order": 1,
+                "sourceText": "هُمَزَةٍ",
+                "displayText": "هُمَزَةٍ",
+                "label": "slanderer",
+                "meaning": "the complete intensive noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ه م ز"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:1:4",
@@ -76,9 +150,32 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "fault-finder",
+          "teachingId": "lesson:104:lumazah",
+          "occurrenceRole": "Describes the person who constantly finds fault with others.",
+          "breakdown": {
+            "id": "breakdown:word:104:1:4",
+            "mode": "atomic",
+            "sourceText": "لُّمَزَةٍ",
+            "parts": [
+              {
+                "id": "word:104:1:4:part:1",
+                "order": 1,
+                "sourceText": "لُّمَزَةٍ",
+                "displayText": "لُّمَزَةٍ",
+                "label": "fault-finder",
+                "meaning": "the complete intensive noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ل م ز"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Woe to every slanderer and fault-finder,",
+      "naturalMeaning": "A severe warning is announced for anyone who attacks and belittles others."
     },
     {
       "id": "ayah:104:2",
@@ -97,7 +194,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "who",
+          "teachingId": "lesson:104:alladhi",
+          "occurrenceRole": "Introduces the person identified by the following actions.",
+          "breakdown": {
+            "id": "breakdown:word:104:2:1",
+            "mode": "atomic",
+            "sourceText": "ٱلَّذِى",
+            "parts": [
+              {
+                "id": "word:104:2:1:part:1",
+                "order": 1,
+                "sourceText": "ٱلَّذِى",
+                "displayText": "ٱلَّذِى",
+                "label": "who",
+                "meaning": "a relative pronoun linking the description",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (relative pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:2:2",
@@ -110,7 +228,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "he gathered",
+          "teachingId": "lesson:104:jamaa",
+          "occurrenceRole": "Describes the person's accumulation of wealth.",
+          "breakdown": {
+            "id": "breakdown:word:104:2:2",
+            "mode": "atomic",
+            "sourceText": "جَمَعَ",
+            "parts": [
+              {
+                "id": "word:104:2:2:part:1",
+                "order": 1,
+                "sourceText": "جَمَعَ",
+                "displayText": "جَمَعَ",
+                "label": "he gathered",
+                "meaning": "the complete perfect verb",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ج م ع"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:2:3",
@@ -123,7 +262,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "wealth",
+          "teachingId": "lesson:104:2:3",
+          "occurrenceRole": "Names the wealth being gathered and counted.",
+          "breakdown": {
+            "id": "breakdown:word:104:2:3",
+            "mode": "atomic",
+            "sourceText": "مَالًا",
+            "parts": [
+              {
+                "id": "word:104:2:3:part:1",
+                "order": 1,
+                "sourceText": "مَالًا",
+                "displayText": "مَالًا",
+                "label": "wealth",
+                "meaning": "the complete noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "م و ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:2:4",
@@ -136,9 +296,54 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "and counted it",
+          "teachingId": "lesson:104:addadah",
+          "occurrenceRole": "Adds the person's repeated counting of the wealth.",
+          "breakdown": {
+            "id": "breakdown:word:104:2:4",
+            "mode": "segmented",
+            "sourceText": "وَعَدَّدَهُۥ",
+            "parts": [
+              {
+                "id": "word:104:2:4:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَ",
+                "label": "and",
+                "meaning": "a connector joining another action",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:104:2:4:part:2",
+                "order": 2,
+                "sourceText": "عَدَّدَ",
+                "displayText": "عَدَّدَ",
+                "label": "he counted repeatedly",
+                "meaning": "the lexical verb stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ع د د"
+              },
+              {
+                "id": "word:104:2:4:part:3",
+                "order": 3,
+                "sourceText": "هُۥ",
+                "displayText": "هُۥ",
+                "label": "it",
+                "meaning": "an attached object pronoun",
+                "kind": "object-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "who amasses wealth and keeps counting it,",
+      "naturalMeaning": "The description turns to the person who gathers wealth and obsessively counts it."
     },
     {
       "id": "ayah:104:3",
@@ -157,7 +362,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "he thinks",
+          "teachingId": "lesson:104:hasiba",
+          "occurrenceRole": "Introduces the person's false belief about his wealth.",
+          "breakdown": {
+            "id": "breakdown:word:104:3:1",
+            "mode": "atomic",
+            "sourceText": "يَحْسَبُ",
+            "parts": [
+              {
+                "id": "word:104:3:1:part:1",
+                "order": 1,
+                "sourceText": "يَحْسَبُ",
+                "displayText": "يَحْسَبُ",
+                "label": "he thinks",
+                "meaning": "the complete present verb",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ح س ب"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:3:2",
@@ -170,7 +396,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "that",
+          "teachingId": "lesson:104:anna",
+          "occurrenceRole": "Introduces the content of the person's mistaken belief.",
+          "breakdown": {
+            "id": "breakdown:word:104:3:2",
+            "mode": "atomic",
+            "sourceText": "أَنَّ",
+            "parts": [
+              {
+                "id": "word:104:3:2:part:1",
+                "order": 1,
+                "sourceText": "أَنَّ",
+                "displayText": "أَنَّ",
+                "label": "that",
+                "meaning": "a particle introducing a clause",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (subordinating particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:3:3",
@@ -183,7 +430,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "his wealth",
+          "teachingId": "lesson:104:3:3",
+          "occurrenceRole": "Identifies the wealth he believes will preserve him.",
+          "breakdown": {
+            "id": "breakdown:word:104:3:3",
+            "mode": "segmented",
+            "sourceText": "مَالَهُۥٓ",
+            "parts": [
+              {
+                "id": "word:104:3:3:part:1",
+                "order": 1,
+                "sourceText": "مَالَ",
+                "displayText": "مَالَ",
+                "label": "wealth",
+                "meaning": "the lexical noun stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "م و ل"
+              },
+              {
+                "id": "word:104:3:3:part:2",
+                "order": 2,
+                "sourceText": "هُۥٓ",
+                "displayText": "هُۥٓ",
+                "label": "his",
+                "meaning": "an attached possessive pronoun",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:3:4",
@@ -196,9 +475,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "made him immortal",
+          "teachingId": "lesson:104:akhladah",
+          "occurrenceRole": "Expresses the false belief that wealth makes its owner immortal.",
+          "breakdown": {
+            "id": "breakdown:word:104:3:4",
+            "mode": "segmented",
+            "sourceText": "أَخْلَدَهُۥ",
+            "parts": [
+              {
+                "id": "word:104:3:4:part:1",
+                "order": 1,
+                "sourceText": "أَخْلَدَ",
+                "displayText": "أَخْلَدَ",
+                "label": "made lasting",
+                "meaning": "the causative verb stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "خ ل د"
+              },
+              {
+                "id": "word:104:3:4:part:2",
+                "order": 2,
+                "sourceText": "هُۥ",
+                "displayText": "هُۥ",
+                "label": "him",
+                "meaning": "an attached object pronoun",
+                "kind": "object-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "thinking that his wealth will make him immortal.",
+      "naturalMeaning": "He wrongly imagines that possessions can preserve him forever."
     },
     {
       "id": "ayah:104:4",
@@ -217,7 +530,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "No indeed",
+          "teachingId": "lesson:104:kalla",
+          "occurrenceRole": "Rejects the illusion that wealth can make a person immortal.",
+          "breakdown": {
+            "id": "breakdown:word:104:4:1",
+            "mode": "atomic",
+            "sourceText": "كَلَّا",
+            "parts": [
+              {
+                "id": "word:104:4:1:part:1",
+                "order": 1,
+                "sourceText": "كَلَّا",
+                "displayText": "كَلَّا",
+                "label": "No indeed",
+                "meaning": "a particle rejecting or stopping a claim",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (repudiation particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:4:2",
@@ -230,7 +564,50 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "he will surely be cast",
+          "teachingId": "lesson:104:yunbadhanna",
+          "occurrenceRole": "Announces the certain casting of the person into the Crusher.",
+          "breakdown": {
+            "id": "breakdown:word:104:4:2",
+            "mode": "segmented",
+            "sourceText": "لَيُنۢبَذَنَّ",
+            "parts": [
+              {
+                "id": "word:104:4:2:part:1",
+                "order": 1,
+                "sourceText": "لَ",
+                "displayText": "لَ",
+                "label": "surely",
+                "meaning": "an emphatic prefix",
+                "kind": "prefix",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphasis marker)"
+              },
+              {
+                "id": "word:104:4:2:part:2",
+                "order": 2,
+                "sourceText": "يُنۢبَذَ",
+                "displayText": "يُنۢبَذَ",
+                "label": "be cast",
+                "meaning": "the passive verb stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ن ب ذ"
+              },
+              {
+                "id": "word:104:4:2:part:3",
+                "order": 3,
+                "sourceText": "نَّ",
+                "displayText": "نَّ",
+                "label": "certainly",
+                "meaning": "an attached emphatic ending",
+                "kind": "suffix",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphatic ending)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:4:3",
@@ -243,7 +620,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "in",
+          "teachingId": "lesson:104:fi",
+          "occurrenceRole": "Places the casting inside the Crusher.",
+          "breakdown": {
+            "id": "breakdown:word:104:4:3",
+            "mode": "atomic",
+            "sourceText": "فِى",
+            "parts": [
+              {
+                "id": "word:104:4:3:part:1",
+                "order": 1,
+                "sourceText": "فِى",
+                "displayText": "فِى",
+                "label": "in",
+                "meaning": "a preposition marking location or containment",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:4:4",
@@ -256,9 +654,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the Crusher",
+          "teachingId": "lesson:104:4:4",
+          "occurrenceRole": "Names the crushing Fire into which the person will be cast.",
+          "breakdown": {
+            "id": "breakdown:word:104:4:4",
+            "mode": "segmented",
+            "sourceText": "ٱلْحُطَمَةِ",
+            "parts": [
+              {
+                "id": "word:104:4:4:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:104:4:4:part:2",
+                "order": 2,
+                "sourceText": "حُطَمَةِ",
+                "displayText": "حُطَمَةِ",
+                "label": "Crusher",
+                "meaning": "the noun describing something that crushes",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ح ط م"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "No indeed! He will certainly be cast into the Crusher.",
+      "naturalMeaning": "That illusion is rejected: he will be thrown into the crushing Fire."
     },
     {
       "id": "ayah:104:5",
@@ -277,7 +709,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "and what",
+          "teachingId": "lesson:104:wama",
+          "occurrenceRole": "Opens the question asking the listener to recognize the Crusher.",
+          "breakdown": {
+            "id": "breakdown:word:104:5:1",
+            "mode": "segmented",
+            "sourceText": "وَمَآ",
+            "parts": [
+              {
+                "id": "word:104:5:1:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَ",
+                "label": "and",
+                "meaning": "a connector joining the next question",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:104:5:1:part:2",
+                "order": 2,
+                "sourceText": "مَآ",
+                "displayText": "مَآ",
+                "label": "what",
+                "meaning": "an interrogative pronoun",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (interrogative pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:5:2",
@@ -290,7 +754,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "will make you realize",
+          "teachingId": "lesson:104:adraka",
+          "occurrenceRole": "Addresses the listener in the question about the Crusher.",
+          "breakdown": {
+            "id": "breakdown:word:104:5:2",
+            "mode": "segmented",
+            "sourceText": "أَدْرَىٰكَ",
+            "parts": [
+              {
+                "id": "word:104:5:2:part:1",
+                "order": 1,
+                "sourceText": "أَدْرَىٰ",
+                "displayText": "أَدْرَىٰ",
+                "label": "made know",
+                "meaning": "the causative verb stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "د ر ي"
+              },
+              {
+                "id": "word:104:5:2:part:2",
+                "order": 2,
+                "sourceText": "كَ",
+                "displayText": "كَ",
+                "label": "you",
+                "meaning": "an attached object pronoun",
+                "kind": "object-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:5:3",
@@ -303,7 +799,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "what",
+          "teachingId": "lesson:104:ma-question",
+          "occurrenceRole": "Repeats the question about the true nature of the Crusher.",
+          "breakdown": {
+            "id": "breakdown:word:104:5:3",
+            "mode": "atomic",
+            "sourceText": "مَا",
+            "parts": [
+              {
+                "id": "word:104:5:3:part:1",
+                "order": 1,
+                "sourceText": "مَا",
+                "displayText": "مَا",
+                "label": "what",
+                "meaning": "an interrogative pronoun",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (interrogative pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:5:4",
@@ -316,9 +833,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the Crusher",
+          "teachingId": "lesson:104:5:4",
+          "occurrenceRole": "Names the crushing Fire into which the person will be cast.",
+          "breakdown": {
+            "id": "breakdown:word:104:5:4",
+            "mode": "segmented",
+            "sourceText": "ٱلْحُطَمَةُ",
+            "parts": [
+              {
+                "id": "word:104:5:4:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:104:5:4:part:2",
+                "order": 2,
+                "sourceText": "حُطَمَةُ",
+                "displayText": "حُطَمَةُ",
+                "label": "Crusher",
+                "meaning": "the noun describing something that crushes",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ح ط م"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "And what will make you realize what the Crusher is?",
+      "naturalMeaning": "The question magnifies the reality of the Crusher beyond ordinary imagination."
     },
     {
       "id": "ayah:104:6",
@@ -337,7 +888,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "fire",
+          "teachingId": "lesson:104:nar",
+          "occurrenceRole": "Identifies the Crusher as Fire.",
+          "breakdown": {
+            "id": "breakdown:word:104:6:1",
+            "mode": "atomic",
+            "sourceText": "نَارُ",
+            "parts": [
+              {
+                "id": "word:104:6:1:part:1",
+                "order": 1,
+                "sourceText": "نَارُ",
+                "displayText": "نَارُ",
+                "label": "fire",
+                "meaning": "the complete noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ن و ر"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:6:2",
@@ -350,7 +922,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "Allah's",
+          "teachingId": "lesson:104:allah",
+          "occurrenceRole": "Attributes the Fire to Allah.",
+          "breakdown": {
+            "id": "breakdown:word:104:6:2",
+            "mode": "atomic",
+            "sourceText": "ٱللَّهِ",
+            "parts": [
+              {
+                "id": "word:104:6:2:part:1",
+                "order": 1,
+                "sourceText": "ٱللَّهِ",
+                "displayText": "ٱللَّهِ",
+                "label": "Allah",
+                "meaning": "the proper name of God",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "أ ل ه"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:6:3",
@@ -363,9 +956,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "kindled",
+          "teachingId": "lesson:104:muqadah",
+          "occurrenceRole": "Describes Allah's Fire as kindled.",
+          "breakdown": {
+            "id": "breakdown:word:104:6:3",
+            "mode": "segmented",
+            "sourceText": "ٱلْمُوقَدَةُ",
+            "parts": [
+              {
+                "id": "word:104:6:3:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:104:6:3:part:2",
+                "order": 2,
+                "sourceText": "مُوقَدَةُ",
+                "displayText": "مُوقَدَةُ",
+                "label": "kindled",
+                "meaning": "the passive describing stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "و ق د"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "It is Allah's kindled Fire,",
+      "naturalMeaning": "The Crusher is the fully ignited Fire belonging to Allah."
     },
     {
       "id": "ayah:104:7",
@@ -384,7 +1011,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "which",
+          "teachingId": "lesson:104:allati",
+          "occurrenceRole": "Connects the Fire to the way it reaches the hearts.",
+          "breakdown": {
+            "id": "breakdown:word:104:7:1",
+            "mode": "atomic",
+            "sourceText": "ٱلَّتِى",
+            "parts": [
+              {
+                "id": "word:104:7:1:part:1",
+                "order": 1,
+                "sourceText": "ٱلَّتِى",
+                "displayText": "ٱلَّتِى",
+                "label": "which",
+                "meaning": "a feminine relative pronoun",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (relative pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:7:2",
@@ -397,7 +1045,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "rises over",
+          "teachingId": "lesson:104:tattaliu",
+          "occurrenceRole": "Shows the Fire reaching over the hearts.",
+          "breakdown": {
+            "id": "breakdown:word:104:7:2",
+            "mode": "atomic",
+            "sourceText": "تَطَّلِعُ",
+            "parts": [
+              {
+                "id": "word:104:7:2:part:1",
+                "order": 1,
+                "sourceText": "تَطَّلِعُ",
+                "displayText": "تَطَّلِعُ",
+                "label": "rises over",
+                "meaning": "the complete present verb",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ط ل ع"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:7:3",
@@ -410,7 +1079,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "over",
+          "teachingId": "lesson:104:ala",
+          "occurrenceRole": "Marks the hearts as the place reached by the Fire.",
+          "breakdown": {
+            "id": "breakdown:word:104:7:3",
+            "mode": "atomic",
+            "sourceText": "عَلَى",
+            "parts": [
+              {
+                "id": "word:104:7:3:part:1",
+                "order": 1,
+                "sourceText": "عَلَى",
+                "displayText": "عَلَى",
+                "label": "over",
+                "meaning": "a preposition marking position or direction",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:7:4",
@@ -423,9 +1113,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the hearts",
+          "teachingId": "lesson:104:afidah",
+          "occurrenceRole": "Names the hearts reached by the Fire.",
+          "breakdown": {
+            "id": "breakdown:word:104:7:4",
+            "mode": "segmented",
+            "sourceText": "ٱلْأَفْـِٔدَةِ",
+            "parts": [
+              {
+                "id": "word:104:7:4:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:104:7:4:part:2",
+                "order": 2,
+                "sourceText": "أَفْـِٔدَةِ",
+                "displayText": "أَفْـِٔدَةِ",
+                "label": "hearts",
+                "meaning": "the broken plural noun",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ف أ د"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "which rises over the hearts.",
+      "naturalMeaning": "Its reach is described as penetrating to the deepest inner hearts."
     },
     {
       "id": "ayah:104:8",
@@ -444,7 +1168,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "indeed it",
+          "teachingId": "lesson:104:innaha",
+          "occurrenceRole": "Confirms the reality of the Fire described before.",
+          "breakdown": {
+            "id": "breakdown:word:104:8:1",
+            "mode": "segmented",
+            "sourceText": "إِنَّهَا",
+            "parts": [
+              {
+                "id": "word:104:8:1:part:1",
+                "order": 1,
+                "sourceText": "إِنَّ",
+                "displayText": "إِنَّ",
+                "label": "indeed",
+                "meaning": "an emphatic particle",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphasis particle)"
+              },
+              {
+                "id": "word:104:8:1:part:2",
+                "order": 2,
+                "sourceText": "هَا",
+                "displayText": "هَا",
+                "label": "it",
+                "meaning": "an attached pronoun referring to the feminine Fire",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:8:2",
@@ -457,7 +1213,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "over them",
+          "teachingId": "lesson:104:alayhim",
+          "occurrenceRole": "Shows the Fire closed over those condemned.",
+          "breakdown": {
+            "id": "breakdown:word:104:8:2",
+            "mode": "segmented",
+            "sourceText": "عَلَيْهِم",
+            "parts": [
+              {
+                "id": "word:104:8:2:part:1",
+                "order": 1,
+                "sourceText": "عَلَيْ",
+                "displayText": "عَلَيْ",
+                "label": "over",
+                "meaning": "a preposition marking position over",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              },
+              {
+                "id": "word:104:8:2:part:2",
+                "order": 2,
+                "sourceText": "هِم",
+                "displayText": "هِم",
+                "label": "them",
+                "meaning": "an attached plural pronoun",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:8:3",
@@ -470,9 +1258,32 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "closed",
+          "teachingId": "lesson:104:musadah",
+          "occurrenceRole": "Describes the Fire as sealed over them.",
+          "breakdown": {
+            "id": "breakdown:word:104:8:3",
+            "mode": "atomic",
+            "sourceText": "مُّؤْصَدَةٌ",
+            "parts": [
+              {
+                "id": "word:104:8:3:part:1",
+                "order": 1,
+                "sourceText": "مُّؤْصَدَةٌ",
+                "displayText": "مُّؤْصَدَةٌ",
+                "label": "closed",
+                "meaning": "the passive describing noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "و ص د"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Indeed, it is closed over them,",
+      "naturalMeaning": "The Fire is sealed over those condemned within it."
     },
     {
       "id": "ayah:104:9",
@@ -491,7 +1302,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "in",
+          "teachingId": "lesson:104:fi",
+          "occurrenceRole": "Places the casting inside the Crusher.",
+          "breakdown": {
+            "id": "breakdown:word:104:9:1",
+            "mode": "atomic",
+            "sourceText": "فِى",
+            "parts": [
+              {
+                "id": "word:104:9:1:part:1",
+                "order": 1,
+                "sourceText": "فِى",
+                "displayText": "فِى",
+                "label": "in",
+                "meaning": "a preposition marking location or containment",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:9:2",
@@ -504,7 +1336,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "columns",
+          "teachingId": "lesson:104:amad",
+          "occurrenceRole": "Names the extended columns in the closing image.",
+          "breakdown": {
+            "id": "breakdown:word:104:9:2",
+            "mode": "atomic",
+            "sourceText": "عَمَدٍ",
+            "parts": [
+              {
+                "id": "word:104:9:2:part:1",
+                "order": 1,
+                "sourceText": "عَمَدٍ",
+                "displayText": "عَمَدٍ",
+                "label": "columns",
+                "meaning": "the broken plural noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ع م د"
+              }
+            ]
+          }
         },
         {
           "id": "word:104:9:3",
@@ -517,11 +1370,2310 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "extended",
+          "teachingId": "lesson:104:mumaddadah",
+          "occurrenceRole": "Describes the columns as extended across the enclosure.",
+          "breakdown": {
+            "id": "breakdown:word:104:9:3",
+            "mode": "atomic",
+            "sourceText": "مُّمَدَّدَةٍۭ",
+            "parts": [
+              {
+                "id": "word:104:9:3:part:1",
+                "order": 1,
+                "sourceText": "مُّمَدَّدَةٍۭ",
+                "displayText": "مُّمَدَّدَةٍۭ",
+                "label": "extended",
+                "meaning": "the passive describing noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "م د د"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "in extended columns.",
+      "naturalMeaning": "The final image is one of an enclosure sealed by long, extended columns."
     }
   ],
-  "teachingEntries": {},
+  "teachingEntries": {
+    "lesson:104:wayl": {
+      "id": "lesson:104:wayl",
+      "meaning": "woe",
+      "type": "Noun",
+      "root": "و ي ل",
+      "rootPicture": "woe · ruin · loss",
+      "construction": "وَيْلٌ",
+      "components": [
+        {
+          "text": "وَيْلٌ",
+          "sourceText": "وَيْلٌ",
+          "displayText": "وَيْلٌ",
+          "label": "woe",
+          "meaning": "the complete noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "و ي ل"
+        }
+      ],
+      "grammar": "An indefinite noun announcing a severe warning or ruin.",
+      "sentenceRole": "Opens the surah with a warning against the slanderer and fault-finder.",
+      "recognitionClue": "Recognise وَيْلٌ as the warning word woe before the description that follows.",
+      "forms": [
+        {
+          "form": "وَيْلٌ",
+          "meaning": "woe",
+          "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the ويل lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:1:1) was checked as evidence."
+        },
+        {
+          "form": "وَيْلَةٌ",
+          "meaning": "a calamity or misfortune",
+          "difference": "Feminine derivative noun; it expresses an individual calamity or misfortune rather than the fixed woe expression وَيْلٌ.",
+          "relationship": "A genuine feminine derivative of the و ي ل family, attested in Qur'anic exclamations such as يَا وَيْلَتَنَا.",
+          "provenance": "Codex-authored after review of canonical Qur'anic evidence for وَيْلَةٌ and Arabic lexicon evidence defining وَيْلَةٌ as calamity or misfortune."
+        },
+        {
+          "form": "وَيْلَاتٌ",
+          "meaning": "calamities or misfortunes",
+          "difference": "Sound plural of وَيْلَةٌ; it marks multiple calamities rather than the singular woe noun in the current occurrence.",
+          "relationship": "The established plural of وَيْلَةٌ within the و ي ل lexical family.",
+          "provenance": "Codex-authored after review of Arabic lexicon evidence listing وَيْلَاتٌ as the plural of وَيْلَةٌ and the approved project root meaning."
+        },
+        {
+          "form": "وَيْلَكَ",
+          "meaning": "woe to you",
+          "difference": "The woe noun with an attached second-person masculine pronoun; it teaches how the fixed expression addresses a specific person.",
+          "relationship": "A genuine attached-pronoun construction of وَيْلٌ in the و ي ل family, distinct from the current فَ + وَيْلٌ construction.",
+          "provenance": "Codex-authored after review of canonical Arabic usage and lexicon evidence recording وَيْلَكَ as ‘woe to you’; the attached pronoun is taught as grammar, not a new root."
+        },
+        {
+          "form": "وَيَّلَ",
+          "meaning": "he invoked woe upon or caused woe",
+          "difference": "Form II perfect; the doubled middle radical presents causing or invoking woe rather than naming the woe itself.",
+          "relationship": "A genuine Form II derived verb of the و ي ل family, listed with وَيْلٌ and وَيْلَةٌ in Arabic Academy evidence.",
+          "provenance": "Codex-authored after review of the Arabic Academy entry for ويل, which lists وَيَّلَ and related forms, and the approved project root meaning."
+        }
+      ],
+      "takeaway": "Recognise وَيْلٌ as the warning word woe before the description that follows.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:1:1.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the ويل root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:likulli": {
+      "id": "lesson:104:likulli",
+      "meaning": "for every",
+      "type": "Preposition plus noun",
+      "root": "ك ل ل",
+      "rootPicture": "all · every · entirety",
+      "construction": "لِّ + كُلِّ",
+      "components": [
+        {
+          "text": "لِّ",
+          "sourceText": "لِّ",
+          "displayText": "لِّ",
+          "label": "for",
+          "meaning": "a preposition marking relation",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        },
+        {
+          "text": "كُلِّ",
+          "sourceText": "كُلِّ",
+          "displayText": "كُلِّ",
+          "label": "every",
+          "meaning": "the noun meaning every or all",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ك ل ل"
+        }
+      ],
+      "grammar": "The preposition connects the warning to every person described by the noun.",
+      "sentenceRole": "Makes the warning apply to every slanderer and fault-finder.",
+      "recognitionClue": "Separate the short preposition لِـ from كُلّ, the noun meaning every or all.",
+      "forms": [
+        {
+          "form": "لِّكُلِّ",
+          "meaning": "for every",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the كلل lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:1:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:1:2) was checked as evidence."
+        },
+        {
+          "form": "وَكُلًّا",
+          "meaning": "But to all",
+          "difference": "Compared with لِّكُلِّ, this form changes case: genitive → accusative; state: not marked → indefinite.",
+          "relationship": "Current Qur'anic occurrence of the ك ل ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:57:10:30."
+        },
+        {
+          "form": "كُلِّهِۦ",
+          "meaning": "all of them",
+          "difference": "Compared with لِّكُلِّ, this form changes person: not marked → third-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of the ك ل ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:61:9:11."
+        },
+        {
+          "form": "كُلَّمَآ",
+          "meaning": "Every time",
+          "difference": "Compared with لِّكُلِّ, this form changes gender: masculine → not marked; case: genitive → not marked.",
+          "relationship": "Current Qur'anic occurrence of the ك ل ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:67:8:5."
+        },
+        {
+          "form": "كُلَّمَا",
+          "meaning": "every time",
+          "difference": "Compared with لِّكُلِّ, this form changes gender: masculine → not marked; case: genitive → not marked.",
+          "relationship": "Current Qur'anic occurrence of the ك ل ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:71:7:2."
+        }
+      ],
+      "takeaway": "Separate the short preposition لِـ from كُلّ, the noun meaning every or all.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-89de645d51b8f108 reviewed word:104:1:2.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the كلل root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T15:20:49.124Z"
+      }
+    },
+    "lesson:104:hamazah": {
+      "id": "lesson:104:hamazah",
+      "meaning": "slanderer",
+      "type": "Intensive noun",
+      "root": "ه م ز",
+      "rootPicture": "thrust · taunt · slander",
+      "construction": "هُمَزَةٍ",
+      "components": [
+        {
+          "text": "هُمَزَةٍ",
+          "sourceText": "هُمَزَةٍ",
+          "displayText": "هُمَزَةٍ",
+          "label": "slanderer",
+          "meaning": "the complete intensive noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ه م ز"
+        }
+      ],
+      "grammar": "An intensive noun describing a person known for repeated hurtful attacks.",
+      "sentenceRole": "Names the first condemned character: one who attacks others with words or gestures.",
+      "recognitionClue": "Connect the repeated-sounding pattern of هُمَزَة with repeated taunting or slander.",
+      "forms": [
+        {
+          "form": "هُمَزَةٍ",
+          "meaning": "slanderer",
+          "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the همز lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:1:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:1:3) was checked as evidence."
+        },
+        {
+          "form": "هَمَزَ",
+          "meaning": "he taunted or insulted",
+          "difference": "Form I perfect; it presents the completed act of taunting or insulting, contrasting with the current noun naming the person who does it.",
+          "relationship": "Form I perfect of the ه م ز root, the verbal base related to هُمَزَةٌ and هَمَّازٌ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ه م ز entry and Arabic Academy evidence listing هَمَزَ and its related forms."
+        },
+        {
+          "form": "يَهْمِزُ",
+          "meaning": "he taunts or insults",
+          "difference": "Form I imperfect, third-person masculine singular; it shows the taunting action as ongoing or habitual.",
+          "relationship": "Form I imperfect of the ه م ز root; the ongoing counterpart of هَمَزَ.",
+          "provenance": "Codex-authored after review of the ه م ز root evidence and standard Form I imperfect morphology."
+        },
+        {
+          "form": "هَامِزٌ",
+          "meaning": "one who taunts",
+          "difference": "Active participle; it describes the agent performing the taunting rather than naming the action as a finite verb.",
+          "relationship": "A genuine active participle of the ه م ز root, listed in Arabic lexical evidence alongside هُمَزَةٌ.",
+          "provenance": "Codex-authored after review of Arabic Academy evidence listing الهامز and the approved project root meaning."
+        },
+        {
+          "form": "هَمَّازٌ",
+          "meaning": "a habitual defamer",
+          "difference": "Intensive adjective/noun; the doubled middle radical marks a habitual or emphatic defamer, contrasting with the ordinary agent form.",
+          "relationship": "A genuine intensive form of the ه م ز root, attested in Qur'an 68:11 as هَمَّازٍ.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrence 68:11:1 and Arabic Academy evidence for الهَمّاز."
+        }
+      ],
+      "takeaway": "Connect the repeated-sounding pattern of هُمَزَة with repeated taunting or slander.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:1:3.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the همز root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:lumazah": {
+      "id": "lesson:104:lumazah",
+      "meaning": "fault-finder",
+      "type": "Intensive noun",
+      "root": "ل م ز",
+      "rootPicture": "blame · reproach · insult",
+      "construction": "لُّمَزَةٍ",
+      "components": [
+        {
+          "text": "لُّمَزَةٍ",
+          "sourceText": "لُّمَزَةٍ",
+          "displayText": "لُّمَزَةٍ",
+          "label": "fault-finder",
+          "meaning": "the complete intensive noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ل م ز"
+        }
+      ],
+      "grammar": "An intensive noun describing persistent fault-finding and insult.",
+      "sentenceRole": "Adds the second side of the condemned person's behavior.",
+      "recognitionClue": "Connect لَمْز with criticizing or insulting someone, especially through hints or gestures.",
+      "forms": [
+        {
+          "form": "لُّمَزَةٍ",
+          "meaning": "fault-finder",
+          "difference": "Current Qur'anic occurrence; gender: feminine; state: indefinite; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the لمز lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:1:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:1:4) was checked as evidence."
+        },
+        {
+          "form": "لَمَزَ",
+          "meaning": "he found fault with or criticized",
+          "difference": "Form I perfect; it presents the completed act of criticizing or finding fault, contrasting with the current noun naming the fault-finder.",
+          "relationship": "Form I perfect of the ل م ز root, the verbal base related to لُمَزَةٌ and لَامِزٌ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ل م ز entry and Arabic Academy evidence for لَمَزَ."
+        },
+        {
+          "form": "يَلْمِزُ",
+          "meaning": "he finds fault with or criticizes",
+          "difference": "Form I imperfect, third-person masculine singular; it presents criticism as ongoing or habitual.",
+          "relationship": "Form I imperfect of the ل م ز root, attested repeatedly in the Qur'an as يَلْمِزُ and its inflected forms.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrences 9:58, 9:79 and 49:11 and aligned morphology."
+        },
+        {
+          "form": "لَامِزٌ",
+          "meaning": "one who criticizes or finds fault",
+          "difference": "Active participle; it describes the agent who performs the criticism rather than expressing it as a finite verb.",
+          "relationship": "A genuine active participle of the ل م ز root, related to the Qur'anic noun لُّمَزَةٍ.",
+          "provenance": "Codex-authored after review of Arabic Academy evidence for اللامز and the approved project root meaning."
+        },
+        {
+          "form": "لَمَّازٌ",
+          "meaning": "a habitual fault-finder",
+          "difference": "Intensive adjective/noun; the doubled middle radical marks a habitual or emphatic fault-finder, contrasting with the ordinary agent form.",
+          "relationship": "A genuine intensive form of the ل م ز root, listed in Arabic Academy evidence as اللَّمّاز.",
+          "provenance": "Codex-authored after review of Arabic Academy evidence for اللَّمّاز and the approved project root meaning."
+        }
+      ],
+      "takeaway": "Connect لَمْز with criticizing or insulting someone, especially through hints or gestures.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:1:4.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the لمز root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:alladhi": {
+      "id": "lesson:104:alladhi",
+      "meaning": "who",
+      "type": "Relative pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (relative pronoun) — links a person to the description that follows.",
+      "construction": "ٱلَّذِى",
+      "components": [
+        {
+          "text": "ٱلَّذِى",
+          "sourceText": "ٱلَّذِى",
+          "displayText": "ٱلَّذِى",
+          "label": "who",
+          "meaning": "a relative pronoun linking the description",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (relative pronoun)"
+        }
+      ],
+      "grammar": "A relative pronoun introduces the actions that identify the person being described.",
+      "sentenceRole": "Connects the warning to the person who gathers and counts wealth.",
+      "recognitionClue": "Recognise ٱلَّذِى as the masculine singular relative pronoun who.",
+      "forms": [
+        {
+          "form": "ٱلَّذِى",
+          "meaning": "who",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun; number: masculine singular.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:2:1) was checked as evidence."
+        },
+        {
+          "form": "ٱلَّتِى",
+          "meaning": "who",
+          "difference": "feminine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّذِينَ",
+          "meaning": "those who",
+          "difference": "masculine plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Recognise ٱلَّذِى as the masculine singular relative pronoun who.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "ٱلَّذِى is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:2:1.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (104:2:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:jamaa": {
+      "id": "lesson:104:jamaa",
+      "meaning": "he gathered",
+      "type": "Perfect verb",
+      "root": "ج م ع",
+      "rootPicture": "gather · collect · bring together",
+      "construction": "جَمَعَ",
+      "components": [
+        {
+          "text": "جَمَعَ",
+          "sourceText": "جَمَعَ",
+          "displayText": "جَمَعَ",
+          "label": "he gathered",
+          "meaning": "the complete perfect verb",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ج م ع"
+        }
+      ],
+      "grammar": "A third-person masculine perfect verb describing a completed act of gathering.",
+      "sentenceRole": "Describes his accumulation of wealth.",
+      "recognitionClue": "The root ج م ع stays connected to gathering, collection and bringing things together.",
+      "forms": [
+        {
+          "form": "جَمَعَ",
+          "meaning": "he gathered",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ج م ع root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:2:2."
+        },
+        {
+          "form": "يَجْمَعُ",
+          "meaning": "he gathers",
+          "difference": "ongoing action",
+          "relationship": "Existing project-reviewed relationship to the جمع family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "جَمِيعٌ",
+          "meaning": "(are) an assembly",
+          "difference": "Compared with جَمَعَ, this form changes tense: perfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked.",
+          "relationship": "Related to the ج م ع root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:44:4.",
+          "provenance": "Codex-reviewed form for the ج م ع family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلْجَمْعُ",
+          "meaning": "(their) assembly",
+          "difference": "Compared with جَمَعَ, this form changes tense: perfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked.",
+          "relationship": "Related to the ج م ع root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:45:2.",
+          "provenance": "Codex-reviewed form for the ج م ع family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "لَمَجْمُوعُونَ",
+          "meaning": "Surely, will be gathered",
+          "difference": "Compared with جَمَعَ, this form changes tense: perfect verb → not marked; person: third-person masculine singular → not marked; partofspeech: verb → noun/pronoun.",
+          "relationship": "Related to the ج م ع root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:56:50:1.",
+          "provenance": "Codex-reviewed form for the ج م ع family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ج م ع stays connected to gathering, collection and bringing things together.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:2:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:2:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:addadah": {
+      "id": "lesson:104:addadah",
+      "meaning": "and counted it",
+      "type": "Connector plus verb and pronoun",
+      "root": "ع د د",
+      "rootPicture": "count · number · enumerate",
+      "construction": "وَ + عَدَّدَ + هُۥ",
+      "components": [
+        {
+          "text": "وَ",
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "a connector joining another action",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "عَدَّدَ",
+          "sourceText": "عَدَّدَ",
+          "displayText": "عَدَّدَ",
+          "label": "he counted repeatedly",
+          "meaning": "the lexical verb stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ع د د"
+        },
+        {
+          "text": "هُۥ",
+          "sourceText": "هُۥ",
+          "displayText": "هُۥ",
+          "label": "it",
+          "meaning": "an attached object pronoun",
+          "kind": "object-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "The connector adds a second action; the attached pronoun points back to the wealth.",
+      "sentenceRole": "Shows obsessive counting alongside accumulation.",
+      "recognitionClue": "Notice the repeated د sound in عَدَّدَ, matching the repeated act of counting.",
+      "forms": [
+        {
+          "form": "وَعَدَّدَهُۥ",
+          "meaning": "and counted it",
+          "difference": "Current Qur'anic occurrence; pattern: Form 2; tense: perfect verb; person: third-person masculine singular; verb form: Form 2.",
+          "relationship": "Current Qur'anic occurrence of the ع د د root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:2:4."
+        },
+        {
+          "form": "يُعَدِّدُ",
+          "meaning": "he counts repeatedly",
+          "difference": "intensive present verb",
+          "relationship": "Existing project-reviewed relationship to the عدد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أُعِدَّتْ",
+          "meaning": "prepared",
+          "difference": "Compared with وَعَدَّدَهُۥ, this form changes person: third-person masculine singular → not marked; verbform: Form 2 → Form 4; pattern: Form 2 → Form 4.",
+          "relationship": "Related to the ع د د root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:21:11.",
+          "provenance": "Codex-reviewed form for the ع د د family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "أَعَدَّ",
+          "meaning": "Allah has prepared",
+          "difference": "Compared with وَعَدَّدَهُۥ, this form changes verbform: Form 2 → Form 4; pattern: Form 2 → Form 4.",
+          "relationship": "Related to the ع د د root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:58:15:1.",
+          "provenance": "Codex-reviewed form for the ع د د family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "لِعِدَّتِهِنَّ",
+          "meaning": "for their waiting period",
+          "difference": "Compared with وَعَدَّدَهُۥ, this form changes tense: perfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 2 → not marked.",
+          "relationship": "Related to the ع د د root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:65:1:7.",
+          "provenance": "Codex-reviewed form for the ع د د family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Notice the repeated د sound in عَدَّدَ, matching the repeated act of counting.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:2:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:2:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:hasiba": {
+      "id": "lesson:104:hasiba",
+      "meaning": "he thinks",
+      "type": "Present verb",
+      "root": "ح س ب",
+      "rootPicture": "calculate · reckon · consider",
+      "construction": "يَحْسَبُ",
+      "components": [
+        {
+          "text": "يَحْسَبُ",
+          "sourceText": "يَحْسَبُ",
+          "displayText": "يَحْسَبُ",
+          "label": "he thinks",
+          "meaning": "the complete present verb",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ح س ب"
+        }
+      ],
+      "grammar": "A third-person masculine present verb expressing a mistaken belief.",
+      "sentenceRole": "Introduces the false conclusion drawn from wealth.",
+      "recognitionClue": "The root ح س ب links calculation with considering or supposing something to be true.",
+      "forms": [
+        {
+          "form": "يَحْسَبُ",
+          "meaning": "he thinks",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ح س ب root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:3:1."
+        },
+        {
+          "form": "حِسَابٌ",
+          "meaning": "calculation",
+          "difference": "verbal noun",
+          "relationship": "Existing project-reviewed relationship to the حسب family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "بِحُسْبَانٍ",
+          "meaning": "by (precise) calculation",
+          "difference": "Compared with يَحْسَبُ, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked.",
+          "relationship": "Related to the ح س ب root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:55:5:3.",
+          "provenance": "Codex-reviewed form for the ح س ب family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "حَسْبُهُمْ",
+          "meaning": "Sufficient (for) them",
+          "difference": "Compared with يَحْسَبُ, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked.",
+          "relationship": "Related to the ح س ب root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:58:8:34.",
+          "provenance": "Codex-reviewed form for the ح س ب family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "وَيَحْسَبُونَ",
+          "meaning": "And they think",
+          "difference": "Compared with يَحْسَبُ, this form changes person: third-person masculine singular → not marked.",
+          "relationship": "Related to the ح س ب root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:58:18:10.",
+          "provenance": "Codex-reviewed form for the ح س ب family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ح س ب links calculation with considering or supposing something to be true.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:3:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:3:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:anna": {
+      "id": "lesson:104:anna",
+      "meaning": "that",
+      "type": "Subordinating particle",
+      "root": "",
+      "rootPicture": "No lexical root (subordinating particle) — introduces the belief that follows.",
+      "construction": "أَنَّ",
+      "components": [
+        {
+          "text": "أَنَّ",
+          "sourceText": "أَنَّ",
+          "displayText": "أَنَّ",
+          "label": "that",
+          "meaning": "a particle introducing a clause",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (subordinating particle)"
+        }
+      ],
+      "grammar": "This particle opens the clause that states what he believes.",
+      "sentenceRole": "Introduces the claim that his wealth has made him permanent.",
+      "recognitionClue": "Recognise أَنَّ as a grammar word that connects a belief to its content.",
+      "forms": [
+        {
+          "form": "أَنَّ",
+          "meaning": "that",
+          "difference": "Current Qur'anic occurrence; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:3:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:3:2) was checked as evidence."
+        },
+        {
+          "form": "إِنَّ",
+          "meaning": "indeed",
+          "difference": "emphatic particle at the start of a clause",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "كَأَنَّ",
+          "meaning": "as if",
+          "difference": "comparison particle built on the same family",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Recognise أَنَّ as a grammar word that connects a belief to its content.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "أَنَّ is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:3:2.",
+          "The item was checked as article; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (104:3:2) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:akhladah": {
+      "id": "lesson:104:akhladah",
+      "meaning": "made him immortal",
+      "type": "Causative verb plus pronoun",
+      "root": "خ ل د",
+      "rootPicture": "remain · endure · last forever",
+      "construction": "أَخْلَدَ + هُۥ",
+      "components": [
+        {
+          "text": "أَخْلَدَ",
+          "sourceText": "أَخْلَدَ",
+          "displayText": "أَخْلَدَ",
+          "label": "made lasting",
+          "meaning": "the causative verb stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "خ ل د"
+        },
+        {
+          "text": "هُۥ",
+          "sourceText": "هُۥ",
+          "displayText": "هُۥ",
+          "label": "him",
+          "meaning": "an attached object pronoun",
+          "kind": "object-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "A causative verb presents wealth as supposedly making the person last forever.",
+      "sentenceRole": "Completes the false belief about wealth and permanence.",
+      "recognitionClue": "The root خ ل د carries the idea of lasting; the causative pattern means making someone last.",
+      "forms": [
+        {
+          "form": "أَخْلَدَهُۥ",
+          "meaning": "made him immortal",
+          "difference": "Current Qur'anic occurrence; pattern: Form 4; tense: perfect verb; person: third-person masculine singular; verb form: Form 4.",
+          "relationship": "Current Qur'anic occurrence of the خ ل د root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:3:4."
+        },
+        {
+          "form": "أَخْلَدَ",
+          "meaning": "he made lasting",
+          "difference": "causative past verb",
+          "relationship": "Existing project-reviewed relationship to the خلد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يُخْلِدُ",
+          "meaning": "he makes lasting",
+          "difference": "causative present verb",
+          "relationship": "Existing project-reviewed relationship to the خلد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "خَالِدٌ",
+          "meaning": "lasting / eternal",
+          "difference": "active describing form",
+          "relationship": "Existing project-reviewed relationship to the خلد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مُّخَلَّدُونَ",
+          "meaning": "immortal",
+          "difference": "Compared with أَخْلَدَهُۥ, this form changes tense: perfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 4 → Form 2.",
+          "relationship": "Related to the خ ل د root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:56:17:4.",
+          "provenance": "Codex-reviewed form for the خ ل د family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root خ ل د carries the idea of lasting; the causative pattern means making someone last.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:3:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:3:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:kalla": {
+      "id": "lesson:104:kalla",
+      "meaning": "No indeed",
+      "type": "Repudiation particle",
+      "root": "",
+      "rootPicture": "No lexical root (repudiation particle) — rejects the claim just made.",
+      "construction": "كَلَّا",
+      "components": [
+        {
+          "text": "كَلَّا",
+          "sourceText": "كَلَّا",
+          "displayText": "كَلَّا",
+          "label": "No indeed",
+          "meaning": "a particle rejecting or stopping a claim",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (repudiation particle)"
+        }
+      ],
+      "grammar": "A forceful grammar word rejects the false belief before the warning is stated.",
+      "sentenceRole": "Interrupts the imagined security provided by wealth.",
+      "recognitionClue": "Recognise كَلَّا as a strong stop: no indeed, that claim is not true.",
+      "forms": [
+        {
+          "form": "كَلَّا",
+          "meaning": "No indeed",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:4:1) was checked as evidence."
+        },
+        {
+          "form": "أَلَا",
+          "meaning": "truly / behold",
+          "difference": "attention marker",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "بَلْ",
+          "meaning": "rather",
+          "difference": "corrective particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Recognise كَلَّا as a strong stop: no indeed, that claim is not true.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "كَلَّا is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:4:1.",
+          "The item was checked as article; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (104:4:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:yunbadhanna": {
+      "id": "lesson:104:yunbadhanna",
+      "meaning": "he will surely be cast",
+      "type": "Emphatic passive verb",
+      "root": "ن ب ذ",
+      "rootPicture": "cast away · throw aside · reject",
+      "construction": "لَ + يُنۢبَذَ + نَّ",
+      "components": [
+        {
+          "text": "لَ",
+          "sourceText": "لَ",
+          "displayText": "لَ",
+          "label": "surely",
+          "meaning": "an emphatic prefix",
+          "kind": "prefix",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphasis marker)"
+        },
+        {
+          "text": "يُنۢبَذَ",
+          "sourceText": "يُنۢبَذَ",
+          "displayText": "يُنۢبَذَ",
+          "label": "be cast",
+          "meaning": "the passive verb stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ن ب ذ"
+        },
+        {
+          "text": "نَّ",
+          "sourceText": "نَّ",
+          "displayText": "نَّ",
+          "label": "certainly",
+          "meaning": "an attached emphatic ending",
+          "kind": "suffix",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphatic ending)"
+        }
+      ],
+      "grammar": "Emphatic markers surround a passive verb, making the certainty of the casting unmistakable.",
+      "sentenceRole": "States the certain consequence awaiting the person described.",
+      "recognitionClue": "Keep ن ب ذ connected to throwing away, while لَ and نَّ add strong emphasis.",
+      "forms": [
+        {
+          "form": "لَيُنۢبَذَنَّ",
+          "meaning": "he will surely be cast",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; voice: passive; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ن ب ذ root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:4:2."
+        },
+        {
+          "form": "يُنۢبَذُ",
+          "meaning": "he is cast away",
+          "difference": "passive present",
+          "relationship": "Existing project-reviewed relationship to the نبذ family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَنْبِذُ",
+          "meaning": "he casts away",
+          "difference": "active present",
+          "relationship": "Existing project-reviewed relationship to the نبذ family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فَنَبَذْنَـٰهُمْ",
+          "meaning": "and threw them",
+          "difference": "Compared with لَيُنۢبَذَنَّ, this form changes tense: imperfect verb → perfect verb; voice: passive → not marked; person: third-person masculine singular → first-person plural.",
+          "relationship": "Related to the ن ب ذ root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:40:3.",
+          "provenance": "Codex-reviewed form for the ن ب ذ family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "لَنُبِذَ",
+          "meaning": "surely he would have been thrown",
+          "difference": "Compared with لَيُنۢبَذَنَّ, this form changes tense: imperfect verb → perfect verb.",
+          "relationship": "Related to the ن ب ذ root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:68:49:7.",
+          "provenance": "Codex-reviewed form for the ن ب ذ family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Keep ن ب ذ connected to throwing away, while لَ and نَّ add strong emphasis.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:4:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:4:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:fi": {
+      "id": "lesson:104:fi",
+      "meaning": "in",
+      "type": "Preposition",
+      "root": "",
+      "rootPicture": "No lexical root (preposition) — marks the place or container of an action.",
+      "construction": "فِى",
+      "components": [
+        {
+          "text": "فِى",
+          "sourceText": "فِى",
+          "displayText": "فِى",
+          "label": "in",
+          "meaning": "a preposition marking location or containment",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        }
+      ],
+      "grammar": "This short preposition places the coming action inside a location.",
+      "sentenceRole": "Introduces the place called the Crusher.",
+      "recognitionClue": "Recognise فِى as the location word in or inside.",
+      "forms": [
+        {
+          "form": "فِى",
+          "meaning": "in",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:9:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:9:1) was checked as evidence."
+        },
+        {
+          "form": "مِنْ",
+          "meaning": "from",
+          "difference": "source preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِلَى",
+          "meaning": "to",
+          "difference": "direction preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Recognise فِى as the location word in or inside.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "فِى is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:9:1.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (104:9:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:wama": {
+      "id": "lesson:104:wama",
+      "meaning": "and what",
+      "type": "Connector plus interrogative pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (connector + interrogative pronoun) — asks what the Crusher is.",
+      "construction": "وَ + مَآ",
+      "components": [
+        {
+          "text": "وَ",
+          "sourceText": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "a connector joining the next question",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "مَآ",
+          "sourceText": "مَآ",
+          "displayText": "مَآ",
+          "label": "what",
+          "meaning": "an interrogative pronoun",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (interrogative pronoun)"
+        }
+      ],
+      "grammar": "The connector moves the discourse forward while مَا asks about the nature of the Crusher.",
+      "sentenceRole": "Begins the question that magnifies the seriousness of the Crusher.",
+      "recognitionClue": "Separate وَ as and from مَا, the question word what.",
+      "forms": [
+        {
+          "form": "وَمَآ",
+          "meaning": "and what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:5:1) was checked as evidence."
+        },
+        {
+          "form": "مَآ",
+          "meaning": "what",
+          "difference": "interrogative pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَاذَا",
+          "meaning": "what",
+          "difference": "expanded interrogative form",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَا",
+          "meaning": "what / that which",
+          "difference": "shorter grammar form",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Separate وَ as and from مَا, the question word what.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "وَمَآ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:5:1.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (104:5:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:adraka": {
+      "id": "lesson:104:adraka",
+      "meaning": "will make you realize",
+      "type": "Causative verb plus pronoun",
+      "root": "د ر ي",
+      "rootPicture": "knowing · awareness · knowledge",
+      "construction": "أَدْرَىٰ + كَ",
+      "components": [
+        {
+          "text": "أَدْرَىٰ",
+          "sourceText": "أَدْرَىٰ",
+          "displayText": "أَدْرَىٰ",
+          "label": "made know",
+          "meaning": "the causative verb stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "د ر ي"
+        },
+        {
+          "text": "كَ",
+          "sourceText": "كَ",
+          "displayText": "كَ",
+          "label": "you",
+          "meaning": "an attached object pronoun",
+          "kind": "object-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "A causative verb asks what could bring the listener to full awareness of the answer.",
+      "sentenceRole": "Magnifies the question by showing that its reality is beyond ordinary imagination.",
+      "recognitionClue": "Connect د ر ي with knowing; the pattern means causing someone to know.",
+      "forms": [
+        {
+          "form": "أَدْرَىٰكَ",
+          "meaning": "will make you realize",
+          "difference": "Current Qur'anic occurrence; pattern: Form 4; tense: perfect verb; person: third-person masculine singular; person: second-person masculine singular; verb form: Form 4.",
+          "relationship": "Current Qur'anic occurrence of the د ر ي root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:5:2."
+        },
+        {
+          "form": "أَدْرَىٰ",
+          "meaning": "made know",
+          "difference": "causative past form",
+          "relationship": "Existing project-reviewed relationship to the دري family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَدْرِي",
+          "meaning": "he knows",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the دري family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "دِرَايَةٌ",
+          "meaning": "knowledge",
+          "difference": "verbal noun",
+          "relationship": "Existing project-reviewed relationship to the دري family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تَدْرِى",
+          "meaning": "you know",
+          "difference": "Compared with أَدْرَىٰكَ, this form changes tense: perfect verb → imperfect verb; verbform: Form 4 → Form 1; pattern: Form 4 → Form 1.",
+          "relationship": "Related to the د ر ي root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:65:1:35.",
+          "provenance": "Codex-reviewed form for the د ر ي family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Connect د ر ي with knowing; the pattern means causing someone to know.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:5:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:5:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:ma-question": {
+      "id": "lesson:104:ma-question",
+      "meaning": "what",
+      "type": "Interrogative pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (interrogative pronoun) — asks for the reality of something.",
+      "construction": "مَا",
+      "components": [
+        {
+          "text": "مَا",
+          "sourceText": "مَا",
+          "displayText": "مَا",
+          "label": "what",
+          "meaning": "an interrogative pronoun",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (interrogative pronoun)"
+        }
+      ],
+      "grammar": "The pronoun asks directly for the nature or reality of the Crusher.",
+      "sentenceRole": "Repeats the key question to focus attention on the answer.",
+      "recognitionClue": "Recognise مَا as the short question word what.",
+      "forms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:5:3) was checked as evidence."
+        },
+        {
+          "form": "مَاذَا",
+          "meaning": "what",
+          "difference": "expanded interrogative form",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَنْ",
+          "meaning": "who",
+          "difference": "interrogative pronoun for people",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Recognise مَا as the short question word what.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:5:3.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (104:5:3) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:nar": {
+      "id": "lesson:104:nar",
+      "meaning": "fire",
+      "type": "Noun",
+      "root": "ن و ر",
+      "rootPicture": "fire · light · burning",
+      "construction": "نَارُ",
+      "components": [
+        {
+          "text": "نَارُ",
+          "sourceText": "نَارُ",
+          "displayText": "نَارُ",
+          "label": "fire",
+          "meaning": "the complete noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ن و ر"
+        }
+      ],
+      "grammar": "A definite-context noun naming the Fire described as belonging to Allah.",
+      "sentenceRole": "Answers the question by identifying the Crusher as Fire.",
+      "recognitionClue": "Connect نَار with fire and notice its wider family of light and radiance words.",
+      "forms": [
+        {
+          "form": "نَارُ",
+          "meaning": "fire",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the ن و ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:6:1."
+        },
+        {
+          "form": "نَارٌ",
+          "meaning": "fire",
+          "difference": "singular noun",
+          "relationship": "Existing project-reviewed relationship to the نور family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "نِيرَانٌ",
+          "meaning": "fires",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the نور family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلنُّورِ",
+          "meaning": "the light",
+          "difference": "Compared with نَارُ, this form changes gender: feminine → masculine; case: nominative → genitive.",
+          "relationship": "Related to the ن و ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:9:12.",
+          "provenance": "Codex-reviewed form for the ن و ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "نُورُهُم",
+          "meaning": "their light",
+          "difference": "Compared with نَارُ, this form changes gender: feminine → masculine.",
+          "relationship": "Related to the ن و ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:12:6.",
+          "provenance": "Codex-reviewed form for the ن و ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Connect نَار with fire and notice its wider family of light and radiance words.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:6:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:6:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:allah": {
+      "id": "lesson:104:allah",
+      "meaning": "Allah's",
+      "type": "Proper noun",
+      "root": "أ ل ه",
+      "rootPicture": "worship · divinity · deity",
+      "construction": "ٱللَّهِ",
+      "components": [
+        {
+          "text": "ٱللَّهِ",
+          "sourceText": "ٱللَّهِ",
+          "displayText": "ٱللَّهِ",
+          "label": "Allah",
+          "meaning": "the proper name of God",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "أ ل ه"
+        }
+      ],
+      "grammar": "The genitive form connects the Fire to Allah as its Lord and source.",
+      "sentenceRole": "Attributes the Fire to Allah.",
+      "recognitionClue": "The name is connected here with the root family of deity and worship; the case ending links it to Fire.",
+      "forms": [
+        {
+          "form": "ٱللَّهِ",
+          "meaning": "Allah's",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the أله lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:6:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:6:2) was checked as evidence."
+        },
+        {
+          "form": "ٱللَّهُ",
+          "meaning": "Allah",
+          "difference": "nominative form",
+          "relationship": "Existing project-reviewed relationship to the أله family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱللَّهَ",
+          "meaning": "Allah",
+          "difference": "accusative form",
+          "relationship": "Existing project-reviewed relationship to the أله family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "The name is connected here with the root family of deity and worship; the case ending links it to Fire.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "ٱللَّهِ is a proper noun associated with أله; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:6:2.",
+          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (104:6:2) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:muqadah": {
+      "id": "lesson:104:muqadah",
+      "meaning": "kindled",
+      "type": "Passive participle plus article",
+      "root": "و ق د",
+      "rootPicture": "ignite · kindle · burn",
+      "construction": "ٱلْ + مُوقَدَةُ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "sourceText": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "مُوقَدَةُ",
+          "sourceText": "مُوقَدَةُ",
+          "displayText": "مُوقَدَةُ",
+          "label": "kindled",
+          "meaning": "the passive describing stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "و ق د"
+        }
+      ],
+      "grammar": "The article makes the description definite; the passive form describes Fire that has been kindled.",
+      "sentenceRole": "Describes the Fire as fully ignited and burning.",
+      "recognitionClue": "Connect و ق د with kindling and ignition; مُوقَدَة is something made burning.",
+      "forms": [
+        {
+          "form": "ٱلْمُوقَدَةُ",
+          "meaning": "kindled",
+          "difference": "Current Qur'anic occurrence; pattern: Form 4; gender: feminine; case: nominative; partOfSpeech: adjective; verb form: Form 4.",
+          "relationship": "Current Qur'anic occurrence of the و ق د root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:6:3."
+        },
+        {
+          "form": "مُوقَدَةٌ",
+          "meaning": "kindled",
+          "difference": "passive participle",
+          "relationship": "Existing project-reviewed relationship to the وقد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَوْقَدَ",
+          "meaning": "he kindled",
+          "difference": "causative past verb",
+          "relationship": "Existing project-reviewed relationship to the وقد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يُوقِدُ",
+          "meaning": "he kindles",
+          "difference": "causative present verb",
+          "relationship": "Existing project-reviewed relationship to the وقد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَقُودُهَا",
+          "meaning": "whose fuel",
+          "difference": "Compared with ٱلْمُوقَدَةُ, this form changes gender: feminine → masculine; verbform: Form 4 → not marked; pattern: Form 4 → not marked.",
+          "relationship": "Related to the و ق د root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:66:6:8.",
+          "provenance": "Codex-reviewed form for the و ق د family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Connect و ق د with kindling and ignition; مُوقَدَة is something made burning.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:6:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:6:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:allati": {
+      "id": "lesson:104:allati",
+      "meaning": "which",
+      "type": "Feminine relative pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (relative pronoun) — links the Fire to its effect.",
+      "construction": "ٱلَّتِى",
+      "components": [
+        {
+          "text": "ٱلَّتِى",
+          "sourceText": "ٱلَّتِى",
+          "displayText": "ٱلَّتِى",
+          "label": "which",
+          "meaning": "a feminine relative pronoun",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (relative pronoun)"
+        }
+      ],
+      "grammar": "The relative pronoun links the feminine noun Fire to the action that follows.",
+      "sentenceRole": "Introduces what the Fire does to the hearts.",
+      "recognitionClue": "Recognise ٱلَّتِى as the feminine singular form meaning which or that.",
+      "forms": [
+        {
+          "form": "ٱلَّتِى",
+          "meaning": "which",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:7:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:7:1) was checked as evidence."
+        },
+        {
+          "form": "ٱلَّذِى",
+          "meaning": "who / which",
+          "difference": "masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّاتِى",
+          "meaning": "which",
+          "difference": "feminine plural",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Recognise ٱلَّتِى as the feminine singular form meaning which or that.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "ٱلَّتِى is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:7:1.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (104:7:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:tattaliu": {
+      "id": "lesson:104:tattaliu",
+      "meaning": "rises over",
+      "type": "Present verb",
+      "root": "ط ل ع",
+      "rootPicture": "rise · emerge · appear",
+      "construction": "تَطَّلِعُ",
+      "components": [
+        {
+          "text": "تَطَّلِعُ",
+          "sourceText": "تَطَّلِعُ",
+          "displayText": "تَطَّلِعُ",
+          "label": "rises over",
+          "meaning": "the complete present verb",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ط ل ع"
+        }
+      ],
+      "grammar": "A feminine present verb agrees with the feminine noun Fire and describes its reaching effect.",
+      "sentenceRole": "Describes the Fire reaching up to the inner hearts.",
+      "recognitionClue": "The root ط ل ع connects rising, appearing and coming into view.",
+      "forms": [
+        {
+          "form": "تَطَّلِعُ",
+          "meaning": "rises over",
+          "difference": "Current Qur'anic occurrence; pattern: Form 8; tense: imperfect verb; verb form: Form 8.",
+          "relationship": "Current Qur'anic occurrence of the طلع lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:7:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:7:2) was checked as evidence."
+        },
+        {
+          "form": "طَلَعَ",
+          "meaning": "he or it rose or appeared",
+          "difference": "Form I perfect; it presents the completed rising or appearing action, contrasting with the current derived verb.",
+          "relationship": "Form I perfect of the ط ل ع root, the basic verb underlying طلوع and مطلع.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ط ل ع entry and its Form I occurrences."
+        },
+        {
+          "form": "يَطْلُعُ",
+          "meaning": "he or it rises or appears",
+          "difference": "Form I imperfect; it presents rising or appearing as ongoing or expected.",
+          "relationship": "Form I imperfect of the ط ل ع root, contrasting the basic imperfect with the current derived occurrence.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ط ل ع entry and standard Form I imperfect morphology."
+        },
+        {
+          "form": "طُلُوعٌ",
+          "meaning": "rising or appearance",
+          "difference": "Verbal noun; it names the process of rising or appearing rather than expressing it as a finite verb.",
+          "relationship": "A genuine verbal noun of the ط ل ع root, attested in the Qur'an and related to the current verb.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrences of طُلُوعٌ and the approved project root meaning."
+        },
+        {
+          "form": "مَطْلَعٌ",
+          "meaning": "place or time of rising",
+          "difference": "Noun of place or time; it identifies where or when rising occurs rather than naming the action itself.",
+          "relationship": "A genuine place/time noun of the ط ل ع root, attested in the Qur'an as مَطْلَع and مَطْلِع.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrences of مَطْلَع and مَطْلِع and the approved project root meaning."
+        }
+      ],
+      "takeaway": "The root ط ل ع connects rising, appearing and coming into view.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:7:2.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the طلع root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:ala": {
+      "id": "lesson:104:ala",
+      "meaning": "over",
+      "type": "Preposition",
+      "root": "",
+      "rootPicture": "No lexical root (preposition) — marks the direction or surface reached.",
+      "construction": "عَلَى",
+      "components": [
+        {
+          "text": "عَلَى",
+          "sourceText": "عَلَى",
+          "displayText": "عَلَى",
+          "label": "over",
+          "meaning": "a preposition marking position or direction",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        }
+      ],
+      "grammar": "This preposition marks the hearts as the place the Fire reaches over.",
+      "sentenceRole": "Connects the rising Fire to the hearts.",
+      "recognitionClue": "Recognise عَلَى as the preposition over or upon.",
+      "forms": [
+        {
+          "form": "عَلَى",
+          "meaning": "over",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:7:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:7:3) was checked as evidence."
+        },
+        {
+          "form": "فَوْقَ",
+          "meaning": "above",
+          "difference": "a related position word",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تَحْتَ",
+          "meaning": "beneath",
+          "difference": "opposite position word",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Recognise عَلَى as the preposition over or upon.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "عَلَى is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:7:3.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (104:7:3) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:afidah": {
+      "id": "lesson:104:afidah",
+      "meaning": "the hearts",
+      "type": "Definite broken plural noun",
+      "root": "ف أ د",
+      "rootPicture": "heart · inner core · feeling",
+      "construction": "ٱلْ + أَفْـِٔدَةِ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "sourceText": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "أَفْـِٔدَةِ",
+          "sourceText": "أَفْـِٔدَةِ",
+          "displayText": "أَفْـِٔدَةِ",
+          "label": "hearts",
+          "meaning": "the broken plural noun",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ف أ د"
+        }
+      ],
+      "grammar": "The definite plural identifies the inner hearts as the place reached by the Fire.",
+      "sentenceRole": "Emphasizes that the Fire reaches the deepest inner centre of a person.",
+      "recognitionClue": "Link أَفْـِٔدَة to فُؤَاد, the heart or inner core.",
+      "forms": [
+        {
+          "form": "ٱلْأَفْـِٔدَةِ",
+          "meaning": "the hearts",
+          "difference": "Current Qur'anic occurrence; number: masculine plural; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ف أ د root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:7:4."
+        },
+        {
+          "form": "فُؤَادٌ",
+          "meaning": "a heart",
+          "difference": "singular noun",
+          "relationship": "Existing project-reviewed relationship to the فأد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَفْـِٔدَةٌ",
+          "meaning": "hearts",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the فأد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فُؤَادَانِ",
+          "meaning": "two hearts",
+          "difference": "dual form",
+          "relationship": "Existing project-reviewed relationship to the فأد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلْفُؤَادُ",
+          "meaning": "the heart",
+          "difference": "Compared with ٱلْأَفْـِٔدَةِ, this form changes number: masculine plural → not marked; case: genitive → nominative; gender: not marked → masculine.",
+          "relationship": "Related to the ف أ د root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:11:3.",
+          "provenance": "Codex-reviewed form for the ف أ د family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Link أَفْـِٔدَة to فُؤَاد, the heart or inner core.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:7:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:7:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:innaha": {
+      "id": "lesson:104:innaha",
+      "meaning": "indeed it",
+      "type": "Emphasis particle plus pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (particle + pronoun) — emphasizes the Fire and refers back to it.",
+      "construction": "إِنَّ + هَا",
+      "components": [
+        {
+          "text": "إِنَّ",
+          "sourceText": "إِنَّ",
+          "displayText": "إِنَّ",
+          "label": "indeed",
+          "meaning": "an emphatic particle",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphasis particle)"
+        },
+        {
+          "text": "هَا",
+          "sourceText": "هَا",
+          "displayText": "هَا",
+          "label": "it",
+          "meaning": "an attached pronoun referring to the feminine Fire",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "The emphatic particle strengthens the statement; the pronoun refers back to the Fire.",
+      "sentenceRole": "Confirms the certainty of the Fire's enclosure.",
+      "recognitionClue": "Notice إِنَّ for emphasis and هَا as the attached feminine pronoun it.",
+      "forms": [
+        {
+          "form": "إِنَّهَا",
+          "meaning": "indeed it",
+          "difference": "Current Qur'anic occurrence; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:8:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:8:1) was checked as evidence."
+        },
+        {
+          "form": "إِنَّهُ",
+          "meaning": "indeed he / it",
+          "difference": "masculine pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِنَّهُمْ",
+          "meaning": "indeed they",
+          "difference": "plural pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Notice إِنَّ for emphasis and هَا as the attached feminine pronoun it.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "إِنَّهَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:8:1.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (104:8:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:alayhim": {
+      "id": "lesson:104:alayhim",
+      "meaning": "over them",
+      "type": "Preposition plus pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (preposition + pronoun) — marks the people enclosed by the Fire.",
+      "construction": "عَلَيْ + هِم",
+      "components": [
+        {
+          "text": "عَلَيْ",
+          "sourceText": "عَلَيْ",
+          "displayText": "عَلَيْ",
+          "label": "over",
+          "meaning": "a preposition marking position over",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        },
+        {
+          "text": "هِم",
+          "sourceText": "هِم",
+          "displayText": "هِم",
+          "label": "them",
+          "meaning": "an attached plural pronoun",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "The preposition and pronoun together mark the condemned people as enclosed beneath the Fire.",
+      "sentenceRole": "Identifies who is trapped under the Fire.",
+      "recognitionClue": "Separate عَلَيْ as over from هِم, the attached pronoun meaning them.",
+      "forms": [
+        {
+          "form": "عَلَيْهِم",
+          "meaning": "over them",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:8:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:8:2) was checked as evidence."
+        },
+        {
+          "form": "عَلَيْهِ",
+          "meaning": "over him",
+          "difference": "third-person masculine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "عَلَيْهَا",
+          "meaning": "over her / it",
+          "difference": "third-person feminine singular",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Separate عَلَيْ as over from هِم, the attached pronoun meaning them.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "عَلَيْهِم is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:8:2.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (104:8:2) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:musadah": {
+      "id": "lesson:104:musadah",
+      "meaning": "closed",
+      "type": "Passive participle",
+      "root": "و ص د",
+      "rootPicture": "close · shut · secure",
+      "construction": "مُّؤْصَدَةٌ",
+      "components": [
+        {
+          "text": "مُّؤْصَدَةٌ",
+          "sourceText": "مُّؤْصَدَةٌ",
+          "displayText": "مُّؤْصَدَةٌ",
+          "label": "closed",
+          "meaning": "the passive describing noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "و ص د"
+        }
+      ],
+      "grammar": "A feminine passive participle describes something firmly shut and sealed.",
+      "sentenceRole": "Describes the Fire as closed over the people with no escape.",
+      "recognitionClue": "Connect و ص د with closing and sealing; the passive form describes what is shut.",
+      "forms": [
+        {
+          "form": "مُّؤْصَدَةٌ",
+          "meaning": "closed",
+          "difference": "Current Qur'anic occurrence; gender: feminine; state: indefinite; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the وصد lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:8:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:8:3) was checked as evidence."
+        },
+        {
+          "form": "أَوْصَدَ",
+          "meaning": "he closed or shut firmly",
+          "difference": "Form IV perfect; the derived pattern expresses the completed act of closing or sealing, underlying the current passive participle.",
+          "relationship": "Form IV of the و ص د root, the verb from which مُؤْصَدَةٌ is derived.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root و ص د, Arabic lexical evidence for أَوْصَدَ and the project root meaning."
+        },
+        {
+          "form": "يُوصِدُ",
+          "meaning": "he closes or shuts firmly",
+          "difference": "Form IV imperfect; it presents the closing or sealing action as ongoing.",
+          "relationship": "Form IV imperfect of أَوْصَدَ in the و ص د root family.",
+          "provenance": "Codex-authored after review of Arabic lexical evidence for أَوْصَدَ يُوصِدُ and the approved project root meaning."
+        },
+        {
+          "form": "إِيصَادٌ",
+          "meaning": "closing or sealing",
+          "difference": "Form IV verbal noun; it names the act of closing or sealing rather than describing the closed result.",
+          "relationship": "The verbal noun of أَوْصَدَ within the و ص د root family.",
+          "provenance": "Codex-authored after review of Arabic lexical evidence listing أَوْصَدَ يُوصِدُ إِيصَادًا and the approved project root meaning."
+        },
+        {
+          "form": "وَصِيدٌ",
+          "meaning": "an entrance or enclosure",
+          "difference": "Noun; it names an entrance or stone enclosure, contrasting the closed-state participle in the current āyah.",
+          "relationship": "A genuine Qur'anic noun of the و ص د root, attested in 18:18 as بِالْوَصِيدِ.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrence 18:18:13 and the approved project root meaning."
+        }
+      ],
+      "takeaway": "Connect و ص د with closing and sealing; the passive form describes what is shut.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:8:3.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the وصد root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:amad": {
+      "id": "lesson:104:amad",
+      "meaning": "columns",
+      "type": "Broken plural noun",
+      "root": "ع م د",
+      "rootPicture": "pillar · support · purpose",
+      "construction": "عَمَدٍ",
+      "components": [
+        {
+          "text": "عَمَدٍ",
+          "sourceText": "عَمَدٍ",
+          "displayText": "عَمَدٍ",
+          "label": "columns",
+          "meaning": "the broken plural noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ع م د"
+        }
+      ],
+      "grammar": "A plural noun describing the columns associated with the enclosure.",
+      "sentenceRole": "Introduces the pillars or columns that complete the image of confinement.",
+      "recognitionClue": "Connect عَمَد with pillars and supports; the context gives the intended image.",
+      "forms": [
+        {
+          "form": "عَمَدٍ",
+          "meaning": "columns",
+          "difference": "Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the عمد lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:9:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:9:2) was checked as evidence."
+        },
+        {
+          "form": "عَمُودٌ",
+          "meaning": "a column or pillar",
+          "difference": "Singular noun; it contrasts with the current broken plural عَمَدٍ naming multiple columns.",
+          "relationship": "The singular noun corresponding to the current plural within the ع م د family, attested in Arabic lexical evidence.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrences of عَمَد and Arabic Academy evidence for عَمُودٌ."
+        },
+        {
+          "form": "أَعْمِدَةٌ",
+          "meaning": "columns or pillars",
+          "difference": "Broken plural pattern; it gives another established plural of عَمُودٌ and contrasts with the current plural عَمَدٍ.",
+          "relationship": "An established broken plural of عَمُودٌ in the ع م د family, listed by the Arabic Academy.",
+          "provenance": "Codex-authored after review of Arabic Academy evidence listing أَعْمِدَةٌ، عُمُدٌ and عَمَدٌ as plurals of عَمُودٌ."
+        },
+        {
+          "form": "عِمَادٌ",
+          "meaning": "support or a pillar",
+          "difference": "Related noun; it focuses on the supporting function of a pillar rather than simply counting physical columns.",
+          "relationship": "A genuine Qur'anic noun of the ع م د family, attested in ذَاتِ الْعِمَادِ.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrence 89:7:3 and Arabic Academy root evidence."
+        },
+        {
+          "form": "مُتَعَمِّدٌ",
+          "meaning": "deliberate or intentional",
+          "difference": "Form V active participle; the derived pattern describes someone acting deliberately, showing the intention sense of the same root.",
+          "relationship": "A genuine Form V active participle of the ع م د root, attested in Qur'an 4:93 and 5:95.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrences 4:93:4 and 5:95:12 and aligned morphology."
+        }
+      ],
+      "takeaway": "Connect عَمَد with pillars and supports; the context gives the intended image.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:9:2.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the عمد root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:mumaddadah": {
+      "id": "lesson:104:mumaddadah",
+      "meaning": "extended",
+      "type": "Passive participle",
+      "root": "م د د",
+      "rootPicture": "extend · stretch · lengthen",
+      "construction": "مُّمَدَّدَةٍۭ",
+      "components": [
+        {
+          "text": "مُّمَدَّدَةٍۭ",
+          "sourceText": "مُّمَدَّدَةٍۭ",
+          "displayText": "مُّمَدَّدَةٍۭ",
+          "label": "extended",
+          "meaning": "the passive describing noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "م د د"
+        }
+      ],
+      "grammar": "A feminine passive participle describes the columns as stretched out or extended.",
+      "sentenceRole": "Completes the final image of the enclosing columns.",
+      "recognitionClue": "The doubled د in مَدَّ points to extending or stretching something out.",
+      "forms": [
+        {
+          "form": "مُّمَدَّدَةٍۭ",
+          "meaning": "extended",
+          "difference": "Current Qur'anic occurrence; pattern: Form 2; gender: feminine; state: indefinite; case: genitive; partOfSpeech: adjective; verb form: Form 2.",
+          "relationship": "Current Qur'anic occurrence of the م د د root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:9:3."
+        },
+        {
+          "form": "مُّمَدَّدَةٌ",
+          "meaning": "extended",
+          "difference": "passive participle",
+          "relationship": "Existing project-reviewed relationship to the مدد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَدَّ",
+          "meaning": "he extended",
+          "difference": "past verb",
+          "relationship": "Existing project-reviewed relationship to the مدد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَمُدُّ",
+          "meaning": "he extends",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the مدد family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَأَمْدَدْنَـٰهُم",
+          "meaning": "And We will provide them",
+          "difference": "Compared with مُّمَدَّدَةٍۭ, this form changes gender: feminine → not marked; state: indefinite → not marked; case: genitive → not marked.",
+          "relationship": "Related to the م د د root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:22:1.",
+          "provenance": "Codex-reviewed form for the م د د family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The doubled د in مَدَّ points to extending or stretching something out.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:9:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:9:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:2:3": {
+      "id": "lesson:104:2:3",
+      "meaning": "wealth",
+      "type": "Noun",
+      "root": "م و ل",
+      "rootPicture": "wealth · property · possession",
+      "construction": "مَالًا",
+      "components": [
+        {
+          "text": "مَالًا",
+          "sourceText": "مَالًا",
+          "displayText": "مَالًا",
+          "label": "wealth",
+          "meaning": "the complete noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "م و ل"
+        }
+      ],
+      "grammar": "An indefinite accusative noun functioning as the object of gathering.",
+      "sentenceRole": "Names what the person accumulates.",
+      "recognitionClue": "Connect مَال with wealth and possessions; the ending here shows its object role.",
+      "forms": [
+        {
+          "form": "مَالًا",
+          "meaning": "wealth",
+          "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the م و ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:2:3."
+        },
+        {
+          "form": "مَالٌ",
+          "meaning": "wealth",
+          "difference": "nominative form",
+          "relationship": "Existing project-reviewed relationship to the مول family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَمْوَالٌ",
+          "meaning": "wealths / funds",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the مول family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَالِيٌّ",
+          "meaning": "financial",
+          "difference": "adjectival form",
+          "relationship": "Existing project-reviewed relationship to the مول family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلْأَمْوَٰلِ",
+          "meaning": "the wealth",
+          "difference": "Compared with مَالًا, this form changes gender: masculine → not marked; state: indefinite → not marked; case: accusative → genitive.",
+          "relationship": "Related to the م و ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:20:12.",
+          "provenance": "Codex-reviewed form for the م و ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Connect مَال with wealth and possessions; the ending here shows its object role.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:2:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:2:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:3:3": {
+      "id": "lesson:104:3:3",
+      "meaning": "his wealth",
+      "type": "Noun",
+      "root": "م و ل",
+      "rootPicture": "wealth · property · possession",
+      "construction": "مَالًا",
+      "components": [
+        {
+          "text": "مَالًا",
+          "sourceText": "مَالًا",
+          "displayText": "مَالًا",
+          "label": "wealth",
+          "meaning": "the complete noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "م و ل"
+        }
+      ],
+      "grammar": "An indefinite accusative noun functioning as the object of gathering.",
+      "sentenceRole": "Names what the person accumulates.",
+      "recognitionClue": "Connect مَال with wealth and possessions; the ending here shows its object role.",
+      "forms": [
+        {
+          "form": "مَالَهُۥٓ",
+          "meaning": "his wealth",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: accusative; person: third-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of the م و ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:104:3:3."
+        },
+        {
+          "form": "مَالٌ",
+          "meaning": "wealth",
+          "difference": "nominative form",
+          "relationship": "Existing project-reviewed relationship to the مول family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَمْوَالٌ",
+          "meaning": "wealths / funds",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the مول family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَالِيٌّ",
+          "meaning": "financial",
+          "difference": "adjectival form",
+          "relationship": "Existing project-reviewed relationship to the مول family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلْأَمْوَٰلِ",
+          "meaning": "the wealth",
+          "difference": "Compared with مَالَهُۥٓ, this form changes gender: masculine → not marked; case: accusative → genitive; person: third-person masculine singular → not marked.",
+          "relationship": "Related to the م و ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:20:12.",
+          "provenance": "Codex-reviewed form for the م و ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "Connect مَال with wealth and possessions; the ending here shows its object role.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:104:3:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (104:3:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:104:4:4": {
+      "id": "lesson:104:4:4",
+      "meaning": "the Crusher",
+      "type": "Definite noun",
+      "root": "ح ط م",
+      "rootPicture": "crush · shatter · break apart",
+      "construction": "ٱلْ + حُطَمَةِ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "sourceText": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "حُطَمَةِ",
+          "sourceText": "حُطَمَةِ",
+          "displayText": "حُطَمَةِ",
+          "label": "Crusher",
+          "meaning": "the noun describing something that crushes",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ح ط م"
+        }
+      ],
+      "grammar": "The definite article makes this destructive name specific: the Crusher.",
+      "sentenceRole": "Names the destination of the certain casting.",
+      "recognitionClue": "See ٱلْ as the and connect ح ط م with crushing and shattering.",
+      "forms": [
+        {
+          "form": "ٱلْحُطَمَةِ",
+          "meaning": "the Crusher",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the حطم lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:4:4) was checked as evidence."
+        },
+        {
+          "form": "حَطَمَ",
+          "meaning": "he crushed or broke",
+          "difference": "Form I perfect; it presents the completed act of crushing, contrasting with the current noun naming the Crusher.",
+          "relationship": "Form I perfect of the ح ط م root, the verbal base related to حُطَمَةٌ and حُطَامٌ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ح ط م entry and Arabic Academy evidence for حَطَمَ."
+        },
+        {
+          "form": "يَحْطِمُ",
+          "meaning": "he crushes or breaks",
+          "difference": "Form I imperfect; it presents the crushing action as ongoing or expected.",
+          "relationship": "Form I imperfect of the ح ط م root, attested in Qur'an 27:18 as يَحْطِمَنَّكُمْ.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrence 27:18:14 and aligned Form I morphology."
+        },
+        {
+          "form": "حُطَامٌ",
+          "meaning": "broken debris",
+          "difference": "Result noun; it names what has been crushed or broken rather than the force that crushes it.",
+          "relationship": "A genuine Qur'anic noun of the ح ط م root, attested in 39:21, 56:65 and 57:20.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus canonical occurrences 39:21, 56:65 and 57:20."
+        },
+        {
+          "form": "حَطَّمَ",
+          "meaning": "he shattered or crushed intensely",
+          "difference": "Form II perfect; the doubled middle radical marks an intensified or causative crushing action beyond the basic Form I verb.",
+          "relationship": "A genuine Form II derived verb of the ح ط م root, listed in Arabic Academy evidence.",
+          "provenance": "Codex-authored after review of Arabic Academy evidence for حَطَّمَ and the approved project root meaning."
+        }
+      ],
+      "takeaway": "See ٱلْ as the and connect ح ط م with crushing and shattering.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:4:4.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the حطم root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    },
+    "lesson:104:5:4": {
+      "id": "lesson:104:5:4",
+      "meaning": "the Crusher",
+      "type": "Definite noun",
+      "root": "ح ط م",
+      "rootPicture": "crush · shatter · break apart",
+      "construction": "ٱلْ + حُطَمَةِ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "sourceText": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "حُطَمَةِ",
+          "sourceText": "حُطَمَةِ",
+          "displayText": "حُطَمَةِ",
+          "label": "Crusher",
+          "meaning": "the noun describing something that crushes",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ح ط م"
+        }
+      ],
+      "grammar": "The definite article makes this destructive name specific: the Crusher.",
+      "sentenceRole": "Names the destination of the certain casting.",
+      "recognitionClue": "See ٱلْ as the and connect ح ط م with crushing and shattering.",
+      "forms": [
+        {
+          "form": "ٱلْحُطَمَةُ",
+          "meaning": "the Crusher",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the حطم lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:104:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (104:5:4) was checked as evidence."
+        },
+        {
+          "form": "حَطَمَ",
+          "meaning": "he crushed or broke",
+          "difference": "Form I perfect; it presents the completed act of crushing, contrasting with the current noun naming the Crusher.",
+          "relationship": "Form I perfect of the ح ط م root, the verbal base related to حُطَمَةٌ and حُطَامٌ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ح ط م entry and Arabic Academy evidence for حَطَمَ."
+        },
+        {
+          "form": "يَحْطِمُ",
+          "meaning": "he crushes or breaks",
+          "difference": "Form I imperfect; it presents the crushing action as ongoing or expected.",
+          "relationship": "Form I imperfect of the ح ط م root, attested in Qur'an 27:18 as يَحْطِمَنَّكُمْ.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrence 27:18:14 and aligned Form I morphology."
+        },
+        {
+          "form": "حُطَامٌ",
+          "meaning": "broken debris",
+          "difference": "Result noun; it names what has been crushed or broken rather than the force that crushes it.",
+          "relationship": "A genuine Qur'anic noun of the ح ط م root, attested in 39:21, 56:65 and 57:20.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus canonical occurrences 39:21, 56:65 and 57:20."
+        },
+        {
+          "form": "حَطَّمَ",
+          "meaning": "he shattered or crushed intensely",
+          "difference": "Form II perfect; the doubled middle radical marks an intensified or causative crushing action beyond the basic Form I verb.",
+          "relationship": "A genuine Form II derived verb of the ح ط م root, listed in Arabic Academy evidence.",
+          "provenance": "Codex-authored after review of Arabic Academy evidence for حَطَّمَ and the approved project root meaning."
+        }
+      ],
+      "takeaway": "See ٱلْ as the and connect ح ط م with crushing and shattering.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-a9379a30b0b59b31 reviewed word:104:5:4.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the حطم root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:14:18.716Z"
+      }
+    }
+  },
   "volumeReferences": []
 }

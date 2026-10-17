@@ -93,6 +93,11 @@
       "safeguard": "Treat provider-root absence as a review state. Use No lexical root only for a reviewed grammatical/rootless component or a genuinely rootless item."
     },
     {
+      "id": "sarf-row-root-family-mismatch",
+      "problem": "A structurally valid Ṣarf row belongs to a different Arabic root family than the lesson, so a wrong-root form can be taught as a related form.",
+      "safeguard": "Check every retained row's Arabic form, meaning and provenance against the lesson root and lexeme. Reject wrong-root rows even when they share a surface pattern; require approved lexicon, canonical evidence or explicit Codex linguistic provenance for every retained row."
+    },
+    {
       "id": "sarf-clitic-is-not-family-form",
       "problem": "A conjunction clitic such as وَ or فَ is counted as a new Ṣarf family form when it merely attaches to an otherwise unchanged lexical stem.",
       "safeguard": "Separate conjunction clitics from lexical morphology. Do not count a canonical occurrence whose provider lexical stem is unchanged and whose only added material is وَ or فَ; explain the clitic in the word breakdown instead."
