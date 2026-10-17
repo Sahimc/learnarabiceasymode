@@ -4178,6 +4178,531 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "ممسود",
       },
     ],
+    ["كبد"]: [
+      {
+        form: "تَكَبَّدَ",
+        meaning: "he endured or underwent hardship",
+        difference:
+          "Form V perfect; it presents taking on or enduring a hardship, developing the current hardship noun into a completed action.",
+        relationship:
+          "A genuine Form V verb in the ك ب د family, supported by approved Arabic lexical evidence for تَكَبَّدَ الأمرَ.",
+        provenance:
+          "Codex-authored after review of Arabic Academy and classical lexicon evidence for تَكَبَّدَ and the approved ك ب د root meaning.",
+        featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:perfect"],
+        baseDistinct: true,
+        lexicalKey: "تكبد",
+      },
+      {
+        form: "يَتَكَبَّدُ",
+        meaning: "he endures or undergoes hardship",
+        difference:
+          "Form V imperfect; it presents enduring hardship as ongoing rather than completed.",
+        relationship: "The imperfect counterpart of تَكَبَّدَ in the ك ب د lexical family.",
+        provenance:
+          "Codex-authored after review of approved Arabic lexical evidence for يَتَكَبَّدُ and standard Form V morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يتكبد",
+      },
+      {
+        form: "تَكَبُّدٌ",
+        meaning: "enduring or undergoing hardship",
+        difference:
+          "Form V verbal noun; it names the process of enduring hardship rather than expressing it as a finite verb.",
+        relationship: "The verbal noun of تَكَبَّدَ in the ك ب د family.",
+        provenance:
+          "Codex-authored after review of Arabic lexical evidence for تَكَبُّدٌ and the approved ك ب د root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:form-5", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "تكبد-noun",
+      },
+      {
+        form: "مَكْبُودٌ",
+        meaning: "afflicted or distressed",
+        difference:
+          "Passive participle/adjectival form; it describes one affected by hardship rather than naming hardship itself.",
+        relationship: "A genuine affected-state form in the ك ب د lexical family, supported by approved Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for مَكْبُودٌ and the approved ك ب د root meaning.",
+        featureSignal: ["partofspeech:passive-participle", "voice:passive", "derivation:affected-state"],
+        baseDistinct: true,
+        lexicalKey: "مكبود",
+      },
+    ],
+    ["لبد"]: [
+      {
+        form: "لَبِدَ",
+        meaning: "he stayed or clung",
+        difference:
+          "Form I perfect; it presents the completed act of remaining attached or staying in one place, behind the current compacted/abundant adjective.",
+        relationship: "A genuine Form I verb of the ل ب د root, supported by Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy and classical ل ب د entries for لَبِدَ and the approved root meaning.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"],
+        baseDistinct: true,
+        lexicalKey: "لبد-perfect",
+      },
+      {
+        form: "يَلْبَدُ",
+        meaning: "he stays or clings",
+        difference:
+          "Form I imperfect; it presents remaining attached or staying as ongoing.",
+        relationship: "The imperfect counterpart of لَبِدَ in the ل ب د family.",
+        provenance:
+          "Codex-authored after review of classical Arabic evidence for يَلْبَدُ and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يلبد",
+      },
+      {
+        form: "لَابِدٌ",
+        meaning: "clinging or remaining",
+        difference:
+          "Active participle; it describes one that stays attached or does not depart, rather than the completed act.",
+        relationship: "The active participle of لَبِدَ in the ل ب د lexical family.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence listing اللَّابِدُ and the approved root meaning.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "لابد",
+      },
+      {
+        form: "تَلَبَّدَ",
+        meaning: "it became matted or compacted",
+        difference:
+          "Form V perfect; it describes material becoming clumped or matted, a concrete development of the current compacted-mass meaning.",
+        relationship: "A genuine Form V verb in the ل ب د family, supported by approved Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of the Arabic Academy and classical ل ب د entries for تَلَبَّدَ.",
+        featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:perfect", "derivation:change-of-state"],
+        baseDistinct: true,
+        lexicalKey: "تلبد",
+      },
+      {
+        form: "مُلَبَّدٌ",
+        meaning: "matted or compacted",
+        difference:
+          "Passive participle; it describes something made compact or matted, contrasting with the current adjective of abundance.",
+        relationship: "A genuine Form II passive participle in the ل ب د family.",
+        provenance:
+          "Codex-authored after review of Arabic lexical evidence for مُلَبَّدٌ and the approved root meaning.",
+        featureSignal: ["partofspeech:passive-participle", "pattern:form-2", "voice:passive", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "ملبد",
+      },
+    ],
+    ["لسن"]: [
+      {
+        form: "لِسَانٌ",
+        meaning: "a tongue or language",
+        difference:
+          "Indefinite singular noun; it shows the lexical base behind the current conjunction and accusative form.",
+        relationship: "The basic noun of the ل س ن family, attested throughout the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ل س ن evidence and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "number:singular", "state:indefinite"],
+        baseDistinct: true,
+        lexicalKey: "لسان",
+      },
+      {
+        form: "أَلْسِنَةٌ",
+        meaning: "tongues or languages",
+        difference:
+          "Established broken plural; it changes the singular tongue/language into the plural form used for multiple tongues or languages.",
+        relationship: "The canonical broken plural of لِسَانٌ in the ل س ن family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences of أَلْسِنَةٌ and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "ألسنة",
+      },
+      {
+        form: "لِسَانِيٌّ",
+        meaning: "linguistic or language-related",
+        difference:
+          "Nisbah adjective; the ـيّ ending derives a descriptive form meaning ‘related to language’ rather than naming a tongue itself.",
+        relationship: "A genuine nisbah adjective derived from لِسَانٌ in the ل س ن family.",
+        provenance:
+          "Codex-authored after review of the established Arabic nisbah pattern applied to لِسَانٌ and the approved root meaning.",
+        featureSignal: ["partofspeech:adjective", "derivation:nisbah", "meaning:related-adjective"],
+        baseDistinct: true,
+        lexicalKey: "لساني",
+      },
+      {
+        form: "لَسِنٌ",
+        meaning: "eloquent",
+        difference:
+          "Adjective; it derives a quality of eloquence from the tongue/language noun, giving a genuine lexical contrast rather than another attached-pronoun form.",
+        relationship: "A genuine adjective in the ل س ن family, supported by Arabic Academy evidence for لَسِنَ and لَسِنٌ.",
+        provenance:
+          "Codex-authored after review of Arabic Academy evidence for لَسِنٌ and the approved ل س ن root meaning.",
+        featureSignal: ["partofspeech:adjective", "derivation:quality-adjective"],
+        baseDistinct: true,
+        lexicalKey: "لسن-adjective",
+      },
+    ],
+    ["شفه"]: [
+      {
+        form: "شَفَةٌ",
+        meaning: "a lip",
+        difference:
+          "Feminine singular noun; it shows one lip behind the current dual form.",
+        relationship: "The basic noun of the ش ف ه family, supported by the Arabic Language Academy entry for الشفة.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy evidence for شَفَةٌ and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "number:singular", "gender:feminine"],
+        baseDistinct: true,
+        lexicalKey: "شفة",
+      },
+      {
+        form: "شِفَاهٌ",
+        meaning: "lips",
+        difference:
+          "Established broken plural; it contrasts with the current regular dual by naming lips generally rather than exactly two.",
+        relationship: "The established plural of شَفَةٌ in the ش ف ه family.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy evidence listing شِفَاهٌ as the plural of شَفَةٌ.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "شفاه",
+      },
+      {
+        form: "شَفَوَاتٌ",
+        meaning: "lips",
+        difference:
+          "An attested alternate plural pattern; it gives a real number/form contrast with both the current dual and the broken plural شِفَاهٌ.",
+        relationship: "An established alternate plural associated with شَفَةٌ in classical Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of classical Arabic evidence recording شَفَوَاتٌ as an alternate plural of شَفَةٌ.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:alternate-plural"],
+        baseDistinct: true,
+        lexicalKey: "شفوات",
+      },
+      {
+        form: "شَفَهِيٌّ",
+        meaning: "oral or labial",
+        difference:
+          "Nisbah adjective; it derives a descriptive form meaning ‘of the lip/mouth’ from the noun.",
+        relationship: "A standard nisbah adjective of شَفَةٌ in the ش ف ه family.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy evidence for شَفَهِيٌّ and the approved root meaning.",
+        featureSignal: ["partofspeech:adjective", "derivation:nisbah", "meaning:related-adjective"],
+        baseDistinct: true,
+        lexicalKey: "شفهي",
+      },
+    ],
+    ["نجد"]: [
+      {
+        form: "نَجْدٌ",
+        meaning: "a highland or elevated path",
+        difference:
+          "Basic singular noun; it shows the lexical base behind the current dual noun ‘the two ways/highlands.’",
+        relationship: "The basic noun of the ن ج د family, supported by Arabic Language Academy evidence for النَّجْد.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy evidence for نَجْدٌ and the approved root range.",
+        featureSignal: ["partofspeech:noun", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "نجد",
+      },
+      {
+        form: "نُجُودٌ",
+        meaning: "highlands or elevated places",
+        difference:
+          "Broken plural; it expands the singular elevated place into a plural form.",
+        relationship: "An established plural associated with نَجْدٌ in Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy evidence listing نُجُودٌ in the ن ج د family.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "نجود",
+      },
+      {
+        form: "نَجَدَ",
+        meaning: "he helped or assisted",
+        difference:
+          "Form I perfect in another established lexical sense of the root; it changes the place noun into a completed act of giving aid.",
+        relationship: "A genuine Form I verb of the ن ج د root, supported by Arabic Language Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy evidence for نَجَدَ and the approved root range.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "meaning:help"],
+        baseDistinct: true,
+        lexicalKey: "نجد-perfect",
+      },
+      {
+        form: "يَنْجُدُ",
+        meaning: "he helps or assists",
+        difference:
+          "Form I imperfect; it presents the helping action as ongoing rather than completed.",
+        relationship: "The imperfect counterpart of نَجَدَ in the ن ج د family.",
+        provenance:
+          "Codex-authored after review of standard Form I morphology and Arabic lexical evidence for the ن ج د root.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person", "meaning:help"],
+        baseDistinct: true,
+        lexicalKey: "ينجد",
+      },
+      {
+        form: "نَجْدَةٌ",
+        meaning: "help or assistance",
+        difference:
+          "Verbal/state noun; it names the aid supplied rather than the elevated path or the finite helping action.",
+        relationship: "A genuine noun in the ن ج د family, supported by Arabic Language Academy evidence for النَّجْدَة.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy evidence for نَجْدَةٌ and the approved root range.",
+        featureSignal: ["partofspeech:noun", "derivation:state-noun", "meaning:help"],
+        baseDistinct: true,
+        lexicalKey: "نجدة",
+      },
+    ],
+    ["قحم"]: [
+      {
+        form: "يَقْتَحِمُ",
+        meaning: "he attempts or plunges into",
+        difference:
+          "Form VIII imperfect; it presents attempting or plunging into the obstacle as ongoing.",
+        relationship: "The imperfect counterpart of ٱقْتَحَمَ in the ق ح م family.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus evidence for the ق ح م Form VIII family and standard Form VIII morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-8", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يقتحم",
+      },
+      {
+        form: "اِقْتَحِمْ",
+        meaning: "attempt or plunge into!",
+        difference:
+          "Form VIII imperative; it turns the root into a direct command to attempt or enter forcefully.",
+        relationship: "The imperative of اِقْتَحَمَ in the ق ح م lexical family.",
+        provenance:
+          "Codex-authored after review of standard Form VIII imperative morphology and the Quranic ق ح م evidence.",
+        featureSignal: ["partofspeech:verb", "pattern:form-8", "mood:imperative", "person:second-person"],
+        baseDistinct: true,
+        lexicalKey: "اقتحم-imperative",
+      },
+      {
+        form: "اِقْتِحَامٌ",
+        meaning: "attempting or plunging into",
+        difference:
+          "Form VIII verbal noun; it names the act of attempting or entering forcefully rather than expressing it as a finite verb.",
+        relationship: "The verbal noun of اِقْتَحَمَ in the ق ح م family.",
+        provenance:
+          "Codex-authored after review of Arabic lexical evidence for اِقْتِحَامٌ and the Quranic Arabic Corpus root range.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:form-8", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "اقتحام",
+      },
+      {
+        form: "مُقْتَحِمٌ",
+        meaning: "one who plunges into or bursts in",
+        difference:
+          "Form VIII active participle; it names the agent performing the plunging or entering action.",
+        relationship: "The canonical Form VIII active participle of اِقْتَحَمَ, attested in Qur'an 38:59.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 38:59:3 and standard Form VIII active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-8", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "مقتحم",
+      },
+    ],
+    ["فكك"]: [
+      {
+        form: "فَكَّ",
+        meaning: "he loosened or freed",
+        difference:
+          "Form I perfect; it expresses the completed act underlying the current noun and Form VII participle.",
+        relationship: "Form I perfect of the ف ك ك root, attested in the reviewed lexical family.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy and classical lexical evidence for فَكَّ.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"],
+        baseDistinct: true,
+        lexicalKey: "فك-perfect",
+      },
+      {
+        form: "يَفُكُّ",
+        meaning: "he loosens or frees",
+        difference:
+          "Form I imperfect; it presents loosening or freeing as ongoing.",
+        relationship: "The imperfect counterpart of فَكَّ in the ف ك ك family.",
+        provenance:
+          "Codex-authored after review of standard Form I morphology and Arabic lexical evidence for يَفُكُّ.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يفك",
+      },
+      {
+        form: "مَفْكُوكٌ",
+        meaning: "loosened or freed",
+        difference:
+          "Form I passive participle; it describes something released or separated by the freeing action.",
+        relationship: "The passive participle of فَكَّ in the ف ك ك lexical family.",
+        provenance:
+          "Codex-authored after review of Arabic lexical evidence for مَفْكُوكٌ and the approved root meaning.",
+        featureSignal: ["partofspeech:passive-participle", "voice:passive", "derivation:result"],
+        baseDistinct: true,
+        lexicalKey: "مفكوك",
+      },
+      {
+        form: "فِكَاكٌ",
+        meaning: "release or ransom",
+        difference:
+          "Verbal noun/noun; it names the release or ransom obtained by freeing someone rather than the act as a finite verb.",
+        relationship: "A genuine noun in the ف ك ك family, supported by approved Arabic lexical evidence for فِكَاكٌ.",
+        provenance:
+          "Codex-authored after review of Arabic lexical evidence listing فِكَاكٌ and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "derivation:result-noun", "meaning:release"],
+        baseDistinct: true,
+        lexicalKey: "فكاك",
+      },
+    ],
+    ["رقب"]: [
+      {
+        form: "رَقَبَ",
+        meaning: "he watched or respected",
+        difference:
+          "Form I perfect; it expresses a completed act of watching, guarding or respecting, contrasting with the current neck noun.",
+        relationship: "Form I perfect of the ر ق ب root, attested in the Quranic Arabic Corpus.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ر ق ب evidence and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"],
+        baseDistinct: true,
+        lexicalKey: "رقب-perfect",
+      },
+      {
+        form: "يَرْقُبُ",
+        meaning: "he watches or respects",
+        difference:
+          "Form I imperfect; it presents watching or respecting as ongoing.",
+        relationship: "The imperfect counterpart of رَقَبَ in the ر ق ب family, attested repeatedly in the Qur'an.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrences of يَرْقُبُ and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يرقب",
+      },
+      {
+        form: "رَقِيبٌ",
+        meaning: "watchful guardian",
+        difference:
+          "Noun/adjective; it names the one who watches or guards rather than the neck noun or finite verb.",
+        relationship: "A genuine intensive/agent noun in the ر ق ب family, attested in Qur'anic usage.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus ر ق ب occurrences and approved lexical evidence for رَقِيبٌ.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent", "meaning:guardian"],
+        baseDistinct: true,
+        lexicalKey: "رقيب",
+      },
+      {
+        form: "اِرْتِقَابٌ",
+        meaning: "watching or awaiting",
+        difference:
+          "Form VIII verbal noun; it names the act of watching for or awaiting something rather than expressing it as a command.",
+        relationship: "The verbal noun of اِرْتَقَبَ in the ر ق ب family.",
+        provenance:
+          "Codex-authored after review of Arabic lexical evidence for اِرْتِقَابٌ and the Quranic Arabic Corpus Form VIII evidence.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:form-8", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "ارتقاب",
+      },
+    ],
+    ["سغب"]: [
+      {
+        form: "سَغِبَ",
+        meaning: "he was hungry or exhausted from hunger",
+        difference:
+          "Form I perfect; it expresses the completed state behind the current noun for severe hunger.",
+        relationship: "Form I perfect of the س غ ب root, supported by Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy and classical lexical evidence for سَغِبَ.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"],
+        baseDistinct: true,
+        lexicalKey: "سغب-perfect",
+      },
+      {
+        form: "يَسْغَبُ",
+        meaning: "he is hungry or exhausted from hunger",
+        difference:
+          "Form I imperfect; it presents the hunger as ongoing.",
+        relationship: "The imperfect counterpart of سَغِبَ in the س غ ب family.",
+        provenance:
+          "Codex-authored after review of Arabic lexical evidence for يَسْغَبُ and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يسغب",
+      },
+      {
+        form: "سَغْبَانُ",
+        meaning: "hungry",
+        difference:
+          "Adjective; it describes a hungry person rather than naming hunger as a state noun.",
+        relationship: "A genuine adjective in the س غ ب family, listed in approved Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy evidence for سَغْبَانُ.",
+        featureSignal: ["partofspeech:adjective", "derivation:state-adjective"],
+        baseDistinct: true,
+        lexicalKey: "سغبانا",
+      },
+      {
+        form: "سَاغِبٌ",
+        meaning: "hungry",
+        difference:
+          "Active participle/adjective; it describes one experiencing hunger, contrasting with the current abstract noun.",
+        relationship: "A genuine active participle in the س غ ب family, supported by approved Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of classical Arabic evidence for سَاغِبٌ.",
+        featureSignal: ["partofspeech:active-participle", "derivation:descriptor"],
+        baseDistinct: true,
+        lexicalKey: "ساغب",
+      },
+    ],
+    ["شأم"]: [
+      {
+        form: "شَأَمَ",
+        meaning: "he brought misfortune",
+        difference:
+          "Form I perfect; it expresses the completed act of bringing ill fortune, developing the current left-side/ill-omen noun.",
+        relationship: "A genuine Form I verb of the ش أ م root, supported by Arabic Language Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy and classical lexical evidence for شَأَمَ.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"],
+        baseDistinct: true,
+        lexicalKey: "شأم-perfect",
+      },
+      {
+        form: "يَشْأَمُ",
+        meaning: "he brings misfortune",
+        difference:
+          "Form I imperfect; it presents bringing ill fortune as ongoing.",
+        relationship: "The imperfect counterpart of شَأَمَ in the ش أ م family.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy evidence for يَشْأَمُ and standard Form I morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يشأم",
+      },
+      {
+        form: "شُؤْمٌ",
+        meaning: "ill fortune or bad omen",
+        difference:
+          "Abstract noun; it names misfortune itself rather than the directional or group noun in the current occurrence.",
+        relationship: "A genuine noun in the ش أ م family, supported by Arabic Language Academy evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy evidence for شُؤْمٌ and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "derivation:state-noun", "meaning:misfortune"],
+        baseDistinct: true,
+        lexicalKey: "شؤم",
+      },
+      {
+        form: "مَشْؤُومٌ",
+        meaning: "ill-omened or unlucky",
+        difference:
+          "Passive/result adjective; it describes a person or thing affected by misfortune rather than naming misfortune itself.",
+        relationship: "A genuine affected-state adjective in the ش أ م family, supported by Arabic lexical evidence.",
+        provenance:
+          "Codex-authored after review of Arabic Language Academy evidence for مَشْؤُومٌ.",
+        featureSignal: ["partofspeech:adjective", "voice:passive", "derivation:affected-state"],
+        baseDistinct: true,
+        lexicalKey: "مشؤوم",
+      },
+    ],
     ["ضحو"]: [
       {
         form: "ضُحًى",
