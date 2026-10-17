@@ -6770,6 +6770,48 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "مآب",
       },
     ],
+    ["جهر"]: [
+      {
+        form: "جَهَرَ",
+        meaning: "he spoke aloud or made public",
+        difference: "Form I perfect; it presents the completed act of speaking aloud or making something manifest.",
+        relationship: "Form I perfect of the ج ه ر family, related to the current verbal noun.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus root ج ه ر evidence, including the Form I verb, and the approved root meaning.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "voice:active"],
+        baseDistinct: true,
+        lexicalKey: "جهر",
+      },
+      {
+        form: "يَجْهَرُ",
+        meaning: "he speaks aloud or makes public",
+        difference: "Form I imperfect; it presents speaking aloud or making public as ongoing or habitual.",
+        relationship: "Form I imperfect of the ج ه ر family, the imperfect counterpart of جَهَرَ.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus root ج ه ر evidence and standard Form I imperfect morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يجهر",
+      },
+      {
+        form: "جِهَارٌ",
+        meaning: "speaking aloud or publicly",
+        difference: "Form I verbal noun; it names the act of speaking aloud rather than expressing it as a finite verb.",
+        relationship: "A genuine verbal noun of جَهَرَ in the ج ه ر family, attested in Qur'anic usage.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus root ج ه ر evidence, including جِهَارًا, and the approved root meaning.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "جهار",
+      },
+      {
+        form: "جَهْرَةٌ",
+        meaning: "openly or manifestly",
+        difference: "Derived noun/adverbial expression; it shows a separate nominal pattern for something appearing openly or manifestly.",
+        relationship: "A genuine noun of the ج ه ر family, attested in Qur'anic usage as جَهْرَةً.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus root ج ه ر evidence, including جَهْرَةً, and the approved root meaning.",
+        featureSignal: ["partofspeech:noun", "derivation:quality-noun", "meaning:manifestly"],
+        baseDistinct: true,
+        lexicalKey: "جهرة",
+      },
+    ],
   };
   return (families[root] ?? []).map((candidate) => ({
     ...candidate,
@@ -7143,7 +7185,7 @@ function limitedReason(
   return `${word} is a rootful ${category} with root ${occurrence.lesson.root}. The audit found ${candidateCount} safe related form${candidateCount === 1 ? "" : "s"}, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.`;
 }
 
-const REVIEWED_RESTRICTED_LEXICAL_ROOTS = new Set(["أبد", "تين", "كوب", "نمرق", "زرب", "صيطر"]);
+const REVIEWED_RESTRICTED_LEXICAL_ROOTS = new Set(["أبد", "تين", "كوب", "نمرق", "زرب", "صيطر", "غثو", "حوي"]);
 
 function reviewedRestrictedCandidates(root: string): Candidate[] {
   const families: Record<string, Array<Omit<Candidate, "score" | "sourceKind">>> = {
@@ -7191,6 +7233,18 @@ function reviewedRestrictedCandidates(root: string): Candidate[] {
         featureSignal: ["partofspeech:noun", "number:singular", "derivation:singular-of-plural"],
         baseDistinct: true,
         lexicalKey: "زربية",
+      },
+    ],
+    ["حوي"]: [
+      {
+        form: "حَوَايَا",
+        meaning: "entrails",
+        difference: "Established plural/collective noun; it contrasts with the current adjective أَحْوَىٰ and shows the other attested Qur'anic form of the restricted family.",
+        relationship: "A genuine Qur'anic noun of the ح و ي family, attested at 6:146:19.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus root ح و ي evidence, which records only أَحْوَىٰ and حَوَايَا in the Qur'an.",
+        featureSignal: ["partofspeech:noun", "derivation:plural-or-collective", "meaning:entrails"],
+        baseDistinct: true,
+        lexicalKey: "حوايا",
       },
     ],
   };
