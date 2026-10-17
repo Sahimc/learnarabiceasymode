@@ -333,6 +333,226 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "خنس",
       },
     ],
+    ["غسق"]: [
+      {
+        form: "غَسَقَ",
+        meaning: "it became dark",
+        difference: "Form I perfect; it states the completed onset or intensification of darkness.",
+        relationship: "Form I perfect of the غ س ق root; the action from which غَاسِقٌ is derived.",
+        provenance: "Codex-authored after review of the approved project root meaning, Qur'anic evidence and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "غسق",
+      },
+      {
+        form: "يَغْسِقُ",
+        meaning: "it becomes dark",
+        difference: "Form I imperfect, third-person masculine singular; it presents the darkening as ongoing or recurring.",
+        relationship: "Form I imperfect of the غ س ق root; the ongoing counterpart of غَسَقَ.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يغسق",
+      },
+      {
+        form: "غُسُوقٌ",
+        meaning: "darkening or onset of darkness",
+        difference: "Verbal noun; it names the process of becoming dark rather than expressing it as a finite verb.",
+        relationship: "A genuine verbal noun of the غ س ق root, naming the darkening action.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic Form I verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "غسوق",
+      },
+      {
+        form: "غَسَّاقٌ",
+        meaning: "an intensely cold or foul fluid",
+        difference: "Intensive derived noun; the doubled middle radical conveys an intensified result associated with the root’s darkness and severity range.",
+        relationship: "A genuine intensive derivative of the غ س ق root, attested in Qur'anic usage as غَسَّاقًا.",
+        provenance: "Codex-authored after review of canonical Qur'anic evidence (78:25), the approved project root meaning and standard Arabic derivational morphology.",
+        featureSignal: ["pattern:intensive", "partofspeech:noun", "source:canonical-quranic"],
+        baseDistinct: true,
+        lexicalKey: "غساق",
+      },
+    ],
+    ["وقب"]: [
+      {
+        form: "يَقِبُ",
+        meaning: "it settles or enters",
+        difference: "Form I imperfect; the imperfect prefix presents the entering or settling as ongoing.",
+        relationship: "Form I imperfect of the و ق ب root; the ongoing counterpart of وَقَبَ.",
+        provenance: "Codex-authored after review of the approved project root meaning, the existing reviewed project lesson and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يقب",
+      },
+      {
+        form: "وَقْبٌ",
+        meaning: "an entering or deepening",
+        difference: "Related noun; it names the event or result of entering or settling rather than expressing it as a finite verb.",
+        relationship: "A genuine noun of the و ق ب root related to the action وَقَبَ.",
+        provenance: "Codex-authored after review of the approved project root meaning and the existing reviewed project lesson.",
+        featureSignal: ["partofspeech:noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "وقب",
+      },
+      {
+        form: "وُقُوبٌ",
+        meaning: "entering or settling",
+        difference: "Verbal noun; it names the process of entering or settling as an event.",
+        relationship: "A genuine verbal noun of the و ق ب root, related to وَقَبَ and يَقِبُ.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic Form I verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "وقوب",
+      },
+      {
+        form: "وَاقِبٌ",
+        meaning: "entering or settling",
+        difference: "Active participle; it describes something characterized by entering or settling.",
+        relationship: "A genuine active participle of the و ق ب root, related to the action وَقَبَ.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent-or-descriptor"],
+        baseDistinct: true,
+        lexicalKey: "واقب",
+      },
+    ],
+    ["نفث"]: [
+      {
+        form: "نَفَثَ",
+        meaning: "he blew lightly",
+        difference: "Form I perfect; it describes a completed act of lightly blowing or releasing breath.",
+        relationship: "Form I perfect of the ن ف ث root; the finite action underlying نَفَّاثٌ.",
+        provenance: "Codex-authored after review of the approved project root meaning, canonical Qur'anic evidence and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "نفث",
+      },
+      {
+        form: "يَنْفُثُ",
+        meaning: "he blows lightly",
+        difference: "Form I imperfect; it presents the blowing as ongoing or repeated.",
+        relationship: "Form I imperfect of the ن ف ث root; the ongoing counterpart of نَفَثَ.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "ينفث",
+      },
+      {
+        form: "نَفْثٌ",
+        meaning: "light blowing or breath",
+        difference: "Verbal noun; it names the act of blowing rather than expressing it as a finite verb.",
+        relationship: "A genuine verbal noun of the ن ف ث root, naming the blowing action.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic Form I verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "نفث",
+      },
+      {
+        form: "نَفَّاثٌ",
+        meaning: "one who blows repeatedly",
+        difference: "Intensive active participle; the doubled middle radical and agent pattern describe repeated blowing.",
+        relationship: "A genuine intensive agent form of the ن ف ث root, related to ٱلنَّفَّاثَاتِ.",
+        provenance: "Codex-authored after review of canonical Qur'anic evidence (113:4) and standard Arabic intensive-agent morphology.",
+        featureSignal: ["pattern:intensive", "partofspeech:active-participle", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "نفاث",
+      },
+    ],
+    ["عقد"]: [
+      {
+        form: "عَقَدَ",
+        meaning: "he tied or bound",
+        difference: "Form I perfect; it states the completed act of tying or binding.",
+        relationship: "Form I perfect of the ع ق د root; the action underlying عُقْدَةٌ and ٱلْعُقَدِ.",
+        provenance: "Codex-authored after review of the approved project root meaning, canonical Qur'anic evidence and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "عقد",
+      },
+      {
+        form: "يَعْقِدُ",
+        meaning: "he ties or binds",
+        difference: "Form I imperfect; it presents the tying or binding as ongoing or repeated.",
+        relationship: "Form I imperfect of the ع ق د root; the ongoing counterpart of عَقَدَ.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يعقد",
+      },
+      {
+        form: "عُقْدَةٌ",
+        meaning: "a knot",
+        difference: "Singular noun; it names one tied knot, while ٱلْعُقَدِ is the broken plural.",
+        relationship: "The singular noun corresponding to the broken plural ٱلْعُقَدِ in the ع ق د family.",
+        provenance: "Codex-authored after review of the approved project root meaning and canonical Qur'anic evidence (20:27 and 2:235).",
+        featureSignal: ["partofspeech:noun", "number:singular"],
+        baseDistinct: true,
+        lexicalKey: "عقدة",
+      },
+      {
+        form: "عَقْدٌ",
+        meaning: "binding or a contract",
+        difference: "Verbal noun/noun; it names the act or result of binding rather than the individual knot.",
+        relationship: "A genuine verbal noun/noun of the ع ق د root, related to tying, binding and contracting.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic derivational morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:result-noun"],
+        baseDistinct: true,
+        lexicalKey: "عقد",
+      },
+    ],
+    ["حسد"]: [
+      {
+        form: "حَسَدَ",
+        meaning: "he envied",
+        difference: "Form I perfect; it states the completed act of envying.",
+        relationship: "Form I perfect of the ح س د root; the action underlying حَاسِدٌ.",
+        provenance: "Codex-authored after review of the approved project root meaning, canonical Qur'anic evidence and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "حسد",
+      },
+      {
+        form: "يَحْسُدُ",
+        meaning: "he envies",
+        difference: "Form I imperfect; it presents envying as ongoing or habitual.",
+        relationship: "Form I imperfect of the ح س د root; the ongoing counterpart of حَسَدَ.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يحسد",
+      },
+      {
+        form: "حَسَادَةٌ",
+        meaning: "envy",
+        difference: "Derived noun; it names the enduring quality or feeling of envy rather than the person who performs it.",
+        relationship: "A genuine noun of the ح س د root, related to the verb حَسَدَ and the agent noun حَاسِدٌ.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic derivational morphology.",
+        featureSignal: ["partofspeech:noun", "derivation:quality-noun"],
+        baseDistinct: true,
+        lexicalKey: "حسادة",
+      },
+      {
+        form: "حَاسِدٌ",
+        meaning: "an envier",
+        difference: "Active participle; it describes the person who performs the action of envying.",
+        relationship: "A genuine active-participle form of the ح س د root, contrasting the envier with the envied.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "حاسد",
+      },
+      {
+        form: "مَحْسُودٌ",
+        meaning: "envied",
+        difference: "Passive participle; it describes the person or thing that is the object of envy.",
+        relationship: "A genuine passive-participle relationship to the ح س د root, contrasting the envier with the envied.",
+        provenance: "Codex-authored after review of the approved project root meaning and standard Arabic passive-participle morphology.",
+        featureSignal: ["partofspeech:passive-participle", "voice:passive", "role:object-of-action"],
+        baseDistinct: true,
+        lexicalKey: "محسود",
+      },
+    ],
   };
   return (families[root] ?? []).map((candidate) => ({
     ...candidate,
@@ -352,6 +572,10 @@ function hash(value: unknown) {
 
 function normalized(value: string) {
   return value.normalize("NFC").replace(/[\u0640\s]/gu, "");
+}
+
+function inflectionalKey(value: string) {
+  return normalized(value).replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]+$/gu, "");
 }
 
 function base(value: string) {
@@ -615,7 +839,7 @@ function existingCandidate(
 function dedupeCandidates(candidates: Candidate[]) {
   const byForm = new Map<string, Candidate>();
   for (const candidate of candidates) {
-    const key = normalized(candidate.form);
+    const key = inflectionalKey(candidate.form);
     const previous = byForm.get(key);
     if (!previous || candidate.score > previous.score) byForm.set(key, candidate);
   }
@@ -836,7 +1060,7 @@ for (const occurrence of limited) {
   const chosen = root
     ? chooseFour(
         candidatePool.filter(
-          (candidate) => normalized(candidate.form) !== normalized(occurrence.word.arabic),
+          (candidate) => inflectionalKey(candidate.form) !== inflectionalKey(occurrence.word.arabic),
         ),
       )
     : { selected: [], meaningful: false, distinctBaseCount: 0, usefulSignalCount: 0 };

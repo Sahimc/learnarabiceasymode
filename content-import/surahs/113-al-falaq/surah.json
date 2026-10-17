@@ -9,7 +9,7 @@
     "englishLabel": "The Daybreak",
     "description": "Reviewed Word Tree teaching layer."
   },
-  "contentVersion": "tanzil-1.1",
+  "contentVersion": "tanzil-1.1-sarf-1.2-limited-audit",
   "status": "custom-complete",
   "sourceReferences": [
     {
@@ -55,7 +55,9 @@
                 "displayText": "قُلْ",
                 "label": "Say",
                 "meaning": "Say",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ق و ل"
               }
             ]
           }
@@ -87,7 +89,9 @@
                 "displayText": "أَـ",
                 "label": "I",
                 "meaning": "the person doing the action",
-                "kind": "prefix"
+                "kind": "prefix",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (prefix)"
               },
               {
                 "id": "breakdown:word:113:1:2:part:2",
@@ -96,7 +100,9 @@
                 "displayText": "عُوذُ",
                 "label": "seek refuge",
                 "meaning": "the main verb stem",
-                "kind": "stem"
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ع و ذ"
               }
             ]
           }
@@ -128,7 +134,9 @@
                 "displayText": "بِـ",
                 "label": "with / by",
                 "meaning": "an attached preposition",
-                "kind": "preposition"
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
               },
               {
                 "id": "breakdown:word:113:1:3:part:2",
@@ -137,7 +145,9 @@
                 "displayText": "رَبِّ",
                 "label": "Lord",
                 "meaning": "the one who sustains",
-                "kind": "stem"
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ر ب ب"
               }
             ]
           }
@@ -159,17 +169,30 @@
           ],
           "breakdown": {
             "id": "breakdown:word:113:1:4",
-            "mode": "atomic",
+            "mode": "segmented",
             "sourceText": "ٱلْفَلَقِ",
             "parts": [
               {
                 "id": "breakdown:word:113:1:4:part:whole",
                 "order": 1,
-                "sourceText": "ٱلْفَلَقِ",
-                "displayText": "ٱلْفَلَقِ",
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "a definite article prefix",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "breakdown:word:113:1:4:part:2",
+                "order": 2,
+                "sourceText": "فَلَقِ",
+                "displayText": "فَلَقِ",
                 "label": "The daybreak",
                 "meaning": "The daybreak",
-                "kind": "whole"
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ف ل ق"
               }
             ]
           }
@@ -211,7 +234,9 @@
                 "displayText": "مِن",
                 "label": "From / among",
                 "meaning": "From / among",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
               }
             ]
           }
@@ -243,7 +268,9 @@
                 "displayText": "شَرِّ",
                 "label": "The evil / harm",
                 "meaning": "The evil / harm",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ش ر ر"
               }
             ]
           }
@@ -275,7 +302,9 @@
                 "displayText": "مَا",
                 "label": "What / whatever",
                 "meaning": "What / whatever",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
               }
             ]
           }
@@ -307,7 +336,9 @@
                 "displayText": "خَلَقَ",
                 "label": "He created",
                 "meaning": "He created",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "خ ل ق"
               }
             ]
           }
@@ -349,7 +380,9 @@
                 "displayText": "وَمِن",
                 "label": "And",
                 "meaning": "And",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (grammar word)"
               }
             ]
           }
@@ -381,7 +414,9 @@
                 "displayText": "شَرِّ",
                 "label": "The evil / harm",
                 "meaning": "The evil / harm",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ش ر ر"
               }
             ]
           }
@@ -413,7 +448,9 @@
                 "displayText": "غَاسِقٍ",
                 "label": "Darkness / night",
                 "meaning": "Darkness / night",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "غ س ق"
               }
             ]
           }
@@ -445,7 +482,9 @@
                 "displayText": "إِذَا",
                 "label": "When",
                 "meaning": "When",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (grammar word)"
               }
             ]
           }
@@ -477,7 +516,9 @@
                 "displayText": "وَقَبَ",
                 "label": "It settles / enters",
                 "meaning": "It settles / enters",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "و ق ب"
               }
             ]
           }
@@ -519,7 +560,9 @@
                 "displayText": "وَمِن",
                 "label": "And",
                 "meaning": "And",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (grammar word)"
               }
             ]
           }
@@ -551,7 +594,9 @@
                 "displayText": "شَرِّ",
                 "label": "The evil / harm",
                 "meaning": "The evil / harm",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ش ر ر"
               }
             ]
           }
@@ -573,17 +618,30 @@
           ],
           "breakdown": {
             "id": "breakdown:word:113:4:3",
-            "mode": "atomic",
+            "mode": "segmented",
             "sourceText": "ٱلنَّفَّاثَاتِ",
             "parts": [
               {
                 "id": "breakdown:word:113:4:3:part:whole",
                 "order": 1,
-                "sourceText": "ٱلنَّفَّاثَاتِ",
-                "displayText": "ٱلنَّفَّاثَاتِ",
+                "sourceText": "ٱل",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "a definite article prefix",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "breakdown:word:113:4:3:part:2",
+                "order": 2,
+                "sourceText": "نَّفَّاثَاتِ",
+                "displayText": "نَّفَّاثَاتِ",
                 "label": "Those who blow",
                 "meaning": "Those who blow",
-                "kind": "whole"
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ن ف ث"
               }
             ]
           }
@@ -615,7 +673,9 @@
                 "displayText": "فِي",
                 "label": "In",
                 "meaning": "In",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
               }
             ]
           }
@@ -637,17 +697,30 @@
           ],
           "breakdown": {
             "id": "breakdown:word:113:4:5",
-            "mode": "atomic",
+            "mode": "segmented",
             "sourceText": "ٱلْعُقَدِ",
             "parts": [
               {
                 "id": "breakdown:word:113:4:5:part:whole",
                 "order": 1,
-                "sourceText": "ٱلْعُقَدِ",
-                "displayText": "ٱلْعُقَدِ",
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "a definite article prefix",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "breakdown:word:113:4:5:part:2",
+                "order": 2,
+                "sourceText": "عُقَدِ",
+                "displayText": "عُقَدِ",
                 "label": "The knots",
                 "meaning": "The knots",
-                "kind": "whole"
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ع ق د"
               }
             ]
           }
@@ -689,7 +762,9 @@
                 "displayText": "وَمِن",
                 "label": "And",
                 "meaning": "And",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (grammar word)"
               }
             ]
           }
@@ -721,7 +796,9 @@
                 "displayText": "شَرِّ",
                 "label": "The evil / harm",
                 "meaning": "The evil / harm",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ش ر ر"
               }
             ]
           }
@@ -753,7 +830,9 @@
                 "displayText": "حَاسِدٍ",
                 "label": "An envier",
                 "meaning": "An envier",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ح س د"
               }
             ]
           }
@@ -785,7 +864,9 @@
                 "displayText": "إِذَا",
                 "label": "When",
                 "meaning": "When",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (grammar word)"
               }
             ]
           }
@@ -817,7 +898,9 @@
                 "displayText": "حَسَدَ",
                 "label": "He envies",
                 "meaning": "He envies",
-                "kind": "whole"
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ح س د"
               }
             ]
           }
@@ -839,27 +922,51 @@
       "recognitionClue": "A command can contain its subject without a separate word for ‘you.’",
       "forms": [
         {
+          "form": "قُلْ",
+          "meaning": "Say",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; mood: imperative; person: second-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ق و ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:113:1:1."
+        },
+        {
           "form": "قَالَ",
           "meaning": "He said",
-          "difference": "past tense"
+          "difference": "past tense",
+          "relationship": "Existing project-reviewed relationship to the قول family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "يَقُولُ",
           "meaning": "He says",
-          "difference": "present tense"
+          "difference": "present tense",
+          "relationship": "Existing project-reviewed relationship to the قول family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "نَقُولُ",
           "meaning": "We say",
-          "difference": "نَ points to we"
+          "difference": "نَ points to we",
+          "relationship": "Existing project-reviewed relationship to the قول family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
-          "form": "قُلْ",
-          "meaning": "Say!",
-          "difference": "command to one male"
+          "form": "قَالُوٓا۟",
+          "meaning": "They said",
+          "difference": "Compared with قُلْ, this form changes mood: imperative → not marked; person: second-person masculine singular → not marked; tense: not marked → perfect verb.",
+          "relationship": "Related to the ق و ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:32:1.",
+          "provenance": "Codex-reviewed form for the ق و ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         }
       ],
-      "takeaway": "The root stays connected to speaking while the form tells us who speaks and whether it is a statement or command."
+      "takeaway": "The root stays connected to speaking while the form tells us who speaks and whether it is a statement or command.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:113:1:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (113:1:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
     },
     "lesson:audhu": {
       "id": "lesson:audhu",
@@ -874,14 +981,18 @@
           "displayText": "أَـ",
           "label": "I",
           "meaning": "the person doing the action",
-          "kind": "prefix"
+          "kind": "prefix",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (prefix)"
         },
         {
           "text": "عُوذُ",
           "displayText": "عُوذُ",
           "label": "seek refuge",
           "meaning": "the main verb stem",
-          "kind": "stem"
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ع و ذ"
         }
       ],
       "breakdown": {
@@ -914,31 +1025,55 @@
       "recognitionClue": "أَ at the beginning of a present verb can point to ‘I.’",
       "forms": [
         {
-          "form": "عَاذَ",
-          "meaning": "He sought refuge",
-          "difference": "past"
-        },
-        {
           "form": "أَعُوذُ",
           "meaning": "I seek refuge",
-          "difference": "أَ = I"
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; person: first-person singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ع و ذ root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:113:1:2."
+        },
+        {
+          "form": "عَاذَ",
+          "meaning": "He sought refuge",
+          "difference": "past",
+          "relationship": "Existing project-reviewed relationship to the عوذ family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "نَعُوذُ",
           "meaning": "We seek refuge",
-          "difference": "نَ = we"
+          "difference": "نَ = we",
+          "relationship": "Existing project-reviewed relationship to the عوذ family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "مَعَاذ",
           "meaning": "place of refuge",
-          "difference": "derived noun"
+          "difference": "derived noun",
+          "relationship": "Existing project-reviewed relationship to the عوذ family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَعُوذُونَ",
+          "meaning": "who sought refuge",
+          "difference": "Compared with أَعُوذُ, this form changes person: first-person singular → not marked.",
+          "relationship": "Related to the ع و ذ root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:72:6:6.",
+          "provenance": "Codex-reviewed form for the ع و ذ family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         }
       ],
-      "takeaway": "The root gives the movement toward protection while the prefix identifies the speaker."
+      "takeaway": "The root gives the movement toward protection while the prefix identifies the speaker.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:113:1:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (113:1:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
     },
     "lesson:birabbi": {
       "id": "lesson:birabbi",
-      "meaning": "With / by my Lord",
+      "meaning": "with my Lord",
       "type": "Attached preposition and possessive noun",
       "root": "ر ب ب",
       "rootPicture": "raise · nurture · sustain · govern",
@@ -947,12 +1082,16 @@
         {
           "text": "بِ",
           "label": "with / by",
-          "meaning": "attached preposition"
+          "meaning": "attached preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
         },
         {
           "text": "رَبِّ",
           "label": "Lord",
-          "meaning": "one who sustains"
+          "meaning": "one who sustains",
+          "rootStatus": "lexical",
+          "root": "ر ب ب"
         }
       ],
       "grammar": "The preposition بِ joins to ربّ, while the possessive ending is understood in the attached form used here.",
@@ -960,26 +1099,56 @@
       "recognitionClue": "A short attached preposition can change the relationship of the noun to the verb.",
       "forms": [
         {
-          "form": "رَبّ",
-          "meaning": "Lord / nurturer",
-          "difference": "base noun"
-        },
-        {
           "form": "بِرَبِّ",
-          "meaning": "by a Lord",
-          "difference": "بِ attached"
+          "meaning": "with my Lord",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ربب lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:1:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:1:3) was checked as evidence."
         },
         {
-          "form": "رَبِّي",
-          "meaning": "my Lord",
-          "difference": "ي = my"
+          "form": "رَبِّكَ",
+          "meaning": "by your Lord",
+          "difference": "Compared with بِرَبِّ, this form changes person: not marked → second-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of the ر ب ب root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:51:34:3."
+        },
+        {
+          "form": "رَبِّهِ",
+          "meaning": "(of) his Lord",
+          "difference": "Compared with بِرَبِّ, this form changes person: not marked → third-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of the ر ب ب root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:53:18:5."
+        },
+        {
+          "form": "رَبَّكَ",
+          "meaning": "your Lord",
+          "difference": "Compared with بِرَبِّ, this form changes case: genitive → accusative; person: not marked → second-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of the ر ب ب root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:53:30:6."
+        },
+        {
+          "form": "رَبَّهُۥٓ",
+          "meaning": "his Lord",
+          "difference": "Compared with بِرَبِّ, this form changes case: genitive → accusative; person: not marked → third-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of the ر ب ب root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:54:10:2."
         }
       ],
-      "takeaway": "The root picture of nurturing and sustaining makes رَبّ a rich word for Lord and caretaker."
+      "takeaway": "The root picture of nurturing and sustaining makes رَبّ a rich word for Lord and caretaker.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-89de645d51b8f108 reviewed word:113:1:3.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the ربب root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T15:20:49.124Z"
+      }
     },
     "lesson:daybreak": {
       "id": "lesson:daybreak",
-      "meaning": "The daybreak",
+      "meaning": "the daybreak",
       "type": "Definite noun",
       "root": "ف ل ق",
       "rootPicture": "split · break open · emerge",
@@ -990,40 +1159,75 @@
       "recognitionClue": "The root image makes the word easier to remember: light splitting the dark.",
       "forms": [
         {
-          "form": "فَلَق",
-          "meaning": "to split / break",
-          "difference": "verb family"
-        },
-        {
-          "form": "فَلَق",
-          "meaning": "daybreak",
-          "difference": "noun"
-        },
-        {
-          "form": "ٱلْفَلَق",
+          "form": "ٱلْفَلَقِ",
           "meaning": "the daybreak",
-          "difference": "definite noun"
+          "difference": "Current Qur'anic definite noun in the genitive case.",
+          "relationship": "Related to the ف ل ق root as a real lexical form; the row teaches a distinct noun, verb or participial pattern.",
+          "provenance": "Codex-authored and reviewed against the ف ل ق root meaning and reliable Arabic morphology."
+        },
+        {
+          "form": "فَلَق",
+          "meaning": "daybreak / a split",
+          "difference": "Uninflected noun form; the definite article and case marker are absent.",
+          "relationship": "Related to the ف ل ق root as a real lexical form; the row teaches a distinct noun, verb or participial pattern.",
+          "provenance": "Codex-authored and reviewed against the ف ل ق root meaning and reliable Arabic morphology."
+        },
+        {
+          "form": "فَلَقَ",
+          "meaning": "He split / broke open",
+          "difference": "Form I perfect verb; the vocalised pattern expresses a completed action.",
+          "relationship": "Related to the ف ل ق root as a real lexical form; the row teaches a distinct noun, verb or participial pattern.",
+          "provenance": "Codex-authored and reviewed against the ف ل ق root meaning and reliable Arabic morphology."
+        },
+        {
+          "form": "يَفْلِقُ",
+          "meaning": "He splits open",
+          "difference": "Form I imperfect verb; the imperfect pattern expresses ongoing or present action.",
+          "relationship": "Related to the ف ل ق root as a real lexical form; the row teaches a distinct noun, verb or participial pattern.",
+          "provenance": "Codex-authored and reviewed against the ف ل ق root meaning and reliable Arabic morphology."
+        },
+        {
+          "form": "فَالِقُ",
+          "meaning": "one who splits open",
+          "difference": "Active participle; the pattern names the doer of the splitting action.",
+          "relationship": "Related to the ف ل ق root as a real lexical form; the row teaches a distinct noun, verb or participial pattern.",
+          "provenance": "Codex-authored and reviewed against the ف ل ق root meaning and reliable Arabic morphology."
         }
       ],
-      "takeaway": "A root picture can be a memory hook without replacing the exact contextual meaning."
+      "takeaway": "A root picture can be a memory hook without replacing the exact contextual meaning.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic evidence: ٱلْفَلَقِ (113:1:4) and فَالِقُ (6:96).",
+          "Codex-authored and reviewed against the ف ل ق root meaning and reliable Arabic morphology."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:50:00.000Z"
+      }
     },
     "lesson:min": {
       "id": "lesson:min",
-      "meaning": "From / among",
+      "meaning": "from",
       "type": "Preposition",
       "root": "",
-      "rootPicture": "No lexical root — a preposition marking source, separation or origin.",
+      "rootPicture": "No lexical root (preposition) — a preposition marking source, separation or origin.",
       "construction": "مِنْ → مِنَ",
       "components": [
         {
           "text": "مِنْ",
           "label": "from",
-          "meaning": "source or separation"
+          "meaning": "source or separation",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
         },
         {
           "text": "ـَ",
           "label": "linking vowel",
-          "meaning": "helps pronunciation before the next word"
+          "meaning": "helps pronunciation before the next word",
+          "kind": "ending",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (ending)"
         }
       ],
       "grammar": "مِنْ introduces the source or group something comes from. The final vowel in مِنَ is a pronunciation adjustment before the next word.",
@@ -1031,35 +1235,71 @@
       "recognitionClue": "Recognise مِنْ / مِنَ as the compact word for ‘from’; its ending can change for easy pronunciation.",
       "forms": [
         {
+          "form": "مِن",
+          "meaning": "from",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:2:1) was checked as evidence."
+        },
+        {
           "form": "مِنْ",
           "meaning": "from",
-          "difference": "base preposition"
+          "difference": "base preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "مِنَ",
           "meaning": "from among",
-          "difference": "vowel before the next word"
+          "difference": "vowel before the next word",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "مِنْهُ",
           "meaning": "from him / it",
-          "difference": "attached pronoun"
+          "difference": "attached pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         }
       ],
-      "takeaway": "Short grammar words do important structural work even though they do not carry a lexical root."
+      "takeaway": "Short grammar words do important structural work even though they do not carry a lexical root.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "مِن is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-34eaa45f2a5b148f reviewed word:113:2:1.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (113:2:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:44:10.281Z"
+      }
     },
     "lesson:sharri": {
       "id": "lesson:sharri",
-      "meaning": "The evil / harm",
-      "type": "Definite noun with attached preposition",
+      "meaning": "harm / evil",
+      "type": "Noun in genitive form",
       "root": "ش ر ر",
-      "rootPicture": "badness · harm · evil",
-      "construction": "مِنْ + شَرِّ",
+      "rootPicture": "evil · harm · badness",
+      "construction": "شَرّ + ـِ",
       "components": [
         {
-          "text": "مِنْ",
-          "label": "from",
-          "meaning": "source or separation"
+          "text": "شَرّ",
+          "label": "evil / harm",
+          "meaning": "the lexical noun",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ش ر ر"
+        },
+        {
+          "text": "ـِ",
+          "label": "genitive ending",
+          "meaning": "marks the noun’s genitive form",
+          "kind": "ending",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (ending)"
         }
       ],
       "grammar": "مِنْ introduces the source or separation, and the noun is definite in meaning through the construction.",
@@ -1067,29 +1307,58 @@
       "recognitionClue": "مِنْ often carries ‘from’ and can be attached in pronunciation to what follows.",
       "forms": [
         {
+          "form": "شَرِّ",
+          "meaning": "harm / evil",
+          "difference": "Current Qur'anic occurrence; number: masculine singular; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ش ر ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:113:5:2."
+        },
+        {
           "form": "شَرّ",
           "meaning": "evil / harm",
-          "difference": "base noun"
+          "difference": "base noun",
+          "relationship": "Existing project-reviewed relationship to the شرر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "مِنْ شَرّ",
           "meaning": "from the harm",
-          "difference": "preposition added"
+          "difference": "preposition added",
+          "relationship": "Existing project-reviewed relationship to the شرر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "شِرَار",
           "meaning": "worst / evil ones",
-          "difference": "related plural"
+          "difference": "related plural",
+          "relationship": "Existing project-reviewed relationship to the شرر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَشَرٌّ",
+          "meaning": "whether evil",
+          "difference": "Compared with شَرِّ, this form changes case: genitive → nominative; state: not marked → indefinite.",
+          "relationship": "Related to the ش ر ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:72:10:4.",
+          "provenance": "Codex-reviewed form for the ش ر ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         }
       ],
-      "takeaway": "The phrase is learned as a unit while the word remains available for comparison elsewhere."
+      "takeaway": "The phrase is learned as a unit while the word remains available for comparison elsewhere.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:113:5:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (113:5:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
     },
     "lesson:ma": {
       "id": "lesson:ma",
-      "meaning": "What / whatever",
+      "meaning": "what",
       "type": "Relative pronoun",
       "root": "",
-      "rootPicture": "No lexical root — a pronoun referring to a thing or action without naming it.",
+      "rootPicture": "No lexical root (relative pronoun) — a pronoun referring to a thing or action without naming it.",
       "construction": "مَا",
       "components": [],
       "grammar": "مَا points to an unspecified thing or action. Here it means ‘what He created,’ linking the description to خَلَقَ.",
@@ -1098,21 +1367,39 @@
       "forms": [
         {
           "form": "مَا",
-          "meaning": "what / whatever",
-          "difference": "relative pronoun"
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:2:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:2:3) was checked as evidence."
         },
         {
           "form": "مَنْ",
           "meaning": "who / whoever",
-          "difference": "usually for people"
+          "difference": "usually for people",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "مَاذَا",
           "meaning": "what?",
-          "difference": "question form"
+          "difference": "question form",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         }
       ],
-      "takeaway": "Rootless grammar words are recognised by the job they do in the sentence."
+      "takeaway": "Rootless grammar words are recognised by the job they do in the sentence.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-34eaa45f2a5b148f reviewed word:113:2:3.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (113:2:3) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:44:10.281Z"
+      }
     },
     "lesson:khalaqa": {
       "id": "lesson:khalaqa",
@@ -1129,33 +1416,65 @@
         {
           "form": "خَلَقَ",
           "meaning": "He created",
-          "difference": "past"
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the خ ل ق root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:113:2:4."
         },
         {
           "form": "يَخْلُقُ",
           "meaning": "He creates",
-          "difference": "present"
+          "difference": "present",
+          "relationship": "Existing project-reviewed relationship to the خلق family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
-          "form": "خَلْق",
-          "meaning": "creation",
-          "difference": "verbal noun"
+          "form": "خَلَقْنَا",
+          "meaning": "We have created",
+          "difference": "Compared with خَلَقَ, this form changes person: third-person masculine singular → first-person plural.",
+          "relationship": "Related to the خ ل ق root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:49:4.",
+          "provenance": "Codex-reviewed form for the خ ل ق family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "خَلَقْتُ",
+          "meaning": "I have created",
+          "difference": "Compared with خَلَقَ, this form changes person: third-person masculine singular → first-person singular.",
+          "relationship": "Related to the خ ل ق root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:56:2.",
+          "provenance": "Codex-reviewed form for the خ ل ق family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "خُلِقُوا۟",
+          "meaning": "they were created",
+          "difference": "Compared with خَلَقَ, this form changes person: third-person masculine singular → not marked; voice: not marked → passive.",
+          "relationship": "Related to the خ ل ق root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:35:2.",
+          "provenance": "Codex-reviewed form for the خ ل ق family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         }
       ],
-      "takeaway": "A concrete action and a root picture work together: creating is bringing something into measured form."
+      "takeaway": "A concrete action and a root picture work together: creating is bringing something into measured form.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:113:2:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (113:2:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
     },
     "lesson:wa": {
       "id": "lesson:wa",
-      "meaning": "And",
+      "meaning": "and from",
       "type": "Attached connector",
       "root": "",
-      "rootPicture": "joining two elements",
+      "rootPicture": "No lexical root (attached connector) — joining two elements",
       "construction": "وَ + word",
       "components": [
         {
           "text": "وَ",
           "label": "and",
-          "meaning": "connector"
+          "meaning": "connector",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
         }
       ],
       "grammar": "The connector is written directly onto the following word.",
@@ -1163,26 +1482,51 @@
       "recognitionClue": "وَ attached to a word commonly contributes ‘and.’",
       "forms": [
         {
+          "form": "وَمِن",
+          "meaning": "and from",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:5:1) was checked as evidence."
+        },
+        {
           "form": "وَٱلنَّاس",
           "meaning": "and humankind",
-          "difference": "وَ added"
+          "difference": "وَ added",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "فَٱلنَّاس",
           "meaning": "so the people",
-          "difference": "فَ added"
+          "difference": "فَ added",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "بِٱلنَّاس",
           "meaning": "with the people",
-          "difference": "بِ added"
+          "difference": "بِ added",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         }
       ],
-      "takeaway": "A small attached word can change the relationship between two otherwise familiar words."
+      "takeaway": "A small attached word can change the relationship between two otherwise familiar words.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "وَمِن is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-34eaa45f2a5b148f reviewed word:113:5:1.",
+          "The item was checked as connector/conjunction; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (113:5:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:44:10.281Z"
+      }
     },
     "lesson:ghasiq": {
       "id": "lesson:ghasiq",
-      "meaning": "Darkness / night",
+      "meaning": "darkness",
       "type": "Noun / active participle",
       "root": "غ س ق",
       "rootPicture": "grow dark · become deep night · enter darkness",
@@ -1193,29 +1537,59 @@
       "recognitionClue": "The غَاسِق pattern points to something characterised by the action of becoming dark.",
       "forms": [
         {
+          "form": "غَاسِقٍ",
+          "meaning": "darkness",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: genitive; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the غسق lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:3:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:3:3) was checked as evidence."
+        },
+        {
           "form": "غَسَقَ",
           "meaning": "it became dark",
-          "difference": "past verb"
+          "difference": "Form I perfect; it states the completed onset or intensification of darkness.",
+          "relationship": "Form I perfect of the غ س ق root; the action from which غَاسِقٌ is derived.",
+          "provenance": "Codex-authored after review of the approved project root meaning, Qur'anic evidence and standard Arabic Form I morphology."
         },
         {
-          "form": "غَاسِق",
-          "meaning": "dark / darkening",
-          "difference": "active participle"
+          "form": "يَغْسِقُ",
+          "meaning": "it becomes dark",
+          "difference": "Form I imperfect, third-person masculine singular; it presents the darkening as ongoing or recurring.",
+          "relationship": "Form I imperfect of the غ س ق root; the ongoing counterpart of غَسَقَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I imperfect morphology."
         },
         {
-          "form": "غَاسِقٍ",
-          "meaning": "of darkness",
-          "difference": "case ending here"
+          "form": "غُسُوقٌ",
+          "meaning": "darkening or onset of darkness",
+          "difference": "Verbal noun; it names the process of becoming dark rather than expressing it as a finite verb.",
+          "relationship": "A genuine verbal noun of the غ س ق root, naming the darkening action.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I verbal-noun morphology."
+        },
+        {
+          "form": "غَسَّاقٌ",
+          "meaning": "an intensely cold or foul fluid",
+          "difference": "Intensive derived noun; the doubled middle radical conveys an intensified result associated with the root’s darkness and severity range.",
+          "relationship": "A genuine intensive derivative of the غ س ق root, attested in Qur'anic usage as غَسَّاقًا.",
+          "provenance": "Codex-authored after review of canonical Qur'anic evidence (78:25), the approved project root meaning and standard Arabic derivational morphology."
         }
       ],
-      "takeaway": "The root picture makes the night’s descent vivid while the pattern turns the action into a describing noun."
+      "takeaway": "The root picture makes the night’s descent vivid while the pattern turns the action into a describing noun.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-34eaa45f2a5b148f reviewed word:113:3:3.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the غسق root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:44:10.281Z"
+      }
     },
     "lesson:idha": {
       "id": "lesson:idha",
-      "meaning": "When",
+      "meaning": "when",
       "type": "Time adverb / conditional connector",
       "root": "",
-      "rootPicture": "No lexical root — a grammar word that introduces the time of an event.",
+      "rootPicture": "No lexical root (time adverb / conditional connector) — a grammar word that introduces the time of an event.",
       "construction": "إِذَا + clause",
       "components": [],
       "grammar": "إِذَا opens a time clause: ‘when it settles’ or ‘when he envies.’ The following verb supplies the event.",
@@ -1224,25 +1598,43 @@
       "forms": [
         {
           "form": "إِذَا",
-          "meaning": "when / whenever",
-          "difference": "time or condition"
+          "meaning": "when",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:5:4) was checked as evidence."
         },
         {
           "form": "إِذْ",
           "meaning": "when",
-          "difference": "past-time connector"
+          "difference": "past-time connector",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "مَتَى",
           "meaning": "when?",
-          "difference": "question word"
+          "difference": "question word",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         }
       ],
-      "takeaway": "The word has no lexical root to memorise; its sentence position is the clue."
+      "takeaway": "The word has no lexical root to memorise; its sentence position is the clue.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "إِذَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-34eaa45f2a5b148f reviewed word:113:5:4.",
+          "The item was checked as connector/conjunction; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (113:5:4) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:44:10.281Z"
+      }
     },
     "lesson:waqaba": {
       "id": "lesson:waqaba",
-      "meaning": "It settles / enters",
+      "meaning": "it settles",
       "type": "Past-tense verb",
       "root": "و ق ب",
       "rootPicture": "enter · settle · fall into darkness",
@@ -1254,25 +1646,55 @@
       "forms": [
         {
           "form": "وَقَبَ",
-          "meaning": "it settled / entered",
-          "difference": "past"
+          "meaning": "it settles",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the وقب lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:3:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:3:5) was checked as evidence."
         },
         {
           "form": "يَقِبُ",
-          "meaning": "it settles / enters",
-          "difference": "present"
+          "meaning": "it settles or enters",
+          "difference": "Form I imperfect; the imperfect prefix presents the entering or settling as ongoing.",
+          "relationship": "Form I imperfect of the و ق ب root; the ongoing counterpart of وَقَبَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning, the existing reviewed project lesson and standard Arabic Form I morphology."
         },
         {
-          "form": "وَقْب",
-          "meaning": "entering / deepening",
-          "difference": "related noun"
+          "form": "وَقْبٌ",
+          "meaning": "an entering or deepening",
+          "difference": "Related noun; it names the event or result of entering or settling rather than expressing it as a finite verb.",
+          "relationship": "A genuine noun of the و ق ب root related to the action وَقَبَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and the existing reviewed project lesson."
+        },
+        {
+          "form": "وُقُوبٌ",
+          "meaning": "entering or settling",
+          "difference": "Verbal noun; it names the process of entering or settling as an event.",
+          "relationship": "A genuine verbal noun of the و ق ب root, related to وَقَبَ and يَقِبُ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I verbal-noun morphology."
+        },
+        {
+          "form": "وَاقِبٌ",
+          "meaning": "entering or settling",
+          "difference": "Active participle; it describes something characterized by entering or settling.",
+          "relationship": "A genuine active participle of the و ق ب root, related to the action وَقَبَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic active-participle morphology."
         }
       ],
-      "takeaway": "The root picture turns the image of night settling into a memorable verb."
+      "takeaway": "The root picture turns the image of night settling into a memorable verb.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-34eaa45f2a5b148f reviewed word:113:3:5.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the وقب root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:44:10.281Z"
+      }
     },
     "lesson:naffathat": {
       "id": "lesson:naffathat",
-      "meaning": "Those who blow",
+      "meaning": "those who blow",
       "type": "Intensive feminine plural active participle",
       "root": "ن ف ث",
       "rootPicture": "blow lightly · breathe onto · release breath",
@@ -1283,29 +1705,59 @@
       "recognitionClue": "Look for the repeated middle consonant and the ـَات ending of a feminine sound plural.",
       "forms": [
         {
+          "form": "ٱلنَّفَّاثَاتِ",
+          "meaning": "those who blow",
+          "difference": "Current Qur'anic occurrence; number: feminine plural; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the نفث lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:4:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:4:3) was checked as evidence."
+        },
+        {
           "form": "نَفَثَ",
           "meaning": "he blew lightly",
-          "difference": "past verb"
+          "difference": "Form I perfect; it describes a completed act of lightly blowing or releasing breath.",
+          "relationship": "Form I perfect of the ن ف ث root; the finite action underlying نَفَّاثٌ.",
+          "provenance": "Codex-authored after review of the approved project root meaning, canonical Qur'anic evidence and standard Arabic Form I morphology."
         },
         {
-          "form": "نَفَّاث",
+          "form": "يَنْفُثُ",
+          "meaning": "he blows lightly",
+          "difference": "Form I imperfect; it presents the blowing as ongoing or repeated.",
+          "relationship": "Form I imperfect of the ن ف ث root; the ongoing counterpart of نَفَثَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I imperfect morphology."
+        },
+        {
+          "form": "نَفْثٌ",
+          "meaning": "light blowing or breath",
+          "difference": "Verbal noun; it names the act of blowing rather than expressing it as a finite verb.",
+          "relationship": "A genuine verbal noun of the ن ف ث root, naming the blowing action.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I verbal-noun morphology."
+        },
+        {
+          "form": "نَفَّاثٌ",
           "meaning": "one who blows repeatedly",
-          "difference": "intensive singular"
-        },
-        {
-          "form": "ٱلنَّفَّاثَات",
-          "meaning": "those who blow",
-          "difference": "definite feminine plural"
+          "difference": "Intensive active participle; the doubled middle radical and agent pattern describe repeated blowing.",
+          "relationship": "A genuine intensive agent form of the ن ف ث root, related to ٱلنَّفَّاثَاتِ.",
+          "provenance": "Codex-authored after review of canonical Qur'anic evidence (113:4) and standard Arabic intensive-agent morphology."
         }
       ],
-      "takeaway": "The pattern keeps the action of blowing visible while the plural ending identifies a group."
+      "takeaway": "The pattern keeps the action of blowing visible while the plural ending identifies a group.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-34eaa45f2a5b148f reviewed word:113:4:3.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the نفث root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:44:10.281Z"
+      }
     },
     "lesson:fi": {
       "id": "lesson:fi",
-      "meaning": "In",
+      "meaning": "in",
       "type": "Preposition",
       "root": "",
-      "rootPicture": "location within something",
+      "rootPicture": "No lexical root (preposition) — location within something",
       "construction": "فِي",
       "components": [],
       "grammar": "The preposition locates the following noun as the place where something occurs.",
@@ -1315,24 +1767,42 @@
         {
           "form": "فِي",
           "meaning": "in",
-          "difference": "preposition"
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:4:4) was checked as evidence."
         },
         {
           "form": "فِيهِ",
           "meaning": "in it",
-          "difference": "attached pronoun"
+          "difference": "attached pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         },
         {
           "form": "فِيهَا",
           "meaning": "in her / it",
-          "difference": "feminine pronoun"
+          "difference": "feminine pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
         }
       ],
-      "takeaway": "Short grammar words become anchors for understanding longer Qur’anic phrases."
+      "takeaway": "Short grammar words become anchors for understanding longer Qur’anic phrases.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "فِي is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-34eaa45f2a5b148f reviewed word:113:4:4.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (113:4:4) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:44:10.281Z"
+      }
     },
     "lesson:uqad": {
       "id": "lesson:uqad",
-      "meaning": "The knots",
+      "meaning": "the knots",
       "type": "Definite broken plural noun",
       "root": "ع ق د",
       "rootPicture": "tie · bind · fasten · make a knot",
@@ -1343,26 +1813,56 @@
       "recognitionClue": "عُقَد is the broken plural of عُقْدَة; the plural changes the internal vowels rather than adding a regular ending.",
       "forms": [
         {
-          "form": "عَقَدَ",
-          "meaning": "he tied",
-          "difference": "past verb"
-        },
-        {
-          "form": "عُقْدَة",
-          "meaning": "a knot",
-          "difference": "singular noun"
-        },
-        {
-          "form": "ٱلْعُقَد",
+          "form": "ٱلْعُقَدِ",
           "meaning": "the knots",
-          "difference": "definite broken plural"
+          "difference": "Current Qur'anic occurrence; number: masculine plural; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the عقد lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:4:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:4:5) was checked as evidence."
+        },
+        {
+          "form": "عَقَدَ",
+          "meaning": "he tied or bound",
+          "difference": "Form I perfect; it states the completed act of tying or binding.",
+          "relationship": "Form I perfect of the ع ق د root; the action underlying عُقْدَةٌ and ٱلْعُقَدِ.",
+          "provenance": "Codex-authored after review of the approved project root meaning, canonical Qur'anic evidence and standard Arabic Form I morphology."
+        },
+        {
+          "form": "يَعْقِدُ",
+          "meaning": "he ties or binds",
+          "difference": "Form I imperfect; it presents the tying or binding as ongoing or repeated.",
+          "relationship": "Form I imperfect of the ع ق د root; the ongoing counterpart of عَقَدَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I imperfect morphology."
+        },
+        {
+          "form": "عُقْدَةٌ",
+          "meaning": "a knot",
+          "difference": "Singular noun; it names one tied knot, while ٱلْعُقَدِ is the broken plural.",
+          "relationship": "The singular noun corresponding to the broken plural ٱلْعُقَدِ in the ع ق د family.",
+          "provenance": "Codex-authored after review of the approved project root meaning and canonical Qur'anic evidence (20:27 and 2:235)."
+        },
+        {
+          "form": "عَقْدٌ",
+          "meaning": "binding or a contract",
+          "difference": "Verbal noun/noun; it names the act or result of binding rather than the individual knot.",
+          "relationship": "A genuine verbal noun/noun of the ع ق د root, related to tying, binding and contracting.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic derivational morphology."
         }
       ],
-      "takeaway": "The root picture of tying gives a concrete memory hook for the broken plural."
+      "takeaway": "The root picture of tying gives a concrete memory hook for the broken plural.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-34eaa45f2a5b148f reviewed word:113:4:5.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the عقد root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:44:10.281Z"
+      }
     },
     "lesson:hasid": {
       "id": "lesson:hasid",
-      "meaning": "An envier",
+      "meaning": "an envier",
       "type": "Active participle",
       "root": "ح س د",
       "rootPicture": "envy · wish another’s blessing away",
@@ -1373,26 +1873,56 @@
       "recognitionClue": "The ا after the first consonant is a familiar active-participle shape: one who performs the action.",
       "forms": [
         {
-          "form": "حَسَدَ",
-          "meaning": "he envied",
-          "difference": "past verb"
-        },
-        {
-          "form": "حَاسِد",
-          "meaning": "envier",
-          "difference": "active participle"
-        },
-        {
           "form": "حَاسِدٍ",
-          "meaning": "of an envier",
-          "difference": "case ending here"
+          "meaning": "an envier",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: genitive; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the حسد lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:5:3) was checked as evidence."
+        },
+        {
+          "form": "حَسَدَ",
+          "meaning": "he envies",
+          "difference": "Compared with حَاسِدٍ, this form changes gender: masculine → not marked; state: indefinite → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Current Qur'anic occurrence of the حسد lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:5:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:5:5) was checked as evidence."
+        },
+        {
+          "form": "يَحْسُدُ",
+          "meaning": "he envies",
+          "difference": "Form I imperfect; it presents envying as ongoing or habitual.",
+          "relationship": "Form I imperfect of the ح س د root; the ongoing counterpart of حَسَدَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I imperfect morphology."
+        },
+        {
+          "form": "حَسَادَةٌ",
+          "meaning": "envy",
+          "difference": "Derived noun; it names the enduring quality or feeling of envy rather than the person who performs it.",
+          "relationship": "A genuine noun of the ح س د root, related to the verb حَسَدَ and the agent noun حَاسِدٌ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic derivational morphology."
+        },
+        {
+          "form": "مَحْسُودٌ",
+          "meaning": "envied",
+          "difference": "Passive participle; it describes the person or thing that is the object of envy.",
+          "relationship": "A genuine passive-participle relationship to the ح س د root, contrasting the envier with the envied.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic passive-participle morphology."
         }
       ],
-      "takeaway": "The root and participle pattern make the person and the action easy to connect."
+      "takeaway": "The root and participle pattern make the person and the action easy to connect.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-34eaa45f2a5b148f reviewed word:113:5:3.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the حسد root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:44:10.281Z"
+      }
     },
     "lesson:hasada": {
       "id": "lesson:hasada",
-      "meaning": "He envies",
+      "meaning": "he envies",
       "type": "Past-tense verb",
       "root": "ح س د",
       "rootPicture": "envy · wish another’s blessing away",
@@ -1404,22 +1934,54 @@
       "forms": [
         {
           "form": "حَسَدَ",
-          "meaning": "he envied",
-          "difference": "past"
+          "meaning": "he envies",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the حسد lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:5:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:5:5) was checked as evidence."
+        },
+        {
+          "form": "حَاسِدٍ",
+          "meaning": "an envier",
+          "difference": "Compared with حَسَدَ, this form changes tense: perfect verb → not marked; person: third-person masculine singular → not marked; partofspeech: verb → noun/pronoun; gender: not marked → masculine.",
+          "relationship": "Current Qur'anic occurrence of the حسد lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:113:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (113:5:3) was checked as evidence."
         },
         {
           "form": "يَحْسُدُ",
           "meaning": "he envies",
-          "difference": "present"
+          "difference": "Form I imperfect; it presents envying as ongoing or habitual.",
+          "relationship": "Form I imperfect of the ح س د root; the ongoing counterpart of حَسَدَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic Form I imperfect morphology."
         },
         {
-          "form": "حَاسِد",
-          "meaning": "envier",
-          "difference": "active participle"
+          "form": "حَسَادَةٌ",
+          "meaning": "envy",
+          "difference": "Derived noun; it names the enduring quality or feeling of envy rather than the person who performs it.",
+          "relationship": "A genuine noun of the ح س د root, related to the verb حَسَدَ and the agent noun حَاسِدٌ.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic derivational morphology."
+        },
+        {
+          "form": "مَحْسُودٌ",
+          "meaning": "envied",
+          "difference": "Passive participle; it describes the person or thing that is the object of envy.",
+          "relationship": "A genuine passive-participle relationship to the ح س د root, contrasting the envier with the envied.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Arabic passive-participle morphology."
         }
       ],
-      "takeaway": "The same root appears in حَاسِدٍ, connecting the person to the action."
+      "takeaway": "The same root appears in حَاسِدٍ, connecting the person to the action.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-34eaa45f2a5b148f reviewed word:113:5:5.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the حسد root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T12:44:10.281Z"
+      }
     }
   },
-  "volumeReferences": ["volume:final-six-surahs"]
+  "volumeReferences": [
+    "volume:final-six-surahs"
+  ]
 }
