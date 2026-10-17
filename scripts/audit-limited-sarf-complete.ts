@@ -553,6 +553,127 @@ function curatedCandidates(root: string): Candidate[] {
         lexicalKey: "محسود",
       },
     ],
+    ["صمد"]: [
+      {
+        form: "صَمَدَ",
+        meaning: "he stood firm or persisted",
+        difference:
+          "Form I perfect; it describes a completed act or state of standing firm, persisting or holding toward a goal.",
+        relationship:
+          "Form I perfect of the ص م د root; its firmness and deliberate orientation are part of the semantic range behind ٱلصَّمَدُ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form I morphology.",
+        featureSignal: ["pattern:form-1", "tense:perfect", "partofspeech:verb"],
+        baseDistinct: true,
+        lexicalKey: "صمد",
+      },
+      {
+        form: "يَصْمُدُ",
+        meaning: "he stands firm or persists",
+        difference:
+          "Form I imperfect, third-person masculine singular; the imperfect form presents firmness or persistence as ongoing.",
+        relationship:
+          "Form I imperfect of the ص م د root; it is the ongoing counterpart of صَمَدَ.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form I imperfect morphology.",
+        featureSignal: ["pattern:form-1", "tense:imperfect", "person:third-person"],
+        baseDistinct: true,
+        lexicalKey: "يصمد",
+      },
+      {
+        form: "صُمُودٌ",
+        meaning: "steadfastness or persistence",
+        difference:
+          "Verbal noun; it names the quality or act of standing firm rather than expressing it as a finite verb.",
+        relationship:
+          "A genuine verbal noun of the ص م د root, naming the firmness and persistence associated with the family.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic derivational morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "صمود",
+      },
+      {
+        form: "صَامِدٌ",
+        meaning: "steadfast or one who stands firm",
+        difference:
+          "Active participle; it describes a person or thing characterized by standing firm or persisting.",
+        relationship:
+          "A genuine active-participle form of the ص م د root, connecting the root's firmness to a described agent or state.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "derivation:agent-or-descriptor"],
+        baseDistinct: true,
+        lexicalKey: "صامد",
+      },
+    ],
+    ["كفأ"]: [
+      {
+        form: "كُفْءٌ",
+        meaning: "an equal or match",
+        difference:
+          "Basic noun/adjective; it names someone or something equal or suitable as a counterpart, without the Qur'anic accusative ending.",
+        relationship:
+          "A genuine base noun/adjective of the ك ف أ family, directly related in meaning to كُفُوًا.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and the existing reviewed project row.",
+        featureSignal: ["partofspeech:noun/adjective", "derivation:base-form"],
+        baseDistinct: true,
+        lexicalKey: "كفء",
+      },
+      {
+        form: "أَكْفَاءُ",
+        meaning: "equals or peers",
+        difference:
+          "Broken plural; it refers to multiple equals or peers rather than one equal in the current occurrence.",
+        relationship:
+          "The established broken plural of the ك ف أ noun/adjective family.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and the existing reviewed project row.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "اكفاء",
+      },
+      {
+        form: "تَكَافَأَ",
+        meaning: "they matched or were equal",
+        difference:
+          "Form VI perfect; the reciprocal pattern presents two or more sides as matching or being equal to one another.",
+        relationship:
+          "A genuine Form VI reciprocal verb of the ك ف أ root, extending the equality relationship into an action between counterparts.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form VI morphology.",
+        featureSignal: ["pattern:form-6", "tense:perfect", "voice:reciprocal"],
+        baseDistinct: true,
+        lexicalKey: "تكافأ",
+      },
+      {
+        form: "كَافَأَ",
+        meaning: "he matched or rewarded in return",
+        difference:
+          "Form III perfect; the reciprocal-facing pattern expresses responding to another with an equivalent act, including matching or recompensing.",
+        relationship:
+          "A genuine Form III verb of the ك ف أ root, showing how the equality sense develops into reciprocal matching or recompense.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form III morphology.",
+        featureSignal: ["pattern:form-3", "tense:perfect", "voice:reciprocal-facing"],
+        baseDistinct: true,
+        lexicalKey: "كافأ",
+      },
+      {
+        form: "تَكَافُؤٌ",
+        meaning: "equivalence or mutual equality",
+        difference:
+          "Verbal noun of the reciprocal pattern; it names the state or relationship of being equal rather than expressing a finite verb.",
+        relationship:
+          "The genuine Form VI verbal noun of تَكَافَأَ, retaining the ك ف أ meaning of equivalence and matching.",
+        provenance:
+          "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form VI verbal-noun morphology.",
+        featureSignal: ["pattern:form-6", "partofspeech:verbal-noun", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "تكافؤ",
+      },
+    ],
   };
   return (families[root] ?? []).map((candidate) => ({
     ...candidate,
