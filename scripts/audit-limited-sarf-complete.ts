@@ -2585,6 +2585,19 @@ function curatedCandidates(root: string): Candidate[] {
         baseDistinct: true,
         lexicalKey: "مطلع",
       },
+      {
+        form: "مَطْلِعٌ",
+        meaning: "place of rising or sunrise",
+        difference:
+          "Noun of place with the مَفْعِل pattern; it contrasts with مَطْلَعٌ and the current مَطْلَعِ by the internal vowel and is attested for the rising-place sense.",
+        relationship:
+          "A genuine Qur'anic noun of the ط ل ع family, attested as مَطْلِعَ الشَّمْسِ in Qur'an 18:90.",
+        provenance:
+          "Codex-authored after review of Quranic Arabic Corpus occurrence 18:90:4, which distinguishes مَطْلِع from the current مَطْلَعِ.",
+        featureSignal: ["partofspeech:noun", "derivation:place-noun", "pattern:maf-il"],
+        baseDistinct: true,
+        lexicalKey: "مطلع-i",
+      },
     ],
     ["وصد"]: [
       {

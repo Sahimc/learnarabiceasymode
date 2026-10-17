@@ -7,10 +7,10 @@
     "arabicName": "القدر",
     "transliteration": "Al-Qadr",
     "englishLabel": "The Power",
-    "description": "Canonical source layer; custom teaching is not yet authored."
+    "description": "Reviewed Word Tree teaching layer."
   },
-  "contentVersion": "tanzil-1.1",
-  "status": "source-only",
+  "contentVersion": "tanzil-1.1+teaching-97-v1-sarf-1.2-limited-audit",
+  "status": "custom-complete",
   "sourceReferences": [
     {
       "provider": "tanzil",
@@ -23,64 +23,12 @@
     {
       "id": "ayah:97:1",
       "number": 1,
-      "arabic": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "arabic": "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
       "sourceRawArabic": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
       "words": [
         {
           "id": "word:97:1:1",
           "position": 1,
-          "arabic": "بِّسْمِ",
-          "sourceReferences": [
-            {
-              "provider": "tanzil",
-              "recordKey": "97:1",
-              "version": "1.1",
-              "attribution": "Tanzil Project"
-            }
-          ]
-        },
-        {
-          "id": "word:97:1:2",
-          "position": 2,
-          "arabic": "ٱللَّهِ",
-          "sourceReferences": [
-            {
-              "provider": "tanzil",
-              "recordKey": "97:1",
-              "version": "1.1",
-              "attribution": "Tanzil Project"
-            }
-          ]
-        },
-        {
-          "id": "word:97:1:3",
-          "position": 3,
-          "arabic": "ٱلرَّحْمَـٰنِ",
-          "sourceReferences": [
-            {
-              "provider": "tanzil",
-              "recordKey": "97:1",
-              "version": "1.1",
-              "attribution": "Tanzil Project"
-            }
-          ]
-        },
-        {
-          "id": "word:97:1:4",
-          "position": 4,
-          "arabic": "ٱلرَّحِيمِ",
-          "sourceReferences": [
-            {
-              "provider": "tanzil",
-              "recordKey": "97:1",
-              "version": "1.1",
-              "attribution": "Tanzil Project"
-            }
-          ]
-        },
-        {
-          "id": "word:97:1:5",
-          "position": 5,
           "arabic": "إِنَّآ",
           "sourceReferences": [
             {
@@ -89,11 +37,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "Indeed, We",
+          "teachingId": "lesson:97:1:1",
+          "occurrenceRole": "Emphasis marks the certainty of the Qur'an's descent.",
+          "breakdown": {
+            "id": "breakdown:word:97:1:1",
+            "mode": "segmented",
+            "sourceText": "إِنَّآ",
+            "parts": [
+              {
+                "id": "word:97:1:1:part:1",
+                "order": 1,
+                "sourceText": "إِنَّ",
+                "displayText": "إِنَّ",
+                "label": "pronoun",
+                "meaning": "an attached pronoun",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (particle)"
+              },
+              {
+                "id": "word:97:1:1:part:2",
+                "order": 2,
+                "sourceText": "آ",
+                "displayText": "آ",
+                "label": "We",
+                "meaning": "a rootless pronoun component",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
-          "id": "word:97:1:6",
-          "position": 6,
+          "id": "word:97:1:2",
+          "position": 2,
           "arabic": "أَنزَلْنَـٰهُ",
           "sourceReferences": [
             {
@@ -102,11 +82,32 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "We sent it down",
+          "teachingId": "lesson:97:1:2",
+          "occurrenceRole": "The verb carries the act of sending down, while its subject is We and its object is it.",
+          "breakdown": {
+            "id": "breakdown:word:97:1:2",
+            "mode": "atomic",
+            "sourceText": "أَنزَلْنَـٰهُ",
+            "parts": [
+              {
+                "id": "word:97:1:2:part:1",
+                "order": 1,
+                "sourceText": "أَنزَلْنَـٰهُ",
+                "displayText": "أَنزَلْنَـٰهُ",
+                "label": "We sent it down",
+                "meaning": "The verb carries the act of sending down, while its subject is We and its object is it.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ن ز ل"
+              }
+            ]
+          }
         },
         {
-          "id": "word:97:1:7",
-          "position": 7,
+          "id": "word:97:1:3",
+          "position": 3,
           "arabic": "فِى",
           "sourceReferences": [
             {
@@ -115,11 +116,32 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "in / during",
+          "teachingId": "lesson:97:1:3",
+          "occurrenceRole": "The preposition places the descent within the Night of Decree.",
+          "breakdown": {
+            "id": "breakdown:word:97:1:3",
+            "mode": "atomic",
+            "sourceText": "فِى",
+            "parts": [
+              {
+                "id": "word:97:1:3:part:1",
+                "order": 1,
+                "sourceText": "فِى",
+                "displayText": "فِى",
+                "label": "pronoun",
+                "meaning": "an attached pronoun",
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (grammatical component)"
+              }
+            ]
+          }
         },
         {
-          "id": "word:97:1:8",
-          "position": 8,
+          "id": "word:97:1:4",
+          "position": 4,
           "arabic": "لَيْلَةِ",
           "sourceReferences": [
             {
@@ -128,11 +150,32 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the night",
+          "teachingId": "lesson:97:1:4",
+          "occurrenceRole": "The noun names the night in which the Qur'an was sent down.",
+          "breakdown": {
+            "id": "breakdown:word:97:1:4",
+            "mode": "atomic",
+            "sourceText": "لَيْلَةِ",
+            "parts": [
+              {
+                "id": "word:97:1:4:part:1",
+                "order": 1,
+                "sourceText": "لَيْلَةِ",
+                "displayText": "لَيْلَةِ",
+                "label": "the night",
+                "meaning": "The noun names the night in which the Qur'an was sent down.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ل ي ل"
+              }
+            ]
+          }
         },
         {
-          "id": "word:97:1:9",
-          "position": 9,
+          "id": "word:97:1:5",
+          "position": 5,
           "arabic": "ٱلْقَدْرِ",
           "sourceReferences": [
             {
@@ -141,9 +184,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the Decree",
+          "teachingId": "lesson:97:1:5",
+          "occurrenceRole": "The article makes the noun definite: the uniquely honored Decree.",
+          "breakdown": {
+            "id": "breakdown:word:97:1:5",
+            "mode": "segmented",
+            "sourceText": "ٱلْقَدْرِ",
+            "parts": [
+              {
+                "id": "word:97:1:5:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article prefix",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:97:1:5:part:2",
+                "order": 2,
+                "sourceText": "قَدْرِ",
+                "displayText": "قَدْرِ",
+                "label": "decree",
+                "meaning": "The article makes the noun definite: the uniquely honored Decree.",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ق د ر"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Indeed, We sent the Qur'an down during the Night of Decree.",
+      "naturalMeaning": "Allah describes the Qur'an's descent during the honored Night of Decree."
     },
     {
       "id": "ayah:97:2",
@@ -162,7 +239,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "and what",
+          "teachingId": "lesson:97:2:1",
+          "occurrenceRole": "The connector continues the question, while the fixed particle asks what can make this known.",
+          "breakdown": {
+            "id": "breakdown:word:97:2:1",
+            "mode": "segmented",
+            "sourceText": "وَمَآ",
+            "parts": [
+              {
+                "id": "word:97:2:1:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَ",
+                "label": "and",
+                "meaning": "a connecting conjunction",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:97:2:1:part:2",
+                "order": 2,
+                "sourceText": "مَآ",
+                "displayText": "مَآ",
+                "label": "pronoun",
+                "meaning": "an attached pronoun",
+                "kind": "prefix",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:2:2",
@@ -175,7 +284,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "make you know",
+          "teachingId": "lesson:97:2:2",
+          "occurrenceRole": "The verb asks what could bring the reality of the Night of Decree to the listener's knowledge.",
+          "breakdown": {
+            "id": "breakdown:word:97:2:2",
+            "mode": "segmented",
+            "sourceText": "أَدْرَىٰكَ",
+            "parts": [
+              {
+                "id": "word:97:2:2:part:1",
+                "order": 1,
+                "sourceText": "أَدْرَىٰ",
+                "displayText": "أَدْرَىٰ",
+                "label": "make know",
+                "meaning": "The verb asks what could bring the reality of the Night of Decree to the listener's knowledge.",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "د ر ي"
+              },
+              {
+                "id": "word:97:2:2:part:2",
+                "order": 2,
+                "sourceText": "كَ",
+                "displayText": "كَ",
+                "label": "you",
+                "meaning": "a rootless pronoun component",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:2:3",
@@ -188,7 +329,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "what",
+          "teachingId": "lesson:97:2:3",
+          "occurrenceRole": "This fixed question word introduces the explanation that follows.",
+          "breakdown": {
+            "id": "breakdown:word:97:2:3",
+            "mode": "atomic",
+            "sourceText": "مَا",
+            "parts": [
+              {
+                "id": "word:97:2:3:part:1",
+                "order": 1,
+                "sourceText": "مَا",
+                "displayText": "مَا",
+                "label": "pronoun",
+                "meaning": "an attached pronoun",
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (grammatical component)"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:2:4",
@@ -201,7 +363,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the night",
+          "teachingId": "lesson:97:2:4",
+          "occurrenceRole": "The noun repeats the subject of the question in the nominative form.",
+          "breakdown": {
+            "id": "breakdown:word:97:2:4",
+            "mode": "atomic",
+            "sourceText": "لَيْلَةُ",
+            "parts": [
+              {
+                "id": "word:97:2:4:part:1",
+                "order": 1,
+                "sourceText": "لَيْلَةُ",
+                "displayText": "لَيْلَةُ",
+                "label": "the night",
+                "meaning": "The noun repeats the subject of the question in the nominative form.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ل ي ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:2:5",
@@ -214,9 +397,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the Decree",
+          "teachingId": "lesson:97:2:5",
+          "occurrenceRole": "The definite noun identifies the same exceptional Night of Decree.",
+          "breakdown": {
+            "id": "breakdown:word:97:2:5",
+            "mode": "segmented",
+            "sourceText": "ٱلْقَدْرِ",
+            "parts": [
+              {
+                "id": "word:97:2:5:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article prefix",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:97:2:5:part:2",
+                "order": 2,
+                "sourceText": "قَدْرِ",
+                "displayText": "قَدْرِ",
+                "label": "decree",
+                "meaning": "The definite noun identifies the same exceptional Night of Decree.",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ق د ر"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "And what can make you know what is the Night of Decree?",
+      "naturalMeaning": "The question highlights that the Night of Decree is beyond ordinary human estimation."
     },
     {
       "id": "ayah:97:3",
@@ -235,7 +452,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "The night",
+          "teachingId": "lesson:97:3:1",
+          "occurrenceRole": "The noun begins the comparison by naming the Night of Decree.",
+          "breakdown": {
+            "id": "breakdown:word:97:3:1",
+            "mode": "atomic",
+            "sourceText": "لَيْلَةُ",
+            "parts": [
+              {
+                "id": "word:97:3:1:part:1",
+                "order": 1,
+                "sourceText": "لَيْلَةُ",
+                "displayText": "لَيْلَةُ",
+                "label": "The night",
+                "meaning": "The noun begins the comparison by naming the Night of Decree.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ل ي ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:3:2",
@@ -248,7 +486,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "of Decree",
+          "teachingId": "lesson:97:3:2",
+          "occurrenceRole": "The genitive phrase completes the name Night of Decree.",
+          "breakdown": {
+            "id": "breakdown:word:97:3:2",
+            "mode": "segmented",
+            "sourceText": "ٱلْقَدْرِ",
+            "parts": [
+              {
+                "id": "word:97:3:2:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article prefix",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:97:3:2:part:2",
+                "order": 2,
+                "sourceText": "قَدْرِ",
+                "displayText": "قَدْرِ",
+                "label": "decree",
+                "meaning": "The genitive phrase completes the name Night of Decree.",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ق د ر"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:3:3",
@@ -261,7 +531,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "better",
+          "teachingId": "lesson:97:3:3",
+          "occurrenceRole": "The root expresses goodness, here in the comparative meaning better.",
+          "breakdown": {
+            "id": "breakdown:word:97:3:3",
+            "mode": "atomic",
+            "sourceText": "خَيْرٌ",
+            "parts": [
+              {
+                "id": "word:97:3:3:part:1",
+                "order": 1,
+                "sourceText": "خَيْرٌ",
+                "displayText": "خَيْرٌ",
+                "label": "better",
+                "meaning": "The root expresses goodness, here in the comparative meaning better.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "خ ي ر"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:3:4",
@@ -274,7 +565,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "than",
+          "teachingId": "lesson:97:3:4",
+          "occurrenceRole": "The preposition introduces the standard of comparison.",
+          "breakdown": {
+            "id": "breakdown:word:97:3:4",
+            "mode": "atomic",
+            "sourceText": "مِّنْ",
+            "parts": [
+              {
+                "id": "word:97:3:4:part:1",
+                "order": 1,
+                "sourceText": "مِّنْ",
+                "displayText": "مِّنْ",
+                "label": "in / from / than",
+                "meaning": "a preposition",
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:3:5",
@@ -287,7 +599,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "a thousand",
+          "teachingId": "lesson:97:3:5",
+          "occurrenceRole": "The number sets the immense comparison used for the Night of Decree.",
+          "breakdown": {
+            "id": "breakdown:word:97:3:5",
+            "mode": "atomic",
+            "sourceText": "أَلْفِ",
+            "parts": [
+              {
+                "id": "word:97:3:5:part:1",
+                "order": 1,
+                "sourceText": "أَلْفِ",
+                "displayText": "أَلْفِ",
+                "label": "a thousand",
+                "meaning": "The number sets the immense comparison used for the Night of Decree.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "أ ل ف"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:3:6",
@@ -300,9 +633,32 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "months",
+          "teachingId": "lesson:97:3:6",
+          "occurrenceRole": "The noun names the months used as the comparison's measure.",
+          "breakdown": {
+            "id": "breakdown:word:97:3:6",
+            "mode": "atomic",
+            "sourceText": "شَهْرٍ",
+            "parts": [
+              {
+                "id": "word:97:3:6:part:1",
+                "order": 1,
+                "sourceText": "شَهْرٍ",
+                "displayText": "شَهْرٍ",
+                "label": "months",
+                "meaning": "The noun names the months used as the comparison's measure.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ش ه ر"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "The Night of Decree is better than a thousand months.",
+      "naturalMeaning": "That night surpasses a thousand months in goodness and value."
     },
     {
       "id": "ayah:97:4",
@@ -321,7 +677,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "descend",
+          "teachingId": "lesson:97:4:1",
+          "occurrenceRole": "The imperfect verb presents the angels' descent as an unfolding event.",
+          "breakdown": {
+            "id": "breakdown:word:97:4:1",
+            "mode": "atomic",
+            "sourceText": "تَنَزَّلُ",
+            "parts": [
+              {
+                "id": "word:97:4:1:part:1",
+                "order": 1,
+                "sourceText": "تَنَزَّلُ",
+                "displayText": "تَنَزَّلُ",
+                "label": "descend",
+                "meaning": "The imperfect verb presents the angels' descent as an unfolding event.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ن ز ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:4:2",
@@ -334,7 +711,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the angels",
+          "teachingId": "lesson:97:4:2",
+          "occurrenceRole": "The article and plural noun identify the angels who descend.",
+          "breakdown": {
+            "id": "breakdown:word:97:4:2",
+            "mode": "segmented",
+            "sourceText": "ٱلْمَلَـٰٓئِكَةُ",
+            "parts": [
+              {
+                "id": "word:97:4:2:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article prefix",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:97:4:2:part:2",
+                "order": 2,
+                "sourceText": "مَلَـٰٓئِكَةُ",
+                "displayText": "مَلَـٰٓئِكَةُ",
+                "label": "angels",
+                "meaning": "The article and plural noun identify the angels who descend.",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "م ل ك"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:4:3",
@@ -347,7 +756,50 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "and the Spirit",
+          "teachingId": "lesson:97:4:3",
+          "occurrenceRole": "The connector joins the Spirit with the angels in the descent.",
+          "breakdown": {
+            "id": "breakdown:word:97:4:3",
+            "mode": "segmented",
+            "sourceText": "وَٱلرُّوحُ",
+            "parts": [
+              {
+                "id": "word:97:4:3:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَ",
+                "label": "and",
+                "meaning": "a connecting conjunction",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:97:4:3:part:2",
+                "order": 2,
+                "sourceText": "ٱل",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article prefix",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:97:4:3:part:3",
+                "order": 3,
+                "sourceText": "رُّوحُ",
+                "displayText": "رُّوحُ",
+                "label": "Spirit",
+                "meaning": "The connector joins the Spirit with the angels in the descent.",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ر و ح"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:4:4",
@@ -360,7 +812,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "therein",
+          "teachingId": "lesson:97:4:4",
+          "occurrenceRole": "The preposition and pronoun refer back to the Night of Decree.",
+          "breakdown": {
+            "id": "breakdown:word:97:4:4",
+            "mode": "segmented",
+            "sourceText": "فِيهَا",
+            "parts": [
+              {
+                "id": "word:97:4:4:part:1",
+                "order": 1,
+                "sourceText": "فِي",
+                "displayText": "فِي",
+                "label": "in / from / than",
+                "meaning": "a preposition",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              },
+              {
+                "id": "word:97:4:4:part:2",
+                "order": 2,
+                "sourceText": "هَا",
+                "displayText": "هَا",
+                "label": "her / it",
+                "meaning": "a rootless pronoun component",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:4:5",
@@ -373,7 +857,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "by permission",
+          "teachingId": "lesson:97:4:5",
+          "occurrenceRole": "The prefixed بِ marks the means or condition: by the permission.",
+          "breakdown": {
+            "id": "breakdown:word:97:4:5",
+            "mode": "segmented",
+            "sourceText": "بِإِذْنِ",
+            "parts": [
+              {
+                "id": "word:97:4:5:part:1",
+                "order": 1,
+                "sourceText": "بِ",
+                "displayText": "بِ",
+                "label": "by / with / in",
+                "meaning": "a preposition",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              },
+              {
+                "id": "word:97:4:5:part:2",
+                "order": 2,
+                "sourceText": "إِذْنِ",
+                "displayText": "إِذْنِ",
+                "label": "permission",
+                "meaning": "The prefixed بِ marks the means or condition: by the permission.",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "أ ذ ن"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:4:6",
@@ -386,7 +902,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "their Lord",
+          "teachingId": "lesson:97:4:6",
+          "occurrenceRole": "The noun names their Lord and the attached pronoun identifies the angels' relationship.",
+          "breakdown": {
+            "id": "breakdown:word:97:4:6",
+            "mode": "segmented",
+            "sourceText": "رَبِّهِم",
+            "parts": [
+              {
+                "id": "word:97:4:6:part:1",
+                "order": 1,
+                "sourceText": "رَبِّ",
+                "displayText": "رَبِّ",
+                "label": "Lord",
+                "meaning": "The noun names their Lord and the attached pronoun identifies the angels' relationship.",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ر ب ب"
+              },
+              {
+                "id": "word:97:4:6:part:2",
+                "order": 2,
+                "sourceText": "هِم",
+                "displayText": "هِم",
+                "label": "their",
+                "meaning": "a rootless pronoun component",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:4:7",
@@ -399,7 +947,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "for / concerning",
+          "teachingId": "lesson:97:4:7",
+          "occurrenceRole": "The preposition links the descent to every matter that follows.",
+          "breakdown": {
+            "id": "breakdown:word:97:4:7",
+            "mode": "atomic",
+            "sourceText": "مِّن",
+            "parts": [
+              {
+                "id": "word:97:4:7:part:1",
+                "order": 1,
+                "sourceText": "مِّن",
+                "displayText": "مِّن",
+                "label": "in / from / than",
+                "meaning": "a preposition",
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:4:8",
@@ -412,7 +981,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "every",
+          "teachingId": "lesson:97:4:8",
+          "occurrenceRole": "The noun gives the phrase its comprehensive meaning: every matter.",
+          "breakdown": {
+            "id": "breakdown:word:97:4:8",
+            "mode": "atomic",
+            "sourceText": "كُلِّ",
+            "parts": [
+              {
+                "id": "word:97:4:8:part:1",
+                "order": 1,
+                "sourceText": "كُلِّ",
+                "displayText": "كُلِّ",
+                "label": "every",
+                "meaning": "The noun gives the phrase its comprehensive meaning: every matter.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ك ل ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:4:9",
@@ -425,9 +1015,32 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "matter",
+          "teachingId": "lesson:97:4:9",
+          "occurrenceRole": "The noun names each matter carried out by divine permission.",
+          "breakdown": {
+            "id": "breakdown:word:97:4:9",
+            "mode": "atomic",
+            "sourceText": "أَمْرٍ",
+            "parts": [
+              {
+                "id": "word:97:4:9:part:1",
+                "order": 1,
+                "sourceText": "أَمْرٍ",
+                "displayText": "أَمْرٍ",
+                "label": "matter",
+                "meaning": "The noun names each matter carried out by divine permission.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "أ م ر"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "The angels and the Spirit descend therein by permission of their Lord for every matter.",
+      "naturalMeaning": "The angels and the Spirit descend with every matter by their Lord's permission."
     },
     {
       "id": "ayah:97:5",
@@ -446,7 +1059,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "peace",
+          "teachingId": "lesson:97:5:1",
+          "occurrenceRole": "The noun announces peace as the defining condition of the night.",
+          "breakdown": {
+            "id": "breakdown:word:97:5:1",
+            "mode": "atomic",
+            "sourceText": "سَلَـٰمٌ",
+            "parts": [
+              {
+                "id": "word:97:5:1:part:1",
+                "order": 1,
+                "sourceText": "سَلَـٰمٌ",
+                "displayText": "سَلَـٰمٌ",
+                "label": "peace",
+                "meaning": "The noun announces peace as the defining condition of the night.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "س ل م"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:5:2",
@@ -459,7 +1093,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "it is",
+          "teachingId": "lesson:97:5:2",
+          "occurrenceRole": "The pronoun identifies the night as peace itself.",
+          "breakdown": {
+            "id": "breakdown:word:97:5:2",
+            "mode": "atomic",
+            "sourceText": "هِىَ",
+            "parts": [
+              {
+                "id": "word:97:5:2:part:1",
+                "order": 1,
+                "sourceText": "هِىَ",
+                "displayText": "هِىَ",
+                "label": "it / she",
+                "meaning": "a rootless pronoun component",
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:5:3",
@@ -472,7 +1127,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "until",
+          "teachingId": "lesson:97:5:3",
+          "occurrenceRole": "The particle sets the endpoint of the peace: the emergence of dawn.",
+          "breakdown": {
+            "id": "breakdown:word:97:5:3",
+            "mode": "atomic",
+            "sourceText": "حَتَّىٰ",
+            "parts": [
+              {
+                "id": "word:97:5:3:part:1",
+                "order": 1,
+                "sourceText": "حَتَّىٰ",
+                "displayText": "حَتَّىٰ",
+                "label": "pronoun",
+                "meaning": "an attached pronoun",
+                "kind": "whole",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (grammatical component)"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:5:4",
@@ -485,7 +1161,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the emergence",
+          "teachingId": "lesson:97:5:4",
+          "occurrenceRole": "The noun marks the appearance or rising of dawn.",
+          "breakdown": {
+            "id": "breakdown:word:97:5:4",
+            "mode": "atomic",
+            "sourceText": "مَطْلَعِ",
+            "parts": [
+              {
+                "id": "word:97:5:4:part:1",
+                "order": 1,
+                "sourceText": "مَطْلَعِ",
+                "displayText": "مَطْلَعِ",
+                "label": "the emergence",
+                "meaning": "The noun marks the appearance or rising of dawn.",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ط ل ع"
+              }
+            ]
+          }
         },
         {
           "id": "word:97:5:5",
@@ -498,11 +1195,2186 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "dawn",
+          "teachingId": "lesson:97:5:5",
+          "occurrenceRole": "The definite noun names the dawn that ends the night.",
+          "breakdown": {
+            "id": "breakdown:word:97:5:5",
+            "mode": "segmented",
+            "sourceText": "ٱلْفَجْرِ",
+            "parts": [
+              {
+                "id": "word:97:5:5:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article prefix",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:97:5:5:part:2",
+                "order": 2,
+                "sourceText": "فَجْرِ",
+                "displayText": "فَجْرِ",
+                "label": "dawn",
+                "meaning": "The definite noun names the dawn that ends the night.",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ف ج ر"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Peace it is until the emergence of dawn.",
+      "naturalMeaning": "The night remains peace-filled until dawn appears."
     }
   ],
-  "teachingEntries": {},
+  "teachingEntries": {
+    "lesson:97:1:1": {
+      "id": "lesson:97:1:1",
+      "meaning": "Indeed, We",
+      "type": "Emphasis particle with attached pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (emphasis particle + pronoun) — Emphasis marks the certainty of the Qur'an's descent.",
+      "construction": "إِنَّآ",
+      "components": [
+        {
+          "text": "إِنَّ",
+          "displayText": "إِنَّ",
+          "label": "pronoun",
+          "meaning": "an attached pronoun",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (particle)"
+        },
+        {
+          "text": "آ",
+          "displayText": "آ",
+          "label": "We",
+          "meaning": "a rootless pronoun component",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "Emphasis marks the certainty of the Qur'an's descent.",
+      "sentenceRole": "Emphasis marks the certainty of the Qur'an's descent.",
+      "recognitionClue": "Recognise this fixed emphasis particle + pronoun by its stable form and its role in the āyah.",
+      "forms": [
+        {
+          "form": "إِنَّآ",
+          "meaning": "Indeed, We",
+          "difference": "Current Qur'anic occurrence; case: accusative; person: first-person plural.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:1:1) was checked as evidence."
+        },
+        {
+          "form": "إِنَّ",
+          "meaning": "indeed",
+          "difference": "emphasis particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِنَّنَا",
+          "meaning": "indeed we",
+          "difference": "emphasis with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِنَّهُمْ",
+          "meaning": "indeed they",
+          "difference": "emphasis with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This word has no lexical root; its grammatical function supplies “Indeed, We”.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "إِنَّآ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-94dcb04efc1003cd reviewed word:97:1:1.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (97:1:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:57:00.768Z"
+      }
+    },
+    "lesson:97:1:2": {
+      "id": "lesson:97:1:2",
+      "meaning": "We sent it down",
+      "type": "Form IV verb with attached object pronoun",
+      "root": "ن ز ل",
+      "rootPicture": "descend · send down · come down",
+      "construction": "أَنزَلْنَـٰهُ",
+      "components": [
+        {
+          "text": "أَنزَلْنَـٰهُ",
+          "displayText": "أَنزَلْنَـٰهُ",
+          "label": "We sent it down",
+          "meaning": "The verb carries the act of sending down, while its subject is We and its object is it.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ن ز ل"
+        }
+      ],
+      "grammar": "The verb carries the act of sending down, while its subject is We and its object is it.",
+      "sentenceRole": "The verb carries the act of sending down, while its subject is We and its object is it.",
+      "recognitionClue": "Recognise the ن-ز-ل pattern in this form and connect it to “We sent it down”.",
+      "forms": [
+        {
+          "form": "أَنزَلْنَـٰهُ",
+          "meaning": "We sent it down",
+          "difference": "Current Qur'anic occurrence; pattern: Form 4; tense: perfect verb; person: first-person plural; person: third-person masculine singular; verb form: Form 4.",
+          "relationship": "Current Qur'anic occurrence of the ن ز ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:1:2."
+        },
+        {
+          "form": "يَنزِلُ",
+          "meaning": "he descends",
+          "difference": "imperfect verb",
+          "relationship": "Existing project-reviewed relationship to the نزل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَنزَلَ",
+          "meaning": "he sent down",
+          "difference": "Form IV verb",
+          "relationship": "Existing project-reviewed relationship to the نزل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "نَزْلَةً",
+          "meaning": "(in) descent",
+          "difference": "Compared with أَنزَلْنَـٰهُ, this form changes tense: perfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 4 → not marked.",
+          "relationship": "Related to the ن ز ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:13:3.",
+          "provenance": "Codex-reviewed form for the ن ز ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "نُزُلُهُمْ",
+          "meaning": "(is) their hospitality",
+          "difference": "Compared with أَنزَلْنَـٰهُ, this form changes tense: perfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 4 → not marked.",
+          "relationship": "Related to the ن ز ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:56:56:2.",
+          "provenance": "Codex-reviewed form for the ن ز ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ن ز ل remains visible while the form supplies the meaning “We sent it down”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:1:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:1:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:1:3": {
+      "id": "lesson:97:1:3",
+      "meaning": "in / during",
+      "type": "Preposition",
+      "root": "",
+      "rootPicture": "No lexical root (preposition) — The preposition places the descent within the Night of Decree.",
+      "construction": "فِى",
+      "components": [
+        {
+          "text": "فِى",
+          "displayText": "فِى",
+          "label": "pronoun",
+          "meaning": "an attached pronoun",
+          "kind": "whole",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (grammatical component)"
+        }
+      ],
+      "grammar": "The preposition places the descent within the Night of Decree.",
+      "sentenceRole": "The preposition places the descent within the Night of Decree.",
+      "recognitionClue": "Recognise this fixed preposition by its stable form and its role in the āyah.",
+      "forms": [
+        {
+          "form": "فِى",
+          "meaning": "in / during",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:1:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:1:3) was checked as evidence."
+        },
+        {
+          "form": "فِي",
+          "meaning": "in",
+          "difference": "preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فِيهِ",
+          "meaning": "in it / him",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فِيهَا",
+          "meaning": "in it / her",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This word has no lexical root; its grammatical function supplies “in / during”.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "فِى is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-94dcb04efc1003cd reviewed word:97:1:3.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (97:1:3) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:57:00.768Z"
+      }
+    },
+    "lesson:97:1:4": {
+      "id": "lesson:97:1:4",
+      "meaning": "the night",
+      "type": "Noun",
+      "root": "ل ي ل",
+      "rootPicture": "night · nighttime",
+      "construction": "لَيْلَةِ",
+      "components": [
+        {
+          "text": "لَيْلَةِ",
+          "displayText": "لَيْلَةِ",
+          "label": "the night",
+          "meaning": "The noun names the night in which the Qur'an was sent down.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ل ي ل"
+        }
+      ],
+      "grammar": "The noun names the night in which the Qur'an was sent down.",
+      "sentenceRole": "The noun names the night in which the Qur'an was sent down.",
+      "recognitionClue": "Recognise the ل-ي-ل pattern in this form and connect it to “the night”.",
+      "forms": [
+        {
+          "form": "لَيْلَةِ",
+          "meaning": "the night",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ل ي ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:1:4."
+        },
+        {
+          "form": "لَيْلَةٌ",
+          "meaning": "a night",
+          "difference": "feminine noun",
+          "relationship": "Existing project-reviewed relationship to the ليل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "لَيَالٍ",
+          "meaning": "nights",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the ليل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّيْلِ",
+          "meaning": "the night",
+          "difference": "Compared with لَيْلَةِ, this form changes gender: feminine → masculine.",
+          "relationship": "Related to the ل ي ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:49:2.",
+          "provenance": "Codex-reviewed form for the ل ي ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلَّيْلَ",
+          "meaning": "the night",
+          "difference": "Compared with لَيْلَةِ, this form changes gender: feminine → masculine; case: genitive → accusative.",
+          "relationship": "Related to the ل ي ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:6:2.",
+          "provenance": "Codex-reviewed form for the ل ي ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ل ي ل remains visible while the form supplies the meaning “the night”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:1:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:1:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:1:5": {
+      "id": "lesson:97:1:5",
+      "meaning": "the Decree",
+      "type": "Definite noun",
+      "root": "ق د ر",
+      "rootPicture": "measure · determine · decree",
+      "construction": "ٱلْقَدْرِ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article prefix",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "قَدْرِ",
+          "displayText": "قَدْرِ",
+          "label": "decree",
+          "meaning": "The article makes the noun definite: the uniquely honored Decree.",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ق د ر"
+        }
+      ],
+      "grammar": "The article makes the noun definite: the uniquely honored Decree.",
+      "sentenceRole": "The article makes the noun definite: the uniquely honored Decree.",
+      "recognitionClue": "Recognise the ق-د-ر pattern in this form and connect it to “the Decree”.",
+      "forms": [
+        {
+          "form": "ٱلْقَدْرِ",
+          "meaning": "the Decree",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ق د ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:1:5."
+        },
+        {
+          "form": "مَقْدُورٌ",
+          "meaning": "decreed",
+          "difference": "passive participle",
+          "relationship": "Existing project-reviewed relationship to the قدر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مُّقْتَدِرٍ",
+          "meaning": "(the) Powerful One",
+          "difference": "Compared with ٱلْقَدْرِ, this form changes state: not marked → indefinite; verbform: not marked → Form 8; pattern: not marked → Form 8.",
+          "relationship": "Related to the ق د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:42:7.",
+          "provenance": "Codex-reviewed form for the ق د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "بِقَدَرٍ",
+          "meaning": "by a measure",
+          "difference": "Compared with ٱلْقَدْرِ, this form changes state: not marked → indefinite.",
+          "relationship": "Related to the ق د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:49:5.",
+          "provenance": "Codex-reviewed form for the ق د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "مُّقْتَدِرٍۭ",
+          "meaning": "Most Powerful",
+          "difference": "Compared with ٱلْقَدْرِ, this form changes state: not marked → indefinite; verbform: not marked → Form 8; pattern: not marked → Form 8.",
+          "relationship": "Related to the ق د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:55:6.",
+          "provenance": "Codex-reviewed form for the ق د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ق د ر remains visible while the form supplies the meaning “the Decree”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:1:5.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:1:5)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:2:1": {
+      "id": "lesson:97:2:1",
+      "meaning": "and what",
+      "type": "Connector plus interrogative particle",
+      "root": "",
+      "rootPicture": "No lexical root (connector + interrogative) — The connector continues the question, while the fixed particle asks what can make this known.",
+      "construction": "وَمَآ",
+      "components": [
+        {
+          "text": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "a connecting conjunction",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "مَآ",
+          "displayText": "مَآ",
+          "label": "pronoun",
+          "meaning": "an attached pronoun",
+          "kind": "prefix",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (particle)"
+        }
+      ],
+      "grammar": "The connector continues the question, while the fixed particle asks what can make this known.",
+      "sentenceRole": "The connector continues the question, while the fixed particle asks what can make this known.",
+      "recognitionClue": "Recognise this fixed connector + interrogative by its stable form and its role in the āyah.",
+      "forms": [
+        {
+          "form": "وَمَآ",
+          "meaning": "and what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:2:1) was checked as evidence."
+        },
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "interrogative",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَمَا",
+          "meaning": "and what",
+          "difference": "connector plus interrogative",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَن",
+          "meaning": "who",
+          "difference": "interrogative",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This word has no lexical root; its grammatical function supplies “and what”.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "وَمَآ is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-94dcb04efc1003cd reviewed word:97:2:1.",
+          "The item was checked as connector/conjunction; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (97:2:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:57:00.768Z"
+      }
+    },
+    "lesson:97:2:2": {
+      "id": "lesson:97:2:2",
+      "meaning": "make you know",
+      "type": "Form IV verb with attached pronoun",
+      "root": "د ر ي",
+      "rootPicture": "knowing · awareness · knowledge",
+      "construction": "أَدْرَىٰكَ",
+      "components": [
+        {
+          "text": "أَدْرَىٰ",
+          "displayText": "أَدْرَىٰ",
+          "label": "make know",
+          "meaning": "The verb asks what could bring the reality of the Night of Decree to the listener's knowledge.",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "د ر ي"
+        },
+        {
+          "text": "كَ",
+          "displayText": "كَ",
+          "label": "you",
+          "meaning": "a rootless pronoun component",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "The verb asks what could bring the reality of the Night of Decree to the listener's knowledge.",
+      "sentenceRole": "The verb asks what could bring the reality of the Night of Decree to the listener's knowledge.",
+      "recognitionClue": "Recognise the د-ر-ي pattern in this form and connect it to “make you know”.",
+      "forms": [
+        {
+          "form": "أَدْرَىٰكَ",
+          "meaning": "make you know",
+          "difference": "Current Qur'anic occurrence; pattern: Form 4; tense: perfect verb; person: third-person masculine singular; person: second-person masculine singular; verb form: Form 4.",
+          "relationship": "Current Qur'anic occurrence of the د ر ي root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:2:2."
+        },
+        {
+          "form": "دَرَى",
+          "meaning": "he knew",
+          "difference": "perfect verb",
+          "relationship": "Existing project-reviewed relationship to the دري family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَدْرِي",
+          "meaning": "he knows",
+          "difference": "imperfect verb",
+          "relationship": "Existing project-reviewed relationship to the دري family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَدْرَى",
+          "meaning": "he made known",
+          "difference": "Form IV verb",
+          "relationship": "Existing project-reviewed relationship to the دري family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تَدْرِى",
+          "meaning": "you know",
+          "difference": "Compared with أَدْرَىٰكَ, this form changes tense: perfect verb → imperfect verb; verbform: Form 4 → Form 1; pattern: Form 4 → Form 1.",
+          "relationship": "Related to the د ر ي root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:65:1:35.",
+          "provenance": "Codex-reviewed form for the د ر ي family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root د ر ي remains visible while the form supplies the meaning “make you know”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:2:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:2:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:2:3": {
+      "id": "lesson:97:2:3",
+      "meaning": "what",
+      "type": "Interrogative pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (interrogative pronoun) — This fixed question word introduces the explanation that follows.",
+      "construction": "مَا",
+      "components": [
+        {
+          "text": "مَا",
+          "displayText": "مَا",
+          "label": "pronoun",
+          "meaning": "an attached pronoun",
+          "kind": "whole",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (grammatical component)"
+        }
+      ],
+      "grammar": "This fixed question word introduces the explanation that follows.",
+      "sentenceRole": "This fixed question word introduces the explanation that follows.",
+      "recognitionClue": "Recognise this fixed interrogative pronoun by its stable form and its role in the āyah.",
+      "forms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:2:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:2:3) was checked as evidence."
+        },
+        {
+          "form": "مَاذَا",
+          "meaning": "what",
+          "difference": "extended interrogative",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَمَا",
+          "meaning": "and what",
+          "difference": "connector plus interrogative",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This word has no lexical root; its grammatical function supplies “what”.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-94dcb04efc1003cd reviewed word:97:2:3.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (97:2:3) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:57:00.768Z"
+      }
+    },
+    "lesson:97:2:4": {
+      "id": "lesson:97:2:4",
+      "meaning": "the night",
+      "type": "Noun",
+      "root": "ل ي ل",
+      "rootPicture": "night · nighttime",
+      "construction": "لَيْلَةُ",
+      "components": [
+        {
+          "text": "لَيْلَةُ",
+          "displayText": "لَيْلَةُ",
+          "label": "the night",
+          "meaning": "The noun repeats the subject of the question in the nominative form.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ل ي ل"
+        }
+      ],
+      "grammar": "The noun repeats the subject of the question in the nominative form.",
+      "sentenceRole": "The noun repeats the subject of the question in the nominative form.",
+      "recognitionClue": "Recognise the ل-ي-ل pattern in this form and connect it to “the night”.",
+      "forms": [
+        {
+          "form": "لَيْلَةُ",
+          "meaning": "the night",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the ل ي ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:2:4."
+        },
+        {
+          "form": "لَيْلَةٌ",
+          "meaning": "a night",
+          "difference": "feminine noun",
+          "relationship": "Existing project-reviewed relationship to the ليل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "لَيَالٍ",
+          "meaning": "nights",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the ليل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّيْلِ",
+          "meaning": "the night",
+          "difference": "Compared with لَيْلَةُ, this form changes gender: feminine → masculine; case: nominative → genitive.",
+          "relationship": "Related to the ل ي ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:49:2.",
+          "provenance": "Codex-reviewed form for the ل ي ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلَّيْلَ",
+          "meaning": "the night",
+          "difference": "Compared with لَيْلَةُ, this form changes gender: feminine → masculine; case: nominative → accusative.",
+          "relationship": "Related to the ل ي ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:6:2.",
+          "provenance": "Codex-reviewed form for the ل ي ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ل ي ل remains visible while the form supplies the meaning “the night”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:2:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:2:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:2:5": {
+      "id": "lesson:97:2:5",
+      "meaning": "the Decree",
+      "type": "Definite noun",
+      "root": "ق د ر",
+      "rootPicture": "measure · determine · decree",
+      "construction": "ٱلْقَدْرِ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article prefix",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "قَدْرِ",
+          "displayText": "قَدْرِ",
+          "label": "decree",
+          "meaning": "The definite noun identifies the same exceptional Night of Decree.",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ق د ر"
+        }
+      ],
+      "grammar": "The definite noun identifies the same exceptional Night of Decree.",
+      "sentenceRole": "The definite noun identifies the same exceptional Night of Decree.",
+      "recognitionClue": "Recognise the ق-د-ر pattern in this form and connect it to “the Decree”.",
+      "forms": [
+        {
+          "form": "ٱلْقَدْرِ",
+          "meaning": "the Decree",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ق د ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:2:5."
+        },
+        {
+          "form": "مَقْدُورٌ",
+          "meaning": "decreed",
+          "difference": "passive participle",
+          "relationship": "Existing project-reviewed relationship to the قدر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مُّقْتَدِرٍ",
+          "meaning": "(the) Powerful One",
+          "difference": "Compared with ٱلْقَدْرِ, this form changes state: not marked → indefinite; verbform: not marked → Form 8; pattern: not marked → Form 8.",
+          "relationship": "Related to the ق د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:42:7.",
+          "provenance": "Codex-reviewed form for the ق د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "بِقَدَرٍ",
+          "meaning": "by a measure",
+          "difference": "Compared with ٱلْقَدْرِ, this form changes state: not marked → indefinite.",
+          "relationship": "Related to the ق د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:49:5.",
+          "provenance": "Codex-reviewed form for the ق د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "مُّقْتَدِرٍۭ",
+          "meaning": "Most Powerful",
+          "difference": "Compared with ٱلْقَدْرِ, this form changes state: not marked → indefinite; verbform: not marked → Form 8; pattern: not marked → Form 8.",
+          "relationship": "Related to the ق د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:55:6.",
+          "provenance": "Codex-reviewed form for the ق د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ق د ر remains visible while the form supplies the meaning “the Decree”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:2:5.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:2:5)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:3:1": {
+      "id": "lesson:97:3:1",
+      "meaning": "The night",
+      "type": "Noun",
+      "root": "ل ي ل",
+      "rootPicture": "night · nighttime",
+      "construction": "لَيْلَةُ",
+      "components": [
+        {
+          "text": "لَيْلَةُ",
+          "displayText": "لَيْلَةُ",
+          "label": "The night",
+          "meaning": "The noun begins the comparison by naming the Night of Decree.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ل ي ل"
+        }
+      ],
+      "grammar": "The noun begins the comparison by naming the Night of Decree.",
+      "sentenceRole": "The noun begins the comparison by naming the Night of Decree.",
+      "recognitionClue": "Recognise the ل-ي-ل pattern in this form and connect it to “The night”.",
+      "forms": [
+        {
+          "form": "لَيْلَةُ",
+          "meaning": "The night",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the ل ي ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:3:1."
+        },
+        {
+          "form": "لَيْلَةٌ",
+          "meaning": "a night",
+          "difference": "feminine noun",
+          "relationship": "Existing project-reviewed relationship to the ليل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "لَيَالٍ",
+          "meaning": "nights",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the ليل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلَّيْلِ",
+          "meaning": "the night",
+          "difference": "Compared with لَيْلَةُ, this form changes gender: feminine → masculine; case: nominative → genitive.",
+          "relationship": "Related to the ل ي ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:49:2.",
+          "provenance": "Codex-reviewed form for the ل ي ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلَّيْلَ",
+          "meaning": "the night",
+          "difference": "Compared with لَيْلَةُ, this form changes gender: feminine → masculine; case: nominative → accusative.",
+          "relationship": "Related to the ل ي ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:6:2.",
+          "provenance": "Codex-reviewed form for the ل ي ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ل ي ل remains visible while the form supplies the meaning “The night”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:3:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:3:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:3:2": {
+      "id": "lesson:97:3:2",
+      "meaning": "of Decree",
+      "type": "Definite noun in a genitive phrase",
+      "root": "ق د ر",
+      "rootPicture": "measure · determine · decree",
+      "construction": "ٱلْقَدْرِ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article prefix",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "قَدْرِ",
+          "displayText": "قَدْرِ",
+          "label": "decree",
+          "meaning": "The genitive phrase completes the name Night of Decree.",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ق د ر"
+        }
+      ],
+      "grammar": "The genitive phrase completes the name Night of Decree.",
+      "sentenceRole": "The genitive phrase completes the name Night of Decree.",
+      "recognitionClue": "Recognise the ق-د-ر pattern in this form and connect it to “of Decree”.",
+      "forms": [
+        {
+          "form": "ٱلْقَدْرِ",
+          "meaning": "of Decree",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ق د ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:3:2."
+        },
+        {
+          "form": "مَقْدُورٌ",
+          "meaning": "decreed",
+          "difference": "passive participle",
+          "relationship": "Existing project-reviewed relationship to the قدر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مُّقْتَدِرٍ",
+          "meaning": "(the) Powerful One",
+          "difference": "Compared with ٱلْقَدْرِ, this form changes state: not marked → indefinite; verbform: not marked → Form 8; pattern: not marked → Form 8.",
+          "relationship": "Related to the ق د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:42:7.",
+          "provenance": "Codex-reviewed form for the ق د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "بِقَدَرٍ",
+          "meaning": "by a measure",
+          "difference": "Compared with ٱلْقَدْرِ, this form changes state: not marked → indefinite.",
+          "relationship": "Related to the ق د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:49:5.",
+          "provenance": "Codex-reviewed form for the ق د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "مُّقْتَدِرٍۭ",
+          "meaning": "Most Powerful",
+          "difference": "Compared with ٱلْقَدْرِ, this form changes state: not marked → indefinite; verbform: not marked → Form 8; pattern: not marked → Form 8.",
+          "relationship": "Related to the ق د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:55:6.",
+          "provenance": "Codex-reviewed form for the ق د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ق د ر remains visible while the form supplies the meaning “of Decree”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:3:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:3:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:3:3": {
+      "id": "lesson:97:3:3",
+      "meaning": "better",
+      "type": "Comparative adjective",
+      "root": "خ ي ر",
+      "rootPicture": "good · better · benefit",
+      "construction": "خَيْرٌ",
+      "components": [
+        {
+          "text": "خَيْرٌ",
+          "displayText": "خَيْرٌ",
+          "label": "better",
+          "meaning": "The root expresses goodness, here in the comparative meaning better.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "خ ي ر"
+        }
+      ],
+      "grammar": "The root expresses goodness, here in the comparative meaning better.",
+      "sentenceRole": "The root expresses goodness, here in the comparative meaning better.",
+      "recognitionClue": "Recognise the خ-ي-ر pattern in this form and connect it to “better”.",
+      "forms": [
+        {
+          "form": "خَيْرٌ",
+          "meaning": "better",
+          "difference": "Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the خ ي ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:3:3."
+        },
+        {
+          "form": "خِيَارٌ",
+          "meaning": "choice / selected ones",
+          "difference": "derived noun",
+          "relationship": "Existing project-reviewed relationship to the خير family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "خَيْرَاتٌ",
+          "meaning": "good things",
+          "difference": "plural noun",
+          "relationship": "Existing project-reviewed relationship to the خير family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "خَيْرَٰتٌ",
+          "meaning": "(are) good",
+          "difference": "Compared with خَيْرٌ, this form changes number: masculine singular → feminine plural.",
+          "relationship": "Related to the خ ي ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:55:70:2.",
+          "provenance": "Codex-reviewed form for the خ ي ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "يَتَخَيَّرُونَ",
+          "meaning": "they select",
+          "difference": "Compared with خَيْرٌ, this form changes number: masculine singular → not marked; state: indefinite → not marked; case: nominative → not marked.",
+          "relationship": "Related to the خ ي ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:56:20:3.",
+          "provenance": "Codex-reviewed form for the خ ي ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root خ ي ر remains visible while the form supplies the meaning “better”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:3:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:3:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:3:4": {
+      "id": "lesson:97:3:4",
+      "meaning": "than",
+      "type": "Preposition",
+      "root": "",
+      "rootPicture": "No lexical root (preposition) — The preposition introduces the standard of comparison.",
+      "construction": "مِّنْ",
+      "components": [
+        {
+          "text": "مِّنْ",
+          "displayText": "مِّنْ",
+          "label": "in / from / than",
+          "meaning": "a preposition",
+          "kind": "whole",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        }
+      ],
+      "grammar": "The preposition introduces the standard of comparison.",
+      "sentenceRole": "The preposition introduces the standard of comparison.",
+      "recognitionClue": "Recognise this fixed preposition by its stable form and its role in the āyah.",
+      "forms": [
+        {
+          "form": "مِّنْ",
+          "meaning": "than",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:3:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:3:4) was checked as evidence."
+        },
+        {
+          "form": "فِي",
+          "meaning": "in",
+          "difference": "preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فِيهِ",
+          "meaning": "in it / him",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فِيهَا",
+          "meaning": "in it / her",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This word has no lexical root; its grammatical function supplies “than”.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "مِّنْ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-94dcb04efc1003cd reviewed word:97:3:4.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (97:3:4) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:57:00.768Z"
+      }
+    },
+    "lesson:97:3:5": {
+      "id": "lesson:97:3:5",
+      "meaning": "a thousand",
+      "type": "Number noun",
+      "root": "أ ل ف",
+      "rootPicture": "familiarity · alliance · becoming accustomed",
+      "construction": "أَلْفِ",
+      "components": [
+        {
+          "text": "أَلْفِ",
+          "displayText": "أَلْفِ",
+          "label": "a thousand",
+          "meaning": "The number sets the immense comparison used for the Night of Decree.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "أ ل ف"
+        }
+      ],
+      "grammar": "The number sets the immense comparison used for the Night of Decree.",
+      "sentenceRole": "The number sets the immense comparison used for the Night of Decree.",
+      "recognitionClue": "Recognise the أ-ل-ف pattern in this form and connect it to “a thousand”.",
+      "forms": [
+        {
+          "form": "أَلْفِ",
+          "meaning": "a thousand",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ألف lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:3:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:3:5) was checked as evidence."
+        },
+        {
+          "form": "أَلِفَ",
+          "meaning": "he became familiar or accustomed",
+          "difference": "Form I perfect; it presents becoming familiar as a completed state, contrasting with the current Form IV verbal noun of familiarising and securing.",
+          "relationship": "Form I perfect of the أ ل ف root; the basic verb related to familiarity and becoming accustomed.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus أ ل ف root entry, the approved project root meaning and Arabic Academy lexicon evidence."
+        },
+        {
+          "form": "يَأْلَفُ",
+          "meaning": "he becomes familiar or is accustomed",
+          "difference": "Form I imperfect; it presents familiarity as ongoing or habitual rather than naming the current Form IV verbal noun.",
+          "relationship": "Form I imperfect of the أ ل ف root; the ongoing counterpart of أَلِفَ.",
+          "provenance": "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and regular Form I imperfect morphology."
+        },
+        {
+          "form": "أَلَّفَ",
+          "meaning": "he joined or reconciled",
+          "difference": "Form II perfect; the doubled middle radical marks the derived act of joining or bringing together, distinct from the Form IV verbal noun.",
+          "relationship": "Form II perfect of the أ ل ف root, attested in the Qur'an for joining hearts and things together.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus canonical occurrences 3:103, 8:63 and 24:43 and the approved project root meaning."
+        },
+        {
+          "form": "تَآلَفَ",
+          "meaning": "he became mutually familiar or formed an affinity",
+          "difference": "Form VI perfect; the reciprocal pattern shows mutual familiarity or affinity rather than the current Form IV verbal noun naming familiarising or security.",
+          "relationship": "Form VI derived verb of the أ ل ف root; a genuine reciprocal relationship within the familiarity family.",
+          "provenance": "Codex-authored after review of Arabic Academy lexicon evidence listing تآلف and the approved project root meaning."
+        }
+      ],
+      "takeaway": "The root أ ل ف remains visible while the form supplies the meaning “a thousand”.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-94dcb04efc1003cd reviewed word:97:3:5.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the ألف root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:57:00.768Z"
+      }
+    },
+    "lesson:97:3:6": {
+      "id": "lesson:97:3:6",
+      "meaning": "months",
+      "type": "Noun",
+      "root": "ش ه ر",
+      "rootPicture": "month · make known",
+      "construction": "شَهْرٍ",
+      "components": [
+        {
+          "text": "شَهْرٍ",
+          "displayText": "شَهْرٍ",
+          "label": "months",
+          "meaning": "The noun names the months used as the comparison's measure.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ش ه ر"
+        }
+      ],
+      "grammar": "The noun names the months used as the comparison's measure.",
+      "sentenceRole": "The noun names the months used as the comparison's measure.",
+      "recognitionClue": "Recognise the ش-ه-ر pattern in this form and connect it to “months”.",
+      "forms": [
+        {
+          "form": "شَهْرٍ",
+          "meaning": "months",
+          "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ش ه ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:3:6."
+        },
+        {
+          "form": "أَشْهُرٌ",
+          "meaning": "months",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the شهر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "شُهُورٌ",
+          "meaning": "months",
+          "difference": "sound plural",
+          "relationship": "Existing project-reviewed relationship to the شهر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "شَهْرَيْنِ",
+          "meaning": "(for) two months",
+          "difference": "Compared with شَهْرٍ, this form changes gender: masculine → not marked; state: indefinite → not marked.",
+          "relationship": "Related to the ش ه ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:58:4:5.",
+          "provenance": "Codex-reviewed form for the ش ه ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "أَشْهُرٍ",
+          "meaning": "months",
+          "difference": "Compared with شَهْرٍ, this form changes gender: masculine → not marked; number: not marked → masculine plural.",
+          "relationship": "Related to the ش ه ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:65:4:11.",
+          "provenance": "Codex-reviewed form for the ش ه ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ش ه ر remains visible while the form supplies the meaning “months”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:3:6.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:3:6)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:4:1": {
+      "id": "lesson:97:4:1",
+      "meaning": "descend",
+      "type": "Form V imperfect verb",
+      "root": "ن ز ل",
+      "rootPicture": "descend · send down · come down",
+      "construction": "تَنَزَّلُ",
+      "components": [
+        {
+          "text": "تَنَزَّلُ",
+          "displayText": "تَنَزَّلُ",
+          "label": "descend",
+          "meaning": "The imperfect verb presents the angels' descent as an unfolding event.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ن ز ل"
+        }
+      ],
+      "grammar": "The imperfect verb presents the angels' descent as an unfolding event.",
+      "sentenceRole": "The imperfect verb presents the angels' descent as an unfolding event.",
+      "recognitionClue": "Recognise the ن-ز-ل pattern in this form and connect it to “descend”.",
+      "forms": [
+        {
+          "form": "تَنَزَّلُ",
+          "meaning": "descend",
+          "difference": "Current Qur'anic occurrence; pattern: Form 5; tense: imperfect verb; verb form: Form 5.",
+          "relationship": "Current Qur'anic occurrence of the ن ز ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:4:1."
+        },
+        {
+          "form": "يَنزِلُ",
+          "meaning": "he descends",
+          "difference": "imperfect verb",
+          "relationship": "Existing project-reviewed relationship to the نزل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَنزَلَ",
+          "meaning": "he sent down",
+          "difference": "Form IV verb",
+          "relationship": "Existing project-reviewed relationship to the نزل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "نَزْلَةً",
+          "meaning": "(in) descent",
+          "difference": "Compared with تَنَزَّلُ, this form changes tense: imperfect verb → not marked; verbform: Form 5 → not marked; pattern: Form 5 → not marked.",
+          "relationship": "Related to the ن ز ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:13:3.",
+          "provenance": "Codex-reviewed form for the ن ز ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "نُزُلُهُمْ",
+          "meaning": "(is) their hospitality",
+          "difference": "Compared with تَنَزَّلُ, this form changes tense: imperfect verb → not marked; verbform: Form 5 → not marked; pattern: Form 5 → not marked.",
+          "relationship": "Related to the ن ز ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:56:56:2.",
+          "provenance": "Codex-reviewed form for the ن ز ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ن ز ل remains visible while the form supplies the meaning “descend”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:4:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:4:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:4:2": {
+      "id": "lesson:97:4:2",
+      "meaning": "the angels",
+      "type": "Definite plural noun",
+      "root": "م ل ك",
+      "rootPicture": "rule · own · possess · have authority",
+      "construction": "ٱلْمَلَـٰٓئِكَةُ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article prefix",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "مَلَـٰٓئِكَةُ",
+          "displayText": "مَلَـٰٓئِكَةُ",
+          "label": "angels",
+          "meaning": "The article and plural noun identify the angels who descend.",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "م ل ك"
+        }
+      ],
+      "grammar": "The article and plural noun identify the angels who descend.",
+      "sentenceRole": "The article and plural noun identify the angels who descend.",
+      "recognitionClue": "Recognise the م-ل-ك pattern in this form and connect it to “the angels”.",
+      "forms": [
+        {
+          "form": "ٱلْمَلَـٰٓئِكَةُ",
+          "meaning": "the angels",
+          "difference": "Current Qur'anic occurrence; number: masculine plural; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the م ل ك root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:4:2."
+        },
+        {
+          "form": "مَلَائِكَةٌ",
+          "meaning": "angels",
+          "difference": "plural noun",
+          "relationship": "Existing project-reviewed relationship to the ملك family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَلِيكٍ",
+          "meaning": "a King",
+          "difference": "Compared with ٱلْمَلَـٰٓئِكَةُ, this form changes number: masculine plural → not marked; case: nominative → genitive; gender: not marked → masculine.",
+          "relationship": "Related to the م ل ك root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:55:5.",
+          "provenance": "Codex-reviewed form for the م ل ك family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلْمَلِكُ",
+          "meaning": "the Sovereign",
+          "difference": "Compared with ٱلْمَلَـٰٓئِكَةُ, this form changes number: masculine plural → masculine singular.",
+          "relationship": "Related to the م ل ك root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:59:23:8.",
+          "provenance": "Codex-reviewed form for the م ل ك family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "أَمْلِكُ",
+          "meaning": "I have power",
+          "difference": "Compared with ٱلْمَلَـٰٓئِكَةُ, this form changes number: masculine plural → not marked; case: nominative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Related to the م ل ك root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:60:4:40.",
+          "provenance": "Codex-reviewed form for the م ل ك family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root م ل ك remains visible while the form supplies the meaning “the angels”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:4:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:4:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:4:3": {
+      "id": "lesson:97:4:3",
+      "meaning": "and the Spirit",
+      "type": "Connector plus definite noun",
+      "root": "ر و ح",
+      "rootPicture": "spirit · soul · life",
+      "construction": "وَٱلرُّوحُ",
+      "components": [
+        {
+          "text": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "a connecting conjunction",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "ٱل",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article prefix",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "رُّوحُ",
+          "displayText": "رُّوحُ",
+          "label": "Spirit",
+          "meaning": "The connector joins the Spirit with the angels in the descent.",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ر و ح"
+        }
+      ],
+      "grammar": "The connector joins the Spirit with the angels in the descent.",
+      "sentenceRole": "The connector joins the Spirit with the angels in the descent.",
+      "recognitionClue": "Recognise the ر-و-ح pattern in this form and connect it to “and the Spirit”.",
+      "forms": [
+        {
+          "form": "وَٱلرُّوحُ",
+          "meaning": "and the Spirit",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the ر و ح root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:4:3."
+        },
+        {
+          "form": "أَرْوَاحٌ",
+          "meaning": "spirits",
+          "difference": "plural noun",
+          "relationship": "Existing project-reviewed relationship to the روح family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلرِّيحَ",
+          "meaning": "the wind",
+          "difference": "Compared with وَٱلرُّوحُ, this form changes gender: masculine → feminine; case: nominative → accusative.",
+          "relationship": "Related to the ر و ح root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:41:6.",
+          "provenance": "Codex-reviewed form for the ر و ح family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "رِيحًا",
+          "meaning": "a wind",
+          "difference": "Compared with وَٱلرُّوحُ, this form changes gender: masculine → feminine; case: nominative → accusative; state: not marked → indefinite.",
+          "relationship": "Related to the ر و ح root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:19:4.",
+          "provenance": "Codex-reviewed form for the ر و ح family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "فَرَوْحٌ",
+          "meaning": "Then rest",
+          "difference": "Compared with وَٱلرُّوحُ, this form changes state: not marked → indefinite.",
+          "relationship": "Related to the ر و ح root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:56:89:1.",
+          "provenance": "Codex-reviewed form for the ر و ح family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ر و ح remains visible while the form supplies the meaning “and the Spirit”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:4:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:4:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:4:4": {
+      "id": "lesson:97:4:4",
+      "meaning": "therein",
+      "type": "Preposition with attached pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (preposition + pronoun) — The preposition and pronoun refer back to the Night of Decree.",
+      "construction": "فِيهَا",
+      "components": [
+        {
+          "text": "فِي",
+          "displayText": "فِي",
+          "label": "in / from / than",
+          "meaning": "a preposition",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        },
+        {
+          "text": "هَا",
+          "displayText": "هَا",
+          "label": "her / it",
+          "meaning": "a rootless pronoun component",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "The preposition and pronoun refer back to the Night of Decree.",
+      "sentenceRole": "The preposition and pronoun refer back to the Night of Decree.",
+      "recognitionClue": "Recognise this fixed preposition + pronoun by its stable form and its role in the āyah.",
+      "forms": [
+        {
+          "form": "فِيهَا",
+          "meaning": "therein",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:4:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:4:4) was checked as evidence."
+        },
+        {
+          "form": "فِيهِ",
+          "meaning": "in it / him",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "عَلَيْهَا",
+          "meaning": "upon it / her",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This word has no lexical root; its grammatical function supplies “therein”.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "فِيهَا is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-94dcb04efc1003cd reviewed word:97:4:4.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (97:4:4) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:57:00.768Z"
+      }
+    },
+    "lesson:97:4:5": {
+      "id": "lesson:97:4:5",
+      "meaning": "by permission",
+      "type": "Preposition plus permission noun",
+      "root": "أ ذ ن",
+      "rootPicture": "permit · authorize · permission",
+      "construction": "بِإِذْنِ",
+      "components": [
+        {
+          "text": "بِ",
+          "displayText": "بِ",
+          "label": "by / with / in",
+          "meaning": "a preposition",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        },
+        {
+          "text": "إِذْنِ",
+          "displayText": "إِذْنِ",
+          "label": "permission",
+          "meaning": "The prefixed بِ marks the means or condition: by the permission.",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "أ ذ ن"
+        }
+      ],
+      "grammar": "The prefixed بِ marks the means or condition: by the permission.",
+      "sentenceRole": "The prefixed بِ marks the means or condition: by the permission.",
+      "recognitionClue": "Recognise the أ-ذ-ن pattern in this form and connect it to “by permission”.",
+      "forms": [
+        {
+          "form": "بِإِذْنِ",
+          "meaning": "by permission",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the أذن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:4:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:4:5) was checked as evidence."
+        },
+        {
+          "form": "يُؤْذَنُ",
+          "meaning": "will it be permitted",
+          "difference": "Compared with بِإِذْنِ, this form changes gender: masculine → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb; tense: not marked → imperfect verb.",
+          "relationship": "Current Qur'anic occurrence of the أ ذ ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:77:36:2."
+        },
+        {
+          "form": "أُذُنٌ",
+          "meaning": "an ear",
+          "difference": "Compared with بِإِذْنِ, this form changes gender: masculine → feminine; case: genitive → nominative; state: not marked → indefinite.",
+          "relationship": "Current Qur'anic occurrence of the أ ذ ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:69:12:5."
+        },
+        {
+          "form": "ءَاذَانِهِمْ",
+          "meaning": "their ears",
+          "difference": "Compared with بِإِذْنِ, this form changes gender: masculine → not marked; number: not marked → feminine plural.",
+          "relationship": "Current Qur'anic occurrence of the أ ذ ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:71:7:9."
+        },
+        {
+          "form": "يَأْذَنَ",
+          "meaning": "Allah has given permission",
+          "difference": "Compared with بِإِذْنِ, this form changes gender: masculine → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb; tense: not marked → imperfect verb.",
+          "relationship": "Current Qur'anic occurrence of the أ ذ ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:53:26:14."
+        }
+      ],
+      "takeaway": "The root أ ذ ن remains visible while the form supplies the meaning “by permission”.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-89de645d51b8f108 reviewed word:97:4:5.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the أذن root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T15:20:49.124Z"
+      }
+    },
+    "lesson:97:4:6": {
+      "id": "lesson:97:4:6",
+      "meaning": "their Lord",
+      "type": "Noun with attached plural pronoun",
+      "root": "ر ب ب",
+      "rootPicture": "raise · nurture · sustain · govern",
+      "construction": "رَبِّهِم",
+      "components": [
+        {
+          "text": "رَبِّ",
+          "displayText": "رَبِّ",
+          "label": "Lord",
+          "meaning": "The noun names their Lord and the attached pronoun identifies the angels' relationship.",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ر ب ب"
+        },
+        {
+          "text": "هِم",
+          "displayText": "هِم",
+          "label": "their",
+          "meaning": "a rootless pronoun component",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "The noun names their Lord and the attached pronoun identifies the angels' relationship.",
+      "sentenceRole": "The noun names their Lord and the attached pronoun identifies the angels' relationship.",
+      "recognitionClue": "Recognise the ر-ب-ب pattern in this form and connect it to “their Lord”.",
+      "forms": [
+        {
+          "form": "رَبِّهِم",
+          "meaning": "their Lord",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ر ب ب root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:4:6."
+        },
+        {
+          "form": "رَبٌّ",
+          "meaning": "a lord",
+          "difference": "noun",
+          "relationship": "Existing project-reviewed relationship to the ربب family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "رَبَّى",
+          "meaning": "he nurtured",
+          "difference": "Form II verb",
+          "relationship": "Existing project-reviewed relationship to the ربب family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تَرْبِيَةٌ",
+          "meaning": "nurturing",
+          "difference": "verbal noun",
+          "relationship": "Existing project-reviewed relationship to the ربب family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "رَبِّكَ",
+          "meaning": "by your Lord",
+          "difference": "Compared with رَبِّهِم, this form changes person: not marked → second-person masculine singular.",
+          "relationship": "Related to the ر ب ب root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:34:3.",
+          "provenance": "Codex-reviewed form for the ر ب ب family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ر ب ب remains visible while the form supplies the meaning “their Lord”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:4:6.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:4:6)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:4:7": {
+      "id": "lesson:97:4:7",
+      "meaning": "for / concerning",
+      "type": "Preposition",
+      "root": "",
+      "rootPicture": "No lexical root (preposition) — The preposition links the descent to every matter that follows.",
+      "construction": "مِّن",
+      "components": [
+        {
+          "text": "مِّن",
+          "displayText": "مِّن",
+          "label": "in / from / than",
+          "meaning": "a preposition",
+          "kind": "whole",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        }
+      ],
+      "grammar": "The preposition links the descent to every matter that follows.",
+      "sentenceRole": "The preposition links the descent to every matter that follows.",
+      "recognitionClue": "Recognise this fixed preposition by its stable form and its role in the āyah.",
+      "forms": [
+        {
+          "form": "مِّن",
+          "meaning": "for / concerning",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:4:7. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:4:7) was checked as evidence."
+        },
+        {
+          "form": "فِي",
+          "meaning": "in",
+          "difference": "preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فِيهِ",
+          "meaning": "in it / him",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فِيهَا",
+          "meaning": "in it / her",
+          "difference": "preposition with pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This word has no lexical root; its grammatical function supplies “for / concerning”.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "مِّن is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-94dcb04efc1003cd reviewed word:97:4:7.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (97:4:7) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:57:00.768Z"
+      }
+    },
+    "lesson:97:4:8": {
+      "id": "lesson:97:4:8",
+      "meaning": "every",
+      "type": "Universal noun",
+      "root": "ك ل ل",
+      "rootPicture": "all · every · entirety",
+      "construction": "كُلِّ",
+      "components": [
+        {
+          "text": "كُلِّ",
+          "displayText": "كُلِّ",
+          "label": "every",
+          "meaning": "The noun gives the phrase its comprehensive meaning: every matter.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ك ل ل"
+        }
+      ],
+      "grammar": "The noun gives the phrase its comprehensive meaning: every matter.",
+      "sentenceRole": "The noun gives the phrase its comprehensive meaning: every matter.",
+      "recognitionClue": "Recognise the ك-ل-ل pattern in this form and connect it to “every”.",
+      "forms": [
+        {
+          "form": "كُلِّ",
+          "meaning": "every",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ك ل ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:4:8."
+        },
+        {
+          "form": "كُلٌّ",
+          "meaning": "all / every",
+          "difference": "indefinite noun",
+          "relationship": "Existing project-reviewed relationship to the كلل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "كُلِّيٌّ",
+          "meaning": "universal",
+          "difference": "adjective",
+          "relationship": "Existing project-reviewed relationship to the كلل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "كُلِّيَّةٌ",
+          "meaning": "totality",
+          "difference": "derived noun",
+          "relationship": "Existing project-reviewed relationship to the كلل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَكُلًّا",
+          "meaning": "But to all",
+          "difference": "Compared with كُلِّ, this form changes case: genitive → accusative; state: not marked → indefinite.",
+          "relationship": "Related to the ك ل ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:10:30.",
+          "provenance": "Codex-reviewed form for the ك ل ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ك ل ل remains visible while the form supplies the meaning “every”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:4:8.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:4:8)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:4:9": {
+      "id": "lesson:97:4:9",
+      "meaning": "matter",
+      "type": "Noun",
+      "root": "أ م ر",
+      "rootPicture": "command · order · matter",
+      "construction": "أَمْرٍ",
+      "components": [
+        {
+          "text": "أَمْرٍ",
+          "displayText": "أَمْرٍ",
+          "label": "matter",
+          "meaning": "The noun names each matter carried out by divine permission.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "أ م ر"
+        }
+      ],
+      "grammar": "The noun names each matter carried out by divine permission.",
+      "sentenceRole": "The noun names each matter carried out by divine permission.",
+      "recognitionClue": "Recognise the أ-م-ر pattern in this form and connect it to “matter”.",
+      "forms": [
+        {
+          "form": "أَمْرٍ",
+          "meaning": "matter",
+          "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the أ م ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:4:9."
+        },
+        {
+          "form": "يَأْمُرُ",
+          "meaning": "he commands",
+          "difference": "imperfect verb",
+          "relationship": "Existing project-reviewed relationship to the أمر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تَأْمُرُهُمْ",
+          "meaning": "command them",
+          "difference": "Compared with أَمْرٍ, this form changes gender: masculine → not marked; state: indefinite → not marked; case: genitive → not marked.",
+          "relationship": "Related to the أ م ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:32:2.",
+          "provenance": "Codex-reviewed form for the أ م ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "أَمْرُنَآ",
+          "meaning": "(is) Our Command",
+          "difference": "Compared with أَمْرٍ, this form changes state: indefinite → not marked; case: genitive → nominative; person: not marked → first-person plural.",
+          "relationship": "Related to the أ م ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:50:2.",
+          "provenance": "Codex-reviewed form for the أ م ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلْأُمُورُ",
+          "meaning": "the matters",
+          "difference": "Compared with أَمْرٍ, this form changes gender: masculine → not marked; state: indefinite → not marked; case: genitive → nominative.",
+          "relationship": "Related to the أ م ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:5:8.",
+          "provenance": "Codex-reviewed form for the أ م ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root أ م ر remains visible while the form supplies the meaning “matter”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:4:9.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:4:9)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:5:1": {
+      "id": "lesson:97:5:1",
+      "meaning": "peace",
+      "type": "Noun",
+      "root": "س ل م",
+      "rootPicture": "peace · safety · wholeness",
+      "construction": "سَلَـٰمٌ",
+      "components": [
+        {
+          "text": "سَلَـٰمٌ",
+          "displayText": "سَلَـٰمٌ",
+          "label": "peace",
+          "meaning": "The noun announces peace as the defining condition of the night.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "س ل م"
+        }
+      ],
+      "grammar": "The noun announces peace as the defining condition of the night.",
+      "sentenceRole": "The noun announces peace as the defining condition of the night.",
+      "recognitionClue": "Recognise the س-ل-م pattern in this form and connect it to “peace”.",
+      "forms": [
+        {
+          "form": "سَلَـٰمٌ",
+          "meaning": "peace",
+          "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the س ل م root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:5:1."
+        },
+        {
+          "form": "سَلَامٌ",
+          "meaning": "peace",
+          "difference": "verbal noun",
+          "relationship": "Existing project-reviewed relationship to the سلم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مُسْلِمٌ",
+          "meaning": "one who submits",
+          "difference": "active participle",
+          "relationship": "Existing project-reviewed relationship to the سلم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلْمُسْلِمِينَ",
+          "meaning": "the Muslims",
+          "difference": "Compared with سَلَـٰمٌ, this form changes gender: masculine → not marked; state: indefinite → not marked; case: nominative → genitive.",
+          "relationship": "Related to the س ل م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:36:7.",
+          "provenance": "Codex-reviewed form for the س ل م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلسَّلَـٰمُ",
+          "meaning": "the Giver of Peace",
+          "difference": "Compared with سَلَـٰمٌ, this form changes state: indefinite → not marked.",
+          "relationship": "Related to the س ل م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:59:23:10.",
+          "provenance": "Codex-reviewed form for the س ل م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root س ل م remains visible while the form supplies the meaning “peace”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:5:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:5:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:97:5:2": {
+      "id": "lesson:97:5:2",
+      "meaning": "it is",
+      "type": "Independent pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (pronoun) — The pronoun identifies the night as peace itself.",
+      "construction": "هِىَ",
+      "components": [
+        {
+          "text": "هِىَ",
+          "displayText": "هِىَ",
+          "label": "it / she",
+          "meaning": "a rootless pronoun component",
+          "kind": "whole",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "The pronoun identifies the night as peace itself.",
+      "sentenceRole": "The pronoun identifies the night as peace itself.",
+      "recognitionClue": "Recognise this fixed pronoun by its stable form and its role in the āyah.",
+      "forms": [
+        {
+          "form": "هِىَ",
+          "meaning": "it is",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:5:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:5:2) was checked as evidence."
+        },
+        {
+          "form": "هِيَ",
+          "meaning": "she / it",
+          "difference": "independent pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "هُمَا",
+          "meaning": "they two",
+          "difference": "dual pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "هُنَّ",
+          "meaning": "they (feminine)",
+          "difference": "plural pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This word has no lexical root; its grammatical function supplies “it is”.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "هِىَ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-94dcb04efc1003cd reviewed word:97:5:2.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (97:5:2) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:57:00.768Z"
+      }
+    },
+    "lesson:97:5:3": {
+      "id": "lesson:97:5:3",
+      "meaning": "until",
+      "type": "Temporal particle",
+      "root": "",
+      "rootPicture": "No lexical root (temporal particle) — The particle sets the endpoint of the peace: the emergence of dawn.",
+      "construction": "حَتَّىٰ",
+      "components": [
+        {
+          "text": "حَتَّىٰ",
+          "displayText": "حَتَّىٰ",
+          "label": "pronoun",
+          "meaning": "an attached pronoun",
+          "kind": "whole",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (grammatical component)"
+        }
+      ],
+      "grammar": "The particle sets the endpoint of the peace: the emergence of dawn.",
+      "sentenceRole": "The particle sets the endpoint of the peace: the emergence of dawn.",
+      "recognitionClue": "Recognise this fixed temporal particle by its stable form and its role in the āyah.",
+      "forms": [
+        {
+          "form": "حَتَّىٰ",
+          "meaning": "until",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:5:3) was checked as evidence."
+        },
+        {
+          "form": "حَتَّى",
+          "meaning": "until",
+          "difference": "temporal particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "لَمَّا",
+          "meaning": "when / not yet",
+          "difference": "temporal particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "إِلَىٰ",
+          "meaning": "until / toward",
+          "difference": "preposition",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This word has no lexical root; its grammatical function supplies “until”.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "حَتَّىٰ is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-94dcb04efc1003cd reviewed word:97:5:3.",
+          "The item was checked as article; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (97:5:3) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:57:00.768Z"
+      }
+    },
+    "lesson:97:5:4": {
+      "id": "lesson:97:5:4",
+      "meaning": "the emergence",
+      "type": "Noun of time or place",
+      "root": "ط ل ع",
+      "rootPicture": "rise · emerge · appear",
+      "construction": "مَطْلَعِ",
+      "components": [
+        {
+          "text": "مَطْلَعِ",
+          "displayText": "مَطْلَعِ",
+          "label": "the emergence",
+          "meaning": "The noun marks the appearance or rising of dawn.",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ط ل ع"
+        }
+      ],
+      "grammar": "The noun marks the appearance or rising of dawn.",
+      "sentenceRole": "The noun marks the appearance or rising of dawn.",
+      "recognitionClue": "Recognise the ط-ل-ع pattern in this form and connect it to “the emergence”.",
+      "forms": [
+        {
+          "form": "مَطْلَعِ",
+          "meaning": "the emergence",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the طلع lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:97:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (97:5:4) was checked as evidence."
+        },
+        {
+          "form": "طَلَعَ",
+          "meaning": "he or it rose or appeared",
+          "difference": "Form I perfect; it presents the completed rising or appearing action, contrasting with the current derived verb.",
+          "relationship": "Form I perfect of the ط ل ع root, the basic verb underlying طلوع and مطلع.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ط ل ع entry and its Form I occurrences."
+        },
+        {
+          "form": "يَطْلُعُ",
+          "meaning": "he or it rises or appears",
+          "difference": "Form I imperfect; it presents rising or appearing as ongoing or expected.",
+          "relationship": "Form I imperfect of the ط ل ع root, contrasting the basic imperfect with the current derived occurrence.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ط ل ع entry and standard Form I imperfect morphology."
+        },
+        {
+          "form": "طُلُوعٌ",
+          "meaning": "rising or appearance",
+          "difference": "Verbal noun; it names the process of rising or appearing rather than expressing it as a finite verb.",
+          "relationship": "A genuine verbal noun of the ط ل ع root, attested in the Qur'an and related to the current verb.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrences of طُلُوعٌ and the approved project root meaning."
+        },
+        {
+          "form": "مَطْلِعٌ",
+          "meaning": "place of rising or sunrise",
+          "difference": "Noun of place with the مَفْعِل pattern; it contrasts with مَطْلَعٌ and the current مَطْلَعِ by the internal vowel and is attested for the rising-place sense.",
+          "relationship": "A genuine Qur'anic noun of the ط ل ع family, attested as مَطْلِعَ الشَّمْسِ in Qur'an 18:90.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus occurrence 18:90:4, which distinguishes مَطْلِع from the current مَطْلَعِ."
+        }
+      ],
+      "takeaway": "The root ط ل ع remains visible while the form supplies the meaning “the emergence”.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-94dcb04efc1003cd reviewed word:97:5:4.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the طلع root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:57:00.768Z"
+      }
+    },
+    "lesson:97:5:5": {
+      "id": "lesson:97:5:5",
+      "meaning": "dawn",
+      "type": "Definite noun",
+      "root": "ف ج ر",
+      "rootPicture": "dawn · break forth",
+      "construction": "ٱلْفَجْرِ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article prefix",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "فَجْرِ",
+          "displayText": "فَجْرِ",
+          "label": "dawn",
+          "meaning": "The definite noun names the dawn that ends the night.",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ف ج ر"
+        }
+      ],
+      "grammar": "The definite noun names the dawn that ends the night.",
+      "sentenceRole": "The definite noun names the dawn that ends the night.",
+      "recognitionClue": "Recognise the ف-ج-ر pattern in this form and connect it to “dawn”.",
+      "forms": [
+        {
+          "form": "ٱلْفَجْرِ",
+          "meaning": "dawn",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ف ج ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:97:5:5."
+        },
+        {
+          "form": "يَفْجُرُ",
+          "meaning": "he breaks forth",
+          "difference": "imperfect verb",
+          "relationship": "Existing project-reviewed relationship to the فجر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَفَجَّرْنَا",
+          "meaning": "And We caused to burst",
+          "difference": "Compared with ٱلْفَجْرِ, this form changes gender: masculine → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Related to the ف ج ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:12:1.",
+          "provenance": "Codex-reviewed form for the ف ج ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "فَاجِرًا",
+          "meaning": "a wicked",
+          "difference": "Compared with ٱلْفَجْرِ, this form changes gender: masculine → not marked; case: genitive → accusative; number: not marked → masculine singular.",
+          "relationship": "Related to the ف ج ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:71:27:9.",
+          "provenance": "Codex-reviewed form for the ف ج ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "لِيَفْجُرَ",
+          "meaning": "to give (the) lie",
+          "difference": "Compared with ٱلْفَجْرِ, this form changes gender: masculine → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Related to the ف ج ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:75:5:4.",
+          "provenance": "Codex-reviewed form for the ف ج ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root ف ج ر remains visible while the form supplies the meaning “dawn”.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:97:5:5.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (97:5:5)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    }
+  },
   "volumeReferences": []
 }
