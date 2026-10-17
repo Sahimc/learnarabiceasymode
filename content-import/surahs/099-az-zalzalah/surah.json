@@ -7,10 +7,10 @@
     "arabicName": "الزلزلة",
     "transliteration": "Az-Zalzalah",
     "englishLabel": "The Earthquake",
-    "description": "Canonical source layer; custom teaching is not yet authored."
+    "description": "Reviewed Word Tree teaching layer."
   },
-  "contentVersion": "tanzil-1.1",
-  "status": "source-only",
+  "contentVersion": "tanzil-1.1+teaching-99-v1-sarf-1.2-limited-audit",
+  "status": "custom-complete",
   "sourceReferences": [
     {
       "provider": "tanzil",
@@ -37,7 +37,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "when",
+          "teachingId": "lesson:99:idha",
+          "occurrenceRole": "Opens the scene with the time of the final upheaval.",
+          "breakdown": {
+            "id": "breakdown:word:99:1:1",
+            "mode": "atomic",
+            "sourceText": "إِذَا",
+            "parts": [
+              {
+                "id": "word:99:1:1:part:1",
+                "order": 1,
+                "sourceText": "إِذَا",
+                "displayText": "إِذَا",
+                "label": "when",
+                "meaning": "a temporal conditional particle",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (temporal particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:1:2",
@@ -50,7 +71,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "is shaken",
+          "teachingId": "lesson:99:zulzilat",
+          "occurrenceRole": "Names the final shaking of the earth.",
+          "breakdown": {
+            "id": "breakdown:word:99:1:2",
+            "mode": "atomic",
+            "sourceText": "زُلْزِلَتِ",
+            "parts": [
+              {
+                "id": "word:99:1:2:part:1",
+                "order": 1,
+                "sourceText": "زُلْزِلَتِ",
+                "displayText": "زُلْزِلَتِ",
+                "label": "is shaken",
+                "meaning": "the complete passive verb",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ز ل ز ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:1:3",
@@ -63,7 +105,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the earth",
+          "teachingId": "lesson:99:ard",
+          "occurrenceRole": "Names the earth that will be shaken and disclose its burdens.",
+          "breakdown": {
+            "id": "breakdown:word:99:1:3",
+            "mode": "segmented",
+            "sourceText": "ٱلْأَرْضُ",
+            "parts": [
+              {
+                "id": "word:99:1:3:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:99:1:3:part:2",
+                "order": 2,
+                "sourceText": "أَرْضُ",
+                "displayText": "أَرْضُ",
+                "label": "earth",
+                "meaning": "the noun for earth and land",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "أ ر ض"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:1:4",
@@ -76,9 +150,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "its earthquake",
+          "teachingId": "lesson:99:zilzalaha",
+          "occurrenceRole": "Describes the earth undergoing its appointed earthquake.",
+          "breakdown": {
+            "id": "breakdown:word:99:1:4",
+            "mode": "segmented",
+            "sourceText": "زِلْزَالَهَا",
+            "parts": [
+              {
+                "id": "word:99:1:4:part:1",
+                "order": 1,
+                "sourceText": "زِلْزَالَ",
+                "displayText": "زِلْزَالَ",
+                "label": "earthquake",
+                "meaning": "the earthquake noun",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ز ل ز ل"
+              },
+              {
+                "id": "word:99:1:4:part:2",
+                "order": 2,
+                "sourceText": "هَا",
+                "displayText": "هَا",
+                "label": "its",
+                "meaning": "an attached feminine singular possessive pronoun",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (possessive pronoun)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "When the earth is shaken with its [final] earthquake",
+      "naturalMeaning": "The earth undergoes its final earthquake and begins the disclosure."
     },
     {
       "id": "ayah:99:2",
@@ -97,7 +205,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "and discharges",
+          "teachingId": "lesson:99:akhrajat",
+          "occurrenceRole": "Describes the earth discharging its burdens.",
+          "breakdown": {
+            "id": "breakdown:word:99:2:1",
+            "mode": "segmented",
+            "sourceText": "وَأَخْرَجَتِ",
+            "parts": [
+              {
+                "id": "word:99:2:1:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَ",
+                "label": "and",
+                "meaning": "a connector",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:99:2:1:part:2",
+                "order": 2,
+                "sourceText": "أَخْرَجَتِ",
+                "displayText": "أَخْرَجَتِ",
+                "label": "discharged",
+                "meaning": "the causative verb",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "خ ر ج"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:2:2",
@@ -110,7 +250,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the earth",
+          "teachingId": "lesson:99:ard",
+          "occurrenceRole": "Names the earth that will be shaken and disclose its burdens.",
+          "breakdown": {
+            "id": "breakdown:word:99:2:2",
+            "mode": "segmented",
+            "sourceText": "ٱلْأَرْضُ",
+            "parts": [
+              {
+                "id": "word:99:2:2:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:99:2:2:part:2",
+                "order": 2,
+                "sourceText": "أَرْضُ",
+                "displayText": "أَرْضُ",
+                "label": "earth",
+                "meaning": "the noun for earth and land",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "أ ر ض"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:2:3",
@@ -123,9 +295,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "its burdens",
+          "teachingId": "lesson:99:athqalaha",
+          "occurrenceRole": "Names what the earth will bring out from within itself.",
+          "breakdown": {
+            "id": "breakdown:word:99:2:3",
+            "mode": "segmented",
+            "sourceText": "أَثْقَالَهَا",
+            "parts": [
+              {
+                "id": "word:99:2:3:part:1",
+                "order": 1,
+                "sourceText": "أَثْقَالَ",
+                "displayText": "أَثْقَالَ",
+                "label": "burdens",
+                "meaning": "the plural noun for weights and burdens",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ث ق ل"
+              },
+              {
+                "id": "word:99:2:3:part:2",
+                "order": 2,
+                "sourceText": "هَا",
+                "displayText": "هَا",
+                "label": "its",
+                "meaning": "an attached feminine singular possessive pronoun",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (possessive pronoun)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "And the earth discharges its burdens",
+      "naturalMeaning": "The earth releases the burdens hidden within it."
     },
     {
       "id": "ayah:99:3",
@@ -144,7 +350,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "and says",
+          "teachingId": "lesson:99:waqala",
+          "occurrenceRole": "Introduces mankind’s astonished question.",
+          "breakdown": {
+            "id": "breakdown:word:99:3:1",
+            "mode": "segmented",
+            "sourceText": "وَقَالَ",
+            "parts": [
+              {
+                "id": "word:99:3:1:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَ",
+                "label": "and",
+                "meaning": "a connector",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:99:3:1:part:2",
+                "order": 2,
+                "sourceText": "قَالَ",
+                "displayText": "قَالَ",
+                "label": "says",
+                "meaning": "the speaking verb",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ق و ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:3:2",
@@ -157,7 +395,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "man",
+          "teachingId": "lesson:99:insan",
+          "occurrenceRole": "Names the human being who asks about the earth.",
+          "breakdown": {
+            "id": "breakdown:word:99:3:2",
+            "mode": "segmented",
+            "sourceText": "ٱلْإِنسَـٰنُ",
+            "parts": [
+              {
+                "id": "word:99:3:2:part:1",
+                "order": 1,
+                "sourceText": "ٱلْ",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:99:3:2:part:2",
+                "order": 2,
+                "sourceText": "إِنسَـٰنُ",
+                "displayText": "إِنسَـٰنُ",
+                "label": "man / human being",
+                "meaning": "the noun for humanity",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "أ ن س"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:3:3",
@@ -170,7 +440,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "what",
+          "teachingId": "lesson:99:ma",
+          "occurrenceRole": "Opens mankind’s question.",
+          "breakdown": {
+            "id": "breakdown:word:99:3:3",
+            "mode": "atomic",
+            "sourceText": "مَا",
+            "parts": [
+              {
+                "id": "word:99:3:3:part:1",
+                "order": 1,
+                "sourceText": "مَا",
+                "displayText": "مَا",
+                "label": "what",
+                "meaning": "an interrogative pronoun",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (interrogative pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:3:4",
@@ -183,9 +474,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "with it",
+          "teachingId": "lesson:99:laha",
+          "occurrenceRole": "Asks what the earth has that explains its strange state.",
+          "breakdown": {
+            "id": "breakdown:word:99:3:4",
+            "mode": "segmented",
+            "sourceText": "لَهَا",
+            "parts": [
+              {
+                "id": "word:99:3:4:part:1",
+                "order": 1,
+                "sourceText": "لَ",
+                "displayText": "لَ",
+                "label": "for / concerning",
+                "meaning": "a preposition marking relation",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              },
+              {
+                "id": "word:99:3:4:part:2",
+                "order": 2,
+                "sourceText": "هَا",
+                "displayText": "هَا",
+                "label": "it",
+                "meaning": "an attached feminine singular pronoun",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "And man says, \"What is [wrong] with it?\" -",
+      "naturalMeaning": "Humanity is astonished and asks what has happened to the earth."
     },
     {
       "id": "ayah:99:4",
@@ -204,7 +529,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "that Day",
+          "teachingId": "lesson:99:yawmaidhin",
+          "occurrenceRole": "Sets the time when the earth will speak through its news.",
+          "breakdown": {
+            "id": "breakdown:word:99:4:1",
+            "mode": "segmented",
+            "sourceText": "يَوْمَئِذٍ",
+            "parts": [
+              {
+                "id": "word:99:4:1:part:1",
+                "order": 1,
+                "sourceText": "يَوْمَ",
+                "displayText": "يَوْمَ",
+                "label": "day",
+                "meaning": "the time noun",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ي و م"
+              },
+              {
+                "id": "word:99:4:1:part:2",
+                "order": 2,
+                "sourceText": "ئِذٍ",
+                "displayText": "ئِذٍ",
+                "label": "then / at that time",
+                "meaning": "a time adverbial element",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (adverbial element)"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:4:2",
@@ -217,7 +574,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "will report",
+          "teachingId": "lesson:99:tuhaddith",
+          "occurrenceRole": "States that the earth will tell what happened upon it.",
+          "breakdown": {
+            "id": "breakdown:word:99:4:2",
+            "mode": "atomic",
+            "sourceText": "تُحَدِّثُ",
+            "parts": [
+              {
+                "id": "word:99:4:2:part:1",
+                "order": 1,
+                "sourceText": "تُحَدِّثُ",
+                "displayText": "تُحَدِّثُ",
+                "label": "will report",
+                "meaning": "the complete reporting verb",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ح د ث"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:4:3",
@@ -230,9 +608,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "its news",
+          "teachingId": "lesson:99:akhbaraha",
+          "occurrenceRole": "Names the reports the earth will deliver.",
+          "breakdown": {
+            "id": "breakdown:word:99:4:3",
+            "mode": "segmented",
+            "sourceText": "أَخْبَارَهَا",
+            "parts": [
+              {
+                "id": "word:99:4:3:part:1",
+                "order": 1,
+                "sourceText": "أَخْبَارَ",
+                "displayText": "أَخْبَارَ",
+                "label": "news",
+                "meaning": "the plural noun for reports",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "خ ب ر"
+              },
+              {
+                "id": "word:99:4:3:part:2",
+                "order": 2,
+                "sourceText": "هَا",
+                "displayText": "هَا",
+                "label": "its",
+                "meaning": "an attached feminine singular possessive pronoun",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (possessive pronoun)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "That Day, it will report its news",
+      "naturalMeaning": "On that Day the earth itself reports the events it witnessed."
     },
     {
       "id": "ayah:99:5",
@@ -251,7 +663,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "because",
+          "teachingId": "lesson:99:bianna",
+          "occurrenceRole": "Introduces the reason the earth will report its news.",
+          "breakdown": {
+            "id": "breakdown:word:99:5:1",
+            "mode": "segmented",
+            "sourceText": "بِأَنَّ",
+            "parts": [
+              {
+                "id": "word:99:5:1:part:1",
+                "order": 1,
+                "sourceText": "بِ",
+                "displayText": "بِ",
+                "label": "because of",
+                "meaning": "a preposition linking the reason",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              },
+              {
+                "id": "word:99:5:1:part:2",
+                "order": 2,
+                "sourceText": "أَنَّ",
+                "displayText": "أَنَّ",
+                "label": "that indeed",
+                "meaning": "an emphatic subordinating particle",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (emphasis particle)"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:5:2",
@@ -264,7 +708,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "your Lord",
+          "teachingId": "lesson:99:rabbaka",
+          "occurrenceRole": "Names the Lord whose command governs the earth.",
+          "breakdown": {
+            "id": "breakdown:word:99:5:2",
+            "mode": "segmented",
+            "sourceText": "رَبَّكَ",
+            "parts": [
+              {
+                "id": "word:99:5:2:part:1",
+                "order": 1,
+                "sourceText": "رَبَّ",
+                "displayText": "رَبَّ",
+                "label": "Lord",
+                "meaning": "the noun for Lord and nurturer",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ر ب ب"
+              },
+              {
+                "id": "word:99:5:2:part:2",
+                "order": 2,
+                "sourceText": "كَ",
+                "displayText": "كَ",
+                "label": "your",
+                "meaning": "an attached second-person singular possessive pronoun",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (possessive pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:5:3",
@@ -277,7 +753,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "has commanded",
+          "teachingId": "lesson:99:awha",
+          "occurrenceRole": "States that divine revelation caused the earth to report.",
+          "breakdown": {
+            "id": "breakdown:word:99:5:3",
+            "mode": "atomic",
+            "sourceText": "أَوْحَىٰ",
+            "parts": [
+              {
+                "id": "word:99:5:3:part:1",
+                "order": 1,
+                "sourceText": "أَوْحَىٰ",
+                "displayText": "أَوْحَىٰ",
+                "label": "commanded",
+                "meaning": "the complete Form IV verb",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "و ح ي"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:5:4",
@@ -290,9 +787,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "with it",
+          "teachingId": "lesson:99:laha",
+          "occurrenceRole": "Asks what the earth has that explains its strange state.",
+          "breakdown": {
+            "id": "breakdown:word:99:5:4",
+            "mode": "segmented",
+            "sourceText": "لَهَا",
+            "parts": [
+              {
+                "id": "word:99:5:4:part:1",
+                "order": 1,
+                "sourceText": "لَ",
+                "displayText": "لَ",
+                "label": "for / concerning",
+                "meaning": "a preposition marking relation",
+                "kind": "preposition",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (preposition)"
+              },
+              {
+                "id": "word:99:5:4:part:2",
+                "order": 2,
+                "sourceText": "هَا",
+                "displayText": "هَا",
+                "label": "it",
+                "meaning": "an attached feminine singular pronoun",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (pronoun)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "Because your Lord has commanded it.",
+      "naturalMeaning": "It reports because its Lord has commanded it to speak."
     },
     {
       "id": "ayah:99:6",
@@ -311,7 +842,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "that Day",
+          "teachingId": "lesson:99:yawmaidhin",
+          "occurrenceRole": "Sets the time when the earth will speak through its news.",
+          "breakdown": {
+            "id": "breakdown:word:99:6:1",
+            "mode": "segmented",
+            "sourceText": "يَوْمَئِذٍ",
+            "parts": [
+              {
+                "id": "word:99:6:1:part:1",
+                "order": 1,
+                "sourceText": "يَوْمَ",
+                "displayText": "يَوْمَ",
+                "label": "day",
+                "meaning": "the time noun",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ي و م"
+              },
+              {
+                "id": "word:99:6:1:part:2",
+                "order": 2,
+                "sourceText": "ئِذٍ",
+                "displayText": "ئِذٍ",
+                "label": "then / at that time",
+                "meaning": "a time adverbial element",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (adverbial element)"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:6:2",
@@ -324,7 +887,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "will depart",
+          "teachingId": "lesson:99:yasdur",
+          "occurrenceRole": "Describes people leaving in separated groups.",
+          "breakdown": {
+            "id": "breakdown:word:99:6:2",
+            "mode": "atomic",
+            "sourceText": "يَصْدُرُ",
+            "parts": [
+              {
+                "id": "word:99:6:2:part:1",
+                "order": 1,
+                "sourceText": "يَصْدُرُ",
+                "displayText": "يَصْدُرُ",
+                "label": "will depart",
+                "meaning": "the complete imperfect verb",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ص د ر"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:6:3",
@@ -337,7 +921,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "the people",
+          "teachingId": "lesson:99:nas",
+          "occurrenceRole": "Names humanity departing from the gathering.",
+          "breakdown": {
+            "id": "breakdown:word:99:6:3",
+            "mode": "segmented",
+            "sourceText": "ٱلنَّاسُ",
+            "parts": [
+              {
+                "id": "word:99:6:3:part:1",
+                "order": 1,
+                "sourceText": "ٱل",
+                "displayText": "ٱلْ",
+                "label": "the",
+                "meaning": "the definite article before a sun letter",
+                "kind": "article",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (article)"
+              },
+              {
+                "id": "word:99:6:3:part:2",
+                "order": 2,
+                "sourceText": "نَّاسُ",
+                "displayText": "نَّاسُ",
+                "label": "people",
+                "meaning": "the noun for humanity",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "أ ن س"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:6:4",
@@ -350,7 +966,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "separated",
+          "teachingId": "lesson:99:ashtat",
+          "occurrenceRole": "Shows humanity departing in distinct categories.",
+          "breakdown": {
+            "id": "breakdown:word:99:6:4",
+            "mode": "atomic",
+            "sourceText": "أَشْتَاتًا",
+            "parts": [
+              {
+                "id": "word:99:6:4:part:1",
+                "order": 1,
+                "sourceText": "أَشْتَاتًا",
+                "displayText": "أَشْتَاتًا",
+                "label": "separated groups",
+                "meaning": "the plural noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ش ت ت"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:6:5",
@@ -363,7 +1000,50 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "to be shown",
+          "teachingId": "lesson:99:liyuraw",
+          "occurrenceRole": "Explains why people depart: their deeds will be shown to them.",
+          "breakdown": {
+            "id": "breakdown:word:99:6:5",
+            "mode": "segmented",
+            "sourceText": "لِّيُرَوْا۟",
+            "parts": [
+              {
+                "id": "word:99:6:5:part:1",
+                "order": 1,
+                "sourceText": "لِّ",
+                "displayText": "لِّ",
+                "label": "to / so that",
+                "meaning": "a purpose prefix",
+                "kind": "prefix",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (purpose prefix)"
+              },
+              {
+                "id": "word:99:6:5:part:2",
+                "order": 2,
+                "sourceText": "يُرَ",
+                "displayText": "يُرَ",
+                "label": "be shown",
+                "meaning": "the passive seeing stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ر أ ي"
+              },
+              {
+                "id": "word:99:6:5:part:3",
+                "order": 3,
+                "sourceText": "وْا۟",
+                "displayText": "وْا۟",
+                "label": "they",
+                "meaning": "a masculine plural subject ending",
+                "kind": "subject-marker",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (subject ending)"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:6:6",
@@ -376,9 +1056,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "their deeds",
+          "teachingId": "lesson:99:amaluhum",
+          "occurrenceRole": "Names the deeds that will be shown to their doers.",
+          "breakdown": {
+            "id": "breakdown:word:99:6:6",
+            "mode": "segmented",
+            "sourceText": "أَعْمَـٰلَهُمْ",
+            "parts": [
+              {
+                "id": "word:99:6:6:part:1",
+                "order": 1,
+                "sourceText": "أَعْمَـٰلَ",
+                "displayText": "أَعْمَـٰلَ",
+                "label": "deeds",
+                "meaning": "the plural noun for actions",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ع م ل"
+              },
+              {
+                "id": "word:99:6:6:part:2",
+                "order": 2,
+                "sourceText": "هُمْ",
+                "displayText": "هُمْ",
+                "label": "their",
+                "meaning": "an attached masculine plural possessive pronoun",
+                "kind": "possessive-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (possessive pronoun)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "That Day, the people will depart separated [into categories] to be shown [the result of] their deeds.",
+      "naturalMeaning": "People leave in separated groups so their deeds can be shown to them."
     },
     {
       "id": "ayah:99:7",
@@ -397,7 +1111,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "so whoever",
+          "teachingId": "lesson:99:faman",
+          "occurrenceRole": "Begins the example of the smallest good deed.",
+          "breakdown": {
+            "id": "breakdown:word:99:7:1",
+            "mode": "segmented",
+            "sourceText": "فَمَن",
+            "parts": [
+              {
+                "id": "word:99:7:1:part:1",
+                "order": 1,
+                "sourceText": "فَ",
+                "displayText": "فَ",
+                "label": "so",
+                "meaning": "a result connector",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:99:7:1:part:2",
+                "order": 2,
+                "sourceText": "مَن",
+                "displayText": "مَن",
+                "label": "whoever",
+                "meaning": "a relative pronoun",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (relative pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:7:2",
@@ -410,7 +1156,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "does",
+          "teachingId": "lesson:99:yamal",
+          "occurrenceRole": "Introduces either a good or evil deed being measured.",
+          "breakdown": {
+            "id": "breakdown:word:99:7:2",
+            "mode": "atomic",
+            "sourceText": "يَعْمَلْ",
+            "parts": [
+              {
+                "id": "word:99:7:2:part:1",
+                "order": 1,
+                "sourceText": "يَعْمَلْ",
+                "displayText": "يَعْمَلْ",
+                "label": "does",
+                "meaning": "the jussive imperfect verb",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ع م ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:7:3",
@@ -423,7 +1190,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "weight",
+          "teachingId": "lesson:99:mithqal",
+          "occurrenceRole": "Sets the tiny measure used in the example.",
+          "breakdown": {
+            "id": "breakdown:word:99:7:3",
+            "mode": "atomic",
+            "sourceText": "مِثْقَالَ",
+            "parts": [
+              {
+                "id": "word:99:7:3:part:1",
+                "order": 1,
+                "sourceText": "مِثْقَالَ",
+                "displayText": "مِثْقَالَ",
+                "label": "weight",
+                "meaning": "the measure noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ث ق ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:7:4",
@@ -436,7 +1224,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "an atom",
+          "teachingId": "lesson:99:dharrah",
+          "occurrenceRole": "Defines how little a deed may be while still being seen.",
+          "breakdown": {
+            "id": "breakdown:word:99:7:4",
+            "mode": "atomic",
+            "sourceText": "ذَرَّةٍ",
+            "parts": [
+              {
+                "id": "word:99:7:4:part:1",
+                "order": 1,
+                "sourceText": "ذَرَّةٍ",
+                "displayText": "ذَرَّةٍ",
+                "label": "atom",
+                "meaning": "the complete tiny-particle noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ذ ر ر"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:7:5",
@@ -449,7 +1258,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "good",
+          "teachingId": "lesson:99:khayr",
+          "occurrenceRole": "Introduces the positive example of what will be seen.",
+          "breakdown": {
+            "id": "breakdown:word:99:7:5",
+            "mode": "atomic",
+            "sourceText": "خَيْرًا",
+            "parts": [
+              {
+                "id": "word:99:7:5:part:1",
+                "order": 1,
+                "sourceText": "خَيْرًا",
+                "displayText": "خَيْرًا",
+                "label": "good",
+                "meaning": "the complete noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "خ ي ر"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:7:6",
@@ -462,9 +1292,43 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "will see it",
+          "teachingId": "lesson:99:yarahu",
+          "occurrenceRole": "Promises that the doer will see the smallest good deed.",
+          "breakdown": {
+            "id": "breakdown:word:99:7:6",
+            "mode": "segmented",
+            "sourceText": "يَرَهُۥ",
+            "parts": [
+              {
+                "id": "word:99:7:6:part:1",
+                "order": 1,
+                "sourceText": "يَرَ",
+                "displayText": "يَرَ",
+                "label": "see",
+                "meaning": "the imperfect seeing stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ر أ ي"
+              },
+              {
+                "id": "word:99:7:6:part:2",
+                "order": 2,
+                "sourceText": "هُۥ",
+                "displayText": "هُۥ",
+                "label": "it",
+                "meaning": "an attached masculine singular object pronoun",
+                "kind": "object-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (object pronoun)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "So whoever does an atom's weight of good will see it,",
+      "naturalMeaning": "Even the smallest good deed will be brought into view."
     },
     {
       "id": "ayah:99:8",
@@ -483,7 +1347,39 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "and whoever",
+          "teachingId": "lesson:99:waman",
+          "occurrenceRole": "Begins the contrasting example of the smallest evil deed.",
+          "breakdown": {
+            "id": "breakdown:word:99:8:1",
+            "mode": "segmented",
+            "sourceText": "وَمَن",
+            "parts": [
+              {
+                "id": "word:99:8:1:part:1",
+                "order": 1,
+                "sourceText": "وَ",
+                "displayText": "وَ",
+                "label": "and",
+                "meaning": "a connector",
+                "kind": "connector",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (connector)"
+              },
+              {
+                "id": "word:99:8:1:part:2",
+                "order": 2,
+                "sourceText": "مَن",
+                "displayText": "مَن",
+                "label": "whoever",
+                "meaning": "a relative pronoun",
+                "kind": "other",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (relative pronoun)"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:8:2",
@@ -496,7 +1392,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "does",
+          "teachingId": "lesson:99:yamal",
+          "occurrenceRole": "Introduces either a good or evil deed being measured.",
+          "breakdown": {
+            "id": "breakdown:word:99:8:2",
+            "mode": "atomic",
+            "sourceText": "يَعْمَلْ",
+            "parts": [
+              {
+                "id": "word:99:8:2:part:1",
+                "order": 1,
+                "sourceText": "يَعْمَلْ",
+                "displayText": "يَعْمَلْ",
+                "label": "does",
+                "meaning": "the jussive imperfect verb",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ع م ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:8:3",
@@ -509,7 +1426,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "weight",
+          "teachingId": "lesson:99:mithqal",
+          "occurrenceRole": "Sets the tiny measure used in the example.",
+          "breakdown": {
+            "id": "breakdown:word:99:8:3",
+            "mode": "atomic",
+            "sourceText": "مِثْقَالَ",
+            "parts": [
+              {
+                "id": "word:99:8:3:part:1",
+                "order": 1,
+                "sourceText": "مِثْقَالَ",
+                "displayText": "مِثْقَالَ",
+                "label": "weight",
+                "meaning": "the measure noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ث ق ل"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:8:4",
@@ -522,7 +1460,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "an atom",
+          "teachingId": "lesson:99:dharrah",
+          "occurrenceRole": "Defines how little a deed may be while still being seen.",
+          "breakdown": {
+            "id": "breakdown:word:99:8:4",
+            "mode": "atomic",
+            "sourceText": "ذَرَّةٍ",
+            "parts": [
+              {
+                "id": "word:99:8:4:part:1",
+                "order": 1,
+                "sourceText": "ذَرَّةٍ",
+                "displayText": "ذَرَّةٍ",
+                "label": "atom",
+                "meaning": "the complete tiny-particle noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ذ ر ر"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:8:5",
@@ -535,7 +1494,28 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "evil",
+          "teachingId": "lesson:99:sharr",
+          "occurrenceRole": "Introduces the negative example of what will be seen.",
+          "breakdown": {
+            "id": "breakdown:word:99:8:5",
+            "mode": "atomic",
+            "sourceText": "شَرًّا",
+            "parts": [
+              {
+                "id": "word:99:8:5:part:1",
+                "order": 1,
+                "sourceText": "شَرًّا",
+                "displayText": "شَرًّا",
+                "label": "evil",
+                "meaning": "the complete noun",
+                "kind": "whole",
+                "rootStatus": "lexical",
+                "root": "ش ر ر"
+              }
+            ]
+          }
         },
         {
           "id": "word:99:8:6",
@@ -548,11 +1528,2145 @@
               "version": "1.1",
               "attribution": "Tanzil Project"
             }
-          ]
+          ],
+          "gloss": "will see it",
+          "teachingId": "lesson:99:yarahu",
+          "occurrenceRole": "Promises that the doer will see the smallest good deed.",
+          "breakdown": {
+            "id": "breakdown:word:99:8:6",
+            "mode": "segmented",
+            "sourceText": "يَرَهُۥ",
+            "parts": [
+              {
+                "id": "word:99:8:6:part:1",
+                "order": 1,
+                "sourceText": "يَرَ",
+                "displayText": "يَرَ",
+                "label": "see",
+                "meaning": "the imperfect seeing stem",
+                "kind": "stem",
+                "rootStatus": "lexical",
+                "root": "ر أ ي"
+              },
+              {
+                "id": "word:99:8:6:part:2",
+                "order": 2,
+                "sourceText": "هُۥ",
+                "displayText": "هُۥ",
+                "label": "it",
+                "meaning": "an attached masculine singular object pronoun",
+                "kind": "object-pronoun",
+                "rootStatus": "rootless",
+                "rootExplanation": "No lexical root (object pronoun)"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "translation": "And whoever does an atom's weight of evil will see it.",
+      "naturalMeaning": "Even the smallest evil deed will be brought into view."
     }
   ],
-  "teachingEntries": {},
+  "teachingEntries": {
+    "lesson:99:idha": {
+      "id": "lesson:99:idha",
+      "meaning": "when",
+      "type": "Temporal conditional particle",
+      "root": "",
+      "rootPicture": "No lexical root (temporal particle) — when / whenever.",
+      "construction": "إِذَا",
+      "components": [
+        {
+          "text": "إِذَا",
+          "displayText": "إِذَا",
+          "label": "when",
+          "meaning": "a temporal conditional particle",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (temporal particle)"
+        }
+      ],
+      "grammar": "The fixed particle introduces the future event of the earth’s shaking.",
+      "sentenceRole": "Opens the scene with the time of the final upheaval.",
+      "recognitionClue": "Recognise إِذَا as the fixed temporal word ‘when’.",
+      "forms": [
+        {
+          "form": "إِذَا",
+          "meaning": "when",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:99:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (99:1:1) was checked as evidence."
+        },
+        {
+          "form": "وَإِذَا",
+          "meaning": "and when",
+          "difference": "connector plus particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This grammar word has no lexical root; it places the warning in a future event.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "إِذَا is a rootless article rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-32efb281a15a6a20 reviewed word:99:1:1.",
+          "The item was checked as article; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (99:1:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:43:45.189Z"
+      }
+    },
+    "lesson:99:zulzilat": {
+      "id": "lesson:99:zulzilat",
+      "meaning": "is shaken",
+      "type": "Passive quadriliteral verb",
+      "root": "ز ل ز ل",
+      "rootPicture": "shaking · trembling · earthquake",
+      "construction": "زُلْزِلَتِ",
+      "components": [
+        {
+          "text": "زُلْزِلَتِ",
+          "displayText": "زُلْزِلَتِ",
+          "label": "is shaken",
+          "meaning": "the complete passive verb",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ز ل ز ل"
+        }
+      ],
+      "grammar": "The passive verb describes the earth undergoing violent shaking.",
+      "sentenceRole": "Names the final shaking of the earth.",
+      "recognitionClue": "Recognise the repeated ز ل ز ل pattern as trembling and earthquake movement.",
+      "forms": [
+        {
+          "form": "زُلْزِلَتِ",
+          "meaning": "is shaken",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; voice: passive; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the زلزل lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:99:1:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (99:1:2) was checked as evidence."
+        },
+        {
+          "form": "زِلْزَالَهَا",
+          "meaning": "its earthquake",
+          "difference": "Compared with زُلْزِلَتِ, this form changes tense: perfect verb → not marked; voice: passive → not marked; verbform: Form 1 → not marked; pattern: Form 1 → not marked.",
+          "relationship": "Current Qur'anic occurrence of the زلزل lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:99:1:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (99:1:4) was checked as evidence."
+        },
+        {
+          "form": "زَلْزَلَ",
+          "meaning": "he shook or convulsed",
+          "difference": "Active quadriliteral perfect; it presents the completed shaking action, contrasting with the current passive form.",
+          "relationship": "The active quadriliteral verb of the ز ل ز ل family underlying زُلْزِلَتْ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ز ل ز ل entry, which identifies the Form I verb as ‘to shake,’ and aligned quadriliteral morphology."
+        },
+        {
+          "form": "يُزَلْزِلُ",
+          "meaning": "he shakes or convulses",
+          "difference": "Active quadriliteral imperfect; it presents shaking as ongoing or repeated.",
+          "relationship": "The imperfect counterpart of زَلْزَلَ in the ز ل ز ل family.",
+          "provenance": "Codex-authored after review of standard Arabic quadriliteral conjugation for زَلْزَلَ and the canonical Quranic forms listed by the Quranic Arabic Corpus."
+        },
+        {
+          "form": "زَلْزَلَةٌ",
+          "meaning": "a shaking or convulsion",
+          "difference": "Quadriliteral verbal noun; it names the convulsion as an event rather than expressing it as a verb.",
+          "relationship": "A genuine verbal noun of زَلْزَلَ, attested canonically in 22:1 and listed by the Quranic Arabic Corpus.",
+          "provenance": "Codex-authored after review of canonical Qur'anic occurrence word:22:1:6 and the Quranic Arabic Corpus ز ل ز ل entry."
+        }
+      ],
+      "takeaway": "The four-letter root makes the shaking itself unmistakable.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-32efb281a15a6a20 reviewed word:99:1:2.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the زلزل root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:43:45.189Z"
+      }
+    },
+    "lesson:99:ard": {
+      "id": "lesson:99:ard",
+      "meaning": "the earth",
+      "type": "Definite noun",
+      "root": "أ ر ض",
+      "rootPicture": "earth · ground · land",
+      "construction": "ٱلْ + أَرْضُ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "أَرْضُ",
+          "displayText": "أَرْضُ",
+          "label": "earth",
+          "meaning": "the noun for earth and land",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "أ ر ض"
+        }
+      ],
+      "grammar": "The article makes the noun definite as the earth itself.",
+      "sentenceRole": "Names the earth that will be shaken and disclose its burdens.",
+      "recognitionClue": "Connect أَرْض with earth, land and ground, then notice the article.",
+      "forms": [
+        {
+          "form": "ٱلْأَرْضُ",
+          "meaning": "the earth",
+          "difference": "Current Qur'anic occurrence; gender: feminine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the أ ر ض root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:2:2."
+        },
+        {
+          "form": "أَرَاضٍ",
+          "meaning": "lands",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the أرض family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَرْضِيٌّ",
+          "meaning": "earthly",
+          "difference": "adjective",
+          "relationship": "Existing project-reviewed relationship to the أرض family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَٱلْأَرْضَ",
+          "meaning": "And the earth",
+          "difference": "Compared with ٱلْأَرْضُ, this form changes case: nominative → accusative.",
+          "relationship": "Related to the أ ر ض root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:48:1.",
+          "provenance": "Codex-reviewed form for the أ ر ض family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "وَٱلْأَرْضِ",
+          "meaning": "and the earth",
+          "difference": "Compared with ٱلْأَرْضُ, this form changes case: nominative → genitive.",
+          "relationship": "Related to the أ ر ض root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:55:29:5.",
+          "provenance": "Codex-reviewed form for the أ ر ض family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root anchors the cosmic scene in the ground beneath humanity.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:2:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:2:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:zilzalaha": {
+      "id": "lesson:99:zilzalaha",
+      "meaning": "its earthquake",
+      "type": "Noun with attached pronoun",
+      "root": "ز ل ز ل",
+      "rootPicture": "shaking · trembling · earthquake",
+      "construction": "زِلْزَالَ + هَا",
+      "components": [
+        {
+          "text": "زِلْزَالَ",
+          "displayText": "زِلْزَالَ",
+          "label": "earthquake",
+          "meaning": "the earthquake noun",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ز ل ز ل"
+        },
+        {
+          "text": "هَا",
+          "displayText": "هَا",
+          "label": "its",
+          "meaning": "an attached feminine singular possessive pronoun",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (possessive pronoun)"
+        }
+      ],
+      "grammar": "The noun names the earthquake and هَا identifies the earth as its possessor.",
+      "sentenceRole": "Describes the earth undergoing its appointed earthquake.",
+      "recognitionClue": "Connect زِلْزَال with earthquake and separate هَا as ‘its’.",
+      "forms": [
+        {
+          "form": "زِلْزَالَهَا",
+          "meaning": "its earthquake",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the زلزل lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:99:1:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (99:1:4) was checked as evidence."
+        },
+        {
+          "form": "زُلْزِلَتِ",
+          "meaning": "is shaken",
+          "difference": "Compared with زِلْزَالَهَا, this form changes gender: masculine → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb; tense: not marked → perfect verb.",
+          "relationship": "Current Qur'anic occurrence of the زلزل lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:99:1:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (99:1:2) was checked as evidence."
+        },
+        {
+          "form": "زَلْزَلَ",
+          "meaning": "he shook or convulsed",
+          "difference": "Active quadriliteral perfect; it presents the completed shaking action, contrasting with the current passive form.",
+          "relationship": "The active quadriliteral verb of the ز ل ز ل family underlying زُلْزِلَتْ.",
+          "provenance": "Codex-authored after review of the Quranic Arabic Corpus ز ل ز ل entry, which identifies the Form I verb as ‘to shake,’ and aligned quadriliteral morphology."
+        },
+        {
+          "form": "يُزَلْزِلُ",
+          "meaning": "he shakes or convulses",
+          "difference": "Active quadriliteral imperfect; it presents shaking as ongoing or repeated.",
+          "relationship": "The imperfect counterpart of زَلْزَلَ in the ز ل ز ل family.",
+          "provenance": "Codex-authored after review of standard Arabic quadriliteral conjugation for زَلْزَلَ and the canonical Quranic forms listed by the Quranic Arabic Corpus."
+        },
+        {
+          "form": "زَلْزَلَةٌ",
+          "meaning": "a shaking or convulsion",
+          "difference": "Quadriliteral verbal noun; it names the convulsion as an event rather than expressing it as a verb.",
+          "relationship": "A genuine verbal noun of زَلْزَلَ, attested canonically in 22:1 and listed by the Quranic Arabic Corpus.",
+          "provenance": "Codex-authored after review of canonical Qur'anic occurrence word:22:1:6 and the Quranic Arabic Corpus ز ل ز ل entry."
+        }
+      ],
+      "takeaway": "The root repeats the trembling image; the pronoun makes the earthquake belong to the earth.",
+      "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-32efb281a15a6a20 reviewed word:99:1:4.",
+          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the زلزل root family."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:43:45.189Z"
+      }
+    },
+    "lesson:99:akhrajat": {
+      "id": "lesson:99:akhrajat",
+      "meaning": "and discharges",
+      "type": "Connector plus causative verb",
+      "root": "خ ر ج",
+      "rootPicture": "going out · bringing out · emergence",
+      "construction": "وَ + أَخْرَجَتِ",
+      "components": [
+        {
+          "text": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "a connector",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "أَخْرَجَتِ",
+          "displayText": "أَخْرَجَتِ",
+          "label": "discharged",
+          "meaning": "the causative verb",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "خ ر ج"
+        }
+      ],
+      "grammar": "وَ connects the next action and the verb describes the earth bringing out what it contains.",
+      "sentenceRole": "Describes the earth discharging its burdens.",
+      "recognitionClue": "Connect خُرُوج with going out and recognize أَخْرَجَ as bringing out.",
+      "forms": [
+        {
+          "form": "وَأَخْرَجَتِ",
+          "meaning": "and discharges",
+          "difference": "Current Qur'anic occurrence; pattern: Form 4; tense: perfect verb; verb form: Form 4.",
+          "relationship": "Current Qur'anic occurrence of the خ ر ج root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:2:1."
+        },
+        {
+          "form": "يَخْرُجُ",
+          "meaning": "he goes out",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the خرج family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَخْرَجَ",
+          "meaning": "he brought out",
+          "difference": "Form IV verb",
+          "relationship": "Existing project-reviewed relationship to the خرج family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فَأَخْرَجْنَا",
+          "meaning": "Then We brought out",
+          "difference": "Compared with وَأَخْرَجَتِ, this form changes person: not marked → first-person plural.",
+          "relationship": "Related to the خ ر ج root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:35:1.",
+          "provenance": "Codex-reviewed form for the خ ر ج family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "يَخْرُجُونَ",
+          "meaning": "they will come forth",
+          "difference": "Compared with وَأَخْرَجَتِ, this form changes tense: perfect verb → imperfect verb; verbform: Form 4 → Form 1; pattern: Form 4 → Form 1.",
+          "relationship": "Related to the خ ر ج root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:7:3.",
+          "provenance": "Codex-reviewed form for the خ ر ج family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root turns hidden burial contents into something brought into the open.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:2:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:2:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:athqalaha": {
+      "id": "lesson:99:athqalaha",
+      "meaning": "its burdens",
+      "type": "Plural noun with attached pronoun",
+      "root": "ث ق ل",
+      "rootPicture": "heaviness · weight · burden",
+      "construction": "أَثْقَالَ + هَا",
+      "components": [
+        {
+          "text": "أَثْقَالَ",
+          "displayText": "أَثْقَالَ",
+          "label": "burdens",
+          "meaning": "the plural noun for weights and burdens",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ث ق ل"
+        },
+        {
+          "text": "هَا",
+          "displayText": "هَا",
+          "label": "its",
+          "meaning": "an attached feminine singular possessive pronoun",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (possessive pronoun)"
+        }
+      ],
+      "grammar": "The plural noun names the burdens and هَا identifies the earth as their possessor.",
+      "sentenceRole": "Names what the earth will bring out from within itself.",
+      "recognitionClue": "Connect ثِقْل with weight and recognize أَثْقَال as burdens; separate هَا as ‘its’.",
+      "forms": [
+        {
+          "form": "أَثْقَالَهَا",
+          "meaning": "its burdens",
+          "difference": "Current Qur'anic occurrence; number: masculine plural; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the ث ق ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:2:3."
+        },
+        {
+          "form": "يَثْقُلُ",
+          "meaning": "he becomes heavy",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the ثقل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ثَقِيلٌ",
+          "meaning": "heavy",
+          "difference": "adjective",
+          "relationship": "Existing project-reviewed relationship to the ثقل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مُّثْقَلُونَ",
+          "meaning": "(are) overburdened",
+          "difference": "Compared with أَثْقَالَهَا, this form changes case: accusative → nominative; verbform: not marked → Form 4; pattern: not marked → Form 4.",
+          "relationship": "Related to the ث ق ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:40:7.",
+          "provenance": "Codex-reviewed form for the ث ق ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلثَّقَلَانِ",
+          "meaning": "two classes",
+          "difference": "Compared with أَثْقَالَهَا, this form changes number: masculine plural → not marked; case: accusative → nominative.",
+          "relationship": "Related to the ث ق ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:55:31:4.",
+          "provenance": "Codex-reviewed form for the ث ق ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root makes the disclosed contents feel weighty and consequential.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:2:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:2:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:waqala": {
+      "id": "lesson:99:waqala",
+      "meaning": "and says",
+      "type": "Connector plus past verb",
+      "root": "ق و ل",
+      "rootPicture": "say · speak · tell · state",
+      "construction": "وَ + قَالَ",
+      "components": [
+        {
+          "text": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "a connector",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "قَالَ",
+          "displayText": "قَالَ",
+          "label": "says",
+          "meaning": "the speaking verb",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ق و ل"
+        }
+      ],
+      "grammar": "وَ connects the human response and قَالَ names speech.",
+      "sentenceRole": "Introduces mankind’s astonished question.",
+      "recognitionClue": "Connect قَوْل with speech and recognize قَالَ as ‘he said’.",
+      "forms": [
+        {
+          "form": "وَقَالَ",
+          "meaning": "and says",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ق و ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:3:1."
+        },
+        {
+          "form": "قَالَ",
+          "meaning": "he said",
+          "difference": "past verb",
+          "relationship": "Existing project-reviewed relationship to the قول family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَقُولُ",
+          "meaning": "he says",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the قول family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "قَالُوٓا۟",
+          "meaning": "They said",
+          "difference": "Compared with وَقَالَ, this form changes person: third-person masculine singular → not marked.",
+          "relationship": "Related to the ق و ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:32:1.",
+          "provenance": "Codex-reviewed form for the ق و ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "قِيلَ",
+          "meaning": "was said",
+          "difference": "Compared with وَقَالَ, this form changes voice: not marked → passive.",
+          "relationship": "Related to the ق و ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:43:4.",
+          "provenance": "Codex-reviewed form for the ق و ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root turns the silent earth into a scene that provokes human speech.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:3:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:3:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:insan": {
+      "id": "lesson:99:insan",
+      "meaning": "man",
+      "type": "Definite noun",
+      "root": "أ ن س",
+      "rootPicture": "humanity · people · familiarity",
+      "construction": "ٱلْ + إِنسَـٰنُ",
+      "components": [
+        {
+          "text": "ٱلْ",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "إِنسَـٰنُ",
+          "displayText": "إِنسَـٰنُ",
+          "label": "man / human being",
+          "meaning": "the noun for humanity",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "أ ن س"
+        }
+      ],
+      "grammar": "The article makes the noun definite as humanity in general.",
+      "sentenceRole": "Names the human being who asks about the earth.",
+      "recognitionClue": "Connect أُنْس with human companionship and recognize إِنسَان as a human being.",
+      "forms": [
+        {
+          "form": "ٱلْإِنسَـٰنُ",
+          "meaning": "man",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the أ ن س root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:3:2."
+        },
+        {
+          "form": "إِنسَانٌ",
+          "meaning": "a human being",
+          "difference": "singular noun",
+          "relationship": "Existing project-reviewed relationship to the أنس family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "نَاسٌ",
+          "meaning": "people",
+          "difference": "plural noun",
+          "relationship": "Existing project-reviewed relationship to the أنس family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلنَّاسَ",
+          "meaning": "men",
+          "difference": "Compared with ٱلْإِنسَـٰنُ, this form changes gender: masculine → not marked; case: nominative → accusative; number: not marked → masculine plural.",
+          "relationship": "Related to the أ ن س root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:20:2.",
+          "provenance": "Codex-reviewed form for the أ ن س family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "إِنسٌ",
+          "meaning": "any man",
+          "difference": "Compared with ٱلْإِنسَـٰنُ, this form changes state: not marked → indefinite.",
+          "relationship": "Related to the أ ن س root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:55:39:6.",
+          "provenance": "Codex-reviewed form for the أ ن س family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root anchors the question in human nature and awareness.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:3:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:3:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:ma": {
+      "id": "lesson:99:ma",
+      "meaning": "what",
+      "type": "Interrogative pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (interrogative pronoun) — what / that which.",
+      "construction": "مَا",
+      "components": [
+        {
+          "text": "مَا",
+          "displayText": "مَا",
+          "label": "what",
+          "meaning": "an interrogative pronoun",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (interrogative pronoun)"
+        }
+      ],
+      "grammar": "The fixed pronoun asks what has happened to the earth.",
+      "sentenceRole": "Opens mankind’s question.",
+      "recognitionClue": "Recognise مَا as the fixed question word ‘what’.",
+      "forms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:99:3:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (99:3:3) was checked as evidence."
+        },
+        {
+          "form": "بِمَا",
+          "meaning": "with what",
+          "difference": "preposition joined to the pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "This grammar word has no lexical root; it introduces the question.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "مَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 2 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-32efb281a15a6a20 reviewed word:99:3:3.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (99:3:3) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:43:45.189Z"
+      }
+    },
+    "lesson:99:laha": {
+      "id": "lesson:99:laha",
+      "meaning": "with it",
+      "type": "Preposition plus attached pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (preposition plus pronoun) — for it / concerning it.",
+      "construction": "لَ + هَا",
+      "components": [
+        {
+          "text": "لَ",
+          "displayText": "لَ",
+          "label": "for / concerning",
+          "meaning": "a preposition marking relation",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        },
+        {
+          "text": "هَا",
+          "displayText": "هَا",
+          "label": "it",
+          "meaning": "an attached feminine singular pronoun",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (pronoun)"
+        }
+      ],
+      "grammar": "لَ marks relation to the earth, while هَا refers back to it.",
+      "sentenceRole": "Asks what the earth has that explains its strange state.",
+      "recognitionClue": "Separate لَ as the preposition from هَا as ‘it’.",
+      "forms": [
+        {
+          "form": "لَهَا",
+          "meaning": "with it",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:99:5:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (99:5:4) was checked as evidence."
+        },
+        {
+          "form": "لَهُ",
+          "meaning": "for him",
+          "difference": "masculine pronoun form",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَلَهَا",
+          "meaning": "and for it",
+          "difference": "connector plus phrase",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "The phrase is grammatical and rootless: preposition plus pronoun.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "لَهَا is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-32efb281a15a6a20 reviewed word:99:5:4.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (99:5:4) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:43:45.189Z"
+      }
+    },
+    "lesson:99:yawmaidhin": {
+      "id": "lesson:99:yawmaidhin",
+      "meaning": "that Day",
+      "type": "Time expression",
+      "root": "ي و م",
+      "rootPicture": "day · time · appointed period",
+      "construction": "يَوْمَ + ئِذٍ",
+      "components": [
+        {
+          "text": "يَوْمَ",
+          "displayText": "يَوْمَ",
+          "label": "day",
+          "meaning": "the time noun",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ي و م"
+        },
+        {
+          "text": "ئِذٍ",
+          "displayText": "ئِذٍ",
+          "label": "then / at that time",
+          "meaning": "a time adverbial element",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (adverbial element)"
+        }
+      ],
+      "grammar": "The noun day joins to a time element to identify the appointed Day.",
+      "sentenceRole": "Sets the time when the earth will speak through its news.",
+      "recognitionClue": "Recognise يَوْم as day and the attached time element as ‘then/at that time’.",
+      "forms": [
+        {
+          "form": "يَوْمَئِذٍ",
+          "meaning": "that Day",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of the ي و م root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:6:1."
+        },
+        {
+          "form": "يَوْمًا",
+          "meaning": "a day",
+          "difference": "accusative noun",
+          "relationship": "Existing project-reviewed relationship to the يوم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَيَّامٌ",
+          "meaning": "days",
+          "difference": "plural noun",
+          "relationship": "Existing project-reviewed relationship to the يوم family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَوْمِهِمُ",
+          "meaning": "their Day",
+          "difference": "Compared with يَوْمَئِذٍ, this form changes gender: not marked → masculine; case: not marked → genitive.",
+          "relationship": "Related to the ي و م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:60:5.",
+          "provenance": "Codex-reviewed form for the ي و م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "يَوْمَهُمُ",
+          "meaning": "their Day",
+          "difference": "Compared with يَوْمَئِذٍ, this form changes gender: not marked → masculine; case: not marked → accusative.",
+          "relationship": "Related to the ي و م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:45:4.",
+          "provenance": "Codex-reviewed form for the ي و م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The lexical root names the day; the adverbial element specifies that appointed time.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:6:1.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:6:1)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:tuhaddith": {
+      "id": "lesson:99:tuhaddith",
+      "meaning": "will report",
+      "type": "Form II imperfect verb",
+      "root": "ح د ث",
+      "rootPicture": "speak · report · occur",
+      "construction": "تُحَدِّثُ",
+      "components": [
+        {
+          "text": "تُحَدِّثُ",
+          "displayText": "تُحَدِّثُ",
+          "label": "will report",
+          "meaning": "the complete reporting verb",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ح د ث"
+        }
+      ],
+      "grammar": "The verb describes the earth reporting or narrating its news.",
+      "sentenceRole": "States that the earth will tell what happened upon it.",
+      "recognitionClue": "Connect حَدِيث with a report and recognize تُحَدِّث as telling or reporting.",
+      "forms": [
+        {
+          "form": "تُحَدِّثُ",
+          "meaning": "will report",
+          "difference": "Current Qur'anic occurrence; pattern: Form 2; tense: imperfect verb; verb form: Form 2.",
+          "relationship": "Current Qur'anic occurrence of the ح د ث root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:4:2."
+        },
+        {
+          "form": "يُحَدِّثُ",
+          "meaning": "he tells",
+          "difference": "Form II present verb",
+          "relationship": "Existing project-reviewed relationship to the حدث family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "حَدِيثٌ",
+          "meaning": "report / narration",
+          "difference": "noun",
+          "relationship": "Existing project-reviewed relationship to the حدث family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "بِحَدِيثٍ",
+          "meaning": "a statement",
+          "difference": "Compared with تُحَدِّثُ, this form changes tense: imperfect verb → not marked; verbform: Form 2 → not marked; pattern: Form 2 → not marked.",
+          "relationship": "Related to the ح د ث root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:34:2.",
+          "provenance": "Codex-reviewed form for the ح د ث family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلْحَدِيثِ",
+          "meaning": "statement",
+          "difference": "Compared with تُحَدِّثُ, this form changes tense: imperfect verb → not marked; verbform: Form 2 → not marked; pattern: Form 2 → not marked.",
+          "relationship": "Related to the ح د ث root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:59:3.",
+          "provenance": "Codex-reviewed form for the ح د ث family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root makes the earth a narrator of the events witnessed upon it.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:4:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:4:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:akhbaraha": {
+      "id": "lesson:99:akhbaraha",
+      "meaning": "its news",
+      "type": "Plural noun with attached pronoun",
+      "root": "خ ب ر",
+      "rootPicture": "news · information · experience",
+      "construction": "أَخْبَارَ + هَا",
+      "components": [
+        {
+          "text": "أَخْبَارَ",
+          "displayText": "أَخْبَارَ",
+          "label": "news",
+          "meaning": "the plural noun for reports",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "خ ب ر"
+        },
+        {
+          "text": "هَا",
+          "displayText": "هَا",
+          "label": "its",
+          "meaning": "an attached feminine singular possessive pronoun",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (possessive pronoun)"
+        }
+      ],
+      "grammar": "The plural noun names the news and هَا identifies the earth as its possessor.",
+      "sentenceRole": "Names the reports the earth will deliver.",
+      "recognitionClue": "Connect خَبَر with news and information, then separate هَا as ‘its’.",
+      "forms": [
+        {
+          "form": "أَخْبَارَهَا",
+          "meaning": "its news",
+          "difference": "Current Qur'anic occurrence; number: masculine plural; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the خ ب ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:4:3."
+        },
+        {
+          "form": "أَخْبَارٌ",
+          "meaning": "news",
+          "difference": "broken plural",
+          "relationship": "Existing project-reviewed relationship to the خبر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "خَبِيرٌ",
+          "meaning": "fully informed",
+          "difference": "adjective from the root",
+          "relationship": "Existing project-reviewed relationship to the خبر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "خَبِيرٌۢ",
+          "meaning": "(is) All-Aware",
+          "difference": "Compared with أَخْبَارَهَا, this form changes number: masculine plural → masculine singular; case: accusative → nominative; state: not marked → indefinite.",
+          "relationship": "Related to the خ ب ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:58:13:22.",
+          "provenance": "Codex-reviewed form for the خ ب ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلْخَبِيرُ",
+          "meaning": "the All-Aware",
+          "difference": "Compared with أَخْبَارَهَا, this form changes number: masculine plural → masculine singular; case: accusative → nominative.",
+          "relationship": "Related to the خ ب ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:66:3:29.",
+          "provenance": "Codex-reviewed form for the خ ب ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root makes the earth’s testimony a report of known events.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:4:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:4:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:bianna": {
+      "id": "lesson:99:bianna",
+      "meaning": "because",
+      "type": "Preposition plus emphasis particle",
+      "root": "",
+      "rootPicture": "No lexical root (preposition plus emphasis particle) — by the fact that / because.",
+      "construction": "بِ + أَنَّ",
+      "components": [
+        {
+          "text": "بِ",
+          "displayText": "بِ",
+          "label": "because of",
+          "meaning": "a preposition linking the reason",
+          "kind": "preposition",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (preposition)"
+        },
+        {
+          "text": "أَنَّ",
+          "displayText": "أَنَّ",
+          "label": "that indeed",
+          "meaning": "an emphatic subordinating particle",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (emphasis particle)"
+        }
+      ],
+      "grammar": "بِ links the reason, and أَنَّ introduces the emphasized clause.",
+      "sentenceRole": "Introduces the reason the earth will report its news.",
+      "recognitionClue": "Separate بِ as ‘by/because of’ from أَنَّ as the rootless clause marker.",
+      "forms": [
+        {
+          "form": "بِأَنَّ",
+          "meaning": "because",
+          "difference": "Current Qur'anic occurrence; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:99:5:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (99:5:1) was checked as evidence."
+        },
+        {
+          "form": "أَنَّ",
+          "meaning": "that indeed",
+          "difference": "subordinating emphasis particle",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "بِأَنَّهُ",
+          "meaning": "because he",
+          "difference": "preposition plus clause and pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "Both parts are grammar words; together they connect the earth’s testimony to divine command.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "بِأَنَّ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 3 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-32efb281a15a6a20 reviewed word:99:5:1.",
+          "The item was checked as preposition; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (99:5:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:43:45.189Z"
+      }
+    },
+    "lesson:99:rabbaka": {
+      "id": "lesson:99:rabbaka",
+      "meaning": "your Lord",
+      "type": "Noun with attached pronoun",
+      "root": "ر ب ب",
+      "rootPicture": "raise · nurture · sustain · govern",
+      "construction": "رَبَّ + كَ",
+      "components": [
+        {
+          "text": "رَبَّ",
+          "displayText": "رَبَّ",
+          "label": "Lord",
+          "meaning": "the noun for Lord and nurturer",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ر ب ب"
+        },
+        {
+          "text": "كَ",
+          "displayText": "كَ",
+          "label": "your",
+          "meaning": "an attached second-person singular possessive pronoun",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (possessive pronoun)"
+        }
+      ],
+      "grammar": "The noun names the Lord and كَ identifies the person addressed.",
+      "sentenceRole": "Names the Lord whose command governs the earth.",
+      "recognitionClue": "Connect رَبّ with nurturing lordship and separate كَ as ‘your’.",
+      "forms": [
+        {
+          "form": "رَبَّكَ",
+          "meaning": "your Lord",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: accusative; person: second-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of the ر ب ب root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:5:2."
+        },
+        {
+          "form": "رَبٌّ",
+          "meaning": "a lord",
+          "difference": "basic noun",
+          "relationship": "Existing project-reviewed relationship to the ربب family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "رَبَّى",
+          "meaning": "he nurtured",
+          "difference": "Form II verb",
+          "relationship": "Existing project-reviewed relationship to the ربب family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "رُبُوبِيَّةٌ",
+          "meaning": "lordship",
+          "difference": "verbal noun",
+          "relationship": "Existing project-reviewed relationship to the ربب family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "رَبِّ",
+          "meaning": "Lord",
+          "difference": "Compared with رَبَّكَ, this form changes case: accusative → genitive; person: second-person masculine singular → not marked.",
+          "relationship": "Related to the ر ب ب root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:1:2:3.",
+          "provenance": "Codex-reviewed form for the ر ب ب family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root presents the command as coming from the One who nurtures and governs.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:5:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:5:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:awha": {
+      "id": "lesson:99:awha",
+      "meaning": "has commanded",
+      "type": "Form IV past verb",
+      "root": "و ح ي",
+      "rootPicture": "revelation · inspiration · conveying",
+      "construction": "أَوْحَىٰ",
+      "components": [
+        {
+          "text": "أَوْحَىٰ",
+          "displayText": "أَوْحَىٰ",
+          "label": "commanded",
+          "meaning": "the complete Form IV verb",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "و ح ي"
+        }
+      ],
+      "grammar": "The verb describes the Lord conveying the command to the earth.",
+      "sentenceRole": "States that divine revelation caused the earth to report.",
+      "recognitionClue": "Connect وَحْي with revelation and recognize أَوْحَى as conveyed or commanded.",
+      "forms": [
+        {
+          "form": "أَوْحَىٰ",
+          "meaning": "has commanded",
+          "difference": "Current Qur'anic occurrence; pattern: Form 4; tense: perfect verb; person: third-person masculine singular; verb form: Form 4.",
+          "relationship": "Current Qur'anic occurrence of the و ح ي root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:5:3."
+        },
+        {
+          "form": "أَوْحَى",
+          "meaning": "he revealed",
+          "difference": "Form IV past verb",
+          "relationship": "Existing project-reviewed relationship to the وحي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يُوحِي",
+          "meaning": "he reveals",
+          "difference": "Form IV present verb",
+          "relationship": "Existing project-reviewed relationship to the وحي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَحْىٌ",
+          "meaning": "a revelation",
+          "difference": "Compared with أَوْحَىٰ, this form changes tense: perfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 4 → not marked.",
+          "relationship": "Related to the و ح ي root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:4:4.",
+          "provenance": "Codex-reviewed form for the و ح ي family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "يُوحَىٰ",
+          "meaning": "revealed",
+          "difference": "Compared with أَوْحَىٰ, this form changes tense: perfect verb → imperfect verb; voice: not marked → passive.",
+          "relationship": "Related to the و ح ي root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:4:5.",
+          "provenance": "Codex-reviewed form for the و ح ي family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root links the visible cosmic event to divine communication.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:5:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:5:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:yasdur": {
+      "id": "lesson:99:yasdur",
+      "meaning": "will depart",
+      "type": "Imperfect verb",
+      "root": "ص د ر",
+      "rootPicture": "chest · front · come forth · emerge",
+      "construction": "يَصْدُرُ",
+      "components": [
+        {
+          "text": "يَصْدُرُ",
+          "displayText": "يَصْدُرُ",
+          "label": "will depart",
+          "meaning": "the complete imperfect verb",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ص د ر"
+        }
+      ],
+      "grammar": "The verb describes people coming out and departing from the gathering.",
+      "sentenceRole": "Describes people leaving in separated groups.",
+      "recognitionClue": "Connect صَدْر with coming forth and recognize يَصْدُر as departing or emerging.",
+      "forms": [
+        {
+          "form": "يَصْدُرُ",
+          "meaning": "will depart",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ص د ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:6:2."
+        },
+        {
+          "form": "صُدُورٌ",
+          "meaning": "departure / coming out",
+          "difference": "verbal noun",
+          "relationship": "Existing project-reviewed relationship to the صدر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلصُّدُورِ",
+          "meaning": "of what is in the breasts",
+          "difference": "Compared with يَصْدُرُ, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked.",
+          "relationship": "Related to the ص د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:6:12.",
+          "provenance": "Codex-reviewed form for the ص د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "صُدُورِهِمْ",
+          "meaning": "their breasts",
+          "difference": "Compared with يَصْدُرُ, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked.",
+          "relationship": "Related to the ص د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:59:9:14.",
+          "provenance": "Codex-reviewed form for the ص د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "صُدُورِهِم",
+          "meaning": "their breasts",
+          "difference": "Compared with يَصْدُرُ, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked.",
+          "relationship": "Related to the ص د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:59:13:5.",
+          "provenance": "Codex-reviewed form for the ص د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root gives the movement outward from a central place.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:6:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:6:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:nas": {
+      "id": "lesson:99:nas",
+      "meaning": "the people",
+      "type": "Definite plural noun",
+      "root": "أ ن س",
+      "rootPicture": "humanity · people · familiarity",
+      "construction": "ٱلْ + نَّاسُ",
+      "components": [
+        {
+          "text": "ٱل",
+          "displayText": "ٱلْ",
+          "label": "the",
+          "meaning": "the definite article before a sun letter",
+          "kind": "article",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (article)"
+        },
+        {
+          "text": "نَّاسُ",
+          "displayText": "نَّاسُ",
+          "label": "people",
+          "meaning": "the noun for humanity",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "أ ن س"
+        }
+      ],
+      "grammar": "The article makes the people a definite group in the final scene.",
+      "sentenceRole": "Names humanity departing from the gathering.",
+      "recognitionClue": "Connect أُنْس with human companionship and recognize نَاس as people.",
+      "forms": [
+        {
+          "form": "ٱلنَّاسُ",
+          "meaning": "the people",
+          "difference": "Current Qur'anic occurrence; number: masculine plural; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the أ ن س root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:6:3."
+        },
+        {
+          "form": "إِنسَانٌ",
+          "meaning": "a human being",
+          "difference": "singular noun",
+          "relationship": "Existing project-reviewed relationship to the أنس family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "نَاسٌ",
+          "meaning": "people",
+          "difference": "plural noun",
+          "relationship": "Existing project-reviewed relationship to the أنس family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَٱلْإِنسَ",
+          "meaning": "and the mankind",
+          "difference": "Compared with ٱلنَّاسُ, this form changes number: masculine plural → not marked; case: nominative → accusative; gender: not marked → masculine.",
+          "relationship": "Related to the أ ن س root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:56:4.",
+          "provenance": "Codex-reviewed form for the أ ن س family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "لِلْإِنسَـٰنِ",
+          "meaning": "(is) for man",
+          "difference": "Compared with ٱلنَّاسُ, this form changes number: masculine plural → not marked; case: nominative → genitive; gender: not marked → masculine.",
+          "relationship": "Related to the أ ن س root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:24:2.",
+          "provenance": "Codex-reviewed form for the أ ن س family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root keeps the scene centered on human beings and their deeds.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:6:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:6:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:ashtat": {
+      "id": "lesson:99:ashtat",
+      "meaning": "separated",
+      "type": "Broken plural noun",
+      "root": "ش ت ت",
+      "rootPicture": "separation · scattering · disunity",
+      "construction": "أَشْتَاتًا",
+      "components": [
+        {
+          "text": "أَشْتَاتًا",
+          "displayText": "أَشْتَاتًا",
+          "label": "separated groups",
+          "meaning": "the plural noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ش ت ت"
+        }
+      ],
+      "grammar": "The noun describes people divided into separate groups.",
+      "sentenceRole": "Shows humanity departing in distinct categories.",
+      "recognitionClue": "Connect شَتَات with separation and recognize أَشْتَات as scattered groups.",
+      "forms": [
+        {
+          "form": "أَشْتَاتًا",
+          "meaning": "separated",
+          "difference": "Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the ش ت ت root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:6:4."
+        },
+        {
+          "form": "شَتَّ",
+          "meaning": "he scattered",
+          "difference": "Form II verb",
+          "relationship": "Existing project-reviewed relationship to the شتت family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَشُتُّ",
+          "meaning": "he scatters",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the شتت family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "شَتَاتٌ",
+          "meaning": "separation",
+          "difference": "verbal noun",
+          "relationship": "Existing project-reviewed relationship to the شتت family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "شَتَّىٰ",
+          "meaning": "(are) divided",
+          "difference": "Compared with أَشْتَاتًا, this form changes number: masculine plural → masculine singular; state: indefinite → not marked; case: accusative → nominative.",
+          "relationship": "Related to the ش ت ت root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:59:14:18.",
+          "provenance": "Codex-reviewed form for the ش ت ت family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root turns the single human gathering into separated groups for judgment.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:6:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:6:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:liyuraw": {
+      "id": "lesson:99:liyuraw",
+      "meaning": "to be shown",
+      "type": "Purpose prefix plus passive verb",
+      "root": "ر أ ي",
+      "rootPicture": "see · notice · perceive",
+      "construction": "لِّ + يُرَ + وْا۟",
+      "components": [
+        {
+          "text": "لِّ",
+          "displayText": "لِّ",
+          "label": "to / so that",
+          "meaning": "a purpose prefix",
+          "kind": "prefix",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (purpose prefix)"
+        },
+        {
+          "text": "يُرَ",
+          "displayText": "يُرَ",
+          "label": "be shown",
+          "meaning": "the passive seeing stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ر أ ي"
+        },
+        {
+          "text": "وْا۟",
+          "displayText": "وْا۟",
+          "label": "they",
+          "meaning": "a masculine plural subject ending",
+          "kind": "subject-marker",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (subject ending)"
+        }
+      ],
+      "grammar": "لِ marks purpose, the passive seeing stem means ‘be shown’, and وْا marks the plural subject.",
+      "sentenceRole": "Explains why people depart: their deeds will be shown to them.",
+      "recognitionClue": "Connect رُؤْيَة with seeing and separate the purpose prefix from the passive stem and plural ending.",
+      "forms": [
+        {
+          "form": "لِّيُرَوْا۟",
+          "meaning": "to be shown",
+          "difference": "Current Qur'anic occurrence; pattern: Form 4; tense: imperfect verb; voice: passive; verb form: Form 4.",
+          "relationship": "Current Qur'anic occurrence of the ر أ ي root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:6:5."
+        },
+        {
+          "form": "رَأَى",
+          "meaning": "he saw",
+          "difference": "past verb",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَرَى",
+          "meaning": "he sees",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أُرِيَ",
+          "meaning": "he was shown",
+          "difference": "passive form",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَرَوْا۟",
+          "meaning": "they were to see",
+          "difference": "Compared with لِّيُرَوْا۟, this form changes voice: passive → not marked; verbform: Form 4 → Form 1; pattern: Form 4 → Form 1.",
+          "relationship": "Related to the ر أ ي root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:44:2.",
+          "provenance": "Codex-reviewed form for the ر أ ي family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root gives direct sight while the passive form makes the deeds the object shown.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:6:5.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:6:5)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:amaluhum": {
+      "id": "lesson:99:amaluhum",
+      "meaning": "their deeds",
+      "type": "Plural noun with attached pronoun",
+      "root": "ع م ل",
+      "rootPicture": "work · act · do",
+      "construction": "أَعْمَـٰلَ + هُمْ",
+      "components": [
+        {
+          "text": "أَعْمَـٰلَ",
+          "displayText": "أَعْمَـٰلَ",
+          "label": "deeds",
+          "meaning": "the plural noun for actions",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ع م ل"
+        },
+        {
+          "text": "هُمْ",
+          "displayText": "هُمْ",
+          "label": "their",
+          "meaning": "an attached masculine plural possessive pronoun",
+          "kind": "possessive-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (possessive pronoun)"
+        }
+      ],
+      "grammar": "The plural noun names deeds and هُمْ identifies the people who performed them.",
+      "sentenceRole": "Names the deeds that will be shown to their doers.",
+      "recognitionClue": "Connect عَمَل with work or deed and separate هُمْ as ‘their’.",
+      "forms": [
+        {
+          "form": "أَعْمَـٰلَهُمْ",
+          "meaning": "their deeds",
+          "difference": "Current Qur'anic occurrence; number: masculine plural; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the ع م ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:6:6."
+        },
+        {
+          "form": "يَعْمَلُ",
+          "meaning": "he does / works",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the عمل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تَعْمَلُونَ",
+          "meaning": "do",
+          "difference": "Compared with أَعْمَـٰلَهُمْ, this form changes number: masculine plural → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Related to the ع م ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:16:12.",
+          "provenance": "Codex-reviewed form for the ع م ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "عَمَلِهِم",
+          "meaning": "their deeds",
+          "difference": "Compared with أَعْمَـٰلَهُمْ, this form changes number: masculine plural → not marked; case: accusative → genitive; gender: not marked → masculine.",
+          "relationship": "Related to the ع م ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:21:12.",
+          "provenance": "Codex-reviewed form for the ع م ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "عَمِلُوا۟",
+          "meaning": "they have done",
+          "difference": "Compared with أَعْمَـٰلَهُمْ, this form changes number: masculine plural → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Related to the ع م ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:31:12.",
+          "provenance": "Codex-reviewed form for the ع م ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root makes every action part of the record that will be seen.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:6:6.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:6:6)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:faman": {
+      "id": "lesson:99:faman",
+      "meaning": "so whoever",
+      "type": "Connector plus relative pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (connector plus relative pronoun) — so whoever.",
+      "construction": "فَ + مَن",
+      "components": [
+        {
+          "text": "فَ",
+          "displayText": "فَ",
+          "label": "so",
+          "meaning": "a result connector",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "مَن",
+          "displayText": "مَن",
+          "label": "whoever",
+          "meaning": "a relative pronoun",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (relative pronoun)"
+        }
+      ],
+      "grammar": "فَ introduces the result and مَن identifies any person who meets the condition.",
+      "sentenceRole": "Begins the example of the smallest good deed.",
+      "recognitionClue": "Separate فَ as ‘so’ from مَن as ‘whoever’.",
+      "forms": [
+        {
+          "form": "فَمَن",
+          "meaning": "so whoever",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:99:7:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (99:7:1) was checked as evidence."
+        },
+        {
+          "form": "فَمَنْ",
+          "meaning": "so whoever",
+          "difference": "combined phrase",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَنْ",
+          "meaning": "whoever",
+          "difference": "relative pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "وَمَنْ",
+          "meaning": "and whoever",
+          "difference": "connector plus pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "The phrase is grammatical: a result connector plus a rootless relative pronoun.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "فَمَن is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-32efb281a15a6a20 reviewed word:99:7:1.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (99:7:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:43:45.189Z"
+      }
+    },
+    "lesson:99:yamal": {
+      "id": "lesson:99:yamal",
+      "meaning": "does",
+      "type": "Jussive imperfect verb",
+      "root": "ع م ل",
+      "rootPicture": "work · act · do",
+      "construction": "يَعْمَلْ",
+      "components": [
+        {
+          "text": "يَعْمَلْ",
+          "displayText": "يَعْمَلْ",
+          "label": "does",
+          "meaning": "the jussive imperfect verb",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ع م ل"
+        }
+      ],
+      "grammar": "The imperfect verb describes any deed, with the jussive ending after the conditional frame.",
+      "sentenceRole": "Introduces either a good or evil deed being measured.",
+      "recognitionClue": "Connect عَمَل with deed and recognize يَعْمَلْ as ‘does’ in the conditional phrase.",
+      "forms": [
+        {
+          "form": "يَعْمَلْ",
+          "meaning": "does",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ع م ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:8:2."
+        },
+        {
+          "form": "يَعْمَلُ",
+          "meaning": "he does / works",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the عمل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "تَعْمَلُونَ",
+          "meaning": "do",
+          "difference": "Compared with يَعْمَلْ, this form changes person: third-person masculine singular → not marked.",
+          "relationship": "Related to the ع م ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:16:12.",
+          "provenance": "Codex-reviewed form for the ع م ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "عَمَلِهِم",
+          "meaning": "their deeds",
+          "difference": "Compared with يَعْمَلْ, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → not marked; verbform: Form 1 → not marked.",
+          "relationship": "Related to the ع م ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:21:12.",
+          "provenance": "Codex-reviewed form for the ع م ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "عَمِلُوا۟",
+          "meaning": "they have done",
+          "difference": "Compared with يَعْمَلْ, this form changes tense: imperfect verb → perfect verb; person: third-person masculine singular → not marked.",
+          "relationship": "Related to the ع م ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:53:31:12.",
+          "provenance": "Codex-reviewed form for the ع م ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root makes the judgment include every action, however small.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:8:2.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:8:2)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:mithqal": {
+      "id": "lesson:99:mithqal",
+      "meaning": "weight",
+      "type": "Measure noun",
+      "root": "ث ق ل",
+      "rootPicture": "heaviness · weight · burden",
+      "construction": "مِثْقَالَ",
+      "components": [
+        {
+          "text": "مِثْقَالَ",
+          "displayText": "مِثْقَالَ",
+          "label": "weight",
+          "meaning": "the measure noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ث ق ل"
+        }
+      ],
+      "grammar": "The measure noun expresses the amount by which a deed is weighed.",
+      "sentenceRole": "Sets the tiny measure used in the example.",
+      "recognitionClue": "Connect ثِقْل with weight and recognize مِثْقَال as a unit or amount of weight.",
+      "forms": [
+        {
+          "form": "مِثْقَالَ",
+          "meaning": "weight",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the ث ق ل root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:8:3."
+        },
+        {
+          "form": "ثَقِيلٌ",
+          "meaning": "heavy",
+          "difference": "adjective",
+          "relationship": "Existing project-reviewed relationship to the ثقل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مِثْقَالٌ",
+          "meaning": "a weight",
+          "difference": "measure noun",
+          "relationship": "Existing project-reviewed relationship to the ثقل family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مُّثْقَلُونَ",
+          "meaning": "(are) overburdened",
+          "difference": "Compared with مِثْقَالَ, this form changes gender: masculine → not marked; case: accusative → nominative; number: not marked → masculine plural.",
+          "relationship": "Related to the ث ق ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:40:7.",
+          "provenance": "Codex-reviewed form for the ث ق ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "ٱلثَّقَلَانِ",
+          "meaning": "two classes",
+          "difference": "Compared with مِثْقَالَ, this form changes gender: masculine → not marked; case: accusative → nominative.",
+          "relationship": "Related to the ث ق ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:55:31:4.",
+          "provenance": "Codex-reviewed form for the ث ق ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root makes even the smallest deed countable on the scale.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:8:3.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:8:3)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:dharrah": {
+      "id": "lesson:99:dharrah",
+      "meaning": "an atom",
+      "type": "Noun",
+      "root": "ذ ر ر",
+      "rootPicture": "tiny particle · scattering · speck",
+      "construction": "ذَرَّةٍ",
+      "components": [
+        {
+          "text": "ذَرَّةٍ",
+          "displayText": "ذَرَّةٍ",
+          "label": "atom",
+          "meaning": "the complete tiny-particle noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ذ ر ر"
+        }
+      ],
+      "grammar": "The noun gives the smallest imaginable particle as the measure.",
+      "sentenceRole": "Defines how little a deed may be while still being seen.",
+      "recognitionClue": "Connect ذَرّ with tiny particles and recognize ذَرَّة as an atom or speck.",
+      "forms": [
+        {
+          "form": "ذَرَّةٍ",
+          "meaning": "an atom",
+          "difference": "Current Qur'anic occurrence; gender: feminine; state: indefinite; case: genitive.",
+          "relationship": "Current Qur'anic occurrence of the ذ ر ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:8:4."
+        },
+        {
+          "form": "ذَرَّ",
+          "meaning": "he scattered",
+          "difference": "Form II verb",
+          "relationship": "Existing project-reviewed relationship to the ذرر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ذَرٌّ",
+          "meaning": "scattering / tiny particles",
+          "difference": "verbal noun",
+          "relationship": "Existing project-reviewed relationship to the ذرر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ذَرَّةٌ",
+          "meaning": "an atom",
+          "difference": "noun",
+          "relationship": "Existing project-reviewed relationship to the ذرر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ذُرِّيَّتُهُم",
+          "meaning": "their offspring",
+          "difference": "Compared with ذَرَّةٍ, this form changes state: indefinite → not marked; case: genitive → nominative.",
+          "relationship": "Related to the ذ ر ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:21:4.",
+          "provenance": "Codex-reviewed form for the ذ ر ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root gives the image of something minute, but not too small to be counted.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:8:4.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:8:4)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:khayr": {
+      "id": "lesson:99:khayr",
+      "meaning": "good",
+      "type": "Indefinite noun",
+      "root": "خ ي ر",
+      "rootPicture": "good · better · benefit",
+      "construction": "خَيْرًا",
+      "components": [
+        {
+          "text": "خَيْرًا",
+          "displayText": "خَيْرًا",
+          "label": "good",
+          "meaning": "the complete noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "خ ي ر"
+        }
+      ],
+      "grammar": "The noun names any amount of good deed, however small.",
+      "sentenceRole": "Introduces the positive example of what will be seen.",
+      "recognitionClue": "Connect خَيْر with good and benefit.",
+      "forms": [
+        {
+          "form": "خَيْرًا",
+          "meaning": "good",
+          "difference": "Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the خ ي ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:7:5."
+        },
+        {
+          "form": "أَخْيَرُ",
+          "meaning": "better",
+          "difference": "comparative form",
+          "relationship": "Existing project-reviewed relationship to the خير family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "خَيْرَٰتٌ",
+          "meaning": "(are) good",
+          "difference": "Compared with خَيْرًا, this form changes number: masculine singular → feminine plural; case: accusative → nominative.",
+          "relationship": "Related to the خ ي ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:55:70:2.",
+          "provenance": "Codex-reviewed form for the خ ي ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "يَتَخَيَّرُونَ",
+          "meaning": "they select",
+          "difference": "Compared with خَيْرًا, this form changes number: masculine singular → not marked; state: indefinite → not marked; case: accusative → not marked.",
+          "relationship": "Related to the خ ي ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:56:20:3.",
+          "provenance": "Codex-reviewed form for the خ ي ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "لِّلْخَيْرِ",
+          "meaning": "of (the) good",
+          "difference": "Compared with خَيْرًا, this form changes state: indefinite → not marked; case: accusative → genitive.",
+          "relationship": "Related to the خ ي ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:68:12:2.",
+          "provenance": "Codex-reviewed form for the خ ي ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root makes the smallest good deed visible and valuable.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:7:5.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:7:5)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:yarahu": {
+      "id": "lesson:99:yarahu",
+      "meaning": "will see it",
+      "type": "Imperfect verb with attached object pronoun",
+      "root": "ر أ ي",
+      "rootPicture": "see · notice · perceive",
+      "construction": "يَرَ + هُۥ",
+      "components": [
+        {
+          "text": "يَرَ",
+          "displayText": "يَرَ",
+          "label": "see",
+          "meaning": "the imperfect seeing stem",
+          "kind": "stem",
+          "rootStatus": "lexical",
+          "root": "ر أ ي"
+        },
+        {
+          "text": "هُۥ",
+          "displayText": "هُۥ",
+          "label": "it",
+          "meaning": "an attached masculine singular object pronoun",
+          "kind": "object-pronoun",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (object pronoun)"
+        }
+      ],
+      "grammar": "The verb expresses seeing and هُۥ points back to the deed.",
+      "sentenceRole": "Promises that the doer will see the smallest good deed.",
+      "recognitionClue": "Connect رُؤْيَة with seeing and separate هُ as ‘it’.",
+      "forms": [
+        {
+          "form": "يَرَهُۥ",
+          "meaning": "will see it",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the ر أ ي root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:8:6."
+        },
+        {
+          "form": "رَأَى",
+          "meaning": "he saw",
+          "difference": "past verb",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَرَى",
+          "meaning": "he sees",
+          "difference": "present verb",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَرَاهُ",
+          "meaning": "he sees it",
+          "difference": "verb with object pronoun",
+          "relationship": "Existing project-reviewed relationship to the رأي family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "يَرَوْا۟",
+          "meaning": "they were to see",
+          "difference": "Compared with يَرَهُۥ, this form changes person: third-person masculine singular → not marked.",
+          "relationship": "Related to the ر أ ي root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:52:44:2.",
+          "provenance": "Codex-reviewed form for the ر أ ي family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root completes the promise: no deed disappears from sight.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:8:6.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:8:6)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    },
+    "lesson:99:waman": {
+      "id": "lesson:99:waman",
+      "meaning": "and whoever",
+      "type": "Connector plus relative pronoun",
+      "root": "",
+      "rootPicture": "No lexical root (connector plus relative pronoun) — and whoever.",
+      "construction": "وَ + مَن",
+      "components": [
+        {
+          "text": "وَ",
+          "displayText": "وَ",
+          "label": "and",
+          "meaning": "a connector",
+          "kind": "connector",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (connector)"
+        },
+        {
+          "text": "مَن",
+          "displayText": "مَن",
+          "label": "whoever",
+          "meaning": "a relative pronoun",
+          "kind": "other",
+          "rootStatus": "rootless",
+          "rootExplanation": "No lexical root (relative pronoun)"
+        }
+      ],
+      "grammar": "وَ adds the second case and مَن introduces the person who does evil.",
+      "sentenceRole": "Begins the contrasting example of the smallest evil deed.",
+      "recognitionClue": "Separate وَ as ‘and’ from مَن as ‘whoever’.",
+      "forms": [
+        {
+          "form": "وَمَن",
+          "meaning": "and whoever",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:99:8:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (99:8:1) was checked as evidence."
+        },
+        {
+          "form": "وَمَنْ",
+          "meaning": "and whoever",
+          "difference": "combined phrase",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "مَنْ",
+          "meaning": "whoever",
+          "difference": "relative pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "فَمَنْ",
+          "meaning": "so whoever",
+          "difference": "result connector plus pronoun",
+          "relationship": "Existing project-reviewed relationship to the grammatical family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        }
+      ],
+      "takeaway": "The second case uses the same rootless relative frame for balance and contrast.",
+      "sarfReview": {
+        "status": "limited",
+        "auditDecision": "confirmed-limited",
+        "limitedReason": "وَمَن is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 4 genuine reviewed forms.",
+        "provenance": [
+          "Limited-family audit limited-sarf-audit-32efb281a15a6a20 reviewed word:99:8:1.",
+          "The item was checked as pronoun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
+          "Aligned Quranic Arabic Corpus evidence 0.4-derived (99:8:1) was checked."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-17T13:43:45.189Z"
+      }
+    },
+    "lesson:99:sharr": {
+      "id": "lesson:99:sharr",
+      "meaning": "evil",
+      "type": "Indefinite noun",
+      "root": "ش ر ر",
+      "rootPicture": "evil · harm · badness",
+      "construction": "شَرًّا",
+      "components": [
+        {
+          "text": "شَرًّا",
+          "displayText": "شَرًّا",
+          "label": "evil",
+          "meaning": "the complete noun",
+          "kind": "whole",
+          "rootStatus": "lexical",
+          "root": "ش ر ر"
+        }
+      ],
+      "grammar": "The noun names any amount of evil deed, however small.",
+      "sentenceRole": "Introduces the negative example of what will be seen.",
+      "recognitionClue": "Connect شَرّ with evil and harm.",
+      "forms": [
+        {
+          "form": "شَرًّا",
+          "meaning": "evil",
+          "difference": "Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of the ش ر ر root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:99:8:5."
+        },
+        {
+          "form": "شَرٌّ",
+          "meaning": "evil",
+          "difference": "basic noun",
+          "relationship": "Existing project-reviewed relationship to the شرر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "أَشَرُّ",
+          "meaning": "worse",
+          "difference": "comparative form",
+          "relationship": "Existing project-reviewed relationship to the شرر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "شَرِيرٌ",
+          "meaning": "evil",
+          "difference": "adjective",
+          "relationship": "Existing project-reviewed relationship to the شرر family.",
+          "provenance": "Existing project-authored row retained only after Codex review against canonical evidence."
+        },
+        {
+          "form": "ٱلشَّرُّ",
+          "meaning": "the evil",
+          "difference": "Compared with شَرًّا, this form changes state: indefinite → not marked; case: accusative → nominative.",
+          "relationship": "Related to the ش ر ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:70:20:3.",
+          "provenance": "Codex-reviewed form for the ش ر ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        }
+      ],
+      "takeaway": "The root makes the smallest harmful deed visible as well as the smallest good.",
+      "sarfReview": {
+        "status": "full",
+        "provenance": [
+          "Canonical Qur'anic occurrence word:99:8:5.",
+          "Aligned quranic-arabic-corpus morphology 0.4-derived (99:8:5)."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-16T13:34:51.963Z"
+      }
+    }
+  },
   "volumeReferences": []
 }
