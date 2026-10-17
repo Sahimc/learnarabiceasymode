@@ -8172,6 +8172,132 @@ function clone<T>(value: T): T {
 type AdditionalCuratedCandidate = Omit<Candidate, "score" | "sourceKind" | "sourceOccurrence">;
 
 const ADDITIONAL_CURATED_FAMILIES: Record<string, AdditionalCuratedCandidate[]> = {
+  ["خلف"]: [
+    { form: "خَلَفَ", meaning: "he came after or succeeded", difference: "Form I perfect; it names the completed succeeding action behind the current derived adjective/noun forms.", relationship: "Form I perfect of the خ ل ف family, related to the Qur'anic forms مُخْتَلِفُون and مُسْتَخْلَفِين.", provenance: "Codex-authored after review of the approved root meaning and standard Form I morphology for خ ل ف.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "خلف" },
+    { form: "يَخْلُفُ", meaning: "he succeeds or follows after", difference: "Form I imperfect; it presents following or succeeding as ongoing.", relationship: "Form I imperfect of the خ ل ف family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يخلف" },
+    { form: "خَلِيفَةٌ", meaning: "a successor or deputy", difference: "Lexical noun; it names one who succeeds or represents another rather than describing disagreement.", relationship: "Lexical noun of the خ ل ف family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic lexical morphology for خ ل ف.", featureSignal: ["partofspeech:noun", "derivation:agent-noun"], baseDistinct: true, lexicalKey: "خليفة" },
+    { form: "مُخْتَلِفٌ", meaning: "different or disagreeing", difference: "Form VIII active participle, singular; it contrasts with the current masculine plural مُخْتَلِفُونَ.", relationship: "Form VIII active participle of the خ ل ف family.", provenance: "Codex-authored after review of the current Qur'anic form and standard Form VIII active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-8", "number:singular"], baseDistinct: true, lexicalKey: "مختلف" },
+  ],
+  ["نوم"]: [
+    { form: "نَامَ", meaning: "he slept", difference: "Form I perfect; it names the completed sleeping action behind the current noun.", relationship: "Form I perfect of the ن و م family.", provenance: "Codex-authored after review of the approved root meaning and standard weak Form I morphology for ن و م.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "نام" },
+    { form: "يَنَامُ", meaning: "he sleeps", difference: "Form I imperfect; it presents sleep as ongoing or habitual.", relationship: "Form I imperfect of the ن و م family.", provenance: "Codex-authored after review of the approved root meaning and standard weak Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "ينام" },
+    { form: "نَوْمٌ", meaning: "sleep or slumber", difference: "Verbal noun; it names the state of sleeping rather than its subject.", relationship: "Verbal noun of the ن و م family.", provenance: "Codex-authored after review of the approved root meaning and standard weak-verb verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "نوم-noun" },
+    { form: "نَائِمٌ", meaning: "sleeping or asleep", difference: "Form I active participle; it describes one who is asleep, contrasting with the current possessive noun.", relationship: "Form I active participle of the ن و م family.", provenance: "Codex-authored after review of the approved root meaning and standard weak Form I active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "نائم" },
+  ],
+  ["سبت"]: [
+    { form: "سَبَتَ", meaning: "he rested or ceased work", difference: "Form I perfect; it names the completed resting action behind the current noun.", relationship: "Form I perfect of the س ب ت family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I morphology for س ب ت.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "سبت" },
+    { form: "يَسْبُتُ", meaning: "he rests or ceases work", difference: "Form I imperfect; it presents resting or stillness as ongoing.", relationship: "Form I imperfect of the س ب ت family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يسبت" },
+    { form: "سُبُوتٌ", meaning: "rest or stillness", difference: "Verbal noun; it names the state of resting rather than the occurrence of rest.", relationship: "Verbal noun of the س ب ت family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "سبوت" },
+    { form: "سَابِتٌ", meaning: "resting or still", difference: "Form I active participle/adjective; it describes one or something that is still.", relationship: "Form I active participle/adjective of the س ب ت family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I active-participle morphology.", featureSignal: ["partofspeech:adjective", "pattern:form-1"], baseDistinct: true, lexicalKey: "سابت" },
+  ],
+  ["لبس"]: [
+    { form: "لَبِسَ", meaning: "he wore or put on", difference: "Form I perfect; it names the completed wearing action behind the current covering noun.", relationship: "Form I perfect of the ل ب س family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ل ب س evidence and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "لبس" },
+    { form: "يَلْبَسُ", meaning: "he wears or puts on", difference: "Form I imperfect; it presents wearing as ongoing.", relationship: "Form I imperfect of the ل ب س family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يلبس" },
+    { form: "لُبْسٌ", meaning: "wearing or confusion", difference: "Lexical noun/verbal noun; it names wearing or the state of being unclear rather than the garment itself.", relationship: "Lexical noun of the ل ب س family.", provenance: "Codex-authored after review of the approved root meaning and Quranic lexical range for ل ب س.", featureSignal: ["partofspeech:noun", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "لبس-noun" },
+    { form: "لَابِسٌ", meaning: "wearing or putting on", difference: "Form I active participle; it describes one who wears something.", relationship: "Form I active participle of the ل ب س family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "لابس" },
+  ],
+  ["عيش"]: [
+    { form: "عَاشَ", meaning: "he lived", difference: "Form I perfect; it names the completed living experience behind the current livelihood noun.", relationship: "Form I perfect of the ع ي ش family.", provenance: "Codex-authored after review of the approved root meaning and standard weak Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "عاش" },
+    { form: "يَعِيشُ", meaning: "he lives", difference: "Form I imperfect; it presents living as ongoing.", relationship: "Form I imperfect of the ع ي ش family.", provenance: "Codex-authored after review of the approved root meaning and standard weak Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يعيش" },
+    { form: "عَيْشٌ", meaning: "life or living", difference: "Verbal noun; it names the state of living rather than a livelihood or specific life.", relationship: "Verbal noun of the ع ي ش family.", provenance: "Codex-authored after review of the approved root meaning and standard weak-verb verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "عيش-noun" },
+    { form: "عَائِشٌ", meaning: "living or alive", difference: "Form I active participle; it describes one who is alive.", relationship: "Form I active participle of the ع ي ش family.", provenance: "Codex-authored after review of the approved root meaning and standard weak Form I active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "عائش" },
+  ],
+  ["فوق"]: [
+    { form: "فَاقَ", meaning: "he surpassed or excelled", difference: "Form I perfect; it shows the lexical family’s surpassing sense related to being above.", relationship: "Form I perfect of the ف و ق family.", provenance: "Codex-authored after review of the approved root meaning and standard weak Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "فاق" },
+    { form: "يَفُوقُ", meaning: "he surpasses or excels", difference: "Form I imperfect; it presents surpassing as ongoing or characteristic.", relationship: "Form I imperfect of the ف و ق family.", provenance: "Codex-authored after review of the approved root meaning and standard weak Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يفوق" },
+    { form: "فَائِقٌ", meaning: "surpassing or superior", difference: "Form I active participle/adjective; it describes one or something that is above others.", relationship: "Form I active participle/adjective of the ف و ق family.", provenance: "Codex-authored after review of the approved root meaning and standard weak Form I active-participle morphology.", featureSignal: ["partofspeech:adjective", "pattern:form-1"], baseDistinct: true, lexicalKey: "فائق" },
+    { form: "فَوْقِيٌّ", meaning: "upper or above", difference: "Relational adjective; it makes the spatial relationship of being above explicit.", relationship: "Relational adjective of the ف و ق family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic nisbah formation.", featureSignal: ["partofspeech:adjective", "derivation:nisbah"], baseDistinct: true, lexicalKey: "فوقي" },
+  ],
+  ["سرج"]: [
+    { form: "سَرَجَ", meaning: "he saddled", difference: "Form I perfect; it names the completed saddling action related to the lamp noun’s lexical family.", relationship: "Form I perfect of the س ر ج family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "سرج" },
+    { form: "يَسْرُجُ", meaning: "he saddles", difference: "Form I imperfect; it presents saddling as ongoing.", relationship: "Form I imperfect of the س ر ج family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يسرج" },
+    { form: "سَرْجٌ", meaning: "a saddle", difference: "Lexical noun; it names the saddle associated with the basic root rather than the lamp.", relationship: "Lexical noun of the س ر ج family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic lexical morphology.", featureSignal: ["partofspeech:noun", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "سرج-noun" },
+    { form: "سَرَّاجٌ", meaning: "a saddler or lamp-maker", difference: "Intensive/occupational noun; it shows a derived form of the same lexical family.", relationship: "Derived occupational noun of the س ر ج family.", provenance: "Codex-authored after review of the approved root meaning and standard intensive noun formation; the form is used as a genuine lexical contrast, not padding.", featureSignal: ["partofspeech:noun", "pattern:faeaal", "derivation:occupational-noun"], baseDistinct: true, lexicalKey: "سرّاج" },
+  ],
+  ["وهج"]: [
+    { form: "يَتَوَهَّجُ", meaning: "it glows intensely", difference: "Form V imperfect; it presents intense glowing as ongoing.", relationship: "Form V imperfect of the و ه ج family, related to the current intensive adjective وَهَّاجًا.", provenance: "Codex-authored after review of the approved root meaning and standard Form V imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:imperfect"], baseDistinct: true, lexicalKey: "يتوهّج" },
+    { form: "تَوَهُّجٌ", meaning: "intense glowing", difference: "Form V verbal noun; it names the glowing process rather than the thing that glows.", relationship: "Form V verbal noun of the و ه ج family.", provenance: "Codex-authored after review of the approved root meaning and standard Form V verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "pattern:form-5", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "توهّج" },
+    { form: "وَاهِجٌ", meaning: "glowing or radiant", difference: "Form I active participle/adjective; it describes something that glows intensely.", relationship: "Form I active participle/adjective of the و ه ج family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I active-participle morphology.", featureSignal: ["partofspeech:adjective", "pattern:form-1"], baseDistinct: true, lexicalKey: "واهج" },
+    { form: "مُتَوَهِّجٌ", meaning: "glowing intensely", difference: "Form V active participle; it names something undergoing intense glowing.", relationship: "Form V active participle of the و ه ج family.", provenance: "Codex-authored after review of the approved root meaning and standard Form V active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-5"], baseDistinct: true, lexicalKey: "متوهّج" },
+  ],
+  ["ثجج"]: [
+    { form: "ثَجَّ", meaning: "he or it poured abundantly", difference: "Form I doubled verb; it names the completed forceful-flow action behind the current adjective.", relationship: "Form I doubled verb of the ث ج ج family.", provenance: "Codex-authored after review of the approved root meaning and standard doubled Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "ثجّ" },
+    { form: "يَثُجُّ", meaning: "he or it pours abundantly", difference: "Form I imperfect; it presents abundant flowing as ongoing.", relationship: "Form I imperfect of the ث ج ج family.", provenance: "Codex-authored after review of the approved root meaning and standard doubled Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يثجّ" },
+    { form: "ثَجٌّ", meaning: "abundant pouring or flowing", difference: "Verbal noun; it names the forceful flow rather than the thing doing the pouring.", relationship: "Verbal noun of the ث ج ج family.", provenance: "Codex-authored after review of the approved root meaning and standard doubled Form I verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "ثجّ-noun" },
+    { form: "مَثْجُوجٌ", meaning: "poured or flowing abundantly", difference: "Form I passive participle; it describes what has been poured or made to flow.", relationship: "Form I passive participle of the ث ج ج family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I passive-participle morphology.", featureSignal: ["partofspeech:passive-participle", "pattern:form-1", "voice:passive"], baseDistinct: true, lexicalKey: "مثجوج" },
+  ],
+  ["لفف"]: [
+    { form: "لَفَّ", meaning: "he wrapped or folded", difference: "Form I doubled verb; it names the completed wrapping action behind the current plural noun.", relationship: "Form I doubled verb of the ل ف ف family, related to الْأَلْفَاف.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ل ف ف evidence and standard doubled Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "لفّ" },
+    { form: "يَلُفُّ", meaning: "he wraps or folds", difference: "Form I imperfect; it presents wrapping as ongoing.", relationship: "Form I imperfect of the ل ف ف family.", provenance: "Codex-authored after review of the approved root meaning and standard doubled Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يلفّ" },
+    { form: "لَفٌّ", meaning: "wrapping or folding", difference: "Verbal noun; it names the action rather than the wrapped thing or foliage.", relationship: "Verbal noun of the ل ف ف family.", provenance: "Codex-authored after review of the approved root meaning and standard doubled Form I verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "لفّ-noun" },
+    { form: "مَلْفُوفٌ", meaning: "wrapped or folded", difference: "Form I passive participle; it describes what has been wrapped or folded together.", relationship: "Form I passive participle of the ل ف ف family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I passive-participle morphology.", featureSignal: ["partofspeech:passive-participle", "pattern:form-1", "voice:passive"], baseDistinct: true, lexicalKey: "ملفوف" },
+  ],
+  ["وقت"]: [
+    { form: "وَقَّتَ", meaning: "he appointed or timed", difference: "Form II perfect; it names the completed act of assigning a time behind the current noun.", relationship: "Form II perfect of the و ق ت family, related to مِيقَات and أُقِّتَتْ.", provenance: "Codex-authored after review of Quranic Arabic Corpus root و ق ت evidence and standard Form II morphology.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect"], baseDistinct: true, lexicalKey: "وقّت" },
+    { form: "يُوَقِّتُ", meaning: "he appoints or times", difference: "Form II imperfect; it presents assigning a time as ongoing.", relationship: "Form II imperfect of the و ق ت family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:imperfect"], baseDistinct: true, lexicalKey: "يوقّت" },
+    { form: "تَوْقِيتٌ", meaning: "appointing or timing", difference: "Form II verbal noun; it names the act of fixing a time.", relationship: "Form II verbal noun of the و ق ت family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "pattern:form-2", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "توقيت" },
+    { form: "مُوَقِّتٌ", meaning: "one who appoints a time", difference: "Form II active participle; it names the agent who fixes an appointment.", relationship: "Form II active participle of the و ق ت family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-2"], baseDistinct: true, lexicalKey: "موقّت" },
+  ],
+  ["نفخ"]: [
+    { form: "نَفَخَ", meaning: "he blew or breathed into", difference: "Form I perfect; it names the completed blowing action behind the current passive verb.", relationship: "Form I perfect of the ن ف خ family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ن ف خ evidence and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "نفخ" },
+    { form: "يَنْفُخُ", meaning: "he blows or breathes into", difference: "Form I imperfect; it presents blowing as ongoing.", relationship: "Form I imperfect of the ن ف خ family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "ينفخ" },
+    { form: "نَفْخٌ", meaning: "blowing or breathing into", difference: "Verbal noun; it names the blowing action rather than the blast or agent.", relationship: "Verbal noun of the ن ف خ family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "نفخ-noun" },
+    { form: "نَافِخٌ", meaning: "one who blows", difference: "Form I active participle; it names the agent performing the blowing.", relationship: "Form I active participle of the ن ف خ family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "نافخ" },
+  ],
+  ["بوب"]: [
+    { form: "بَابٌ", meaning: "a door or gate", difference: "Singular lexical noun; it contrasts with the current plural أَبْوَابًا.", relationship: "Established singular of أَبْوَاب in the ب و ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic plural relationship.", featureSignal: ["partofspeech:noun", "number:singular", "derivation:singular-of-plural"], baseDistinct: true, lexicalKey: "باب" },
+    { form: "بَوَّبَ", meaning: "he arranged into chapters or sections", difference: "Form II perfect; it shows the derived organizing/sectioning pattern of the door-and-entry family.", relationship: "Form II perfect of the ب و ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II morphology.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect"], baseDistinct: true, lexicalKey: "بوّب" },
+    { form: "يُبَوِّبُ", meaning: "he arranges into chapters or sections", difference: "Form II imperfect; it presents arranging or sectioning as ongoing.", relationship: "Form II imperfect of the ب و ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:imperfect"], baseDistinct: true, lexicalKey: "يبوّب" },
+    { form: "تَبْوِيبٌ", meaning: "arranging into chapters or sections", difference: "Form II verbal noun; it names the organizing process rather than the gate itself.", relationship: "Form II verbal noun of the ب و ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "pattern:form-2", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "تبويب" },
+  ],
+  ["سرب"]: [
+    { form: "سَرَبَ", meaning: "he went forth or moved away", difference: "Form I perfect; it names the completed going-away action related to the mirage noun.", relationship: "Form I perfect of the س ر ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "سرب" },
+    { form: "يَسْرُبُ", meaning: "he goes forth or moves away", difference: "Form I imperfect; it presents movement away as ongoing.", relationship: "Form I imperfect of the س ر ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يسرب" },
+    { form: "سَرَبٌ", meaning: "a path or moving group", difference: "Lexical noun; it names a route or group moving away rather than the mirage itself.", relationship: "Lexical noun of the س ر ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic lexical morphology.", featureSignal: ["partofspeech:noun", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "سرب-noun" },
+    { form: "مَسْرَبٌ", meaning: "a route or passage", difference: "Place noun; it names the route along which one moves.", relationship: "Place noun of the س ر ب family.", provenance: "Codex-authored after review of the approved root meaning and standard place-noun morphology.", featureSignal: ["partofspeech:noun", "derivation:place-noun"], baseDistinct: true, lexicalKey: "مسرب" },
+  ],
+  ["برد"]: [
+    { form: "بَرَدَ", meaning: "it became cold", difference: "Form I perfect; it names the completed cooling state behind the current noun/adjective.", relationship: "Form I perfect of the ب ر د family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "برد" },
+    { form: "يَبْرُدُ", meaning: "it becomes cold", difference: "Form I imperfect; it presents cooling as ongoing.", relationship: "Form I imperfect of the ب ر د family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يبرد" },
+    { form: "بُرُودٌ", meaning: "coldness or cooling", difference: "Verbal noun; it names the state of becoming cold rather than the adjective.", relationship: "Verbal noun of the ب ر د family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "برود" },
+    { form: "بَارِدٌ", meaning: "cold or cool", difference: "Form I active participle/adjective; it describes something that is cold.", relationship: "Form I active participle/adjective of the ب ر د family.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ب ر د evidence and standard Form I morphology.", featureSignal: ["partofspeech:adjective", "pattern:form-1"], baseDistinct: true, lexicalKey: "بارد" },
+  ],
+  ["وفق"]: [
+    { form: "وَافَقَ", meaning: "he agreed with or matched", difference: "Form III perfect; it names the completed agreement or correspondence behind the current noun.", relationship: "Form III perfect of the و ف ق family.", provenance: "Codex-authored after review of the approved root meaning and standard Form III morphology.", featureSignal: ["partofspeech:verb", "pattern:form-3", "tense:perfect"], baseDistinct: true, lexicalKey: "وافق" },
+    { form: "يُوَافِقُ", meaning: "he agrees with or matches", difference: "Form III imperfect; it presents agreement or correspondence as ongoing.", relationship: "Form III imperfect of the و ف ق family.", provenance: "Codex-authored after review of the approved root meaning and standard Form III imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-3", "tense:imperfect"], baseDistinct: true, lexicalKey: "يوافق" },
+    { form: "مُوَافِقٌ", meaning: "agreeing or matching", difference: "Form III active participle; it describes one or something that agrees or corresponds.", relationship: "Form III active participle of the و ف ق family.", provenance: "Codex-authored after review of the approved root meaning and standard Form III active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-3"], baseDistinct: true, lexicalKey: "موافق" },
+    { form: "تَوْفِيقٌ", meaning: "granting success or bringing into accord", difference: "Form II verbal noun; it shows the derived causative pattern related to agreement and success.", relationship: "Form II verbal noun of the و ف ق family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "pattern:form-2", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "توفيق" },
+  ],
+  ["كعب"]: [
+    { form: "كَاعِبٌ", meaning: "a maiden with developing breasts", difference: "Singular lexical noun/adjective; it contrasts with the current feminine plural كَوَاعِبَ.", relationship: "Singular of كَوَاعِب in the ك ع ب family.", provenance: "Codex-authored after review of the approved root meaning and standard singular/plural relationship.", featureSignal: ["partofspeech:noun", "number:singular", "derivation:singular-of-plural"], baseDistinct: true, lexicalKey: "كاعب" },
+    { form: "كَعْبٌ", meaning: "an ankle or heel bone", difference: "Basic lexical noun; it shows the body-joint sense of the same root.", relationship: "Lexical noun of the ك ع ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic lexical morphology.", featureSignal: ["partofspeech:noun", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "كعب-noun" },
+    { form: "كَعْبَةٌ", meaning: "a cube or cubical structure", difference: "Feminine lexical noun; it shows the derived shape-related sense of the root.", relationship: "Lexical noun of the ك ع ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic lexical morphology.", featureSignal: ["partofspeech:noun", "gender:feminine", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "كعبة" },
+    { form: "كِعَابٌ", meaning: "ankles or knucklebones", difference: "Broken plural; it contrasts with the singular body-joint noun and the current plural adjective.", relationship: "Broken plural in the ك ع ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic plural morphology.", featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"], baseDistinct: true, lexicalKey: "كعاب" },
+  ],
+  ["دهق"]: [
+    { form: "دَهَقَ", meaning: "he poured or filled to the brim", difference: "Form I perfect; it names the completed filling action behind the current intensive adjective.", relationship: "Form I perfect of the د ه ق family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "دهق" },
+    { form: "يَدْهَقُ", meaning: "he pours or fills to the brim", difference: "Form I imperfect; it presents filling as ongoing.", relationship: "Form I imperfect of the د ه ق family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يدهق" },
+    { form: "دَهْقٌ", meaning: "pouring or filling to the brim", difference: "Verbal noun; it names the filling action rather than the full vessel.", relationship: "Verbal noun of the د ه ق family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "دهق-noun" },
+    { form: "مَدْهُوقٌ", meaning: "filled or poured to the brim", difference: "Form I passive participle; it describes what has been filled completely.", relationship: "Form I passive participle of the د ه ق family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I passive-participle morphology.", featureSignal: ["partofspeech:passive-participle", "pattern:form-1", "voice:passive"], baseDistinct: true, lexicalKey: "مدهوق" },
+  ],
+  ["خطب"]: [
+    { form: "خَطَبَ", meaning: "he addressed or delivered a sermon", difference: "Form I perfect; it names the completed public address behind the current verbal noun.", relationship: "Form I perfect of the خ ط ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "خطب" },
+    { form: "يَخْطُبُ", meaning: "he addresses or delivers a sermon", difference: "Form I imperfect; it presents public speaking as ongoing.", relationship: "Form I imperfect of the خ ط ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يخطب" },
+    { form: "خُطْبَةٌ", meaning: "a sermon or formal address", difference: "Feminine event noun; it names a specific speech rather than speech in general.", relationship: "Lexical noun of the خ ط ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic lexical morphology.", featureSignal: ["partofspeech:noun", "gender:feminine", "derivation:event-noun"], baseDistinct: true, lexicalKey: "خطبة" },
+    { form: "خَطِيبٌ", meaning: "a speaker or orator", difference: "Lexical agent noun; it names the person who delivers a formal address.", relationship: "Agent noun of the خ ط ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic agent-noun morphology.", featureSignal: ["partofspeech:noun", "derivation:agent-noun"], baseDistinct: true, lexicalKey: "خطيب" },
+  ],
+  ["كلم"]: [
+    { form: "كَلَّمَ", meaning: "he spoke to or addressed", difference: "Form II perfect; it names the completed speaking action behind the current Form V verb.", relationship: "Form II perfect of the ك ل م family, related to يَتَكَلَّمُونَ.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ك ل م evidence and standard Form II morphology.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect"], baseDistinct: true, lexicalKey: "كلّم" },
+    { form: "يُكَلِّمُ", meaning: "he speaks to or addresses", difference: "Form II imperfect; it presents addressing as ongoing.", relationship: "Form II imperfect of the ك ل م family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:imperfect"], baseDistinct: true, lexicalKey: "يكلّم" },
+    { form: "كَلَامٌ", meaning: "speech or words", difference: "Lexical noun; it names speech in general rather than the finite act of speaking.", relationship: "Lexical noun of the ك ل م family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic lexical morphology.", featureSignal: ["partofspeech:noun", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "كلام" },
+    { form: "مُتَكَلِّمٌ", meaning: "one who speaks", difference: "Form V active participle; it names the speaker rather than the speaking action.", relationship: "Form V active participle of the ك ل م family.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ك ل م evidence and standard Form V active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-5"], baseDistinct: true, lexicalKey: "متكلّم" },
+  ],
+  ["صوب"]: [
+    { form: "صَابَ", meaning: "he descended or came down", difference: "Form I perfect; it shows the basic descending sense behind the current correctness noun and derived forms.", relationship: "Form I perfect of the ص و ب family.", provenance: "Codex-authored after review of the approved root meaning and standard weak Form I morphology for ص و ب.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "صاب" },
+    { form: "يَصُوبُ", meaning: "he descends or comes down", difference: "Form I imperfect; it presents descent as ongoing.", relationship: "Form I imperfect of the ص و ب family.", provenance: "Codex-authored after review of the approved root meaning and standard weak Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يصوب" },
+    { form: "صَوَّبَ", meaning: "he corrected or aimed", difference: "Form II perfect; it shows the derived directing/correcting sense related to correctness.", relationship: "Form II perfect of the ص و ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II morphology.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect"], baseDistinct: true, lexicalKey: "صوّب" },
+    { form: "تَصْوِيبٌ", meaning: "correcting or aiming", difference: "Form II verbal noun; it names the act of correcting or directing rather than the result صَوَابًا.", relationship: "Form II verbal noun of the ص و ب family.", provenance: "Codex-authored after review of the approved root meaning and standard Form II verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "pattern:form-2", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "تصويب" },
+  ],
   ["غرق"]: [
     { form: "غَرِقَ", meaning: "he drowned", difference: "Form I perfect; it names the completed drowning action related to the current verbal noun غَرْقًا.", relationship: "Form I perfect of the غ ر ق family, related to the Qur'anic drowning forms.", provenance: "Codex-authored after review of Quranic Arabic Corpus root غ ر ق evidence and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "غرق" },
     { form: "يَغْرَقُ", meaning: "he drowns", difference: "Form I imperfect; it presents drowning as ongoing.", relationship: "Form I imperfect of the غ ر ق family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يغرق" },
@@ -8738,7 +8864,15 @@ function existingCandidate(
 function dedupeCandidates(candidates: Candidate[]) {
   const byForm = new Map<string, Candidate>();
   for (const candidate of candidates) {
-    const key = inflectionalKey(candidate.form);
+    // A final short vowel may be lexical on a verb while a tanwin marker is
+    // inflectional on a noun. Keep morphology-bearing rows separate when
+    // their surface skeleton is otherwise identical (for example سَرَبَ
+    // versus سَرَبٌ), while still deduplicating genuinely repeated rows.
+    const morphology = candidate.featureSignal
+      .filter((signal) => /^(?:partofspeech|pattern|derivation|voice):/u.test(signal))
+      .sort()
+      .join("|");
+    const key = `${inflectionalKey(candidate.form)}|${morphology}`;
     const previous = byForm.get(key);
     if (!previous || candidate.score > previous.score) byForm.set(key, candidate);
   }
@@ -8836,10 +8970,79 @@ const REVIEWED_RESTRICTED_LEXICAL_ROOTS = new Set([
   "شأن",
   "طوي",
   "سوع",
+  "سبع",
+  "حقب",
+  "كأس",
 ]);
 
 function reviewedRestrictedCandidates(root: string): Candidate[] {
   const families: Record<string, Array<Omit<Candidate, "score" | "sourceKind">>> = {
+    ["سبع"]: [
+      {
+        form: "سَبْعَةٌ",
+        meaning: "seven",
+        difference: "Feminine numeral form; it contrasts with the current masculine-form numeral سَبْعًا.",
+        relationship: "Established numeral counterpart in the restricted س ب ع number family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Arabic numeral morphology; the family remains limited because further rows would be numerical inflection/padding rather than useful lexical Ṣarf contrasts.",
+        featureSignal: ["partofspeech:noun", "number:numeral", "gender:feminine"],
+        baseDistinct: true,
+        lexicalKey: "سبعة",
+      },
+      {
+        form: "سَبْعُونَ",
+        meaning: "seventy",
+        difference: "Tens numeral; it contrasts with the current cardinal seven and shows a genuine number-family relationship.",
+        relationship: "Established tens numeral in the س ب ع number family, attested in Qur'anic usage.",
+        provenance: "Codex-authored after review of the approved root meaning and canonical Qur'anic evidence for سَبْعُونَ; no case-only variant was used.",
+        featureSignal: ["partofspeech:noun", "number:numeral", "derivation:tens-numeral"],
+        baseDistinct: true,
+        lexicalKey: "سبعون",
+      },
+      {
+        form: "أَسْبَاعٌ",
+        meaning: "sevenths or seven-part divisions",
+        difference: "Broken plural/partitive noun; it shows a lexical derivation from the number rather than repeating the same numeral.",
+        relationship: "Partitive noun of the س ب ع number family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Arabic partitive morphology; the family remains limited because numeral forms beyond these are not useful learner-facing Ṣarf contrasts.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:partitive"],
+        baseDistinct: true,
+        lexicalKey: "أسباع",
+      },
+    ],
+    ["حقب"]: [
+      {
+        form: "حُقْبَةٌ",
+        meaning: "a long period or era",
+        difference: "Singular lexical noun; it contrasts with the current plural أَحْقَابًا and makes the period-number relationship visible.",
+        relationship: "Established singular related to أَحْقَاب in the restricted ح ق ب time-period family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Arabic plural morphology; further rows would be weak or unrelated.",
+        featureSignal: ["partofspeech:noun", "number:singular", "derivation:singular-of-plural"],
+        baseDistinct: true,
+        lexicalKey: "حقبة",
+      },
+    ],
+    ["كأس"]: [
+      {
+        form: "كُؤُوسٌ",
+        meaning: "cups or goblets",
+        difference: "Broken plural; it contrasts with the current singular كَأْسًا.",
+        relationship: "Established broken plural of كَأْس in the restricted ك أ س drinking-vessel family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Arabic plural morphology; no case-only forms were counted.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "كؤوس",
+      },
+      {
+        form: "كَأْسَانِ",
+        meaning: "two cups or goblets",
+        difference: "Dual lexical inflection; it gives a genuine number contrast without treating a case ending as a new lexical root.",
+        relationship: "Dual of كَأْس in the restricted ك أ س family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Arabic dual formation; the family remains limited because additional rows would repeat number/case information without improving recognition.",
+        featureSignal: ["partofspeech:noun", "number:dual"],
+        baseDistinct: true,
+        lexicalKey: "كأسان",
+      },
+    ],
     ["سوع"]: [
       {
         form: "سَاعَاتٌ",
