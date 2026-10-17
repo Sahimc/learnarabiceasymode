@@ -1,0 +1,2689 @@
+{
+  "auditBatchId": "limited-sarf-audit-bf498b5a9b212659",
+  "contractId": "quranic-word-tree-authoring",
+  "contractVersion": "1.3.5",
+  "reviewedAt": "2026-10-17T16:17:31.940Z",
+  "mode": "dry-run",
+  "scope": {
+    "authoredPackages": 1,
+    "limitedOccurrences": 34,
+    "distinctLimitedTeachingEntries": 34
+  },
+  "before": {
+    "limitedOccurrences": 34,
+    "limitedTeachingEntries": 34,
+    "forms": {
+      "1": 30,
+      "2": 1,
+      "3": 3
+    }
+  },
+  "decisions": {
+    "confirmedLimited": 28,
+    "upgradedToFull": 6,
+    "blocked": 0
+  },
+  "after": {
+    "confirmedLimited": 28,
+    "upgradedToFull": 6,
+    "blocked": 0,
+    "fullFamiliesAfter": 6
+  },
+  "byCategory": {
+    "rootless grammatical/other": {
+      "before": 16,
+      "confirmedLimited": 16,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "verb": {
+      "before": 5,
+      "confirmedLimited": 0,
+      "upgradedToFull": 5,
+      "blocked": 0
+    },
+    "connector/conjunction": {
+      "before": 5,
+      "confirmedLimited": 5,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "noun": {
+      "before": 2,
+      "confirmedLimited": 1,
+      "upgradedToFull": 1,
+      "blocked": 0
+    },
+    "preposition": {
+      "before": 4,
+      "confirmedLimited": 4,
+      "upgradedToFull": 0,
+      "blocked": 0
+    },
+    "pronoun": {
+      "before": 2,
+      "confirmedLimited": 2,
+      "upgradedToFull": 0,
+      "blocked": 0
+    }
+  },
+  "byReason": {
+    "rootless:rootless grammatical/other": 16,
+    "rootless:connector/conjunction": 5,
+    "restricted-lexical-family": 1,
+    "rootless:preposition": 4,
+    "rootless:pronoun": 2
+  },
+  "packageChanges": [
+    {
+      "packageId": "surah:82",
+      "surah": 82,
+      "statusAfter": "custom-complete",
+      "demotedFromCustomComplete": false
+    }
+  ],
+  "items": [
+    {
+      "occurrenceId": "word:82:1:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 1,
+      "position": 1,
+      "teachingId": "lesson:82:1:1",
+      "word": "إِذَا",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "إِذَا",
+          "meaning": "When",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:1:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "إِذَا",
+            "meaning": "When",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:1:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "إِذَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "إِذَا",
+            "meaning": "When",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:1:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:1:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "إِذَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "273e2150c24a12ab6011a3c4645576d208d9d7245d7e045ed10e3373b3690171",
+      "contentHash": "7c47e2c3e150dc4447895ae1f4677998876f7469cd6d998fc08606621b99c7e4"
+    },
+    {
+      "occurrenceId": "word:82:1:3",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 1,
+      "position": 3,
+      "teachingId": "lesson:82:1:3",
+      "word": "ٱنفَطَرَتْ",
+      "category": "verb",
+      "root": "ف ط ر",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "فَطَرَ",
+          "meaning": "he created or originated",
+          "difference": "Form I perfect; it names the basic originating action related to the current Form VII sky splitting.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فطر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verb",
+            "pattern:form-1",
+            "tense:perfect"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "فطر"
+        },
+        {
+          "form": "فِطْرَةٌ",
+          "meaning": "the created nature or natural disposition",
+          "difference": "Noun; it names the created nature or original disposition rather than the act of creating or splitting.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فطر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "derivation:lexical-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "فطرة"
+        },
+        {
+          "form": "فُطُورٌ",
+          "meaning": "a break, crack or flaw",
+          "difference": "Noun; it names the resulting break or defect, contrasting with the current intransitive Form VII event.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فطر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "derivation:result-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "فطور"
+        },
+        {
+          "form": "فَاطِرٌ",
+          "meaning": "creating or originating; Creator",
+          "difference": "Form I active participle; it names the one who creates or originates, not the sky that is cleft apart.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:فطر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "pattern:form-1"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "فاطر"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "ٱنفَطَرَتْ",
+          "meaning": "(is) cleft asunder",
+          "difference": "Current Qur'anic occurrence; pattern: Form 7; tense: perfect verb; verb form: Form 7.",
+          "relationship": "Current Qur'anic occurrence of the فطر lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:1:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:1:3) was checked as evidence."
+        },
+        {
+          "form": "فَطَرَ",
+          "meaning": "he created or originated",
+          "difference": "Form I perfect; it names the basic originating action related to the current Form VII sky splitting.",
+          "relationship": "Form I perfect of the ف ط ر family, repeatedly attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ف ط ر evidence, including فَطَرَ."
+        },
+        {
+          "form": "فِطْرَةٌ",
+          "meaning": "the created nature or natural disposition",
+          "difference": "Noun; it names the created nature or original disposition rather than the act of creating or splitting.",
+          "relationship": "Noun of the ف ط ر family, attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ف ط ر evidence, including فِطْرَة."
+        },
+        {
+          "form": "فُطُورٌ",
+          "meaning": "a break, crack or flaw",
+          "difference": "Noun; it names the resulting break or defect, contrasting with the current intransitive Form VII event.",
+          "relationship": "Noun of the ف ط ر family, attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ف ط ر evidence, including فُطُور."
+        },
+        {
+          "form": "فَاطِرٌ",
+          "meaning": "creating or originating; Creator",
+          "difference": "Form I active participle; it names the one who creates or originates, not the sky that is cleft apart.",
+          "relationship": "Form I active participle of the ف ط ر family, repeatedly attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ف ط ر evidence, including فَاطِر."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "ٱنفَطَرَتْ",
+            "meaning": "(is) cleft asunder",
+            "difference": "Current Qur'anic occurrence; pattern: Form 7; tense: perfect verb; verb form: Form 7.",
+            "relationship": "Current Qur'anic occurrence of the فطر lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:1:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:1:3) was checked as evidence."
+          },
+          {
+            "form": "فُطُورٍ",
+            "meaning": "flaw",
+            "difference": "Compared with ٱنفَطَرَتْ, this form changes tense: perfect verb → not marked; verbform: Form 7 → not marked; pattern: Form 7 → not marked.",
+            "relationship": "Related to the ف ط ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:67:3:18.",
+            "provenance": "Codex-reviewed form for the ف ط ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          },
+          {
+            "form": "مُنفَطِرٌۢ",
+            "meaning": "(will) break apart",
+            "difference": "Compared with ٱنفَطَرَتْ, this form changes tense: perfect verb → not marked; partofspeech: verb → noun/pronoun; gender: not marked → masculine.",
+            "relationship": "Related to the ف ط ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:73:18:2.",
+            "provenance": "Codex-reviewed form for the ف ط ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "ٱنفَطَرَتْ is a rootful verb with root ف ط ر. The audit found 4 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱنفَطَرَتْ",
+            "meaning": "(is) cleft asunder",
+            "difference": "Current Qur'anic occurrence; pattern: Form 7; tense: perfect verb; verb form: Form 7.",
+            "relationship": "Current Qur'anic occurrence of the فطر lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:1:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:1:3) was checked as evidence."
+          },
+          {
+            "form": "فَطَرَ",
+            "meaning": "he created or originated",
+            "difference": "Form I perfect; it names the basic originating action related to the current Form VII sky splitting.",
+            "relationship": "Form I perfect of the ف ط ر family, repeatedly attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ف ط ر evidence, including فَطَرَ."
+          },
+          {
+            "form": "فِطْرَةٌ",
+            "meaning": "the created nature or natural disposition",
+            "difference": "Noun; it names the created nature or original disposition rather than the act of creating or splitting.",
+            "relationship": "Noun of the ف ط ر family, attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ف ط ر evidence, including فِطْرَة."
+          },
+          {
+            "form": "فُطُورٌ",
+            "meaning": "a break, crack or flaw",
+            "difference": "Noun; it names the resulting break or defect, contrasting with the current intransitive Form VII event.",
+            "relationship": "Noun of the ف ط ر family, attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ف ط ر evidence, including فُطُور."
+          },
+          {
+            "form": "فَاطِرٌ",
+            "meaning": "creating or originating; Creator",
+            "difference": "Form I active participle; it names the one who creates or originates, not the sky that is cleft apart.",
+            "relationship": "Form I active participle of the ف ط ر family, repeatedly attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ف ط ر evidence, including فَاطِر."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "55ade6bb70732c674bb485fb25038a17e93f4ca7ebd0ac7a617226b0333d2018",
+      "contentHash": "99b961d5942335cb5625c110f5456f7f7d7459b920d0436a380f8137c31c1bc3"
+    },
+    {
+      "occurrenceId": "word:82:2:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 2,
+      "position": 1,
+      "teachingId": "lesson:82:2:1",
+      "word": "وَإِذَا",
+      "category": "connector/conjunction",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَإِذَا",
+          "meaning": "And when",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:2:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَإِذَا",
+            "meaning": "And when",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:2:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَإِذَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَإِذَا",
+            "meaning": "And when",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:2:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:2:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَإِذَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "d01420bb0ef0a06a88d4c249ac5fe282a8ccfcbfffdb08bc67414507f5a40d67",
+      "contentHash": "53c7b7d134b8ac904a28d0922f79b71871063eb8b34de659b7c45a37874add4f"
+    },
+    {
+      "occurrenceId": "word:82:2:2",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 2,
+      "position": 2,
+      "teachingId": "lesson:82:2:2",
+      "word": "ٱلْكَوَاكِبُ",
+      "category": "noun",
+      "root": "ك و ك ب",
+      "decision": "confirmed-limited",
+      "candidatePool": 1,
+      "candidateEvidence": [
+        {
+          "form": "كَوْكَبٌ",
+          "meaning": "a star or planet",
+          "difference": "Singular lexical noun; it contrasts with the current broken plural الكواكب and makes the number relationship visible.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "restricted-root-family:كوكب",
+          "score": 92,
+          "featureSignal": [
+            "partofspeech:noun",
+            "number:singular",
+            "derivation:singular-of-broken-plural"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "كوكب"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "ٱلْكَوَاكِبُ",
+          "meaning": "the stars",
+          "difference": "Current Qur'anic occurrence; number: masculine plural; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the كوكب lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:2:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:2:2) was checked as evidence."
+        },
+        {
+          "form": "كَوْكَبٌ",
+          "meaning": "a star or planet",
+          "difference": "Singular lexical noun; it contrasts with the current broken plural الكواكب and makes the number relationship visible.",
+          "relationship": "Established singular of كَوَاكِب in the restricted quadriliteral ك و ك ب family.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ك و ك ب evidence, which records only the noun كَوْكَب in singular and broken-plural forms; no unrelated verb was invented."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "ٱلْكَوَاكِبُ",
+            "meaning": "the stars",
+            "difference": "Current Qur'anic occurrence; number: masculine plural; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the كوكب lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:2:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:2:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "ٱلْكَوَاكِبُ is a rootful noun with root ك و ك ب. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "ٱلْكَوَاكِبُ",
+            "meaning": "the stars",
+            "difference": "Current Qur'anic occurrence; number: masculine plural; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the كوكب lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:2:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:2:2) was checked as evidence."
+          },
+          {
+            "form": "كَوْكَبٌ",
+            "meaning": "a star or planet",
+            "difference": "Singular lexical noun; it contrasts with the current broken plural الكواكب and makes the number relationship visible.",
+            "relationship": "Established singular of كَوَاكِب in the restricted quadriliteral ك و ك ب family.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ك و ك ب evidence, which records only the noun كَوْكَب in singular and broken-plural forms; no unrelated verb was invented."
+          }
+        ],
+        "limitedReason": "ٱلْكَوَاكِبُ is a reviewed restricted lexical item in the كوكب family. Canonical and approved lexical evidence support this lexeme, but do not provide four additional learner-useful lexical Ṣarf contrasts; case-only, annotation-only or fabricated variants would be padding. The family retains 2 genuine reviewed forms.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "0e51e481680f90220cda01bcd2d5379ad93a7230c40350b27b6360f2af8f7a87",
+      "contentHash": "72659542dba9169a4ae593174dc79b01ed2c1bdcd775ae08f9f810e48eecfc2e"
+    },
+    {
+      "occurrenceId": "word:82:2:3",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 2,
+      "position": 3,
+      "teachingId": "lesson:82:2:3",
+      "word": "ٱنتَثَرَتْ",
+      "category": "verb",
+      "root": "ن ث ر",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "نَثَرَ",
+          "meaning": "he scattered or dispersed",
+          "difference": "Form I perfect; it names the basic scattering action behind the current Form VIII occurrence.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:نثر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verb",
+            "pattern:form-1",
+            "tense:perfect"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "نثر"
+        },
+        {
+          "form": "يَنْثُرُ",
+          "meaning": "he scatters or disperses",
+          "difference": "Form I imperfect; it presents scattering as ongoing.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:نثر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verb",
+            "pattern:form-1",
+            "tense:imperfect"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "ينثر"
+        },
+        {
+          "form": "نَثْرٌ",
+          "meaning": "scattering or dispersion",
+          "difference": "Verbal noun; it names the act of scattering rather than the scattered objects.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:نثر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verbal-noun",
+            "derivation:verbal-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "نثر-noun"
+        },
+        {
+          "form": "مَنْثُورٌ",
+          "meaning": "scattered or dispersed",
+          "difference": "Form I passive participle; it describes what has been scattered, contrasting with the current Form VIII event.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:نثر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:passive-participle",
+            "voice:passive"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "منثور"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "ٱنتَثَرَتْ",
+          "meaning": "scatter",
+          "difference": "Current Qur'anic occurrence; pattern: Form 8; tense: perfect verb; verb form: Form 8.",
+          "relationship": "Current Qur'anic occurrence of the نثر lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:2:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:2:3) was checked as evidence."
+        },
+        {
+          "form": "نَثَرَ",
+          "meaning": "he scattered or dispersed",
+          "difference": "Form I perfect; it names the basic scattering action behind the current Form VIII occurrence.",
+          "relationship": "Form I perfect of the ن ث ر family, related to the Qur'anic passive participle مَنْثُور.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ن ث ر evidence and standard Form I morphology."
+        },
+        {
+          "form": "يَنْثُرُ",
+          "meaning": "he scatters or disperses",
+          "difference": "Form I imperfect; it presents scattering as ongoing.",
+          "relationship": "Form I imperfect of the ن ث ر family.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ن ث ر evidence and standard Form I imperfect morphology."
+        },
+        {
+          "form": "نَثْرٌ",
+          "meaning": "scattering or dispersion",
+          "difference": "Verbal noun; it names the act of scattering rather than the scattered objects.",
+          "relationship": "Verbal noun of the ن ث ر family.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ن ث ر evidence and standard Arabic verbal-noun morphology."
+        },
+        {
+          "form": "مَنْثُورٌ",
+          "meaning": "scattered or dispersed",
+          "difference": "Form I passive participle; it describes what has been scattered, contrasting with the current Form VIII event.",
+          "relationship": "Passive participle of the ن ث ر family, attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ن ث ر evidence, including مَنْثُور."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 2,
+        "forms": [
+          {
+            "form": "ٱنتَثَرَتْ",
+            "meaning": "scatter",
+            "difference": "Current Qur'anic occurrence; pattern: Form 8; tense: perfect verb; verb form: Form 8.",
+            "relationship": "Current Qur'anic occurrence of the نثر lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:2:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:2:3) was checked as evidence."
+          },
+          {
+            "form": "مَّنثُورًا",
+            "meaning": "scattered",
+            "difference": "Compared with ٱنتَثَرَتْ, this form changes tense: perfect verb → not marked; verbform: Form 8 → Form 1; pattern: Form 8 → Form 1.",
+            "relationship": "Related to the ن ث ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:76:19:9.",
+            "provenance": "Codex-reviewed form for the ن ث ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "ٱنتَثَرَتْ is a rootful verb with root ن ث ر. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱنتَثَرَتْ",
+            "meaning": "scatter",
+            "difference": "Current Qur'anic occurrence; pattern: Form 8; tense: perfect verb; verb form: Form 8.",
+            "relationship": "Current Qur'anic occurrence of the نثر lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:2:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:2:3) was checked as evidence."
+          },
+          {
+            "form": "نَثَرَ",
+            "meaning": "he scattered or dispersed",
+            "difference": "Form I perfect; it names the basic scattering action behind the current Form VIII occurrence.",
+            "relationship": "Form I perfect of the ن ث ر family, related to the Qur'anic passive participle مَنْثُور.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ن ث ر evidence and standard Form I morphology."
+          },
+          {
+            "form": "يَنْثُرُ",
+            "meaning": "he scatters or disperses",
+            "difference": "Form I imperfect; it presents scattering as ongoing.",
+            "relationship": "Form I imperfect of the ن ث ر family.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ن ث ر evidence and standard Form I imperfect morphology."
+          },
+          {
+            "form": "نَثْرٌ",
+            "meaning": "scattering or dispersion",
+            "difference": "Verbal noun; it names the act of scattering rather than the scattered objects.",
+            "relationship": "Verbal noun of the ن ث ر family.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ن ث ر evidence and standard Arabic verbal-noun morphology."
+          },
+          {
+            "form": "مَنْثُورٌ",
+            "meaning": "scattered or dispersed",
+            "difference": "Form I passive participle; it describes what has been scattered, contrasting with the current Form VIII event.",
+            "relationship": "Passive participle of the ن ث ر family, attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ن ث ر evidence, including مَنْثُور."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "d6518880e889df4e5cd4303f76a84307e1806c783a69d4618874b5a9c60d0d55",
+      "contentHash": "d888efb1ad6dd6f89bdbc8e6d57f63d58e1f2f071f6f8f576196ca102820514c"
+    },
+    {
+      "occurrenceId": "word:82:3:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 3,
+      "position": 1,
+      "teachingId": "lesson:82:3:1",
+      "word": "وَإِذَا",
+      "category": "connector/conjunction",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَإِذَا",
+          "meaning": "And when",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:3:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَإِذَا",
+            "meaning": "And when",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:3:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَإِذَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَإِذَا",
+            "meaning": "And when",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:3:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:3:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَإِذَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "0c71c4b418c6ff9583811273cc6d92c30d9a84cba9a62642f71125b29d866475",
+      "contentHash": "55de743cb7bcd27d4beb2eb9d5b5f6c3b02f896344f60efdb207e52e5a07cfb4"
+    },
+    {
+      "occurrenceId": "word:82:4:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 4,
+      "position": 1,
+      "teachingId": "lesson:82:4:1",
+      "word": "وَإِذَا",
+      "category": "connector/conjunction",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَإِذَا",
+          "meaning": "And when",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:4:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَإِذَا",
+            "meaning": "And when",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:4:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَإِذَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَإِذَا",
+            "meaning": "And when",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:4:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:4:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَإِذَا is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "cc12019bbe0ab319f6ab9cd2e9c6555bbdca2593682b3bfa058f83a25084fbd8",
+      "contentHash": "eb42bed5cfa2366eab011ca4f49303db4059c36237987d303a5f05d72afbd066"
+    },
+    {
+      "occurrenceId": "word:82:4:2",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 4,
+      "position": 2,
+      "teachingId": "lesson:82:4:2",
+      "word": "ٱلْقُبُورُ",
+      "category": "noun",
+      "root": "ق ب ر",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "أَقْبَرَ",
+          "meaning": "he provided a grave for him",
+          "difference": "Form IV perfect; it expresses causing or providing burial, contrasting with the current grave noun.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قبر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verb",
+            "pattern:form-4",
+            "tense:perfect"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "أقبر"
+        },
+        {
+          "form": "يُقْبِرُ",
+          "meaning": "he provides a grave or causes burial",
+          "difference": "Form IV imperfect; it presents providing burial as ongoing or intended.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قبر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verb",
+            "pattern:form-4",
+            "tense:imperfect"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يقبر"
+        },
+        {
+          "form": "قَبْرٌ",
+          "meaning": "a grave or burial place",
+          "difference": "Singular noun; it contrasts with the current broken plural القبور and makes the number relationship visible.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قبر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "number:singular"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "قبر-noun"
+        },
+        {
+          "form": "مَقَابِرُ",
+          "meaning": "burial grounds or cemeteries",
+          "difference": "Broken plural/place noun; it gives a distinct plural pattern from القبور and refers to graveyards collectively.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:قبر",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "number:plural",
+            "derivation:place-plural"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "مقابر"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "ٱلْقُبُورُ",
+          "meaning": "the graves",
+          "difference": "Current Qur'anic occurrence; number: masculine plural; case: nominative.",
+          "relationship": "Current Qur'anic occurrence of the قبر lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:4:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:4:2) was checked as evidence."
+        },
+        {
+          "form": "أَقْبَرَ",
+          "meaning": "he provided a grave for him",
+          "difference": "Form IV perfect; it expresses causing or providing burial, contrasting with the current grave noun.",
+          "relationship": "Form IV verb of the ق ب ر family, attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ق ب ر evidence, including أَقْبَرَ."
+        },
+        {
+          "form": "يُقْبِرُ",
+          "meaning": "he provides a grave or causes burial",
+          "difference": "Form IV imperfect; it presents providing burial as ongoing or intended.",
+          "relationship": "Form IV imperfect of the ق ب ر family.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ق ب ر evidence and standard Form IV imperfect morphology."
+        },
+        {
+          "form": "قَبْرٌ",
+          "meaning": "a grave or burial place",
+          "difference": "Singular noun; it contrasts with the current broken plural القبور and makes the number relationship visible.",
+          "relationship": "Singular noun of the ق ب ر family, repeatedly attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ق ب ر evidence, including قَبْر."
+        },
+        {
+          "form": "مَقَابِرُ",
+          "meaning": "burial grounds or cemeteries",
+          "difference": "Broken plural/place noun; it gives a distinct plural pattern from القبور and refers to graveyards collectively.",
+          "relationship": "Qur'anic noun of the ق ب ر family, attested at 102:2.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ق ب ر evidence, including مَقَابِر."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "ٱلْقُبُورُ",
+            "meaning": "the graves",
+            "difference": "Current Qur'anic occurrence; number: masculine plural; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the قبر lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:4:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:4:2) was checked as evidence."
+          },
+          {
+            "form": "فَأَقْبَرَهُۥ",
+            "meaning": "and provides a grave for him",
+            "difference": "Compared with ٱلْقُبُورُ, this form changes number: masculine plural → not marked; case: nominative → not marked; partofspeech: noun/pronoun → verb.",
+            "relationship": "Related to the ق ب ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:80:21:3.",
+            "provenance": "Codex-reviewed form for the ق ب ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          },
+          {
+            "form": "ٱلْمَقَابِرَ",
+            "meaning": "the graveyards",
+            "difference": "Compared with ٱلْقُبُورُ, this form changes case: nominative → accusative.",
+            "relationship": "Related to the ق ب ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:102:2:3.",
+            "provenance": "Codex-reviewed form for the ق ب ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "ٱلْقُبُورُ is a rootful noun with root ق ب ر. The audit found 15 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "ٱلْقُبُورُ",
+            "meaning": "the graves",
+            "difference": "Current Qur'anic occurrence; number: masculine plural; case: nominative.",
+            "relationship": "Current Qur'anic occurrence of the قبر lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:4:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:4:2) was checked as evidence."
+          },
+          {
+            "form": "أَقْبَرَ",
+            "meaning": "he provided a grave for him",
+            "difference": "Form IV perfect; it expresses causing or providing burial, contrasting with the current grave noun.",
+            "relationship": "Form IV verb of the ق ب ر family, attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ق ب ر evidence, including أَقْبَرَ."
+          },
+          {
+            "form": "يُقْبِرُ",
+            "meaning": "he provides a grave or causes burial",
+            "difference": "Form IV imperfect; it presents providing burial as ongoing or intended.",
+            "relationship": "Form IV imperfect of the ق ب ر family.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ق ب ر evidence and standard Form IV imperfect morphology."
+          },
+          {
+            "form": "قَبْرٌ",
+            "meaning": "a grave or burial place",
+            "difference": "Singular noun; it contrasts with the current broken plural القبور and makes the number relationship visible.",
+            "relationship": "Singular noun of the ق ب ر family, repeatedly attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ق ب ر evidence, including قَبْر."
+          },
+          {
+            "form": "مَقَابِرُ",
+            "meaning": "burial grounds or cemeteries",
+            "difference": "Broken plural/place noun; it gives a distinct plural pattern from القبور and refers to graveyards collectively.",
+            "relationship": "Qur'anic noun of the ق ب ر family, attested at 102:2.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ق ب ر evidence, including مَقَابِر."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "b543d359ae67518f725f8ca174407b4c11567e5691af3a119d649108d090c759",
+      "contentHash": "748185fc4d6007548b09c8992e15ed2c671a14259795f79c9a1a85a98b526af1"
+    },
+    {
+      "occurrenceId": "word:82:4:3",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 4,
+      "position": 3,
+      "teachingId": "lesson:82:4:3",
+      "word": "بُعْثِرَتْ",
+      "category": "verb",
+      "root": "ب ع ث ر",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "بَعْثَرَ",
+          "meaning": "he scattered or turned over",
+          "difference": "Quadriliteral perfect verb; it presents the completed scattering or turning-over action, contrasting with the current passive form.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:بعثر",
+          "score": 96,
+          "featureSignal": [
+            "pattern:quadriliteral",
+            "tense:perfect",
+            "voice:active"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "بعثر"
+        },
+        {
+          "form": "يُبَعْثِرُ",
+          "meaning": "he scatters or turns over",
+          "difference": "Quadriliteral imperfect; it presents scattering or turning over as ongoing or repeated.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:بعثر",
+          "score": 96,
+          "featureSignal": [
+            "pattern:quadriliteral",
+            "tense:imperfect",
+            "voice:active"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يبعثر"
+        },
+        {
+          "form": "بَعْثَرَةٌ",
+          "meaning": "scattering or turning over",
+          "difference": "Quadriliteral verbal noun; it names the action rather than describing its active or passive participants.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:بعثر",
+          "score": 96,
+          "featureSignal": [
+            "pattern:quadriliteral",
+            "partofspeech:verbal-noun",
+            "derivation:action-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "بعثرة"
+        },
+        {
+          "form": "مُبَعْثِرٌ",
+          "meaning": "one who scatters or turns over",
+          "difference": "Active participle; it names the agent performing the quadriliteral action, contrasting with the current passive verb.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:بعثر",
+          "score": 96,
+          "featureSignal": [
+            "pattern:quadriliteral",
+            "partofspeech:active-participle",
+            "derivation:agent"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "مبعثر"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "بُعْثِرَتْ",
+          "meaning": "are overturned",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; voice: passive; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the بعثر lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:4:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:4:3) was checked as evidence."
+        },
+        {
+          "form": "بَعْثَرَ",
+          "meaning": "he scattered or turned over",
+          "difference": "Quadriliteral perfect verb; it presents the completed scattering or turning-over action, contrasting with the current passive form.",
+          "relationship": "The active quadriliteral verb of the ب ع ث ر family underlying بُعْثِرَ.",
+          "provenance": "Codex-authored after review of the canonical Qur'anic occurrences 100:9 and 82:4 and reliable Arabic lexicon evidence defining بَعْثَرَ."
+        },
+        {
+          "form": "يُبَعْثِرُ",
+          "meaning": "he scatters or turns over",
+          "difference": "Quadriliteral imperfect; it presents scattering or turning over as ongoing or repeated.",
+          "relationship": "The imperfect counterpart of بَعْثَرَ in the ب ع ث ر family.",
+          "provenance": "Codex-authored after review of reliable Arabic conjugation evidence for بَعْثَرَ يُبَعْثِرُ and the canonical passive occurrences."
+        },
+        {
+          "form": "بَعْثَرَةٌ",
+          "meaning": "scattering or turning over",
+          "difference": "Quadriliteral verbal noun; it names the action rather than describing its active or passive participants.",
+          "relationship": "The established action noun of بَعْثَرَ, attested in Arabic lexicon evidence.",
+          "provenance": "Codex-authored after review of Arabic lexicon evidence defining بَعْثَرَةً as scattering, turning over or exposing what is inside."
+        },
+        {
+          "form": "مُبَعْثِرٌ",
+          "meaning": "one who scatters or turns over",
+          "difference": "Active participle; it names the agent performing the quadriliteral action, contrasting with the current passive verb.",
+          "relationship": "The active participle of بَعْثَرَ in the ب ع ث ر family.",
+          "provenance": "Codex-authored after review of reliable Arabic morphology for the active participle of بَعْثَرَ and the canonical Qur'anic passive forms."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "بُعْثِرَتْ",
+            "meaning": "are overturned",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; voice: passive; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the بعثر lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:4:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:4:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "بُعْثِرَتْ is a rootful verb with root ب ع ث ر. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "بُعْثِرَتْ",
+            "meaning": "are overturned",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; voice: passive; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the بعثر lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:4:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:4:3) was checked as evidence."
+          },
+          {
+            "form": "بَعْثَرَ",
+            "meaning": "he scattered or turned over",
+            "difference": "Quadriliteral perfect verb; it presents the completed scattering or turning-over action, contrasting with the current passive form.",
+            "relationship": "The active quadriliteral verb of the ب ع ث ر family underlying بُعْثِرَ.",
+            "provenance": "Codex-authored after review of the canonical Qur'anic occurrences 100:9 and 82:4 and reliable Arabic lexicon evidence defining بَعْثَرَ."
+          },
+          {
+            "form": "يُبَعْثِرُ",
+            "meaning": "he scatters or turns over",
+            "difference": "Quadriliteral imperfect; it presents scattering or turning over as ongoing or repeated.",
+            "relationship": "The imperfect counterpart of بَعْثَرَ in the ب ع ث ر family.",
+            "provenance": "Codex-authored after review of reliable Arabic conjugation evidence for بَعْثَرَ يُبَعْثِرُ and the canonical passive occurrences."
+          },
+          {
+            "form": "بَعْثَرَةٌ",
+            "meaning": "scattering or turning over",
+            "difference": "Quadriliteral verbal noun; it names the action rather than describing its active or passive participants.",
+            "relationship": "The established action noun of بَعْثَرَ, attested in Arabic lexicon evidence.",
+            "provenance": "Codex-authored after review of Arabic lexicon evidence defining بَعْثَرَةً as scattering, turning over or exposing what is inside."
+          },
+          {
+            "form": "مُبَعْثِرٌ",
+            "meaning": "one who scatters or turns over",
+            "difference": "Active participle; it names the agent performing the quadriliteral action, contrasting with the current passive verb.",
+            "relationship": "The active participle of بَعْثَرَ in the ب ع ث ر family.",
+            "provenance": "Codex-authored after review of reliable Arabic morphology for the active participle of بَعْثَرَ and the canonical Qur'anic passive forms."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "f2d59251cf36cdddc202d0e77be7071f8507a047e71f37a8e2abea2f5eedf7db",
+      "contentHash": "f17a215ae8c0bb41e7bdfdf337cfd0d94023748a32d033d954a4b4ea21621912"
+    },
+    {
+      "occurrenceId": "word:82:5:3",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 5,
+      "position": 3,
+      "teachingId": "lesson:82:5:3",
+      "word": "مَّا",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَّا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:5:3) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَّا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:5:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَّا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَّا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:5:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:5:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَّا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "c9dca800765305eec6082f1bd3c6324734ccd6fcfaf48842ae1743f05f3e7303",
+      "contentHash": "50668e6fe6aeccdcad4cc0d0b556fca8189043ece97c7bc0f3901d6541774667"
+    },
+    {
+      "occurrenceId": "word:82:6:3",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 6,
+      "position": 3,
+      "teachingId": "lesson:82:6:3",
+      "word": "مَا",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَا",
+          "meaning": "What",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:6:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:6:3) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "What",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:6:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:6:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "What",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:6:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:6:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "a8bc3ef08df4be3d590e971140036cb2fa3d79d0a91ea655deb51ee285e989f3",
+      "contentHash": "d81956e1131a87df9bef4a74aa2832c5b62f6982cf59c10c3c427e010d3e54c2"
+    },
+    {
+      "occurrenceId": "word:82:7:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 7,
+      "position": 1,
+      "teachingId": "lesson:82:7:1",
+      "word": "ٱلَّذِى",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "ٱلَّذِى",
+          "meaning": "Who",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun; number: masculine singular.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:7:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:7:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "ٱلَّذِى",
+            "meaning": "Who",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun; number: masculine singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:7:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:7:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "ٱلَّذِى is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "ٱلَّذِى",
+            "meaning": "Who",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun; number: masculine singular.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:7:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:7:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "ٱلَّذِى is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "a98fc8fa877521f59dc6c45fb8b3815d844271b534c0962b279578ab551b5cc8",
+      "contentHash": "f2545f172d3861cb11fc8cee98ed15b2938e8f9cc0af0ab3339a95560f5d7c52"
+    },
+    {
+      "occurrenceId": "word:82:7:4",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 7,
+      "position": 4,
+      "teachingId": "lesson:82:7:4",
+      "word": "فَعَدَلَكَ",
+      "category": "verb",
+      "root": "ع د ل",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "يَعْدِلُ",
+          "meaning": "he is just or equates",
+          "difference": "Form I imperfect; it presents balancing, equating or acting justly as ongoing.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:عدل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verb",
+            "pattern:form-1",
+            "tense:imperfect"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "يعدل"
+        },
+        {
+          "form": "اعْدِلْ",
+          "meaning": "be just or act fairly",
+          "difference": "Form I imperative; it turns the root into a direct command to act justly.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:عدل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:imperative-verb",
+            "pattern:form-1",
+            "mood:imperative"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "اعدل"
+        },
+        {
+          "form": "عَدْلٌ",
+          "meaning": "justice, fairness or compensation",
+          "difference": "Noun; it names justice or an equivalent compensation rather than the act of balancing or judging.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:عدل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:noun",
+            "derivation:abstract-noun"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "عدل-noun"
+        },
+        {
+          "form": "عَادِلٌ",
+          "meaning": "just or fair",
+          "difference": "Form I active participle/adjective; it describes the person who acts justly, contrasting with عَدْل as the quality or standard.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:عدل",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "pattern:form-1"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "عادل"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "فَعَدَلَكَ",
+          "meaning": "then balanced you",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; person: third-person masculine singular; person: second-person masculine singular; verb form: Form 1.",
+          "relationship": "Current Qur'anic occurrence of the عدل lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:7:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:7:4) was checked as evidence."
+        },
+        {
+          "form": "يَعْدِلُ",
+          "meaning": "he is just or equates",
+          "difference": "Form I imperfect; it presents balancing, equating or acting justly as ongoing.",
+          "relationship": "Form I imperfect of the ع د ل family, repeatedly attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ع د ل evidence, including يَعْدِلُ."
+        },
+        {
+          "form": "اعْدِلْ",
+          "meaning": "be just or act fairly",
+          "difference": "Form I imperative; it turns the root into a direct command to act justly.",
+          "relationship": "Form I imperative of the ع د ل family, attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ع د ل evidence, including اعْدِلُوا."
+        },
+        {
+          "form": "عَدْلٌ",
+          "meaning": "justice, fairness or compensation",
+          "difference": "Noun; it names justice or an equivalent compensation rather than the act of balancing or judging.",
+          "relationship": "Noun of the ع د ل family, repeatedly attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ع د ل evidence, including عَدْل."
+        },
+        {
+          "form": "عَادِلٌ",
+          "meaning": "just or fair",
+          "difference": "Form I active participle/adjective; it describes the person who acts justly, contrasting with عَدْل as the quality or standard.",
+          "relationship": "Active participle/adjective of the ع د ل family.",
+          "provenance": "Codex-authored after review of the approved project root meaning and standard Form I active-participle morphology."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "فَعَدَلَكَ",
+            "meaning": "then balanced you",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; person: third-person masculine singular; person: second-person masculine singular; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the عدل lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:7:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:7:4) was checked as evidence."
+          }
+        ],
+        "limitedReason": "فَعَدَلَكَ is a rootful verb with root ع د ل. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "فَعَدَلَكَ",
+            "meaning": "then balanced you",
+            "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; person: third-person masculine singular; person: second-person masculine singular; verb form: Form 1.",
+            "relationship": "Current Qur'anic occurrence of the عدل lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:7:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:7:4) was checked as evidence."
+          },
+          {
+            "form": "يَعْدِلُ",
+            "meaning": "he is just or equates",
+            "difference": "Form I imperfect; it presents balancing, equating or acting justly as ongoing.",
+            "relationship": "Form I imperfect of the ع د ل family, repeatedly attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ع د ل evidence, including يَعْدِلُ."
+          },
+          {
+            "form": "اعْدِلْ",
+            "meaning": "be just or act fairly",
+            "difference": "Form I imperative; it turns the root into a direct command to act justly.",
+            "relationship": "Form I imperative of the ع د ل family, attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ع د ل evidence, including اعْدِلُوا."
+          },
+          {
+            "form": "عَدْلٌ",
+            "meaning": "justice, fairness or compensation",
+            "difference": "Noun; it names justice or an equivalent compensation rather than the act of balancing or judging.",
+            "relationship": "Noun of the ع د ل family, repeatedly attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ع د ل evidence, including عَدْل."
+          },
+          {
+            "form": "عَادِلٌ",
+            "meaning": "just or fair",
+            "difference": "Form I active participle/adjective; it describes the person who acts justly, contrasting with عَدْل as the quality or standard.",
+            "relationship": "Active participle/adjective of the ع د ل family.",
+            "provenance": "Codex-authored after review of the approved project root meaning and standard Form I active-participle morphology."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "1ea30b61834ad0bafb30f67367267be8ed0e5faecc51111041b7d4e4f16f8a07",
+      "contentHash": "9e47b9d9487513552fd52d827abededab833a735947c649db80ec172b91434c2"
+    },
+    {
+      "occurrenceId": "word:82:8:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 8,
+      "position": 1,
+      "teachingId": "lesson:82:8:1",
+      "word": "فِىٓ",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "فِىٓ",
+          "meaning": "In",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:8:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:8:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "فِىٓ",
+            "meaning": "In",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:8:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:8:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "فِىٓ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "فِىٓ",
+            "meaning": "In",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:8:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:8:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "فِىٓ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "b5253f1f5879c42bfa1a6c2580efa39a75e4a381c490ae3aee4dfbfe6dc6f8bd",
+      "contentHash": "74a61aa254674efb94bb2bf8e35d78a4c4dfa063fa7f483ef24aa8da3e3ba41d"
+    },
+    {
+      "occurrenceId": "word:82:8:4",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 8,
+      "position": 4,
+      "teachingId": "lesson:82:8:4",
+      "word": "مَّا",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَّا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:8:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:8:4) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَّا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:8:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:8:4) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَّا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَّا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:8:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:8:4) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَّا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "8ee571cbc3b099f5c9bc05e0baf08b24f855ca081c9fcee299ade70e79c38aac",
+      "contentHash": "38a84a3beef3591734086c1e8358556e59d83f013cb1dc98c425897c76dfc397"
+    },
+    {
+      "occurrenceId": "word:82:8:6",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 8,
+      "position": 6,
+      "teachingId": "lesson:82:8:6",
+      "word": "رَكَّبَكَ",
+      "category": "verb",
+      "root": "ر ك ب",
+      "decision": "upgraded-to-full",
+      "candidatePool": 4,
+      "candidateEvidence": [
+        {
+          "form": "رَكِبَ",
+          "meaning": "he rode or embarked",
+          "difference": "Form I perfect; it presents the completed riding action behind the current imperfect form.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:ركب",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verb",
+            "pattern:form-1",
+            "tense:perfect"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "ركب"
+        },
+        {
+          "form": "ٱرْكَبْ",
+          "meaning": "ride or embark",
+          "difference": "Form I imperative, second-person masculine singular; it turns the riding action into a direct command.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:ركب",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:imperative-verb",
+            "pattern:form-1",
+            "mood:imperative"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "اركب"
+        },
+        {
+          "form": "رَكَّبَ",
+          "meaning": "he assembled or mounted",
+          "difference": "Form II perfect; the doubled middle radical derives the causative/assembling sense from the basic riding root.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:ركب",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:verb",
+            "pattern:form-2",
+            "tense:perfect"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "ركب-form-2"
+        },
+        {
+          "form": "مُتَرَاكِبٌ",
+          "meaning": "layered or piled up",
+          "difference": "Form VI active participle; it describes things riding or piling on one another rather than a person riding an animal or vehicle.",
+          "sourceKind": "codex-authored-lexicon",
+          "sourceOccurrence": "curated-root-family:ركب",
+          "score": 96,
+          "featureSignal": [
+            "partofspeech:active-participle",
+            "pattern:form-6"
+          ],
+          "baseDistinct": true,
+          "lexicalKey": "متراكب"
+        }
+      ],
+      "selectedForms": [
+        {
+          "form": "رَكَّبَكَ",
+          "meaning": "He assembled you",
+          "difference": "Current Qur'anic occurrence; pattern: Form 2; tense: perfect verb; person: third-person masculine singular; person: second-person masculine singular; verb form: Form 2.",
+          "relationship": "Current Qur'anic occurrence of the ركب lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:8:6. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:8:6) was checked as evidence."
+        },
+        {
+          "form": "رَكِبَ",
+          "meaning": "he rode or embarked",
+          "difference": "Form I perfect; it presents the completed riding action behind the current imperfect form.",
+          "relationship": "Form I perfect of the ر ك ب family, attested repeatedly in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ر ك ب evidence, including رَكِبَ."
+        },
+        {
+          "form": "ٱرْكَبْ",
+          "meaning": "ride or embark",
+          "difference": "Form I imperative, second-person masculine singular; it turns the riding action into a direct command.",
+          "relationship": "Form I imperative of the ر ك ب family, attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ر ك ب evidence, including ٱرْكَبْ."
+        },
+        {
+          "form": "رَكَّبَ",
+          "meaning": "he assembled or mounted",
+          "difference": "Form II perfect; the doubled middle radical derives the causative/assembling sense from the basic riding root.",
+          "relationship": "Form II perfect of the ر ك ب family, attested in Qur'anic usage.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ر ك ب evidence, including رَكَّبَ."
+        },
+        {
+          "form": "مُتَرَاكِبٌ",
+          "meaning": "layered or piled up",
+          "difference": "Form VI active participle; it describes things riding or piling on one another rather than a person riding an animal or vehicle.",
+          "relationship": "Form VI active participle of the ر ك ب family, attested in Qur'anic usage at 13:4.",
+          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ر ك ب evidence, including مُتَرَاكِب."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 3,
+        "forms": [
+          {
+            "form": "رَكَّبَكَ",
+            "meaning": "He assembled you",
+            "difference": "Current Qur'anic occurrence; pattern: Form 2; tense: perfect verb; person: third-person masculine singular; person: second-person masculine singular; verb form: Form 2.",
+            "relationship": "Current Qur'anic occurrence of the ركب lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:8:6. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:8:6) was checked as evidence."
+          },
+          {
+            "form": "رِكَابٍ",
+            "meaning": "camels",
+            "difference": "Compared with رَكَّبَكَ, this form changes tense: perfect verb → not marked; person: second-person masculine singular → not marked; verbform: Form 2 → not marked.",
+            "relationship": "Related to the ر ك ب root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:59:6:13.",
+            "provenance": "Codex-reviewed form for the ر ك ب family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          },
+          {
+            "form": "لَتَرْكَبُنَّ",
+            "meaning": "You will surely embark",
+            "difference": "Compared with رَكَّبَكَ, this form changes tense: perfect verb → imperfect verb; person: second-person masculine singular → not marked; verbform: Form 2 → Form 1.",
+            "relationship": "Related to the ر ك ب root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:84:19:1.",
+            "provenance": "Codex-reviewed form for the ر ك ب family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          }
+        ],
+        "limitedReason": "رَكَّبَكَ is a rootful verb with root ر ك ب. The audit found 4 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+      },
+      "after": {
+        "status": "full",
+        "formCount": 5,
+        "forms": [
+          {
+            "form": "رَكَّبَكَ",
+            "meaning": "He assembled you",
+            "difference": "Current Qur'anic occurrence; pattern: Form 2; tense: perfect verb; person: third-person masculine singular; person: second-person masculine singular; verb form: Form 2.",
+            "relationship": "Current Qur'anic occurrence of the ركب lexical family in this āyah.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:8:6. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:8:6) was checked as evidence."
+          },
+          {
+            "form": "رَكِبَ",
+            "meaning": "he rode or embarked",
+            "difference": "Form I perfect; it presents the completed riding action behind the current imperfect form.",
+            "relationship": "Form I perfect of the ر ك ب family, attested repeatedly in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ر ك ب evidence, including رَكِبَ."
+          },
+          {
+            "form": "ٱرْكَبْ",
+            "meaning": "ride or embark",
+            "difference": "Form I imperative, second-person masculine singular; it turns the riding action into a direct command.",
+            "relationship": "Form I imperative of the ر ك ب family, attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ر ك ب evidence, including ٱرْكَبْ."
+          },
+          {
+            "form": "رَكَّبَ",
+            "meaning": "he assembled or mounted",
+            "difference": "Form II perfect; the doubled middle radical derives the causative/assembling sense from the basic riding root.",
+            "relationship": "Form II perfect of the ر ك ب family, attested in Qur'anic usage.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ر ك ب evidence, including رَكَّبَ."
+          },
+          {
+            "form": "مُتَرَاكِبٌ",
+            "meaning": "layered or piled up",
+            "difference": "Form VI active participle; it describes things riding or piling on one another rather than a person riding an animal or vehicle.",
+            "relationship": "Form VI active participle of the ر ك ب family, attested in Qur'anic usage at 13:4.",
+            "provenance": "Codex-authored after review of Quranic Arabic Corpus root ر ك ب evidence, including مُتَرَاكِب."
+          }
+        ],
+        "auditDecision": "upgraded-to-full"
+      },
+      "sourceHash": "1a00d39324c9d8807ed2679b5ee2c2e028a02aefbad9181243c0d7ee5f3f09db",
+      "contentHash": "d1b7533427ce141a4de7f257815e5e5434eb69e659b6bec63faa528dae998437"
+    },
+    {
+      "occurrenceId": "word:82:9:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 9,
+      "position": 1,
+      "teachingId": "lesson:82:9:1",
+      "word": "كَلَّا",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "كَلَّا",
+          "meaning": "Nay",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:9:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:9:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "كَلَّا",
+            "meaning": "Nay",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:9:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:9:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "كَلَّا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "كَلَّا",
+            "meaning": "Nay",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:9:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:9:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "كَلَّا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "58adc535df3d46fc0cab3a86a5181566c4bb5471b5f97524f7d7d2a5d6e66c60",
+      "contentHash": "09ed0066fe924798cb30310828169cc4d45ba7a8234080527359a499aed747b8"
+    },
+    {
+      "occurrenceId": "word:82:9:2",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 9,
+      "position": 2,
+      "teachingId": "lesson:82:9:2",
+      "word": "بَلْ",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "بَلْ",
+          "meaning": "But",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:9:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:9:2) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "بَلْ",
+            "meaning": "But",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:9:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:9:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "بَلْ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "بَلْ",
+            "meaning": "But",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:9:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:9:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "بَلْ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "7252759d10972a49ca9abac31f6fd68a93f1809017fd2b60d7ba1a897f5689e2",
+      "contentHash": "7143db5709ed039c11abc68d59572b73a3ab2070fc0291fe45cba8c75f14a596"
+    },
+    {
+      "occurrenceId": "word:82:10:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 10,
+      "position": 1,
+      "teachingId": "lesson:82:10:1",
+      "word": "وَإِنَّ",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَإِنَّ",
+          "meaning": "And indeed",
+          "difference": "Current Qur'anic occurrence; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:10:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:10:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَإِنَّ",
+            "meaning": "And indeed",
+            "difference": "Current Qur'anic occurrence; case: accusative.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:10:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:10:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَإِنَّ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَإِنَّ",
+            "meaning": "And indeed",
+            "difference": "Current Qur'anic occurrence; case: accusative.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:10:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:10:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَإِنَّ is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "6fb92ae0853fd3eed3260b59a9b32a752eee571684276cc2c5c61cc2bdd99e1b",
+      "contentHash": "011c54c0ac70d8864e5e78854d5aa690fe6654f87c626cb9223040879e7e26e0"
+    },
+    {
+      "occurrenceId": "word:82:10:2",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 10,
+      "position": 2,
+      "teachingId": "lesson:82:10:2",
+      "word": "عَلَيْكُمْ",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "عَلَيْكُمْ",
+          "meaning": "over you",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:10:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:10:2) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "عَلَيْكُمْ",
+            "meaning": "over you",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:10:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:10:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "عَلَيْكُمْ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "عَلَيْكُمْ",
+            "meaning": "over you",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:10:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:10:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "عَلَيْكُمْ is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "14b5cd4350ed77cfaf337c6554ef95e98363bcdd65f63b90d1771be3ac949e98",
+      "contentHash": "ba6b944137c7591794a6663f8a0434be0a1791072481399fcb7c73e64657c53b"
+    },
+    {
+      "occurrenceId": "word:82:12:2",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 12,
+      "position": 2,
+      "teachingId": "lesson:82:12:2",
+      "word": "مَا",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَا",
+          "meaning": "whatever",
+          "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:12:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:12:2) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "whatever",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:12:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:12:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "whatever",
+            "difference": "Current Qur'anic occurrence; partOfSpeech: relative pronoun.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:12:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:12:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "d6790f9b0508cfc7321358762ac51a01c48a215e7595ad5c893ba0de20436ad6",
+      "contentHash": "651e9395551d1e21bebaae157f40596a77a897b94ddbf91668bbfe448fdf0bc6"
+    },
+    {
+      "occurrenceId": "word:82:13:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 13,
+      "position": 1,
+      "teachingId": "lesson:82:13:1",
+      "word": "إِنَّ",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "إِنَّ",
+          "meaning": "Indeed",
+          "difference": "Current Qur'anic occurrence; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:13:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:13:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "إِنَّ",
+            "meaning": "Indeed",
+            "difference": "Current Qur'anic occurrence; case: accusative.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:13:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:13:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "إِنَّ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "إِنَّ",
+            "meaning": "Indeed",
+            "difference": "Current Qur'anic occurrence; case: accusative.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:13:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:13:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "إِنَّ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "76d9933a15d31b44e1f60fa6d75e26663d64a9a897f33c04798982315d882f9a",
+      "contentHash": "af35b84fa7afab103c922583f68edb98625d03023a2beda1dd7eccc8b54fd99d"
+    },
+    {
+      "occurrenceId": "word:82:13:3",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 13,
+      "position": 3,
+      "teachingId": "lesson:82:13:3",
+      "word": "لَفِى",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "لَفِى",
+          "meaning": "(will be) surely in",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:13:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:13:3) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "لَفِى",
+            "meaning": "(will be) surely in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:13:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:13:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "لَفِى is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "لَفِى",
+            "meaning": "(will be) surely in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:13:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:13:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "لَفِى is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "18967f5d2282eafe8c5b38fb49de3a4ec2bde15850d40f7e996b259b38f65684",
+      "contentHash": "c06fa00451ea0d8d5fd96f41e7f714c2af33bf07bfa027e29d5b16cf50cd482a"
+    },
+    {
+      "occurrenceId": "word:82:14:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 14,
+      "position": 1,
+      "teachingId": "lesson:82:14:1",
+      "word": "وَإِنَّ",
+      "category": "connector/conjunction",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَإِنَّ",
+          "meaning": "And indeed",
+          "difference": "Current Qur'anic occurrence; case: accusative.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:14:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:14:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَإِنَّ",
+            "meaning": "And indeed",
+            "difference": "Current Qur'anic occurrence; case: accusative.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:14:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:14:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَإِنَّ is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَإِنَّ",
+            "meaning": "And indeed",
+            "difference": "Current Qur'anic occurrence; case: accusative.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:14:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:14:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَإِنَّ is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "99cbb35b1f75a5c3320fbf507c8e76309cb1331e4d91d5de043643ab32c72ea8",
+      "contentHash": "83c92b479b1b92cd028cbaef081ae6eacbb59a9b597e249d619a6820c7a7c748"
+    },
+    {
+      "occurrenceId": "word:82:14:3",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 14,
+      "position": 3,
+      "teachingId": "lesson:82:14:3",
+      "word": "لَفِى",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "لَفِى",
+          "meaning": "(will be) surely in",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:14:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:14:3) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "لَفِى",
+            "meaning": "(will be) surely in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:14:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:14:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "لَفِى is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "لَفِى",
+            "meaning": "(will be) surely in",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:14:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:14:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "لَفِى is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "b66c2d76ce6af5dd7c972cf9661c167a1f19ef55764f2b7fbb276828b64d5858",
+      "contentHash": "93ef4c1f67e3f6e7f0973bd34109cc267c7a28a6a49237281f4ffb6887ad70ef"
+    },
+    {
+      "occurrenceId": "word:82:16:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 16,
+      "position": 1,
+      "teachingId": "lesson:82:16:1",
+      "word": "وَمَا",
+      "category": "preposition",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَمَا",
+          "meaning": "And not",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:16:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:16:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَمَا",
+            "meaning": "And not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:16:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:16:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَمَا is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَمَا",
+            "meaning": "And not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:16:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:16:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَمَا is a rootless preposition rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "227a6544f2aee52bbea7b7cf0ae910902b2fa943c3e329640a9f263c927a80a5",
+      "contentHash": "bd71a942bca07347d9a6c1f0a5fc5ffb7a066ee25fc765fe1dd878a3d4dfcd1a"
+    },
+    {
+      "occurrenceId": "word:82:16:2",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 16,
+      "position": 2,
+      "teachingId": "lesson:82:16:2",
+      "word": "هُمْ",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "هُمْ",
+          "meaning": "they",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:16:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:16:2) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "هُمْ",
+            "meaning": "they",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:16:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:16:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "هُمْ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "هُمْ",
+            "meaning": "they",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:16:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:16:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "هُمْ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "798f4b1346db96fac8b6fc0bcd19557e8eda521ce48d853d72ec4334664d42a2",
+      "contentHash": "d39e60851478e4e9723c78fb93189f7546d6bc9661158f427949ecfe2f6edc54"
+    },
+    {
+      "occurrenceId": "word:82:16:3",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 16,
+      "position": 3,
+      "teachingId": "lesson:82:16:3",
+      "word": "عَنْهَا",
+      "category": "pronoun",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "عَنْهَا",
+          "meaning": "from it",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:16:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:16:3) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "عَنْهَا",
+            "meaning": "from it",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:16:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:16:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "عَنْهَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "عَنْهَا",
+            "meaning": "from it",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:16:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:16:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "عَنْهَا is a rootless pronoun rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "659cd28509cb6da28b9f17284b88b2bb8157d1282b21a09dafc69bfe3e506925",
+      "contentHash": "25595ef1f8469f86330aa86503beb3ad31ce4cb2ec087a6d49eb6a4e79e510dd"
+    },
+    {
+      "occurrenceId": "word:82:17:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 17,
+      "position": 1,
+      "teachingId": "lesson:82:17:1",
+      "word": "وَمَآ",
+      "category": "connector/conjunction",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "وَمَآ",
+          "meaning": "And what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:17:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:17:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَمَآ",
+            "meaning": "And what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:17:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:17:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَمَآ is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "وَمَآ",
+            "meaning": "And what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:17:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:17:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "وَمَآ is a rootless connector/conjunction rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "024775810ebbc7e4c85ee28724eef59526522b2a609ac7794344fd0cbd5d54bb",
+      "contentHash": "26aad94a54dfed5b7098e756b11a6a5248240c29627391a64f4c6eb4127f8fa5"
+    },
+    {
+      "occurrenceId": "word:82:17:3",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 17,
+      "position": 3,
+      "teachingId": "lesson:82:17:3",
+      "word": "مَا",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:17:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:17:3) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:17:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:17:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:17:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:17:3) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "6e305a4c5d09d90b4047736f070c9f7a1843a5e13b99f1cf7346d70c5f2f838a",
+      "contentHash": "81afcbfa98e2e76a56c5843219caba94073877bc8c29333d88f9e09951cf0cc2"
+    },
+    {
+      "occurrenceId": "word:82:18:1",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 18,
+      "position": 1,
+      "teachingId": "lesson:82:18:1",
+      "word": "ثُمَّ",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "ثُمَّ",
+          "meaning": "Then",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:18:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:18:1) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "ثُمَّ",
+            "meaning": "Then",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:18:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:18:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "ثُمَّ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "ثُمَّ",
+            "meaning": "Then",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:18:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:18:1) was checked as evidence."
+          }
+        ],
+        "limitedReason": "ثُمَّ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "d7987cb1ddf0a0bdfc7f36f0897dd5ef8fc94c6e632fc44d4de561969ba30017",
+      "contentHash": "72c30c200afc8dd032183276e5a1a291f7fcd191d058abcb63159b63ae75468d"
+    },
+    {
+      "occurrenceId": "word:82:18:2",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 18,
+      "position": 2,
+      "teachingId": "lesson:82:18:2",
+      "word": "مَآ",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَآ",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:18:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:18:2) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَآ",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:18:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:18:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَآ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَآ",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:18:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:18:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَآ is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "ddecb498728e38253daf4e89239fcd7ec9664778a0d010358d82cf68b011716a",
+      "contentHash": "5a207ec2397e0ce4daab73c430e4a9ac189d7c074dd4b668435d84c6363bd7bb"
+    },
+    {
+      "occurrenceId": "word:82:18:4",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 18,
+      "position": 4,
+      "teachingId": "lesson:82:18:4",
+      "word": "مَا",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "مَا",
+          "meaning": "what",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:18:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:18:4) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:18:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:18:4) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "مَا",
+            "meaning": "what",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:18:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:18:4) was checked as evidence."
+          }
+        ],
+        "limitedReason": "مَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "195b8393fd5a63374a7b02b5f95c93395de9c487d4dfa0fdcc363589a015a37d",
+      "contentHash": "158714d650c5badf3a2458f32fa4a289129a39f0ce809ebd8c48e90a92442fbf"
+    },
+    {
+      "occurrenceId": "word:82:19:2",
+      "packageId": "surah:82",
+      "surah": 82,
+      "ayah": 19,
+      "position": 2,
+      "teachingId": "lesson:82:19:2",
+      "word": "لَا",
+      "category": "rootless grammatical/other",
+      "root": "",
+      "decision": "confirmed-limited",
+      "candidatePool": 0,
+      "candidateEvidence": [],
+      "selectedForms": [
+        {
+          "form": "لَا",
+          "meaning": "not",
+          "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+          "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:82:19:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:19:2) was checked as evidence."
+        }
+      ],
+      "before": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "لَا",
+            "meaning": "not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:19:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:19:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "لَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form."
+      },
+      "after": {
+        "status": "limited",
+        "formCount": 1,
+        "forms": [
+          {
+            "form": "لَا",
+            "meaning": "not",
+            "difference": "Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary.",
+            "relationship": "Current Qur'anic occurrence of this rootless grammatical item.",
+            "provenance": "Codex review of canonical Qur'anic occurrence word:82:19:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (82:19:2) was checked as evidence."
+          }
+        ],
+        "limitedReason": "لَا is a rootless rootless grammatical/other rather than a lexical root family. The reviewed alternatives are grammatical or attached variants, not additional lexical Ṣarf forms; adding lexical rows would mislead the learner. The family retains 1 genuine reviewed form.",
+        "auditDecision": "confirmed-limited"
+      },
+      "sourceHash": "0254674953e2b44ebd0cf9eb93f27552abf8ab6dc263980f01b1d798ec627705",
+      "contentHash": "0d6d906fffc2a0bbaf18c7665ef74f37ced85593470f192d6069541857926ba9"
+    }
+  ]
+}
