@@ -8172,6 +8172,60 @@ function clone<T>(value: T): T {
 type AdditionalCuratedCandidate = Omit<Candidate, "score" | "sourceKind" | "sourceOccurrence">;
 
 const ADDITIONAL_CURATED_FAMILIES: Record<string, AdditionalCuratedCandidate[]> = {
+  ["عبس"]: [
+    { form: "يَعْبِسُ", meaning: "he frowns", difference: "Form I imperfect; it presents frowning as ongoing or habitual rather than the current completed occurrence.", relationship: "Form I imperfect of the ع ب س family, whose Qur'anic evidence includes عَبَسَ and عَبُوس.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ع ب س evidence and standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يعبس" },
+    { form: "عُبُوسٌ", meaning: "frowning or sternness", difference: "Verbal noun; it names the state or act of frowning rather than the person performing it.", relationship: "Verbal noun of the ع ب س family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "عبوس-noun" },
+    { form: "عَابِسٌ", meaning: "frowning or stern", difference: "Form I active participle; it describes one who is frowning or stern.", relationship: "Form I active participle of the ع ب س family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "عابس" },
+    { form: "عَبْسٌ", meaning: "a frown or stern expression", difference: "Lexical noun; it names the facial expression rather than the finite act or adjective.", relationship: "Lexical noun of the ع ب س family.", provenance: "Codex-authored after review of the approved root meaning and classical lexical morphology for ع ب س.", featureSignal: ["partofspeech:noun", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "عبس-noun" },
+  ],
+  ["عمي"]: [
+    { form: "عَمِيَ", meaning: "he became blind", difference: "Form I perfect; it states the completed becoming-blind event behind the current adjective.", relationship: "Form I perfect of the ع م ي family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ع م ي evidence, including عَمِيَ and the nominal أَعْمَىٰ.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "عمي" },
+    { form: "تَعْمَى", meaning: "it becomes blind or is blinded", difference: "Form I imperfect; it presents blindness as an ongoing state or change.", relationship: "Form I imperfect of the ع م ي family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ع م ي evidence, including تَعْمَى.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "تعمى" },
+    { form: "عَمًى", meaning: "blindness or obscurity", difference: "Abstract noun; it names blindness as a condition rather than describing the blind person.", relationship: "Noun of the ع م ي family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ع م ي evidence, including عَمًى.", featureSignal: ["partofspeech:noun", "derivation:abstract-noun"], baseDistinct: true, lexicalKey: "عمى-noun" },
+    { form: "عُمْيٌ", meaning: "blind people", difference: "Broken plural/adjectival noun; it contrasts with the current singular nominal أَعْمَىٰ.", relationship: "Plural nominal form of the ع م ي family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ع م ي evidence, including عُمْيٌ.", featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"], baseDistinct: true, lexicalKey: "عمي-plural" },
+  ],
+  ["صدي"]: [
+    { form: "يَتَصَدَّى", meaning: "he gives attention or turns toward", difference: "Form V imperfect; it presents the attending or turning-toward action as ongoing.", relationship: "Form V imperfect of the ص د ي family, related to the current تَصَدَّىٰ.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ص د ي evidence and standard Form V imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-5", "tense:imperfect"], baseDistinct: true, lexicalKey: "يتصدى" },
+    { form: "تَصَدٍّ", meaning: "giving attention or turning toward", difference: "Form V verbal noun; it names the act of attending rather than presenting it as a finite verb.", relationship: "Form V verbal noun of the ص د ي family.", provenance: "Codex-authored after review of the approved root meaning and standard Form V verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "pattern:form-5", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "تصدي" },
+    { form: "مُتَصَدٍّ", meaning: "one who gives attention or turns toward", difference: "Form V active participle; it names the person who attends or turns toward something.", relationship: "Form V active participle of the ص د ي family.", provenance: "Codex-authored after review of the approved root meaning and standard Form V active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-5"], baseDistinct: true, lexicalKey: "متصدي" },
+    { form: "تَصْدِيَةٌ", meaning: "clapping or handclapping", difference: "Form II verbal noun; it shows a distinct derived pattern of the same root rather than padding the Form V family.", relationship: "Form II verbal noun of the ص د ي family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ص د ي evidence, which records تَصْدِيَةٌ as the Form II verbal noun.", featureSignal: ["partofspeech:verbal-noun", "pattern:form-2", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "تصدية" },
+  ],
+  ["نطف"]: [
+    { form: "نَطَفَ", meaning: "it dripped or let a drop fall", difference: "Form I perfect; it names the completed dripping action related to the noun نُطْفَةٌ.", relationship: "Form I verb of the ن ط ف family, related to the lexical sense of a drop or small fluid quantity.", provenance: "Codex-authored after review of the approved root meaning, Quranic Arabic Corpus noun evidence and standard Form I morphology; the verb was not inferred from an occurrence gloss alone.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "نطف" },
+    { form: "يَنْطِفُ", meaning: "it drips or lets a drop fall", difference: "Form I imperfect; it presents dripping as ongoing.", relationship: "Form I imperfect of the ن ط ف family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology for ن ط ف.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "ينطف" },
+    { form: "نَطْفٌ", meaning: "dripping or letting drops fall", difference: "Verbal noun; it names the dripping action rather than the drop or semen-drop itself.", relationship: "Verbal noun of the ن ط ف family.", provenance: "Codex-authored after review of the approved root meaning and standard Arabic verbal-noun morphology for ن ط ف.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "نطف-noun" },
+    { form: "نُطَفٌ", meaning: "drops or semen-drops", difference: "Broken plural; it contrasts with the current singular نُطْفَةٍ and makes the number relationship visible.", relationship: "Established broken plural of نُطْفَةٌ in the ن ط ف family.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ن ط ف evidence and standard Arabic plural morphology.", featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"], baseDistinct: true, lexicalKey: "نطف-plural" },
+  ],
+  ["قضي"]: [
+    { form: "قَضَىٰ", meaning: "he decreed, decided or completed", difference: "Form I perfect; it states the completed act behind the current jussive imperfect.", relationship: "Form I perfect of the ق ض ي family, repeatedly attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ق ض ي evidence, including قَضَىٰ.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "قضى" },
+    { form: "يَقْضِي", meaning: "he decrees, judges or completes", difference: "Form I imperfect indicative; it contrasts with the current jussive form يَقْضِ by making the mood distinction visible.", relationship: "Form I imperfect of the ق ض ي family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ق ض ي evidence, including يَقْضِي and the current jussive يَقْضِ.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect", "mood:indicative"], baseDistinct: true, lexicalKey: "يقضي" },
+    { form: "قَاضٍ", meaning: "one who decrees, judges or decides", difference: "Form I active participle; it names the agent rather than the act of deciding or completing.", relationship: "Form I active participle of the ق ض ي family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ق ض ي evidence, including قَاضٍ.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "قاض" },
+    { form: "مَقْضِيٌّ", meaning: "decreed, decided or completed", difference: "Form I passive participle; it describes what has been decreed or completed rather than the one who decides.", relationship: "Form I passive participle of the ق ض ي family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ق ض ي evidence, including مَقْضِيٌّ.", featureSignal: ["partofspeech:passive-participle", "pattern:form-1", "voice:passive"], baseDistinct: true, lexicalKey: "مقضي" },
+  ],
+  ["غلب"]: [
+    { form: "غَلَبَ", meaning: "he overcame or defeated", difference: "Form I perfect; it names the completed overcoming action behind the current adjective.", relationship: "Form I perfect of the غ ل ب family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root غ ل ب evidence, including غَلَبَ.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "غلب" },
+    { form: "يَغْلِبُ", meaning: "he overcomes or defeats", difference: "Form I imperfect; it presents overcoming as ongoing or possible.", relationship: "Form I imperfect of the غ ل ب family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root غ ل ب evidence, including يَغْلِبُ.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يغلب" },
+    { form: "غَالِبٌ", meaning: "overcoming or victorious", difference: "Form I active participle; it describes one who overcomes, contrasting with the current adjective غُلْبًا.", relationship: "Form I active participle of the غ ل ب family, repeatedly attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root غ ل ب evidence, including غَالِب.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "غالب" },
+    { form: "مَغْلُوبٌ", meaning: "overpowered or defeated", difference: "Form I passive participle; it describes one who has been overcome, contrasting with the active and adjectival forms.", relationship: "Form I passive participle of the غ ل ب family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root غ ل ب evidence, including مَغْلُوب.", featureSignal: ["partofspeech:passive-participle", "pattern:form-1", "voice:passive"], baseDistinct: true, lexicalKey: "مغلوب" },
+  ],
+  ["صخخ"]: [
+    { form: "صَخَّ", meaning: "he made a deafening sound", difference: "Form I perfect; it names the completed sound-producing action behind the current active participle.", relationship: "Form I perfect of the ص خ خ family, related to الصَّاخَّةُ.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ص خ خ evidence and standard doubled Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "صخّ" },
+    { form: "يَصُخُّ", meaning: "he makes a deafening sound", difference: "Form I imperfect; it presents the sound as ongoing.", relationship: "Form I imperfect of the ص خ خ family.", provenance: "Codex-authored after review of the approved root meaning and standard doubled Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يصخّ" },
+    { form: "صَخٌّ", meaning: "a deafening sound", difference: "Verbal noun; it names the deafening sound rather than the agent or occurrence.", relationship: "Verbal noun of the ص خ خ family.", provenance: "Codex-authored after review of the approved root meaning and standard doubled Form I verbal-noun morphology.", featureSignal: ["partofspeech:verbal-noun", "derivation:verbal-noun"], baseDistinct: true, lexicalKey: "صخّ-noun" },
+    { form: "صَاخٌّ", meaning: "deafening or making a piercing sound", difference: "Form I active participle, masculine; it contrasts with the current feminine active participle الصَّاخَّةُ.", relationship: "Form I active participle of the ص خ خ family, attested through the current Qur'anic feminine form.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ص خ خ evidence and standard Form I active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-1", "gender:masculine"], baseDistinct: true, lexicalKey: "صاخّ" },
+  ],
+  ["غبر"]: [
+    { form: "غَبَرَ", meaning: "he or it remained or became dusty", difference: "Form I perfect; it names the completed remaining or dust-related state behind the current noun.", relationship: "Form I perfect of the غ ب ر family, connecting the dust and remaining-behind senses attested in the Qur'anic family.", provenance: "Codex-authored after review of Quranic Arabic Corpus root غ ب ر evidence, including غَبَرَة and غَابِرِين, and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "غبر" },
+    { form: "يَغْبَرُ", meaning: "it remains or becomes dusty", difference: "Form I imperfect; it presents the remaining or dust-related state as ongoing.", relationship: "Form I imperfect of the غ ب ر family.", provenance: "Codex-authored after review of the approved root meaning and standard Form I imperfect morphology for غ ب ر.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يغبر" },
+    { form: "غُبَارٌ", meaning: "dust", difference: "Lexical noun; it names the dust directly rather than the dusty condition expressed by غَبَرَةٌ.", relationship: "Lexical noun of the غ ب ر family, related to the current Qur'anic noun.", provenance: "Codex-authored after review of the approved root meaning and classical lexical morphology for غ ب ر.", featureSignal: ["partofspeech:noun", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "غبار" },
+    { form: "غَابِرٌ", meaning: "remaining behind", difference: "Form I active participle; it describes one who remains behind, contrasting with the dust noun.", relationship: "Form I active participle of the غ ب ر family, attested in Qur'anic usage as غَابِرِين.", provenance: "Codex-authored after review of Quranic Arabic Corpus root غ ب ر evidence, including غَابِرِين.", featureSignal: ["partofspeech:active-participle", "pattern:form-1"], baseDistinct: true, lexicalKey: "غابر" },
+  ],
+  ["قتر"]: [
+    { form: "يَقْتُرُ", meaning: "he is stingy or spends sparingly", difference: "Form I imperfect; it presents the stingy or restricted spending action as ongoing.", relationship: "Form I imperfect of the ق ت ر family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ق ت ر evidence, including يَقْتُرُ.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يقتر" },
+    { form: "قَتَرٌ", meaning: "dust or a dusty darkness", difference: "Lexical noun; it names the dusty covering related to the current darkness noun قَتَرَةٌ.", relationship: "Lexical noun of the ق ت ر family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ق ت ر evidence, including قَتَرٌ.", featureSignal: ["partofspeech:noun", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "قتر-noun" },
+    { form: "قَتُورٌ", meaning: "stingy", difference: "Adjective; it describes a person who withholds or spends sparingly.", relationship: "Adjective of the ق ت ر family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ق ت ر evidence, including قَتُورٌ.", featureSignal: ["partofspeech:adjective", "pattern:faul"], baseDistinct: true, lexicalKey: "قتور" },
+    { form: "مُقْتِرٌ", meaning: "poor or of restricted means", difference: "Form IV active participle; it describes one whose means are constrained, contrasting with the Form I adjective.", relationship: "Form IV active participle of the ق ت ر family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ق ت ر evidence, including مُقْتِر.", featureSignal: ["partofspeech:active-participle", "pattern:form-4"], baseDistinct: true, lexicalKey: "مقتر" },
+  ],
   ["كور"]: [
     { form: "كَوَّرَ", meaning: "he wrapped or rolled", difference: "Form II perfect; it names the completed wrapping action behind the current passive form.", relationship: "Form II perfect of the ك و ر family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ك و ر evidence, including يُكَوِّرُ and كُوِّرَتْ.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect"], baseDistinct: true, lexicalKey: "كوّر" },
     { form: "يُكَوِّرُ", meaning: "he wraps or rolls", difference: "Form II imperfect; it presents the wrapping action as ongoing.", relationship: "Form II imperfect of the ك و ر family, attested in Qur'anic usage.", provenance: "Codex-authored after review of Quranic Arabic Corpus root ك و ر evidence, including يُكَوِّرُ.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:imperfect"], baseDistinct: true, lexicalKey: "يكوّر" },
@@ -8642,10 +8696,86 @@ const REVIEWED_RESTRICTED_LEXICAL_ROOTS = new Set([
   "أفق",
   "عسعس",
   "ضنن",
+  "عنب",
+  "قضب",
+  "نخل",
+  "حدق",
+  "أبب",
+  "شأن",
 ]);
 
 function reviewedRestrictedCandidates(root: string): Candidate[] {
   const families: Record<string, Array<Omit<Candidate, "score" | "sourceKind">>> = {
+    ["عنب"]: [
+      {
+        form: "أَعْنَابٌ",
+        meaning: "grapes or grapevines",
+        difference: "Broken plural; it contrasts with the current collective/singular عِنَبًا and makes the number relationship visible.",
+        relationship: "Established broken plural of عِنَب in the restricted ع ن ب lexical family, attested in Qur'anic usage.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus root ع ن ب evidence, which records عِنَب and أَعْنَاب; no unrelated verb was invented.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "أعناب",
+      },
+    ],
+    ["قضب"]: [
+      {
+        form: "قَضِيبٌ",
+        meaning: "a stalk, shoot or rod",
+        difference: "Related lexical noun; it shows the cut-stalk sense associated with the current green fodder noun without pretending the root has a productive Qur'anic verb family.",
+        relationship: "Established lexical noun related to the restricted ق ض ب family and its sense of cut plants or stalks.",
+        provenance: "Codex-authored after review of the approved root meaning, Quranic Arabic Corpus root ق ض ب evidence and standard Arabic lexical morphology; the family remains limited because further rows would be weak or unrelated.",
+        featureSignal: ["partofspeech:noun", "derivation:related-lexical-noun"],
+        baseDistinct: true,
+        lexicalKey: "قضيب",
+      },
+    ],
+    ["نخل"]: [
+      {
+        form: "نَخْلَةٌ",
+        meaning: "a date-palm",
+        difference: "Singular lexical noun; it contrasts with the current collective نَخْلًا.",
+        relationship: "Established singular of the ن خ ل date-palm family, attested in Qur'anic usage.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus root ن خ ل evidence, which records نَخْل, نَخْلَة and نَخِيل.",
+        featureSignal: ["partofspeech:noun", "number:singular", "derivation:singular-of-collective"],
+        baseDistinct: true,
+        lexicalKey: "نخلة",
+      },
+      {
+        form: "نَخِيلٌ",
+        meaning: "date-palms or a date-palm grove",
+        difference: "Collective plural; it contrasts with the individual date-palm and the current collective noun.",
+        relationship: "Established collective noun of the ن خ ل family, attested in Qur'anic usage.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus root ن خ ل evidence, which records نَخْل, نَخْلَة and نَخِيل.",
+        featureSignal: ["partofspeech:noun", "number:collective", "derivation:collective-noun"],
+        baseDistinct: true,
+        lexicalKey: "نخيل",
+      },
+    ],
+    ["حدق"]: [
+      {
+        form: "حَدِيقَةٌ",
+        meaning: "a garden",
+        difference: "Singular lexical noun; it contrasts with the current broken plural حَدَائِقَ.",
+        relationship: "Established singular of حَدَائِق in the restricted ح د ق garden family.",
+        provenance: "Codex-authored after review of Quranic Arabic Corpus root ح د ق evidence, which records حَدَائِق as gardens; the standard singular حَدِيقَةٌ was added without inventing unrelated forms.",
+        featureSignal: ["partofspeech:noun", "number:singular", "derivation:singular-of-broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "حديقة",
+      },
+    ],
+    ["شأن"]: [
+      {
+        form: "شُؤُونٌ",
+        meaning: "matters or affairs",
+        difference: "Broken plural; it contrasts with the current singular شَأْنٌ and makes the number relationship visible.",
+        relationship: "Established broken plural of شَأْن in the restricted ش أ ن lexical family.",
+        provenance: "Codex-authored after review of the approved root meaning and standard Arabic plural morphology for شَأْن; no weak verb or unrelated root was invented.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "شؤون",
+      },
+    ],
     ["كدر"]: [
       {
         form: "كَدِرَ",
