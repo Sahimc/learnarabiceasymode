@@ -8797,6 +8797,7 @@ const ADDITIONAL_CURATED_FAMILIES: Record<string, AdditionalCuratedCandidate[]> 
   ["لؤلؤ"]: [
     { form: "لُؤْلُؤٌ", meaning: "a pearl", difference: "Singular lexical noun; it contrasts with the current accusative form through the stable lexical form, not by inventing a new meaning.", relationship: "Base singular noun of the ل ؤ ل ؤ pearl family.", provenance: "Codex-authored after review of canonical Qur'anic evidence and standard Arabic noun morphology for ل ؤ ل ؤ.", featureSignal: ["partofspeech:noun", "number:singular", "derivation:base-form"], baseDistinct: true, lexicalKey: "لؤلؤ-base" },
     { form: "لُؤْلُؤَةٌ", meaning: "a single pearl", difference: "Feminine unit noun; it makes one pearl explicit rather than using the collective/base noun.", relationship: "Unit noun of the ل ؤ ل ؤ family.", provenance: "Codex-authored after review of standard Arabic unit-noun morphology.", featureSignal: ["partofspeech:noun", "gender:feminine", "derivation:unit-noun"], baseDistinct: true, lexicalKey: "لؤلؤة" },
+    { form: "لَآلِئُ", meaning: "pearls", difference: "Broken plural; it teaches the established plural alternation rather than repeating the singular noun.", relationship: "Broken plural of the ل ؤ ل ؤ pearl family.", provenance: "Codex-authored after review of established Arabic plural morphology for لُؤْلُؤَةٌ.", featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"], baseDistinct: true, lexicalKey: "لآلئ" },
     { form: "تَلَأْلَأَ", meaning: "it glittered or sparkled", difference: "Quadriliteral Form V; it shows the established derived sense of pearl-like shining.", relationship: "Quadriliteral derived verb associated with the ل ؤ ل ؤ family.", provenance: "Codex-authored after review of standard Arabic quadriliteral morphology and the established لؤلؤ semantic range.", featureSignal: ["partofspeech:verb", "pattern:quadriliteral-form-5", "tense:perfect"], baseDistinct: true, lexicalKey: "تلألأ" },
     { form: "مُتَلَأْلِئٌ", meaning: "shining or glittering", difference: "Derived active participle; it describes something that sparkles like a pearl.", relationship: "Quadriliteral active participle associated with the ل ؤ ل ؤ family.", provenance: "Codex-authored after review of standard Arabic quadriliteral active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:quadriliteral-form-5", "derivation:descriptor"], baseDistinct: true, lexicalKey: "متلألئ" },
   ],
@@ -9182,6 +9183,7 @@ const ADDITIONAL_CURATED_FAMILIES: Record<string, AdditionalCuratedCandidate[]> 
     { form: "رَابَ", meaning: "he doubted or caused suspicion", difference: "Form I perfect; it shows the basic doubt/suspicion sense behind the current Form VIII verb.", relationship: "Form I perfect of the ر ي ب family.", provenance: "Codex-authored after review of standard weak Form I morphology and the canonical form يَرْتَابَ.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "راب" },
     { form: "يَرِيبُ", meaning: "he doubts or causes suspicion", difference: "Form I imperfect; it presents doubt or suspicion as ongoing.", relationship: "Form I imperfect of the ر ي ب family.", provenance: "Codex-authored after review of standard weak Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يريب" },
     { form: "رَيْبٌ", meaning: "doubt or uncertainty", difference: "Lexical noun; it names the doubt itself rather than expressing a verb form.", relationship: "Lexical noun of the ر ي ب family, attested in Qur'anic usage.", provenance: "Codex-authored after review of canonical Qur'anic evidence for رَيْب.", featureSignal: ["partofspeech:noun", "derivation:state-noun"], baseDistinct: true, lexicalKey: "ريب-noun" },
+    { form: "رَيْبَةٌ", meaning: "doubt, suspicion or misgiving", difference: "Lexical feminine noun; it gives a distinct noun pattern for a state of suspicion rather than repeating the base noun.", relationship: "Lexical noun of the ر ي ب family.", provenance: "Codex-authored after review of established Arabic lexical morphology for رَيْبَةٌ.", featureSignal: ["partofspeech:noun", "gender:feminine", "derivation:state-noun"], baseDistinct: true, lexicalKey: "ريبة" },
     { form: "مُرِيبٌ", meaning: "causing doubt or suspicious", difference: "Form IV active participle; it describes something that produces suspicion.", relationship: "Form IV active participle of the ر ي ب family.", provenance: "Codex-authored after review of standard Form IV active-participle morphology.", featureSignal: ["partofspeech:active-participle", "pattern:form-4", "derivation:agent"], baseDistinct: true, lexicalKey: "مريب" },
   ],
   ["مرض"]: [
@@ -11022,6 +11024,77 @@ const ADDITIONAL_CURATED_FAMILIES: Record<string, AdditionalCuratedCandidate[]> 
     { form: "سُمُودٌ", meaning: "raising the head, loftiness or heedlessness", difference: "Verbal/state noun; it names the condition rather than expressing person or tense.", relationship: "Verbal/state noun of the س م د family.", provenance: "Codex-authored after review of Arabic Academy evidence for سُمُودٌ.", featureSignal: ["partofspeech:verbal-noun", "derivation:state-noun"], baseDistinct: true, lexicalKey: "سمود" },
     { form: "سَامِدٌ", meaning: "heedless or one who raises his head", difference: "Singular active participle; it contrasts with the current masculine plural form and makes the number change visible.", relationship: "Form I active participle singular of the س م د family.", provenance: "Codex-authored after review of Arabic Academy evidence for سامد and the canonical plural occurrence.", featureSignal: ["partofspeech:active-participle", "number:singular", "derivation:descriptor"], baseDistinct: true, lexicalKey: "سامد" },
   ],
+  ["رقق"]: [
+    { form: "رَقَّ", meaning: "he became thin, soft or gentle", difference: "Form I doubled perfect; it supplies the basic quality behind the parchment noun.", relationship: "Doubled Form I perfect of the ر ق ق family.", provenance: "Codex-authored after review of Arabic Academy root evidence for رقق.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "رقّ-perfect" },
+    { form: "يَرِقُّ", meaning: "he becomes thin, soft or gentle", difference: "Doubled Form I imperfect; it presents the quality as ongoing.", relationship: "Doubled Form I imperfect of the ر ق ق family.", provenance: "Codex-authored after review of standard doubled-root imperfect morphology for رقق.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يرقّ" },
+    { form: "رِقَّةٌ", meaning: "thinness, softness or gentleness", difference: "Lexical quality noun; it names the quality rather than expressing it as a verb.", relationship: "Lexical quality noun of the ر ق ق family.", provenance: "Codex-authored after review of Arabic Academy evidence for رِقَّةٌ.", featureSignal: ["partofspeech:noun", "derivation:quality-noun"], baseDistinct: true, lexicalKey: "رقة" },
+    { form: "رَقِيقٌ", meaning: "thin, delicate or gentle", difference: "Lexical adjective; it describes something possessing the quality of thinness or softness.", relationship: "Lexical adjective of the ر ق ق family.", provenance: "Codex-authored after review of Arabic Academy evidence for رَقِيقٌ.", featureSignal: ["partofspeech:adjective", "derivation:descriptor"], baseDistinct: true, lexicalKey: "رقيق" },
+    { form: "مَرْقُوقٌ", meaning: "made thin or softened", difference: "Passive participle; it describes something made thin or delicate.", relationship: "Passive participle of the ر ق ق family.", provenance: "Codex-authored after review of standard doubled-root passive-participle morphology for رقق.", featureSignal: ["partofspeech:passive-participle", "voice:passive"], baseDistinct: true, lexicalKey: "مرقوق" },
+  ],
+  ["عمر"]: [
+    { form: "عَمَرَ", meaning: "he inhabited, built or caused to flourish", difference: "Form I perfect; it supplies the completed inhabiting/building action behind the current passive participle.", relationship: "Form I perfect of the ع م ر family.", provenance: "Codex-authored after review of Arabic Academy root evidence for عمر.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "عمر-perfect" },
+    { form: "يَعْمُرُ", meaning: "he inhabits, builds or causes to flourish", difference: "Form I imperfect; it presents inhabiting or building as ongoing.", relationship: "Form I imperfect of the ع م ر family.", provenance: "Codex-authored after review of standard Form I imperfect morphology for عمر.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يعمر" },
+    { form: "عَامِرٌ", meaning: "inhabited, flourishing or thriving", difference: "Form I active participle/adjective; it describes a place that is lived in or flourishing.", relationship: "Form I active participle of the ع م ر family.", provenance: "Codex-authored after review of Arabic Academy evidence for عَامِرٌ.", featureSignal: ["partofspeech:adjective", "derivation:descriptor"], baseDistinct: true, lexicalKey: "عامر" },
+    { form: "عِمَارَةٌ", meaning: "building, development or architecture", difference: "Lexical action/result noun; it names the process or product of making a place habitable.", relationship: "Lexical noun of the ع م ر family.", provenance: "Codex-authored after review of Arabic Academy evidence for عِمَارَةٌ.", featureSignal: ["partofspeech:noun", "derivation:action-noun"], baseDistinct: true, lexicalKey: "عمارة" },
+    { form: "مُعَمَّرٌ", meaning: "long-lived or made prosperous", difference: "Form II passive participle; it describes someone or something given extended life or development.", relationship: "Form II passive participle of the ع م ر family.", provenance: "Codex-authored after review of Arabic Academy evidence for مُعَمَّرٌ.", featureSignal: ["partofspeech:passive-participle", "pattern:form-2", "voice:passive"], baseDistinct: true, lexicalKey: "معمر" },
+  ],
+  ["سقف"]: [
+    { form: "سَقَفَ", meaning: "he roofed or covered a building", difference: "Form I perfect; it states the completed roofing action behind the roof noun.", relationship: "Form I perfect of the س ق ف family.", provenance: "Codex-authored after review of Arabic Academy root evidence for سقف.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "سقف-perfect" },
+    { form: "يَسْقُفُ", meaning: "he roofs or covers a building", difference: "Form I imperfect; it presents roofing as ongoing.", relationship: "Form I imperfect of the س ق ف family.", provenance: "Codex-authored after review of standard Form I imperfect morphology for سقف.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يسقف" },
+    { form: "سُقُوفٌ", meaning: "roofs or ceilings", difference: "Broken plural; it teaches the number change from one roof to several.", relationship: "Broken plural of سَقْفٌ.", provenance: "Codex-authored after review of Arabic Academy evidence for سُقُوفٌ.", featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"], baseDistinct: true, lexicalKey: "سقوف" },
+    { form: "سَقَّفَ", meaning: "he roofed or covered", difference: "Form II perfect; the doubled pattern presents the roofing action as a derived transitive form.", relationship: "Form II derivative of the س ق ف family.", provenance: "Codex-authored after review of Arabic Academy evidence for سَقَّفَ.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect", "derivation:causative"], baseDistinct: true, lexicalKey: "سقف-form2" },
+  ],
+  ["سير"]: [
+    { form: "سَارَ", meaning: "he travelled or proceeded", difference: "Form I weak perfect; it supplies the completed movement action behind the current imperfect.", relationship: "Form I weak perfect of the س ي ر family.", provenance: "Codex-authored after review of Arabic Academy root evidence for سير.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "سار" },
+    { form: "يَسِيرُ", meaning: "he travels or proceeds", difference: "Form I weak imperfect; it presents travelling as ongoing.", relationship: "Form I weak imperfect of the س ي ر family.", provenance: "Codex-authored after review of Arabic Academy evidence for يَسِيرُ.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يسير" },
+    { form: "مَسِيرَةٌ", meaning: "a journey or distance travelled", difference: "Lexical noun; it names the journey or distance rather than expressing the verb.", relationship: "Lexical noun of the س ي ر family.", provenance: "Codex-authored after review of Arabic Academy evidence for مَسِيرَةٌ.", featureSignal: ["partofspeech:noun", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "مسيرة" },
+    { form: "سَائِرٌ", meaning: "travelling or proceeding", difference: "Form I active participle; it describes one who is travelling or something that proceeds.", relationship: "Form I active participle of the س ي ر family.", provenance: "Codex-authored after review of Arabic Academy evidence for سَائِرٌ.", featureSignal: ["partofspeech:active-participle", "derivation:descriptor"], baseDistinct: true, lexicalKey: "سائر" },
+    { form: "سَيَّرَ", meaning: "he made something travel or set it in motion", difference: "Form II causative perfect; it contrasts causing movement with moving oneself.", relationship: "Form II derivative of the س ي ر family.", provenance: "Codex-authored after review of Arabic Academy evidence for سَيَّرَ.", featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect", "derivation:causative"], baseDistinct: true, lexicalKey: "سيّر" },
+  ],
+  ["دعع"]: [
+    { form: "دَعَّ", meaning: "he pushed or drove away forcefully", difference: "Doubled Form I perfect; it states the completed forceful pushing action behind the current passive plural.", relationship: "Doubled Form I perfect of the د ع ع family.", provenance: "Codex-authored after review of Arabic Academy evidence for دَعَّ.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "دعّ-perfect" },
+    { form: "يَدُعُّ", meaning: "he pushes or drives away forcefully", difference: "Doubled Form I imperfect; it presents the forceful pushing as ongoing.", relationship: "Doubled Form I imperfect of the د ع ع family.", provenance: "Codex-authored after review of standard doubled-root imperfect morphology for دعع.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يدعّ" },
+    { form: "دَاعٌّ", meaning: "pushing forcefully", difference: "Form I active participle; it describes the agent carrying out the forceful pushing.", relationship: "Doubled Form I active participle of the د ع ع family.", provenance: "Codex-authored after review of standard doubled-root active-participle morphology for دعع.", featureSignal: ["partofspeech:active-participle", "derivation:agent"], baseDistinct: true, lexicalKey: "داعّ" },
+    { form: "مَدْعُوعٌ", meaning: "pushed or driven away forcefully", difference: "Passive participle; it describes what has been subjected to the forceful pushing.", relationship: "Doubled Form I passive participle of the د ع ع family.", provenance: "Codex-authored after review of standard doubled-root passive-participle morphology for دعع.", featureSignal: ["partofspeech:passive-participle", "voice:passive"], baseDistinct: true, lexicalKey: "مدعوع" },
+  ],
+  ["ألت"]: [
+    { form: "أَلَتَ", meaning: "he diminished, withheld or turned away", difference: "Form I perfect; it supplies the completed action behind the current inflected occurrence.", relationship: "Form I perfect of the أ ل ت family.", provenance: "Codex-authored after review of Arabic Academy root evidence for ألت.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "ألت-perfect" },
+    { form: "يَأْلِتُ", meaning: "he diminishes, withholds or turns away", difference: "Form I imperfect; it presents the reduction or withholding as ongoing.", relationship: "Form I imperfect of the أ ل ت family.", provenance: "Codex-authored after review of standard Form I imperfect morphology for ألت.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يألت" },
+    { form: "آلَتَ", meaning: "he diminished or withheld from someone", difference: "Derived perfect; it shows the established related pattern for reducing another person's due.", relationship: "Derived form of the أ ل ت family, attested in Arabic Academy evidence.", provenance: "Codex-authored after review of Arabic Academy evidence for آلَتَ.", featureSignal: ["partofspeech:verb", "tense:perfect", "derivation:causative"], baseDistinct: true, lexicalKey: "آلت" },
+    { form: "أَلْتٌ", meaning: "diminishing or withholding", difference: "Verbal noun; it names the act of reducing or withholding rather than expressing person or tense.", relationship: "Verbal noun of the أ ل ت family.", provenance: "Codex-authored after review of standard Arabic verbal-noun morphology for ألت.", featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"], baseDistinct: true, lexicalKey: "ألت-masdar" },
+    { form: "أُلْتَةٌ", meaning: "a small gift or a deliberately false oath", difference: "Established lexical noun; it shows a distinct noun derivative recorded under the same root.", relationship: "Lexical noun of the أ ل ت family.", provenance: "Codex-authored after review of Arabic Academy evidence for الأُلْتة.", featureSignal: ["partofspeech:noun", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "ألتة" },
+  ],
+  ["غلم"]: [
+    { form: "غُلَامٌ", meaning: "a boy, youth or young servant", difference: "Singular noun; it contrasts with the current masculine plural and makes the number relationship visible.", relationship: "Singular noun corresponding to غِلْمَانٌ in the غ ل م family.", provenance: "Codex-authored after review of Arabic Academy evidence for الغلام.", featureSignal: ["partofspeech:noun", "number:singular"], baseDistinct: true, lexicalKey: "غلام" },
+    { form: "غِلْمَةٌ", meaning: "young boys or youths", difference: "Alternate plural noun; it shows a second established number pattern for the same youth lexeme.", relationship: "Alternate plural of the غ ل م youth family.", provenance: "Codex-authored after review of Arabic Academy evidence for غِلْمَةٌ.", featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"], baseDistinct: true, lexicalKey: "غلمة" },
+    { form: "اِغْتَلَمَ", meaning: "he reached puberty or became sexually mature", difference: "Form VIII perfect; it develops the maturity branch of the youth lexeme.", relationship: "Form VIII derivative of the غ ل م family.", provenance: "Codex-authored after review of Arabic Academy evidence for اغتلم.", featureSignal: ["partofspeech:verb", "pattern:form-8", "tense:perfect", "derivation:inchoative"], baseDistinct: true, lexicalKey: "اغتلم" },
+    { form: "غُلَامِيَّةٌ", meaning: "the stage of boyhood or puberty", difference: "Lexical abstract noun; it names the developmental stage rather than the person.", relationship: "Lexical noun of the غ ل م family.", provenance: "Codex-authored after review of Arabic Academy evidence for الغلامية.", featureSignal: ["partofspeech:noun", "derivation:state-noun"], baseDistinct: true, lexicalKey: "غلامية" },
+  ],
+  ["كسف"]: [
+    { form: "كَسَفَ", meaning: "it was eclipsed, covered or cut", difference: "Form I perfect; it supplies the basic covering/cutting action behind the current noun.", relationship: "Form I perfect of the ك س ف family.", provenance: "Codex-authored after review of Arabic Academy root evidence for كسف.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "كسف-perfect" },
+    { form: "يَكْسِفُ", meaning: "he covers, cuts or eclipses", difference: "Form I imperfect; it presents the action as ongoing.", relationship: "Form I imperfect of the ك س ف family.", provenance: "Codex-authored after review of standard Form I imperfect morphology for كسف.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يكسف" },
+    { form: "كِسْفَةٌ", meaning: "a piece or fragment", difference: "Feminine unit noun; it names one piece, contrasting with the current collective/accusative form.", relationship: "Lexical unit noun of the ك س ف family.", provenance: "Codex-authored after review of Arabic Academy evidence for الكِسْفَة.", featureSignal: ["partofspeech:noun", "gender:feminine", "derivation:unit-noun"], baseDistinct: true, lexicalKey: "كسفة" },
+    { form: "كُسُوفٌ", meaning: "eclipse or darkening", difference: "Verbal/event noun; it names the eclipse rather than a fragment or finite verb.", relationship: "Lexical event noun of the ك س ف family.", provenance: "Codex-authored after review of Arabic Academy evidence for الكُسُوف.", featureSignal: ["partofspeech:noun", "derivation:event-noun"], baseDistinct: true, lexicalKey: "كسوف" },
+    { form: "اِنْكَسَفَ", meaning: "it became eclipsed or darkened", difference: "Form VII intransitive perfect; it shows the subject undergoing the eclipse.", relationship: "Form VII derivative of the ك س ف family.", provenance: "Codex-authored after review of Arabic Academy evidence for انكسف.", featureSignal: ["partofspeech:verb", "pattern:form-7", "tense:perfect", "voice:intransitive"], baseDistinct: true, lexicalKey: "انكسف" },
+  ],
+  ["سقط"]: [
+    { form: "سَقَطَ", meaning: "he or it fell", difference: "Form I perfect; it supplies the basic falling action behind the current active participle.", relationship: "Form I perfect of the س ق ط family.", provenance: "Codex-authored after review of Arabic Academy root evidence for سقط.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "سقط-perfect" },
+    { form: "يَسْقُطُ", meaning: "he or it falls", difference: "Form I imperfect; it presents falling as ongoing.", relationship: "Form I imperfect of the س ق ط family.", provenance: "Codex-authored after review of standard Form I imperfect morphology for سقط.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يسقط" },
+    { form: "سُقُوطٌ", meaning: "falling or descent", difference: "Verbal noun; it names the act of falling rather than expressing person or tense.", relationship: "Verbal noun of the س ق ط family.", provenance: "Codex-authored after review of Arabic Academy evidence for سُقُوط.", featureSignal: ["partofspeech:verbal-noun", "derivation:action-noun"], baseDistinct: true, lexicalKey: "سقوط" },
+    { form: "أَسْقَطَ", meaning: "he caused to fall or dropped", difference: "Form IV causative perfect; it contrasts causing a fall with falling oneself.", relationship: "Form IV derivative of the س ق ط family.", provenance: "Codex-authored after review of Arabic Academy evidence for أَسْقَطَ.", featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:perfect", "derivation:causative"], baseDistinct: true, lexicalKey: "اسقط" },
+  ],
+  ["ركم"]: [
+    { form: "رَكَمَ", meaning: "he piled or heaped up", difference: "Form I perfect; it supplies the completed piling action behind the current passive participle.", relationship: "Form I perfect of the ر ك م family.", provenance: "Codex-authored after review of Arabic Academy root evidence for ركم.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "ركم-perfect" },
+    { form: "يَرْكُمُ", meaning: "he piles or heaps up", difference: "Form I imperfect; it presents piling as ongoing.", relationship: "Form I imperfect of the ر ك م family.", provenance: "Codex-authored after review of standard Form I imperfect morphology for ركم.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يركم" },
+    { form: "رُكَامٌ", meaning: "a heap or accumulated mass", difference: "Lexical result noun; it names what has been piled up rather than expressing the action.", relationship: "Lexical noun of the ر ك م family.", provenance: "Codex-authored after review of Arabic Academy evidence for الرُّكَام.", featureSignal: ["partofspeech:noun", "derivation:result-noun"], baseDistinct: true, lexicalKey: "ركام" },
+    { form: "تَرَاكَمَ", meaning: "it accumulated or piled up", difference: "Form VI intransitive perfect; it shows things gathering upon one another.", relationship: "Form VI derivative of the ر ك م family.", provenance: "Codex-authored after review of Arabic Academy evidence for تَرَاكَمَ.", featureSignal: ["partofspeech:verb", "pattern:form-6", "tense:perfect", "voice:intransitive"], baseDistinct: true, lexicalKey: "تراكم" },
+  ],
+  ["صعق"]: [
+    { form: "صَعِقَ", meaning: "he was struck, stunned or lost consciousness", difference: "Form I stative/inchoative perfect; it supplies the basic state behind the current passive plural.", relationship: "Form I derivative of the ص ع ق family.", provenance: "Codex-authored after review of Arabic Academy evidence for صَعِقَ.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect", "derivation:stative"], baseDistinct: true, lexicalKey: "صعق-stative" },
+    { form: "صَاعِقَةٌ", meaning: "a thunderbolt or devastating shock", difference: "Lexical noun; it names the striking force rather than the person struck by it.", relationship: "Lexical noun of the ص ع ق family.", provenance: "Codex-authored after review of Arabic Academy evidence for الصَّاعِقَة.", featureSignal: ["partofspeech:noun", "derivation:lexical-noun"], baseDistinct: true, lexicalKey: "صاعقة" },
+    { form: "مَصْعُوقٌ", meaning: "struck unconscious or stunned", difference: "Passive participle; it describes one affected by the thunderbolt or shock.", relationship: "Passive participle of the ص ع ق family.", provenance: "Codex-authored after review of Arabic Academy evidence for مَصْعُوق.", featureSignal: ["partofspeech:passive-participle", "voice:passive"], baseDistinct: true, lexicalKey: "مصعوق" },
+    { form: "أَصْعَقَ", meaning: "he caused someone to be struck or stunned", difference: "Form IV causative perfect; it contrasts causing the shock with undergoing it.", relationship: "Form IV derivative of the ص ع ق family.", provenance: "Codex-authored after review of Arabic Academy evidence for أَصْعَقَ.", featureSignal: ["partofspeech:verb", "pattern:form-4", "tense:perfect", "derivation:causative"], baseDistinct: true, lexicalKey: "اصعق" },
+  ],
   ["حسر"]: [
     { form: "حَسِرَ", meaning: "he became weary or regretful", difference: "Form I perfect; it states the completed state behind the current noun لَحَسْرَةٌ.", relationship: "Form I verb of the ح س ر family.", provenance: "Codex-authored after review of canonical Qur'anic usage and standard Form I morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:perfect"], baseDistinct: true, lexicalKey: "حسر-perfect" },
     { form: "يَحْسَرُ", meaning: "he becomes weary or regretful", difference: "Form I imperfect; it presents weariness or regret as ongoing.", relationship: "Form I imperfect of the ح س ر family.", provenance: "Codex-authored after review of standard Form I imperfect morphology.", featureSignal: ["partofspeech:verb", "pattern:form-1", "tense:imperfect"], baseDistinct: true, lexicalKey: "يحسر" },
@@ -11036,6 +11109,63 @@ function additionalCuratedCandidates(root: string): Candidate[] {
     score: 96,
     sourceKind: "codex-authored-lexicon",
     sourceOccurrence: `additional-curated-root-family:${root}`,
+  }));
+}
+
+const CONTEXT_CURATED_FAMILIES: Record<string, Record<string, AdditionalCuratedCandidate[]>> = {
+  ["غير"]: {
+    ["غير"]: [
+      {
+        form: "غَيَّرَ",
+        meaning: "he changed or altered",
+        difference: "Form II perfect; it states a completed act of changing, contrasting with the current noun meaning other or different.",
+        relationship: "Form II verb of the غ ي ر family, semantically connected to غَيْرٌ through the ideas of change and difference.",
+        provenance: "Codex-authored after review of the Arabic Academy غَيْر/غَيَّرَ evidence and standard Form II morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:perfect"],
+        baseDistinct: true,
+        lexicalKey: "غير-form-2-perfect",
+      },
+      {
+        form: "يُغَيِّرُ",
+        meaning: "he changes or alters",
+        difference: "Form II imperfect; it presents changing or altering as ongoing.",
+        relationship: "Form II imperfect of the غ ي ر family, the ongoing counterpart of غَيَّرَ.",
+        provenance: "Codex-authored after review of the Arabic Academy غَيْر/غَيَّرَ evidence and standard Form II imperfect morphology.",
+        featureSignal: ["partofspeech:verb", "pattern:form-2", "tense:imperfect"],
+        baseDistinct: true,
+        lexicalKey: "يغير-form-2",
+      },
+      {
+        form: "تَغْيِيرٌ",
+        meaning: "changing or alteration",
+        difference: "Form II verbal noun; it names the act of changing rather than describing a person or thing that is different.",
+        relationship: "Form II verbal noun of غَيَّرَ in the غ ي ر family.",
+        provenance: "Codex-authored after review of the Arabic Academy غَيْر/غَيَّرَ evidence and standard Form II verbal-noun morphology.",
+        featureSignal: ["partofspeech:verbal-noun", "pattern:form-2", "derivation:action-noun"],
+        baseDistinct: true,
+        lexicalKey: "تغيير",
+      },
+      {
+        form: "مُغَيِّرٌ",
+        meaning: "one who changes or alters",
+        difference: "Form II active participle; it names the agent who changes something, contrasting with the current noun/adjective.",
+        relationship: "Form II active participle of غَيَّرَ in the غ ي ر family.",
+        provenance: "Codex-authored after review of the Arabic Academy غَيْر/غَيَّرَ evidence and standard Form II active-participle morphology.",
+        featureSignal: ["partofspeech:active-participle", "pattern:form-2", "derivation:agent"],
+        baseDistinct: true,
+        lexicalKey: "مغير-form-2",
+      },
+    ],
+  },
+};
+
+function contextualCuratedCandidates(root: string, currentForm: string): Candidate[] {
+  const formKey = comparableBase(currentForm);
+  return (CONTEXT_CURATED_FAMILIES[root]?.[formKey] ?? []).map((candidate) => ({
+    ...candidate,
+    score: 98,
+    sourceKind: "codex-authored-lexicon",
+    sourceOccurrence: `context-curated-family:${root}:${formKey}`,
   }));
 }
 
@@ -11364,7 +11494,8 @@ function dedupeCandidates(candidates: Candidate[]) {
   return [...byForm.values()];
 }
 
-function chooseFour(candidates: Candidate[]) {
+function chooseFour(candidates: Candidate[], requiredCount = 4) {
+  if (requiredCount === 0) return { selected: [], meaningful: true, distinctBaseCount: 0, usefulSignalCount: 0 };
   const deduped = dedupeCandidates(candidates);
   const sorted = deduped
     .filter((candidate) => {
@@ -11373,11 +11504,21 @@ function chooseFour(candidates: Candidate[]) {
       const stemKey = key.replace(/^[وف][\u064B-\u065F\u0670\u06D6-\u06ED]*/u, "");
       return !deduped.some((other) => other !== candidate && inflectionalKey(other.form) === stemKey);
     })
-    .sort((left, right) => right.score - left.score);
+    .sort((left, right) => {
+      // Prefer a genuinely different lexical stem over an occurrence row
+      // that differs only by article, case or another inflectional shell.
+      // Those rows remain evidence, but must not displace a real family form
+      // when the learner needs morphological comparison.
+      const leftAuthored = left.sourceKind === "codex-authored-lexicon";
+      const rightAuthored = right.sourceKind === "codex-authored-lexicon";
+      if (leftAuthored !== rightAuthored) return Number(rightAuthored) - Number(leftAuthored);
+      if (left.baseDistinct !== right.baseDistinct) return Number(right.baseDistinct) - Number(left.baseDistinct);
+      return right.score - left.score;
+    });
   const selected: Candidate[] = [];
   const covered = new Set<string>();
   for (const candidate of sorted) {
-    if (selected.length >= 4) break;
+    if (selected.length >= Math.min(3, requiredCount)) break;
     const newSignal = candidate.featureSignal.some((signal) => !covered.has(signal));
     if (selected.length < 3 && newSignal) {
       selected.push(candidate);
@@ -11385,7 +11526,7 @@ function chooseFour(candidates: Candidate[]) {
     }
   }
   for (const candidate of sorted) {
-    if (selected.length >= 4) break;
+    if (selected.length >= requiredCount) break;
     if (!selected.some((item) => normalized(item.form) === normalized(candidate.form)))
       selected.push(candidate);
   }
@@ -11397,7 +11538,9 @@ function chooseFour(candidates: Candidate[]) {
       .flatMap((item) => item.featureSignal)
       .filter((signal) => !/^case$|^state$/iu.test(signal)),
   ).size;
-  const meaningful = selected.length === 4 && (distinctBaseCount >= 2 || usefulSignalCount >= 2);
+  const meaningful = selected.length === requiredCount && (
+    distinctBaseCount >= Math.min(2, requiredCount) || usefulSignalCount >= Math.min(2, requiredCount)
+  );
   return { selected, meaningful, distinctBaseCount, usefulSignalCount };
 }
 
@@ -12260,8 +12403,12 @@ for (const occurrence of limited) {
 
   const candidatePool: Candidate[] = [];
   if (root && !REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root)) {
-    candidatePool.push(...curatedCandidates(root).filter((candidate) => safeForm(candidate, root)));
+    const contextualCandidates = contextualCuratedCandidates(root, occurrence.word.arabic);
+    const hasContextualOverride = contextualCandidates.length > 0;
+    if (!hasContextualOverride)
+      candidatePool.push(...curatedCandidates(root).filter((candidate) => safeForm(candidate, root)));
     candidatePool.push(...additionalCuratedCandidates(root).filter((candidate) => safeForm(candidate, root)));
+    candidatePool.push(...contextualCandidates.filter((candidate) => safeForm(candidate, root)));
     for (const source of occurrencesByRoot.get(root) ?? []) {
       if (source.word.id === occurrence.word.id) continue;
       if (source.provider?.root && rootKey(source.provider.root) !== root) continue;
@@ -12296,14 +12443,26 @@ for (const occurrence of limited) {
   }
 
   const existingExactFormKeys = new Set(existingForms.map((row) => normalized(row.form)));
+  const preservedExistingCandidates = existingForms
+    .map((row) => existingCandidate(occurrence, lesson, row, observedRootsByBase, observedStemsByBase))
+    .filter((candidate): candidate is Candidate => candidate !== undefined && candidate.baseDistinct)
+    .sort((left, right) => right.score - left.score)
+    .slice(0, 4);
+  const preservedExistingForms: LessonForm[] = preservedExistingCandidates.map((candidate) => ({
+    form: candidate.form,
+    meaning: candidate.meaning,
+    difference: candidate.difference,
+    relationship: candidate.relationship ?? `Related to the ${root || "lexical"} root/lexeme.`,
+    provenance: candidate.provenance,
+  }));
+  const requiredAdditionalForms = Math.max(0, 4 - preservedExistingForms.length);
+  const eligibleCandidates = candidatePool.filter(
+    (candidate) =>
+      candidateInflectionalKey(candidate) !== currentFormKey &&
+      !existingExactFormKeys.has(normalized(candidate.form)),
+  );
   const chosen = root
-    ? chooseFour(
-        candidatePool.filter(
-          (candidate) =>
-            candidateInflectionalKey(candidate) !== currentFormKey &&
-            !existingExactFormKeys.has(normalized(candidate.form)),
-        ),
-      )
+    ? chooseFour(eligibleCandidates, requiredAdditionalForms)
     : { selected: [], meaningful: false, distinctBaseCount: 0, usefulSignalCount: 0 };
   let decision: Decision;
   let afterForms: LessonForm[];
@@ -12311,7 +12470,7 @@ for (const occurrence of limited) {
 
   if (root && category !== "proper noun" && chosen.meaningful) {
     decision = "upgraded-to-full";
-    afterForms = [rebuiltCurrent, ...chosen.selected.map((candidate) => ({
+    afterForms = [rebuiltCurrent, ...preservedExistingForms, ...chosen.selected.map((candidate) => ({
       form: candidate.form,
       meaning: candidate.meaning,
       difference: candidate.difference,
