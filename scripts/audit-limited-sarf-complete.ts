@@ -12319,7 +12319,6 @@ const packages = new Map<string, { path: string; pkg: SourcePackage }>();
 const occurrences: Occurrence[] = [];
 for (const packagePath of files) {
   const pkg = JSON.parse(await fs.readFile(packagePath, "utf8")) as SourcePackage;
-  if (auditSurahNumbers.size && !auditSurahNumbers.has(pkg.surah.number)) continue;
   packages.set(pkg.packageId, { path: packagePath, pkg });
   for (const ayah of pkg.ayahs) {
     for (const word of ayah.words) {
@@ -12375,7 +12374,15 @@ for (const occurrence of occurrences) {
   }
 }
 
-const limited = occurrences.filter((occurrence) => occurrence.lesson.sarfReview.status === "limited");
+// A scoped audit limits the lessons we are allowed to change, not the
+// evidence available for the linguistic decision.  Cross-surah evidence is
+// essential: a family may be fully represented in another authored surah even
+// when the target occurrence was previously classified as limited.
+const limited = occurrences.filter(
+  (occurrence) =>
+    occurrence.lesson.sarfReview.status === "limited" &&
+    (!auditSurahNumbers.size || auditSurahNumbers.has(occurrence.pkg.surah.number)),
+);
 const beforeCounts = {
   limitedOccurrences: limited.length,
   limitedTeachingEntries: new Set(limited.map((item) => `${item.pkg.packageId}:${item.word.teachingId}`)).size,
@@ -12481,7 +12488,7 @@ for (const occurrence of limited) {
   const existingExactFormKeys = new Set(existingForms.map((row) => normalized(row.form)));
   const preservedExistingCandidates = existingForms
     .map((row) => existingCandidate(occurrence, lesson, row, observedRootsByBase, observedStemsByBase))
-    .filter((candidate): candidate is Candidate => candidate !== undefined && candidate.baseDistinct)
+    .filter((candidate): candidate is Candidate => candidate !== undefined)
     .sort((left, right) => right.score - left.score)
     .slice(0, 4);
   const preservedExistingForms: LessonForm[] = preservedExistingCandidates.map((candidate) => ({
