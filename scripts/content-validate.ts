@@ -1,4 +1,7 @@
 import { discoverPackagePaths, readPackage } from "./lib/packages";
+import { assertAuthoringContract } from "./lib/authoring-contract";
+
+assertAuthoringContract("content validation");
 
 const args = process.argv.slice(2);
 const surahArgIndex = args.indexOf("--surah");
@@ -15,6 +18,15 @@ const selected = surahFilter
 let totalErrors = 0;
 let totalWords = 0;
 let customWords = 0;
+const normalizeArabic = (value: string) =>
+  value
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .normalize("NFC")
+    .replace(/[\u0640\s]/g, "");
+const basmala = ["بِسْمِ", "ٱللَّهِ", "ٱلرَّحْمَـٰنِ", "ٱلرَّحِيمِ"].map(
+  normalizeArabic,
+);
 for (const file of selected) {
   const result = await readPackage(file);
   if (result.package) {
@@ -26,6 +38,23 @@ for (const file of selected) {
       (sum, ayah) => sum + ayah.words.filter((word) => word.teachingId).length,
       0,
     );
+    if (![1, 9].includes(result.package.surah.number)) {
+      const firstAyah = result.package.ayahs.find((ayah) => ayah.number === 1);
+      const visibleWords = (firstAyah?.arabic ?? "")
+        .split(/\s+/)
+        .filter(Boolean)
+        .slice(0, 4)
+        .map(normalizeArabic);
+      if (
+        visibleWords.length === basmala.length &&
+        visibleWords.every((word, index) => word === basmala[index])
+      ) {
+        totalErrors += 1;
+        console.error(
+          `${file}\n  - visible āyah 1 incorrectly contains the basmalah; keep it only in sourceRawArabic`,
+        );
+      }
+    }
   }
   if (result.errors.length) {
     totalErrors += result.errors.length;

@@ -1,5 +1,8 @@
 import { stat } from "node:fs/promises";
 import path from "node:path";
+import { assertAuthoringContract } from "./lib/authoring-contract";
+
+assertAuthoringContract("source status");
 
 const root = process.cwd();
 const tanzilPath = path.join(

@@ -15,7 +15,13 @@ export type RootIndexItem = {
 export type PatternIndexItem = {
   id: string;
   name: string;
-  entries: { form: string; meaning: string; difference: string }[];
+  entries: {
+    form: string;
+    meaning: string;
+    difference: string;
+    relationship: string;
+    provenance: string;
+  }[];
 };
 
 export type SearchResult = {
@@ -31,18 +37,34 @@ export type SearchResult = {
   meaning: string;
 };
 
-export async function getRootIndex(): Promise<RootIndexItem[]> {
+export async function getRootIndex(options?: {
+  limit?: number;
+  offset?: number;
+}): Promise<RootIndexItem[]> {
   const pool = getPool();
+  const limit = Math.min(Math.max(options?.limit ?? 200, 1), 500);
+  const offset = Math.max(options?.offset ?? 0, 0);
   const result = await pool.query(`
-    select r.id, r.text,
-      coalesce(max(rpt.text), '') as picture,
-      count(distinct wo.id)::int as occurrence_count
-    from roots r
-    left join root_picture_terms rpt on rpt.root_id = r.id
-    left join word_occurrences wo on wo.root_id = r.id
-    group by r.id, r.text
-    order by r.text
-  `);
+    with page_roots as (
+      select r.id, r.text
+      from roots r
+      order by r.text, r.id
+      limit $1 offset $2
+    )
+    select pr.id, pr.text,
+      coalesce((
+        select max(rpt.text)
+        from root_picture_terms rpt
+        where rpt.root_id = pr.id
+      ), '') as picture,
+      (
+        select count(*)::int
+        from word_occurrences wo
+        where wo.root_id = pr.id
+      ) as occurrence_count
+    from page_roots pr
+    order by pr.text, pr.id
+  `, [limit, offset]);
   return result.rows.map((row) => ({
     id: row.id,
     text: row.text,
@@ -51,20 +73,55 @@ export async function getRootIndex(): Promise<RootIndexItem[]> {
   }));
 }
 
-export async function getPatternIndex(): Promise<PatternIndexItem[]> {
+export async function getRootIndexCount(): Promise<number> {
   const pool = getPool();
+  const result = await pool.query("select count(*)::int as count from roots");
+  return result.rows[0]?.count ?? 0;
+}
+
+export async function getPatternIndex(options?: {
+  limit?: number;
+  offset?: number;
+}): Promise<PatternIndexItem[]> {
+  const pool = getPool();
+  const limit = Math.min(Math.max(options?.limit ?? 200, 1), 500);
+  const offset = Math.max(options?.offset ?? 0, 0);
   const result = await pool.query(`
-    select ff.id, ff.name, coalesce(json_agg(json_build_object('form', ffe.form, 'meaning', ffe.meaning, 'difference', ffe.difference) order by ffe.id) filter (where ffe.id is not null), '[]') as entries
-    from form_families ff
-    left join form_family_entries ffe on ffe.family_id = ff.id
-    group by ff.id, ff.name
-    order by ff.name
-  `);
+    with page_families as (
+      select ff.id, ff.name
+      from form_families ff
+      order by ff.name, ff.id
+      limit $1 offset $2
+    )
+    select pf.id, pf.name,
+      coalesce(
+        json_agg(json_build_object(
+          'form', ffe.form,
+          'meaning', ffe.meaning,
+          'difference', ffe.difference,
+          'relationship', ffe.relationship,
+          'provenance', ffe.provenance
+        ) order by ffe.id) filter (where ffe.id is not null),
+        '[]'
+      ) as entries
+    from page_families pf
+    left join form_family_entries ffe on ffe.family_id = pf.id
+    group by pf.id, pf.name
+    order by pf.name, pf.id
+  `, [limit, offset]);
   return result.rows.map((row) => ({
     id: row.id,
     name: row.name,
     entries: row.entries ?? [],
   }));
+}
+
+export async function getPatternIndexCount(): Promise<number> {
+  const pool = getPool();
+  const result = await pool.query(
+    "select count(*)::int as count from form_families",
+  );
+  return result.rows[0]?.count ?? 0;
 }
 
 export async function searchLessons(query: string): Promise<SearchResult[]> {
@@ -154,9 +211,7 @@ export async function searchQuran(query: string): Promise<QuranSearchPayload> {
   );
   const rootKey = sqlSearchKey("r.text, r.transliteration");
   const candidateRootKey = sqlSearchKey("r2.text, r2.transliteration");
-  const ayahTextKey = sqlSearchKey(
-    "a.arabic, a.translation, tr_search.text, a.natural_meaning",
-  );
+  const ayahTextKey = sqlSearchKey("a.arabic, a.translation, tr_search.text");
   const compactKey = searchKey(trimmed);
   const useCompactRootKey =
     termKeys.length > 1 &&
@@ -190,7 +245,6 @@ export async function searchQuran(query: string): Promise<QuranSearchPayload> {
       .map(
         (_, index) => `(
           coalesce(a.translation, '') ilike $${index + 1}
-          or coalesce(a.natural_meaning, '') ilike $${index + 1}
           or coalesce(t.text, '') ilike $${index + 1}
           or coalesce(wo.arabic, '') ilike $${index + 1}
           or coalesce(wo.transliteration, '') ilike $${index + 1}
@@ -333,12 +387,19 @@ export async function searchQuran(query: string): Promise<QuranSearchPayload> {
     (count, ayah) => count + ayah.words.filter((word) => word.matched).length,
     0,
   );
+  const englishQuery = !/[\u0600-\u06ff]/u.test(trimmed);
+  const translationMatchCount = ayahMatches.filter((ayah) =>
+    termKeys.every((term) => searchKey(ayah.translation).includes(term)),
+  ).length;
 
   return {
     query: trimmed,
     terms,
     approximateCount:
-      matchingWordCount || ayahMatches.length || surahMatches.length,
+      (englishQuery && translationMatchCount) ||
+      matchingWordCount ||
+      ayahMatches.length ||
+      surahMatches.length,
     matchingWordCount,
     matchingAyahCount: ayahMatches.length,
     surahMatches,

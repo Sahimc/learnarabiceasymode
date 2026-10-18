@@ -98,7 +98,7 @@ function EnglishResult({
   ayah: QuranSearchAyah;
   terms: string[];
 }) {
-  const translation = ayah.translation || ayah.naturalMeaning;
+  const translation = ayah.translation;
   const matchedGlosses = ayah.words
     .filter((word) => word.matched)
     .map((word) => word.meaning || word.gloss)

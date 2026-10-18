@@ -1,10 +1,13 @@
 import crypto from "node:crypto";
+import { assertAuthoringContract } from "./lib/authoring-contract";
 import { loadLocalEnv } from "./lib/env";
 import { pool, withTransaction } from "./lib/db";
 import type {
   MorphologyFeature,
   MorphologyFormationPart,
 } from "../app/data/morphology";
+
+assertAuthoringContract("morphology import");
 
 loadLocalEnv();
 
@@ -100,6 +103,18 @@ function splitCanonical(canonical: string, rawParts: string[]) {
   return offset === canonicalClusters.length ? parts : undefined;
 }
 
+function comparableSource(value: string) {
+  return value
+    .normalize("NFC")
+    .replace(/\u0622/gu, "ا")
+    .replace(/\u0649/gu, "ي")
+    .replace(/\u0671/gu, "ا")
+    .replace(/\u0670/gu, "ا")
+    .replace(/[\u064B-\u065F\u06D6-\u06ED]/gu, "")
+    .replace(/\u0640/gu, "")
+    .replace(/\s+/gu, "");
+}
+
 function tagValue(tags: string[], prefix: string) {
   return tags
     .find((tag) => tag.startsWith(`${prefix}:`))
@@ -151,6 +166,7 @@ function featureForTag(tag: string): MorphologyFeature | undefined {
 function componentKind(tags: string[], pos: string): SurfacePart["kind"] {
   if (tags.includes("DET")) return "article";
   if (tags.includes("CONJ")) return "connector";
+  if (tags.includes("INTG") || tags.includes("VOC")) return "prefix";
   if (tags.includes("PREF")) return "preposition";
   if (tags.includes("PRON")) return "possessive-pronoun";
   if (tags.includes("SUFF")) return "suffix";
@@ -264,6 +280,85 @@ function parseSource(raw: string) {
   return grouped;
 }
 
+type ProviderGroup = {
+  key: string;
+  surah: number;
+  ayah: number;
+  position: number;
+  segments: RawSegment[];
+};
+
+function providerGroups(grouped: Map<string, RawSegment[]>) {
+  return [...grouped.entries()]
+    .map(([key, segments]) => {
+      const [surah, ayah, position] = key.split(":").map(Number);
+      return { key, surah, ayah, position, segments };
+    })
+    .sort(
+      (left, right) =>
+        left.surah - right.surah ||
+        left.ayah - right.ayah ||
+        left.position - right.position,
+    );
+}
+
+function partitionSegments(
+  targetOccurrences: Occurrence[],
+  segments: RawSegment[],
+) {
+  const partitions: RawSegment[][] = [];
+  let segmentIndex = 0;
+  for (const occurrence of targetOccurrences) {
+    const matches: RawSegment[][] = [];
+    for (let end = segmentIndex + 1; end <= segments.length; end += 1) {
+      const candidate = segments.slice(segmentIndex, end);
+      if (
+        comparableSource(candidate.map((segment) => segment.text).join("")) ===
+        comparableSource(occurrence.arabic)
+      )
+        matches.push(candidate);
+    }
+    if (matches.length !== 1) return undefined;
+    partitions.push(matches[0]);
+    segmentIndex += matches[0].length;
+  }
+  return segmentIndex === segments.length ? partitions : undefined;
+}
+
+function matchProviderGroup(
+  group: ProviderGroup,
+  occurrences: Occurrence[],
+  cursor: number,
+) {
+  const providerSource = comparableSource(
+    group.segments.map((segment) => segment.text).join(""),
+  );
+  const matches: {
+    start: number;
+    end: number;
+    targets: Occurrence[];
+    partitions: RawSegment[][];
+  }[] = [];
+  for (let start = cursor; start < occurrences.length; start += 1) {
+    for (
+      let end = start + 1;
+      end <= Math.min(occurrences.length, start + 8);
+      end += 1
+    ) {
+      const targets = occurrences.slice(start, end);
+      const targetSource = comparableSource(
+        targets.map((occurrence) => occurrence.arabic).join(""),
+      );
+      if (targetSource !== providerSource) continue;
+      const partitions = partitionSegments(targets, group.segments);
+      if (partitions) matches.push({ start, end, targets, partitions });
+    }
+  }
+  const atCursor = matches.filter((match) => match.start === cursor);
+  if (atCursor.length === 1) return atCursor[0];
+  return matches.length === 1 ? matches[0] : undefined;
+}
+
 function makeAnalysis(
   key: string,
   occurrence: Occurrence,
@@ -295,15 +390,6 @@ function makeAnalysis(
     inferredArticleParts(occurrence, segments) ??
     segments.map((segment) => segment.text);
   const canonicalParts = splitCanonical(occurrence.arabic, rawParts);
-  if (
-    occurrence.status === "custom-complete" &&
-    rawParts.length > 1 &&
-    !canonicalParts
-  ) {
-    throw new Error(
-      `Cannot reconstruct custom occurrence ${key} from source morphology segments`,
-    );
-  }
   const useAtomic = !canonicalParts || rawParts.length < 2;
   const effectiveParts = useAtomic ? [occurrence.arabic] : canonicalParts;
   const surfaceParts = effectiveParts.map((sourceText, index) => {
@@ -403,13 +489,52 @@ const occurrenceResult = await pool.query<Occurrence>(
    order by s.number, a.number, wo.position`,
 );
 const occurrences = occurrenceResult.rows;
-const analyses = occurrences.flatMap((occurrence) => {
-  const key = `${occurrence.surah}:${occurrence.ayah}:${occurrence.position}`;
-  const segments = grouped.get(key);
-  return segments
-    ? [{ occurrence, key, analysis: makeAnalysis(key, occurrence, segments) }]
-    : [];
-});
+const quarantined: string[] = [];
+const analyses: {
+  occurrence: Occurrence;
+  key: string;
+  analysis: Analysis;
+}[] = [];
+const occurrenceGroups = new Map<string, Occurrence[]>();
+for (const occurrence of occurrences) {
+  const groupKey = `${occurrence.surah}:${occurrence.ayah}`;
+  const list = occurrenceGroups.get(groupKey) ?? [];
+  list.push(occurrence);
+  occurrenceGroups.set(groupKey, list);
+}
+const cursors = new Map<string, number>();
+for (const group of providerGroups(grouped)) {
+  const groupKey = `${group.surah}:${group.ayah}`;
+  const ayahOccurrences = occurrenceGroups.get(groupKey) ?? [];
+  const cursor = cursors.get(groupKey) ?? 0;
+  const match = matchProviderGroup(group, ayahOccurrences, cursor);
+  if (!match) {
+    quarantined.push(
+      `${group.key}: provider segments do not uniquely reconstruct the app word sequence`,
+    );
+    continue;
+  }
+  cursors.set(groupKey, match.end);
+  match.targets.forEach((occurrence, index) => {
+    const key = `${occurrence.surah}:${occurrence.ayah}:${occurrence.position}`;
+    analyses.push({
+      occurrence,
+      key,
+      analysis: makeAnalysis(key, occurrence, match.partitions[index]),
+    });
+  });
+}
+if (quarantined.length) {
+  console.warn(
+    `Quarantined ${quarantined.length} provider morphology group(s) because their source segments were not aligned.`,
+  );
+  console.warn(
+    quarantined
+      .slice(0, 20)
+      .map((item) => `- ${item}`)
+      .join("\n"),
+  );
+}
 // Provider morphology is evidence only. Authored WordBreakdowns are owned by
 // content packages and must not be replaced during a provider refresh.
 const custom: typeof analyses = [];
@@ -535,6 +660,9 @@ await withTransaction(async (client) => {
           part.displayText,
           part.label,
           part.meaning,
+          null,
+          null,
+          null,
           part.kind,
         ]),
       );
@@ -566,6 +694,9 @@ await withTransaction(async (client) => {
         "display_text",
         "label",
         "meaning",
+        "root_status",
+        "root",
+        "root_explanation",
         "kind",
       ],
       partRows,

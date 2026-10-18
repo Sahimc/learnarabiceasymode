@@ -1,6 +1,9 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { discoverPackagePaths, readPackage } from "./lib/packages";
+import { assertAuthoringContract } from "./lib/authoring-contract";
+
+assertAuthoringContract("content scaffolding");
 
 const args = process.argv.slice(2);
 const index = args.indexOf("--surah");

@@ -1,4 +1,7 @@
 import { discoverPackagePaths, readPackage } from "./lib/packages";
+import { assertAuthoringContract } from "./lib/authoring-contract";
+
+assertAuthoringContract("content status");
 
 const rows = [];
 for (const file of await discoverPackagePaths()) {

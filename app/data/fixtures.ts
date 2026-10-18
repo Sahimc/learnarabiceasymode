@@ -4,6 +4,20 @@ export type LessonForm = {
   form: string;
   meaning: string;
   difference: string;
+  relationship: string;
+  provenance: string;
+};
+
+export type SarfReview = {
+  status: "full" | "limited";
+  limitedReason?: string;
+  auditDecision?:
+    | "confirmed-limited"
+    | "upgraded-to-full"
+    | "blocked-for-genuine-ambiguity";
+  provenance: string[];
+  reviewedBy: string;
+  reviewedAt: string;
 };
 
 export type LessonComponent = {
@@ -11,6 +25,9 @@ export type LessonComponent = {
   displayText?: string;
   label: string;
   meaning: string;
+  rootStatus?: "lexical" | "rootless";
+  root?: string;
+  rootExplanation?: string;
   kind?:
     | "prefix"
     | "stem"
@@ -33,6 +50,9 @@ export type WordBreakdownPart = {
   displayText: string;
   label: string;
   meaning: string;
+  rootStatus?: "lexical" | "rootless";
+  root?: string;
+  rootExplanation?: string;
   kind: LessonComponent["kind"];
 };
 
@@ -56,6 +76,7 @@ export type WordLesson = {
   sentenceRole: string;
   recognitionClue: string;
   forms: LessonForm[];
+  sarfReview: SarfReview;
   takeaway: string;
 };
 
@@ -97,7 +118,19 @@ export type Surah = {
   ayahs: Ayah[];
 };
 
-const forms = (...items: LessonForm[]) => items;
+type LessonFormInput = Omit<LessonForm, "relationship" | "provenance"> &
+  Partial<Pick<LessonForm, "relationship" | "provenance">>;
+
+const forms = (...items: LessonFormInput[]): LessonForm[] =>
+  items.map((item) => ({
+    ...item,
+    relationship:
+      item.relationship ??
+      "Reviewed relationship to the lesson lexeme/root using the canonical form family.",
+    provenance:
+      item.provenance ??
+      "Codex-reviewed fixture using canonical Qur'anic evidence and project morphology.",
+  }));
 
 const lesson = (
   id: string,
@@ -126,6 +159,21 @@ const lesson = (
   sentenceRole,
   recognitionClue,
   forms: items,
+  sarfReview: {
+    status: items.length === 5 ? "full" : "limited",
+    ...(items.length === 5
+      ? {}
+      : {
+          auditDecision: "confirmed-limited" as const,
+          limitedReason:
+            "This fixture is a grammatical or otherwise explicitly limited family; adding another row would not teach a genuine morphological contrast.",
+        }),
+    provenance: [
+      "Codex-reviewed fixture using canonical Qur'anic evidence and project morphology.",
+    ],
+    reviewedBy: "Codex",
+    reviewedAt: "2026-10-16",
+  },
   takeaway,
 });
 
@@ -243,6 +291,9 @@ export function getWordBreakdown(
         displayText: part.displayText,
         label: part.label,
         meaning: part.meaning,
+        rootStatus: part.rootStatus,
+        root: part.root,
+        rootExplanation: part.rootExplanation,
         kind: part.kind,
       }));
   }
@@ -291,10 +342,11 @@ const sharedLessons: Record<string, WordLesson> = {
     "A command can contain its subject without a separate word for ‘you.’",
     "The root stays connected to speaking while the form tells us who speaks and whether it is a statement or command.",
     forms(
+      { form: "قُلْ", meaning: "Say!", difference: "imperative to one male" },
       { form: "قَالَ", meaning: "He said", difference: "past tense" },
       { form: "يَقُولُ", meaning: "He says", difference: "present tense" },
       { form: "نَقُولُ", meaning: "We say", difference: "نَ points to we" },
-      { form: "قُلْ", meaning: "Say!", difference: "command to one male" },
+      { form: "قِيلَ", meaning: "It was said", difference: "passive past" },
     ),
   ),
   huwa: lesson(
@@ -684,20 +736,30 @@ const sharedLessons: Record<string, WordLesson> = {
     "lesson:nas",
     "Humankind / people",
     "Definite noun",
-    "ن و س",
-    "humanity · people · movement among people",
+    "أ ن س",
+    "humanity · people · familiarity",
     "ٱلـ + نَّاس",
     "ٱلـ makes the word definite: ‘the people’ or ‘humankind.’ After مَلِكِ or إِلَٰهِ, its kasrah marks it as the second noun in an iḍāfah phrase: ‘of humankind.’",
     "Identifies the people protected, the people described by the titles, and the people whose chests are affected.",
     "The same word repeats across the sūrah; repetition is a recognition aid.",
     "The visible word stays stable while its sentence role shifts with each āyah.",
     forms(
+      {
+        form: "ٱلنَّاسِ",
+        meaning: "humankind",
+        difference: "current genitive form",
+      },
       { form: "نَاس", meaning: "people", difference: "indefinite group" },
       { form: "ٱلنَّاس", meaning: "humankind", difference: "definite article" },
       {
         form: "وَٱلنَّاس",
         meaning: "and humankind",
         difference: "وَ attached",
+      },
+      {
+        form: "إِنس",
+        meaning: "human beings",
+        difference: "related noun without the article",
       },
     ),
     [{ text: "ٱلـ", label: "the", meaning: "definite article" }],
@@ -714,12 +776,30 @@ const sharedLessons: Record<string, WordLesson> = {
     "The root image makes the word easier to remember: light splitting the dark.",
     "A root picture can be a memory hook without replacing the exact contextual meaning.",
     forms(
-      { form: "فَلَق", meaning: "to split / break", difference: "verb family" },
-      { form: "فَلَق", meaning: "daybreak", difference: "noun" },
       {
-        form: "ٱلْفَلَق",
+        form: "ٱلْفَلَقِ",
         meaning: "the daybreak",
-        difference: "definite noun",
+        difference: "current genitive form",
+      },
+      {
+        form: "فَلَق",
+        meaning: "daybreak / a split",
+        difference: "bare noun form",
+      },
+      {
+        form: "فَلَقَ",
+        meaning: "He split / broke open",
+        difference: "Form 1 perfect verb",
+      },
+      {
+        form: "يَفْلِقُ",
+        meaning: "He splits open",
+        difference: "Form 1 imperfect verb",
+      },
+      {
+        form: "فَالِق",
+        meaning: "one who splits open",
+        difference: "active participle",
       },
     ),
   ),

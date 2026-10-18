@@ -3,8 +3,11 @@ import { mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { chromium } from "@playwright/test";
 import { getRuntimeSurahs } from "../app/data/db-lesson-service";
+import { assertAuthoringContract } from "./lib/authoring-contract";
 import { pool } from "./lib/db";
 import type { Ayah, Surah, WordOccurrence } from "../app/data/fixtures";
+
+assertAuthoringContract("PDF generation");
 
 type Kind = "ayah" | "surah" | "volume";
 type PrintOptions = {
@@ -60,7 +63,7 @@ function lessonHtml(word: WordOccurrence, options: PrintOptions) {
       <div class="breakdown"><strong>Word breakdown</strong><div class="whole" dir="rtl">${escapeHtml(word.arabic)}</div><div class="arrow">↓</div><div class="parts">${(breakdown?.parts ?? []).map((part) => `<span><b dir="rtl">${escapeHtml(part.displayText)}</b><em>${escapeHtml(part.label)}</em><small>${escapeHtml(part.meaning)}</small></span>`).join("")}</div></div>
       ${options.includeRoots ? `<div class="detail"><strong>Root</strong><p dir="rtl">${escapeHtml(lesson.root || "No lexical root")}</p><span>${escapeHtml(lesson.rootPicture)}</span></div>` : ""}
       ${options.includeGrammar ? `<div class="detail"><strong>Grammar</strong><p>${escapeHtml(lesson.grammar)}</p><span>${escapeHtml(lesson.sentenceRole)}</span></div>` : ""}
-      ${options.includeForms ? `<div class="detail"><strong>Ṣarf / form family</strong>${lesson.forms.map((form) => `<p><b dir="rtl">${escapeHtml(form.form)}</b> ${escapeHtml(form.meaning)} <small>${escapeHtml(form.difference)}</small></p>`).join("")}<span>${escapeHtml(lesson.takeaway)}</span></div>` : ""}`
+      ${options.includeForms ? `<div class="detail"><strong>Ṣarf / form family (${escapeHtml(lesson.sarfReview.status)})</strong>${lesson.forms.map((form) => `<p><b dir="rtl">${escapeHtml(form.form)}</b> ${escapeHtml(form.meaning)} <small>${escapeHtml(form.difference)} ${escapeHtml(form.relationship)}</small></p>`).join("")}${lesson.sarfReview.status === "limited" ? `<span>Reviewed limited family: ${escapeHtml(lesson.sarfReview.limitedReason ?? "")}</span>` : ""}<span>${escapeHtml(lesson.takeaway)}</span></div>` : ""}`
         : `<div class="source-note">Source-only occurrence. Canonical text is available; reviewed Word Tree teaching has not yet been authored.</div>`
     }
   </article>`;
@@ -68,7 +71,7 @@ function lessonHtml(word: WordOccurrence, options: PrintOptions) {
 
 function ayahHtml(surah: Surah, ayah: Ayah, options: PrintOptions) {
   return `<section class="ayah-block">
-    <header class="ayah-header"><span>${escapeHtml(surah.transliteration)} · Āyah ${ayah.number}</span><h2 dir="rtl">${escapeHtml(ayah.arabic)}</h2>${options.includeTranslation ? `<p>${escapeHtml(ayah.naturalMeaning || ayah.translation)}</p>` : ""}</header>
+    <header class="ayah-header"><span>${escapeHtml(surah.transliteration)} · Āyah ${ayah.number}</span><h2 dir="rtl">${escapeHtml(ayah.arabic)}</h2>${options.includeTranslation ? `<p>${escapeHtml(ayah.translation)}</p>` : ""}</header>
     <div class="word-grid">${ayah.words.map((word) => lessonHtml(word, options)).join("")}</div>
   </section>`;
 }

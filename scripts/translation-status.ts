@@ -1,5 +1,8 @@
 import { loadLocalEnv } from "./lib/env";
+import { assertAuthoringContract } from "./lib/authoring-contract";
 import { pool } from "./lib/db";
+
+assertAuthoringContract("translation status");
 
 loadLocalEnv();
 

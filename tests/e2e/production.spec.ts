@@ -57,6 +57,14 @@ test("public source and reviewed lesson routes remain usable", async ({
     "Source morphology",
   );
 
+  await page.goto("/learn/104/2");
+  await expect(page.locator(".ayah-heading p")).toHaveText(
+    "Who collects wealth and [continuously] counts it.",
+  );
+  await expect(page.locator(".ayah-heading p")).not.toContainText(
+    "The description turns",
+  );
+
   await page.goto("/learn/114/3");
   await expect(page.locator(".surah-card")).toHaveCount(3);
   await expect(page.locator(".surah-card.selected")).toContainText("An-Nās");
@@ -86,9 +94,7 @@ test("public source and reviewed lesson routes remain usable", async ({
   await page.goto("/learn/111/5");
   await expect(page.locator("body")).toContainText("twisted fibre");
   await page.locator(".word-chip").nth(1).click();
-  await expect(page.locator(".selected-word-breakdown")).toContainText(
-    "her",
-  );
+  await expect(page.locator(".selected-word-breakdown")).toContainText("her");
 
   await page.setViewportSize({ width: 390, height: 844 });
   const wordHeaderBounds = await page
@@ -103,10 +109,8 @@ test("public source and reviewed lesson routes remain usable", async ({
   );
 
   await page.goto("/learn/109/1");
-  await expect(page.locator("body")).toContainText("Source layer available");
-  await expect(page.locator("body")).not.toContainText(
-    "Where the word comes from",
-  );
+  await expect(page.locator("body")).toContainText("Complete Word Tree");
+  await expect(page.locator("body")).toContainText("Where the word comes from");
 
   await page.goto("/learn/7/1");
   await expect(page.locator("body")).toContainText("Source layer available");
@@ -174,18 +178,45 @@ test("selected words show source-backed surface and deeper morphology", async ({
   await page.locator(".word-chip").first().click();
   await expect(
     page.locator(".selected-word-breakdown .breakdown-part"),
-  ).toHaveCount(1);
+  ).toHaveCount(2);
+  await expect(page.locator(".selected-word-breakdown")).toContainText(
+    "No lexical root (ending)",
+  );
   await expect(page.locator(".morphology-analysis")).toContainText("genitive");
   await expect(page.locator(".morphology-analysis")).not.toContainText(
     "Source morphology",
   );
-  await page.goto("/learn/109/1");
-  await expect(page.locator(".source-morphology")).toContainText(
-    "Imported morphology evidence",
+
+  await page.goto("/learn/112/4");
+  await page.locator(".word-chip").nth(2).click();
+  await expect(page.locator(".root-picture-card")).toContainText(
+    "No lexical root (preposition + object-pronoun)",
   );
   await expect(
-    page.locator(".source-morphology .morphology-analysis"),
-  ).toContainText("Root");
+    page.locator(".root-top-grid .detail-card").first(),
+  ).toContainText("No lexical root (preposition + object-pronoun)");
+
+  await page.goto("/learn/1/2");
+  await page.locator(".word-chip").first().click();
+  await expect(page.locator(".root-picture-card p")).toHaveText(
+    "praise · commend · thank",
+  );
+  await page.locator(".word-chip").nth(2).click();
+  await expect(page.locator(".root-picture-card p")).toHaveText(
+    "raise · nurture · sustain · govern",
+  );
+
+  await page.goto("/learn/109/1");
+  await page.locator(".word-chip").first().click();
+  await expect(page.locator(".form-table .form-row")).toHaveCount(5);
+  await expect(page.locator(".form-table")).toContainText("Say");
+  await page.locator(".word-chip").nth(1).click();
+  await expect(page.locator(".meaning-line strong")).toHaveText("Oh");
+  await expect(page.locator(".selected-word-breakdown")).toContainText("Oh");
+  await expect(page.locator(".selected-word-breakdown")).toContainText(
+    "No lexical root (vocative particle)",
+  );
+  await expect(page.locator(".morphology-analysis")).toContainText("Lemma");
 
   for (const [ayah, position] of [
     [1, 3],

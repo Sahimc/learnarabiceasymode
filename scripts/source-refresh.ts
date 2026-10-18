@@ -1,5 +1,8 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { assertAuthoringContract } from "./lib/authoring-contract";
+
+assertAuthoringContract("source refresh");
 
 const args = process.argv.slice(2);
 const providerIndex = args.indexOf("--provider");

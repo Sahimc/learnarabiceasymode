@@ -2,7 +2,10 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { getWordLesson, surahs } from "../app/data/fixtures";
+import { assertAuthoringContract } from "./lib/authoring-contract";
 import { surahMeta } from "./surah-meta";
+
+assertAuthoringContract("package generation");
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const rawPath = path.join(
@@ -15,7 +18,11 @@ const rawPath = path.join(
 const packagesRoot = path.join(root, "content-import", "surahs");
 
 const normalize = (value: string) =>
-  value.normalize("NFC").replace(/[\u0640\s]/g, "");
+  value
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .normalize("NFC")
+    .replace(/[\u0640\s]/g, "");
 const slug = (value: string) =>
   value
     .toLowerCase()

@@ -28,18 +28,18 @@ All writes from a content import occur in one transaction. A failed validation, 
 
 ### Project teaching records
 
-| Entity                | Key fields                                                          | Purpose                                |
-| --------------------- | ------------------------------------------------------------------- | -------------------------------------- |
-| `teaching_word_entry` | stable ID, canonical visible form, contextual meaning, type, status | Shared custom Word Tree teaching       |
-| `teaching_component`  | stable ID, teaching word ID, order, text, label, meaning            | Prefix/stem/suffix/pronoun explanation |
-| `root_picture_term`   | root ID, term, explanation, source or project note                  | Plain-English root picture             |
-| `recognition_clue`    | teaching word ID, clue text, order                                  | Memory and recognition aids            |
-| `form_family`         | stable ID, root/teaching word, title, takeaway                      | Related form group                     |
-| `form_family_entry`   | form family ID, order, Arabic form, meaning, difference             | Ṣarf comparison rows                   |
-| `ayah_teaching_entry` | ayah ID, natural meaning, sentence explanation, status              | Context-specific lesson prose          |
-| `sentence_map_node`   | ayah ID, order, label, parent ID, explanation                       | Sentence assembly/map                  |
-| `drill`               | stable ID, ayah/word scope, type, prompt, answer                    | Recall exercise                        |
-| `drill_option`        | drill ID, order, option text, correct flag, explanation             | Multiple choice or matching options    |
+| Entity                | Key fields                                                                        | Purpose                                |
+| --------------------- | --------------------------------------------------------------------------------- | -------------------------------------- |
+| `teaching_word_entry` | stable ID, canonical visible form, contextual meaning, type, Ṣarf review status   | Shared custom Word Tree teaching       |
+| `teaching_component`  | stable ID, teaching word ID, order, text, label, meaning                          | Prefix/stem/suffix/pronoun explanation |
+| `root_picture_term`   | root ID, term, explanation, source or project note                                | Plain-English root picture             |
+| `recognition_clue`    | teaching word ID, clue text, order                                                | Memory and recognition aids            |
+| `form_family`         | stable ID, root/teaching word, title, takeaway                                    | Related form group                     |
+| `form_family_entry`   | form family ID, order, Arabic form, meaning, difference, relationship, provenance | Reviewed Ṣarf comparison rows          |
+| `ayah_teaching_entry` | ayah ID, natural meaning, sentence explanation, status                            | Context-specific lesson prose          |
+| `sentence_map_node`   | ayah ID, order, label, parent ID, explanation                                     | Sentence assembly/map                  |
+| `drill`               | stable ID, ayah/word scope, type, prompt, answer                                  | Recall exercise                        |
+| `drill_option`        | drill ID, order, option text, correct flag, explanation                           | Multiple choice or matching options    |
 
 ### Publishing and import records
 

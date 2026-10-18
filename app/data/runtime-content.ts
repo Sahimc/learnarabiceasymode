@@ -1,11 +1,11 @@
-import { getRuntimeSurahs } from "./db-lesson-service";
+import { getRuntimeSurahsForSelection } from "./db-lesson-service";
 import type { Surah } from "./fixtures";
 
 export async function getClientContent(
   selectedNumber: number,
   scope: "six" | "all" = "six",
 ): Promise<Surah[]> {
-  const all = await getRuntimeSurahs();
+  const all = await getRuntimeSurahsForSelection(selectedNumber);
   const selected =
     all.find((surah) => surah.number === selectedNumber) ?? all[all.length - 1];
   const candidates =

@@ -23,6 +23,40 @@ type PrototypeAppProps = {
   content?: Surah[];
 };
 
+function rootAnnotation(component: LessonComponent) {
+  if (component.rootStatus === "lexical" && component.root)
+    return `Root: ${component.root}`;
+  if (component.rootStatus === "rootless")
+    return component.rootExplanation ?? "No lexical root";
+  return undefined;
+}
+
+function lessonRootLabel(lesson: WordLesson) {
+  if (lesson.root.trim()) return lesson.root;
+
+  const categories = [
+    ...new Set(
+      lesson.components
+        .map((component) => component.rootExplanation)
+        .filter((explanation): explanation is string => Boolean(explanation))
+        .map(
+          (explanation) =>
+            explanation.match(/^No lexical root \(([^()]+)\)$/u)?.[1],
+        )
+        .filter((category): category is string => Boolean(category)),
+    ),
+  ];
+  if (categories.length > 0)
+    return `No lexical root (${categories.join(" + ")})`;
+
+  const rootPictureCategory = lesson.rootPicture.match(
+    /^No lexical root \(([^()]+)\)/u,
+  )?.[1];
+  return rootPictureCategory
+    ? `No lexical root (${rootPictureCategory})`
+    : "No lexical root";
+}
+
 function LessonBreakdownParts({
   parts,
   presentation = false,
@@ -37,15 +71,21 @@ function LessonBreakdownParts({
       }
       dir="rtl"
     >
-      {parts.map((component) => (
-        <span
-          className="breakdown-part"
-          key={`${component.text}-${component.label}`}
-        >
-          <b dir="rtl">{component.displayText ?? component.text}</b>
-          <small>{component.label}</small>
-        </span>
-      ))}
+      {parts.map((component) => {
+        const annotation = rootAnnotation(component);
+        return (
+          <span
+            className="breakdown-part"
+            key={`${component.text}-${component.label}`}
+          >
+            <b dir="rtl">{component.displayText ?? component.text}</b>
+            <small>{component.label}</small>
+            {annotation && (
+              <small className="breakdown-root-note">{annotation}</small>
+            )}
+          </span>
+        );
+      })}
     </div>
   );
 }
@@ -367,7 +407,7 @@ export function PrototypeApp({
         <p className="presentation-arabic" dir="rtl">
           {ayah.arabic}
         </p>
-        <p className="presentation-meaning">{ayah.naturalMeaning}</p>
+        <p className="presentation-meaning">{ayah.translation}</p>
         <p className="presentation-instruction">
           {ayah.words.length} words in this āyah · Select one to open its lesson
         </p>
@@ -681,7 +721,7 @@ export function PrototypeApp({
               </span>
               <div>
                 <h3 dir="rtl">{ayah.arabic}</h3>
-                <p>{ayah.naturalMeaning}</p>
+                <p>{ayah.translation}</p>
               </div>
             </div>
             <div className="word-select-heading">
@@ -977,7 +1017,7 @@ export function PresentationWordView({
                 {lesson.root}
               </p>
             ) : (
-              <p className="presentation-no-root">No lexical root</p>
+              <p className="presentation-no-root">{lessonRootLabel(lesson)}</p>
             )}
             <p className="presentation-section-copy">{lesson.rootPicture}</p>
             <p className="presentation-section-copy">
@@ -1027,9 +1067,15 @@ export function PresentationWordView({
                   <strong dir="rtl">{item.form}</strong>
                   <span>{item.meaning}</span>
                   <small>{item.difference}</small>
+                  <small>{item.relationship}</small>
                 </div>
               ))}
             </div>
+            {lesson.sarfReview.status === "limited" && (
+              <p className="presentation-section-copy">
+                Reviewed limited family: {lesson.sarfReview.limitedReason}
+              </p>
+            )}
             <p className="presentation-section-copy">{lesson.takeaway}</p>
           </div>
         )}
@@ -1156,7 +1202,9 @@ function WordFocus({
               {lesson.root ? (
                 <strong dir="rtl">{lesson.root}</strong>
               ) : (
-                <strong className="no-root-label">No lexical root</strong>
+                <strong className="no-root-label">
+                  {lessonRootLabel(lesson)}
+                </strong>
               )}
               <p>{lesson.rootPicture}</p>
             </div>
@@ -1168,7 +1216,9 @@ function WordFocus({
                     {lesson.root}
                   </strong>
                 ) : (
-                  <strong className="no-root-label">No lexical root</strong>
+                  <strong className="no-root-label">
+                    {lessonRootLabel(lesson)}
+                  </strong>
                 )}
               </div>
               <div className="detail-card">
@@ -1218,6 +1268,11 @@ function WordFocus({
                 </strong>
                 <div>
                   <b>{component.label}</b>
+                  {rootAnnotation(component) && (
+                    <small className="grammar-root-note">
+                      {rootAnnotation(component)}
+                    </small>
+                  )}
                   {expandedExplanations && <p>{component.meaning}</p>}
                 </div>
               </div>
@@ -1245,9 +1300,16 @@ function WordFocus({
                 <strong dir="rtl">{item.form}</strong>
                 <span>{item.meaning}</span>
                 <small>{item.difference}</small>
+                <small>{item.relationship}</small>
               </div>
             ))}
           </div>
+          {lesson.sarfReview.status === "limited" && (
+            <div className="takeaway">
+              <span>Reviewed limited family</span>
+              <p>{lesson.sarfReview.limitedReason}</p>
+            </div>
+          )}
           {expandedExplanations && (
             <div className="takeaway">
               <span>Takeaway</span>
@@ -1355,7 +1417,7 @@ function PrintPreview({
         </div>
         <div className="print-ayah">
           <p dir="rtl">{ayah.arabic}</p>
-          <span>{ayah.naturalMeaning}</span>
+          <span>{ayah.translation}</span>
         </div>
         <div className="print-word-grid">
           {ayah.words.map((word) => {

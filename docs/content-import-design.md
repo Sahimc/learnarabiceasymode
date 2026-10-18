@@ -57,7 +57,7 @@ The Zod package schema and semantic validator must check:
 4. Āyah numbers are contiguous and ordered.
 5. Word positions are contiguous and ordered.
 6. Every word has exact Arabic text and a stable occurrence ID.
-7. Every complete word has meaning, type, construction, grammar, sentence role, recognition clue and at least one form-family entry.
+7. Every complete word has meaning, type, construction, grammar, sentence role, recognition clue and either a reviewed five-form Ṣarf family (current form plus four genuinely useful related forms) or an explicitly reviewed limited family with provenance and a reason.
 8. Every authored word breakdown has a sourceText equal to the complete word, and its ordered parts concatenate to that sourceText.
 9. Every breakdown part stores sourceText, displayText, label, meaning and kind. displayText may add a joining line such as `أَـ`, but sourceText must remain the exact Qur’anic segment.
 10. Legacy or incomplete component data must never silently hide the remainder of a word; the application falls back to the complete word and the validator reports the missing breakdown for authoring.

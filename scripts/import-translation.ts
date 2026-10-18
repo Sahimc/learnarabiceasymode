@@ -2,8 +2,11 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
+import { assertAuthoringContract } from "./lib/authoring-contract";
 import { loadLocalEnv } from "./lib/env";
 import { pool, withTransaction } from "./lib/db";
+
+assertAuthoringContract("translation import");
 
 loadLocalEnv();
 

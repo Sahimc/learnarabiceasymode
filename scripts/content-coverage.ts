@@ -1,4 +1,7 @@
 import { discoverPackagePaths, readPackage } from "./lib/packages";
+import { assertAuthoringContract } from "./lib/authoring-contract";
+
+assertAuthoringContract("content coverage audit");
 
 const args = process.argv.slice(2);
 const surahArgIndex = args.indexOf("--surah");
@@ -13,6 +16,8 @@ const allWords = packages.flatMap((pkg) =>
   pkg.ayahs.flatMap((ayah) => ayah.words.map((word) => ({ pkg, ayah, word }))),
 );
 const custom = allWords.filter(({ word }) => Boolean(word.teachingId));
+const resolvedBreakdown = (word: (typeof allWords)[number]["word"]) =>
+  word.breakdownOverride ?? word.breakdown;
 console.table(
   packages.map((pkg) => ({
     surah: pkg.surah.number,
@@ -21,7 +26,7 @@ console.table(
     occurrences: pkg.ayahs.reduce((sum, ayah) => sum + ayah.words.length, 0),
     customBreakdowns: pkg.ayahs
       .flatMap((ayah) => ayah.words)
-      .filter((word) => word.teachingId && word.breakdown).length,
+      .filter((word) => word.teachingId && resolvedBreakdown(word)).length,
   })),
 );
 console.log(
@@ -36,7 +41,8 @@ console.log(
       ayahs: packages.reduce((sum, pkg) => sum + pkg.ayahs.length, 0),
       occurrences: allWords.length,
       customLessons: custom.length,
-      missingBreakdowns: custom.filter(({ word }) => !word.breakdown).length,
+      missingBreakdowns: custom.filter(({ word }) => !resolvedBreakdown(word))
+        .length,
       invalidBreakdowns: 0,
     },
     null,

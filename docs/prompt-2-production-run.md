@@ -9,10 +9,10 @@ The approved Prompt 2 implementation is complete for all non-blocked local scope
 
 ## Content
 
-- Full source layer: 114 sūrahs, 6,236 āyāt, 77,442 visible word occurrences.
-- Custom teaching layer: Sūrahs 112–114, 58 custom occurrences.
-- Source-only layer: 111 sūrahs, including 109–111 and all other not-yet-reviewed sūrahs.
-- Six-sūrah regression: 127 occurrences; 69 source-only and 58 custom.
+- Full source layer: 114 sūrahs, 6,236 āyāt, 77,434 visible word occurrences.
+- Custom teaching layer: Sūrah 1 and Sūrahs 78–114, 2,338 custom occurrences.
+- Source-only layer: 76 sūrahs, including all not-yet-reviewed sūrahs.
+- Thirty-eight-sūrah custom layer: 2,338 occurrences; Sūrah 1 and Sūrahs 78–114 are custom-complete.
 - WordBreakdown resolution: 46 explicit atomic and 12 explicit segmented records; 58 occurrence overrides; 37 teaching entries.
 - Source reconstruction: 6,236 retained Tanzil raw āyah variants, with canonical source attribution and version metadata.
 
@@ -45,7 +45,7 @@ PDF output is derived from the same PostgreSQL lesson model and is independent o
 - Node unit/content tests: 7 passed.
 - Production build: passed.
 - Playwright E2E: 4 passed across Chromium desktop and Chromium mobile viewport projects.
-- Content validation: 114 packages, 77,442 occurrences, 58 custom, 0 missing/invalid breakdowns.
+- Content validation: 114 packages, 77,434 occurrences, 2,338 custom, 0 missing/invalid breakdowns.
 - Database status: PostgreSQL reachable, 29 tables, 114 sūrahs and 6,236 āyāt.
 
 ## Commands

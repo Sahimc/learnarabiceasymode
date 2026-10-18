@@ -3,9 +3,13 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   SurahPackageSchema,
+  validateRootPicture,
   validateResolvedBreakdown,
+  validateSarfForms,
+  validateVocativeWording,
   type SurahPackage,
 } from "../../app/data/content-contract";
+import { rootMeaningFor } from "./root-meanings";
 
 export const repoRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -51,10 +55,7 @@ export async function readPackage(filePath: string) {
 
 export function semanticErrors(pkg: SurahPackage) {
   const errors: string[] = [];
-  const allowedStatuses =
-    pkg.surah.number >= 111 && pkg.surah.number <= 114
-      ? ["custom-complete"]
-      : ["source-only", "custom-partial"];
+  const allowedStatuses = ["source-only", "custom-partial", "custom-complete"];
   if (!allowedStatuses.includes(pkg.status))
     errors.push(
       `status should be one of ${allowedStatuses.join(", ")} for sūrah ${pkg.surah.number}`,
@@ -93,6 +94,109 @@ export function semanticErrors(pkg: SurahPackage) {
               (item) => `${word.id}: ${item}`,
             ),
           );
+        const lesson = word.teachingId
+          ? pkg.teachingEntries[word.teachingId]
+          : undefined;
+        if (lesson)
+          errors.push(
+            ...validateVocativeWording(word, lesson).map(
+              (item) => `${word.id}: ${item}`,
+            ),
+          );
+        if (lesson && resolvedBreakdown) {
+          errors.push(
+            ...validateSarfForms(lesson.forms, {
+              status: lesson.sarfReview.status,
+              currentForm: word.arabic,
+              root: lesson.root,
+            }).map((message) => `${word.id}: ${message}`),
+          );
+          const lexicalComponents = lesson.components.filter(
+            (component) => component.rootStatus === "lexical",
+          );
+          const rootlessComponents = lesson.components.filter(
+            (component) => component.rootStatus === "rootless",
+          );
+          if (lesson.components.some((component) => !component.rootStatus))
+            errors.push(
+              `${word.id}: every lesson component must declare lexical or rootless status`,
+            );
+          if (
+            lexicalComponents.some((component) =>
+              isRootlessPartKind(component.kind ?? ""),
+            )
+          )
+            errors.push(
+              `${word.id}: grammatical lesson components cannot be marked as lexical-root components`,
+            );
+          if (lexicalComponents.some((component) => !component.root))
+            errors.push(
+              `${word.id}: lexical lesson components must record their root`,
+            );
+          if (
+            lexicalComponents.length > 0 &&
+            (!lesson.root.trim() ||
+              !lexicalComponents.some(
+                (component) =>
+                  normalizeRoot(component.root) === normalizeRoot(lesson.root),
+              ))
+          )
+            errors.push(
+              `${word.id}: lexical lesson component root must agree with the lesson root`,
+            );
+          if (
+            rootlessComponents.some(
+              (component) =>
+                !/^No lexical root \([^()]+\)$/u.test(
+                  component.rootExplanation ?? "",
+                ),
+            )
+          )
+            errors.push(
+              `${word.id}: rootless lesson components must explain their category as 'No lexical root (category)'`,
+            );
+          if (
+            lesson.components.length > 0 &&
+            lesson.root.trim() &&
+            !lexicalComponents.length
+          )
+            errors.push(
+              `${word.id}: a lesson with a lexical root must identify its lexical component`,
+            );
+          const lexicalParts = resolvedBreakdown.parts.filter(
+            (part) => part.rootStatus === "lexical",
+          );
+          const rootlessParts = resolvedBreakdown.parts.filter(
+            (part) => part.rootStatus === "rootless",
+          );
+          if (resolvedBreakdown.parts.some((part) => !part.rootStatus))
+            errors.push(
+              `${word.id}: every custom breakdown part must declare lexical or rootless status`,
+            );
+          if (
+            lexicalParts.length > 0 &&
+            (!lesson.root.trim() ||
+              !lexicalParts.some(
+                (part) =>
+                  normalizeRoot(part.root) === normalizeRoot(lesson.root),
+              ))
+          )
+            errors.push(
+              `${word.id}: lexical breakdown root must agree with the lesson root`,
+            );
+          if (!lexicalParts.length && lesson.root.trim())
+            errors.push(
+              `${word.id}: a lesson with a lexical root must identify its lexical breakdown part`,
+            );
+          if (rootlessParts.some((part) => !part.rootExplanation))
+            errors.push(
+              `${word.id}: rootless breakdown parts must explain their grammatical category`,
+            );
+          if (lexicalParts.some((part) => isRootlessPartKind(part.kind)))
+            errors.push(
+              `${word.id}: grammatical breakdown parts cannot be marked as lexical-root parts`,
+            );
+        }
         if (
           resolvedBreakdown?.parts.some((part) =>
             ["whole word", "main word", "lexical meaning"].includes(
@@ -111,9 +215,55 @@ export function semanticErrors(pkg: SurahPackage) {
     }
   }
   if (pkg.status === "custom-complete" || pkg.status === "custom-partial") {
-    for (const [id, lesson] of Object.entries(pkg.teachingEntries))
+    for (const [id, lesson] of Object.entries(pkg.teachingEntries)) {
       if (id !== lesson.id)
         errors.push(`teaching entry key ${id} does not match lesson id`);
+      if (
+        pkg.status === "custom-complete" &&
+        lesson.sarfReview.auditDecision === "blocked-for-genuine-ambiguity"
+      )
+        errors.push(
+          `${id}: a family blocked for genuine ambiguity cannot be in a custom-complete package`,
+        );
+      errors.push(
+        ...validateRootPicture(lesson.root, lesson.rootPicture).map(
+          (message) => `${id}: ${message}`,
+        ),
+      );
+      if (lesson.root.trim()) {
+        try {
+          const expectedRootPicture = rootMeaningFor(lesson.root);
+          if (lesson.rootPicture.trim() !== expectedRootPicture.trim())
+            errors.push(
+              `${id}: rootPicture must exactly match the reviewed root meaning for ${lesson.root}`,
+            );
+        } catch (error) {
+          errors.push(`${id}: ${(error as Error).message}`);
+        }
+      }
+      errors.push(
+        ...validateSarfForms(lesson.forms, lesson.sarfReview).map(
+          (message) => `${id}: ${message}`,
+        ),
+      );
+    }
   }
   return errors;
+}
+
+function normalizeRoot(root: string | undefined) {
+  return (root ?? "").replace(/\s+/gu, "").trim();
+}
+
+function isRootlessPartKind(kind: string) {
+  return new Set([
+    "suffix",
+    "article",
+    "preposition",
+    "connector",
+    "subject-marker",
+    "object-pronoun",
+    "possessive-pronoun",
+    "ending",
+  ]).has(kind);
 }

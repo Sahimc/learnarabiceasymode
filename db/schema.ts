@@ -172,15 +172,19 @@ export const wordOccurrences = pgTable(
     ...timestamps,
   },
   (table) => [
+    index("word_occurrences_surah_idx").on(table.surahId),
+    index("word_occurrences_shared_teaching_idx").on(table.sharedTeachingId),
+    index("word_occurrences_root_idx").on(table.rootId),
     uniqueIndex("word_occurrences_ayah_position_idx").on(
       table.ayahId,
       table.position,
     ),
-    index("word_occurrences_arabic_idx").on(table.arabic),
   ],
 );
 
-export const translations = pgTable("translations", {
+export const translations = pgTable(
+  "translations",
+  {
   id: text("id").primaryKey(),
   scopeType: text("scope_type").notNull(),
   scopeId: text("scope_id").notNull(),
@@ -190,8 +194,17 @@ export const translations = pgTable("translations", {
   provider: text("provider"),
   license: text("license"),
   version: text("version"),
-  ...timestamps,
-});
+    ...timestamps,
+  },
+  (table) => [
+    index("translations_scope_provider_idx").on(
+      table.scopeType,
+      table.scopeId,
+      table.provider,
+      table.version,
+    ),
+  ],
+);
 
 export const transliterations = pgTable("transliterations", {
   id: text("id").primaryKey(),
@@ -214,18 +227,22 @@ export const audioReferences = pgTable("audio_references", {
   ...timestamps,
 });
 
-export const morphologyRecords = pgTable("morphology_records", {
-  id: text("id").primaryKey(),
-  occurrenceId: text("occurrence_id").notNull(),
-  provider: text("provider").notNull(),
-  rootId: text("root_id"),
-  lemmaId: text("lemma_id"),
-  partOfSpeech: text("part_of_speech"),
-  features: jsonb("features").$type<Record<string, unknown>>(),
-  segmentation: jsonb("segmentation").$type<Record<string, unknown>[]>(),
-  syntax: jsonb("syntax").$type<Record<string, unknown>>(),
-  ...timestamps,
-});
+export const morphologyRecords = pgTable(
+  "morphology_records",
+  {
+    id: text("id").primaryKey(),
+    occurrenceId: text("occurrence_id").notNull(),
+    provider: text("provider").notNull(),
+    rootId: text("root_id"),
+    lemmaId: text("lemma_id"),
+    partOfSpeech: text("part_of_speech"),
+    features: jsonb("features").$type<Record<string, unknown>>(),
+    segmentation: jsonb("segmentation").$type<Record<string, unknown>[]>(),
+    syntax: jsonb("syntax").$type<Record<string, unknown>>(),
+    ...timestamps,
+  },
+  (table) => [index("morphology_records_occurrence_idx").on(table.occurrenceId)],
+);
 
 export const teachingWordEntries = pgTable(
   "teaching_word_entries",
@@ -244,19 +261,24 @@ export const teachingWordEntries = pgTable(
     sentenceRole: text("sentence_role").notNull(),
     recognitionClue: text("recognition_clue").notNull(),
     forms: jsonb("forms").$type<Record<string, unknown>[]>().notNull(),
+    sarfReview: jsonb("sarf_review").$type<Record<string, unknown>>().notNull(),
     takeaway: text("takeaway").notNull(),
     ...timestamps,
   },
   (table) => [index("teaching_word_entries_package_idx").on(table.packageId)],
 );
 
-export const rootPictureTerms = pgTable("root_picture_terms", {
-  id: text("id").primaryKey(),
-  rootId: text("root_id").notNull(),
-  text: text("text").notNull(),
-  source: text("source").notNull().default("project-authored"),
-  ...timestamps,
-});
+export const rootPictureTerms = pgTable(
+  "root_picture_terms",
+  {
+    id: text("id").primaryKey(),
+    rootId: text("root_id").notNull(),
+    text: text("text").notNull(),
+    source: text("source").notNull().default("project-authored"),
+    ...timestamps,
+  },
+  (table) => [index("root_picture_terms_root_idx").on(table.rootId)],
+);
 
 export const recognitionClues = pgTable("recognition_clues", {
   id: text("id").primaryKey(),
@@ -265,21 +287,31 @@ export const recognitionClues = pgTable("recognition_clues", {
   ...timestamps,
 });
 
-export const formFamilies = pgTable("form_families", {
-  id: text("id").primaryKey(),
-  packageId: text("package_id").notNull(),
-  name: text("name").notNull(),
-  ...timestamps,
-});
+export const formFamilies = pgTable(
+  "form_families",
+  {
+    id: text("id").primaryKey(),
+    packageId: text("package_id").notNull(),
+    name: text("name").notNull(),
+    ...timestamps,
+  },
+  (table) => [index("form_families_name_idx").on(table.name)],
+);
 
-export const formFamilyEntries = pgTable("form_family_entries", {
-  id: text("id").primaryKey(),
-  familyId: text("family_id").notNull(),
-  form: text("form").notNull(),
-  meaning: text("meaning").notNull(),
-  difference: text("difference").notNull(),
-  ...timestamps,
-});
+export const formFamilyEntries = pgTable(
+  "form_family_entries",
+  {
+    id: text("id").primaryKey(),
+    familyId: text("family_id").notNull(),
+    form: text("form").notNull(),
+    meaning: text("meaning").notNull(),
+    difference: text("difference").notNull(),
+    relationship: text("relationship").notNull(),
+    provenance: text("provenance").notNull(),
+    ...timestamps,
+  },
+  (table) => [index("form_family_entries_family_idx").on(table.familyId)],
+);
 
 export const ayahTeachingEntries = pgTable("ayah_teaching_entries", {
   id: text("id").primaryKey(),
@@ -344,6 +376,9 @@ export const wordBreakdownParts = pgTable(
     displayText: text("display_text").notNull(),
     label: text("label").notNull(),
     meaning: text("meaning").notNull(),
+    rootStatus: text("root_status"),
+    root: text("root"),
+    rootExplanation: text("root_explanation"),
     kind: text("kind").notNull(),
   },
   (table) => [
