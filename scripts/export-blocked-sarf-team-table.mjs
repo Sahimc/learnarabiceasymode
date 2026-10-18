@@ -26,8 +26,8 @@ const unique = (values) => [...new Set(values.filter(Boolean))];
 
 const rows = audit.blockedFamilyReviewRecords.map((record, index) => {
   const occurrences = record.quranicOccurrences.map((occurrence) => {
-    const teaching = teachingById.get(`lesson:${occurrence.surah}:${occurrence.ayah}:${occurrence.position}`) ?? {};
     const word = wordsById.get(occurrence.occurrenceId) ?? {};
+    const teaching = teachingById.get(word.teachingId) ?? {};
     const forms = (teaching.forms ?? []).map((form, formIndex) =>
       `${formIndex + 1}. ${compact(form.form)} — ${compact(form.meaning)} [${compact(form.difference)}]`,
     );
@@ -35,14 +35,14 @@ const rows = audit.blockedFamilyReviewRecords.map((record, index) => {
       `${occurrence.surah}:${occurrence.ayah}:${occurrence.position}`,
       compact(word.arabic || occurrence.arabic),
       compact(teaching.meaning || occurrence.meaning),
-      `status=${compact(teaching.sarfReview?.status || occurrence.status)}`,
+      `status=${compact(teaching.sarfReview?.auditDecision || teaching.sarfReview?.status || occurrence.status)}`,
       `rows=${forms.length}`,
       forms.join(" | "),
     ].join(" — ");
     return { occurrence, teaching, display, forms };
   });
   const formCounts = unique(occurrences.map(({ forms }) => forms.length)).join(", ");
-  const currentStatuses = unique(occurrences.map(({ teaching, occurrence }) => teaching.sarfReview?.status || occurrence.status)).join(", ");
+  const currentStatuses = unique(occurrences.map(({ teaching, occurrence }) => teaching.sarfReview?.auditDecision || teaching.sarfReview?.status || occurrence.status)).join(", ");
   const currentReason = unique(occurrences.map(({ teaching, occurrence }) => teaching.sarfReview?.limitedReason || occurrence.currentReason)).join(" | ");
   const evidence = (record.evidenceRequired ?? []).map(compact).join(" | ");
   const comment = `Blocked for genuine ambiguity: the current learner display contains ${formCounts || "an unknown number of"} Ṣarf row(s) across ${occurrences.length} occurrence(s), but the evidence does not safely establish the complete teaching family. Review the actual forms shown in the display column; do not add rows merely to reach five. Resolve to full only with authoritative morphology evidence, or record a specific reviewed-limited justification.`;

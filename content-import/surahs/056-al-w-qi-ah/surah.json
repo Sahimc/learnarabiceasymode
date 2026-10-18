@@ -9,7 +9,7 @@
     "englishLabel": "The Inevitable",
     "description": "Reviewed Word Tree teaching layer for Juz 27."
   },
-  "contentVersion": "tanzil-1.1+teaching-56-v1-sarf-1.2-limited-audit",
+  "contentVersion": "tanzil-1.1+teaching-56-v1-sarf-1.2-limited-audit-family-reconciliation",
   "status": "custom-partial",
   "sourceReferences": [
     {
@@ -28309,24 +28309,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:56:31:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (56:31:1) was checked as evidence."
         },
         {
+          "form": "ٱلْمَآءُ",
+          "meaning": "[the] water",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: nominative.",
+          "relationship": "Reviewed related Qur'anic form of the موه lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:74:25. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:74:25) was checked as evidence."
+        },
+        {
+          "form": "مَآؤُهَا",
+          "meaning": "its water",
+          "difference": "A distinct vocalised form in the موه root family with its own form-specific meaning.",
+          "relationship": "Reviewed related Qur'anic form of the موه lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:18:41:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (18:41:3) was checked as evidence."
+        },
+        {
+          "form": "مَّآءٍ",
+          "meaning": "water",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; state: indefinite; case: genitive.",
+          "relationship": "Related to the م و ه root/lexeme as a real Qur'anic form. Canonical evidence: word:32:8:7.",
+          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
+        },
+        {
           "form": "مَآؤُكُمْ",
           "meaning": "your water",
-          "difference": "Compared with وَمَآءٍ, this form changes state: indefinite → not marked; case: genitive → nominative.",
-          "relationship": "Related to the م و ه root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:67:30:5.",
-          "provenance": "Codex-reviewed form for the م و ه family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          "difference": "Compared with وَمَآءٍ, this form changes number: masculine singular → not marked; state: indefinite → not marked; case: accusative → nominative; gender: not marked → masculine.",
+          "relationship": "Reviewed related Qur'anic form of the موه lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:67:30:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (67:30:5) was checked as evidence."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
-        "limitedReason": "وَمَآءٍ is a rootful noun with root م و ه. The audit found 252 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:56:31:1.",
-          "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
-          "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|موه|ماء|noun/pronoun.",
+          "Representative full occurrence: word:2:74:25.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T14:42:38.844Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root م و ه remains connected to “And water” while the form shows its grammatical role."
     },
@@ -31182,8 +31202,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَحَمِيمٍ is a rootful noun with root ح م م. The audit found 21 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:56:42:3.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -31435,8 +31455,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَحْمُومٍ is a rootful noun with root ح م م. The audit found 21 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:56:43:3.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -36338,8 +36358,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "ٱلْحَمِيمِ is a rootful noun with root ح م م. The audit found 17 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:56:54:4.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -46031,8 +46051,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "ٱلنُّجُومِ is a rootful noun with root ن ج م. The audit found 12 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:56:75:4.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -53360,8 +53380,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "حَمِيمٍ is a rootful noun with root ح م م. The audit found 15 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:56:93:3.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",

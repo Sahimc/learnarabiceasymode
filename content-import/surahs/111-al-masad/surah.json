@@ -9,8 +9,8 @@
     "englishLabel": "The Palm Fibre",
     "description": "Complete custom Word Tree teaching for all five āyāt."
   },
-  "contentVersion": "tanzil-1.1+teaching-111-v1-sarf-1.2-limited-audit",
-  "status": "custom-partial",
+  "contentVersion": "tanzil-1.1+teaching-111-v1-sarf-1.2-limited-audit-family-reconciliation",
+  "status": "custom-complete",
   "sourceReferences": [
     {
       "provider": "tanzil",
@@ -2149,6 +2149,20 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:111:4:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (111:4:3) was checked as evidence."
         },
         {
+          "form": "حَطَبًا",
+          "meaning": "firewood",
+          "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the حطب lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:72:15:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (72:15:5) was checked as evidence."
+        },
+        {
+          "form": "حَطَبَ",
+          "meaning": "he gathered firewood",
+          "difference": "Form I perfect; it states the completed act of gathering or collecting firewood.",
+          "relationship": "Form I perfect of the ح ط ب root, the action from which the firewood noun is understood.",
+          "provenance": "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form I morphology."
+        },
+        {
           "form": "حَاطِبٌ",
           "meaning": "one who gathers firewood",
           "difference": "Active participle; it describes the person performing the gathering action.",
@@ -2161,26 +2175,18 @@
           "difference": "Intensive occupational noun; the doubled middle radical identifies one habitually engaged in collecting or selling firewood.",
           "relationship": "A genuine intensive/occupational derivative of the ح ط ب root, attested in Arabic lexicon evidence.",
           "provenance": "Codex-authored after review of the approved project root meaning and Arabic Academy lexicon evidence."
-        },
-        {
-          "form": "احْتَطَبَ",
-          "meaning": "he gathered firewood",
-          "difference": "Form VIII perfect; the derived pattern presents the act of going out and gathering firewood.",
-          "relationship": "A genuine Form VIII derived verb of the ح ط ب root, related to collecting the firewood named by الْحَطَبِ.",
-          "provenance": "Codex-authored after review of the approved project root meaning, Arabic Academy lexicon evidence and standard Arabic Form VIII morphology."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
-        "limitedReason": "الْحَطَبِ is a rootful noun with root ح ط ب. The audit found 6 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:111:4:3.",
-          "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
-          "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|حطب|حطب|noun/pronoun.",
+          "Representative full occurrence: word:72:15:5.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T14:42:38.844Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The article adds ‘the,’ while the stem carries the meaning of firewood."
     },

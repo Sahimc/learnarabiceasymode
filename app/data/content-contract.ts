@@ -256,6 +256,7 @@ const UNREVIEWED_SARF_REVIEW_PATTERN =
 export const SarfReviewSchema = z
   .object({
     status: SarfFamilyStatusSchema,
+    familyScope: z.string().min(1).optional(),
     limitedReason: z.string().min(1).optional(),
     auditDecision: SarfAuditDecisionSchema.optional(),
     provenance: z.array(z.string().min(1)).min(1),

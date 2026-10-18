@@ -9,7 +9,7 @@
     "englishLabel": "The Moon",
     "description": "Reviewed Word Tree teaching layer for Juz 27."
   },
-  "contentVersion": "tanzil-1.1+teaching-54-v1-sarf-1.2-limited-audit",
+  "contentVersion": "tanzil-1.1+teaching-54-v1-sarf-1.2-limited-audit-family-reconciliation",
   "status": "custom-partial",
   "sourceReferences": [
     {
@@ -27610,40 +27610,20 @@
           "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: nominative.",
           "relationship": "Current Qur'anic occurrence of the عود lexical family in this āyah.",
           "provenance": "Codex review of canonical Qur'anic occurrence word:54:18:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (54:18:2) was checked as evidence."
-        },
-        {
-          "form": "يَعُودُونَ",
-          "meaning": "go back",
-          "difference": "Compared with عَادٌ, this form changes partofspeech: noun/pronoun → verb; case: nominative → not marked; tense: not marked → imperfect verb.",
-          "relationship": "Related to the ع و د root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:58:3:6.",
-          "provenance": "Codex-reviewed form for the ع و د family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
-        },
-        {
-          "form": "يُعِيدُكُمْ",
-          "meaning": "He will return you",
-          "difference": "Compared with عَادٌ, this form changes partofspeech: noun/pronoun → verb; case: nominative → not marked; tense: not marked → imperfect verb.",
-          "relationship": "Related to the ع و د root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:71:18:2.",
-          "provenance": "Codex-reviewed form for the ع و د family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
-        },
-        {
-          "form": "وَيُعِيدُ",
-          "meaning": "and repeats",
-          "difference": "Compared with عَادٌ, this form changes partofspeech: noun/pronoun → verb; case: nominative → not marked; tense: not marked → imperfect verb.",
-          "relationship": "Related to the ع و د root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:85:13:4.",
-          "provenance": "Codex-reviewed form for the ع و د family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         }
       ],
       "sarfReview": {
         "status": "limited",
-        "limitedReason": "عَادٌ is a proper noun associated with عود; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
+        "familyScope": "proper-name-aad",
+        "limitedReason": "This occurrence is the proper name ʿĀd. The shared ع و د root is also used by return verbs, but those are a different lexeme and must not be taught as forms of this name; case/clitic variants are not counted as additional Ṣarf forms.",
         "auditDecision": "confirmed-limited",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-8a27467974d8b17e reviewed word:54:18:2.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (54:18:2) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:27:49.743Z separated this occurrence into reviewed scope proper-name-aad.",
+          "The shared root/lemma identity was checked against the actual occurrence meaning and proper-name use.",
+          "Only the genuine current proper-name form is retained; case, clitic and unrelated lexical forms are not counted as Ṣarf rows."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T19:44:54.475Z"
+        "reviewedAt": "2026-10-18T20:27:49.743Z"
       },
       "takeaway": "The root ع و د remains connected to “Aad” while the form shows its grammatical role."
     },
@@ -31717,8 +31697,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَسُعُرٍ is a rootful noun with root س ع ر. The audit found 23 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:54:24:10.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -32527,8 +32507,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "أَشِرٌ is a rootful noun with root أ ش ر. The audit found 6 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:54:25:9.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -33021,8 +33001,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "ٱلْأَشِرُ is a rootful noun with root أ ش ر. The audit found 6 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:54:26:5.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -45671,8 +45651,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَسُعُرٍ is a rootful noun with root س ع ر. The audit found 23 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:54:47:5.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",

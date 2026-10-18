@@ -98,6 +98,12 @@
       "safeguard": "Treat provider roots as evidence, not an automatic teaching answer. When the lesson has been explicitly reviewed as rootless and every breakdown component is marked rootless with a category-specific explanation, allow the provider root to remain evidence without promoting it to a lexical lesson root. Fail closed when the rootless decision is not explicit or any lexical component is present."
     },
     {
+      "id": "sarf-family-identity-sense-collision",
+      "problem": "A root, provider lemma and part-of-speech key can merge a proper name, a common noun or a distinct lexical sense with a related derived family. One occurrence then receives a full family that is linguistically valid for a different sense, while other occurrences remain limited or blocked.",
+      "safeguard": "Review every mixed full/limited/blocked family occurrence by occurrence. Distinguish the actual lexeme and sense from the shared root, and record a stable reviewed familyScope when the same provider identity contains separate proper-name, common-lexeme or model families. Keep the current Qur'anic form first, propagate only a validated five-form family within the same scope, revoke defective full decisions, and keep unresolved scope conflicts blocked with a durable review record. Never treat a shared root or provider lemma alone as proof that forms belong in one learner family.",
+      "evidence": "Mixed-family reconciliation report, familyScope metadata, occurrence-level before/after ledger records and final family audit."
+    },
+    {
       "id": "provider-root-needs-reviewed-override",
       "problem": "A provider assigns a lexical root that conflicts with the reviewed Arabic root family, often because a rare or quadriliteral form is conflated with a visually similar root. Blind provider agreement would preserve the wrong root and teach unrelated Ṣarf forms.",
       "safeguard": "Treat provider roots as evidence rather than an automatic answer. When Codex independently establishes a different root from canonical Arabic, approved lexicons and the form's morphology, record an explicit reviewed root override with the provider root, reviewed root, rationale and provenance. Import and audit may accept the mismatch only when that override is present; every other lexical mismatch fails closed."

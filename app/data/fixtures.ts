@@ -10,6 +10,7 @@ export type LessonForm = {
 
 export type SarfReview = {
   status: "full" | "limited";
+  familyScope?: string;
   limitedReason?: string;
   auditDecision?:
     | "confirmed-limited"

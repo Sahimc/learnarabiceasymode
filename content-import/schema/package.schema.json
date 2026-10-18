@@ -123,6 +123,7 @@
       "required": ["status", "provenance", "reviewedBy", "reviewedAt"],
       "properties": {
         "status": { "enum": ["full", "limited"] },
+        "familyScope": { "type": "string", "minLength": 1 },
         "limitedReason": { "type": "string", "minLength": 1 },
         "auditDecision": {
           "enum": [

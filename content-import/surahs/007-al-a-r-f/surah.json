@@ -9,7 +9,7 @@
     "englishLabel": "The Heights",
     "description": "Reviewed Word Tree teaching layer for Surah 7."
   },
-  "contentVersion": "tanzil-1.1+teaching-7-v1-sarf-1.2-limited-audit",
+  "contentVersion": "tanzil-1.1+teaching-7-v1-sarf-1.2-limited-audit-family-reconciliation",
   "status": "custom-partial",
   "sourceReferences": [
     {
@@ -163209,8 +163209,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "حَرَجٌ is a rootful noun with root ح ر ج. The audit found 6 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:2:8.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -165761,8 +165761,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "قَآئِلُونَ is a rootful noun with root ق ي ل. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:4:10.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -178029,8 +178029,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "مَذْءُومًا is a rootful noun with root ذ أ م. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:18:4.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -178091,8 +178091,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "مَّدْحُورًا is a rootful noun with root د ح ر. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:18:5.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -179156,38 +179156,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:19:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:19:5) was checked as evidence."
         },
         {
-          "form": "جَنَّـٰتٌ",
+          "form": "جَنَّـٰتٍ",
           "meaning": "(will be) Gardens",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; number: feminine plural; state: indefinite; case: nominative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:85:11:7.",
+          "difference": "Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the جنن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:25:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:25:8) was checked as evidence."
+        },
+        {
+          "form": "جَنَّ",
+          "meaning": "covered",
+          "difference": "Compared with ٱلْجَنَّةَ, this form changes number: feminine plural → not marked; state: indefinite → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Reviewed related Qur'anic form of the ج ن ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:6:76:2."
+        },
+        {
+          "form": "جِنَّةٌۢ",
+          "meaning": "(is) madness",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: nominative.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:8:7.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
-          "form": "مَجْنُونٌ",
-          "meaning": "a madman",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; state: indefinite; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:39:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلْجِنَّ",
+          "form": "ٱلْجِنِّ",
           "meaning": "the jinn",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: accusative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:56:3.",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: genitive.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:12:12.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "ٱلْجَنَّةَ is a proper noun associated with جنن; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:19:5.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:19:5) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|جنن|جنة|noun/pronoun.",
+          "Representative full occurrence: word:2:25:8.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ج ن ن remains connected to “(in) the Garden” while the form shows its grammatical role."
     },
@@ -183754,8 +183760,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَطَفِقَا is a rootful verb with root ط ف ق. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:22:9.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -183836,8 +183842,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَخْصِفَانِ is a rootful verb with root خ ص ف. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:22:10.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -184049,8 +184055,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَرَقِ is a rootful noun with root و ر ق. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:22:13.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -184129,38 +184135,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:22:14. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:22:14) was checked as evidence."
         },
         {
-          "form": "جَنَّـٰتٌ",
+          "form": "جَنَّـٰتٍ",
           "meaning": "(will be) Gardens",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; number: feminine plural; state: indefinite; case: nominative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:85:11:7.",
+          "difference": "Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the جنن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:25:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:25:8) was checked as evidence."
+        },
+        {
+          "form": "جَنَّ",
+          "meaning": "covered",
+          "difference": "Compared with ٱلْجَنَّةِ, this form changes number: feminine plural → not marked; state: indefinite → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Reviewed related Qur'anic form of the ج ن ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:6:76:2."
+        },
+        {
+          "form": "جِنَّةٌۢ",
+          "meaning": "(is) madness",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: nominative.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:8:7.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
-          "form": "مَجْنُونٌ",
-          "meaning": "a madman",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; state: indefinite; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:39:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلْجِنَّ",
+          "form": "ٱلْجِنِّ",
           "meaning": "the jinn",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: accusative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:56:3.",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: genitive.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:12:12.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "ٱلْجَنَّةِ is a proper noun associated with جنن; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:22:14.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:22:14) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|جنن|جنة|noun/pronoun.",
+          "Representative full occurrence: word:2:25:8.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ج ن ن remains connected to “(of) the Garden” while the form shows its grammatical role."
     },
@@ -186800,19 +186812,46 @@
           "difference": "Current Qur'anic occurrence; pattern: Form 1; mood: imperative; verb form: Form 1.",
           "relationship": "Current Qur'anic occurrence of the هبط lexical family in this āyah.",
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:24:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:24:2) was checked as evidence."
+        },
+        {
+          "form": "يَهْبِطُ",
+          "meaning": "fall down",
+          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Reviewed related Qur'anic form of the هبط lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:74:29. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:74:29) was checked as evidence."
+        },
+        {
+          "form": "فَٱهْبِطْ",
+          "meaning": "Then go down",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: verb; mood: imperative; person: second-person masculine singular; verb form: Form 1.",
+          "relationship": "Related to the ه ب ط root/lexeme as a real Qur'anic form. Canonical evidence: word:7:13:2.",
+          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
+        },
+        {
+          "form": "ٱهْبِطَا",
+          "meaning": "Go down",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: verb; mood: imperative; verb form: Form 1.",
+          "relationship": "Related to the ه ب ط root/lexeme as a real Qur'anic form. Canonical evidence: word:20:123:2.",
+          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
+        },
+        {
+          "form": "ٱهْبِطْ",
+          "meaning": "Go down",
+          "difference": "Compared with ٱهْبِطُوا۟, this form changes tense: imperfect verb → not marked; person: third-person masculine singular → second-person masculine singular; mood: not marked → imperative.",
+          "relationship": "Reviewed related Qur'anic form of the هبط lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:11:48:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (11:48:3) was checked as evidence."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
-        "limitedReason": "ٱهْبِطُوا۟ is a rootful verb with root ه ب ط. The audit found 9 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:24:2.",
-          "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
-          "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|هبط|يهبط|verb.",
+          "Representative full occurrence: word:2:74:29.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T14:42:38.844Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ه ب ط remains connected to “Get down” while the form shows its grammatical role."
     },
@@ -189185,8 +189224,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَرِيشًا is a rootful noun with root ر ي ش. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:26:9.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -190992,38 +191031,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:27:10. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:27:10) was checked as evidence."
         },
         {
-          "form": "جَنَّـٰتٌ",
+          "form": "جَنَّـٰتٍ",
           "meaning": "(will be) Gardens",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; number: feminine plural; state: indefinite; case: nominative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:85:11:7.",
+          "difference": "Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the جنن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:25:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:25:8) was checked as evidence."
+        },
+        {
+          "form": "جَنَّ",
+          "meaning": "covered",
+          "difference": "Compared with ٱلْجَنَّةِ, this form changes number: feminine plural → not marked; state: indefinite → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Reviewed related Qur'anic form of the ج ن ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:6:76:2."
+        },
+        {
+          "form": "جِنَّةٌۢ",
+          "meaning": "(is) madness",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: nominative.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:8:7.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
-          "form": "مَجْنُونٌ",
-          "meaning": "a madman",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; state: indefinite; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:39:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلْجِنَّ",
+          "form": "ٱلْجِنِّ",
           "meaning": "the jinn",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: accusative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:56:3.",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: genitive.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:12:12.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "ٱلْجَنَّةِ is a proper noun associated with جنن; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:27:10.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:27:10) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|جنن|جنة|noun/pronoun.",
+          "Representative full occurrence: word:2:25:8.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ج ن ن remains connected to “Paradise” while the form shows its grammatical role."
     },
@@ -217367,38 +217412,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:40:14. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:40:14) was checked as evidence."
         },
         {
-          "form": "جَنَّـٰتٌ",
+          "form": "جَنَّـٰتٍ",
           "meaning": "(will be) Gardens",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; number: feminine plural; state: indefinite; case: nominative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:85:11:7.",
+          "difference": "Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the جنن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:25:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:25:8) was checked as evidence."
+        },
+        {
+          "form": "جَنَّ",
+          "meaning": "covered",
+          "difference": "Compared with ٱلْجَنَّةَ, this form changes number: feminine plural → not marked; state: indefinite → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Reviewed related Qur'anic form of the ج ن ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:6:76:2."
+        },
+        {
+          "form": "جِنَّةٌۢ",
+          "meaning": "(is) madness",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: nominative.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:8:7.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
-          "form": "مَجْنُونٌ",
-          "meaning": "a madman",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; state: indefinite; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:39:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلْجِنَّ",
+          "form": "ٱلْجِنِّ",
           "meaning": "the jinn",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: accusative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:56:3.",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: genitive.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:12:12.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "ٱلْجَنَّةَ is a proper noun associated with جنن; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:40:14.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:40:14) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|جنن|جنة|noun/pronoun.",
+          "Representative full occurrence: word:2:25:8.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ج ن ن remains connected to “Paradise” while the form shows its grammatical role."
     },
@@ -217880,8 +217931,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "ٱلْخِيَاطِ is a rootful noun with root خ ي ط. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:40:20.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -220190,38 +220241,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:42:12. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:42:12) was checked as evidence."
         },
         {
-          "form": "جَنَّـٰتٌ",
+          "form": "جَنَّـٰتٍ",
           "meaning": "(will be) Gardens",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; number: feminine plural; state: indefinite; case: nominative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:85:11:7.",
+          "difference": "Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the جنن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:25:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:25:8) was checked as evidence."
+        },
+        {
+          "form": "جَنَّ",
+          "meaning": "covered",
+          "difference": "Compared with ٱلْجَنَّةِ, this form changes number: feminine plural → not marked; state: indefinite → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Reviewed related Qur'anic form of the ج ن ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:6:76:2."
+        },
+        {
+          "form": "جِنَّةٌۢ",
+          "meaning": "(is) madness",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: nominative.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:8:7.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
-          "form": "مَجْنُونٌ",
-          "meaning": "a madman",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; state: indefinite; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:39:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلْجِنَّ",
+          "form": "ٱلْجِنِّ",
           "meaning": "the jinn",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: accusative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:56:3.",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: genitive.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:12:12.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "ٱلْجَنَّةِ is a proper noun associated with جنن; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:42:12.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:42:12) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|جنن|جنة|noun/pronoun.",
+          "Representative full occurrence: word:2:25:8.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ج ن ن remains connected to “(of) Paradise” while the form shows its grammatical role."
     },
@@ -223369,38 +223426,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:43:32. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:43:32) was checked as evidence."
         },
         {
-          "form": "جَنَّـٰتٌ",
+          "form": "جَنَّـٰتٍ",
           "meaning": "(will be) Gardens",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; number: feminine plural; state: indefinite; case: nominative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:85:11:7.",
+          "difference": "Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the جنن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:25:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:25:8) was checked as evidence."
+        },
+        {
+          "form": "جَنَّ",
+          "meaning": "covered",
+          "difference": "Compared with ٱلْجَنَّةُ, this form changes number: feminine plural → not marked; state: indefinite → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Reviewed related Qur'anic form of the ج ن ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:6:76:2."
+        },
+        {
+          "form": "جِنَّةٌۢ",
+          "meaning": "(is) madness",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: nominative.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:8:7.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
-          "form": "مَجْنُونٌ",
-          "meaning": "a madman",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; state: indefinite; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:39:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلْجِنَّ",
+          "form": "ٱلْجِنِّ",
           "meaning": "the jinn",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: accusative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:56:3.",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: genitive.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:12:12.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "ٱلْجَنَّةُ is a proper noun associated with جنن; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:43:32.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:43:32) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|جنن|جنة|noun/pronoun.",
+          "Representative full occurrence: word:2:25:8.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ج ن ن remains connected to “(is) Paradise” while the form shows its grammatical role."
     },
@@ -224094,38 +224157,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:44:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:44:3) was checked as evidence."
         },
         {
-          "form": "جَنَّـٰتٌ",
+          "form": "جَنَّـٰتٍ",
           "meaning": "(will be) Gardens",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; number: feminine plural; state: indefinite; case: nominative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:85:11:7.",
+          "difference": "Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the جنن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:25:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:25:8) was checked as evidence."
+        },
+        {
+          "form": "جَنَّ",
+          "meaning": "covered",
+          "difference": "Compared with ٱلْجَنَّةِ, this form changes number: feminine plural → not marked; state: indefinite → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Reviewed related Qur'anic form of the ج ن ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:6:76:2."
+        },
+        {
+          "form": "جِنَّةٌۢ",
+          "meaning": "(is) madness",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: nominative.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:8:7.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
-          "form": "مَجْنُونٌ",
-          "meaning": "a madman",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; state: indefinite; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:39:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلْجِنَّ",
+          "form": "ٱلْجِنِّ",
           "meaning": "the jinn",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: accusative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:56:3.",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: genitive.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:12:12.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "ٱلْجَنَّةِ is a proper noun associated with جنن; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:44:3.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:44:3) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|جنن|جنة|noun/pronoun.",
+          "Representative full occurrence: word:2:25:8.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ج ن ن remains connected to “(of) Paradise” while the form shows its grammatical role."
     },
@@ -226936,8 +227005,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "عِوَجًا is a rootful noun with root ع و ج. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:45:7.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -228282,38 +228351,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:46:11. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:46:11) was checked as evidence."
         },
         {
-          "form": "جَنَّـٰتٌ",
+          "form": "جَنَّـٰتٍ",
           "meaning": "(will be) Gardens",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; number: feminine plural; state: indefinite; case: nominative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:85:11:7.",
+          "difference": "Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the جنن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:25:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:25:8) was checked as evidence."
+        },
+        {
+          "form": "جَنَّ",
+          "meaning": "covered",
+          "difference": "Compared with ٱلْجَنَّةِ, this form changes number: feminine plural → not marked; state: indefinite → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Reviewed related Qur'anic form of the ج ن ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:6:76:2."
+        },
+        {
+          "form": "جِنَّةٌۢ",
+          "meaning": "(is) madness",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: nominative.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:8:7.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
-          "form": "مَجْنُونٌ",
-          "meaning": "a madman",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; state: indefinite; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:39:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلْجِنَّ",
+          "form": "ٱلْجِنِّ",
           "meaning": "the jinn",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: accusative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:56:3.",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: genitive.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:12:12.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "ٱلْجَنَّةِ is a proper noun associated with جنن; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:46:11.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:46:11) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|جنن|جنة|noun/pronoun.",
+          "Representative full occurrence: word:2:25:8.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ج ن ن remains connected to “(of) Paradise” while the form shows its grammatical role."
     },
@@ -232297,38 +232372,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:49:9. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:49:9) was checked as evidence."
         },
         {
-          "form": "جَنَّـٰتٌ",
+          "form": "جَنَّـٰتٍ",
           "meaning": "(will be) Gardens",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; number: feminine plural; state: indefinite; case: nominative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:85:11:7.",
+          "difference": "Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the جنن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:25:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:25:8) was checked as evidence."
+        },
+        {
+          "form": "جَنَّ",
+          "meaning": "covered",
+          "difference": "Compared with ٱلْجَنَّةَ, this form changes number: feminine plural → not marked; state: indefinite → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Reviewed related Qur'anic form of the ج ن ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:6:76:2."
+        },
+        {
+          "form": "جِنَّةٌۢ",
+          "meaning": "(is) madness",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: nominative.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:8:7.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
-          "form": "مَجْنُونٌ",
-          "meaning": "a madman",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; state: indefinite; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:39:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلْجِنَّ",
+          "form": "ٱلْجِنِّ",
           "meaning": "the jinn",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: accusative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:56:3.",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: genitive.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:12:12.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "ٱلْجَنَّةَ is a proper noun associated with جنن; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:49:9.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:49:9) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|جنن|جنة|noun/pronoun.",
+          "Representative full occurrence: word:2:25:8.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ج ن ن remains connected to “Paradise” while the form shows its grammatical role."
     },
@@ -233276,38 +233357,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:50:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:50:5) was checked as evidence."
         },
         {
-          "form": "جَنَّـٰتٌ",
+          "form": "جَنَّـٰتٍ",
           "meaning": "(will be) Gardens",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; number: feminine plural; state: indefinite; case: nominative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:85:11:7.",
+          "difference": "Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the جنن lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:25:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:25:8) was checked as evidence."
+        },
+        {
+          "form": "جَنَّ",
+          "meaning": "covered",
+          "difference": "Compared with ٱلْجَنَّةِ, this form changes number: feminine plural → not marked; state: indefinite → not marked; case: accusative → not marked; partofspeech: noun/pronoun → verb.",
+          "relationship": "Reviewed related Qur'anic form of the ج ن ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:6:76:2."
+        },
+        {
+          "form": "جِنَّةٌۢ",
+          "meaning": "(is) madness",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: nominative.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:8:7.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
-          "form": "مَجْنُونٌ",
-          "meaning": "a madman",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; state: indefinite; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:39:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلْجِنَّ",
+          "form": "ٱلْجِنِّ",
           "meaning": "the jinn",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: accusative.",
-          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:51:56:3.",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; case: genitive.",
+          "relationship": "Related to the ج ن ن root/lexeme as a real Qur'anic form. Canonical evidence: word:34:12:12.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "ٱلْجَنَّةِ is a proper noun associated with جنن; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:50:5.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:50:5) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|جنن|جنة|noun/pronoun.",
+          "Representative full occurrence: word:2:25:8.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ج ن ن remains connected to “(of) Paradise” while the form shows its grammatical role."
     },
@@ -236449,8 +236536,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَجْحَدُونَ is a rootful verb with root ج ح د. The audit found 5 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:51:19.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -242327,8 +242414,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَطْلُبُهُۥ is a rootful verb with root ط ل ب. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:54:18.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -242389,8 +242476,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "حَثِيثًا is a rootful noun with root ح ث ث. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:54:19.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -242735,8 +242822,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَٱلنُّجُومَ is a rootful noun with root ن ج م. The audit found 14 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:54:22.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -249585,8 +249672,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "نَكِدًا is a rootful noun with root ن ك د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:58:12.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -257179,40 +257266,20 @@
           "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; state: indefinite; case: genitive.",
           "relationship": "Current Qur'anic occurrence of the عود lexical family in this āyah.",
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:65:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:65:2) was checked as evidence."
-        },
-        {
-          "form": "وَيُعِيدُ",
-          "meaning": "and repeats",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 4; part of speech: verb; tense: imperfect verb; person: third-person masculine singular; verb form: Form 4.",
-          "relationship": "Related to the ع و د root/lexeme as a real Qur'anic form. Canonical evidence: word:85:13:4.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "عَادًا",
-          "meaning": "Aad",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; partOfSpeech: proper name; case: accusative.",
-          "relationship": "Related to the ع و د root/lexeme as a real Qur'anic form. Canonical evidence: word:53:50:3.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "يَعُودُونَ",
-          "meaning": "go back",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: verb; tense: imperfect verb; verb form: Form 1.",
-          "relationship": "Related to the ع و د root/lexeme as a real Qur'anic form. Canonical evidence: word:58:3:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
         "status": "limited",
-        "limitedReason": "عَادٍ is a proper noun associated with عود; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
+        "familyScope": "proper-name-aad",
+        "limitedReason": "This occurrence is the proper name ʿĀd. The shared ع و د root is also used by return verbs, but those are a different lexeme and must not be taught as forms of this name; case/clitic variants are not counted as additional Ṣarf forms.",
         "auditDecision": "confirmed-limited",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:65:2.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:65:2) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:30:11.653Z separated this occurrence into reviewed scope proper-name-aad.",
+          "The shared root/lemma identity was checked against the actual occurrence meaning and proper-name use.",
+          "Only the genuine current proper-name form is retained; case, clitic and unrelated lexical forms are not counted as Ṣarf rows."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:30:11.653Z"
       },
       "takeaway": "The root ع و د remains connected to “Aad” while the form shows its grammatical role."
     },
@@ -265876,8 +265943,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "رِجْسٌ is a rootful noun with root ر ج س. The audit found 7 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:71:7.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -268969,46 +269036,20 @@
           "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: accusative.",
           "relationship": "Current Qur'anic occurrence of the صلح lexical family in this āyah.",
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:73:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:73:4) was checked as evidence."
-        },
-        {
-          "form": "يُصْلِحْ",
-          "meaning": "He will amend",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 4; part of speech: verb; tense: imperfect verb; person: third-person masculine singular; verb form: Form 4.",
-          "relationship": "Related to the ص ل ح root/lexeme as a real Qur'anic form. Canonical evidence: word:33:71:1.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلصَّـٰلِحَـٰتِ",
-          "meaning": "righteous deeds",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; number: feminine plural; case: genitive; verb form: Form 1.",
-          "relationship": "Related to the ص ل ح root/lexeme as a real Qur'anic form. Canonical evidence: word:32:19:5.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلصَّـٰلِحُ",
-          "meaning": "righteous",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ص ل ح root/lexeme as a real Qur'anic form. Canonical evidence: word:35:10:13.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "فَأَصْلَحَ",
-          "meaning": "then reconciles",
-          "difference": "Compared with صَـٰلِحًا, this form changes gender: masculine → not marked; state: indefinite → not marked; case: accusative → not marked; verbform: Form 1 → Form 4.",
-          "relationship": "Current Qur'anic occurrence of the ص ل ح root/lexeme.",
-          "provenance": "Canonical Qur'anic occurrence word:2:182:8."
         }
       ],
       "sarfReview": {
-        "status": "full",
-        "auditDecision": "upgraded-to-full",
+        "status": "limited",
+        "familyScope": "proper-name-salih",
+        "limitedReason": "This occurrence is the proper name Ṣāliḥ. The adjective and righteous-deed forms from ص ل ح are a different lexical use; they must not be presented as forms of the personal name.",
+        "auditDecision": "confirmed-limited",
         "provenance": [
-          "Mixed-family repair 2026-10-18T01:06:07.218Z matched this occurrence to the reviewed full family صلح|صالح|noun/pronoun.",
-          "Representative full occurrence: word:2:62:14.",
-          "The representative family supplied four distinct reviewed related forms; shell-only and duplicate forms were excluded."
+          "Mixed-family reconciliation 2026-10-18T20:30:11.653Z separated this occurrence into reviewed scope proper-name-salih.",
+          "The shared root/lemma identity was checked against the actual occurrence meaning and proper-name use.",
+          "Only the genuine current proper-name form is retained; case, clitic and unrelated lexical forms are not counted as Ṣarf rows."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T01:06:07.218Z"
+        "reviewedAt": "2026-10-18T20:30:11.653Z"
       },
       "takeaway": "The root ص ل ح remains connected to “Salih” while the form shows its grammatical role."
     },
@@ -271686,8 +271727,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "أَلِيمٌ is a rootful noun with root أ ل م. The audit found 58 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:73:34.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -272280,40 +272321,20 @@
           "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; state: indefinite; case: genitive.",
           "relationship": "Current Qur'anic occurrence of the عود lexical family in this āyah.",
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:74:7. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:74:7) was checked as evidence."
-        },
-        {
-          "form": "وَيُعِيدُ",
-          "meaning": "and repeats",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 4; part of speech: verb; tense: imperfect verb; person: third-person masculine singular; verb form: Form 4.",
-          "relationship": "Related to the ع و د root/lexeme as a real Qur'anic form. Canonical evidence: word:85:13:4.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "عَادًا",
-          "meaning": "Aad",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; partOfSpeech: proper name; case: accusative.",
-          "relationship": "Related to the ع و د root/lexeme as a real Qur'anic form. Canonical evidence: word:53:50:3.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "يَعُودُونَ",
-          "meaning": "go back",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: verb; tense: imperfect verb; verb form: Form 1.",
-          "relationship": "Related to the ع و د root/lexeme as a real Qur'anic form. Canonical evidence: word:58:3:6.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
         "status": "limited",
-        "limitedReason": "عَادٍ is a proper noun associated with عود; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
+        "familyScope": "proper-name-aad",
+        "limitedReason": "This occurrence is the proper name ʿĀd. The shared ع و د root is also used by return verbs, but those are a different lexeme and must not be taught as forms of this name; case/clitic variants are not counted as additional Ṣarf forms.",
         "auditDecision": "confirmed-limited",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:74:7.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:74:7) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:30:11.653Z separated this occurrence into reviewed scope proper-name-aad.",
+          "The shared root/lemma identity was checked against the actual occurrence meaning and proper-name use.",
+          "Only the genuine current proper-name form is retained; case, clitic and unrelated lexical forms are not counted as Ṣarf rows."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:30:11.653Z"
       },
       "takeaway": "The root ع و د remains connected to “Aad” while the form shows its grammatical role."
     },
@@ -272855,8 +272876,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "سُهُولِهَا is a rootful noun with root س ه ل. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:74:13.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -273045,8 +273066,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَتَنْحِتُونَ is a rootful verb with root ن ح ت. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:74:15.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -273704,8 +273725,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "تَعْثَوْا۟ is a rootful verb with root ع ث و. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:74:22.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -275187,46 +275208,20 @@
           "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: accusative.",
           "relationship": "Current Qur'anic occurrence of the صلح lexical family in this āyah.",
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:75:14. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:75:14) was checked as evidence."
-        },
-        {
-          "form": "يُصْلِحْ",
-          "meaning": "He will amend",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 4; part of speech: verb; tense: imperfect verb; person: third-person masculine singular; verb form: Form 4.",
-          "relationship": "Related to the ص ل ح root/lexeme as a real Qur'anic form. Canonical evidence: word:33:71:1.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلصَّـٰلِحَـٰتِ",
-          "meaning": "righteous deeds",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; number: feminine plural; case: genitive; verb form: Form 1.",
-          "relationship": "Related to the ص ل ح root/lexeme as a real Qur'anic form. Canonical evidence: word:32:19:5.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلصَّـٰلِحُ",
-          "meaning": "righteous",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; case: nominative; verb form: Form 1.",
-          "relationship": "Related to the ص ل ح root/lexeme as a real Qur'anic form. Canonical evidence: word:35:10:13.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "فَأَصْلَحَ",
-          "meaning": "then reconciles",
-          "difference": "Compared with صَـٰلِحًا, this form changes gender: masculine → not marked; state: indefinite → not marked; case: accusative → not marked; verbform: Form 1 → Form 4.",
-          "relationship": "Current Qur'anic occurrence of the ص ل ح root/lexeme.",
-          "provenance": "Canonical Qur'anic occurrence word:2:182:8."
         }
       ],
       "sarfReview": {
-        "status": "full",
-        "auditDecision": "upgraded-to-full",
+        "status": "limited",
+        "familyScope": "proper-name-salih",
+        "limitedReason": "This occurrence is the proper name Ṣāliḥ. The adjective and righteous-deed forms from ص ل ح are a different lexical use; they must not be presented as forms of the personal name.",
+        "auditDecision": "confirmed-limited",
         "provenance": [
-          "Mixed-family repair 2026-10-18T01:06:07.218Z matched this occurrence to the reviewed full family صلح|صالح|noun/pronoun.",
-          "Representative full occurrence: word:2:62:14.",
-          "The representative family supplied four distinct reviewed related forms; shell-only and duplicate forms were excluded."
+          "Mixed-family reconciliation 2026-10-18T20:30:11.653Z separated this occurrence into reviewed scope proper-name-salih.",
+          "The shared root/lemma identity was checked against the actual occurrence meaning and proper-name use.",
+          "Only the genuine current proper-name form is retained; case, clitic and unrelated lexical forms are not counted as Ṣarf rows."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T01:06:07.218Z"
+        "reviewedAt": "2026-10-18T20:30:11.653Z"
       },
       "takeaway": "The root ص ل ح remains connected to “Salih” while the form shows its grammatical role."
     },
@@ -277513,40 +277508,20 @@
           "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: accusative.",
           "relationship": "Current Qur'anic occurrence of the صلح lexical family in this āyah.",
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:77:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:77:8) was checked as evidence."
-        },
-        {
-          "form": "ٱلصَّـٰلِحَـٰتِ",
-          "meaning": "the righteous deeds",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; number: feminine plural; case: accusative; verb form: Form 1.",
-          "relationship": "Related to the ص ل ح root/lexeme as a real Qur'anic form. Canonical evidence: word:85:11:5.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلصَّـٰلِحِينَ",
-          "meaning": "the righteous",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; number: masculine plural; case: genitive; verb form: Form 1.",
-          "relationship": "Related to the ص ل ح root/lexeme as a real Qur'anic form. Canonical evidence: word:63:10:21.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "صَـٰلِحًا",
-          "meaning": "righteous deeds",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; state: indefinite; case: accusative; verb form: Form 1.",
-          "relationship": "Related to the ص ل ح root/lexeme as a real Qur'anic form. Canonical evidence: word:64:9:12.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
         "status": "limited",
-        "limitedReason": "يَـٰصَـٰلِحُ is a proper noun associated with صلح; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 4 genuine reviewed forms.",
+        "familyScope": "proper-name-salih",
+        "limitedReason": "This occurrence is the proper name Ṣāliḥ. The adjective and righteous-deed forms from ص ل ح are a different lexical use; they must not be presented as forms of the personal name.",
         "auditDecision": "confirmed-limited",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:77:8.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:77:8) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:30:11.653Z separated this occurrence into reviewed scope proper-name-salih.",
+          "The shared root/lemma identity was checked against the actual occurrence meaning and proper-name use.",
+          "Only the genuine current proper-name form is retained; case, clitic and unrelated lexical forms are not counted as Ṣarf rows."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:30:11.653Z"
       },
       "takeaway": "The root ص ل ح remains connected to “O Salih” while the form shows its grammatical role."
     },
@@ -278772,8 +278747,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "جَـٰثِمِينَ is a rootful noun with root ج ث م. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:78:6.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -284948,33 +284923,20 @@
           "difference": "Current Qur'anic occurrence; partOfSpeech: proper name; case: genitive.",
           "relationship": "Current Qur'anic occurrence of the مدن lexical family in this āyah.",
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:85:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:85:2) was checked as evidence."
-        },
-        {
-          "form": "ٱلْمَدِينَةِ",
-          "meaning": "Al-Madinah",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; partOfSpeech: proper name; case: genitive.",
-          "relationship": "Related to the م د ن root/lexeme as a real Qur'anic form. Canonical evidence: word:63:8:5.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
-        },
-        {
-          "form": "ٱلْمَدَآئِنِ",
-          "meaning": "the cities",
-          "difference": "Compared with مَدْيَنَ, this form changes number: not marked → masculine plural.",
-          "relationship": "Current Qur'anic occurrence of the م د ن root/lexeme.",
-          "provenance": "Canonical Qur'anic occurrence word:7:111:6."
         }
       ],
       "sarfReview": {
         "status": "limited",
-        "limitedReason": "مَدْيَنَ is a proper noun associated with مدن; the reviewed evidence supports only its attested name/inflectional usage, and additional lexical rows would be unrelated or misleading. The family retains 3 genuine reviewed forms.",
+        "familyScope": "proper-name-madyan",
+        "limitedReason": "This occurrence is the proper name Madyan. It is not a morphological form of مدينة or al-Madīnah; the shared provider/root bucket is a model collision, so only the current proper-name occurrence is retained here.",
         "auditDecision": "confirmed-limited",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:85:2.",
-          "The item was checked as proper noun; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:85:2) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:27:49.743Z separated this occurrence into reviewed scope proper-name-madyan.",
+          "The shared root/lemma identity was checked against the actual occurrence meaning and proper-name use.",
+          "Only the genuine current proper-name form is retained; case, clitic and unrelated lexical forms are not counted as Ṣarf rows."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:27:49.743Z"
       },
       "takeaway": "The root م د ن remains connected to “Madyan” while the form shows its grammatical role."
     },
@@ -289439,8 +289401,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "عِوَجًا is a rootful noun with root ع و ج. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:86:14.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -299426,8 +299388,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "جَـٰثِمِينَ is a rootful noun with root ج ث م. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:91:6.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -304520,8 +304482,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "بَغْتَةً is a rootful noun with root ب غ ت. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:95:15.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -318871,8 +318833,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "ثُعْبَانٌ is a rootful noun with root ث ع ب. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:107:5.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -321437,15 +321399,16 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "ٱلْمَدَآئِنِ is a rootful noun with root م د ن. The audit found 27 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:111:6.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
           "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T14:42:38.844Z"
+        "reviewedAt": "2026-10-18T14:42:38.844Z",
+        "familyScope": "common-city"
       },
       "takeaway": "The root م د ن remains connected to “the cities” while the form shows its grammatical role."
     },
@@ -326016,8 +325979,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "تَلْقَفُ is a rootful verb with root ل ق ف. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:117:9.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -329346,15 +329309,16 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "ٱلْمَدِينَةِ is a rootful noun with root م د ن. The audit found 14 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:123:14.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
           "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T14:42:38.844Z"
+        "reviewedAt": "2026-10-18T14:42:38.844Z",
+        "familyScope": "common-city"
       },
       "takeaway": "The root م د ن remains connected to “the city” while the form shows its grammatical role."
     },
@@ -342661,8 +342625,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَٱلْقُمَّلَ is a rootful noun with root ق م ل. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:133:5.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -342763,8 +342727,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَٱلضَّفَادِعَ is a rootful noun with root ض ف د ع. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:133:6.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -350288,8 +350252,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَجَـٰوَزْنَا is a rootful verb with root ج و ز. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:138:1.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -351083,8 +351047,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "أَصْنَامٍ is a rootful noun with root ص ن م. The audit found 5 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:138:10.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -369972,8 +369936,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "جَسَدًا is a rootful noun with root ج س د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:148:9.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -370116,8 +370080,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "خُوَارٌ is a rootful noun with root خ و ر. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:148:11.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -373407,8 +373371,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "أَسِفًا is a rootful noun with root أ س ف. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:150:7.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -374847,8 +374811,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَجُرُّهُۥٓ is a rootful verb with root ج ر ر. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:150:21.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -375589,19 +375553,46 @@
           "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; verb form: Form 1.",
           "relationship": "Current Qur'anic occurrence of the كود lexical family in this āyah.",
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:150:29. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:150:29) was checked as evidence."
+        },
+        {
+          "form": "يَكَادُ",
+          "meaning": "Almost",
+          "difference": "Current Qur'anic occurrence; tense: imperfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Reviewed related Qur'anic form of the ك و د root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:2:20:1."
+        },
+        {
+          "form": "كِدتَّ",
+          "meaning": "you almost",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: verb; tense: perfect verb; person: second-person masculine singular; verb form: Form 1.",
+          "relationship": "Related to the ك و د root/lexeme as a real Qur'anic form. Canonical evidence: word:37:56:4.",
+          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
+        },
+        {
+          "form": "تَكَادُ",
+          "meaning": "Almost",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: verb; tense: imperfect verb; verb form: Form 1.",
+          "relationship": "Related to the ك و د root/lexeme as a real Qur'anic form. Canonical evidence: word:42:5:1.",
+          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
+        },
+        {
+          "form": "كَادُوا۟",
+          "meaning": "they almost",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: verb; tense: perfect verb; verb form: Form 1.",
+          "relationship": "Related to the ك و د root/lexeme as a real Qur'anic form. Canonical evidence: word:72:19:7.",
+          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "وَكَادُوا۟ is a reviewed restricted lexical item in the كود family. Canonical and approved lexical evidence support this lexeme, but do not provide four additional learner-useful lexical Ṣarf contrasts; case-only, annotation-only or fabricated variants would be padding. The family retains 1 genuine reviewed form.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:150:29.",
-          "The item was checked as verb; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:150:29) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|كود|كاد|verb.",
+          "Representative full occurrence: word:2:20:1.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ك و د remains connected to “and were about to” while the form shows its grammatical role."
     },
@@ -375865,8 +375856,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "تُشْمِتْ is a rootful verb with root ش م ت. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:150:32.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -380487,8 +380478,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "سَكَتَ is a rootful verb with root س ك ت. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:154:2.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -381078,8 +381069,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "نُسْخَتِهَا is a rootful noun with root ن س خ. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:154:9.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -390577,8 +390568,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "إِصْرَهُمْ is a rootful noun with root أ ص ر. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:157:26.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -391297,8 +391288,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَعَزَّرُوهُ is a rootful verb with root ع ز ر. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:157:34.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -396139,8 +396130,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "أَسْبَاطًا is a rootful noun with root س ب ط. The audit found 5 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:160:4.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -397225,8 +397216,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "فَٱنۢبَجَسَتْ is a rootful verb with root ب ج س. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:160:16.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -398742,8 +398733,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَٱلسَّلْوَىٰ is a rootful noun with root س ل و. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:160:32.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -400845,8 +400836,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "حِطَّةٌ is a rootful noun with root ح ط ط. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:161:12.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -409948,8 +409939,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "قِرَدَةً is a rootful noun with root ق ر د. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:166:10.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -417982,8 +417973,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "نَتَقْنَا is a rootful verb with root ن ت ق. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:171:2.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -424462,8 +424453,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "فَٱنسَلَخَ is a rootful verb with root س ل خ. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:175:7.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -426272,8 +426263,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "ٱلْكَلْبِ is a rootful noun with root ك ل ب. The audit found 6 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:176:13.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -426565,8 +426556,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَلْهَثْ is a rootful verb with root ل ه ث. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:176:17.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -426797,8 +426788,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَلْهَث is a rootful verb with root ل ه ث. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:176:20.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -435351,19 +435342,25 @@
           "difference": "Lexical abstract noun; it names the quality expressed by مَتِينٌ.",
           "relationship": "Lexical noun of the م ت ن family.",
           "provenance": "Codex-authored after review of standard Arabic lexical morphology."
+        },
+        {
+          "form": "مَتْنٌ",
+          "meaning": "a solid central part or back",
+          "difference": "Lexical noun; it shows the concrete solid-part branch of the same root.",
+          "relationship": "Lexical noun of the م ت ن family.",
+          "provenance": "Codex-authored after review of standard Arabic lexical morphology."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
-        "limitedReason": "مَتِينٌ is a rootful noun with root م ت ن. The audit found 5 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:183:5.",
-          "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
-          "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|متن|متين|noun/pronoun.",
+          "Representative full occurrence: word:68:45:5.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T14:42:38.844Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root م ت ن remains connected to “(is) firm” while the form shows its grammatical role."
     },
@@ -439091,8 +439088,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَعْمَهُونَ is a rootful verb with root ع م ه. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:186:10.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -441115,8 +441112,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "بَغْتَةً is a rootful noun with root ب غ ت. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:187:23.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -441387,8 +441384,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "حَفِىٌّ is a rootful noun with root ح ف و. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:187:26.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -450941,8 +450938,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "صَـٰمِتُونَ is a rootful noun with root ص م ت. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:193:12.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -452930,38 +452927,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:7:195:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:195:8) was checked as evidence."
         },
         {
-          "form": "بَطَشَ",
-          "meaning": "he seized or struck forcefully",
-          "difference": "Form I perfect; it states the completed violent action behind the current verbal noun.",
-          "relationship": "Form I perfect of the ب ط ش family, attested in Qur'anic usage.",
-          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ب ط ش evidence, which records the Form I verb and related noun forms."
+          "form": "يَبْطِشَ",
+          "meaning": "strike",
+          "difference": "Current Qur'anic occurrence; tense: imperfect verb; person: third-person masculine singular; verb form: Form 1.",
+          "relationship": "Reviewed related Qur'anic form of the ب ط ش root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:28:19:5."
         },
         {
-          "form": "يَبْطِشُ",
-          "meaning": "he seizes or strikes forcefully",
-          "difference": "Form I imperfect; it presents the forceful action as ongoing or possible.",
-          "relationship": "Form I imperfect of the ب ط ش family, attested in Qur'anic usage.",
-          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ب ط ش evidence, including يَبْطِشُ."
+          "form": "بَطْشَ",
+          "meaning": "(the) Grip",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: noun/pronoun; gender: masculine; case: accusative; verb form: Form 1.",
+          "relationship": "Related to the ب ط ش root/lexeme as a real Qur'anic form. Canonical evidence: word:85:12:2.",
+          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
-          "form": "بَطْشَةٌ",
-          "meaning": "a seizure or violent assault",
-          "difference": "Feminine event noun; it contrasts with the current abstract verbal noun by naming a single episode of forceful seizure.",
-          "relationship": "A genuine noun of the ب ط ش family, attested repeatedly in Qur'anic usage.",
-          "provenance": "Codex-authored after review of Quranic Arabic Corpus root ب ط ش evidence, including بَطْشَة."
+          "form": "بَطْشَتَنَا",
+          "meaning": "(of) Our seizure",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; case: accusative; person: first-person plural.",
+          "relationship": "Related to the ب ط ش root/lexeme as a real Qur'anic form. Canonical evidence: word:54:36:3.",
+          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
+        },
+        {
+          "form": "بَطَشْتُم",
+          "meaning": "you seize",
+          "difference": "A related Qur'anic form in the same root family; compare the current form with this pattern: Form 1; part of speech: verb; tense: perfect verb; verb form: Form 1.",
+          "relationship": "Related to the ب ط ش root/lexeme as a real Qur'anic form. Canonical evidence: word:26:130:2.",
+          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "يَبْطِشُونَ is a reviewed restricted lexical item in the بطش family. Canonical and approved lexical evidence support this lexeme, but do not provide four additional learner-useful lexical Ṣarf contrasts; case-only, annotation-only or fabricated variants would be padding. The family retains 4 genuine reviewed forms.",
-        "auditDecision": "confirmed-limited",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c6900f82e845c149 reviewed word:7:195:8.",
-          "The item was checked as verb; rootless/grammatical or proper-name status was not treated as an automatic pass without examining its real rows.",
-          "Aligned Quranic Arabic Corpus evidence 0.4-derived (7:195:8) was checked."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|بطش|بطش|verb.",
+          "Representative full occurrence: word:28:19:5.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-17T22:22:31.313Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ب ط ش remains connected to “(to) hold” while the form shows its grammatical role."
     },
@@ -458320,8 +458323,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَنزَغَنَّكَ is a rootful verb with root ن ز غ. The audit found 4 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:200:2.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -458547,8 +458550,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "نَزْغٌ is a rootful noun with root ن ز غ. The audit found 4 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:200:5.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -463307,8 +463310,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَأَنصِتُوا۟ is a rootful verb with root ن ص ت. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:204:6.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",

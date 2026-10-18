@@ -9,7 +9,7 @@
     "englishLabel": "The Rocky Tract",
     "description": "Reviewed Word Tree teaching layer for Surah 15."
   },
-  "contentVersion": "tanzil-1.1+teaching-15-v1-sarf-1.2-limited-audit",
+  "contentVersion": "tanzil-1.1+teaching-15-v1-sarf-1.2-limited-audit-family-reconciliation",
   "status": "custom-partial",
   "sourceReferences": [
     {
@@ -34327,8 +34327,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "ٱلْأَمَلُ is a rootful noun with root أ م ل. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:3:5.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -47340,8 +47340,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "لَوَٰقِحَ is a rootful noun with root ل ق ح. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:22:3.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -47698,31 +47698,44 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:15:22:7. Aligned Quranic Arabic Corpus morphology 0.4-derived (15:22:7) was checked as evidence."
         },
         {
-          "form": "بِمَآءٍ",
-          "meaning": "with water",
+          "form": "ٱلْمَآءُ",
+          "meaning": "[the] water",
+          "difference": "Current Qur'anic occurrence; gender: masculine; case: nominative.",
+          "relationship": "Reviewed related Qur'anic form of the موه lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:74:25. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:74:25) was checked as evidence."
+        },
+        {
+          "form": "مَآؤُهَا",
+          "meaning": "its water",
+          "difference": "A distinct vocalised form in the موه root family with its own form-specific meaning.",
+          "relationship": "Reviewed related Qur'anic form of the موه lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:18:41:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (18:41:3) was checked as evidence."
+        },
+        {
+          "form": "مَّآءٍ",
+          "meaning": "water",
           "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: masculine; state: indefinite; case: genitive.",
-          "relationship": "Related to the م و ه root/lexeme as a real Qur'anic form. Canonical evidence: word:54:11:4.",
+          "relationship": "Related to the م و ه root/lexeme as a real Qur'anic form. Canonical evidence: word:32:8:7.",
           "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
         },
         {
           "form": "مَآؤُكُمْ",
           "meaning": "your water",
-          "difference": "Compared with مَآءً, this form changes state: indefinite → not marked; case: accusative → nominative.",
-          "relationship": "Current Qur'anic occurrence of the م و ه root/lexeme.",
-          "provenance": "Canonical Qur'anic occurrence word:67:30:5."
+          "difference": "Compared with مَآءً, this form changes number: masculine singular → not marked; state: indefinite → not marked; case: accusative → nominative; gender: not marked → masculine.",
+          "relationship": "Reviewed related Qur'anic form of the موه lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:67:30:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (67:30:5) was checked as evidence."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
-        "limitedReason": "مَآءً is a rootful noun with root م و ه. The audit found 227 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:22:7.",
-          "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
-          "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|موه|ماء|noun/pronoun.",
+          "Representative full occurrence: word:2:74:25.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T14:42:38.844Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root م و ه remains connected to “water” while the form shows its grammatical role."
     },
@@ -50613,8 +50626,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "حَمَإٍ is a rootful noun with root ح م أ. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:26:7.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -52222,8 +52235,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "حَمَإٍ is a rootful noun with root ح م أ. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:28:11.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -55629,8 +55642,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "حَمَإٍ is a rootful noun with root ح م أ. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:33:10.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -61605,8 +61618,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "جُزْءٌ is a rootful noun with root ج ز أ. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:44:7.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -64953,8 +64966,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "ٱلْأَلِيمُ is a rootful noun with root أ ل م. The audit found 92 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:50:5.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -66082,8 +66095,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "وَجِلُونَ is a rootful noun with root و ج ل. The audit found 5 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:52:9.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -66321,8 +66334,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "تَوْجَلْ is a rootful verb with root و ج ل. The audit found 5 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:53:3.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -73587,8 +73600,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَلْتَفِتْ is a rootful verb with root ل ف ت. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:65:9.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -75162,15 +75175,16 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "ٱلْمَدِينَةِ is a rootful noun with root م د ن. The audit found 17 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:67:3.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
           "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T14:42:38.844Z"
+        "reviewedAt": "2026-10-18T14:42:38.844Z",
+        "familyScope": "common-city"
       },
       "takeaway": "The root م د ن remains connected to “(of) the city” while the form shows its grammatical role."
     },
@@ -75774,8 +75788,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "تَفْضَحُونِ is a rootful verb with root ف ض ح. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:68:6.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -77681,8 +77695,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَعْمَهُونَ is a rootful verb with root ع م ه. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:72:5.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -77890,10 +77904,24 @@
         },
         {
           "form": "صَيْحَةً",
-          "meaning": "thunderous blast",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: accusative.",
-          "relationship": "Related to the ص ي ح root/lexeme as a real Qur'anic form. Canonical evidence: word:54:31:4.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
+          "meaning": "a shout",
+          "difference": "Current Qur'anic occurrence; gender: feminine; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the صيح lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:36:29:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (36:29:4) was checked as evidence."
+        },
+        {
+          "form": "صَاحَ",
+          "meaning": "he shouted or cried out",
+          "difference": "Form I hollow perfect; it states the completed cry behind the current noun.",
+          "relationship": "Form I hollow perfect of the ص ي ح family.",
+          "provenance": "Codex-authored after review of canonical Qur'anic evidence and standard hollow-verb morphology for ص ي ح."
+        },
+        {
+          "form": "يَصِيحُ",
+          "meaning": "he shouts or cries out",
+          "difference": "Form I hollow imperfect; it presents shouting as ongoing.",
+          "relationship": "Form I hollow imperfect of the ص ي ح family.",
+          "provenance": "Codex-authored after review of standard hollow Form I imperfect morphology."
         },
         {
           "form": "صِيَاحٌ",
@@ -77901,26 +77929,18 @@
           "difference": "Verbal noun; it names the cry rather than expressing it as a verb.",
           "relationship": "Verbal noun of the ص ي ح family.",
           "provenance": "Codex-authored after review of approved Arabic lexical evidence for صِيَاحٌ."
-        },
-        {
-          "form": "صَائِحٌ",
-          "meaning": "shouting or one who cries out",
-          "difference": "Active participle; it describes the one making the cry.",
-          "relationship": "Form I active participle of the ص ي ح family.",
-          "provenance": "Codex-authored after review of standard hollow-verb active-participle morphology."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
-        "limitedReason": "ٱلصَّيْحَةُ is a rootful noun with root ص ي ح. The audit found 18 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:73:2.",
-          "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
-          "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|صيح|صيحة|noun/pronoun.",
+          "Representative full occurrence: word:36:29:4.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T14:42:38.844Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ص ي ح remains connected to “the awful cry” while the form shows its grammatical role."
     },
@@ -82060,8 +82080,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "يَنْحِتُونَ is a rootful verb with root ن ح ت. The audit found 4 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:82:2.",
           "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
@@ -82615,10 +82635,24 @@
         },
         {
           "form": "صَيْحَةً",
-          "meaning": "thunderous blast",
-          "difference": "A related Qur'anic form in the same root family; compare the current form with this part of speech: noun/pronoun; gender: feminine; state: indefinite; case: accusative.",
-          "relationship": "Related to the ص ي ح root/lexeme as a real Qur'anic form. Canonical evidence: word:54:31:4.",
-          "provenance": "Codex-reviewed from canonical Qur'anic evidence and aligned quranic-arabic-corpus morphology 0.4-derived."
+          "meaning": "a shout",
+          "difference": "Current Qur'anic occurrence; gender: feminine; state: indefinite; case: accusative.",
+          "relationship": "Reviewed related Qur'anic form of the صيح lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:36:29:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (36:29:4) was checked as evidence."
+        },
+        {
+          "form": "صَاحَ",
+          "meaning": "he shouted or cried out",
+          "difference": "Form I hollow perfect; it states the completed cry behind the current noun.",
+          "relationship": "Form I hollow perfect of the ص ي ح family.",
+          "provenance": "Codex-authored after review of canonical Qur'anic evidence and standard hollow-verb morphology for ص ي ح."
+        },
+        {
+          "form": "يَصِيحُ",
+          "meaning": "he shouts or cries out",
+          "difference": "Form I hollow imperfect; it presents shouting as ongoing.",
+          "relationship": "Form I hollow imperfect of the ص ي ح family.",
+          "provenance": "Codex-authored after review of standard hollow Form I imperfect morphology."
         },
         {
           "form": "صِيَاحٌ",
@@ -82626,26 +82660,18 @@
           "difference": "Verbal noun; it names the cry rather than expressing it as a verb.",
           "relationship": "Verbal noun of the ص ي ح family.",
           "provenance": "Codex-authored after review of approved Arabic lexical evidence for صِيَاحٌ."
-        },
-        {
-          "form": "صَائِحٌ",
-          "meaning": "shouting or one who cries out",
-          "difference": "Active participle; it describes the one making the cry.",
-          "relationship": "Form I active participle of the ص ي ح family.",
-          "provenance": "Codex-authored after review of standard hollow-verb active-participle morphology."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
-        "limitedReason": "ٱلصَّيْحَةُ is a rootful noun with root ص ي ح. The audit found 18 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:83:2.",
-          "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
-          "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+          "Mixed-family reconciliation 2026-10-18T20:24:43.516Z matched this occurrence to the reviewed full family lexical|صيح|صيحة|noun/pronoun.",
+          "Representative full occurrence: word:36:29:4.",
+          "The current Qur'anic form remained first; four distinct reviewed related forms were reused without shell-only filtering or synthetic padding."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T14:42:38.844Z"
+        "reviewedAt": "2026-10-18T20:24:43.516Z"
       },
       "takeaway": "The root ص ي ح remains connected to “the awful cry” while the form shows its grammatical role."
     },
@@ -88270,8 +88296,8 @@
       ],
       "sarfReview": {
         "status": "limited",
-        "auditDecision": "blocked-for-genuine-ambiguity",
         "limitedReason": "عِضِينَ is a rootful noun with root ع ض و. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+        "auditDecision": "blocked-for-genuine-ambiguity",
         "provenance": [
           "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:15:91:4.",
           "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",

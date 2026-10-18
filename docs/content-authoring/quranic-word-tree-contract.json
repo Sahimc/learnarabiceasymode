@@ -323,6 +323,7 @@
         "limitedConfirmationRule": "A confirmed-limited family contains only genuine forms, a specific non-boilerplate reason tied to this lexeme and occurrence, review provenance, and no overlooked fifth form supported by the approved evidence.",
         "blockedRule": "Use blocked-for-genuine-ambiguity only when reliable evidence remains insufficient or conflicting after canonical Qur'anic evidence, approved dictionaries/lexicons, aligned provider evidence and Codex linguistic review have been checked. Never use blocked as a disguised missing-effort bucket."
       },
+      "familyIdentityRule": "Root, provider lemma and part of speech are evidence for family identity, not sufficient proof when occurrences contain distinct senses, proper names or model collisions. When review establishes a stable separation, record familyScope in sarfReview and audit each scope independently; when the separation cannot be established safely, retain an explicit blocked decision.",
       "required": [
         "the current Qur'anic form first",
         "a full five-form reviewed family or an explicit reviewed limited family",

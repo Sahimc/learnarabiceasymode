@@ -29,6 +29,7 @@ type OccurrenceRecord = {
   category: string;
   status: "full" | "confirmed-limited" | "blocked" | "unknown";
   formCount: number;
+  familyScope?: string;
   limitedReason?: string;
   providerRoot?: string;
   providerLemma?: string;
@@ -133,8 +134,9 @@ function publicationStatus(statuses: Set<string>): FamilyRecord["publicationStat
 function familyIdentity(item: OccurrenceRecord) {
   const lemma = item.providerLemma ? comparableBase(item.providerLemma) : comparableBase(item.arabic);
   const pos = (item.providerPartOfSpeech || item.category).toLowerCase().replace(/\s+/gu, "-");
-  if (item.root) return `lexical|${item.root}|${lemma}|${pos}`;
-  return `rootless|${item.category}|${lemma}`;
+  const scope = item.familyScope ? `|scope=${item.familyScope}` : "";
+  if (item.root) return `lexical|${item.root}|${lemma}|${pos}${scope}`;
+  return `rootless|${item.category}|${lemma}${scope}`;
 }
 
 const packagePaths = await discoverPackagePaths();
@@ -173,6 +175,7 @@ for (const packagePath of packagePaths) {
         category: classify(lesson),
         status: statusOf(lesson),
         formCount: forms.length,
+        familyScope: text(review.familyScope) || undefined,
         limitedReason: text(review.limitedReason) || undefined,
       };
       occurrences.push(item);
@@ -271,6 +274,7 @@ const reviewRecords = blockedFamilies.map((family) => {
     familyKey: family.familyKey,
     root: family.root || null,
     lemmaOrCurrentForm: family.lemma,
+    familyScope: family.occurrences[0]?.familyScope || null,
     category: family.category,
     quranicOccurrences: family.occurrences.map((item) => ({
       occurrenceId: item.occurrenceId,
