@@ -10,7 +10,7 @@
     "description": "Reviewed Word Tree teaching layer."
   },
   "contentVersion": "tanzil-1.1+teaching-86-v1-sarf-1.2-limited-audit",
-  "status": "custom-complete",
+  "status": "custom-partial",
   "sourceReferences": [
     {
       "provider": "tanzil",
@@ -3192,20 +3192,6 @@
           "provenance": "Codex-reviewed form for the ن ج م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         },
         {
-          "form": "ٱلنُّجُومُ",
-          "meaning": "the stars",
-          "difference": "Compared with ٱلنَّجْمُ, this form changes gender: masculine → not marked; number: not marked → masculine plural.",
-          "relationship": "Related to the ن ج م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:77:8:2.",
-          "provenance": "Codex-reviewed form for the ن ج م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
-        },
-        {
-          "form": "ٱلنُّجُومَ",
-          "meaning": "the stars",
-          "difference": "Compared with ٱلنَّجْمُ, this form changes gender: masculine → not marked; case: nominative → accusative; number: not marked → masculine plural.",
-          "relationship": "Current Qur'anic occurrence of the نجم lexical family in this āyah.",
-          "provenance": "Codex review of canonical Qur'anic occurrence word:6:97:5. Aligned Quranic Arabic Corpus morphology 0.4-derived (6:97:5) was checked as evidence."
-        },
-        {
           "form": "وَبِٱلنَّجْمِ",
           "meaning": "And by the stars",
           "difference": "Compared with ٱلنَّجْمُ, this form changes case: nominative → genitive.",
@@ -3215,14 +3201,16 @@
       ],
       "takeaway": "The root ن ج م remains connected to “(It is) the star”.",
       "sarfReview": {
-        "status": "full",
-        "auditDecision": "upgraded-to-full",
+        "status": "limited",
+        "auditDecision": "blocked-for-genuine-ambiguity",
+        "limitedReason": "ٱلنَّجْمُ is a rootful noun with root ن ج م. The audit found 14 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c2d1c685865f21fa reviewed word:86:3:1.",
-          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the نجم root family."
+          "Limited-family audit limited-sarf-audit-6aea4a39dc2aae6e reviewed word:86:3:1.",
+          "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
+          "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T00:18:15.812Z"
+        "reviewedAt": "2026-10-18T02:12:36.941Z"
       }
     },
     "lesson:86:3:2": {
@@ -3752,17 +3740,17 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:86:5:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (86:5:2) was checked as evidence."
         },
         {
+          "form": "ءَانَسْتُ",
+          "meaning": "[I] perceived",
+          "difference": "Compared with ٱلْإِنسَـٰنُ, this form changes gender: masculine → not marked; case: nominative → not marked; partofspeech: noun/pronoun → verb; tense: not marked → perfect verb.",
+          "relationship": "Current Qur'anic occurrence of the أنس lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:20:10:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (20:10:8) was checked as evidence."
+        },
+        {
           "form": "ٱلنَّاسَ",
           "meaning": "men",
           "difference": "Compared with ٱلْإِنسَـٰنُ, this form changes gender: masculine → not marked; case: nominative → accusative; number: not marked → masculine plural.",
           "relationship": "Related to the أ ن س root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:20:2.",
-          "provenance": "Codex-reviewed form for the أ ن س family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
-        },
-        {
-          "form": "ٱلنَّاسُ",
-          "meaning": "the people",
-          "difference": "Compared with ٱلْإِنسَـٰنُ, this form changes gender: masculine → not marked; number: not marked → masculine plural.",
-          "relationship": "Related to the أ ن س root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:57:25:10.",
           "provenance": "Codex-reviewed form for the أ ن س family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         },
         {
@@ -3773,11 +3761,11 @@
           "provenance": "Codex-reviewed form for the أ ن س family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         },
         {
-          "form": "ءَانَسْتُ",
-          "meaning": "[I] perceived",
+          "form": "ءَانَسَ",
+          "meaning": "he saw",
           "difference": "Compared with ٱلْإِنسَـٰنُ, this form changes gender: masculine → not marked; case: nominative → not marked; partofspeech: noun/pronoun → verb; tense: not marked → perfect verb.",
-          "relationship": "Current Qur'anic occurrence of the أنس lexical family in this āyah.",
-          "provenance": "Codex review of canonical Qur'anic occurrence word:20:10:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (20:10:8) was checked as evidence."
+          "relationship": "Current Qur'anic occurrence of the أ ن س root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:28:29:7."
         }
       ],
       "takeaway": "The root أ ن س remains connected to “man”.",
@@ -3785,11 +3773,11 @@
         "status": "full",
         "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c2d1c685865f21fa reviewed word:86:5:2.",
+          "Limited-family audit limited-sarf-audit-7cbe932292748cb3 reviewed word:86:5:2.",
           "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the أنس root family."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T00:18:15.812Z"
+        "reviewedAt": "2026-10-18T01:43:58.171Z"
       }
     },
     "lesson:86:5:3": {
@@ -4064,6 +4052,13 @@
           "provenance": "Codex-reviewed form for the م و ه family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         },
         {
+          "form": "مَآؤُهَا",
+          "meaning": "its water",
+          "difference": "Compared with مَّآءٍ, this form changes state: indefinite → not marked; case: genitive → nominative.",
+          "relationship": "Current Qur'anic occurrence of the موه lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:18:41:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (18:41:3) was checked as evidence."
+        },
+        {
           "form": "ٱلْمَآءُ",
           "meaning": "the water(s)",
           "difference": "Compared with مَّآءٍ, this form changes state: indefinite → not marked; case: genitive → nominative.",
@@ -4071,18 +4066,11 @@
           "provenance": "Codex-reviewed form for the م و ه family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         },
         {
-          "form": "ٱلْمَآءَ",
-          "meaning": "the water",
+          "form": "مَآءَكِ",
+          "meaning": "your water",
           "difference": "Compared with مَّآءٍ, this form changes state: indefinite → not marked; case: genitive → accusative.",
-          "relationship": "Related to the م و ه root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:28:3.",
-          "provenance": "Codex-reviewed form for the م و ه family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
-        },
-        {
-          "form": "مَآؤُهَا",
-          "meaning": "its water",
-          "difference": "Compared with مَّآءٍ, this form changes state: indefinite → not marked; case: genitive → nominative.",
           "relationship": "Current Qur'anic occurrence of the موه lexical family in this āyah.",
-          "provenance": "Codex review of canonical Qur'anic occurrence word:18:41:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (18:41:3) was checked as evidence."
+          "provenance": "Codex review of canonical Qur'anic occurrence word:11:44:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (11:44:4) was checked as evidence."
         }
       ],
       "takeaway": "The root م و ه remains connected to “a water”.",
@@ -4090,11 +4078,11 @@
         "status": "full",
         "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c2d1c685865f21fa reviewed word:86:6:3.",
+          "Limited-family audit limited-sarf-audit-7cbe932292748cb3 reviewed word:86:6:3.",
           "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the موه root family."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T00:18:15.812Z"
+        "reviewedAt": "2026-10-18T01:43:58.171Z"
       }
     },
     "lesson:86:6:4": {
@@ -4291,13 +4279,6 @@
           "provenance": "Codex-reviewed form for the ب ي ن family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         },
         {
-          "form": "مُّبِينٌ",
-          "meaning": "clear",
-          "difference": "Compared with بَيْنِ, this form changes case: genitive → nominative; gender: not marked → masculine; state: not marked → indefinite.",
-          "relationship": "Related to the ب ي ن root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:50:8.",
-          "provenance": "Codex-reviewed form for the ب ي ن family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
-        },
-        {
           "form": "ٱلْبَيَانَ",
           "meaning": "[the] speech",
           "difference": "Compared with بَيْنِ, this form changes case: genitive → accusative; gender: not marked → masculine.",
@@ -4310,6 +4291,13 @@
           "difference": "Compared with بَيْنِ, this form changes person: not marked → first-person plural.",
           "relationship": "Related to the ب ي ن root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:25:5.",
           "provenance": "Codex-reviewed form for the ب ي ن family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+        },
+        {
+          "form": "يُبَيِّن",
+          "meaning": "to make clear",
+          "difference": "Compared with بَيْنِ, this form changes case: genitive → not marked; partofspeech: noun/pronoun → verb; tense: not marked → imperfect verb; person: not marked → third-person masculine singular.",
+          "relationship": "Current Qur'anic occurrence of the ب ي ن root/lexeme.",
+          "provenance": "Canonical Qur'anic occurrence word:2:68:5."
         }
       ],
       "takeaway": "The root ب ي ن remains connected to “between”.",
@@ -4317,11 +4305,11 @@
         "status": "full",
         "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c2d1c685865f21fa reviewed word:86:7:3.",
+          "Limited-family audit limited-sarf-audit-7cbe932292748cb3 reviewed word:86:7:3.",
           "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the بين root family."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T00:18:15.812Z"
+        "reviewedAt": "2026-10-18T01:43:58.171Z"
       }
     },
     "lesson:86:7:4": {
@@ -4704,6 +4692,13 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:86:8:4. Aligned Quranic Arabic Corpus morphology 0.4-derived (86:8:4) was checked as evidence."
         },
         {
+          "form": "وَقَدَّرَهُۥ",
+          "meaning": "and determined for it",
+          "difference": "Compared with لَقَادِرٌ, this form changes gender: masculine → not marked; state: indefinite → not marked; case: nominative → not marked; verbform: Form 1 → Form 2.",
+          "relationship": "Current Qur'anic occurrence of the قدر lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:10:5:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (10:5:8) was checked as evidence."
+        },
+        {
           "form": "مُّقْتَدِرٍ",
           "meaning": "(the) Powerful One",
           "difference": "Compared with لَقَادِرٌ, this form changes case: nominative → genitive; verbform: Form 1 → Form 8; pattern: Form 1 → Form 8.",
@@ -4718,18 +4713,11 @@
           "provenance": "Codex-reviewed form for the ق د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         },
         {
-          "form": "مُّقْتَدِرٍۭ",
-          "meaning": "Most Powerful",
-          "difference": "Compared with لَقَادِرٌ, this form changes case: nominative → genitive; verbform: Form 1 → Form 8; pattern: Form 1 → Form 8.",
-          "relationship": "Related to the ق د ر root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:54:55:6.",
-          "provenance": "Codex-reviewed form for the ق د ر family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
-        },
-        {
-          "form": "وَقَدَّرَهُۥ",
-          "meaning": "and determined for it",
+          "form": "قَدَّرْنَآ",
+          "meaning": "We have decreed",
           "difference": "Compared with لَقَادِرٌ, this form changes gender: masculine → not marked; state: indefinite → not marked; case: nominative → not marked; verbform: Form 1 → Form 2.",
           "relationship": "Current Qur'anic occurrence of the قدر lexical family in this āyah.",
-          "provenance": "Codex review of canonical Qur'anic occurrence word:10:5:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (10:5:8) was checked as evidence."
+          "provenance": "Codex review of canonical Qur'anic occurrence word:15:60:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (15:60:3) was checked as evidence."
         }
       ],
       "takeaway": "The root ق د ر remains connected to “(is) Able”.",
@@ -4737,11 +4725,11 @@
         "status": "full",
         "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c2d1c685865f21fa reviewed word:86:8:4.",
+          "Limited-family audit limited-sarf-audit-7cbe932292748cb3 reviewed word:86:8:4.",
           "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the قدر root family."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T00:18:15.812Z"
+        "reviewedAt": "2026-10-18T01:43:58.171Z"
       }
     },
     "lesson:86:9:1": {
@@ -4781,13 +4769,6 @@
           "provenance": "Codex-reviewed form for the ي و م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         },
         {
-          "form": "ٱلْأَيَّامِ",
-          "meaning": "the days",
-          "difference": "Compared with يَوْمَ, this form changes gender: masculine → not marked; case: accusative → genitive; number: not marked → masculine plural.",
-          "relationship": "Related to the ي و م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:69:24:7.",
-          "provenance": "Codex-reviewed form for the ي و م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
-        },
-        {
           "form": "يَوْمَئِذٍ",
           "meaning": "that Day",
           "difference": "Compared with يَوْمَ, this form changes gender: masculine → not marked; case: accusative → not marked.",
@@ -4795,11 +4776,18 @@
           "provenance": "Codex-reviewed form for the ي و م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         },
         {
-          "form": "فَيَوْمَئِذٍ",
-          "meaning": "Then (on) that Day",
-          "difference": "Compared with يَوْمَ, this form changes gender: masculine → not marked; case: accusative → not marked.",
-          "relationship": "Related to the ي و م root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:55:39:1.",
-          "provenance": "Codex-reviewed form for the ي و م family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          "form": "أَيَّامًا",
+          "meaning": "(for) days",
+          "difference": "Compared with يَوْمَ, this form changes gender: masculine → not marked; number: not marked → masculine plural; state: not marked → indefinite.",
+          "relationship": "Current Qur'anic occurrence of the يوم lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:2:80:6. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:80:6) was checked as evidence."
+        },
+        {
+          "form": "بِأَيَّىٰمِ",
+          "meaning": "of the days",
+          "difference": "Compared with يَوْمَ, this form changes gender: masculine → not marked; case: accusative → genitive; number: not marked → masculine plural.",
+          "relationship": "Current Qur'anic occurrence of the يوم lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:14:5:13. Aligned Quranic Arabic Corpus morphology 0.4-derived (14:5:13) was checked as evidence."
         }
       ],
       "takeaway": "The root ي و م remains connected to “(The) Day”.",
@@ -4807,11 +4795,11 @@
         "status": "full",
         "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c2d1c685865f21fa reviewed word:86:9:1.",
+          "Limited-family audit limited-sarf-audit-7cbe932292748cb3 reviewed word:86:9:1.",
           "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the يوم root family."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T00:18:15.812Z"
+        "reviewedAt": "2026-10-18T01:43:58.171Z"
       }
     },
     "lesson:86:9:2": {
@@ -5816,11 +5804,11 @@
           "provenance": "Codex review of canonical Qur'anic occurrence word:86:13:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (86:13:2) was checked as evidence."
         },
         {
-          "form": "قَالَ",
-          "meaning": "He said",
-          "difference": "Form I perfect, third-person masculine singular; he said, a completed saying.",
-          "relationship": "Related to the ق و ل root/lexeme as a real Qur'anic form. Canonical Qur'anic evidence: word:51:31:1.",
-          "provenance": "Codex-reviewed form for the ق و ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
+          "form": "تَقَوَّلَهُۥ",
+          "meaning": "He has made it up",
+          "difference": "Compared with لَقَوْلٌ, this form changes gender: masculine → not marked; state: indefinite → not marked; case: nominative → not marked; verbform: Form 1 → Form 5.",
+          "relationship": "Current Qur'anic occurrence of the قول lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:52:33:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (52:33:3) was checked as evidence."
         },
         {
           "form": "قَالُوٓا۟",
@@ -5837,11 +5825,11 @@
           "provenance": "Codex-reviewed form for the ق و ل family. Aligned quranic-arabic-corpus morphology 0.4-derived was used as evidence."
         },
         {
-          "form": "تَقَوَّلَهُۥ",
-          "meaning": "He has made it up",
+          "form": "تَقَوَّلَ",
+          "meaning": "he (had) fabricated",
           "difference": "Compared with لَقَوْلٌ, this form changes gender: masculine → not marked; state: indefinite → not marked; case: nominative → not marked; verbform: Form 1 → Form 5.",
           "relationship": "Current Qur'anic occurrence of the قول lexical family in this āyah.",
-          "provenance": "Codex review of canonical Qur'anic occurrence word:52:33:3. Aligned Quranic Arabic Corpus morphology 0.4-derived (52:33:3) was checked as evidence."
+          "provenance": "Codex review of canonical Qur'anic occurrence word:69:44:2. Aligned Quranic Arabic Corpus morphology 0.4-derived (69:44:2) was checked as evidence."
         }
       ],
       "takeaway": "The root ق و ل remains connected to “(is) surely a Word”.",
@@ -5849,11 +5837,11 @@
         "status": "full",
         "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c2d1c685865f21fa reviewed word:86:13:2.",
+          "Limited-family audit limited-sarf-audit-7cbe932292748cb3 reviewed word:86:13:2.",
           "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the قول root family."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T00:18:15.812Z"
+        "reviewedAt": "2026-10-18T01:43:58.171Z"
       }
     },
     "lesson:86:13:3": {

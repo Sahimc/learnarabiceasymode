@@ -11226,19 +11226,13 @@ function inflectionalKey(value: string, options: { preserveTerminalVowel?: boole
 
 function lexicalShellKey(value: string, options: { preserveTerminalVowel?: boolean } = {}) {
   let key = inflectionalKey(value, options);
-  // Article and coordinating prefixes are grammatical shells, not new Ṣarf
-  // forms. Remove them only for duplicate detection; the original Arabic
-  // surface form remains untouched in the lesson row.
-  key = key.replace(/^[وف][\u064B-\u065F\u0670\u06D6-\u06ED]*/u, "");
+  // Article and the waw coordinating prefix are grammatical shells, not new
+  // Ṣarf forms. Do not blindly strip an initial ف: فَتْح, for example, may
+  // begin with the lexical radical ف rather than a fa-conjunction. The
+  // original Arabic surface form remains untouched in the lesson row.
+  key = key.replace(/^و[\u064B-\u065F\u0670\u06D6-\u06ED]*/u, "");
   key = key.replace(/^(?:ٱلْ|الْ|ٱل|ال)/u, "");
   return key;
-}
-
-function candidateInflectionalKey(candidate: Candidate) {
-  const preserveTerminalVowel = candidate.featureSignal.some(
-    (signal) => signal === "partofspeech:verb" || signal === "partofspeech:verbal-noun",
-  );
-  return inflectionalKey(candidate.form, { preserveTerminalVowel });
 }
 
 function base(value: string) {
@@ -12489,26 +12483,31 @@ for (const occurrence of limited) {
   const beforeLesson = clone(lesson);
   const category = classify(lesson, occurrence.provider, occurrence.word);
   const root = rootKey(lesson.root);
+  const preserveTerminalVowel = /verb|verbal-noun/iu.test(lesson.type);
   const oldSafeRows = (lesson.forms ?? []).filter((row) => safeForm(row, root));
   const rebuiltCurrent = currentRow(occurrence);
   const currentFormKey = inflectionalKey(rebuiltCurrent.form, {
-    preserveTerminalVowel: category === "verb",
+    preserveTerminalVowel,
   });
   const currentLexicalShellKey = lexicalShellKey(rebuiltCurrent.form, {
-    preserveTerminalVowel: category === "verb",
+    preserveTerminalVowel,
   });
   const existingForms: LessonForm[] = [];
+  const existingLexicalShellKeys = new Set([currentLexicalShellKey]);
   const seen = new Set([normalized(rebuiltCurrent.form)]);
   for (const row of oldSafeRows) {
     if (REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root) && root !== "صيطر") continue;
     if (normalized(row.form) === normalized(rebuiltCurrent.form)) continue;
-    if (inflectionalKey(row.form, { preserveTerminalVowel: category === "verb" }) === currentFormKey)
+    if (inflectionalKey(row.form, { preserveTerminalVowel }) === currentFormKey)
       continue;
-    if (lexicalShellKey(row.form, { preserveTerminalVowel: category === "verb" }) === currentLexicalShellKey)
+    const rowLexicalShellKey = lexicalShellKey(row.form, { preserveTerminalVowel });
+    if (rowLexicalShellKey === currentLexicalShellKey)
       continue;
+    if (existingLexicalShellKeys.has(rowLexicalShellKey)) continue;
     if (isKnownWrongRootForm(root, row.form)) continue;
     if (seen.has(normalized(row.form))) continue;
     seen.add(normalized(row.form));
+    existingLexicalShellKeys.add(rowLexicalShellKey);
     existingForms.push({
       ...row,
       relationship: row.relationship ?? `Reviewed relationship to the ${root || "grammatical"} family.`,
@@ -12573,13 +12572,18 @@ for (const occurrence of limited) {
   const requiredAdditionalForms = Math.max(0, 4 - preservedExistingForms.length);
   const eligibleCandidates = candidatePool.filter(
     (candidate) =>
-      candidateInflectionalKey(candidate) !== currentFormKey &&
+      inflectionalKey(candidate.form, { preserveTerminalVowel }) !== currentFormKey &&
       normalized(candidate.form) !== normalized(rebuiltCurrent.form) &&
       lexicalShellKey(candidate.form, {
-        preserveTerminalVowel: candidate.featureSignal.some(
-          (signal) => signal === "partofspeech:verb" || signal === "partofspeech:verbal-noun",
-        ),
+        preserveTerminalVowel,
       }) !== currentLexicalShellKey &&
+      !existingLexicalShellKeys.has(lexicalShellKey(candidate.form, {
+        // Compare candidates using the reviewed lesson category, not an
+        // inconsistent provider signal on the candidate itself. Otherwise a
+        // noun lesson can retain a case-only noun row when that row happens
+        // to carry a verbal-noun feature signal.
+        preserveTerminalVowel,
+      })) &&
       !existingExactFormKeys.has(normalized(candidate.form)),
   );
   const chosen = root
@@ -12658,6 +12662,37 @@ for (const occurrence of limited) {
       reviewedAt,
     };
     decisions.blocked += 1;
+    packageState.demoted = true;
+  }
+
+  // Enforce the same lexical-shell uniqueness rule on the final assembled
+  // lesson, after retained rows and newly selected candidates have been
+  // combined. This is the last line of defence against a case/article/
+  // conjunction variant entering through two different evidence sources.
+  const finalShellKeys = new Set<string>();
+  afterForms = afterForms.filter((row) => {
+    const key = lexicalShellKey(row.form, { preserveTerminalVowel });
+    if (finalShellKeys.has(key)) return false;
+    finalShellKeys.add(key);
+    return true;
+  });
+  if (decision === "upgraded-to-full" && afterForms.length !== 5) {
+    decisions.upgradedToFull -= 1;
+    decisions.blocked += 1;
+    decision = "blocked-for-genuine-ambiguity";
+    afterForms = afterForms.slice(0, 4);
+    afterReview = {
+      status: "limited",
+      auditDecision: "blocked-for-genuine-ambiguity",
+      limitedReason: limitedReason(occurrence, category, afterForms, decision, candidatePool.length),
+      provenance: [
+        `Limited-family audit ${auditBatchId} reviewed ${occurrence.word.id}.`,
+        `Final assembled forms were rechecked for lexical-shell uniqueness after retained and selected rows were combined.`,
+        "No unverified form was added merely to reach five rows; further lexicon-led authoring is required.",
+      ],
+      reviewedBy: "Codex",
+      reviewedAt,
+    };
     packageState.demoted = true;
   }
 

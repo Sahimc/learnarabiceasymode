@@ -10,7 +10,7 @@
     "description": "Reviewed Word Tree teaching layer."
   },
   "contentVersion": "tanzil-1.1-sarf-1.2-limited-audit",
-  "status": "custom-complete",
+  "status": "custom-partial",
   "sourceReferences": [
     {
       "provider": "tanzil",
@@ -1180,30 +1180,25 @@
           "provenance": "Codex-authored and reviewed against the ف ل ق root meaning and reliable Arabic morphology."
         },
         {
-          "form": "فَلَقَ",
-          "meaning": "He split / broke open",
-          "difference": "Form I perfect verb; the vocalised pattern expresses a completed action.",
-          "relationship": "Related to the ف ل ق root as a real lexical form; the row teaches a distinct noun, verb or participial pattern.",
-          "provenance": "Codex-authored and reviewed against the ف ل ق root meaning and reliable Arabic morphology."
-        },
-        {
-          "form": "فَلَق",
-          "meaning": "daybreak / a split",
-          "difference": "Uninflected noun form; the definite article and case marker are absent.",
-          "relationship": "Related to the ف ل ق root as a real lexical form; the row teaches a distinct noun, verb or participial pattern.",
-          "provenance": "Codex-authored and reviewed against the ف ل ق root meaning and reliable Arabic morphology."
+          "form": "فَٱنفَلَقَ",
+          "meaning": "So it parted",
+          "difference": "Compared with ٱلْفَلَقِ, this form changes gender: masculine → not marked; case: genitive → not marked; partofspeech: noun/pronoun → verb; tense: not marked → perfect verb.",
+          "relationship": "Current Qur'anic occurrence of the فلق lexical family in this āyah.",
+          "provenance": "Codex review of canonical Qur'anic occurrence word:26:63:8. Aligned Quranic Arabic Corpus morphology 0.4-derived (26:63:8) was checked as evidence."
         }
       ],
       "takeaway": "A root picture can be a memory hook without replacing the exact contextual meaning.",
       "sarfReview": {
-        "status": "full",
-        "auditDecision": "upgraded-to-full",
+        "status": "limited",
+        "auditDecision": "blocked-for-genuine-ambiguity",
+        "limitedReason": "ٱلْفَلَقِ is a rootful noun with root ف ل ق. The audit found 16 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-c2d1c685865f21fa reviewed word:113:1:4.",
-          "Canonical evidence and aligned Quranic Arabic Corpus morphology were checked for the فلق root family."
+          "Limited-family audit limited-sarf-audit-6aea4a39dc2aae6e reviewed word:113:1:4.",
+          "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
+          "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T00:18:15.812Z"
+        "reviewedAt": "2026-10-18T02:12:36.941Z"
       }
     },
     "lesson:min": {

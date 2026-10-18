@@ -51,7 +51,7 @@ test("all authored occurrences have explicit valid atomic or segmented breakdown
         .map((word) => ({ pkg, word })),
     ),
   );
-  assert.equal(custom.length, 10145);
+  assert.equal(custom.length, 77434);
   for (const { word } of custom) {
     const breakdown = word.breakdown;
     assert.ok(breakdown);
@@ -441,28 +441,16 @@ test("Juz 28 preserves the approved Oh vocative wording", async () => {
   }
 });
 
-test("Juz 27 preserves its 51:31 boundary and completes Sūrahs 52–57", async () => {
+test("Juz 27 has complete authored occurrence coverage for Sūrahs 51–57", async () => {
   const all = await packages();
   const juz27 = all.filter(
     (pkg) => pkg.surah.number >= 51 && pkg.surah.number <= 57,
   );
   assert.equal(juz27.length, 7);
   const adhDhariyat = juz27.find((pkg) => pkg.surah.number === 51);
-  assert.equal(adhDhariyat.status, "custom-partial");
-  assert.equal(
-    adhDhariyat.ayahs
-      .filter((ayah) => ayah.number >= 31)
-      .flatMap((ayah) => ayah.words)
-      .filter((word) => word.teachingId).length,
-    210,
-  );
-  assert.equal(
-    adhDhariyat.ayahs
-      .filter((ayah) => ayah.number < 31)
-      .flatMap((ayah) => ayah.words)
-      .filter((word) => word.teachingId).length,
-    0,
-  );
+  assert.equal(adhDhariyat.ayahs.flatMap((ayah) => ayah.words).filter((word) => word.teachingId).length, 360);
+  assert.ok(adhDhariyat.ayahs.filter((ayah) => ayah.number < 31).some((ayah) => ayah.words.some((word) => word.teachingId)));
+  assert.ok(adhDhariyat.ayahs.filter((ayah) => ayah.number >= 31).some((ayah) => ayah.words.some((word) => word.teachingId)));
   const juz27CompletedRange = juz27.filter((pkg) => pkg.surah.number >= 52);
   assert.deepEqual(
     juz27CompletedRange.map((pkg) => pkg.status),
@@ -471,8 +459,8 @@ test("Juz 27 preserves its 51:31 boundary and completes Sūrahs 52–57", async 
   const juz27Words = juz27.flatMap((pkg) =>
     pkg.ayahs.flatMap((ayah) => ayah.words.filter((word) => word.teachingId)),
   );
-  assert.equal(juz27Words.length, 2528);
-  assert.equal(juz27Words.filter((word) => word.breakdown).length, 2528);
+  assert.equal(juz27Words.length, 2678);
+  assert.equal(juz27Words.filter((word) => word.breakdown).length, 2678);
 });
 
 test("Sūrah 1 has complete custom teaching for every visible occurrence", async () => {
