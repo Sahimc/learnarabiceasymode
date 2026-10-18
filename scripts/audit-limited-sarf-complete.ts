@@ -119,6 +119,7 @@ const auditSurahNumbers = new Set(
     .map((value) => Number(value.trim()))
     .filter((value) => Number.isInteger(value) && value > 0),
 );
+const auditBlockedOnly = process.env.AUDIT_BLOCKED_ONLY === "1";
 const reviewedAt = new Date().toISOString();
 const auditBatchId = `limited-sarf-audit-${crypto.randomBytes(8).toString("hex")}`;
 const contract = assertAuthoringContract("complete limited Ṣarf audit");
@@ -12429,13 +12430,24 @@ function needsFamilyReview(occurrence: Occurrence) {
   return forms.length !== 5 || distinct.size !== forms.length || distinctLexicalShells.size !== forms.length;
 }
 
+function needsBlockedOnlyReview(occurrence: Occurrence) {
+  if (occurrence.lesson.sarfReview.auditDecision === "blocked-for-genuine-ambiguity") return true;
+  if (occurrence.lesson.sarfReview.status !== "full") return false;
+  const forms = occurrence.lesson.forms ?? [];
+  const preserveTerminalVowel = /verb|verbal-noun/iu.test(occurrence.lesson.type);
+  const distinctLexicalShells = new Set(
+    forms.map((row) => lexicalShellKey(row.form, { preserveTerminalVowel })),
+  );
+  return forms.length === 5 && distinctLexicalShells.size !== forms.length;
+}
+
 // A scoped audit limits the lessons we are allowed to change, not the
 // evidence available for the linguistic decision.  Cross-surah evidence is
 // essential: a family may be fully represented in another authored surah even
 // when the target occurrence was previously classified as limited.
 const limited = occurrences.filter(
   (occurrence) =>
-    needsFamilyReview(occurrence) &&
+    (auditBlockedOnly ? needsBlockedOnlyReview(occurrence) : needsFamilyReview(occurrence)) &&
     (!auditSurahNumbers.size || auditSurahNumbers.has(occurrence.pkg.surah.number)),
 );
 const beforeCounts = {
