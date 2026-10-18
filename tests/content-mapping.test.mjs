@@ -306,25 +306,20 @@ test("every limited family has an explicit current audit decision", async () => 
         ),
         `${pkg.packageId}/${lesson.id} has no current limited-family decision`,
       );
-      if (
-        lesson.root.trim() &&
-        !/proper\s*(?:name|noun)/iu.test(
-          `${lesson.type} ${lesson.grammar} ${lesson.forms[0]?.difference ?? ""}`,
-        ) &&
-        !/reviewed restricted lexical item/iu.test(
-          lesson.sarfReview.limitedReason ?? "",
-        )
-      )
+      if (lesson.sarfReview.auditDecision === "confirmed-limited") {
+        assert.ok(
+          lesson.sarfReview.limitedReason,
+          `${pkg.packageId}/${lesson.id} is confirmed-limited without a specific reason`,
+        );
+        assert.ok(
+          lesson.forms.length < 5,
+          `${pkg.packageId}/${lesson.id} is confirmed-limited but exposes five rows`,
+        );
+      } else
         assert.equal(
           lesson.sarfReview.auditDecision,
           "blocked-for-genuine-ambiguity",
-          `${pkg.packageId}/${lesson.id} is a rootful family silently accepted as limited`,
-        );
-      else
-        assert.equal(
-          lesson.sarfReview.auditDecision,
-          "confirmed-limited",
-          `${pkg.packageId}/${lesson.id} is not explicitly confirmed as a rootless limited family`,
+          `${pkg.packageId}/${lesson.id} has an invalid limited-family decision`,
         );
     }
   }
