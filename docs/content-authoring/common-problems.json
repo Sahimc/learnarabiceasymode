@@ -128,6 +128,11 @@
       "safeguard": "After merging provider, existing-reviewed and Codex-authored candidates, deduplicate by the reviewed part-of-speech-aware inflectional key before selecting rows and again after assembly. Treat case-only and tanwin-only variants as one form; if deduplication leaves fewer than five meaningful rows, author or select another genuinely distinct reviewed form rather than padding."
     },
     {
+      "id": "sarf-outer-shell-case-padding",
+      "problem": "Article, conjunction and case-only variants of the same lexical surface are counted as separate Ṣarf rows, allowing a family such as فُلْك to appear to have five forms without teaching five real lexical or morphological contrasts.",
+      "safeguard": "For Ṣarf family review, preserve the original fully vocalised Arabic rows but deduplicate article/conjunction shells and noun case endings for row-count purposes. Require each approved row to add a real lexical or morphological distinction; shell-only variants cannot satisfy the five-form target."
+    },
+    {
       "id": "rootless-locative-adverb-misclassified",
       "problem": "A fixed locative adverb such as حَيْثُ is copied from provider noun/root metadata and taught as a lexical root family, even though it has no productive lexical root for the learner to expand.",
       "safeguard": "Review fixed locative adverbs independently of provider labels. When the Arabic item is genuinely indeclinable and rootless, set the lesson root to empty, use No lexical root (locative adverb), mark the breakdown component rootless, and keep its fixed form as a confirmed-limited grammatical lesson. Never invent ح ي ث Ṣarf rows merely because a provider emitted a root-like label."

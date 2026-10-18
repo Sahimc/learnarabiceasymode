@@ -11223,6 +11223,16 @@ function inflectionalKey(value: string, options: { preserveTerminalVowel?: boole
   return options.preserveTerminalVowel ? key : key.replace(/[\u064B-\u0650]$/u, "");
 }
 
+function lexicalShellKey(value: string, options: { preserveTerminalVowel?: boolean } = {}) {
+  let key = inflectionalKey(value, options);
+  // Article and coordinating prefixes are grammatical shells, not new Ṣarf
+  // forms. Remove them only for duplicate detection; the original Arabic
+  // surface form remains untouched in the lesson row.
+  key = key.replace(/^[وف][\u064B-\u065F\u0670\u06D6-\u06ED]*/u, "");
+  key = key.replace(/^(?:ٱلْ|الْ|ٱل|ال)/u, "");
+  return key;
+}
+
 function candidateInflectionalKey(candidate: Candidate) {
   const preserveTerminalVowel = candidate.featureSignal.some(
     (signal) => signal === "partofspeech:verb" || signal === "partofspeech:verbal-noun",
@@ -11523,7 +11533,11 @@ function dedupeCandidates(candidates: Candidate[]) {
     // تَحْتِ while candidateInflectionalKey preserves lexical final vowels on
     // verbs and verbal nouns, so genuine contrasts such as حَضَّ and حَضٌّ
     // remain distinct.
-    const key = candidateInflectionalKey(candidate);
+    const key = lexicalShellKey(candidate.form, {
+      preserveTerminalVowel: candidate.featureSignal.some(
+        (signal) => signal === "partofspeech:verb" || signal === "partofspeech:verbal-noun",
+      ),
+    });
     const previous = byForm.get(key);
     if (!previous || candidate.score > previous.score) byForm.set(key, candidate);
   }
@@ -11659,10 +11673,38 @@ const REVIEWED_RESTRICTED_LEXICAL_ROOTS = new Set([
   "صرط",
   "ثيب",
   "نسو",
+  "فلك",
 ]);
 
 function reviewedRestrictedCandidates(root: string): Candidate[] {
   const families: Record<string, Array<Omit<Candidate, "score" | "sourceKind">>> = {
+    ["فلك"]: [
+      {
+        form: "فَلَكٌ",
+        meaning: "an orbit or celestial sphere",
+        difference:
+          "Lexical vowel-pattern contrast; it names an orbit or celestial sphere, distinct from فُلْكٌ used for a ship or ships.",
+        relationship:
+          "Established lexical noun of the ف ل ك family, distinguished by its vocalised pattern and meaning from فُلْك.",
+        provenance:
+          "Codex-authored after review of canonical Qur'anic occurrences 21:33 and 36:40 and approved project root evidence; outer article, conjunction and case variants were not counted.",
+        featureSignal: ["partofspeech:noun", "meaning:orbit", "pattern:lexical-vowel-contrast"],
+        baseDistinct: true,
+        lexicalKey: "فلك-orbit",
+      },
+      {
+        form: "أَفْلَاكٌ",
+        meaning: "orbits or celestial spheres",
+        difference:
+          "Broken plural; it expands the orbit sense into a genuine lexical number contrast rather than repeating the ship noun with a different case ending.",
+        relationship: "Established broken plural of فَلَكٌ in the ف ل ك lexical family.",
+        provenance:
+          "Codex-authored after review of standard Arabic lexical morphology for فَلَكٌ and the approved project root meaning; case-only variants were excluded.",
+        featureSignal: ["partofspeech:noun", "number:plural", "derivation:broken-plural"],
+        baseDistinct: true,
+        lexicalKey: "أفلاك",
+      },
+    ],
     ["برزخ"]: [
       {
         form: "بَرَازِخُ",
@@ -12380,7 +12422,11 @@ function needsFamilyReview(occurrence: Occurrence) {
   if (review.status !== "full") return false;
   const forms = occurrence.lesson.forms ?? [];
   const distinct = new Set(forms.map((row) => normalized(row.form)));
-  return forms.length !== 5 || distinct.size !== forms.length;
+  const preserveTerminalVowel = /verb|verbal-noun/iu.test(occurrence.lesson.type);
+  const distinctLexicalShells = new Set(
+    forms.map((row) => lexicalShellKey(row.form, { preserveTerminalVowel })),
+  );
+  return forms.length !== 5 || distinct.size !== forms.length || distinctLexicalShells.size !== forms.length;
 }
 
 // A scoped audit limits the lessons we are allowed to change, not the
@@ -12436,12 +12482,17 @@ for (const occurrence of limited) {
   const currentFormKey = inflectionalKey(rebuiltCurrent.form, {
     preserveTerminalVowel: category === "verb",
   });
+  const currentLexicalShellKey = lexicalShellKey(rebuiltCurrent.form, {
+    preserveTerminalVowel: category === "verb",
+  });
   const existingForms: LessonForm[] = [];
   const seen = new Set([normalized(rebuiltCurrent.form)]);
   for (const row of oldSafeRows) {
     if (REVIEWED_RESTRICTED_LEXICAL_ROOTS.has(root) && root !== "صيطر") continue;
     if (normalized(row.form) === normalized(rebuiltCurrent.form)) continue;
     if (inflectionalKey(row.form, { preserveTerminalVowel: category === "verb" }) === currentFormKey)
+      continue;
+    if (lexicalShellKey(row.form, { preserveTerminalVowel: category === "verb" }) === currentLexicalShellKey)
       continue;
     if (isKnownWrongRootForm(root, row.form)) continue;
     if (seen.has(normalized(row.form))) continue;
@@ -12512,6 +12563,11 @@ for (const occurrence of limited) {
     (candidate) =>
       candidateInflectionalKey(candidate) !== currentFormKey &&
       normalized(candidate.form) !== normalized(rebuiltCurrent.form) &&
+      lexicalShellKey(candidate.form, {
+        preserveTerminalVowel: candidate.featureSignal.some(
+          (signal) => signal === "partofspeech:verb" || signal === "partofspeech:verbal-noun",
+        ),
+      }) !== currentLexicalShellKey &&
       !existingExactFormKeys.has(normalized(candidate.form)),
   );
   const chosen = root
