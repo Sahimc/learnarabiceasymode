@@ -10,7 +10,7 @@
     "description": "Reviewed Word Tree teaching layer for Surah 32."
   },
   "contentVersion": "tanzil-1.1+teaching-32-v1-sarf-1.2-limited-audit-historical-ab-reaudit-20261020213343",
-  "status": "custom-partial",
+  "status": "custom-complete",
   "sourceReferences": [
     {
       "provider": "tanzil",
@@ -30015,6 +30015,8 @@
         }
       ],
       "sarfReview": {
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
           "Historical Tier A/B re-audit 2026-10-20T21:33:43.094Z: FULL.",
           "The limited decision did not use the existing basic, imperfect, verbal-noun and Form II relations around the current active participle.",
@@ -30024,9 +30026,7 @@
           "Article, conjunction, preposition, case, tanwīn and attached-pronoun shell variants are not independent Ṣarf members."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-20T21:33:43.094Z",
-        "status": "full",
-        "auditDecision": "upgraded-to-full"
+        "reviewedAt": "2026-10-20T21:33:43.094Z"
       },
       "takeaway": "The root ن ك س remains connected to “(will) hang” while the form shows its grammatical role."
     },
@@ -35376,22 +35376,54 @@
         {
           "form": "تَتَجَافَىٰ",
           "meaning": "Forsake",
-          "difference": "Current Qur'anic occurrence; pattern: Form 1; tense: imperfect verb; verb form: Form 1.",
-          "relationship": "Current Qur'anic occurrence of the جفو lexical family in this āyah.",
-          "provenance": "Codex review of canonical Qur'anic occurrence word:32:16:1. Aligned Quranic Arabic Corpus morphology 0.4-derived (32:16:1) was checked as evidence."
+          "difference": "Current Qur’anic occurrence at 32:16:1; this exact surface form is always first.",
+          "relationship": "Current occurrence of the جفو family; comparison rows explain the root and pattern without flattening semantic development.",
+          "provenance": "Tier-C2 adjudication 2026-10-20T23:03:24.701Z; canonical occurrence, current lesson, root, lemma and morphology evidence inspected."
+        },
+        {
+          "form": "جَفَا",
+          "meaning": "he was harsh / turned away",
+          "difference": "Form I defective perfect: The meaning is translated according to this form; any development from the Qur’anic occurrence is stated rather than flattened. Compared with the Qur’anic occurrence at 32:16:1. Shows the root beneath Form VI",
+          "relationship": "Basic harshness/turning Same-root relationship to جفو; this is not a shell-only or bare-radical row.",
+          "provenance": "Tier-C2 adjudication 2026-10-20T23:03:24.701Z; Canonical Qur’anic occurrence evidence for جفو; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge. Provider output was treated as evidence, not as the teaching answer."
+        },
+        {
+          "form": "يَجْفُو",
+          "meaning": "he is harsh / turns away",
+          "difference": "Form I defective imperfect: The meaning is translated according to this form; any development from the Qur’anic occurrence is stated rather than flattened. Compared with the Qur’anic occurrence at 32:16:1. Teaches the weak-root pattern",
+          "relationship": "Ongoing state Same-root relationship to جفو; this is not a shell-only or bare-radical row.",
+          "provenance": "Tier-C2 adjudication 2026-10-20T23:03:24.701Z; Canonical Qur’anic occurrence evidence for جفو; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge. Provider output was treated as evidence, not as the teaching answer."
+        },
+        {
+          "form": "جَفَاءٌ",
+          "meaning": "harshness / estrangement",
+          "difference": "Verbal noun: The meaning is translated according to this form; any development from the Qur’anic occurrence is stated rather than flattened. Compared with the Qur’anic occurrence at 32:16:1. Adds the abstract noun",
+          "relationship": "Names the state Same-root relationship to جفو; this is not a shell-only or bare-radical row.",
+          "provenance": "Tier-C2 adjudication 2026-10-20T23:03:24.701Z; Canonical Qur’anic occurrence evidence for جفو; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge. Provider output was treated as evidence, not as the teaching answer."
+        },
+        {
+          "form": "تَجَافٍ",
+          "meaning": "turning away from one another",
+          "difference": "Form VI verbal noun: The meaning is translated according to this form; any development from the Qur’anic occurrence is stated rather than flattened. Compared with the Qur’anic occurrence at 32:16:1. Explains the Qur’anic form",
+          "relationship": "Reciprocal development Same-root relationship to جفو; this is not a shell-only or bare-radical row.",
+          "provenance": "Tier-C2 adjudication 2026-10-20T23:03:24.701Z; Canonical Qur’anic occurrence evidence for جفو; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge. Provider output was treated as evidence, not as the teaching answer."
         }
       ],
       "sarfReview": {
-        "status": "limited",
-        "limitedReason": "تَتَجَافَىٰ is a rootful verb with root ج ف و. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
-        "auditDecision": "blocked-for-genuine-ambiguity",
+        "status": "full",
+        "auditDecision": "upgraded-to-full",
         "provenance": [
-          "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:32:16:1.",
-          "Rootful verb family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
-          "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+          "Tier-C2 adjudication 2026-10-20T23:03:24.701Z: FULL.",
+          "Every occurrence of lexical|جفو|تتجافى|verb was inspected.",
+          "Accepted جَفَا: Canonical Qur’anic occurrence evidence for جفو; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge. Provider output was treated as evidence, not as the teaching answer.",
+          "Accepted يَجْفُو: Canonical Qur’anic occurrence evidence for جفو; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge. Provider output was treated as evidence, not as the teaching answer.",
+          "Accepted جَفَاءٌ: Canonical Qur’anic occurrence evidence for جفو; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge. Provider output was treated as evidence, not as the teaching answer.",
+          "Accepted تَجَافٍ: Canonical Qur’anic occurrence evidence for جفو; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge. Provider output was treated as evidence, not as the teaching answer.",
+          "Article, conjunction, case-ending and attached-pronoun variants were rejected as shell or inflection padding.",
+          "Bare radicals and mechanically generated forms without lexical attestation were rejected."
         ],
         "reviewedBy": "Codex",
-        "reviewedAt": "2026-10-18T14:42:38.844Z"
+        "reviewedAt": "2026-10-20T23:03:24.701Z"
       },
       "takeaway": "The root ج ف و remains connected to “Forsake” while the form shows its grammatical role."
     },
