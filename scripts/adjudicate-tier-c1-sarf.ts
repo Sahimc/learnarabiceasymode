@@ -5,6 +5,7 @@ import { assertAuthoringContract } from "./lib/authoring-contract";
 import { discoverPackagePaths, readPackage, repoRoot } from "./lib/packages";
 import { appendAuditRecords, readAuditRecords, type AuditRecord } from "./lib/review-ledger";
 import type { LessonForm, SarfReview, SurahPackage } from "../app/data/content-contract";
+import { C1_FAMILY_SPECS } from "./lib/tier-c1-specs";
 
 const contract = assertAuthoringContract("Tier-C classification and C1 Ṣarf adjudication");
 const reviewedAt = new Date().toISOString();
@@ -259,6 +260,7 @@ async function main() {
       if (!record) throw new Error(`Missing package occurrence ${occurrence.occurrenceId}`);
       return { occurrence, record };
     });
+    const familySpec = C1_FAMILY_SPECS[root];
     const currentSurfaceForms = new Set(item.occurrences.map((occurrence) => formKey(occurrence.arabic)));
     const sources = (reviewedSources.get(root) ?? []).filter((source) => {
       const text = `${source.row.difference} ${source.row.relationship}`;
@@ -281,10 +283,33 @@ async function main() {
     });
     const byForm = new Map<string, ReviewedSource>();
     for (const source of sources) if (!byForm.has(formKey(source.row.form))) byForm.set(formKey(source.row.form), source);
-    const preferred = preferredC1Forms[root] ?? [];
+    const preferred = familySpec?.related.map((candidate) => candidate.form) ?? preferredC1Forms[root] ?? [];
     const candidates: Candidate[] = [];
     const rejected: string[] = [];
-    for (const preferredForm of preferred) {
+    for (const [index, preferredForm] of preferred.entries()) {
+      if (familySpec) {
+        const authored = familySpec.related[index];
+        candidates.push({
+          row: {
+            form: authored.form,
+            meaning: authored.meaning,
+            difference: `${authored.morphology}: ${authored.difference}`,
+            relationship: authored.relationship,
+            provenance: `C1 explicit same-root semantic-development specification; ${authored.evidence}`,
+          },
+          sourceOccurrenceId: `authored:c1:${root}:${index + 1}`,
+          sourceLocation: "approved project linguistic evidence",
+          root,
+          lessonId: "authored-c1-semantic-development",
+          meaning: authored.meaning,
+          morphology: authored.morphology,
+          relationship: authored.relationship,
+          evidence: authored.evidence,
+          confidence: "high",
+          pedagogicalValue: authored.pedagogicalValue,
+        });
+        continue;
+      }
       const source = byForm.get(formKey(preferredForm));
       if (source) {
         candidates.push(makeCandidate(source));
@@ -326,9 +351,9 @@ async function main() {
       const current: LessonForm = {
         ...currentExisting,
         form: occurrence.arabic,
-        meaning: occurrence.meaning,
-        difference: "Current Qur’anic occurrence; this exact form is always shown first.",
-        relationship: `The Qur’anic occurrence of the ${root} lexical verb in ${occurrence.location}.`,
+        meaning: familySpec?.currentMeaning ?? occurrence.meaning,
+        difference: `Current Qur’anic occurrence; this exact form is always shown first.${familySpec ? " Same-root semantic development is taught explicitly; shell-only variants are not separate rows." : ""}`,
+        relationship: `The Qur’anic occurrence of the ${root} lexical verb in ${occurrence.location}; related forms are selected for useful morphological development.`,
         provenance: `Tier-C1 current-form review ${reviewedAt}; canonical Qur’anic occurrence ${occurrence.location} inspected.`
       };
       currentRows.push({ occurrenceId: occurrence.occurrenceId, location: occurrence.location, arabic: occurrence.arabic, forms: record.lesson.forms });
@@ -347,7 +372,9 @@ async function main() {
           auditDecision: "upgraded-to-full",
           provenance: [
             `Tier-C1 adjudication ${reviewedAt}: FULL.`,
-            `The current Qur’anic form is first; four genuinely distinct related forms were selected from existing reviewed same-root evidence.`,
+            familySpec
+              ? `The current Qur’anic form is first; four explicit same-root semantic-development forms were selected and translated according to their own meanings.`
+              : `The current Qur’anic form is first; four genuinely distinct related forms were selected from existing reviewed same-root evidence.`,
             ...acceptedForFamily.map((candidate) => candidate.evidence),
             "Shared radicals alone, shell variants, duplicate forms and weak padding were rejected."
           ],
@@ -360,7 +387,7 @@ async function main() {
     }
     const recordId = `tier-c1-family-${hash(item.familyKey)}`;
     const reasoning = decision === "FULL"
-      ? `The ${root} verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.`
+      ? `The ${root} verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. ${familySpec ? "The explicit same-root semantic-development specification was applied; meanings were not flattened and shell-only variants were excluded." : "Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals."}`
       : `The family remains blocked because the reviewed project evidence did not establish four additional forms safely. The correct response is to preserve uncertainty rather than manufacture rows.`;
     c1Adjudications.push({ familyKey: item.familyKey, root: item.root, lemma: item.lemmaOrCurrentForm, category: item.category, locations: item.occurrences, currentRows, candidatesConsidered: candidates, acceptedCandidates: acceptedForFamily, rejectedCandidates: rejected, finalRows, decision, reasoning, evidence: ["Canonical Qur’anic occurrences inspected.", "Existing reviewed project lesson catalogue inspected.", "Provider morphology was treated as evidence only.", "The governing contract and common-problems safeguards were applied."], confidence: decision === "FULL" ? "high" : "medium", unresolvedQuestion: decision === "FULL" ? null : `Which additional same-sense forms can be established for ${item.lemmaOrCurrentForm} without root-family or semantic drift?`, evidenceRequired: decision === "FULL" ? [] : evidenceFor("REGULAR VERB FAMILY", item), humanExpertReviewRequired: decision !== "FULL", reviewedAt, recordId });
     ledger.push({ recordId, eventType: "tier-c1-sarf-adjudication", contractId: contract.contractId, contractVersion: contract.contractVersion, scope: { familyKey: item.familyKey, occurrences: item.occurrences.map((occurrence) => occurrence.occurrenceId), tier: "C1" }, status: decision === "FULL" ? "passed" : "blocked", reviewedAt, checks: ["contract-loaded", "tier-c-scope-504", "c1-high-resolvability-21", "every-occurrence-inspected", "current-form-first", "four-distinct-related-forms-or-honest-block", "shared-root-only-candidates-rejected", "provenance-recorded", "decision-recorded"], evidence: [reasoning, ...rejected], decision, root: item.root, lemmaOrCurrentForm: item.lemmaOrCurrentForm, category: item.category, humanExpertReviewRequired: decision !== "FULL" });

@@ -1,8 +1,8 @@
-# Tier-C1 Ṣarf adjudications
+# Tier-C1 Ṣarf adjudications — same-root semantic-development re-audit
 
-Generated: 2026-10-19T16:10:08.184Z
+Generated: 2026-10-20T21:06:06.467Z
 
-C1 contains only HIGH-resolvability families. Existing reviewed project lessons were used as evidence; no row was accepted from shared root alone.
+The governing teaching purpose is same-root morphological recognition. Same meaning is not required, but every row must be attested, morphologically useful, accurately translated and explicit about semantic development. Shell-only variants are excluded.
 
 ## Summary
 
@@ -10,10 +10,10 @@ C1 contains only HIGH-resolvability families. Existing reviewed project lessons 
 {
   "tier": "C1",
   "scope": {
-    "highResolvabilityFamilies": 21,
+    "families": 21,
     "occurrences": 25
   },
-  "totals": {
+  "decision": {
     "FULL": 21,
     "CONFIRMED-LIMITED": 0,
     "BLOCKED": 0,
@@ -25,6 +25,24 @@ C1 contains only HIGH-resolvability families. Existing reviewed project lessons 
     "BLOCKED": 0,
     "MODEL-ISSUE": 0
   },
+  "changedFamilies": [
+    "جوز",
+    "خبت",
+    "درأ",
+    "زلل",
+    "زهق",
+    "زول",
+    "سيل",
+    "شور",
+    "عثر",
+    "عيي",
+    "كمل",
+    "لزم",
+    "لفت",
+    "نأي",
+    "نكس",
+    "هزز"
+  ],
   "changedPackageFiles": [
     "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\003-l-imr-n\\surah.json",
     "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\005-al-m-idah\\surah.json",
@@ -40,489 +58,490 @@ C1 contains only HIGH-resolvability families. Existing reviewed project lessons 
     "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\021-al-anbiy\\surah.json",
     "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\046-al-a-q-f\\surah.json"
   ],
-  "generatedAt": "2026-10-19T16:10:08.184Z"
+  "governingInterpretation": "Same root is primary; same meaning is not required; semantic development must be translated honestly; shell-only and weak padding are forbidden.",
+  "generatedAt": "2026-10-20T21:06:06.467Z"
 }
 ```
 
-## lexical|زلل|استزل|verb
+## زلل
 
-Decision: **FULL**; root: زلل; occurrences: 3:155:9
+Decision: **FULL**
+Locations: 3:155:9
 
-The زلل verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+Form I slipping, Form IV causing to slip and Form X causing to slip are shown as related semantic development. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- يَزِلُّ — he slips; Form I imperfect; compared with the current Qur'anic occurrence at 2:36:1. Shows the ongoing basic action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:36:1 (2:36:1) for normalized root زلل; canonical project occurrence evidence and reviewed morphology were inspected.
-- زَلَّ — he slipped; Form I perfect; compared with the current Qur'anic occurrence at 2:36:1. Contrasts the causative occurrence with the basic event.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:36:1 (2:36:1) for normalized root زلل; canonical project occurrence evidence and reviewed morphology were inspected.
-- زَلَلٌ — slipping or error; Form I verbal noun; compared with the current Qur'anic occurrence at 2:36:1. Names the event.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:36:1 (2:36:1) for normalized root زلل; canonical project occurrence evidence and reviewed morphology were inspected.
-- مُزِلٌّ — causing to slip; Form IV active participle; compared with the current Qur’anic form at 16:94:6. Shows the causative relation.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:16:94:6 (16:94:6) for normalized root زلل; canonical project occurrence evidence and reviewed morphology were inspected.
+- زَلَّ — he slipped / erred; Form I perfect. Form I of the same root; the basic event behind the Qur’anic causative form.
+- يَزِلُّ — he slips / errs; Form I imperfect. Form I imperfect of the same lexical root.
+- زَلَلٌ — slipping / error; Form I verbal noun. Form I action noun of the same root.
+- أَزَلَّ — he caused someone to slip; Form IV perfect. Form IV causative development of the same root.
 
-Rejected candidates:
+Rejected previous rows:
 
-- إِزْلَالٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for زلل; no automatic root-only expansion was allowed.
-- إِزْلَالٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for زلل; no automatic root-only expansion was allowed.
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
-
-Human expert review still required: no
-
----
-## lexical|شور|شاور|verb
-
-Decision: **FULL**; root: شور; occurrences: 3:159:19
-
-The شور verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
-
-Accepted candidates:
-
-- شَاوَرَ — he consulted; Compared with وَتَشَاوُرٍ: Form III perfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:233:40 (2:233:40) for normalized root شور; canonical project occurrence evidence and reviewed morphology were inspected.
-- يُشَاوِرُ — he consults; Compared with وَتَشَاوُرٍ: Form III imperfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:233:40 (2:233:40) for normalized root شور; canonical project occurrence evidence and reviewed morphology were inspected.
-- تَشَاوُرٌ — mutual consultation; Compared with وَتَشَاوُرٍ: Form VI verbal noun.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:233:40 (2:233:40) for normalized root شور; canonical project occurrence evidence and reviewed morphology were inspected.
-- شُورَىٰ — consultation; Compared with وَتَشَاوُرٍ: Lexical noun on the shūrā pattern.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:233:40 (2:233:40) for normalized root شور; canonical project occurrence evidence and reviewed morphology were inspected.
-
-Rejected candidates:
-
-- أَشَارَ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for شور; no automatic root-only expansion was allowed.
-- يُشِيرُ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for شور; no automatic root-only expansion was allowed.
-- إِشَارَةٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for شور; no automatic root-only expansion was allowed.
-- مُشِيرٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for شور; no automatic root-only expansion was allowed.
-- مُشَاوَرَةٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for شور; no automatic root-only expansion was allowed.
-- اِسْتَشَارَ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for شور; no automatic root-only expansion was allowed.
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- مُزِلٌّ: replaced by the reviewed same-root semantic-development family.
+- مُزِلٌّ: replaced during the same-root semantic-development re-audit because it was less useful, shell-like, weakly scoped or semantically under-described.
 
 Human expert review still required: no
 
 ---
-## lexical|درأ|ادرء|verb
+## شور
 
-Decision: **FULL**; root: درأ; occurrences: 3:168:10
+Decision: **FULL**
+Locations: 3:159:19
 
-The درأ verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+Form III consultation, its action noun, mutual consultation and the established noun shūrā are compared. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- دَرَأَ — he repelled; Compared with فَٱدَّٰرَْٰٔتُمْ: Form I perfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:72:4 (2:72:4) for normalized root درأ; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَدْرَأُ — he repels; Compared with فَٱدَّٰرَْٰٔتُمْ: Form I imperfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:72:4 (2:72:4) for normalized root درأ; canonical project occurrence evidence and reviewed morphology were inspected.
-- دَرْءٌ — repelling; Compared with فَٱدَّٰرَْٰٔتُمْ: Form I verbal noun.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:72:4 (2:72:4) for normalized root درأ; canonical project occurrence evidence and reviewed morphology were inspected.
-- اِدْرَءُوا — repel!; Compared with فَٱدَّٰرَْٰٔتُمْ: Form I imperative, second-person masculine plural.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:72:4 (2:72:4) for normalized root درأ; canonical project occurrence evidence and reviewed morphology were inspected.
+- شَاوَرَ — he consulted; Form III perfect. Form III verb of the same root as the Qur’anic imperative.
+- مُشَاوَرَةٌ — consultation; Form III verbal noun. Form III maṣdar of شَاوَرَ.
+- تَشَاوُرٌ — mutual consultation; Form VI verbal noun. Form VI development of the same root.
+- شُورَىٰ — consultation / counsel; Established lexical noun. Established noun in the same root family, with its own meaning.
 
-Rejected candidates:
+Rejected previous rows:
 
-- دَارِئٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for درأ; no automatic root-only expansion was allowed.
-- دَارِئٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for درأ; no automatic root-only expansion was allowed.
-- دَارِئٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for درأ; no automatic root-only expansion was allowed.
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- يُشَاوِرُ: replaced by the reviewed same-root semantic-development family.
+- يُشَاوِرُ: replaced during the same-root semantic-development re-audit because it was less useful, shell-like, weakly scoped or semantically under-described.
 
 Human expert review still required: no
 
 ---
 
-## lexical|كمل|اكمل|verb
+## درأ
 
-Decision: **FULL**; root: كمل; occurrences: 5:3:41
+Decision: **FULL**
+Locations: 3:168:10
 
-The كمل verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+The shell-only imperative without فـ is excluded; the Form VI mutual-dispute development is taught instead. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- كَمُلَ — he became complete; Compared with كَامِلَيْنِ: Form I stative perfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:233:5 (2:233:5) for normalized root كمل; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَكْمُلُ — he becomes complete; Compared with كَامِلَيْنِ: Form I imperfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:233:5 (2:233:5) for normalized root كمل; canonical project occurrence evidence and reviewed morphology were inspected.
-- أَكْمَلَ — he perfected or completed; Compared with كَامِلَيْنِ: Form IV perfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:233:5 (2:233:5) for normalized root كمل; canonical project occurrence evidence and reviewed morphology were inspected.
-- يُكْمِلُ — he completes; Compared with كَامِلَيْنِ: Form IV imperfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:233:5 (2:233:5) for normalized root كمل; canonical project occurrence evidence and reviewed morphology were inspected.
+- دَرَأَ — he repelled / averted; Form I perfect. Form I basic verb of the same root.
+- يَدْرَأُ — he repels / averts; Form I imperfect. Form I imperfect of the same root.
+- دَرْءٌ — repelling / averting; Form I verbal noun. Form I action noun of the same root.
+- ٱدَّارَأَ — he disputed with another; Form VI perfect. A genuinely derived same-root form, not the current imperative with فـ removed.
 
-Rejected candidates:
+Rejected previous rows:
 
-- أَكْمَلْتُ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for كمل; no automatic root-only expansion was allowed.
-- كَامِلَةٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for كمل; no automatic root-only expansion was allowed.
-- كَامِلَيْنِ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for كمل; no automatic root-only expansion was allowed.
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- اِدْرَءُوا: replaced by the reviewed same-root semantic-development family.
+- اِدْرَءُوا: replaced during the same-root semantic-development re-audit because it was less useful, shell-like, weakly scoped or semantically under-described.
 
 Human expert review still required: no
 
 ---
 
-## lexical|غرو|اغري|verb
+## كمل
 
-Decision: **FULL**; root: غرو; occurrences: 5:14:13
+Decision: **FULL**
+Locations: 5:3:41
 
-The غرو verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+State, causative completion, abstract noun, adjective and becoming-complete are compared. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- أَغْرَى — he incited; Form IV perfect; compared with the current Qur’anic form at 33:60:12. Shows the completed causative action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:33:60:12 (33:60:12) for normalized root غرو; canonical project occurrence evidence and reviewed morphology were inspected.
-- يُغْرِي — he incites; Form IV imperfect; compared with the current Qur’anic form at 33:60:12. Shows the ongoing action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:33:60:12 (33:60:12) for normalized root غرو; canonical project occurrence evidence and reviewed morphology were inspected.
-- إِغْرَاءٌ — incitement; Form IV verbal noun; compared with the current Qur’anic form at 33:60:12. Names the action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:33:60:12 (33:60:12) for normalized root غرو; canonical project occurrence evidence and reviewed morphology were inspected.
-- مُغْرٍ — inciting or alluring; Form IV active participle; compared with the current Qur’anic form at 33:60:12. Shows the agent.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:33:60:12 (33:60:12) for normalized root غرو; canonical project occurrence evidence and reviewed morphology were inspected.
+- كَمُلَ — became complete / perfect; Form I perfect. Form I state verb of the same root.
+- كَمَالٌ — completeness / perfection; Lexical abstract noun. Established noun of the same root.
+- كَامِلٌ — complete / perfect; Form I active adjective. Established adjective in the same root family.
+- اِكْتَمَلَ — became complete; Form VIII perfect. Form VIII development of the same root.
 
-Rejected candidates:
+Rejected previous rows:
 
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
-
-Human expert review still required: no
-
----
-
-## lexical|عثر|عثر|verb
-
-Decision: **FULL**; root: عثر; occurrences: 5:107:2
-
-The عثر verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
-
-Accepted candidates:
-
-- عَثَرَ — he found or stumbled; Form I perfect; compared with the current Qur’anic form at 18:21:2. Shows the basic event.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:18:21:2 (18:21:2) for normalized root عثر; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَعْثُرُ — he finds or stumbles; Form I imperfect; compared with the current Qur’anic form at 18:21:2. Shows the ongoing event.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:18:21:2 (18:21:2) for normalized root عثر; canonical project occurrence evidence and reviewed morphology were inspected.
-- عُثُورٌ — finding or stumbling; Form I verbal noun; compared with the current Qur’anic form at 18:21:2. Names the event.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:18:21:2 (18:21:2) for normalized root عثر; canonical project occurrence evidence and reviewed morphology were inspected.
-- إِعْثَارٌ — causing to discover; Form IV verbal noun; compared with the current Qur’anic form at 18:21:2. Shows the derived causative pattern.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:18:21:2 (18:21:2) for normalized root عثر; canonical project occurrence evidence and reviewed morphology were inspected.
-
-Rejected candidates:
-
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- يَكْمُلُ: replaced by the reviewed same-root semantic-development family.
+- أَكْمَلَ: replaced by the reviewed same-root semantic-development family.
+- يُكْمِلُ: replaced by the reviewed same-root semantic-development family.
+- يَكْمُلُ: replaced during the same-root semantic-development re-audit because it was less useful, shell-like, weakly scoped or semantically under-described.
+- أَكْمَلَ: replaced during the same-root semantic-development re-audit because it was less useful, shell-like, weakly scoped or semantically under-described.
+- يُكْمِلُ: replaced during the same-root semantic-development re-audit because it was less useful, shell-like, weakly scoped or semantically under-described.
 
 Human expert review still required: no
 
 ---
 
-## lexical|نأي|ين|verb
+## غرو
 
-Decision: **FULL**; root: نأي; occurrences: 6:26:4
+Decision: **FULL**
+Locations: 5:14:13
 
-The نأي verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+A clean Form IV verb, imperfect, verbal noun and active participle are retained. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- نَأَى — he withdrew; Form I defective perfect; compared with the current Qur’anic form at 17:83:6. Shows the completed withdrawal.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:83:6 (17:83:6) for normalized root نأي; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَنْأَى — he withdraws; Form I defective imperfect; compared with the current Qur’anic form at 17:83:6. Shows the ongoing action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:83:6 (17:83:6) for normalized root نأي; canonical project occurrence evidence and reviewed morphology were inspected.
-- نَأْيٌ — withdrawal; Form I verbal noun; compared with the current Qur’anic form at 17:83:6. Names the action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:83:6 (17:83:6) for normalized root نأي; canonical project occurrence evidence and reviewed morphology were inspected.
-- نَائٍ — withdrawing or distant; Active participial adjective; compared with the current Qur’anic form at 17:83:6. Shows the state.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:83:6 (17:83:6) for normalized root نأي; canonical project occurrence evidence and reviewed morphology were inspected.
+- أَغْرَى — he incited; Form IV perfect. Form IV stem of the same root.
+- يُغْرِي — he incites; Form IV imperfect. Form IV imperfect of the same root.
+- إِغْرَاءٌ — incitement; Form IV verbal noun. Form IV maṣdar of أَغْرَى.
+- مُغْرٍ — inciting / one who incites; Form IV active participle. Form IV active participle of the same root.
 
-Rejected candidates:
+Rejected previous rows:
 
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
-
-Human expert review still required: no
-
----
-
-## lexical|وقف|وقف|verb
-
-Decision: **FULL**; root: وقف; occurrences: 6:27:4, 6:30:4
-
-The وقف verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
-
-Accepted candidates:
-
-- وَقَفَ — he stopped or stood; Form I perfect; compared with the current Qur'anic occurrence at 37:24:1. Shows the basic action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:37:24:1 (37:24:1) for normalized root وقف; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَقِفُ — he stops or stands; Form I imperfect; compared with the current Qur'anic occurrence at 37:24:1. Shows the ongoing action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:37:24:1 (37:24:1) for normalized root وقف; canonical project occurrence evidence and reviewed morphology were inspected.
-- وُقُوفٌ — standing or stopping; Form I verbal noun; compared with the current Qur'anic occurrence at 37:24:1. Names the state.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:37:24:1 (37:24:1) for normalized root وقف; canonical project occurrence evidence and reviewed morphology were inspected.
-- مَوْقُوفٌ — stopped or detained; Passive participial adjective; compared with the current Qur'anic occurrence at 37:24:1. Shows the affected subject.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:37:24:1 (37:24:1) for normalized root وقف; canonical project occurrence evidence and reviewed morphology were inspected.
-
-Rejected candidates:
-
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- None; the previous row was retained.
 
 Human expert review still required: no
 
 ---
 
-## lexical|طرد|تطرد|verb
+## عثر
 
-Decision: **FULL**; root: طرد; occurrences: 6:52:22
+Decision: **FULL**
+Locations: 5:107:2
 
-The طرد verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+The discovery sense is tied to the construction عَثَرَ عَلَىٰ / عُثِرَ عَلَىٰ; the root’s stumbling sense is not silently substituted. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- طَرَدَ — he expelled; Form I perfect; compared with the current Qur'anic occurrence at 6:52:2. Shows the completed action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:6:52:2 (6:52:2) for normalized root طرد; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَطْرُدُ — he expels; Form I imperfect; compared with the current Qur'anic occurrence at 6:52:2. Shows the ongoing action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:6:52:2 (6:52:2) for normalized root طرد; canonical project occurrence evidence and reviewed morphology were inspected.
-- طَارِدٌ — one who expels; Active participial adjective; compared with the current Qur'anic occurrence at 6:52:2. Shows the agent.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:6:52:2 (6:52:2) for normalized root طرد; canonical project occurrence evidence and reviewed morphology were inspected.
-- مَطْرُودٌ — driven away; Compared with بِطَارِدِ: Form I passive participle.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:11:29:13 (11:29:13) for normalized root طرد; canonical project occurrence evidence and reviewed morphology were inspected.
+- عَثَرَ — he stumbled / discovered; Form I perfect. Same root; the finding sense is expressed in عَثَرَ عَلَىٰ.
+- يَعْثُرُ — he stumbles / discovers; Form I imperfect. Form I imperfect of the same root.
+- عُثُورٌ — finding / discovery; Form I verbal noun. Form I action noun of the same root in the finding branch.
+- أَعْثَرَ — caused someone to discover / made known; Form IV perfect. Form IV causative development of the same root.
 
-Rejected candidates:
+Rejected previous rows:
 
-- طَرْدٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for طرد; no automatic root-only expansion was allowed.
-- طَرْدٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for طرد; no automatic root-only expansion was allowed.
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
-
-Human expert review still required: no
-
----
-
-## lexical|جوز|وجوزنا|verb
-
-Decision: **FULL**; root: جوز; occurrences: 7:138:1, 10:90:1
-
-The جوز verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
-
-Accepted candidates:
-
-- جَازَ — he passed or crossed; Compared with جَاوَزَهُۥ: Form I perfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:249:31 (2:249:31) for normalized root جوز; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَجُوزُ — he passes or may; Compared with جَاوَزَهُۥ: Form I imperfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:249:31 (2:249:31) for normalized root جوز; canonical project occurrence evidence and reviewed morphology were inspected.
-- جَوَازٌ — permission or passage; Compared with جَاوَزَهُۥ: Lexical noun.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:249:31 (2:249:31) for normalized root جوز; canonical project occurrence evidence and reviewed morphology were inspected.
-- جَاوَزَ — he crossed; Compared with جَاوَزَهُۥ: Form III perfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:249:31 (2:249:31) for normalized root جوز; canonical project occurrence evidence and reviewed morphology were inspected.
-
-Rejected candidates:
-
-- مُجِيزٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for جوز; no automatic root-only expansion was allowed.
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- إِعْثَارٌ: replaced by the reviewed same-root semantic-development family.
+- إِعْثَارٌ: replaced during the same-root semantic-development re-audit because it was less useful, shell-like, weakly scoped or semantically under-described.
 
 Human expert review still required: no
 
 ---
 
-## lexical|سلخ|انسلخ|verb
+## نأي
 
-Decision: **FULL**; root: سلخ; occurrences: 7:175:7, 9:5:2
+Decision: **FULL**
+Locations: 6:26:4
 
-The سلخ verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+The active participle is نَاءٍ, not نَائٍ; the weak-root spelling is preserved. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- سَلَخَ — he stripped or removed; Form I perfect; compared with the current Qur’anic form at 36:37:4. Shows the completed action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:36:37:4 (36:37:4) for normalized root سلخ; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَسْلَخُ — he strips or removes; Form I imperfect; compared with the current Qur’anic form at 36:37:4. Shows the ongoing action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:36:37:4 (36:37:4) for normalized root سلخ; canonical project occurrence evidence and reviewed morphology were inspected.
-- سَلْخٌ — stripping or removal; Form I verbal noun; compared with the current Qur’anic form at 36:37:4. Names the action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:36:37:4 (36:37:4) for normalized root سلخ; canonical project occurrence evidence and reviewed morphology were inspected.
-- مَسْلُوخٌ — stripped; Passive participial adjective; compared with the current Qur’anic form at 36:37:4. Shows the result.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:36:37:4 (36:37:4) for normalized root سلخ; canonical project occurrence evidence and reviewed morphology were inspected.
+- نَأَى — went / kept away; Form I defective perfect. Form I perfect of the same root.
+- نَأْيٌ — distancing / remoteness; Form I verbal noun. Form I action noun of the same root.
+- نَاءٍ — distant / one keeping away; Form I active participle. Weak-root active participle of the same root.
+- أَنْأَى — caused to become distant / removed; Form IV perfect. Form IV development of the same root.
 
-Rejected candidates:
+Rejected previous rows:
 
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
-
-Human expert review still required: no
-
----
-
-## lexical|زهق|تزهق|verb
-
-Decision: **FULL**; root: زهق; occurrences: 9:55:14, 9:85:13
-
-The زهق verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
-
-Accepted candidates:
-
-- زَهَقَ — it perished; Form I perfect; compared with the current Qur’anic form at 17:81:4. Shows the completed event.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:81:4 (17:81:4) for normalized root زهق; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَزْهَقُ — it perishes; Form I imperfect; compared with the current Qur’anic form at 17:81:4. Shows the ongoing event.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:81:4 (17:81:4) for normalized root زهق; canonical project occurrence evidence and reviewed morphology were inspected.
-- زَهُوقٌ — liable to perish; Intensive adjective; compared with the current Qur’anic form at 17:81:4. Shows the characteristic quality.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:81:4 (17:81:4) for normalized root زهق; canonical project occurrence evidence and reviewed morphology were inspected.
-- زَاهِقٌ — perishing or departing; Active participial adjective; compared with the current Qur’anic form at 17:81:4. Shows the state.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:81:4 (17:81:4) for normalized root زهق; canonical project occurrence evidence and reviewed morphology were inspected.
-
-Rejected candidates:
-
-- مُزْهِقٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for زهق; no automatic root-only expansion was allowed.
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- يَنْأَى: replaced by the reviewed same-root semantic-development family.
+- نَائٍ: replaced by the reviewed same-root semantic-development family.
+- يَنْأَى: replaced during the same-root semantic-development re-audit because it was less useful, shell-like, weakly scoped or semantically under-described.
+- نَائٍ: replaced during the same-root semantic-development re-audit because it was less useful, shell-like, weakly scoped or semantically under-described.
 
 Human expert review still required: no
 
 ---
 
-## lexical|لفت|تلفت|verb
+## وقف
 
-Decision: **FULL**; root: لفت; occurrences: 10:78:3
+Decision: **FULL**
+Locations: 6:27:4, 6:30:4
 
-The لفت verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+The passive Qur’anic form is compared with the basic verb, imperfect, maṣdar and passive participle. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- لَفَتَ — he turned someone away; Form I perfect; compared with the current Qur’anic form at 11:81:15. Shows the basic action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:11:81:15 (11:81:15) for normalized root لفت; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَلْفِتُ — he turns someone away; Form I imperfect; compared with the current Qur’anic form at 11:81:15. Shows the ongoing action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:11:81:15 (11:81:15) for normalized root لفت; canonical project occurrence evidence and reviewed morphology were inspected.
-- لَفْتٌ — turning away; Form I verbal noun; compared with the current Qur’anic form at 11:81:15. Names the action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:11:81:15 (11:81:15) for normalized root لفت; canonical project occurrence evidence and reviewed morphology were inspected.
-- اِلْتِفَاتٌ — turning or paying attention; Form VIII verbal noun; compared with the current Qur’anic form at 11:81:15. Shows the derived reflexive pattern.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:11:81:15 (11:81:15) for normalized root لفت; canonical project occurrence evidence and reviewed morphology were inspected.
+- وَقَفَ — stood / stopped; Form I perfect. Form I verb of the same root.
+- يَقِفُ — stands / stops; Form I imperfect. Form I imperfect of the same root.
+- وُقُوفٌ — standing / stopping; Form I verbal noun. Form I action noun of the same root.
+- مَوْقُوفٌ — stopped / made to stand / detained; Form I passive participle. Passive participle of the same root.
 
-Rejected candidates:
+Rejected previous rows:
 
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
-
-Human expert review still required: no
-
----
-
-## lexical|خبت|اخبت|verb
-
-Decision: **FULL**; root: خبت; occurrences: 11:23:6
-
-The خبت verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
-
-Accepted candidates:
-
-- خَبَتَ — he became humble; Form I perfect; compared with the current Qur’anic form at 22:34:20. Shows the basic state.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:22:34:20 (22:34:20) for normalized root خبت; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَخْبُتُ — he becomes humble; Form I imperfect; compared with the current Qur’anic form at 22:34:20. Shows the ongoing state.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:22:34:20 (22:34:20) for normalized root خبت; canonical project occurrence evidence and reviewed morphology were inspected.
-- خُبُوتٌ — humility; Form I verbal noun; compared with the current Qur’anic form at 22:34:20. Names the state.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:22:34:20 (22:34:20) for normalized root خبت; canonical project occurrence evidence and reviewed morphology were inspected.
-- مُخْبِتٌ — humble or devout; Form IV active participle; compared with the current Qur’anic form at 22:34:20. Shows the person with the quality.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:22:34:20 (22:34:20) for normalized root خبت; canonical project occurrence evidence and reviewed morphology were inspected.
-
-Rejected candidates:
-
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- None; the previous row was retained.
 
 Human expert review still required: no
 
 ---
 
-## lexical|لزم|ا|verb
+## طرد
 
-Decision: **FULL**; root: لزم; occurrences: 11:28:16
+Decision: **FULL**
+Locations: 6:52:22
 
-The لزم verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+Active verb, imperfect, active participle and passive participle are shown. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- لَزِمَ — he adhered or remained; Compared with أَلْزَمْنَـٰهُ: Form I perfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:13:3 (17:13:3) for normalized root لزم; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَلْزَمُ — he adheres or remains; Compared with أَلْزَمْنَـٰهُ: Form I imperfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:13:3 (17:13:3) for normalized root لزم; canonical project occurrence evidence and reviewed morphology were inspected.
-- أَلْزَمَ — he made adhere; Compared with أَلْزَمْنَـٰهُ: Form IV perfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:13:3 (17:13:3) for normalized root لزم; canonical project occurrence evidence and reviewed morphology were inspected.
-- يُلْزِمُ — he compels or makes adhere; Compared with أَلْزَمْنَـٰهُ: Form IV imperfect.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:17:13:3 (17:13:3) for normalized root لزم; canonical project occurrence evidence and reviewed morphology were inspected.
+- طَرَدَ — drove away; Form I perfect. Form I verb of the same root.
+- يَطْرُدُ — drives away; Form I imperfect. Form I imperfect of the same root.
+- طَارِدٌ — one who drives away; Form I active participle. Active participle of the same root.
+- مَطْرُودٌ — one driven away; Form I passive participle. Passive participle of the same root.
 
-Rejected candidates:
+Rejected previous rows:
 
-- لُزُومٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for لزم; no automatic root-only expansion was allowed.
-- لُزُومٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for لزم; no automatic root-only expansion was allowed.
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- None; the previous row was retained.
 
 Human expert review still required: no
 
 ---
 
-## lexical|لفو|الفي|verb
+## جوز
 
-Decision: **FULL**; root: لفو; occurrences: 12:25:7
+Decision: **FULL**
+Locations: 7:138:1, 10:90:1
 
-The لفو verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+The passage/crossing sense is kept distinct from unrelated modern glosses such as passport or permission. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- أَلْفَى — he found; Form IV perfect; compared with the current Qur'anic occurrence at 2:170:12. Shows the dictionary form behind the inflected occurrence.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:170:12 (2:170:12) for normalized root لفو; canonical project occurrence evidence and reviewed morphology were inspected.
-- يُلْفِي — he finds; Form IV imperfect; compared with the current Qur'anic occurrence at 2:170:12. Contrasts tense and person-neutral stem.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:170:12 (2:170:12) for normalized root لفو; canonical project occurrence evidence and reviewed morphology were inspected.
-- إِلْفَاءٌ — finding; Form IV verbal noun; compared with the current Qur'anic occurrence at 2:170:12. Shows the action noun.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:170:12 (2:170:12) for normalized root لفو; canonical project occurrence evidence and reviewed morphology were inspected.
-- مُلْفٍ — one who finds; Form IV active participle; compared with the current Qur'anic occurrence at 2:170:12. Shows the agent pattern.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:2:170:12 (2:170:12) for normalized root لفو; canonical project occurrence evidence and reviewed morphology were inspected.
+- جَازَ — passed / crossed; Form I hollow perfect. Form I base of the same root.
+- يَجُوزُ — passes / crosses; Form I hollow imperfect. Form I imperfect of the same root.
+- جَوَازٌ — passage / crossing; Lexical noun. Established noun of the same root; not automatically modern permission/passport.
+- تَجَاوَزَ — passed beyond / went beyond / overlooked; Form VI perfect. Form VI development of the same root.
 
-Rejected candidates:
+Rejected previous rows:
 
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
-
-Human expert review still required: no
-
----
-
-## lexical|سيل|سالت|verb
-
-Decision: **FULL**; root: سيل; occurrences: 13:17:5
-
-The سيل verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
-
-Accepted candidates:
-
-- سَالَ — it flowed; Form I hollow/weak perfect; compared with the current Qur'anic occurrence at 13:17:9. Shows the verb behind the flood noun.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:13:17:9 (13:17:9) for normalized root سيل; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَسِيلُ — it flows; Form I imperfect; compared with the current Qur'anic occurrence at 13:17:9. Shows the ongoing event.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:13:17:9 (13:17:9) for normalized root سيل; canonical project occurrence evidence and reviewed morphology were inspected.
-- سَيْلٌ — flow or flood; Lexical noun; compared with the current Qur'anic occurrence at 13:17:9. Names the event.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:13:17:9 (13:17:9) for normalized root سيل; canonical project occurrence evidence and reviewed morphology were inspected.
-- مَسِيلٌ — channel or watercourse; Derived noun on the mafʿil pattern; Contrasts the flowing verb with the place/result noun while keeping the same lexical sense.; evidence: Codex-authored from the project-reviewed س ي ل family evidence and reliable Arabic morphology knowledge; the previously reviewed evidence explicitly identified مَسِيلٌ as the missing derived noun.
-
-Rejected candidates:
-
-- سَائِلٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for سيل; no automatic root-only expansion was allowed.
-- سَائِلٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for سيل; no automatic root-only expansion was allowed.
-- سَائِلٌ: rejected because it was not one of the explicitly sense-scoped, morphology-reviewed C1 forms for سيل; no automatic root-only expansion was allowed.
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- جَاوَزَ: replaced by the reviewed same-root semantic-development family.
+- جَاوَزَ: replaced during the same-root semantic-development re-audit because it was less useful, shell-like, weakly scoped or semantically under-described.
 
 Human expert review still required: no
 
 ---
 
-## lexical|زول|تزول|verb
+## سلخ
 
-Decision: **FULL**; root: زول; occurrences: 14:46:10
+Decision: **FULL**
+Locations: 7:175:7, 9:5:2
 
-The زول verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+فَ in فَٱنسَلَخَ remains a conjunction shell, not a separate family member; each occurrence keeps its exact current surface first. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- زَالَ — it vanished; Form I hollow perfect; compared with the current Qur'anic occurrence at 35:41:7. Shows the completed change.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:35:41:7 (35:41:7) for normalized root زول; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَزُولُ — it vanishes; Form I imperfect; compared with the current Qur'anic occurrence at 35:41:7. Shows the ongoing change.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:35:41:7 (35:41:7) for normalized root زول; canonical project occurrence evidence and reviewed morphology were inspected.
-- زَوَالٌ — vanishing; Form I verbal noun; compared with the current Qur'anic occurrence at 35:41:7. Names the event.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:35:41:7 (35:41:7) for normalized root زول; canonical project occurrence evidence and reviewed morphology were inspected.
-- مُزِيلٌ — causing removal; Form IV active participle; compared with the current Qur'anic occurrence at 35:41:7. Shows the causative agent.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:35:41:7 (35:41:7) for normalized root زول; canonical project occurrence evidence and reviewed morphology were inspected.
+- سَلَخَ — stripped / removed; Form I perfect. Form I base of the same root.
+- يَسْلَخُ — strips / removes; Form I imperfect. Form I imperfect of the same root.
+- سَلْخٌ — stripping / removal; Form I verbal noun. Form I action noun of the same root.
+- مَسْلُوخٌ — stripped; Form I passive participle. Passive participle of the same root.
 
-Rejected candidates:
+Rejected previous rows:
 
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
-
-Human expert review still required: no
-
----
-
-## lexical|هزز|هز|verb
-
-Decision: **FULL**; root: هزز; occurrences: 19:25:1
-
-The هزز verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
-
-Accepted candidates:
-
-- هَزَّ — he shook; Form I doubled-root perfect; compared with the current Qur'anic occurrence at 22:5:63. Shows the basic action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:22:5:63 (22:5:63) for normalized root هزز; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَهُزُّ — he shakes; Form I doubled-root imperfect; compared with the current Qur'anic occurrence at 22:5:63. Shows the ongoing action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:22:5:63 (22:5:63) for normalized root هزز; canonical project occurrence evidence and reviewed morphology were inspected.
-- هَزٌّ — shaking; Form I verbal noun; compared with the current Qur'anic occurrence at 22:5:63. Names the action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:22:5:63 (22:5:63) for normalized root هزز; canonical project occurrence evidence and reviewed morphology were inspected.
-- مَهْزُوزٌ — shaken; Passive participial adjective; compared with the current Qur'anic occurrence at 22:5:63. Shows the affected object.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:22:5:63 (22:5:63) for normalized root هزز; canonical project occurrence evidence and reviewed morphology were inspected.
-
-Rejected candidates:
-
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- None; the previous row was retained.
 
 Human expert review still required: no
 
 ---
 
-## lexical|نكس|نكس|verb
+## زهق
 
-Decision: **FULL**; root: نكس; occurrences: 21:65:2
+Decision: **FULL**
+Locations: 9:55:14, 9:85:13
 
-The نكس verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+Basic verb, maṣdar, participle and causative destruction are compared. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- نَكَسَ — he reversed or turned down; Form I perfect; compared with the current Qur'anic occurrence at 36:68:3. Shows the basic action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:36:68:3 (36:68:3) for normalized root نكس; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَنْكُسُ — he reverses or turns down; Form I imperfect; compared with the current Qur'anic occurrence at 36:68:3. Shows the ongoing action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:36:68:3 (36:68:3) for normalized root نكس; canonical project occurrence evidence and reviewed morphology were inspected.
-- نَكْسٌ — reversal; Form I verbal noun; compared with the current Qur'anic occurrence at 36:68:3. Names the action.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:36:68:3 (36:68:3) for normalized root نكس; canonical project occurrence evidence and reviewed morphology were inspected.
-- مَنْكُوسٌ — reversed or brought low; Passive participial adjective; compared with the current Qur'anic occurrence at 36:68:3. Shows the result.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:36:68:3 (36:68:3) for normalized root نكس; canonical project occurrence evidence and reviewed morphology were inspected.
+- زَهَقَ — vanished / perished; Form I perfect. Form I base of the same root.
+- زُهُوقٌ — vanishing / perishing; Form I verbal noun. Form I action noun of the same root.
+- زَاهِقٌ — vanishing / perishing; Form I active participle. Active participle of the same root.
+- أَزْهَقَ — caused to perish / destroyed; Form IV perfect. Form IV development of the same root.
 
-Rejected candidates:
+Rejected previous rows:
 
+- يَزْهَقُ: replaced by the reviewed same-root semantic-development family.
+- زَهُوقٌ: replaced by the reviewed same-root semantic-development family.
 
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+Human expert review still required: no
+
+---
+
+## لفت
+
+Decision: **FULL**
+Locations: 10:78:3
+
+Basic verb, action noun, Form VIII and Form V derived turning patterns are shown. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
+
+Accepted related forms:
+
+- لَفَتَ — turned / diverted; Form I perfect. Form I base of the same root.
+- لَفْتٌ — turning / diversion; Form I verbal noun. Form I action noun of the same root.
+- اِلْتَفَتَ — turned oneself / looked back; Form VIII perfect. Form VIII development of the same root.
+- تَلَفَّتَ — turned repeatedly / looked around; Form V perfect. Form V development of the same root.
+
+Rejected previous rows:
+
+- يَلْفِتُ: replaced by the reviewed same-root semantic-development family.
+- اِلْتِفَاتٌ: replaced by the reviewed same-root semantic-development family.
 
 Human expert review still required: no
 
 ---
 
-## lexical|عيي|عيي|verb
+## خبت
 
-Decision: **FULL**; root: عيي; occurrences: 46:33:10
+Decision: **FULL**
+Locations: 11:23:6
 
-The عيي verb family is a regular, well-attested lexical family. The current Qur’anic form was inspected in every occurrence and placed first. Four distinct, form-specific rows were selected from already reviewed same-root evidence; no candidate was accepted merely because it shared radicals.
+The Form IV humility branch and Form I stillness/low-ground branch are both shown with separate meanings; neither is mistranslated as the other. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
 
-Accepted candidates:
+Accepted related forms:
 
-- عَيِيَ — he became incapable or weary; Form I defective perfect; compared with the current Qur’anic form at 50:15:1. Shows the basic state.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:50:15:1 (50:15:1) for normalized root عيي; canonical project occurrence evidence and reviewed morphology were inspected.
-- يَعْيَى — he becomes incapable or weary; Form I defective imperfect; compared with the current Qur’anic form at 50:15:1. Shows the ongoing state.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:50:15:1 (50:15:1) for normalized root عيي; canonical project occurrence evidence and reviewed morphology were inspected.
-- إِعْيَاءٌ — weariness or inability; Form IV verbal noun; compared with the current Qur’anic form at 50:15:1. Names the state.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:50:15:1 (50:15:1) for normalized root عيي; canonical project occurrence evidence and reviewed morphology were inspected.
-- مُعْيٍ — causing weariness; Form IV active participle; compared with the current Qur’anic form at 50:15:1. Shows the causative relation.; Provides a distinct, learner-useful contrast already reviewed in the project; it is not a bare radical list or shell-only variant.; evidence: Existing full reviewed lesson word:50:15:1 (50:15:1) for normalized root عيي; canonical project occurrence evidence and reviewed morphology were inspected.
+- أَخْبَتَ — humbled / submitted himself; Form IV perfect. Form IV branch of the Qur’anic sense.
+- مُخْبِتٌ — humble / submissive person; Form IV active participle. Form IV active participle of أَخْبَتَ.
+- خَبَتَ — became still / low / hidden; Form I perfect. Same root with a distinct lexical branch; its meaning is not ‘humbled himself’.
+- خَبْتٌ — low / open tract of land; Lexical noun. Established noun related to the Form I lexical branch.
 
-Rejected candidates:
+Rejected previous rows:
 
-
-Evidence: Canonical Qur’anic occurrences inspected. Existing reviewed project lesson catalogue inspected. Provider morphology was treated as evidence only. The governing contract and common-problems safeguards were applied.
+- يَخْبُتُ: replaced by the reviewed same-root semantic-development family.
+- خُبُوتٌ: replaced by the reviewed same-root semantic-development family.
 
 Human expert review still required: no
 
 ---
+
+## لزم
+
+Decision: **FULL**
+Locations: 11:28:16
+
+Basic adherence, action noun, causative compulsion and the binding noun are preferred over another person/tense of the current Form IV stem. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
+
+Accepted related forms:
+
+- لَزِمَ — adhered / remained attached / became incumbent; Form I perfect. Form I base of the same root.
+- لُزُومٌ — adherence / necessity; Form I verbal noun. Form I action noun of the same root.
+- أَلْزَمَ — compelled / imposed; Form IV perfect. Form IV causative of the same root.
+- لِزَامٌ — something binding / inevitable; Lexical noun. Established noun of the same root.
+
+Rejected previous rows:
+
+- يَلْزَمُ: replaced by the reviewed same-root semantic-development family.
+- يُلْزِمُ: replaced by the reviewed same-root semantic-development family.
+
+Human expert review still required: no
+
+---
+
+## لفو
+
+Decision: **FULL**
+Locations: 12:25:7
+
+The project’s weak-root normalisation is ل ف و; the row family stays within Form IV and uses exact current-first handling. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
+
+Accepted related forms:
+
+- أَلْفَى — found; Form IV perfect. Form IV base of the current occurrence.
+- يُلْفِي — finds; Form IV imperfect. Form IV imperfect of the same root.
+- إِلْفَاءٌ — finding; Form IV verbal noun. Form IV maṣdar of أَلْفَى.
+- مُلْفٍ — one who finds; Form IV active participle. Form IV active participle of the same root.
+
+Rejected previous rows:
+
+- None; the previous row was retained.
+
+Human expert review still required: no
+
+---
+
+## سيل
+
+Decision: **FULL**
+Locations: 13:17:5
+
+Verb, imperfect, root noun, place/channel noun and causative are compared. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
+
+Accepted related forms:
+
+- يَسِيلُ — flows; Form I imperfect. Form I imperfect of the same root.
+- سَيْلٌ — torrent / flood / flowing water; Lexical root noun. Established noun of the same root.
+- مَسِيلٌ — channel / place of flowing; Derived place noun. Established ma fʿil place/result noun of the same root.
+- أَسَالَ — caused to flow; Form IV perfect. Form IV development of the same root.
+
+Rejected previous rows:
+
+- سَالَ: replaced by the reviewed same-root semantic-development family.
+
+Human expert review still required: no
+
+---
+
+## زول
+
+Decision: **FULL**
+Locations: 14:46:10
+
+The Form I branch is kept visible with زَائِلٌ before the causative Form IV أَزَالَ. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
+
+Accepted related forms:
+
+- زَالَ — ceased / moved away; Form I hollow perfect. Form I base of the same root.
+- زَوَالٌ — cessation / passing away; Form I verbal noun. Form I action noun of the same root.
+- زَائِلٌ — passing / vanishing; Form I active participle. Form I active participle of the same root.
+- أَزَالَ — removed / caused to cease; Form IV perfect. Form IV development of the same root.
+
+Rejected previous rows:
+
+- يَزُولُ: replaced by the reviewed same-root semantic-development family.
+- مُزِيلٌ: replaced by the reviewed same-root semantic-development family.
+
+Human expert review still required: no
+
+---
+
+## هزز
+
+Decision: **FULL**
+Locations: 19:25:1
+
+The Form VIII self-movement pattern is preferred to a mechanically generated passive participle. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
+
+Accepted related forms:
+
+- هَزَّ — shook; Form I doubled-root perfect. Form I base of the same root.
+- يَهُزُّ — shakes; Form I doubled-root imperfect. Form I imperfect of the same root.
+- هَزٌّ — shaking; Form I verbal noun. Form I action noun of the same root.
+- اِهْتَزَّ — moved / shook itself; Form VIII perfect. Form VIII development of the same root.
+
+Rejected previous rows:
+
+- مَهْزُوزٌ: replaced by the reviewed same-root semantic-development family.
+
+Human expert review still required: no
+
+---
+
+## نكس
+
+Decision: **FULL**
+Locations: 21:65:2
+
+Passive occurrence, active base, maṣdar, active participle and Form II are compared. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
+
+Accepted related forms:
+
+- نَكَسَ — turned / reversed; Form I perfect. Form I base of the same root.
+- نَكْسٌ — reversal / overturning; Form I verbal noun. Form I action noun of the same root.
+- نَاكِسٌ — lowering / turning down; Form I active participle. Form I active participle of the same root.
+- نَكَّسَ — reversed / turned back; Form II perfect. Form II development of the same root.
+
+Rejected previous rows:
+
+- يَنْكُسُ: replaced by the reviewed same-root semantic-development family.
+- مَنْكُوسٌ: replaced by the reviewed same-root semantic-development family.
+
+Human expert review still required: no
+
+---
+
+## عيي
+
+Decision: **FULL**
+Locations: 46:33:10
+
+The Form I inability branch is distinguished from the Form IV weariness/causative branch, with each meaning translated honestly. The Qur’anic form is first for every occurrence. Same-root semantic development is taught honestly; no shell-only variation, same-conjugation padding or bare-root row is used.
+
+Accepted related forms:
+
+- عَيِيَ — became unable / was at a loss; Form I defective perfect. Form I branch of the same root.
+- عِيٌّ — inability / incapacity; Form I lexical noun. Established noun of the Form I branch.
+- عَيِيٌّ — unable / incapable; Form I adjective. Established adjective of the same root branch.
+- أَعْيَا — wearied / rendered incapable / proved too difficult; Form IV perfect. Form IV semantic development of the same root; not silently equated with Form I.
+
+Rejected previous rows:
+
+- يَعْيَى: replaced by the reviewed same-root semantic-development family.
+- إِعْيَاءٌ: replaced by the reviewed same-root semantic-development family.
+- مُعْيٍ: replaced by the reviewed same-root semantic-development family.
+
+Human expert review still required: no
+
+---
+

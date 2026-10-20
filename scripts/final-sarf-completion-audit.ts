@@ -270,7 +270,7 @@ const reviewRecords = blockedFamilies.map((family) => {
   ).values()];
   return {
     recordType: "blocked-sarf-family-review",
-    contractVersion: "1.3.8",
+    contractVersion: contract.contractVersion,
     familyKey: family.familyKey,
     root: family.root || null,
     lemmaOrCurrentForm: family.lemma,
@@ -311,7 +311,7 @@ const reviewRecords = blockedFamilies.map((family) => {
 
 const report = {
   reportType: "final-sarf-completion-audit",
-  contractVersion: "1.3.8",
+  contractVersion: contract.contractVersion,
   generatedAt: new Date().toISOString(),
   definition: "A distinct family is a reviewed root plus aligned provider lemma and part of speech; rootless items use category plus aligned lemma/current form. Occurrence counts remain separate.",
   totals: {

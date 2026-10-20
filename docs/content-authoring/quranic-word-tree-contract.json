@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.2.0",
   "contractId": "quranic-word-tree-authoring",
-  "contractVersion": "1.3.8",
-  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5", "1.3.6", "1.3.7"],
+  "contractVersion": "1.3.9",
+  "acceptedHistoricalContractVersions": ["1.0.0", "1.1.0", "1.2.0", "1.2.1", "1.3.0", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5", "1.3.6", "1.3.7", "1.3.8"],
   "status": "active",
   "purpose": "The single governing contract for authoring, repairing, importing, auditing and rendering every Qur'anic Arabic Word Tree lesson.",
   "authority": {
@@ -293,7 +293,7 @@
       "normalFamily": {
         "status": "full",
         "count": 5,
-        "rule": "Aim for five forms selected for maximum teaching value. Useful contrasts may include tense, person, gender, number, imperative, active/passive voice, verbal noun, derived pattern, noun/adjective relationship, inflection or attached pronoun."
+        "rule": "Aim for five forms selected for maximum teaching value. Same root is the primary organising principle; identical meaning is not required. Useful contrasts may include tense, person, gender, number, imperative, active/passive voice, verbal noun, derived pattern, noun/adjective relationship, inflection or attached pronoun. Related Forms I, II, III, IV, V, VI, VIII and X, nouns, adjectives and participles may show honest semantic development across the same root. Every row must be real attested Arabic, correctly vocalised where evidence permits, translated according to its own meaning and explicitly related to the Qur'anic word/root."
       },
       "limitedFamily": {
         "status": "limited",
@@ -323,7 +323,9 @@
         "limitedConfirmationRule": "A confirmed-limited family contains only genuine forms, a specific non-boilerplate reason tied to this lexeme and occurrence, review provenance, and no overlooked fifth form supported by the approved evidence.",
         "blockedRule": "Use blocked-for-genuine-ambiguity only when reliable evidence remains insufficient or conflicting after canonical Qur'anic evidence, approved dictionaries/lexicons, aligned provider evidence and Codex linguistic review have been checked. Never use blocked as a disguised missing-effort bucket."
       },
-      "familyIdentityRule": "Root, provider lemma and part of speech are evidence for family identity, not sufficient proof when occurrences contain distinct senses, proper names or model collisions. When review establishes a stable separation, record familyScope in sarfReview and audit each scope independently; when the separation cannot be established safely, retain an explicit blocked decision.",
+      "familyIdentityRule": "Root is the primary organising principle for the learner-facing Ṣarf family. Provider lemma and part of speech remain evidence, not sufficient proof when occurrences contain distinct senses, proper names or model collisions. Same meaning is not required, but each semantic branch must be translated and explained honestly. When review establishes a stable separation, record familyScope in sarfReview and audit each scope independently; when the separation cannot be established safely, retain an explicit blocked decision.",
+      "semanticDevelopmentRule": "Do not reject a genuine same-root form merely because its meaning differs from the Qur'anic occurrence. Accept useful, attested morphological development across derived forms when root ownership and the form's own meaning are established. Do not flatten distinct meanings into one gloss, and do not accept a form merely because it shares radicals.",
+      "candidateSelectionRule": "Select rows for morphological teaching value, prioritising perfect/imperfect, maṣdar, active/passive participle, established nouns/adjectives and genuinely distinct derived patterns. Do not use shell removal, case-only changes, attached-pronoun changes or low-value same-stem conjugation variants merely to consume a row.",
       "required": [
         "the current Qur'anic form first",
         "a full five-form reviewed family or an explicit reviewed limited family",
@@ -340,7 +342,9 @@
         "generic automatically generated rows published as teaching",
         "placeholder descriptions",
         "forms unrelated to the actual lexeme",
-        "technically related forms that add no useful learner distinction"
+        "technically related forms that add no useful learner distinction",
+        "same-root forms mistranslated as though their semantic branches were identical",
+        "same-root semantic branches rejected solely because their meanings differ"
       ],
       "currentFirstRule": "The first stored form must be the exact current Qur'anic occurrence, with its appropriate vocalisation and occurrence meaning.",
       "accuracyOverridesCount": true,
