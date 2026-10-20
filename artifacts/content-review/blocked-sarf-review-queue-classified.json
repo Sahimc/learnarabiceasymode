@@ -1,6 +1,6 @@
 {
   "reportType": "blocked-sarf-review-queue-classified",
-  "generatedAt": "2026-10-20T20:50:11.345Z",
+  "generatedAt": "2026-10-20T21:35:42.967Z",
   "sourceAudit": "artifacts\\content-review\\final-sarf-completion-audit.json",
   "sourceReconciliation": "artifacts\\content-review\\mixed-sarf-reconciliation.json",
   "definition": {
@@ -10,12 +10,12 @@
     "D": "Special/model issue: family identity or representation requires resolution before row selection."
   },
   "totals": {
-    "blockedFamilies": 510,
-    "blockedOccurrences": 725,
+    "blockedFamilies": 509,
+    "blockedOccurrences": 724,
     "classifications": {
       "A": 6,
       "B": 3,
-      "C": 498,
+      "C": 497,
       "D": 3
     }
   },
@@ -30364,60 +30364,6 @@
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
       "codexClassificationComment": "Partial blocked family: two or three rows are present in the strongest occurrence. Investigate genuine related forms, but do not fill the remaining slots with case, clitic or provider padding."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|حمم|يحموم|noun/pronoun",
-      "familyScope": null,
-      "root": "حمم",
-      "lemmaOrCurrentForm": "يَحْمُوم",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:56:43:3",
-          "location": "56:43:3",
-          "surah": 56,
-          "ayah": 43,
-          "position": 3,
-          "arabic": "يَحْمُومٍ",
-          "meaning": "black smoke",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "يَحْمُوم is black smoke in 56:43, while حَمِيم is scalding water. The apparent root connection crosses a major semantic split, so a five-row family would be misleading without explicit sense evidence."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ح م م",
-            "lemma": "يَحْمُوم",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "يَحْمُومٍ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
     }
   ]
 }
