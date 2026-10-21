@@ -1,428 +1,368 @@
-# Tier C3 LOW classification and execution map
+# Tier-C LOW classification
 
-Baseline: `77f3a95ffde7d052ce78ecfaeb1413b0d0538057`
-Contract: v1.3.9
-Scope: 335 families / 477 occurrences.
-Content rows changed: **0**. Candidate rows generated: **0**.
+Generated: 2026-10-21T21:14:54.844Z
 
-This is a classification-only planning pass. Existing same-root forms are listed as research leads, never as approved C3 rows.
+C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occurrences. C3-C, C3-D and C3-E were not started.
 
-## Group totals
+## C3-B summary
 
-| Order | Group | Families | Occurrences | HIGH | MEDIUM | LOW | Batch size | Batches |
-| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 1 | C3-A | 0 | 0 | 0 | 0 | 0 | 25 | 0 |
-| 2 | C3-B | 23 | 29 | 21 | 0 | 2 | 25 | 1 |
-| 3 | C3-C | 149 | 195 | 0 | 21 | 128 | 15 | 10 |
-| 4 | C3-D | 159 | 244 | 0 | 0 | 159 | 20 | 8 |
-| 5 | C3-E | 4 | 9 | 0 | 0 | 4 | 10 | 1 |
+```json
+{
+  "contractVersion": "1.3.9",
+  "reviewedAt": "2026-10-21T21:14:54.844Z",
+  "scopeFamilies": 23,
+  "scopeOccurrences": 29,
+  "decisions": {
+    "FULL": 20,
+    "CONFIRMED-LIMITED": 3,
+    "BLOCKED": 0,
+    "MODEL-ISSUE": 0
+  },
+  "occurrencesByDecision": {
+    "FULL": 25,
+    "CONFIRMED-LIMITED": 4,
+    "BLOCKED": 0,
+    "MODEL-ISSUE": 0
+  }
+}
+```
 
-## Recommended order
+## Families
 
-1. **C3-A** — 0 families / 0 occurrences, in batches of 25. Within the group: secure root/lemma first, then occurrence count, then strongest existing same-root evidence; hardest semantic or normalization cases last.
-2. **C3-B** — 23 families / 29 occurrences, in batches of 25. Within the group: secure root/lemma first, then occurrence count, then strongest existing same-root evidence; hardest semantic or normalization cases last.
-3. **C3-C** — 149 families / 195 occurrences, in batches of 15. Within the group: secure root/lemma first, then occurrence count, then strongest existing same-root evidence; hardest semantic or normalization cases last.
-4. **C3-D** — 159 families / 244 occurrences, in batches of 20. Within the group: secure root/lemma first, then occurrence count, then strongest existing same-root evidence; hardest semantic or normalization cases last.
-5. **C3-E** — 4 families / 9 occurrences, in batches of 10. Within the group: secure root/lemma first, then occurrence count, then strongest existing same-root evidence; hardest semantic or normalization cases last.
-
-## Global queue reconciliation
-
-- C3 LOW: **335 families / 477 occurrences**
-- C2 unresolved: **6 families / 10 occurrences**
-- Earlier residuals: **26 families / 52 occurrences**
-- Remaining total: **367 families / 539 occurrences**
-
-## Family map
-
-### C3-A
-
-Secure regular or derived verb family; investigate established tense, voice, maṣdar and participle contrasts first.
-
-| Rank | Qur’anic word | Root | Lemma | Location(s) | Occ. | Root/Lemma confidence | Morphology | Flags | Semantic risk | Potential evidence | Predicted |
-| ---: | --- | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
-
-#### Original LOW reason for this group
-
-
-### C3-B
-
-Rootful noun/adjective with secure identity and multiple already-discoverable same-root derivational signals; verify sense alignment before authoring.
-
-| Rank | Qur’anic word | Root | Lemma | Location(s) | Occ. | Root/Lemma confidence | Morphology | Flags | Semantic risk | Potential evidence | Predicted |
-| ---: | --- | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | مَّدْحُورًا<br>and expelled | دحر | مَدْحُور | 7:18:5, 17:18:18, 17:39:18 | 3 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: accusative; verb form: Form 1. | regular signal | MEDIUM | 4 strong leads; noun / adjective, verbal noun / maṣdar, verb / derived verb, passive participle; دُحُورًا / دَحْرٌ / يَدْحَرُ | HIGH |
-| 2 | بِجَهَازِهِمْ<br>with their supplies | جهز | جَهَازِ | 12:59:3, 12:70:3 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | MEDIUM | 5 strong leads; verb / derived verb, verbal noun / maṣdar, passive participle; جَهَّزَهُم / جَهَّزَ / يُجَهِّزُ | HIGH |
-| 3 | مُمَزَّقٍ<br>disintegration | مزق | مُمَزَّق | 34:7:12, 34:19:12 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 2; gender: masculine; state: indefinite; case: genitive; verb form: Form 2. | regular signal | MEDIUM | 5 strong leads; verb / derived verb, verbal noun / maṣdar; مُزِّقْتُمْ / مَزَقَ / يَمْزِقُ | HIGH |
-| 4 | مَرَحًا<br>(with) insolence | مرح | مَرَح | 17:37:5, 31:18:9 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | MEDIUM | 4 strong leads; verb / derived verb, verbal noun / maṣdar; تَمْرَحُونَ / مَرَحٌ / يَمْرَحُ | HIGH |
-| 5 | رَفِيقًا<br>companion(s) | رفق | رَفِيق | 4:69:18 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | MEDIUM | 8 strong leads; noun / adjective, verb / derived verb, verbal noun / maṣdar, active participle; ٱلْمَرَافِقِ / رِفْقٌ / يَرْفُقُ | HIGH |
-| 6 | وَٱلْجُرُوحَ<br>and (for) wounds | جرح | جُرُوحَ | 5:45:15 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | regular signal | MEDIUM | 6 strong leads; verb / derived verb, active participle; جَرَحْتُم / جَرَحَ / يَجْرَحُ | HIGH |
-| 7 | ٱلْجَوَارِحِ<br>(your) hunting animals | جرح | جَوَارِحِ | 5:4:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: genitive. | regular signal | MEDIUM | 6 strong leads; verb / derived verb, active participle; جَرَحْتُم / جَرَحَ / يَجْرَحُ | HIGH |
-| 8 | حَصَادِهِۦ<br>(of) its harvest | حصد | حَصاد | 6:141:25 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive; person: third-person masculine singular. | regular signal | MEDIUM | 6 strong leads; verb / derived verb, verbal noun / maṣdar, noun / adjective; حَصَدَ / يَحْصُدُ / حَصَادٌ | HIGH |
-| 9 | خَـٰدِعُهُمْ<br>who deceives them | خدع | خادِع | 4:142:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; case: nominative; verb form: Form 1. | regular signal | MEDIUM | 6 strong leads; verb / derived verb, active participle, verbal noun / maṣdar; يُخَـٰدِعُونَ / خَدَعَ / يَخْدَعُ | HIGH |
-| 10 | بِسَخَطٍ<br>on (himself) wrath | سخط | سَخَطٍ | 3:162:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | MEDIUM | 6 strong leads; verb / derived verb, active participle; سَخَطٌ / يَسْخَطُ / سَاخِطٌ | HIGH |
-| 11 | نُسْخَتِهَا<br>their inscription | نسخ | نُسْخَت | 7:154:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: genitive. | regular signal | MEDIUM | 6 strong leads; verb / derived verb, verbal noun / maṣdar; نَنسَخْ / نَسْخٌ / يَنْسَخُ | HIGH |
-| 12 | تَبْذِيرًا<br>wastefully | بذر | تَبْذِير | 17:26:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 2; gender: masculine; state: indefinite; case: accusative; verb form: Form 2. | regular signal | MEDIUM | 5 strong leads; verb / derived verb, verbal noun / maṣdar, active participle; تُبَذِّرْ / بَذْرٌ / يَبْذُرُ | HIGH |
-| 13 | ٱلْمُبَذِّرِينَ<br>the spendthrifts | بذر | مُبَذِّرِينَ | 17:27:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 2; number: masculine plural; case: accusative; verb form: Form 2. | regular signal | MEDIUM | 5 strong leads; verb / derived verb, verbal noun / maṣdar, active participle; تُبَذِّرْ / بَذْرٌ / يَبْذُرُ | HIGH |
-| 14 | مُبْرِمُونَ<br>(are) determined | برم | مُبْرِم | 43:79:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 4; number: masculine plural; case: nominative; verb form: Form 4. | regular signal | MEDIUM | 5 strong leads; verb / derived verb, verbal noun / maṣdar; أَبْرَمُوٓا۟ / بَرَمَ / يَبْرِمُ | HIGH |
-| 15 | خَـٰضِعِينَ<br>(in) humility | خضع | خاضِع | 26:4:11 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: accusative; verb form: Form 1. | regular signal | MEDIUM | 5 strong leads; verb / derived verb, verbal noun / maṣdar; تَخْضَعْنَ / خَضَعَ / يَخْضَعُ | HIGH |
-| 16 | مَّسْتُورًا<br>hidden | ستر | مَسْتُور | 17:45:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: accusative; verb form: Form 1. | regular signal | MEDIUM | 5 strong leads; noun / adjective, verbal noun / maṣdar, verb / derived verb; سِتْرًا / سِتْرٌ / يَسْتُرُ | HIGH |
-| 17 | نَقِيبًا<br>leaders | نقب | نَقِيب | 5:12:11 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | MEDIUM | 5 strong leads; noun / adjective, verbal noun / maṣdar, verb / derived verb; نَقْبًا / نَقْبٌ / يَنْقُبُ | HIGH |
-| 18 | وَطَعْنًا<br>and defaming | طعن | طَعْنًا | 4:46:17 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | MEDIUM | 4 strong leads; verb / derived verb, verbal noun / maṣdar; وَطَعَنُوا۟ / طَعْنٌ / يَطْعَنُ | HIGH |
-| 19 | عَبَثًا<br>uselessly | عبث | عَبَث | 23:115:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | MEDIUM | 4 strong leads; verb / derived verb, verbal noun / maṣdar; تَعْبَثُونَ / عَبَثٌ / يَعْبَثُ | HIGH |
-| 20 | فَتْرَةٍ<br>(after) an interval (of cessation) | فتر | فَتْرَة | 5:19:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: genitive. | regular signal | MEDIUM | 4 strong leads; verb / derived verb, verbal noun / maṣdar; يَفْتُرُونَ / فَتَرَ / يَفْتُرُ | HIGH |
-| 21 | هَضْمًا<br>deprivation | هضم | هَضْم | 20:112:11 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | MEDIUM | 4 strong leads; noun / adjective, verbal noun / maṣdar, verb / derived verb; هَضِيمٌ / هَضْمٌ / يَهْضِمُ | HIGH |
-| 22 | زَفِيرٌ<br>(is) sighing | زفر | زَفِير | 11:106:8, 21:100:3 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative. | regular signal | MEDIUM | 3 strong leads; verbal noun / maṣdar, verb / derived verb, noun / adjective; زَفْرٌ / يَزْفِرُ / زَافِرٌ | LOW |
-| 23 | ٱلنَّـٰدِمِينَ<br>the regretful | ندم | نَّـٰدِمِينَ | 5:31:25 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: genitive; verb form: Form 1. | regular signal | MEDIUM | 3 strong leads; verb / derived verb, verbal noun / maṣdar, noun / adjective; نَـٰدِمِينَ / نَدَمٌ / نَدَامَةٌ | LOW |
-
-#### Original LOW reason for this group
-
-- Not in C1: further lexicon-led or model-specific review is required before authoring additional rows.
-- The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.
-
-### C3-C
-
-Weak, hamzated, doubled, quadriliteral, irregular, or root/lemma-normalisation risk; morphology evidence must be checked before row authoring.
-
-| Rank | Qur’anic word | Root | Lemma | Location(s) | Occ. | Root/Lemma confidence | Morphology | Flags | Semantic risk | Potential evidence | Predicted |
-| ---: | --- | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | كَهَيْـَٔةِ<br>like the form | هيأ | هَيْـَٔةِ | 3:49:16, 5:110:31 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: genitive. | weak-root, hamzated-root | MEDIUM | 6 strong leads; verb / derived verb, verbal noun / maṣdar, active participle; وَهَيِّئْ / هَيَّأَ / يُهَيِّئُ | MEDIUM |
-| 2 | مَآئِدَةً<br>a table spread | ميد | مائِدَة | 5:112:13, 5:114:9 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: accusative. | weak-root | MEDIUM | 5 strong leads; verb / derived verb, verbal noun / maṣdar; تَمِيدَ / مَادَ / يَمِيدُ | MEDIUM |
-| 3 | زَوَالٍ<br>end | زول | زَوال | 14:44:26 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | weak-root | MEDIUM | 8 strong leads; verb / derived verb, active participle; لِتَزُولَ / زَالَ / زَائِلٌ | MEDIUM |
-| 4 | وَصْفَهُمْ<br>(for) their attribution | وصف | وَصْف | 6:139:19 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | weak-root | MEDIUM | 8 strong leads; verb / derived verb, active participle, passive participle; يَصِفُونَ / وَصَفَ / يَصِفُ | MEDIUM |
-| 5 | ٱلْبَوَارِ<br>(of) destruction | بور | بَوَارِ | 14:28:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root | MEDIUM | 7 strong leads; noun / adjective, verb / derived verb, active participle; بُورًا / بَارَ / يَبُورُ | MEDIUM |
-| 6 | أَزْرِى<br>my strength | أزر | أَزْر | 20:31:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative; person: first-person singular. | hamzated-root | MEDIUM | 5 strong leads; verb / derived verb, verbal noun / maṣdar, active participle; فَـَٔازَرَهُۥ / آزَرَ / يُؤَازِرُ | MEDIUM |
-| 7 | مُّزْجَىٰةٍ<br>(of) little value | زجو | مُزْجاة | 12:88:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 4; number: feminine plural; state: indefinite; case: genitive; verb form: Form 4. | weak-root | MEDIUM | 5 strong leads; verb / derived verb, verbal noun / maṣdar; يُزْجِى / زَجَا / يَزْجُو | MEDIUM |
-| 8 | كَغَلْىِ<br>Like boiling | غلي | غَلْىِ | 44:46:1 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root | MEDIUM | 5 strong leads; verb / derived verb, verbal noun / maṣdar, active participle, passive participle; يَغْلِى / غَلَا / غَلْيٌ | MEDIUM |
-| 9 | مُّقِيتًا<br>a Keeper | قوت | مُقِيت | 4:85:22 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 4; gender: masculine; state: indefinite; case: accusative; verb form: Form 4. | weak-root | MEDIUM | 5 strong leads; noun / adjective, verb / derived verb, active participle; أَقْوَٰتَهَا / قَاتَ / يَقُوتُ | MEDIUM |
-| 10 | مَّوْبِقًا<br>a barrier | وبق | مَوْبِق | 18:52:13 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | weak-root | MEDIUM | 5 strong leads; verb / derived verb, verbal noun / maṣdar, active participle; يُوبِقْهُنَّ / أَوْبَقَ / يُوبِقُ | MEDIUM |
-| 11 | ٱلْخِيَاطِ<br>(of) the needle | خيط | خِيَاطِ | 7:40:20 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root | MEDIUM | 4 strong leads; noun / adjective, verb / derived verb, verbal noun / maṣdar; ٱلْخَيْطِ / خَاطَ / خِيَاطَةٌ | MEDIUM |
-| 12 | زُحْزِحَ<br>is drawn away | زحزح | زُحْزِحَ | 3:185:11 | 1 | HIGH / HIGH | Verb; Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; voice: passive; person: third-person masculine singular; verb form: Form 1. | quadriliteral, special/irregular | MEDIUM | 4 strong leads; verb / derived verb, verbal noun / maṣdar, passive participle; بِمُزَحْزِحِهِۦ / يُزَحْزِحُ / زَحْزَحَةٌ | MEDIUM |
-| 13 | ٱلزَّادِ<br>provision | زود | زَّادِ | 2:197:25 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root | MEDIUM | 4 strong leads; verb / derived verb, verbal noun / maṣdar; وَتَزَوَّدُوا۟ / زَوَّدَ / يُزَوِّدُ | MEDIUM |
-| 14 | ظَمَأٌ<br>thirst | ظمأ | ظَمَأ | 9:120:23 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative. | hamzated-root | MEDIUM | 4 strong leads; verb / derived verb, noun / adjective; تَظْمَؤُا۟ / ظَمِئَ / يَظْمَأُ | MEDIUM |
-| 15 | ٱلْقُصْوَىٰ<br>the farther | قصو | قُصْوَىٰ | 8:42:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; case: nominative; partOfSpeech: adjective. | weak-root | MEDIUM | 4 strong leads; noun / adjective, verb / derived verb; ٱلْأَقْصَا / قَصَا / أَقْصَى | MEDIUM |
-| 16 | هَارٍ<br>(about to) collapse | هور | هار | 9:109:17 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | weak-root | MEDIUM | 4 strong leads; verb / derived verb, verbal noun / maṣdar; فَٱنْهَارَ / يَهُورُ / اِنْهِيارٌ | MEDIUM |
-| 17 | يَابِسٍ<br>dry | يبس | يابِس | 6:59:27 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: genitive; verb form: Form 1. | weak-root | MEDIUM | 4 strong leads; noun / adjective, verb / derived verb; يَابِسَـٰتٍ / يُبْسٌ / يَيْبَسُ | MEDIUM |
-| 18 | أَزًّا<br>(with) incitement | أزز | أَزّ | 19:83:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | hamzated-root, doubled-root | MEDIUM | 3 strong leads; verb / derived verb, verbal noun / maṣdar; تَؤُزُّهُمْ / أَزٌّ / يَؤُزُّ | MEDIUM |
-| 19 | مَجْذُوذٍ<br>interrupted | جذذ | مَجْذُوذ | 11:108:18 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: genitive; verb form: Form 1. | doubled-root | MEDIUM | 3 strong leads; noun / adjective, verbal noun / maṣdar, verb / derived verb; جُذَٰذًا / جَذٌّ / يَجُذُّ | MEDIUM |
-| 20 | لُّدًّا<br>hostile | لدد | لُدّ | 19:97:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: accusative; partOfSpeech: adjective. | doubled-root | MEDIUM | 3 strong leads; noun / adjective, verb / derived verb, verbal noun / maṣdar; لُدٌّ / يَلُدُّ / لَدَدٌ | MEDIUM |
-| 21 | وَرَقَةٍ<br>any leaf | ورق | وَرَقَة | 6:59:16 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: genitive. | weak-root | MEDIUM | 3 strong leads; noun / adjective, passive participle; وَرِقٌ / مُوَرَّقٌ / بِوَرِقِكُمْ | MEDIUM |
-| 22 | أَندَادًا<br>rivals | ندد | أَنداد | 2:22:21, 2:165:8, 14:30:3, 34:33:17, 39:8:23, 41:9:11 | 6 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: accusative. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 23 | ٱلصَّيْدِ<br>(to) hunt | صيد | صَّيْدِ | 5:1:16, 5:94:8, 5:95:6, 5:96:3, 5:96:11 | 5 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root | MEDIUM | 5 strong leads; verb / derived verb, noun / adjective, active participle; فَٱصْطَادُوا۟ / صَادَ / يَصِيدُ | LOW |
-| 24 | خُطُوَٰتِ<br>(the) footsteps (of) | خطو | خُطُوَة | 2:168:11, 2:208:10, 6:142:11, 24:21:6, 24:21:10 | 5 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: feminine plural; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 25 | حَمَإٍ<br>black mud | حمأ | حَمَإ | 15:26:7, 15:28:11, 15:33:10 | 3 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | hamzated-root | HIGH | 1 strong leads; noun / adjective; حَمِئَةٌ | LOW |
-| 26 | ٱلذِّئْبُ<br>a wolf | ذأب | ذِّئْبُ | 12:13:10, 12:14:4, 12:17:11 | 3 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: nominative. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 27 | وَٱلسَّلْوَىٰ<br>and [the] quails | سلو | سَّلْوَىٰ | 2:57:7, 7:160:32, 20:80:14 | 3 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 28 | ٱلْعِيرُ<br>(in) the caravan | عير | عِيرُ | 12:70:13, 12:82:6, 12:94:3 | 3 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: nominative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 29 | جِثِيًّا<br>bent (on) knees | جثو | جِثِيّ | 19:68:8, 19:72:8 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; state: indefinite; case: accusative; verb form: Form 1. | weak-root | HIGH | 1 strong leads; verb / derived verb; جَاثِيَةً | LOW |
-| 30 | أَثَـٰثًا<br>(is) furnishing | أثث | أَثاث | 16:80:22, 19:74:8 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | hamzated-root, doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 31 | إِلًّا<br>(of) kinship | ألل | إِلًّا | 9:8:8, 9:10:5 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | hamzated-root, doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 32 | تَارَةً<br>another time | تور | تارَة | 17:69:6, 20:55:7 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 33 | ٱلْجُبِّ<br>(of) the well | جبب | جُبِّ | 12:10:10, 12:15:9 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 34 | حِطَّةٌ<br>Repentance | حطط | حِطَّة | 2:58:15, 7:161:12 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: nominative. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 35 | ٱلْحَنَاجِرَ<br>the throats | حنجر | حَنَاجِرَ | 33:10:13, 40:18:7 | 2 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 36 | خَرْدَلٍ<br>a mustard | خردل | خَرْدَل | 21:47:15, 31:16:8 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 37 | خُوَارٌ<br>(had) a lowing sound | خور | خُوار | 7:148:11, 20:88:6 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: nominative; verb form: Form 1. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 38 | ذُبَابًا<br>a fly | ذبب | ذُباب | 22:73:15, 22:73:21 | 2 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 39 | ٱلرَّسِّ<br>(of) Ar-rass | رسس | رَّسِّ | 25:38:4, 50:12:6 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 40 | زُجَاجَةٍ<br>a glass | زجج | زُجاجَة | 24:35:12, 24:35:13 | 2 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: genitive. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 41 | سَرْمَدًا<br>continuous | سرمد | سَرْمَد | 28:71:8, 28:72:8 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 42 | شَفَا<br>(the) brink | شفو | شَفا | 3:103:22, 9:109:15 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 43 | صِنْوَانٌ<br>trees (growing) from a single root | صنو | صِنْوان | 13:4:10, 13:4:12 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: nominative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 44 | طَرِيًّا<br>fresh | طرو | طَرِيّ | 16:14:8, 35:12:16 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: accusative; partOfSpeech: adjective. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 45 | ٱلْعَنكَبُوتِ<br>the spider | عنكب | عَنكَبُوتِ | 29:41:9, 29:41:16 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 46 | ٱلْغَآئِطِ<br>the toilet | غوط | غَآئِطِ | 4:43:31, 5:6:33 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 47 | قِرْطَاسٍ<br>a parchment | قرطس | قِرْطاس | 6:7:6, 6:91:27 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 48 | بِٱلْقِسْطَاسِ<br>with the balance | قسطس | قِسْطَاسِ | 17:35:6, 26:182:2 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 49 | ٱلْوَدْقَ<br>the rain | ودق | وَدْقَ | 24:43:14, 30:48:15 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 50 | ٱلْوَسِيلَةَ<br>the means | وسل | وَسِيلَةَ | 5:35:8, 17:57:7 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 51 | وَطَرًا<br>necessary (formalities) | وطر | وَطَر | 33:37:30, 33:37:44 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 52 | سَيُطَوَّقُونَ<br>Their necks will be encircled | طوق | س | 3:180:17 | 1 | LOW / LOW | Verb; Current Qur'anic occurrence; pattern: Form 2; tense: imperfect verb; voice: passive; verb form: Form 2. | weak-root | HIGH | 5 strong leads; verb / derived verb, verbal noun / maṣdar, active participle; يُطِيقُونَهُۥ / أَطَاقَ / يُطِيقُ | LOW |
-| 53 | مَـَٔارِبُ<br>(are) uses | أرب | مَآرِب | 20:18:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: nominative. | hamzated-root | HIGH | 2 strong leads; noun / adjective; إِرْبٌ / أَرْبٌ | LOW |
-| 54 | سُنۢبُلِهِۦٓ<br>its ears | سنبل | سُنبُل | 12:47:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive; person: third-person masculine singular. | quadriliteral, special/irregular | MEDIUM | 2 strong leads; noun / adjective; سُنْبُلَةٌ / سُنْبُلَاتٌ | LOW |
-| 55 | وَإِمَآئِكُمْ<br>and your female slaves | أمو | إِمَآئِ | 24:32:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: feminine plural; case: genitive. | weak-root, hamzated-root | HIGH | 1 strong leads; noun / adjective; أَمَةٌ | LOW |
-| 56 | وَٱلْخَنَازِيرَ<br>and [the] swines | خنزر | خَنَازِيرَ | 5:60:18 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | quadriliteral, special/irregular | LOW | 1 strong leads; noun / adjective; خِنْزِيرٌ | LOW |
-| 57 | مُّشَيَّدَةٍ<br>lofty | شيد | مُشَيَّدَة | 4:78:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 2; gender: feminine; state: indefinite; case: genitive; verb form: Form 2. | weak-root | HIGH | 1 strong leads; verb / derived verb; مَّشِيدٍ | LOW |
-| 58 | وَٱلْقَنَـٰطِيرِ<br>and [the] heaps | قنطر | وَٱلْقَنَـٰطِيرِ | 3:14:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: genitive. | quadriliteral, special/irregular | LOW | 1 strong leads; verb / derived verb; ٱلْمُقَنطَرَةِ | LOW |
-| 59 | قَاعًا<br>a level | قوع | قاع | 20:106:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | weak-root | HIGH | 1 strong leads; noun / adjective; قَاعٌ | LOW |
-| 60 | قَآئِلُونَ<br>were sleeping at noon | قيل | قائِل | 7:4:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: nominative; verb form: Form 1. | weak-root | HIGH | 1 strong leads; verb / derived verb; مَقِيلًا | LOW |
-| 61 | ٱلْأَوْثَـٰنِ<br>the idols | وثن | أَوْثَـٰنِ | 22:30:21 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: genitive. | weak-root | HIGH | 1 strong leads; noun / adjective; وَثَنٌ | LOW |
-| 62 | وَأَثْلٍ<br>and tamarisks | أثل | أَثْلٍ | 34:16:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 63 | إِدًّا<br>atrocious | أدد | إِدّ | 19:89:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: accusative; partOfSpeech: adjective. | hamzated-root, doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 64 | ءَاسِنٍ<br>polluted | أسن | آسِن | 47:15:11 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: genitive; verb form: Form 1. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 65 | أَمْتًا<br>any curve | أمت | أَمْت | 20:107:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 66 | لَأَوَّٰهٌ<br>(was) compassionate | أوه | أَوَّٰهٌ | 9:114:21 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative. | weak-root, hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 67 | ٱلْأَيَـٰمَىٰ<br>the single | أيم | أَيَـٰمَىٰ | 24:32:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | weak-root, hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 68 | وَبِئْرٍ<br>and well | بأر | بِئْرٍ | 22:45:11 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: genitive. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 69 | ثُبَاتٍ<br>(in) groups | ثبي | ثُبَة | 4:71:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 70 | ٱلثَّرَىٰ<br>the soil | ثري | ثَّرَىٰ | 20:6:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 71 | جَذْوَةٍ<br>a burning wood | جذو | جَذْوَة | 28:29:23 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 72 | جُفَآءً<br>(as) scum | جفأ | جُفاء | 13:17:31 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 73 | جَوْفِهِۦ<br>his interior | جوف | جَوْف | 33:4:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive; person: third-person masculine singular. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 74 | جَوِّ<br>the midst | جوو | جَوّ | 16:79:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root, doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 75 | حَثِيثًا<br>rapidly | حثث | حَثِيث | 7:54:19 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: accusative. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 76 | حَصْحَصَ<br>(is) manifest | حصحص | حَصْحَصَ | 12:51:21 | 1 | HIGH / HIGH | Verb; Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; person: third-person masculine singular; verb form: Form 1. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 77 | وَحَنَانًا<br>And affection | حنن | حَنَانًا | 19:13:1 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 78 | حُوبًا<br>a sin | حوب | حُوب | 4:2:15 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 79 | حَيْرَانَ<br>confused | حير | حَيْران | 6:71:23 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 80 | ٱلْخَبْءَ<br>the hidden | خبأ | خَبْءَ | 27:25:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 81 | دَرَٰهِمَ<br>dirhams | درهم | دَراهِم | 12:20:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 82 | دِفْءٌ<br>(is) warmth | دفأ | دِفْء | 16:5:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 83 | مَذْءُومًا<br>disgraced | ذأم | مَذْءُوم | 7:18:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: accusative; verb form: Form 1. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 84 | مُّذَبْذَبِينَ<br>Wavering | ذبذب | مُذَبْذَب | 4:143:1 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 2; number: masculine plural; case: accusative; verb form: Form 2. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 85 | رُخَآءً<br>gently | رخو | رُخاء | 38:36:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 86 | رِدْءًا<br>(as) a helper | ردأ | رِدْء | 28:34:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 87 | أَرَهْطِىٓ<br>Is my family | رهط | أ | 11:92:3 | 1 | LOW / LOW | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: nominative; person: first-person singular. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 88 | رَهْوًا<br>at rest | رهو | رَهْو | 44:24:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 89 | ٱلرَّوْعُ<br>the fright | روع | رَّوْعُ | 11:74:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: nominative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 90 | وَرِيشًا<br>and (as) an adornment | ريش | رِيشًا | 7:26:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 91 | رِيعٍ<br>elevation | ريع | رِيع | 26:128:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 92 | سُرَادِقُهَا<br>its walls | سردق | سُرادِق | 18:29:17 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: nominative. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 93 | بِسَاحَتِهِمْ<br>in their territory | سوح | سَاحَتِ | 37:177:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 94 | سَآئِبَةٍ<br>a Saibah | سيب | سائِبَة | 5:103:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: feminine; state: indefinite; case: genitive; verb form: Form 1. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 95 | لَشِرْذِمَةٌ<br>(are) certainly a band | شرذم | شِرْذِمَةٌ | 26:54:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: nominative. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 96 | شَـٰطِئِ<br>(the) side | شطأ | شاطِئ | 28:30:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 97 | لَشَوْبًا<br>(is) a mixture | شوب | شَوْبًا | 37:67:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 98 | ٱلشَّوْكَةِ<br>(of) the armed | شوك | شَّوْكَةِ | 8:7:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 99 | صَفْصَفًا<br>plain | صفصف | صَفْصَف | 20:106:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative; partOfSpeech: adjective. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 100 | صُوَاعَ<br>(the) cup | صوع | صُواع | 12:72:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 101 | أَصْوَافِهَا<br>their wool | صوف | أَصْواف | 16:80:19 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 102 | صَيَاصِيهِمْ<br>their fortresses | صيص | صَياصِي | 33:26:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 103 | ٱلضَّأْنِ<br>the sheep | ضأن | ضَّأْنِ | 6:143:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 104 | ضِدًّا<br>opponents | ضدد | ضِدّ | 19:82:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 105 | وَٱلضَّفَادِعَ<br>and the frogs | ضفدع | ضَّفَادِعَ | 7:133:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 106 | ضَيْرَ<br>harm | ضير | ضَيْر | 26:50:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 107 | فَطَلٌّ<br>then a drizzle | طلل | طَلٌّ | 2:265:23 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 108 | كَٱلطَّوْدِ<br>like the mountain | طود | طَّوْدِ | 26:63:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 109 | كَٱلْعُرْجُونِ<br>like the date stalk | عرجن | عُرْجُونِ | 36:39:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 110 | وَٱلْمُعْتَرَّ<br>and the needy who ask | عرر | مُعْتَرَّ | 22:36:22 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; case: accusative. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 111 | عِضِينَ<br>(in) parts | عضو | عِضِين | 15:91:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 112 | ٱلْمُعَوِّقِينَ<br>those who hinder | عوق | مُعَوِّقِينَ | 33:18:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 2; number: masculine plural; case: accusative; verb form: Form 2. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 113 | غُزًّى<br>fighting | غزو | غُزًّى | 3:156:16 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; state: indefinite; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 114 | غَوْلٌ<br>(is) bad effect | غول | غَوْل | 37:47:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 115 | فَجْوَةٍ<br>the open space | فجو | فَجْوَة | 18:17:17 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 116 | فَظًّا<br>rude | فظظ | فَظّ | 3:159:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: accusative. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 117 | وَفُومِهَا<br>[and] its garlic | فوم | فُومِ | 2:61:20 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 118 | وَقِثَّآئِهَا<br>[and] its cucumbers | قثأ | قِثَّآئِ | 2:61:19 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 119 | قِسِّيسِينَ<br>(are) priests | قسس | قِسِّيس | 5:82:22 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 120 | تَقْشَعِرُّ<br>Shiver | قشعر | تَقْشَعِرُّ | 39:23:8 | 1 | HIGH / HIGH | Verb; Current Qur'anic occurrence; pattern: Form 4; tense: imperfect verb; verb form: Form 4. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 121 | قِطَّنَا<br>our share | قطط | قِطّ | 38:16:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative; person: first-person plural. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 122 | قِطْمِيرٍ<br>(as much as) the membrane of a date-seed | قطمر | قِطْمِير | 35:13:28 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 123 | ٱلْمُقَنطَرَةِ<br>[the] stored up | قنطر | مُقَنطَرَةِ | 3:14:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 2; gender: feminine; case: genitive; partOfSpeech: adjective; verb form: Form 2. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 124 | قِنْوَانٌ<br>clusters of dates | قنو | قِنْوان | 6:99:23 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: nominative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 125 | فَكُبْكِبُوا۟<br>Then they will be overturned | كبكب | كُبْكِبُ | 26:94:1 | 1 | HIGH / HIGH | Verb; Current Qur'anic occurrence; pattern: Form 1; tense: perfect verb; voice: passive; verb form: Form 1. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 126 | كِلَاهُمَا<br>both of them | كلو | كِلا | 17:23:15 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; case: nominative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 127 | بِلِحْيَتِى<br>by my beard | لحي | لِحْيَتِ | 20:94:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: genitive; person: first-person singular. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 128 | لِوَاذًا<br>under shelter | لوذ | لِواذ | 24:63:15 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 129 | أَمْعَآءَهُمْ<br>their intestines | معي | أَمْعاء | 47:15:44 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 130 | مُكَآءً<br>whistling | مكو | مُكاء | 8:35:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: accusative; verb form: Form 1. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 131 | ٱلنَّسِىٓءُ<br>the postponing | نسأ | نَّسِىٓءُ | 9:37:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: nominative. | hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 132 | ٱلتَّنَاوُشُ<br>(will be) the receiving | نوش | تَّنَاوُشُ | 34:52:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 6; gender: masculine; case: nominative; verb form: Form 6. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 133 | مَنَاصٍ<br>(for) escape | نوص | مَناص | 38:3:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 134 | ٱلنُّونِ<br>And Dhun-Nun | نون | نُّونِ | 21:87:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 135 | وَٱلنَّوَىٰ<br>and the date-seed | نوي | نَّوَىٰ | 6:95:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 136 | هَدًّا<br>(in) devastation | هدد | هَدّ | 19:90:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | doubled-root | HIGH | 0 strong leads; none;  | LOW |
-| 137 | ٱلْهُدْهُدَ<br>the hoopoe | هدهد | هُدْهُدَ | 27:20:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | quadriliteral, special/irregular | LOW | 0 strong leads; none;  | LOW |
-| 138 | هَيْتَ<br>Come on | هيت | هَيْتَ | 12:23:11 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; mood: imperative; person: second-person masculine singular; verb form: Form 1. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 139 | مَوْئِلًا<br>an escape | وأل | مَوْئِل | 18:58:19 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | weak-root, hamzated-root | HIGH | 0 strong leads; none;  | LOW |
-| 140 | وَأَوْبَارِهَا<br>and their fur | وبر | أَوْبَارِ | 16:80:20 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 141 | سِنَةٌ<br>slumber | وسن | سِنَة | 2:255:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: nominative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 142 | شِيَةَ<br>blemish | وشي | شِيَة | 2:71:15 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 143 | مَوَاطِنَ<br>regions | وطن | مَواطِن | 9:25:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: genitive. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 144 | وَفْدًا<br>(as) a delegation | وفد | وَفْد | 19:85:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: accusative; verb form: Form 1. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 145 | مَّوْفُورًا<br>ample | وفر | مَوْفُور | 17:63:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: accusative; verb form: Form 1. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 146 | وَٱلْمَوْقُوذَةُ<br>and that which is hit fatally | وقذ | مَوْقُوذَةُ | 5:3:13 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: feminine; case: nominative; verb form: Form 1. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 147 | تَوْكِيدِهَا<br>their confirmation | وكد | تَوْكِيد | 16:91:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 2; gender: masculine; case: genitive; verb form: Form 2. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 148 | أَيْقَاظًا<br>awake | يقظ | أَيْقاظ | 18:18:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: accusative. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-| 149 | وَيَنْعِهِۦٓ<br>and its ripening | ينع | يَنْعِ | 6:99:38 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive; person: third-person masculine singular. | weak-root | HIGH | 0 strong leads; none;  | LOW |
-
-#### Original LOW reason for this group
-
-- Not in C1: further lexicon-led or model-specific review is required before authoring additional rows.
-- The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.
-
-### C3-D
-
-Semantic branching is the main difficulty; same-root forms may be useful, but each branch needs an honest meaning and sense-scoped evidence.
-
-| Rank | Qur’anic word | Root | Lemma | Location(s) | Occ. | Root/Lemma confidence | Morphology | Flags | Semantic risk | Potential evidence | Predicted |
-| ---: | --- | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | بَغْتَةً<br>suddenly | بغت | بَغْتَة | 6:31:11, 6:44:17, 6:47:7, 7:95:15, 7:187:23, 12:107:11, 21:40:3, 22:55:11, 26:202:2, 29:53:9, 39:55:13, 43:66:7, 47:18:7 | 13 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 2 | قَمِيصِهِۦ<br>his shirt | قمص | قَمِيص | 12:18:3, 12:25:4, 12:26:12, 12:27:3, 12:28:3, 12:93:2 | 6 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive; person: third-person masculine singular. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 3 | ٱلْكَهْفِ<br>(of) the cave | كهف | كَهْفِ | 18:9:5, 18:10:5, 18:11:5, 18:16:9, 18:17:7, 18:25:3 | 6 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 4 | جَـٰثِمِينَ<br>fallen prone | جثم | جاثِم | 7:78:6, 7:91:6, 11:67:8, 11:94:18, 29:37:7 | 5 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: accusative; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 5 | شَطْرَ<br>towards the direction | شطر | شَطْر | 2:144:12, 2:144:20, 2:149:6, 2:150:6, 2:150:14 | 5 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 6 | جَسَدًا<br>an image | جسد | جَسَد | 7:148:9, 20:88:4, 21:8:3, 38:34:7 | 4 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 7 | أَسْلِحَتَهُمْ<br>their arms | سلح | أَسْلِحَت | 4:102:12, 4:102:27, 4:102:34, 4:102:54 | 4 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 8 | كَرْبٍ<br>distress | كرب | كَرْب | 6:64:7, 21:76:11, 37:76:4, 37:115:4 | 4 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 9 | نَعْجَةً<br>ewe(s) | نعج | نَعْجَة | 38:23:7, 38:23:9, 38:24:5, 38:24:7 | 4 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 10 | لِلسُّحْتِ<br>of the forbidden | سحت | سُّحْتِ | 5:42:4, 5:62:9, 5:63:9 | 3 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | MEDIUM | 4 strong leads; verb / derived verb, active participle; فَيُسْحِتَكُم / سُحْتٌ / يَسْحَتُ | LOW |
-| 11 | بَهِيمَةُ<br>the quadruped | بهم | بَهِيمَة | 5:1:8, 22:28:14, 22:34:12 | 3 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 12 | رَغَدًا<br>freely | رغد | رَغَد | 2:35:9, 2:58:10, 16:112:10 | 3 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative; partOfSpeech: adjective. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 13 | زَبَدًا<br>a foam | زبد | زَبَد | 13:17:10, 13:17:21, 13:17:29 | 3 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 14 | ٱلْمَشْحُونِ<br>laden | شحن | مَشْحُونِ | 26:119:6, 36:41:8, 37:140:5 | 3 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; case: genitive; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 15 | فَتِيلًا<br>(even as much as) a hair on a date-seed | فتل | فَتِيل | 4:49:14, 4:77:48, 17:71:15 | 3 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 16 | قَرْحٌ<br>a wound | قرح | قَرْح | 3:140:3, 3:140:7, 3:172:9 | 3 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 17 | قِرَدَةً<br>apes | قرد | قِرَدَة | 2:65:11, 5:60:17, 7:166:10 | 3 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 18 | ٱلْفَزَعُ<br>the terror | فزع | فَزَعُ | 21:103:3, 27:89:9 | 2 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: nominative. | regular signal | HIGH | 2 strong leads; verb / derived verb; فَفَزِعَ / فَزَعٍ | LOW |
-| 19 | وَبُكْمٌ<br>and dumb | بكم | بُكْمٌ | 6:39:5, 8:22:7 | 2 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; state: indefinite; case: nominative. | regular signal | HIGH | 1 strong leads; verbal noun / maṣdar; إِبْكَامٌ | LOW |
-| 20 | وَٱلرَّٰسِخُونَ<br>And those firm | رسخ | رَّٰسِخُونَ | 3:7:32, 4:162:2 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: nominative; verb form: Form 1. | regular signal | HIGH | 1 strong leads; verb / derived verb; ٱلرَّٰسِخُونَ | LOW |
-| 21 | ٱلْأَنفَالِ<br>the spoils of war | نفل | أَنفَالِ | 8:1:3, 8:1:5 | 2 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: genitive. | regular signal | HIGH | 1 strong leads; noun / adjective; نَفْلٌ | LOW |
-| 22 | بَـٰخِعٌ<br>the one who kills | بخع | باخِع | 18:6:2, 26:3:2 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: nominative; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 23 | وَٱلْأَبْرَصَ<br>and the leper | برص | أَبْرَصَ | 3:49:26, 5:110:41 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 24 | بَعِيرٍ<br>(of) a camel's (load) | بعر | بَعِير | 12:65:22, 12:72:9 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 25 | ثُعْبَانٌ<br>(was) a serpent | ثعب | ثُعْبان | 7:107:5, 26:32:5 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 26 | خَبَالًا<br>(any) ruin | خبل | خَبال | 3:118:11, 9:47:7 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 27 | أَخْدَانٍ<br>secret lovers | خدن | أَخْدان | 4:25:34, 5:5:32 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 28 | مَخْمَصَةٍ<br>hunger | خمص | مَخْمَصَة | 5:3:54, 9:120:27 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 29 | ٱلدَّمْعِ<br>the tears | دمع | دَّمْعِ | 5:83:11, 9:92:18 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 30 | وَرُفَـٰتًا<br>and crumbled particles | رفت | وَرُفَـٰتًا | 17:49:5, 17:98:10 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 31 | ٱلرَّفَثُ<br>(is) the approach | رفث | رَّفَثُ | 2:187:5, 2:197:9 | 2 | HIGH / MEDIUM | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 32 | زُمَرًا<br>(in) groups | زمر | زُمَر | 39:71:6, 39:73:7 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 33 | سَقِيمٌ<br>sick | سقم | سَقِيم | 37:89:3, 37:145:4 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 34 | ٱلْأَصْفَادِ<br>the chains | صفد | أَصْفَادِ | 14:49:6, 38:38:4 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 35 | أَضْغَـٰنَهُمْ<br>their hatred | ضغن | أَضْغان | 47:29:11, 47:37:6 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 36 | ٱلْعَتِيقِ<br>[the] Ancient | عتق | عَتِيقِ | 22:29:8, 22:33:11 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; case: genitive; partOfSpeech: adjective. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 37 | عِجَافٌ<br>lean ones | عجف | عِجاف | 12:43:10, 12:46:11 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: nominative; partOfSpeech: adjective. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 38 | غُلْفٌۢ<br>(are) wrapped | غلف | غُلْف | 2:88:3, 4:155:13 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 39 | كُسَالَىٰ<br>lazily | كسل | كُسالَى | 4:142:12, 9:54:17 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 40 | ٱلْأَكْمَهَ<br>the blind | كمه | أَكْمَهَ | 3:49:25, 5:110:40 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 41 | وَكَهْلًا<br>and (in) maturity | كهل | كَهْلًا | 3:46:5, 5:110:20 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 42 | مَوَاخِرَ<br>ploughing | مخر | مَواخِر | 16:14:15, 35:12:23 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 43 | مِلْحٌ<br>salty | ملح | مِلْح | 25:53:9, 35:12:10 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 44 | إِمْلَـٰقٍ<br>poverty | ملق | إِمْلاق | 6:151:18, 17:31:5 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 4; gender: masculine; state: indefinite; case: genitive; verb form: Form 4. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 45 | بَطَرًا<br>boastfully | بطر | بَطَر | 8:47:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 3 strong leads; verb / derived verb; بَطِرَتْ / بَطِرٌ / يَبْطَرُ | LOW |
-| 46 | وَسَعِيدٌ<br>and (the) glad | سعد | سَعِيدٌ | 11:105:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: nominative. | regular signal | HIGH | 3 strong leads; verb / derived verb; سُعِدُوا۟ / سَعِدَ / يَسْعَدُ | LOW |
-| 47 | شُغُلٍ<br>will be occupied | شغل | شُغُل | 36:55:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | HIGH | 3 strong leads; verb / derived verb; شَغَلَتْنَآ / يَشْغَلُ / مَشْغُولٌ | LOW |
-| 48 | ظُفُرٍ<br>claws | ظفر | ظُفُر | 6:146:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | HIGH | 3 strong leads; verb / derived verb; أَظْفَرَكُمْ / يَظْفَرُ / ظَافِرٌ | LOW |
-| 49 | ٱلْأَنَامِلَ<br>the finger tips | نمل | أَنَامِلَ | 3:119:17 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | regular signal | HIGH | 2 strong leads; noun / adjective; نَمْلَةٌ / نَمْلٌ | LOW |
-| 50 | بَازِغًا<br>rising | بزغ | بازِغ | 6:77:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: accusative; verb form: Form 1. | regular signal | HIGH | 1 strong leads; verb / derived verb; بَازِغَةً | LOW |
-| 51 | بَازِغَةً<br>rising | بزغ | بازِغَة | 6:78:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: feminine; state: indefinite; case: accusative; verb form: Form 1. | regular signal | HIGH | 1 strong leads; verb / derived verb; بَازِغًا | LOW |
-| 52 | ٱلرِّفْدُ<br>(is) the gift | رفد | رِّفْدُ | 11:99:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: nominative. | regular signal | HIGH | 1 strong leads; verb / derived verb; ٱلْمَرْفُودُ | LOW |
-| 53 | عَصِيبٌ<br>distressful | عصب | عَصِيب | 11:77:13 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: nominative; partOfSpeech: adjective. | regular signal | HIGH | 1 strong leads; noun / adjective; عِصَابَةٌ | LOW |
-| 54 | فُرَٰدَىٰ<br>alone | فرد | فُرادَى | 6:94:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | regular signal | HIGH | 1 strong leads; noun / adjective; فَرْدٌ | LOW |
-| 55 | مُقْنِعِى<br>raised up | قنع | مُقْنِعِي | 14:43:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | regular signal | HIGH | 1 strong leads; verb / derived verb; ٱلْقَانِعَ | LOW |
-| 56 | مُكَلِّبِينَ<br>ones who train animals to hunt | كلب | مُكَلِّب | 5:4:13 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 2; number: masculine plural; case: accusative; verb form: Form 2. | regular signal | HIGH | 1 strong leads; noun / adjective; كَلِبٌ | LOW |
-| 57 | نِحْلَةً<br>graciously | نحل | نِحْلَة | 4:4:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: accusative. | regular signal | HIGH | 1 strong leads; noun / adjective; نَحْلٌ | LOW |
-| 58 | وَبِدَارًا<br>and hastily | بدر | بِدَارًا | 4:6:17 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 3; gender: masculine; state: indefinite; case: accusative; verb form: Form 3. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 59 | بَاسِقَـٰتٍ<br>tall | بسق | باسِقَة | 50:10:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: feminine plural; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 60 | وَبَصَلِهَا<br>and its onions | بصل | بَصَلِ | 2:61:22 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 61 | وَٱلْبِغَالَ<br>and mules | بغل | بِغَالَ | 16:8:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 62 | ٱلْبُقْعَةِ<br>the place even | بقع | بُقْعَةِ | 28:30:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 63 | بَقْلِهَا<br>its herbs | بقل | بَقْل | 2:61:18 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 64 | فَتَعْسًا<br>destruction (is) | تعس | تَعْسًا | 47:8:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 65 | تَفَثَهُمْ<br>their prescribed duties | تفث | تَفَث | 22:29:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 66 | تَثْرِيبَ<br>blame | ثرب | تَثْرِيب | 12:92:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 2; gender: masculine; case: accusative; verb form: Form 2. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 67 | بِٱلْجِبْتِ<br>in the superstition | جبت | جِبْتِ | 4:51:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 68 | لِلْجَبِينِ<br>upon his forehead | جبن | جَبِينِ | 37:103:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 69 | جِبَاهُهُمْ<br>their foreheads | جبه | جِباه | 9:35:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 70 | جُرُفٍ<br>(of) a cliff | جرف | جُرُف | 9:109:16 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 71 | وَجِفَانٍ<br>and bowls | جفن | جِفَانٍ | 34:13:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 72 | جَامِدَةً<br>firmly fixed | جمد | جامِدَة | 27:88:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: feminine; state: indefinite; case: accusative; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 73 | مُتَجَانِفٍ<br>inclining | جنف | مُتَجانِف | 5:3:56 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 6; gender: masculine; state: indefinite; case: genitive; verb form: Form 6. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 74 | ٱلْحُبُكِ<br>pathways | حبك | حُبُكِ | 51:7:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: feminine plural; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 75 | حَتْمًا<br>an inevitability | حتم | حَتْم | 19:71:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 76 | حَدَبٍ<br>elevation | حدب | حَدَب | 21:96:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 77 | وَحَفَدَةً<br>and grandsons | حفد | حَفَدَةً | 16:72:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 78 | حَنِيذٍ<br>roasted | حنذ | حَنِيذ | 11:69:15 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: genitive; partOfSpeech: adjective. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 79 | خُبْزًا<br>bread | خبز | خُبْز | 12:36:18 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 80 | خَتَّارٍ<br>traitor | ختر | خَتّار | 31:32:21 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: genitive; partOfSpeech: adjective. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 81 | خَمْطٍ<br>bitter | خمط | خَمْط | 34:16:11 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: genitive; partOfSpeech: adjective. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 82 | وَٱلْمُنْخَنِقَةُ<br>and that which is strangled (to death) | خنق | مُنْخَنِقَةُ | 5:3:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 7; gender: feminine; case: nominative; verb form: Form 7. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 83 | لِدُلُوكِ<br>at the decline | دلك | دُلُوكِ | 17:78:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; case: genitive; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 84 | بِدِينَارٍ<br>with a single coin | دنر | دِينَارٍ | 3:75:14 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 85 | مُذْعِنِينَ<br>(as) promptly obedient | ذعن | مُذْعِن | 24:49:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 4; number: masculine plural; case: accusative; verb form: Form 4. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 86 | رَتْقًا<br>a joined entity | رتق | رَتْق | 21:30:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 87 | رَدْمًا<br>a barrier | ردم | رَدْم | 18:95:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 88 | مُرَٰغَمًا<br>place(s) of refuge | رغم | مُراغَم | 4:100:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 3; gender: masculine; state: indefinite; case: accusative; verb form: Form 3. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 89 | ٱلْمَرْفُودُ<br>which (will) be given | رفد | مَرْفُودُ | 11:99:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; case: nominative; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 90 | رُقُودٌ<br>(were) asleep | رقد | رُقُود | 18:18:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; state: indefinite; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 91 | رَوَاكِدَ<br>motionless | ركد | رَواكِد | 42:33:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 92 | رِكْزًۢا<br>a sound | ركز | رِكْز | 19:98:14 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 93 | وَرِمَاحُكُمْ<br>and your spears | رمح | رِمَاحُ | 5:94:11 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 94 | كَرَمَادٍ<br>(are) like ashes | رمد | رَمَادٍ | 14:18:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 95 | رَمْزًا<br>(with) gestures | رمز | رَمْز | 3:41:14 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: accusative; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 96 | زَحْفًا<br>advancing | زحف | زَحْف | 8:15:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 97 | زُرْقًا<br>blue-eyed | زرق | زُرْق | 20:102:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 98 | بِٱلْأَزْلَـٰمِ<br>by divining arrows | زلم | بِٱلْأَزْلَـٰمِ | 5:3:28 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 99 | وَٱلْأَزْلَـٰمُ<br>and divining arrows | زلم | وَٱلْأَزْلَـٰمُ | 5:90:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 100 | ٱلزَّٰهِدِينَ<br>those keen to give up | زهد | زَّٰهِدِينَ | 12:20:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: genitive; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 101 | زَهْرَةَ<br>(the) splendor | زهر | زَهْرَة | 20:131:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 102 | بِٱلسَّاحِلِ<br>on the bank | سحل | سَّاحِلِ | 20:39:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 103 | ٱلسَّرْدِ<br>the links (of armor) | سرد | سَّرْدِ | 34:11:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 104 | سُهُولِهَا<br>its plains | سهل | سُهُول | 7:74:13 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 105 | شُحُومَهُمَآ<br>their fat | شحم | شُحُوم | 6:146:13 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 106 | أَشْرَاطُهَا<br>its indications | شرط | أَشْراط | 47:18:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 107 | مُتَشَـٰكِسُونَ<br>quarreling | شكس | مُتَشاكِس | 39:29:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 6; number: masculine plural; case: nominative; verb form: Form 6. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 108 | شَاكِلَتِهِۦ<br>his manner | شكل | شاكِلَت | 17:84:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: genitive; person: third-person masculine singular. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 109 | وَصِبْغٍ<br>and a relish | صبغ | صِبْغٍ | 23:20:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 110 | ٱلصَّـٰفِنَـٰتُ<br>excellent bred steeds | صفن | صَّـٰفِنَـٰتُ | 38:31:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: feminine plural; case: genitive; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 111 | صَلْدًا<br>bare | صلد | صَلْد | 2:264:27 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 112 | صَـٰمِتُونَ<br>remain silent | صمت | صامِت | 7:193:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: nominative; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 113 | صَوَٰمِعُ<br>monasteries | صمع | صَوامِع | 22:40:19 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 114 | ضَامِرٍ<br>lean camel | ضمر | ضامِر | 22:27:9 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: genitive; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 115 | ضَنكًا<br>straitened | ضنك | ضَنك | 20:124:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative; partOfSpeech: adjective. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 116 | ظَعْنِكُمْ<br>(of) your travel | ظعن | ظَعْن | 16:80:15 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 117 | وَعَدَسِهَا<br>[and] its lentils | عدس | عَدَسِ | 2:61:21 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 118 | ٱلْعَرِمِ<br>(of) the dam | عرم | عَرِمِ | 34:16:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 119 | عَسَلٍ<br>honey | عسل | عَسَل | 47:15:25 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 120 | عِطْفِهِۦ<br>his neck | عطف | عِطْف | 22:9:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive; person: third-person masculine singular. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 121 | عِفْرِيتٌ<br>a strong one | عفر | عِفْرِيت | 27:39:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 122 | عَمِيقٍ<br>distant | عمق | عَمِيق | 22:27:14 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: genitive; partOfSpeech: adjective. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 123 | غَزْلَهَا<br>her spun yarn | غزل | غَزْل | 16:92:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 124 | غَصْبًا<br>(by) force | غصب | غَصْب | 18:79:17 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 125 | فَرْثٍ<br>bowels | فرث | فَرْث | 16:66:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 126 | وَفَرْعُهَا<br>and its branches | فرع | فَرْعُ | 14:24:13 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 127 | فَـٰرِهِينَ<br>skillfully | فره | فارِه | 26:149:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: accusative; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 128 | تَفْسِيرًا<br>explanation | فسر | تَفْسِير | 25:33:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 2; gender: masculine; state: indefinite; case: accusative; verb form: Form 2. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 129 | أَفْصَحُ<br>(is) more eloquent | فصح | أَفْصَح | 28:34:4 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 130 | ٱنفِصَامَ<br>(will) break | فصم | انفِصام | 2:256:20 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 7; gender: masculine; case: accusative; verb form: Form 7. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 131 | فَاقِعٌ<br>bright | فقع | فاقِع | 2:69:15 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; state: indefinite; case: nominative; partOfSpeech: adjective; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 132 | فُلَانًا<br>that one | فلن | فُلان | 25:28:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 133 | ٱلْمَقْبُوحِينَ<br>the despised | قبح | مَقْبُوحِينَ | 28:42:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: genitive; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 134 | قَاصِفًا<br>a hurricane | قصف | قاصِف | 17:69:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: accusative; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 135 | أَقْفَالُهَآ<br>(are) locks | قفل | أَقْفال | 47:24:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 136 | ٱلْقَلَـٰٓئِدَ<br>the garlanded | قلد | قَلَـٰٓئِدَ | 5:2:14 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: feminine plural; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 137 | وَٱلْقَلَـٰٓئِدَ<br>and the garlands | قلد | وَٱلْقَلَـٰٓئِدَ | 5:97:11 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: feminine plural; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 138 | مُّقْمَحُونَ<br>(are with) heads raised up | قمح | مُقْمَح | 36:8:10 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 4; number: masculine plural; case: nominative; verb form: Form 4. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 139 | مَّقَـٰمِعُ<br>(are) hooked rods | قمع | مَقامِع | 22:21:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 140 | وَٱلْقُمَّلَ<br>and the lice | قمل | قُمَّلَ | 7:133:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 141 | كَسَادَهَا<br>a decline (in) it | كسد | كَساد | 9:24:13 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 142 | كَـٰلِحُونَ<br>(will) grin with displaced lips | كلح | كالِح | 23:104:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; number: masculine plural; case: nominative; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 143 | إِلْحَافًا<br>with importunity | لحف | إِلْحاف | 2:273:22 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 4; gender: masculine; state: indefinite; case: accusative; verb form: Form 4. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 144 | لَحْنِ<br>(the) tone | لحن | لَحْن | 47:30:8 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 145 | لَّازِبٍۭ<br>sticky | لزب | لازِب | 37:11:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: genitive; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 146 | بِٱلْأَلْقَـٰبِ<br>by nicknames | لقب | بِٱلْأَلْقَـٰبِ | 49:11:28 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 147 | لَوَٰقِحَ<br>fertilizing | لقح | لَواقِح | 15:22:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine plural; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 148 | ٱلْمِحَالِ<br>(in) Strength | محل | مِحَالِ | 13:13:19 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; case: genitive; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 149 | ٱلْمَخَاضُ<br>the pains of childbirth | مخض | مَخَاضُ | 19:23:2 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 150 | ٱلْمَعْزِ<br>the goats | معز | مَعْزِ | 6:143:7 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: genitive. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 151 | نَجَسٌ<br>(are) unclean | نجس | نَجَس | 9:28:6 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 152 | نَحْبَهُۥ<br>his vow | نحب | نَحْب | 33:23:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; case: accusative; person: third-person masculine singular. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 153 | وَٱلنَّطِيحَةُ<br>and that which is gored by horns | نطح | نَّطِيحَةُ | 5:3:15 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 154 | نَعْلَيْكَ<br>your shoes | نعل | نَعْلَي | 20:12:5 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; case: accusative; person: second-person masculine singular. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 155 | نَفْحَةٌ<br>a whiff | نفح | نَفْحَة | 21:46:3 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: nominative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 156 | نَكِدًا<br>(with) difficulty | نكد | نَكِد | 7:58:12 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 157 | وَمِنْهَاجًا<br>and a clear way | نهج | مِنْهَاجًا | 5:48:29 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 158 | هَامِدَةً<br>barren | همد | هامِدَة | 22:5:58 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; pattern: Form 1; gender: feminine; state: indefinite; case: accusative; verb form: Form 1. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-| 159 | هَمْسًا<br>a faint sound | همس | هَمْس | 20:108:13 | 1 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative. | regular signal | HIGH | 0 strong leads; none;  | LOW |
-
-#### Original LOW reason for this group
-
-- Not in C1: further lexicon-led or model-specific review is required before authoring additional rows.
-- The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.
-
-### C3-E
-
-Frozen, grammatical, proper-name, or model-dependent item; decide whether a dedicated learner representation is needed rather than fabricating Ṣarf rows.
-
-| Rank | Qur’anic word | Root | Lemma | Location(s) | Occ. | Root/Lemma confidence | Morphology | Flags | Semantic risk | Potential evidence | Predicted |
-| ---: | --- | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | أُفٍّ<br>a word of disrespect | أفف | أُفّ | 17:23:19, 21:67:1, 46:17:4 | 3 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; tense: imperfect verb. | hamzated-root, doubled-root | NOT APPLICABLE | 0 strong leads; none;  | LOW |
-| 2 | حَـٰشَ<br>Forbid | حوش | حاش | 12:31:23, 12:51:10 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; case: accusative. | weak-root | NOT APPLICABLE | 0 strong leads; none;  | LOW |
-| 3 | وَحَيْثُ<br>and wherever | حيث | حَيْثُ | 2:144:15, 2:150:9 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence in this āyah; its exact vocalisation and context are primary. | weak-root | NOT APPLICABLE | 0 strong leads; none;  | LOW |
-| 4 | هَلُمَّ<br>Bring forward | هلم | هَلُمّ | 6:150:2, 33:18:8 | 2 | HIGH / HIGH | Noun / adjective; Current Qur'anic occurrence; mood: imperative. | regular signal | NOT APPLICABLE | 0 strong leads; none;  | LOW |
-
-#### Original LOW reason for this group
-
-- Not in C1: further lexicon-led or model-specific review is required before authoring additional rows.
-- The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.
+| Family | Word | Root | Group | Occurrences | Predicted | Decision |
+|---|---|---|---|---:|---|---|
+| lexical|دحر|مدحور|noun/pronoun | مَّدْحُورًا | دحر | C3-B | 3 | HIGH | FULL |
+| lexical|جهز|جهاز|noun/pronoun | بِجَهَازِهِمْ | جهز | C3-B | 2 | HIGH | FULL |
+| lexical|مزق|ممزق|noun/pronoun | مُمَزَّقٍ | مزق | C3-B | 2 | HIGH | FULL |
+| lexical|مرح|مرح|noun/pronoun | مَرَحًا | مرح | C3-B | 2 | HIGH | CONFIRMED-LIMITED |
+| lexical|رفق|رفيق|noun/pronoun | رَفِيقًا | رفق | C3-B | 1 | HIGH | FULL |
+| lexical|جرح|جروح|noun/pronoun | وَٱلْجُرُوحَ | جرح | C3-B | 1 | HIGH | FULL |
+| lexical|جرح|جوارح|noun/pronoun | ٱلْجَوَارِحِ | جرح | C3-B | 1 | HIGH | FULL |
+| lexical|حصد|حصاد|noun/pronoun | حَصَادِهِۦ | حصد | C3-B | 1 | HIGH | FULL |
+| lexical|خدع|خادع|noun/pronoun | خَـٰدِعُهُمْ | خدع | C3-B | 1 | HIGH | FULL |
+| lexical|سخط|سخط|noun/pronoun | بِسَخَطٍ | سخط | C3-B | 1 | HIGH | FULL |
+| lexical|نسخ|نسخت|noun/pronoun | نُسْخَتِهَا | نسخ | C3-B | 1 | HIGH | FULL |
+| lexical|بذر|تبذير|noun/pronoun | تَبْذِيرًا | بذر | C3-B | 1 | HIGH | FULL |
+| lexical|بذر|مبذرين|noun/pronoun | ٱلْمُبَذِّرِينَ | بذر | C3-B | 1 | HIGH | FULL |
+| lexical|برم|مبرم|noun/pronoun | مُبْرِمُونَ | برم | C3-B | 1 | HIGH | FULL |
+| lexical|خضع|خاضع|noun/pronoun | خَـٰضِعِينَ | خضع | C3-B | 1 | HIGH | CONFIRMED-LIMITED |
+| lexical|ستر|مستور|noun/pronoun | مَّسْتُورًا | ستر | C3-B | 1 | HIGH | FULL |
+| lexical|نقب|نقيب|noun/pronoun | نَقِيبًا | نقب | C3-B | 1 | HIGH | FULL |
+| lexical|طعن|طعنا|noun/pronoun | وَطَعْنًا | طعن | C3-B | 1 | HIGH | FULL |
+| lexical|عبث|عبث|noun/pronoun | عَبَثًا | عبث | C3-B | 1 | HIGH | CONFIRMED-LIMITED |
+| lexical|فتر|فترة|noun/pronoun | فَتْرَةٍ | فتر | C3-B | 1 | HIGH | FULL |
+| lexical|هضم|هضم|noun/pronoun | هَضْمًا | هضم | C3-B | 1 | HIGH | FULL |
+| lexical|زفر|زفير|noun/pronoun | زَفِيرٌ | زفر | C3-B | 2 | LOW | FULL |
+| lexical|ندم|ندمين|noun/pronoun | ٱلنَّـٰدِمِينَ | ندم | C3-B | 1 | LOW | FULL |
+| lexical|هيأ|هية|noun/pronoun | كَهَيْـَٔةِ | هيأ | C3-C | 2 | MEDIUM | — |
+| lexical|ميد|مائدة|noun/pronoun | مَآئِدَةً | ميد | C3-C | 2 | MEDIUM | — |
+| lexical|زول|زوال|noun/pronoun | زَوَالٍ | زول | C3-C | 1 | MEDIUM | — |
+| lexical|وصف|وصف|noun/pronoun | وَصْفَهُمْ | وصف | C3-C | 1 | MEDIUM | — |
+| lexical|بور|بوار|noun/pronoun | ٱلْبَوَارِ | بور | C3-C | 1 | MEDIUM | — |
+| lexical|أزر|ازر|noun/pronoun | أَزْرِى | أزر | C3-C | 1 | MEDIUM | — |
+| lexical|زجو|مزجاة|noun/pronoun | مُّزْجَىٰةٍ | زجو | C3-C | 1 | MEDIUM | — |
+| lexical|غلي|غلى|noun/pronoun | كَغَلْىِ | غلي | C3-C | 1 | MEDIUM | — |
+| lexical|قوت|مقيت|noun/pronoun | مُّقِيتًا | قوت | C3-C | 1 | MEDIUM | — |
+| lexical|وبق|موبق|noun/pronoun | مَّوْبِقًا | وبق | C3-C | 1 | MEDIUM | — |
+| lexical|خيط|خياط|noun/pronoun | ٱلْخِيَاطِ | خيط | C3-C | 1 | MEDIUM | — |
+| lexical|زحزح|زحزح|verb | زُحْزِحَ | زحزح | C3-C | 1 | MEDIUM | — |
+| lexical|زود|زاد|noun/pronoun | ٱلزَّادِ | زود | C3-C | 1 | MEDIUM | — |
+| lexical|ظمأ|ظما|noun/pronoun | ظَمَأٌ | ظمأ | C3-C | 1 | MEDIUM | — |
+| lexical|قصو|قصوى|noun/pronoun | ٱلْقُصْوَىٰ | قصو | C3-C | 1 | MEDIUM | — |
+| lexical|هور|هار|noun/pronoun | هَارٍ | هور | C3-C | 1 | MEDIUM | — |
+| lexical|يبس|يابس|noun/pronoun | يَابِسٍ | يبس | C3-C | 1 | MEDIUM | — |
+| lexical|أزز|از|noun/pronoun | أَزًّا | أزز | C3-C | 1 | MEDIUM | — |
+| lexical|جذذ|مجذوذ|noun/pronoun | مَجْذُوذٍ | جذذ | C3-C | 1 | MEDIUM | — |
+| lexical|لدد|لد|noun/pronoun | لُّدًّا | لدد | C3-C | 1 | MEDIUM | — |
+| lexical|ورق|ورقة|noun/pronoun | وَرَقَةٍ | ورق | C3-C | 1 | MEDIUM | — |
+| lexical|ندد|انداد|noun/pronoun | أَندَادًا | ندد | C3-C | 6 | LOW | — |
+| lexical|صيد|صيد|noun/pronoun | ٱلصَّيْدِ | صيد | C3-C | 5 | LOW | — |
+| lexical|خطو|خطوة|noun/pronoun | خُطُوَٰتِ | خطو | C3-C | 5 | LOW | — |
+| lexical|حمأ|حما|noun/pronoun | حَمَإٍ | حمأ | C3-C | 3 | LOW | — |
+| lexical|ذأب|ذئب|noun/pronoun | ٱلذِّئْبُ | ذأب | C3-C | 3 | LOW | — |
+| lexical|سلو|سلوى|noun/pronoun | وَٱلسَّلْوَىٰ | سلو | C3-C | 3 | LOW | — |
+| lexical|عير|عير|noun/pronoun | ٱلْعِيرُ | عير | C3-C | 3 | LOW | — |
+| lexical|جثو|جثي|noun/pronoun | جِثِيًّا | جثو | C3-C | 2 | LOW | — |
+| lexical|أثث|اثاث|noun/pronoun | أَثَـٰثًا | أثث | C3-C | 2 | LOW | — |
+| lexical|ألل|الا|noun/pronoun | إِلًّا | ألل | C3-C | 2 | LOW | — |
+| lexical|تور|تارة|noun/pronoun | تَارَةً | تور | C3-C | 2 | LOW | — |
+| lexical|جبب|جب|noun/pronoun | ٱلْجُبِّ | جبب | C3-C | 2 | LOW | — |
+| lexical|حطط|حطة|noun/pronoun | حِطَّةٌ | حطط | C3-C | 2 | LOW | — |
+| lexical|حنجر|حناجر|noun/pronoun | ٱلْحَنَاجِرَ | حنجر | C3-C | 2 | LOW | — |
+| lexical|خردل|خردل|noun/pronoun | خَرْدَلٍ | خردل | C3-C | 2 | LOW | — |
+| lexical|خور|خوار|noun/pronoun | خُوَارٌ | خور | C3-C | 2 | LOW | — |
+| lexical|ذبب|ذباب|noun/pronoun | ذُبَابًا | ذبب | C3-C | 2 | LOW | — |
+| lexical|رسس|رس|noun/pronoun | ٱلرَّسِّ | رسس | C3-C | 2 | LOW | — |
+| lexical|زجج|زجاجة|noun/pronoun | زُجَاجَةٍ | زجج | C3-C | 2 | LOW | — |
+| lexical|سرمد|سرمد|noun/pronoun | سَرْمَدًا | سرمد | C3-C | 2 | LOW | — |
+| lexical|شفو|شفا|noun/pronoun | شَفَا | شفو | C3-C | 2 | LOW | — |
+| lexical|صنو|صنوان|noun/pronoun | صِنْوَانٌ | صنو | C3-C | 2 | LOW | — |
+| lexical|طرو|طري|noun/pronoun | طَرِيًّا | طرو | C3-C | 2 | LOW | — |
+| lexical|عنكب|عنكبوت|noun/pronoun | ٱلْعَنكَبُوتِ | عنكب | C3-C | 2 | LOW | — |
+| lexical|غوط|غائط|noun/pronoun | ٱلْغَآئِطِ | غوط | C3-C | 2 | LOW | — |
+| lexical|قرطس|قرطاس|noun/pronoun | قِرْطَاسٍ | قرطس | C3-C | 2 | LOW | — |
+| lexical|قسطس|قسطاس|noun/pronoun | بِٱلْقِسْطَاسِ | قسطس | C3-C | 2 | LOW | — |
+| lexical|ودق|ودق|noun/pronoun | ٱلْوَدْقَ | ودق | C3-C | 2 | LOW | — |
+| lexical|وسل|وسيلة|noun/pronoun | ٱلْوَسِيلَةَ | وسل | C3-C | 2 | LOW | — |
+| lexical|وطر|وطر|noun/pronoun | وَطَرًا | وطر | C3-C | 2 | LOW | — |
+| lexical|طوق|س|verb | سَيُطَوَّقُونَ | طوق | C3-C | 1 | LOW | — |
+| lexical|أرب|مارب|noun/pronoun | مَـَٔارِبُ | أرب | C3-C | 1 | LOW | — |
+| lexical|سنبل|سنبل|noun/pronoun | سُنۢبُلِهِۦٓ | سنبل | C3-C | 1 | LOW | — |
+| lexical|أمو|امائ|noun/pronoun | وَإِمَآئِكُمْ | أمو | C3-C | 1 | LOW | — |
+| lexical|خنزر|خنازير|noun/pronoun | وَٱلْخَنَازِيرَ | خنزر | C3-C | 1 | LOW | — |
+| lexical|شيد|مشيدة|noun/pronoun | مُّشَيَّدَةٍ | شيد | C3-C | 1 | LOW | — |
+| lexical|قنطر|والقنطير|noun/pronoun | وَٱلْقَنَـٰطِيرِ | قنطر | C3-C | 1 | LOW | — |
+| lexical|قوع|قاع|noun/pronoun | قَاعًا | قوع | C3-C | 1 | LOW | — |
+| lexical|قيل|قائل|noun/pronoun | قَآئِلُونَ | قيل | C3-C | 1 | LOW | — |
+| lexical|وثن|اوثن|noun/pronoun | ٱلْأَوْثَـٰنِ | وثن | C3-C | 1 | LOW | — |
+| lexical|أثل|اثل|noun/pronoun | وَأَثْلٍ | أثل | C3-C | 1 | LOW | — |
+| lexical|أدد|اد|noun/pronoun | إِدًّا | أدد | C3-C | 1 | LOW | — |
+| lexical|أسن|اسن|noun/pronoun | ءَاسِنٍ | أسن | C3-C | 1 | LOW | — |
+| lexical|أمت|امت|noun/pronoun | أَمْتًا | أمت | C3-C | 1 | LOW | — |
+| lexical|أوه|اوه|noun/pronoun | لَأَوَّٰهٌ | أوه | C3-C | 1 | LOW | — |
+| lexical|أيم|ايمى|noun/pronoun | ٱلْأَيَـٰمَىٰ | أيم | C3-C | 1 | LOW | — |
+| lexical|بأر|بئر|noun/pronoun | وَبِئْرٍ | بأر | C3-C | 1 | LOW | — |
+| lexical|ثبي|ثبة|noun/pronoun | ثُبَاتٍ | ثبي | C3-C | 1 | LOW | — |
+| lexical|ثري|ثرى|noun/pronoun | ٱلثَّرَىٰ | ثري | C3-C | 1 | LOW | — |
+| lexical|جذو|جذوة|noun/pronoun | جَذْوَةٍ | جذو | C3-C | 1 | LOW | — |
+| lexical|جفأ|جفاء|noun/pronoun | جُفَآءً | جفأ | C3-C | 1 | LOW | — |
+| lexical|جوف|جوف|noun/pronoun | جَوْفِهِۦ | جوف | C3-C | 1 | LOW | — |
+| lexical|جوو|جو|noun/pronoun | جَوِّ | جوو | C3-C | 1 | LOW | — |
+| lexical|حثث|حثيث|noun/pronoun | حَثِيثًا | حثث | C3-C | 1 | LOW | — |
+| lexical|حصحص|حصحص|verb | حَصْحَصَ | حصحص | C3-C | 1 | LOW | — |
+| lexical|حنن|حنانا|noun/pronoun | وَحَنَانًا | حنن | C3-C | 1 | LOW | — |
+| lexical|حوب|حوب|noun/pronoun | حُوبًا | حوب | C3-C | 1 | LOW | — |
+| lexical|حير|حيران|noun/pronoun | حَيْرَانَ | حير | C3-C | 1 | LOW | — |
+| lexical|خبأ|خبء|noun/pronoun | ٱلْخَبْءَ | خبأ | C3-C | 1 | LOW | — |
+| lexical|درهم|دراهم|noun/pronoun | دَرَٰهِمَ | درهم | C3-C | 1 | LOW | — |
+| lexical|دفأ|دفء|noun/pronoun | دِفْءٌ | دفأ | C3-C | 1 | LOW | — |
+| lexical|ذأم|مذءوم|noun/pronoun | مَذْءُومًا | ذأم | C3-C | 1 | LOW | — |
+| lexical|ذبذب|مذبذب|noun/pronoun | مُّذَبْذَبِينَ | ذبذب | C3-C | 1 | LOW | — |
+| lexical|رخو|رخاء|noun/pronoun | رُخَآءً | رخو | C3-C | 1 | LOW | — |
+| lexical|ردأ|ردء|noun/pronoun | رِدْءًا | ردأ | C3-C | 1 | LOW | — |
+| lexical|رهط|ا|noun/pronoun | أَرَهْطِىٓ | رهط | C3-C | 1 | LOW | — |
+| lexical|رهو|رهو|noun/pronoun | رَهْوًا | رهو | C3-C | 1 | LOW | — |
+| lexical|روع|روع|noun/pronoun | ٱلرَّوْعُ | روع | C3-C | 1 | LOW | — |
+| lexical|ريش|ريشا|noun/pronoun | وَرِيشًا | ريش | C3-C | 1 | LOW | — |
+| lexical|ريع|ريع|noun/pronoun | رِيعٍ | ريع | C3-C | 1 | LOW | — |
+| lexical|سردق|سرادق|noun/pronoun | سُرَادِقُهَا | سردق | C3-C | 1 | LOW | — |
+| lexical|سوح|ساحت|noun/pronoun | بِسَاحَتِهِمْ | سوح | C3-C | 1 | LOW | — |
+| lexical|سيب|سائبة|noun/pronoun | سَآئِبَةٍ | سيب | C3-C | 1 | LOW | — |
+| lexical|شرذم|شرذمة|noun/pronoun | لَشِرْذِمَةٌ | شرذم | C3-C | 1 | LOW | — |
+| lexical|شطأ|شاطئ|noun/pronoun | شَـٰطِئِ | شطأ | C3-C | 1 | LOW | — |
+| lexical|شوب|شوبا|noun/pronoun | لَشَوْبًا | شوب | C3-C | 1 | LOW | — |
+| lexical|شوك|شوكة|noun/pronoun | ٱلشَّوْكَةِ | شوك | C3-C | 1 | LOW | — |
+| lexical|صفصف|صفصف|noun/pronoun | صَفْصَفًا | صفصف | C3-C | 1 | LOW | — |
+| lexical|صوع|صواع|noun/pronoun | صُوَاعَ | صوع | C3-C | 1 | LOW | — |
+| lexical|صوف|اصواف|noun/pronoun | أَصْوَافِهَا | صوف | C3-C | 1 | LOW | — |
+| lexical|صيص|صياصي|noun/pronoun | صَيَاصِيهِمْ | صيص | C3-C | 1 | LOW | — |
+| lexical|ضأن|ضان|noun/pronoun | ٱلضَّأْنِ | ضأن | C3-C | 1 | LOW | — |
+| lexical|ضدد|ضد|noun/pronoun | ضِدًّا | ضدد | C3-C | 1 | LOW | — |
+| lexical|ضفدع|ضفادع|noun/pronoun | وَٱلضَّفَادِعَ | ضفدع | C3-C | 1 | LOW | — |
+| lexical|ضير|ضير|noun/pronoun | ضَيْرَ | ضير | C3-C | 1 | LOW | — |
+| lexical|طلل|طل|noun/pronoun | فَطَلٌّ | طلل | C3-C | 1 | LOW | — |
+| lexical|طود|طود|noun/pronoun | كَٱلطَّوْدِ | طود | C3-C | 1 | LOW | — |
+| lexical|عرجن|عرجون|noun/pronoun | كَٱلْعُرْجُونِ | عرجن | C3-C | 1 | LOW | — |
+| lexical|عرر|معتر|noun/pronoun | وَٱلْمُعْتَرَّ | عرر | C3-C | 1 | LOW | — |
+| lexical|عضو|عضين|noun/pronoun | عِضِينَ | عضو | C3-C | 1 | LOW | — |
+| lexical|عوق|معوقين|noun/pronoun | ٱلْمُعَوِّقِينَ | عوق | C3-C | 1 | LOW | — |
+| lexical|غزو|غزى|noun/pronoun | غُزًّى | غزو | C3-C | 1 | LOW | — |
+| lexical|غول|غول|noun/pronoun | غَوْلٌ | غول | C3-C | 1 | LOW | — |
+| lexical|فجو|فجوة|noun/pronoun | فَجْوَةٍ | فجو | C3-C | 1 | LOW | — |
+| lexical|فظظ|فظ|noun/pronoun | فَظًّا | فظظ | C3-C | 1 | LOW | — |
+| lexical|فوم|فوم|noun/pronoun | وَفُومِهَا | فوم | C3-C | 1 | LOW | — |
+| lexical|قثأ|قثائ|noun/pronoun | وَقِثَّآئِهَا | قثأ | C3-C | 1 | LOW | — |
+| lexical|قسس|قسيس|noun/pronoun | قِسِّيسِينَ | قسس | C3-C | 1 | LOW | — |
+| lexical|قشعر|تقشعر|verb | تَقْشَعِرُّ | قشعر | C3-C | 1 | LOW | — |
+| lexical|قطط|قط|noun/pronoun | قِطَّنَا | قطط | C3-C | 1 | LOW | — |
+| lexical|قطمر|قطمير|noun/pronoun | قِطْمِيرٍ | قطمر | C3-C | 1 | LOW | — |
+| lexical|قنطر|مقنطرة|noun/pronoun | ٱلْمُقَنطَرَةِ | قنطر | C3-C | 1 | LOW | — |
+| lexical|قنو|قنوان|noun/pronoun | قِنْوَانٌ | قنو | C3-C | 1 | LOW | — |
+| lexical|كبكب|كبكب|verb | فَكُبْكِبُوا۟ | كبكب | C3-C | 1 | LOW | — |
+| lexical|كلو|كلا|noun/pronoun | كِلَاهُمَا | كلو | C3-C | 1 | LOW | — |
+| lexical|لحي|لحيت|noun/pronoun | بِلِحْيَتِى | لحي | C3-C | 1 | LOW | — |
+| lexical|لوذ|لواذ|noun/pronoun | لِوَاذًا | لوذ | C3-C | 1 | LOW | — |
+| lexical|معي|امعاء|noun/pronoun | أَمْعَآءَهُمْ | معي | C3-C | 1 | LOW | — |
+| lexical|مكو|مكاء|noun/pronoun | مُكَآءً | مكو | C3-C | 1 | LOW | — |
+| lexical|نسأ|نسىء|noun/pronoun | ٱلنَّسِىٓءُ | نسأ | C3-C | 1 | LOW | — |
+| lexical|نوش|تناوش|noun/pronoun | ٱلتَّنَاوُشُ | نوش | C3-C | 1 | LOW | — |
+| lexical|نوص|مناص|noun/pronoun | مَنَاصٍ | نوص | C3-C | 1 | LOW | — |
+| lexical|نون|نون|noun/pronoun | ٱلنُّونِ | نون | C3-C | 1 | LOW | — |
+| lexical|نوي|نوى|noun/pronoun | وَٱلنَّوَىٰ | نوي | C3-C | 1 | LOW | — |
+| lexical|هدد|هد|noun/pronoun | هَدًّا | هدد | C3-C | 1 | LOW | — |
+| lexical|هدهد|هدهد|noun/pronoun | ٱلْهُدْهُدَ | هدهد | C3-C | 1 | LOW | — |
+| lexical|هيت|هيت|noun/pronoun | هَيْتَ | هيت | C3-C | 1 | LOW | — |
+| lexical|وأل|موئل|noun/pronoun | مَوْئِلًا | وأل | C3-C | 1 | LOW | — |
+| lexical|وبر|اوبار|noun/pronoun | وَأَوْبَارِهَا | وبر | C3-C | 1 | LOW | — |
+| lexical|وسن|سنة|noun/pronoun | سِنَةٌ | وسن | C3-C | 1 | LOW | — |
+| lexical|وشي|شية|noun/pronoun | شِيَةَ | وشي | C3-C | 1 | LOW | — |
+| lexical|وطن|مواطن|noun/pronoun | مَوَاطِنَ | وطن | C3-C | 1 | LOW | — |
+| lexical|وفد|وفد|noun/pronoun | وَفْدًا | وفد | C3-C | 1 | LOW | — |
+| lexical|وفر|موفور|noun/pronoun | مَّوْفُورًا | وفر | C3-C | 1 | LOW | — |
+| lexical|وقذ|موقوذة|noun/pronoun | وَٱلْمَوْقُوذَةُ | وقذ | C3-C | 1 | LOW | — |
+| lexical|وكد|توكيد|noun/pronoun | تَوْكِيدِهَا | وكد | C3-C | 1 | LOW | — |
+| lexical|يقظ|ايقاظ|noun/pronoun | أَيْقَاظًا | يقظ | C3-C | 1 | LOW | — |
+| lexical|ينع|ينع|noun/pronoun | وَيَنْعِهِۦٓ | ينع | C3-C | 1 | LOW | — |
+| lexical|بغت|بغتة|noun/pronoun | بَغْتَةً | بغت | C3-D | 13 | LOW | — |
+| lexical|قمص|قميص|noun/pronoun | قَمِيصِهِۦ | قمص | C3-D | 6 | LOW | — |
+| lexical|كهف|كهف|noun/pronoun | ٱلْكَهْفِ | كهف | C3-D | 6 | LOW | — |
+| lexical|جثم|جاثم|noun/pronoun | جَـٰثِمِينَ | جثم | C3-D | 5 | LOW | — |
+| lexical|شطر|شطر|noun/pronoun | شَطْرَ | شطر | C3-D | 5 | LOW | — |
+| lexical|جسد|جسد|noun/pronoun | جَسَدًا | جسد | C3-D | 4 | LOW | — |
+| lexical|سلح|اسلحت|noun/pronoun | أَسْلِحَتَهُمْ | سلح | C3-D | 4 | LOW | — |
+| lexical|كرب|كرب|noun/pronoun | كَرْبٍ | كرب | C3-D | 4 | LOW | — |
+| lexical|نعج|نعجة|noun/pronoun | نَعْجَةً | نعج | C3-D | 4 | LOW | — |
+| lexical|سحت|سحت|noun/pronoun | لِلسُّحْتِ | سحت | C3-D | 3 | LOW | — |
+| lexical|بهم|بهيمة|noun/pronoun | بَهِيمَةُ | بهم | C3-D | 3 | LOW | — |
+| lexical|رغد|رغد|noun/pronoun | رَغَدًا | رغد | C3-D | 3 | LOW | — |
+| lexical|زبد|زبد|noun/pronoun | زَبَدًا | زبد | C3-D | 3 | LOW | — |
+| lexical|شحن|مشحون|noun/pronoun | ٱلْمَشْحُونِ | شحن | C3-D | 3 | LOW | — |
+| lexical|فتل|فتيل|noun/pronoun | فَتِيلًا | فتل | C3-D | 3 | LOW | — |
+| lexical|قرح|قرح|noun/pronoun | قَرْحٌ | قرح | C3-D | 3 | LOW | — |
+| lexical|قرد|قردة|noun/pronoun | قِرَدَةً | قرد | C3-D | 3 | LOW | — |
+| lexical|فزع|فزع|noun/pronoun | ٱلْفَزَعُ | فزع | C3-D | 2 | LOW | — |
+| lexical|بكم|بكم|noun/pronoun | وَبُكْمٌ | بكم | C3-D | 2 | LOW | — |
+| lexical|رسخ|رسخون|noun/pronoun | وَٱلرَّٰسِخُونَ | رسخ | C3-D | 2 | LOW | — |
+| lexical|نفل|انفال|noun/pronoun | ٱلْأَنفَالِ | نفل | C3-D | 2 | LOW | — |
+| lexical|بخع|باخع|noun/pronoun | بَـٰخِعٌ | بخع | C3-D | 2 | LOW | — |
+| lexical|برص|ابرص|noun/pronoun | وَٱلْأَبْرَصَ | برص | C3-D | 2 | LOW | — |
+| lexical|بعر|بعير|noun/pronoun | بَعِيرٍ | بعر | C3-D | 2 | LOW | — |
+| lexical|ثعب|ثعبان|noun/pronoun | ثُعْبَانٌ | ثعب | C3-D | 2 | LOW | — |
+| lexical|خبل|خبال|noun/pronoun | خَبَالًا | خبل | C3-D | 2 | LOW | — |
+| lexical|خدن|اخدان|noun/pronoun | أَخْدَانٍ | خدن | C3-D | 2 | LOW | — |
+| lexical|خمص|مخمصة|noun/pronoun | مَخْمَصَةٍ | خمص | C3-D | 2 | LOW | — |
+| lexical|دمع|دمع|noun/pronoun | ٱلدَّمْعِ | دمع | C3-D | 2 | LOW | — |
+| lexical|رفت|ورفتا|noun/pronoun | وَرُفَـٰتًا | رفت | C3-D | 2 | LOW | — |
+| lexical|رفث|رفث|noun/pronoun | ٱلرَّفَثُ | رفث | C3-D | 2 | LOW | — |
+| lexical|زمر|زمر|noun/pronoun | زُمَرًا | زمر | C3-D | 2 | LOW | — |
+| lexical|سقم|سقيم|noun/pronoun | سَقِيمٌ | سقم | C3-D | 2 | LOW | — |
+| lexical|صفد|اصفاد|noun/pronoun | ٱلْأَصْفَادِ | صفد | C3-D | 2 | LOW | — |
+| lexical|ضغن|اضغان|noun/pronoun | أَضْغَـٰنَهُمْ | ضغن | C3-D | 2 | LOW | — |
+| lexical|عتق|عتيق|noun/pronoun | ٱلْعَتِيقِ | عتق | C3-D | 2 | LOW | — |
+| lexical|عجف|عجاف|noun/pronoun | عِجَافٌ | عجف | C3-D | 2 | LOW | — |
+| lexical|غلف|غلف|noun/pronoun | غُلْفٌۢ | غلف | C3-D | 2 | LOW | — |
+| lexical|كسل|كسالى|noun/pronoun | كُسَالَىٰ | كسل | C3-D | 2 | LOW | — |
+| lexical|كمه|اكمه|noun/pronoun | ٱلْأَكْمَهَ | كمه | C3-D | 2 | LOW | — |
+| lexical|كهل|كهلا|noun/pronoun | وَكَهْلًا | كهل | C3-D | 2 | LOW | — |
+| lexical|مخر|مواخر|noun/pronoun | مَوَاخِرَ | مخر | C3-D | 2 | LOW | — |
+| lexical|ملح|ملح|noun/pronoun | مِلْحٌ | ملح | C3-D | 2 | LOW | — |
+| lexical|ملق|املاق|noun/pronoun | إِمْلَـٰقٍ | ملق | C3-D | 2 | LOW | — |
+| lexical|بطر|بطر|noun/pronoun | بَطَرًا | بطر | C3-D | 1 | LOW | — |
+| lexical|سعد|سعيد|noun/pronoun | وَسَعِيدٌ | سعد | C3-D | 1 | LOW | — |
+| lexical|شغل|شغل|noun/pronoun | شُغُلٍ | شغل | C3-D | 1 | LOW | — |
+| lexical|ظفر|ظفر|noun/pronoun | ظُفُرٍ | ظفر | C3-D | 1 | LOW | — |
+| lexical|نمل|انامل|noun/pronoun | ٱلْأَنَامِلَ | نمل | C3-D | 1 | LOW | — |
+| lexical|بزغ|بازغ|noun/pronoun | بَازِغًا | بزغ | C3-D | 1 | LOW | — |
+| lexical|بزغ|بازغة|noun/pronoun | بَازِغَةً | بزغ | C3-D | 1 | LOW | — |
+| lexical|رفد|رفد|noun/pronoun | ٱلرِّفْدُ | رفد | C3-D | 1 | LOW | — |
+| lexical|عصب|عصيب|noun/pronoun | عَصِيبٌ | عصب | C3-D | 1 | LOW | — |
+| lexical|فرد|فرادى|noun/pronoun | فُرَٰدَىٰ | فرد | C3-D | 1 | LOW | — |
+| lexical|قنع|مقنعي|noun/pronoun | مُقْنِعِى | قنع | C3-D | 1 | LOW | — |
+| lexical|كلب|مكلب|noun/pronoun | مُكَلِّبِينَ | كلب | C3-D | 1 | LOW | — |
+| lexical|نحل|نحلة|noun/pronoun | نِحْلَةً | نحل | C3-D | 1 | LOW | — |
+| lexical|بدر|بدارا|noun/pronoun | وَبِدَارًا | بدر | C3-D | 1 | LOW | — |
+| lexical|بسق|باسقة|noun/pronoun | بَاسِقَـٰتٍ | بسق | C3-D | 1 | LOW | — |
+| lexical|بصل|بصل|noun/pronoun | وَبَصَلِهَا | بصل | C3-D | 1 | LOW | — |
+| lexical|بغل|بغال|noun/pronoun | وَٱلْبِغَالَ | بغل | C3-D | 1 | LOW | — |
+| lexical|بقع|بقعة|noun/pronoun | ٱلْبُقْعَةِ | بقع | C3-D | 1 | LOW | — |
+| lexical|بقل|بقل|noun/pronoun | بَقْلِهَا | بقل | C3-D | 1 | LOW | — |
+| lexical|تعس|تعسا|noun/pronoun | فَتَعْسًا | تعس | C3-D | 1 | LOW | — |
+| lexical|تفث|تفث|noun/pronoun | تَفَثَهُمْ | تفث | C3-D | 1 | LOW | — |
+| lexical|ثرب|تثريب|noun/pronoun | تَثْرِيبَ | ثرب | C3-D | 1 | LOW | — |
+| lexical|جبت|جبت|noun/pronoun | بِٱلْجِبْتِ | جبت | C3-D | 1 | LOW | — |
+| lexical|جبن|جبين|noun/pronoun | لِلْجَبِينِ | جبن | C3-D | 1 | LOW | — |
+| lexical|جبه|جباه|noun/pronoun | جِبَاهُهُمْ | جبه | C3-D | 1 | LOW | — |
+| lexical|جرف|جرف|noun/pronoun | جُرُفٍ | جرف | C3-D | 1 | LOW | — |
+| lexical|جفن|جفان|noun/pronoun | وَجِفَانٍ | جفن | C3-D | 1 | LOW | — |
+| lexical|جمد|جامدة|noun/pronoun | جَامِدَةً | جمد | C3-D | 1 | LOW | — |
+| lexical|جنف|متجانف|noun/pronoun | مُتَجَانِفٍ | جنف | C3-D | 1 | LOW | — |
+| lexical|حبك|حبك|noun/pronoun | ٱلْحُبُكِ | حبك | C3-D | 1 | LOW | — |
+| lexical|حتم|حتم|noun/pronoun | حَتْمًا | حتم | C3-D | 1 | LOW | — |
+| lexical|حدب|حدب|noun/pronoun | حَدَبٍ | حدب | C3-D | 1 | LOW | — |
+| lexical|حفد|حفدة|noun/pronoun | وَحَفَدَةً | حفد | C3-D | 1 | LOW | — |
+| lexical|حنذ|حنيذ|noun/pronoun | حَنِيذٍ | حنذ | C3-D | 1 | LOW | — |
+| lexical|خبز|خبز|noun/pronoun | خُبْزًا | خبز | C3-D | 1 | LOW | — |
+| lexical|ختر|ختار|noun/pronoun | خَتَّارٍ | ختر | C3-D | 1 | LOW | — |
+| lexical|خمط|خمط|noun/pronoun | خَمْطٍ | خمط | C3-D | 1 | LOW | — |
+| lexical|خنق|منخنقة|noun/pronoun | وَٱلْمُنْخَنِقَةُ | خنق | C3-D | 1 | LOW | — |
+| lexical|دلك|دلوك|noun/pronoun | لِدُلُوكِ | دلك | C3-D | 1 | LOW | — |
+| lexical|دنر|دينار|noun/pronoun | بِدِينَارٍ | دنر | C3-D | 1 | LOW | — |
+| lexical|ذعن|مذعن|noun/pronoun | مُذْعِنِينَ | ذعن | C3-D | 1 | LOW | — |
+| lexical|رتق|رتق|noun/pronoun | رَتْقًا | رتق | C3-D | 1 | LOW | — |
+| lexical|ردم|ردم|noun/pronoun | رَدْمًا | ردم | C3-D | 1 | LOW | — |
+| lexical|رغم|مراغم|noun/pronoun | مُرَٰغَمًا | رغم | C3-D | 1 | LOW | — |
+| lexical|رفد|مرفود|noun/pronoun | ٱلْمَرْفُودُ | رفد | C3-D | 1 | LOW | — |
+| lexical|رقد|رقود|noun/pronoun | رُقُودٌ | رقد | C3-D | 1 | LOW | — |
+| lexical|ركد|رواكد|noun/pronoun | رَوَاكِدَ | ركد | C3-D | 1 | LOW | — |
+| lexical|ركز|ركز|noun/pronoun | رِكْزًۢا | ركز | C3-D | 1 | LOW | — |
+| lexical|رمح|رماح|noun/pronoun | وَرِمَاحُكُمْ | رمح | C3-D | 1 | LOW | — |
+| lexical|رمد|رماد|noun/pronoun | كَرَمَادٍ | رمد | C3-D | 1 | LOW | — |
+| lexical|رمز|رمز|noun/pronoun | رَمْزًا | رمز | C3-D | 1 | LOW | — |
+| lexical|زحف|زحف|noun/pronoun | زَحْفًا | زحف | C3-D | 1 | LOW | — |
+| lexical|زرق|زرق|noun/pronoun | زُرْقًا | زرق | C3-D | 1 | LOW | — |
+| lexical|زلم|بالازلم|noun/pronoun | بِٱلْأَزْلَـٰمِ | زلم | C3-D | 1 | LOW | — |
+| lexical|زلم|والازلم|noun/pronoun | وَٱلْأَزْلَـٰمُ | زلم | C3-D | 1 | LOW | — |
+| lexical|زهد|زهدين|noun/pronoun | ٱلزَّٰهِدِينَ | زهد | C3-D | 1 | LOW | — |
+| lexical|زهر|زهرة|noun/pronoun | زَهْرَةَ | زهر | C3-D | 1 | LOW | — |
+| lexical|سحل|ساحل|noun/pronoun | بِٱلسَّاحِلِ | سحل | C3-D | 1 | LOW | — |
+| lexical|سرد|سرد|noun/pronoun | ٱلسَّرْدِ | سرد | C3-D | 1 | LOW | — |
+| lexical|سهل|سهول|noun/pronoun | سُهُولِهَا | سهل | C3-D | 1 | LOW | — |
+| lexical|شحم|شحوم|noun/pronoun | شُحُومَهُمَآ | شحم | C3-D | 1 | LOW | — |
+| lexical|شرط|اشراط|noun/pronoun | أَشْرَاطُهَا | شرط | C3-D | 1 | LOW | — |
+| lexical|شكس|متشاكس|noun/pronoun | مُتَشَـٰكِسُونَ | شكس | C3-D | 1 | LOW | — |
+| lexical|شكل|شاكلت|noun/pronoun | شَاكِلَتِهِۦ | شكل | C3-D | 1 | LOW | — |
+| lexical|صبغ|صبغ|noun/pronoun | وَصِبْغٍ | صبغ | C3-D | 1 | LOW | — |
+| lexical|صفن|صفنت|noun/pronoun | ٱلصَّـٰفِنَـٰتُ | صفن | C3-D | 1 | LOW | — |
+| lexical|صلد|صلد|noun/pronoun | صَلْدًا | صلد | C3-D | 1 | LOW | — |
+| lexical|صمت|صامت|noun/pronoun | صَـٰمِتُونَ | صمت | C3-D | 1 | LOW | — |
+| lexical|صمع|صوامع|noun/pronoun | صَوَٰمِعُ | صمع | C3-D | 1 | LOW | — |
+| lexical|ضمر|ضامر|noun/pronoun | ضَامِرٍ | ضمر | C3-D | 1 | LOW | — |
+| lexical|ضنك|ضنك|noun/pronoun | ضَنكًا | ضنك | C3-D | 1 | LOW | — |
+| lexical|ظعن|ظعن|noun/pronoun | ظَعْنِكُمْ | ظعن | C3-D | 1 | LOW | — |
+| lexical|عدس|عدس|noun/pronoun | وَعَدَسِهَا | عدس | C3-D | 1 | LOW | — |
+| lexical|عرم|عرم|noun/pronoun | ٱلْعَرِمِ | عرم | C3-D | 1 | LOW | — |
+| lexical|عسل|عسل|noun/pronoun | عَسَلٍ | عسل | C3-D | 1 | LOW | — |
+| lexical|عطف|عطف|noun/pronoun | عِطْفِهِۦ | عطف | C3-D | 1 | LOW | — |
+| lexical|عفر|عفريت|noun/pronoun | عِفْرِيتٌ | عفر | C3-D | 1 | LOW | — |
+| lexical|عمق|عميق|noun/pronoun | عَمِيقٍ | عمق | C3-D | 1 | LOW | — |
+| lexical|غزل|غزل|noun/pronoun | غَزْلَهَا | غزل | C3-D | 1 | LOW | — |
+| lexical|غصب|غصب|noun/pronoun | غَصْبًا | غصب | C3-D | 1 | LOW | — |
+| lexical|فرث|فرث|noun/pronoun | فَرْثٍ | فرث | C3-D | 1 | LOW | — |
+| lexical|فرع|فرع|noun/pronoun | وَفَرْعُهَا | فرع | C3-D | 1 | LOW | — |
+| lexical|فره|فاره|noun/pronoun | فَـٰرِهِينَ | فره | C3-D | 1 | LOW | — |
+| lexical|فسر|تفسير|noun/pronoun | تَفْسِيرًا | فسر | C3-D | 1 | LOW | — |
+| lexical|فصح|افصح|noun/pronoun | أَفْصَحُ | فصح | C3-D | 1 | LOW | — |
+| lexical|فصم|انفصام|noun/pronoun | ٱنفِصَامَ | فصم | C3-D | 1 | LOW | — |
+| lexical|فقع|فاقع|noun/pronoun | فَاقِعٌ | فقع | C3-D | 1 | LOW | — |
+| lexical|فلن|فلان|noun/pronoun | فُلَانًا | فلن | C3-D | 1 | LOW | — |
+| lexical|قبح|مقبوحين|noun/pronoun | ٱلْمَقْبُوحِينَ | قبح | C3-D | 1 | LOW | — |
+| lexical|قصف|قاصف|noun/pronoun | قَاصِفًا | قصف | C3-D | 1 | LOW | — |
+| lexical|قفل|اقفال|noun/pronoun | أَقْفَالُهَآ | قفل | C3-D | 1 | LOW | — |
+| lexical|قلد|قلئد|noun/pronoun | ٱلْقَلَـٰٓئِدَ | قلد | C3-D | 1 | LOW | — |
+| lexical|قلد|والقلئد|noun/pronoun | وَٱلْقَلَـٰٓئِدَ | قلد | C3-D | 1 | LOW | — |
+| lexical|قمح|مقمح|noun/pronoun | مُّقْمَحُونَ | قمح | C3-D | 1 | LOW | — |
+| lexical|قمع|مقامع|noun/pronoun | مَّقَـٰمِعُ | قمع | C3-D | 1 | LOW | — |
+| lexical|قمل|قمل|noun/pronoun | وَٱلْقُمَّلَ | قمل | C3-D | 1 | LOW | — |
+| lexical|كسد|كساد|noun/pronoun | كَسَادَهَا | كسد | C3-D | 1 | LOW | — |
+| lexical|كلح|كالح|noun/pronoun | كَـٰلِحُونَ | كلح | C3-D | 1 | LOW | — |
+| lexical|لحف|الحاف|noun/pronoun | إِلْحَافًا | لحف | C3-D | 1 | LOW | — |
+| lexical|لحن|لحن|noun/pronoun | لَحْنِ | لحن | C3-D | 1 | LOW | — |
+| lexical|لزب|لازب|noun/pronoun | لَّازِبٍۭ | لزب | C3-D | 1 | LOW | — |
+| lexical|لقب|بالالقب|noun/pronoun | بِٱلْأَلْقَـٰبِ | لقب | C3-D | 1 | LOW | — |
+| lexical|لقح|لواقح|noun/pronoun | لَوَٰقِحَ | لقح | C3-D | 1 | LOW | — |
+| lexical|محل|محال|noun/pronoun | ٱلْمِحَالِ | محل | C3-D | 1 | LOW | — |
+| lexical|مخض|مخاض|noun/pronoun | ٱلْمَخَاضُ | مخض | C3-D | 1 | LOW | — |
+| lexical|معز|معز|noun/pronoun | ٱلْمَعْزِ | معز | C3-D | 1 | LOW | — |
+| lexical|نجس|نجس|noun/pronoun | نَجَسٌ | نجس | C3-D | 1 | LOW | — |
+| lexical|نحب|نحب|noun/pronoun | نَحْبَهُۥ | نحب | C3-D | 1 | LOW | — |
+| lexical|نطح|نطيحة|noun/pronoun | وَٱلنَّطِيحَةُ | نطح | C3-D | 1 | LOW | — |
+| lexical|نعل|نعلي|noun/pronoun | نَعْلَيْكَ | نعل | C3-D | 1 | LOW | — |
+| lexical|نفح|نفحة|noun/pronoun | نَفْحَةٌ | نفح | C3-D | 1 | LOW | — |
+| lexical|نكد|نكد|noun/pronoun | نَكِدًا | نكد | C3-D | 1 | LOW | — |
+| lexical|نهج|منهاجا|noun/pronoun | وَمِنْهَاجًا | نهج | C3-D | 1 | LOW | — |
+| lexical|همد|هامدة|noun/pronoun | هَامِدَةً | همد | C3-D | 1 | LOW | — |
+| lexical|همس|همس|noun/pronoun | هَمْسًا | همس | C3-D | 1 | LOW | — |
+| lexical|أفف|اف|noun/pronoun | أُفٍّ | أفف | C3-E | 3 | LOW | — |
+| lexical|حوش|حاش|noun/pronoun | حَـٰشَ | حوش | C3-E | 2 | LOW | — |
+| lexical|حيث|حيث|noun/pronoun | وَحَيْثُ | حيث | C3-E | 2 | LOW | — |
+| lexical|هلم|هلم|noun/pronoun | هَلُمَّ | هلم | C3-E | 2 | LOW | — |

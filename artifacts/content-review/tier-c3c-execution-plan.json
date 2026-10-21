@@ -1,0 +1,67 @@
+{
+  "reportType": "tier-c3c-execution-plan",
+  "contractVersion": "1.3.9",
+  "scope": {
+    "families": 149,
+    "occurrences": 195,
+    "rowsChanged": 0
+  },
+  "primaryTracks": [
+    {
+      "track": "ROOT/LEMMA-UNCERTAIN",
+      "families": 7,
+      "occurrences": 16,
+      "priority": 1,
+      "method": "Resolve root and lemma identity before authoring any family rows. Do not infer a Ṣarf family from an unstable provider segmentation."
+    },
+    {
+      "track": "QUADRILITERAL",
+      "families": 22,
+      "occurrences": 27,
+      "priority": 2,
+      "method": "Use quadriliteral-specific morphology and lexicon evidence; do not force triliteral templates."
+    },
+    {
+      "track": "DOUBLED",
+      "families": 20,
+      "occurrences": 30,
+      "priority": 3,
+      "method": "Verify doubled-root normalization and distinguish genuine derived forms from orthographic doubling."
+    },
+    {
+      "track": "HAMZATED",
+      "families": 23,
+      "occurrences": 28,
+      "priority": 4,
+      "method": "Verify hamza position, weak-letter behavior and vocalisation before selecting related forms."
+    },
+    {
+      "track": "WEAK",
+      "families": 77,
+      "occurrences": 94,
+      "priority": 5,
+      "method": "Normalize weak roots first, then adjudicate real derived forms; reject forms that only expose provider or orthographic artifacts."
+    }
+  ],
+  "otherSpecial": {
+    "families": 0,
+    "occurrences": 0,
+    "note": "Every C3-C family is covered by one primary track above when root/lemma uncertainty is given priority. Special/irregular flags remain attached as evidence within the relevant track."
+  },
+  "reconciliation": {
+    "primaryFamilyTotal": 149,
+    "primaryOccurrenceTotal": 195,
+    "allC3LowFamilies": 335,
+    "allC3LowOccurrences": 477,
+    "c3BCompletedFamilies": 23,
+    "c3BCompletedOccurrences": 29
+  },
+  "recommendedBatchOrder": [
+    "ROOT/LEMMA-UNCERTAIN",
+    "QUADRILITERAL",
+    "DOUBLED",
+    "HAMZATED",
+    "WEAK"
+  ],
+  "status": "planning-only; no C3-C rows changed"
+}
