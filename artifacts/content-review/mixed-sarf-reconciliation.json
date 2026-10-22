@@ -15,14 +15,15 @@
     "limitedSenseCorrectionRecords": 51,
     "blockedScopeCorrectionRecords": 1,
     "remainingMixedFamilyCount": 0,
-    "remainingBlockedFamilies": 302,
-    "remainingBlockedOccurrences": 452,
+    "remainingBlockedFamilies": 282,
+    "remainingBlockedOccurrences": 428,
     "queueClassifications": {
       "A": 6,
       "B": 3,
-      "C": 290,
-      "D": 3
-    }
+      "C": 270,
+      "D": 5
+    },
+    "c3c3QuadriliteralRecords": 22
   },
   "plans": [
     {
@@ -1119,6 +1120,36 @@
         "word:33:60:11"
       ],
       "changedOccurrenceIds": [],
+      "skippedOccurrenceIds": []
+    },
+    {
+      "familyKey": "lexical|قسطس|قسطاس|noun/pronoun",
+      "familyScope": "c3c3-quadriliteral",
+      "decision": "retain-model-issue",
+      "reason": "The item is an instrument noun with vowel variants, not a safely productive learner-facing quadriliteral family. The standard five-row Ṣarf representation would encourage treating two vocalisations as separate morphology or fabricating a verb paradigm.",
+      "referenceOccurrenceId": "word:17:35:6",
+      "occurrenceIds": [
+        "word:17:35:6",
+        "word:26:182:2"
+      ],
+      "changedOccurrenceIds": [
+        "word:17:35:6",
+        "word:26:182:2"
+      ],
+      "skippedOccurrenceIds": []
+    },
+    {
+      "familyKey": "lexical|قطمر|قطمير|noun/pronoun",
+      "familyScope": "c3c3-quadriliteral",
+      "decision": "retain-model-issue",
+      "reason": "This is a highly lexicalised technical noun in the Qur’anic usage. The standard five-row family would require speculative verbs or participles; the correct product treatment is a dedicated lexicalised-noun representation.",
+      "referenceOccurrenceId": "word:35:13:28",
+      "occurrenceIds": [
+        "word:35:13:28"
+      ],
+      "changedOccurrenceIds": [
+        "word:35:13:28"
+      ],
       "skippedOccurrenceIds": []
     }
   ],

@@ -1,10 +1,10 @@
 # Tier-C-C primary-track ownership
 
-Reviewed at: 2026-10-22T21:09:49.866Z
+Reviewed at: 2026-10-22T22:09:58.058Z
 
 Completed adjudication owns the family permanently. Otherwise, first matching track: ROOT/LEMMA-UNCERTAIN > QUADRILITERAL > HAMZATED > WEAK > DOUBLED. Remaining feature signals are secondary flags.
 
-C3-C2 HAMZATED is complete. Secondary weak/doubled flags remain attached to the adjudication records and cannot requeue a completed family. QUADRILITERAL is the next untouched primary track.
+C3-C3 QUADRILITERAL is complete. Completed families remain permanently owned by their original primary track. WEAK is the next untouched primary track.
 
 ```json
 {
@@ -40,8 +40,8 @@ C3-C2 HAMZATED is complete. Secondary weak/doubled flags remain attached to the 
       "occurrences": 0
     },
     "QUADRILITERAL": {
-      "families": 22,
-      "occurrences": 27
+      "families": 0,
+      "occurrences": 0
     },
     "WEAK": {
       "families": 77,
@@ -53,60 +53,10 @@ C3-C2 HAMZATED is complete. Secondary weak/doubled flags remain attached to the 
     }
   },
   "nextQueue": {
-    "track": "QUADRILITERAL",
-    "families": 22,
-    "occurrences": 27,
+    "track": "WEAK",
+    "families": 77,
+    "occurrences": 94,
     "status": "not-started"
   }
 }
 ```
-
-## Targeted C3-C2 correction
-
-{
-  "contractVersion": "1.3.9",
-  "keys": [
-    "lexical|هيأ|هية|noun/pronoun",
-    "lexical|ألل|الا|noun/pronoun",
-    "lexical|أمو|امائ|noun/pronoun",
-    "lexical|أسن|اسن|noun/pronoun",
-    "lexical|بأر|بئر|noun/pronoun",
-    "lexical|وأل|موئل|noun/pronoun"
-  ],
-  "changedFamilies": [
-    "lexical|ألل|الا|noun/pronoun",
-    "lexical|أمو|امائ|noun/pronoun",
-    "lexical|أسن|اسن|noun/pronoun",
-    "lexical|بأر|بئر|noun/pronoun",
-    "lexical|وأل|موئل|noun/pronoun"
-  ],
-  "metadataOnlyFamilies": [
-    "lexical|هيأ|هية|noun/pronoun"
-  ],
-  "hamzaMetadata": "ه ي ء: hamza is the third radical."
-}
-
-## Targeted C3-C2 correction
-
-{
-  "contractVersion": "1.3.9",
-  "keys": [
-    "lexical|هيأ|هية|noun/pronoun",
-    "lexical|ألل|الا|noun/pronoun",
-    "lexical|أمو|امائ|noun/pronoun",
-    "lexical|أسن|اسن|noun/pronoun",
-    "lexical|بأر|بئر|noun/pronoun",
-    "lexical|وأل|موئل|noun/pronoun"
-  ],
-  "changedFamilies": [
-    "lexical|ألل|الا|noun/pronoun",
-    "lexical|أمو|امائ|noun/pronoun",
-    "lexical|أسن|اسن|noun/pronoun",
-    "lexical|بأر|بئر|noun/pronoun",
-    "lexical|وأل|موئل|noun/pronoun"
-  ],
-  "metadataOnlyFamilies": [
-    "lexical|هيأ|هية|noun/pronoun"
-  ],
-  "hamzaMetadata": "ه ي ء: hamza is the third radical."
-}

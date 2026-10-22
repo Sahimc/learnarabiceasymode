@@ -1,39 +1,30 @@
 # Tier-C LOW classification
 
-Generated: 2026-10-22T21:47:35.024Z
+Generated: 2026-10-22T22:09:58.058Z
 
-C3-C2 hamzated targeted correction is complete. C3-C3 quadriliteral adjudication has not started.
+C3-C3 quadriliteral adjudication is complete for exactly 22 families / 27 occurrences. C3-C4 weak and all later tracks remain untouched.
 
-## C3-C2 summary
+## C3-C3 summary
 
 ```json
 {
   "contractVersion": "1.3.9",
-  "reviewedAt": "2026-10-22T21:47:35.024Z",
-  "scopeFamilies": 25,
-  "scopeOccurrences": 32,
+  "reviewedAt": "2026-10-22T22:09:58.058Z",
+  "scopeFamilies": 22,
+  "scopeOccurrences": 27,
   "decisions": {
-    "FULL": 18,
-    "CONFIRMED-LIMITED": 6,
+    "FULL": 13,
+    "CONFIRMED-LIMITED": 7,
     "BLOCKED": 0,
-    "MODEL-ISSUE": 1
+    "MODEL-ISSUE": 2
   },
   "occurrencesByDecision": {
-    "FULL": 25,
-    "CONFIRMED-LIMITED": 6,
+    "FULL": 15,
+    "CONFIRMED-LIMITED": 9,
     "BLOCKED": 0,
-    "MODEL-ISSUE": 1
+    "MODEL-ISSUE": 3
   },
-  "explicitBoundary": "Only the six named C3-C2 records were corrected. C3-C3 quadriliteral adjudication remains untouched.",
-  "targetedCorrectionFamilies": 6,
-  "targetedCorrectionKeys": [
-    "lexical|هيأ|هية|noun/pronoun",
-    "lexical|ألل|الا|noun/pronoun",
-    "lexical|أمو|امائ|noun/pronoun",
-    "lexical|أسن|اسن|noun/pronoun",
-    "lexical|بأر|بئر|noun/pronoun",
-    "lexical|وأل|موئل|noun/pronoun"
-  ]
+  "explicitBoundary": "Only QUADRILITERAL primary-track families were adjudicated. C3-C1/C3-C2 remain closed; weak, root/lemma-uncertain, C3-D and C3-E remain untouched."
 }
 ```
 
@@ -64,155 +55,155 @@ C3-C2 hamzated targeted correction is complete. C3-C3 quadriliteral adjudication
 | lexical|هضم|هضم|noun/pronoun | هَضْمًا | هضم | C3-B | 1 | — | — |
 | lexical|زفر|زفير|noun/pronoun | زَفِيرٌ | زفر | C3-B | 2 | — | — |
 | lexical|ندم|ندمين|noun/pronoun | ٱلنَّـٰدِمِينَ | ندم | C3-B | 1 | — | — |
-| lexical|هيأ|هية|noun/pronoun | كَهَيْـَٔةِ | هيأ | C3-C | 2 | FULL | HAMZATED |
-| lexical|ميد|مائدة|noun/pronoun | مَآئِدَةً | ميد | C3-C | 2 | — | — |
-| lexical|زول|زوال|noun/pronoun | زَوَالٍ | زول | C3-C | 1 | — | — |
-| lexical|وصف|وصف|noun/pronoun | وَصْفَهُمْ | وصف | C3-C | 1 | — | — |
-| lexical|بور|بوار|noun/pronoun | ٱلْبَوَارِ | بور | C3-C | 1 | — | — |
-| lexical|أزر|ازر|noun/pronoun | أَزْرِى | أزر | C3-C | 1 | FULL | HAMZATED |
-| lexical|زجو|مزجاة|noun/pronoun | مُّزْجَىٰةٍ | زجو | C3-C | 1 | — | — |
-| lexical|غلي|غلى|noun/pronoun | كَغَلْىِ | غلي | C3-C | 1 | — | — |
-| lexical|قوت|مقيت|noun/pronoun | مُّقِيتًا | قوت | C3-C | 1 | — | — |
-| lexical|وبق|موبق|noun/pronoun | مَّوْبِقًا | وبق | C3-C | 1 | — | — |
-| lexical|خيط|خياط|noun/pronoun | ٱلْخِيَاطِ | خيط | C3-C | 1 | — | — |
-| lexical|زحزح|زحزح|verb | زُحْزِحَ | زحزح | C3-C | 1 | — | — |
-| lexical|زود|زاد|noun/pronoun | ٱلزَّادِ | زود | C3-C | 1 | — | — |
-| lexical|ظمأ|ظما|noun/pronoun | ظَمَأٌ | ظمأ | C3-C | 1 | FULL | HAMZATED |
-| lexical|قصو|قصوى|noun/pronoun | ٱلْقُصْوَىٰ | قصو | C3-C | 1 | — | — |
-| lexical|هور|هار|noun/pronoun | هَارٍ | هور | C3-C | 1 | — | — |
-| lexical|يبس|يابس|noun/pronoun | يَابِسٍ | يبس | C3-C | 1 | — | — |
-| lexical|أزز|از|noun/pronoun | أَزًّا | أزز | C3-C | 1 | — | — |
-| lexical|جذذ|مجذوذ|noun/pronoun | مَجْذُوذٍ | جذذ | C3-C | 1 | — | — |
-| lexical|لدد|لد|noun/pronoun | لُّدًّا | لدد | C3-C | 1 | — | — |
-| lexical|ورق|ورقة|noun/pronoun | وَرَقَةٍ | ورق | C3-C | 1 | — | — |
-| lexical|ندد|انداد|noun/pronoun | أَندَادًا | ندد | C3-C | 6 | — | — |
-| lexical|صيد|صيد|noun/pronoun | ٱلصَّيْدِ | صيد | C3-C | 5 | — | — |
-| lexical|خطو|خطوة|noun/pronoun | خُطُوَٰتِ | خطو | C3-C | 5 | — | — |
-| lexical|حمأ|حما|noun/pronoun | حَمَإٍ | حمأ | C3-C | 3 | FULL | HAMZATED |
-| lexical|ذأب|ذئب|noun/pronoun | ٱلذِّئْبُ | ذأب | C3-C | 3 | FULL | HAMZATED |
-| lexical|سلو|سلوى|noun/pronoun | وَٱلسَّلْوَىٰ | سلو | C3-C | 3 | — | — |
-| lexical|عير|عير|noun/pronoun | ٱلْعِيرُ | عير | C3-C | 3 | — | — |
-| lexical|جثو|جثي|noun/pronoun | جِثِيًّا | جثو | C3-C | 2 | — | — |
-| lexical|أثث|اثاث|noun/pronoun | أَثَـٰثًا | أثث | C3-C | 2 | FULL | HAMZATED |
-| lexical|ألل|الا|noun/pronoun | إِلًّا | ألل | C3-C | 2 | FULL | HAMZATED |
-| lexical|تور|تارة|noun/pronoun | تَارَةً | تور | C3-C | 2 | — | — |
-| lexical|جبب|جب|noun/pronoun | ٱلْجُبِّ | جبب | C3-C | 2 | — | — |
-| lexical|حطط|حطة|noun/pronoun | حِطَّةٌ | حطط | C3-C | 2 | — | — |
-| lexical|حنجر|حناجر|noun/pronoun | ٱلْحَنَاجِرَ | حنجر | C3-C | 2 | — | — |
-| lexical|خردل|خردل|noun/pronoun | خَرْدَلٍ | خردل | C3-C | 2 | — | — |
-| lexical|خور|خوار|noun/pronoun | خُوَارٌ | خور | C3-C | 2 | — | — |
-| lexical|ذبب|ذباب|noun/pronoun | ذُبَابًا | ذبب | C3-C | 2 | — | — |
-| lexical|رسس|رس|noun/pronoun | ٱلرَّسِّ | رسس | C3-C | 2 | — | — |
-| lexical|زجج|زجاجة|noun/pronoun | زُجَاجَةٍ | زجج | C3-C | 2 | — | — |
-| lexical|سرمد|سرمد|noun/pronoun | سَرْمَدًا | سرمد | C3-C | 2 | — | — |
-| lexical|شفو|شفا|noun/pronoun | شَفَا | شفو | C3-C | 2 | — | — |
-| lexical|صنو|صنوان|noun/pronoun | صِنْوَانٌ | صنو | C3-C | 2 | — | — |
-| lexical|طرو|طري|noun/pronoun | طَرِيًّا | طرو | C3-C | 2 | — | — |
-| lexical|عنكب|عنكبوت|noun/pronoun | ٱلْعَنكَبُوتِ | عنكب | C3-C | 2 | — | — |
-| lexical|غوط|غائط|noun/pronoun | ٱلْغَآئِطِ | غوط | C3-C | 2 | — | — |
-| lexical|قرطس|قرطاس|noun/pronoun | قِرْطَاسٍ | قرطس | C3-C | 2 | — | — |
-| lexical|قسطس|قسطاس|noun/pronoun | بِٱلْقِسْطَاسِ | قسطس | C3-C | 2 | — | — |
-| lexical|ودق|ودق|noun/pronoun | ٱلْوَدْقَ | ودق | C3-C | 2 | — | — |
-| lexical|وسل|وسيلة|noun/pronoun | ٱلْوَسِيلَةَ | وسل | C3-C | 2 | — | — |
-| lexical|وطر|وطر|noun/pronoun | وَطَرًا | وطر | C3-C | 2 | — | — |
-| lexical|طوق|س|verb | سَيُطَوَّقُونَ | طوق | C3-C | 1 | — | — |
-| lexical|أرب|مارب|noun/pronoun | مَـَٔارِبُ | أرب | C3-C | 1 | FULL | HAMZATED |
-| lexical|سنبل|سنبل|noun/pronoun | سُنۢبُلِهِۦٓ | سنبل | C3-C | 1 | — | — |
-| lexical|أمو|امائ|noun/pronoun | وَإِمَآئِكُمْ | أمو | C3-C | 1 | FULL | HAMZATED |
-| lexical|خنزر|خنازير|noun/pronoun | وَٱلْخَنَازِيرَ | خنزر | C3-C | 1 | — | — |
-| lexical|شيد|مشيدة|noun/pronoun | مُّشَيَّدَةٍ | شيد | C3-C | 1 | — | — |
-| lexical|قنطر|والقنطير|noun/pronoun | وَٱلْقَنَـٰطِيرِ | قنطر | C3-C | 1 | — | — |
-| lexical|قوع|قاع|noun/pronoun | قَاعًا | قوع | C3-C | 1 | — | — |
-| lexical|قيل|قائل|noun/pronoun | قَآئِلُونَ | قيل | C3-C | 1 | — | — |
-| lexical|وثن|اوثن|noun/pronoun | ٱلْأَوْثَـٰنِ | وثن | C3-C | 1 | — | — |
-| lexical|أثل|اثل|noun/pronoun | وَأَثْلٍ | أثل | C3-C | 1 | FULL | HAMZATED |
-| lexical|أدد|اد|noun/pronoun | إِدًّا | أدد | C3-C | 1 | — | — |
-| lexical|أسن|اسن|noun/pronoun | ءَاسِنٍ | أسن | C3-C | 1 | FULL | HAMZATED |
-| lexical|أمت|امت|noun/pronoun | أَمْتًا | أمت | C3-C | 1 | CONFIRMED-LIMITED | HAMZATED |
-| lexical|أوه|اوه|noun/pronoun | لَأَوَّٰهٌ | أوه | C3-C | 1 | MODEL-ISSUE | HAMZATED |
-| lexical|أيم|ايمى|noun/pronoun | ٱلْأَيَـٰمَىٰ | أيم | C3-C | 1 | FULL | HAMZATED |
-| lexical|بأر|بئر|noun/pronoun | وَبِئْرٍ | بأر | C3-C | 1 | FULL | HAMZATED |
-| lexical|ثبي|ثبة|noun/pronoun | ثُبَاتٍ | ثبي | C3-C | 1 | — | — |
-| lexical|ثري|ثرى|noun/pronoun | ٱلثَّرَىٰ | ثري | C3-C | 1 | — | — |
-| lexical|جذو|جذوة|noun/pronoun | جَذْوَةٍ | جذو | C3-C | 1 | — | — |
-| lexical|جفأ|جفاء|noun/pronoun | جُفَآءً | جفأ | C3-C | 1 | FULL | HAMZATED |
-| lexical|جوف|جوف|noun/pronoun | جَوْفِهِۦ | جوف | C3-C | 1 | — | — |
-| lexical|جوو|جو|noun/pronoun | جَوِّ | جوو | C3-C | 1 | — | — |
-| lexical|حثث|حثيث|noun/pronoun | حَثِيثًا | حثث | C3-C | 1 | — | — |
-| lexical|حصحص|حصحص|verb | حَصْحَصَ | حصحص | C3-C | 1 | — | — |
-| lexical|حنن|حنانا|noun/pronoun | وَحَنَانًا | حنن | C3-C | 1 | — | — |
-| lexical|حوب|حوب|noun/pronoun | حُوبًا | حوب | C3-C | 1 | — | — |
-| lexical|حير|حيران|noun/pronoun | حَيْرَانَ | حير | C3-C | 1 | — | — |
-| lexical|خبأ|خبء|noun/pronoun | ٱلْخَبْءَ | خبأ | C3-C | 1 | FULL | HAMZATED |
-| lexical|درهم|دراهم|noun/pronoun | دَرَٰهِمَ | درهم | C3-C | 1 | — | — |
-| lexical|دفأ|دفء|noun/pronoun | دِفْءٌ | دفأ | C3-C | 1 | FULL | HAMZATED |
-| lexical|ذأم|مذءوم|noun/pronoun | مَذْءُومًا | ذأم | C3-C | 1 | CONFIRMED-LIMITED | HAMZATED |
-| lexical|ذبذب|مذبذب|noun/pronoun | مُّذَبْذَبِينَ | ذبذب | C3-C | 1 | — | — |
-| lexical|رخو|رخاء|noun/pronoun | رُخَآءً | رخو | C3-C | 1 | — | — |
-| lexical|ردأ|ردء|noun/pronoun | رِدْءًا | ردأ | C3-C | 1 | CONFIRMED-LIMITED | HAMZATED |
-| lexical|رهط|ا|noun/pronoun | أَرَهْطِىٓ | رهط | C3-C | 1 | — | — |
-| lexical|رهو|رهو|noun/pronoun | رَهْوًا | رهو | C3-C | 1 | — | — |
-| lexical|روع|روع|noun/pronoun | ٱلرَّوْعُ | روع | C3-C | 1 | — | — |
-| lexical|ريش|ريشا|noun/pronoun | وَرِيشًا | ريش | C3-C | 1 | — | — |
-| lexical|ريع|ريع|noun/pronoun | رِيعٍ | ريع | C3-C | 1 | — | — |
-| lexical|سردق|سرادق|noun/pronoun | سُرَادِقُهَا | سردق | C3-C | 1 | — | — |
-| lexical|سوح|ساحت|noun/pronoun | بِسَاحَتِهِمْ | سوح | C3-C | 1 | — | — |
-| lexical|سيب|سائبة|noun/pronoun | سَآئِبَةٍ | سيب | C3-C | 1 | — | — |
-| lexical|شرذم|شرذمة|noun/pronoun | لَشِرْذِمَةٌ | شرذم | C3-C | 1 | — | — |
-| lexical|شطأ|شاطئ|noun/pronoun | شَـٰطِئِ | شطأ | C3-C | 1 | CONFIRMED-LIMITED | HAMZATED |
-| lexical|شوب|شوبا|noun/pronoun | لَشَوْبًا | شوب | C3-C | 1 | — | — |
-| lexical|شوك|شوكة|noun/pronoun | ٱلشَّوْكَةِ | شوك | C3-C | 1 | — | — |
-| lexical|صفصف|صفصف|noun/pronoun | صَفْصَفًا | صفصف | C3-C | 1 | — | — |
-| lexical|صوع|صواع|noun/pronoun | صُوَاعَ | صوع | C3-C | 1 | — | — |
-| lexical|صوف|اصواف|noun/pronoun | أَصْوَافِهَا | صوف | C3-C | 1 | — | — |
-| lexical|صيص|صياصي|noun/pronoun | صَيَاصِيهِمْ | صيص | C3-C | 1 | — | — |
-| lexical|ضأن|ضان|noun/pronoun | ٱلضَّأْنِ | ضأن | C3-C | 1 | CONFIRMED-LIMITED | HAMZATED |
-| lexical|ضدد|ضد|noun/pronoun | ضِدًّا | ضدد | C3-C | 1 | — | — |
-| lexical|ضفدع|ضفادع|noun/pronoun | وَٱلضَّفَادِعَ | ضفدع | C3-C | 1 | — | — |
-| lexical|ضير|ضير|noun/pronoun | ضَيْرَ | ضير | C3-C | 1 | — | — |
-| lexical|طلل|طل|noun/pronoun | فَطَلٌّ | طلل | C3-C | 1 | — | — |
-| lexical|طود|طود|noun/pronoun | كَٱلطَّوْدِ | طود | C3-C | 1 | — | — |
-| lexical|عرجن|عرجون|noun/pronoun | كَٱلْعُرْجُونِ | عرجن | C3-C | 1 | — | — |
-| lexical|عرر|معتر|noun/pronoun | وَٱلْمُعْتَرَّ | عرر | C3-C | 1 | — | — |
-| lexical|عضو|عضين|noun/pronoun | عِضِينَ | عضو | C3-C | 1 | — | — |
-| lexical|عوق|معوقين|noun/pronoun | ٱلْمُعَوِّقِينَ | عوق | C3-C | 1 | — | — |
-| lexical|غزو|غزى|noun/pronoun | غُزًّى | غزو | C3-C | 1 | — | — |
-| lexical|غول|غول|noun/pronoun | غَوْلٌ | غول | C3-C | 1 | — | — |
-| lexical|فجو|فجوة|noun/pronoun | فَجْوَةٍ | فجو | C3-C | 1 | — | — |
-| lexical|فظظ|فظ|noun/pronoun | فَظًّا | فظظ | C3-C | 1 | — | — |
-| lexical|فوم|فوم|noun/pronoun | وَفُومِهَا | فوم | C3-C | 1 | — | — |
-| lexical|قثأ|قثائ|noun/pronoun | وَقِثَّآئِهَا | قثأ | C3-C | 1 | CONFIRMED-LIMITED | HAMZATED |
-| lexical|قسس|قسيس|noun/pronoun | قِسِّيسِينَ | قسس | C3-C | 1 | — | — |
-| lexical|قشعر|تقشعر|verb | تَقْشَعِرُّ | قشعر | C3-C | 1 | — | — |
-| lexical|قطط|قط|noun/pronoun | قِطَّنَا | قطط | C3-C | 1 | — | — |
-| lexical|قطمر|قطمير|noun/pronoun | قِطْمِيرٍ | قطمر | C3-C | 1 | — | — |
-| lexical|قنطر|مقنطرة|noun/pronoun | ٱلْمُقَنطَرَةِ | قنطر | C3-C | 1 | — | — |
-| lexical|قنو|قنوان|noun/pronoun | قِنْوَانٌ | قنو | C3-C | 1 | — | — |
-| lexical|كبكب|كبكب|verb | فَكُبْكِبُوا۟ | كبكب | C3-C | 1 | — | — |
-| lexical|كلو|كلا|noun/pronoun | كِلَاهُمَا | كلو | C3-C | 1 | — | — |
-| lexical|لحي|لحيت|noun/pronoun | بِلِحْيَتِى | لحي | C3-C | 1 | — | — |
-| lexical|لوذ|لواذ|noun/pronoun | لِوَاذًا | لوذ | C3-C | 1 | — | — |
-| lexical|معي|امعاء|noun/pronoun | أَمْعَآءَهُمْ | معي | C3-C | 1 | — | — |
-| lexical|مكو|مكاء|noun/pronoun | مُكَآءً | مكو | C3-C | 1 | — | — |
-| lexical|نسأ|نسىء|noun/pronoun | ٱلنَّسِىٓءُ | نسأ | C3-C | 1 | FULL | HAMZATED |
-| lexical|نوش|تناوش|noun/pronoun | ٱلتَّنَاوُشُ | نوش | C3-C | 1 | — | — |
-| lexical|نوص|مناص|noun/pronoun | مَنَاصٍ | نوص | C3-C | 1 | — | — |
-| lexical|نون|نون|noun/pronoun | ٱلنُّونِ | نون | C3-C | 1 | — | — |
-| lexical|نوي|نوى|noun/pronoun | وَٱلنَّوَىٰ | نوي | C3-C | 1 | — | — |
-| lexical|هدد|هد|noun/pronoun | هَدًّا | هدد | C3-C | 1 | — | — |
-| lexical|هدهد|هدهد|noun/pronoun | ٱلْهُدْهُدَ | هدهد | C3-C | 1 | — | — |
-| lexical|هيت|هيت|noun/pronoun | هَيْتَ | هيت | C3-C | 1 | — | — |
-| lexical|وأل|موئل|noun/pronoun | مَوْئِلًا | وأل | C3-C | 1 | FULL | HAMZATED |
-| lexical|وبر|اوبار|noun/pronoun | وَأَوْبَارِهَا | وبر | C3-C | 1 | — | — |
-| lexical|وسن|سنة|noun/pronoun | سِنَةٌ | وسن | C3-C | 1 | — | — |
-| lexical|وشي|شية|noun/pronoun | شِيَةَ | وشي | C3-C | 1 | — | — |
-| lexical|وطن|مواطن|noun/pronoun | مَوَاطِنَ | وطن | C3-C | 1 | — | — |
-| lexical|وفد|وفد|noun/pronoun | وَفْدًا | وفد | C3-C | 1 | — | — |
-| lexical|وفر|موفور|noun/pronoun | مَّوْفُورًا | وفر | C3-C | 1 | — | — |
-| lexical|وقذ|موقوذة|noun/pronoun | وَٱلْمَوْقُوذَةُ | وقذ | C3-C | 1 | — | — |
-| lexical|وكد|توكيد|noun/pronoun | تَوْكِيدِهَا | وكد | C3-C | 1 | — | — |
-| lexical|يقظ|ايقاظ|noun/pronoun | أَيْقَاظًا | يقظ | C3-C | 1 | — | — |
-| lexical|ينع|ينع|noun/pronoun | وَيَنْعِهِۦٓ | ينع | C3-C | 1 | — | — |
+| lexical|هيأ|هية|noun/pronoun | كَهَيْـَٔةِ | هيأ | C3-C | 2 | — | HAMZATED |
+| lexical|ميد|مائدة|noun/pronoun | مَآئِدَةً | ميد | C3-C | 2 | — | WEAK |
+| lexical|زول|زوال|noun/pronoun | زَوَالٍ | زول | C3-C | 1 | — | WEAK |
+| lexical|وصف|وصف|noun/pronoun | وَصْفَهُمْ | وصف | C3-C | 1 | — | WEAK |
+| lexical|بور|بوار|noun/pronoun | ٱلْبَوَارِ | بور | C3-C | 1 | — | WEAK |
+| lexical|أزر|ازر|noun/pronoun | أَزْرِى | أزر | C3-C | 1 | — | HAMZATED |
+| lexical|زجو|مزجاة|noun/pronoun | مُّزْجَىٰةٍ | زجو | C3-C | 1 | — | WEAK |
+| lexical|غلي|غلى|noun/pronoun | كَغَلْىِ | غلي | C3-C | 1 | — | WEAK |
+| lexical|قوت|مقيت|noun/pronoun | مُّقِيتًا | قوت | C3-C | 1 | — | WEAK |
+| lexical|وبق|موبق|noun/pronoun | مَّوْبِقًا | وبق | C3-C | 1 | — | WEAK |
+| lexical|خيط|خياط|noun/pronoun | ٱلْخِيَاطِ | خيط | C3-C | 1 | — | WEAK |
+| lexical|زحزح|زحزح|verb | زُحْزِحَ | زحزح | C3-C | 1 | FULL | QUADRILITERAL |
+| lexical|زود|زاد|noun/pronoun | ٱلزَّادِ | زود | C3-C | 1 | — | WEAK |
+| lexical|ظمأ|ظما|noun/pronoun | ظَمَأٌ | ظمأ | C3-C | 1 | — | HAMZATED |
+| lexical|قصو|قصوى|noun/pronoun | ٱلْقُصْوَىٰ | قصو | C3-C | 1 | — | WEAK |
+| lexical|هور|هار|noun/pronoun | هَارٍ | هور | C3-C | 1 | — | WEAK |
+| lexical|يبس|يابس|noun/pronoun | يَابِسٍ | يبس | C3-C | 1 | — | WEAK |
+| lexical|أزز|از|noun/pronoun | أَزًّا | أزز | C3-C | 1 | — | DOUBLED |
+| lexical|جذذ|مجذوذ|noun/pronoun | مَجْذُوذٍ | جذذ | C3-C | 1 | — | DOUBLED |
+| lexical|لدد|لد|noun/pronoun | لُّدًّا | لدد | C3-C | 1 | — | DOUBLED |
+| lexical|ورق|ورقة|noun/pronoun | وَرَقَةٍ | ورق | C3-C | 1 | — | WEAK |
+| lexical|ندد|انداد|noun/pronoun | أَندَادًا | ندد | C3-C | 6 | — | DOUBLED |
+| lexical|صيد|صيد|noun/pronoun | ٱلصَّيْدِ | صيد | C3-C | 5 | — | ROOT/LEMMA-UNCERTAIN |
+| lexical|خطو|خطوة|noun/pronoun | خُطُوَٰتِ | خطو | C3-C | 5 | — | WEAK |
+| lexical|حمأ|حما|noun/pronoun | حَمَإٍ | حمأ | C3-C | 3 | — | HAMZATED |
+| lexical|ذأب|ذئب|noun/pronoun | ٱلذِّئْبُ | ذأب | C3-C | 3 | — | HAMZATED |
+| lexical|سلو|سلوى|noun/pronoun | وَٱلسَّلْوَىٰ | سلو | C3-C | 3 | — | WEAK |
+| lexical|عير|عير|noun/pronoun | ٱلْعِيرُ | عير | C3-C | 3 | — | ROOT/LEMMA-UNCERTAIN |
+| lexical|جثو|جثي|noun/pronoun | جِثِيًّا | جثو | C3-C | 2 | — | WEAK |
+| lexical|أثث|اثاث|noun/pronoun | أَثَـٰثًا | أثث | C3-C | 2 | — | HAMZATED |
+| lexical|ألل|الا|noun/pronoun | إِلًّا | ألل | C3-C | 2 | — | HAMZATED |
+| lexical|تور|تارة|noun/pronoun | تَارَةً | تور | C3-C | 2 | — | WEAK |
+| lexical|جبب|جب|noun/pronoun | ٱلْجُبِّ | جبب | C3-C | 2 | — | DOUBLED |
+| lexical|حطط|حطة|noun/pronoun | حِطَّةٌ | حطط | C3-C | 2 | — | DOUBLED |
+| lexical|حنجر|حناجر|noun/pronoun | ٱلْحَنَاجِرَ | حنجر | C3-C | 2 | — | ROOT/LEMMA-UNCERTAIN |
+| lexical|خردل|خردل|noun/pronoun | خَرْدَلٍ | خردل | C3-C | 2 | FULL | QUADRILITERAL |
+| lexical|خور|خوار|noun/pronoun | خُوَارٌ | خور | C3-C | 2 | — | WEAK |
+| lexical|ذبب|ذباب|noun/pronoun | ذُبَابًا | ذبب | C3-C | 2 | — | DOUBLED |
+| lexical|رسس|رس|noun/pronoun | ٱلرَّسِّ | رسس | C3-C | 2 | — | DOUBLED |
+| lexical|زجج|زجاجة|noun/pronoun | زُجَاجَةٍ | زجج | C3-C | 2 | — | DOUBLED |
+| lexical|سرمد|سرمد|noun/pronoun | سَرْمَدًا | سرمد | C3-C | 2 | CONFIRMED-LIMITED | QUADRILITERAL |
+| lexical|شفو|شفا|noun/pronoun | شَفَا | شفو | C3-C | 2 | — | WEAK |
+| lexical|صنو|صنوان|noun/pronoun | صِنْوَانٌ | صنو | C3-C | 2 | — | WEAK |
+| lexical|طرو|طري|noun/pronoun | طَرِيًّا | طرو | C3-C | 2 | — | WEAK |
+| lexical|عنكب|عنكبوت|noun/pronoun | ٱلْعَنكَبُوتِ | عنكب | C3-C | 2 | CONFIRMED-LIMITED | QUADRILITERAL |
+| lexical|غوط|غائط|noun/pronoun | ٱلْغَآئِطِ | غوط | C3-C | 2 | — | WEAK |
+| lexical|قرطس|قرطاس|noun/pronoun | قِرْطَاسٍ | قرطس | C3-C | 2 | FULL | QUADRILITERAL |
+| lexical|قسطس|قسطاس|noun/pronoun | بِٱلْقِسْطَاسِ | قسطس | C3-C | 2 | MODEL-ISSUE | QUADRILITERAL |
+| lexical|ودق|ودق|noun/pronoun | ٱلْوَدْقَ | ودق | C3-C | 2 | — | WEAK |
+| lexical|وسل|وسيلة|noun/pronoun | ٱلْوَسِيلَةَ | وسل | C3-C | 2 | — | WEAK |
+| lexical|وطر|وطر|noun/pronoun | وَطَرًا | وطر | C3-C | 2 | — | WEAK |
+| lexical|طوق|س|verb | سَيُطَوَّقُونَ | طوق | C3-C | 1 | — | ROOT/LEMMA-UNCERTAIN |
+| lexical|أرب|مارب|noun/pronoun | مَـَٔارِبُ | أرب | C3-C | 1 | — | HAMZATED |
+| lexical|سنبل|سنبل|noun/pronoun | سُنۢبُلِهِۦٓ | سنبل | C3-C | 1 | FULL | QUADRILITERAL |
+| lexical|أمو|امائ|noun/pronoun | وَإِمَآئِكُمْ | أمو | C3-C | 1 | — | HAMZATED |
+| lexical|خنزر|خنازير|noun/pronoun | وَٱلْخَنَازِيرَ | خنزر | C3-C | 1 | FULL | QUADRILITERAL |
+| lexical|شيد|مشيدة|noun/pronoun | مُّشَيَّدَةٍ | شيد | C3-C | 1 | — | WEAK |
+| lexical|قنطر|والقنطير|noun/pronoun | وَٱلْقَنَـٰطِيرِ | قنطر | C3-C | 1 | FULL | QUADRILITERAL |
+| lexical|قوع|قاع|noun/pronoun | قَاعًا | قوع | C3-C | 1 | — | WEAK |
+| lexical|قيل|قائل|noun/pronoun | قَآئِلُونَ | قيل | C3-C | 1 | — | WEAK |
+| lexical|وثن|اوثن|noun/pronoun | ٱلْأَوْثَـٰنِ | وثن | C3-C | 1 | — | WEAK |
+| lexical|أثل|اثل|noun/pronoun | وَأَثْلٍ | أثل | C3-C | 1 | — | HAMZATED |
+| lexical|أدد|اد|noun/pronoun | إِدًّا | أدد | C3-C | 1 | — | DOUBLED |
+| lexical|أسن|اسن|noun/pronoun | ءَاسِنٍ | أسن | C3-C | 1 | — | HAMZATED |
+| lexical|أمت|امت|noun/pronoun | أَمْتًا | أمت | C3-C | 1 | — | HAMZATED |
+| lexical|أوه|اوه|noun/pronoun | لَأَوَّٰهٌ | أوه | C3-C | 1 | — | HAMZATED |
+| lexical|أيم|ايمى|noun/pronoun | ٱلْأَيَـٰمَىٰ | أيم | C3-C | 1 | — | HAMZATED |
+| lexical|بأر|بئر|noun/pronoun | وَبِئْرٍ | بأر | C3-C | 1 | — | HAMZATED |
+| lexical|ثبي|ثبة|noun/pronoun | ثُبَاتٍ | ثبي | C3-C | 1 | — | WEAK |
+| lexical|ثري|ثرى|noun/pronoun | ٱلثَّرَىٰ | ثري | C3-C | 1 | — | WEAK |
+| lexical|جذو|جذوة|noun/pronoun | جَذْوَةٍ | جذو | C3-C | 1 | — | WEAK |
+| lexical|جفأ|جفاء|noun/pronoun | جُفَآءً | جفأ | C3-C | 1 | — | HAMZATED |
+| lexical|جوف|جوف|noun/pronoun | جَوْفِهِۦ | جوف | C3-C | 1 | — | WEAK |
+| lexical|جوو|جو|noun/pronoun | جَوِّ | جوو | C3-C | 1 | — | DOUBLED |
+| lexical|حثث|حثيث|noun/pronoun | حَثِيثًا | حثث | C3-C | 1 | — | DOUBLED |
+| lexical|حصحص|حصحص|verb | حَصْحَصَ | حصحص | C3-C | 1 | FULL | QUADRILITERAL |
+| lexical|حنن|حنانا|noun/pronoun | وَحَنَانًا | حنن | C3-C | 1 | — | DOUBLED |
+| lexical|حوب|حوب|noun/pronoun | حُوبًا | حوب | C3-C | 1 | — | WEAK |
+| lexical|حير|حيران|noun/pronoun | حَيْرَانَ | حير | C3-C | 1 | — | WEAK |
+| lexical|خبأ|خبء|noun/pronoun | ٱلْخَبْءَ | خبأ | C3-C | 1 | — | HAMZATED |
+| lexical|درهم|دراهم|noun/pronoun | دَرَٰهِمَ | درهم | C3-C | 1 | FULL | QUADRILITERAL |
+| lexical|دفأ|دفء|noun/pronoun | دِفْءٌ | دفأ | C3-C | 1 | — | HAMZATED |
+| lexical|ذأم|مذءوم|noun/pronoun | مَذْءُومًا | ذأم | C3-C | 1 | — | HAMZATED |
+| lexical|ذبذب|مذبذب|noun/pronoun | مُّذَبْذَبِينَ | ذبذب | C3-C | 1 | FULL | QUADRILITERAL |
+| lexical|رخو|رخاء|noun/pronoun | رُخَآءً | رخو | C3-C | 1 | — | WEAK |
+| lexical|ردأ|ردء|noun/pronoun | رِدْءًا | ردأ | C3-C | 1 | — | HAMZATED |
+| lexical|رهط|ا|noun/pronoun | أَرَهْطِىٓ | رهط | C3-C | 1 | — | ROOT/LEMMA-UNCERTAIN |
+| lexical|رهو|رهو|noun/pronoun | رَهْوًا | رهو | C3-C | 1 | — | WEAK |
+| lexical|روع|روع|noun/pronoun | ٱلرَّوْعُ | روع | C3-C | 1 | — | WEAK |
+| lexical|ريش|ريشا|noun/pronoun | وَرِيشًا | ريش | C3-C | 1 | — | WEAK |
+| lexical|ريع|ريع|noun/pronoun | رِيعٍ | ريع | C3-C | 1 | — | WEAK |
+| lexical|سردق|سرادق|noun/pronoun | سُرَادِقُهَا | سردق | C3-C | 1 | CONFIRMED-LIMITED | QUADRILITERAL |
+| lexical|سوح|ساحت|noun/pronoun | بِسَاحَتِهِمْ | سوح | C3-C | 1 | — | WEAK |
+| lexical|سيب|سائبة|noun/pronoun | سَآئِبَةٍ | سيب | C3-C | 1 | — | WEAK |
+| lexical|شرذم|شرذمة|noun/pronoun | لَشِرْذِمَةٌ | شرذم | C3-C | 1 | CONFIRMED-LIMITED | QUADRILITERAL |
+| lexical|شطأ|شاطئ|noun/pronoun | شَـٰطِئِ | شطأ | C3-C | 1 | — | HAMZATED |
+| lexical|شوب|شوبا|noun/pronoun | لَشَوْبًا | شوب | C3-C | 1 | — | WEAK |
+| lexical|شوك|شوكة|noun/pronoun | ٱلشَّوْكَةِ | شوك | C3-C | 1 | — | WEAK |
+| lexical|صفصف|صفصف|noun/pronoun | صَفْصَفًا | صفصف | C3-C | 1 | CONFIRMED-LIMITED | QUADRILITERAL |
+| lexical|صوع|صواع|noun/pronoun | صُوَاعَ | صوع | C3-C | 1 | — | WEAK |
+| lexical|صوف|اصواف|noun/pronoun | أَصْوَافِهَا | صوف | C3-C | 1 | — | WEAK |
+| lexical|صيص|صياصي|noun/pronoun | صَيَاصِيهِمْ | صيص | C3-C | 1 | — | WEAK |
+| lexical|ضأن|ضان|noun/pronoun | ٱلضَّأْنِ | ضأن | C3-C | 1 | — | HAMZATED |
+| lexical|ضدد|ضد|noun/pronoun | ضِدًّا | ضدد | C3-C | 1 | — | DOUBLED |
+| lexical|ضفدع|ضفادع|noun/pronoun | وَٱلضَّفَادِعَ | ضفدع | C3-C | 1 | CONFIRMED-LIMITED | QUADRILITERAL |
+| lexical|ضير|ضير|noun/pronoun | ضَيْرَ | ضير | C3-C | 1 | — | WEAK |
+| lexical|طلل|طل|noun/pronoun | فَطَلٌّ | طلل | C3-C | 1 | — | DOUBLED |
+| lexical|طود|طود|noun/pronoun | كَٱلطَّوْدِ | طود | C3-C | 1 | — | WEAK |
+| lexical|عرجن|عرجون|noun/pronoun | كَٱلْعُرْجُونِ | عرجن | C3-C | 1 | CONFIRMED-LIMITED | QUADRILITERAL |
+| lexical|عرر|معتر|noun/pronoun | وَٱلْمُعْتَرَّ | عرر | C3-C | 1 | — | DOUBLED |
+| lexical|عضو|عضين|noun/pronoun | عِضِينَ | عضو | C3-C | 1 | — | WEAK |
+| lexical|عوق|معوقين|noun/pronoun | ٱلْمُعَوِّقِينَ | عوق | C3-C | 1 | — | WEAK |
+| lexical|غزو|غزى|noun/pronoun | غُزًّى | غزو | C3-C | 1 | — | WEAK |
+| lexical|غول|غول|noun/pronoun | غَوْلٌ | غول | C3-C | 1 | — | WEAK |
+| lexical|فجو|فجوة|noun/pronoun | فَجْوَةٍ | فجو | C3-C | 1 | — | WEAK |
+| lexical|فظظ|فظ|noun/pronoun | فَظًّا | فظظ | C3-C | 1 | — | DOUBLED |
+| lexical|فوم|فوم|noun/pronoun | وَفُومِهَا | فوم | C3-C | 1 | — | WEAK |
+| lexical|قثأ|قثائ|noun/pronoun | وَقِثَّآئِهَا | قثأ | C3-C | 1 | — | HAMZATED |
+| lexical|قسس|قسيس|noun/pronoun | قِسِّيسِينَ | قسس | C3-C | 1 | — | DOUBLED |
+| lexical|قشعر|تقشعر|verb | تَقْشَعِرُّ | قشعر | C3-C | 1 | FULL | QUADRILITERAL |
+| lexical|قطط|قط|noun/pronoun | قِطَّنَا | قطط | C3-C | 1 | — | DOUBLED |
+| lexical|قطمر|قطمير|noun/pronoun | قِطْمِيرٍ | قطمر | C3-C | 1 | MODEL-ISSUE | QUADRILITERAL |
+| lexical|قنطر|مقنطرة|noun/pronoun | ٱلْمُقَنطَرَةِ | قنطر | C3-C | 1 | FULL | QUADRILITERAL |
+| lexical|قنو|قنوان|noun/pronoun | قِنْوَانٌ | قنو | C3-C | 1 | — | WEAK |
+| lexical|كبكب|كبكب|verb | فَكُبْكِبُوا۟ | كبكب | C3-C | 1 | FULL | QUADRILITERAL |
+| lexical|كلو|كلا|noun/pronoun | كِلَاهُمَا | كلو | C3-C | 1 | — | WEAK |
+| lexical|لحي|لحيت|noun/pronoun | بِلِحْيَتِى | لحي | C3-C | 1 | — | WEAK |
+| lexical|لوذ|لواذ|noun/pronoun | لِوَاذًا | لوذ | C3-C | 1 | — | WEAK |
+| lexical|معي|امعاء|noun/pronoun | أَمْعَآءَهُمْ | معي | C3-C | 1 | — | WEAK |
+| lexical|مكو|مكاء|noun/pronoun | مُكَآءً | مكو | C3-C | 1 | — | WEAK |
+| lexical|نسأ|نسىء|noun/pronoun | ٱلنَّسِىٓءُ | نسأ | C3-C | 1 | — | HAMZATED |
+| lexical|نوش|تناوش|noun/pronoun | ٱلتَّنَاوُشُ | نوش | C3-C | 1 | — | WEAK |
+| lexical|نوص|مناص|noun/pronoun | مَنَاصٍ | نوص | C3-C | 1 | — | WEAK |
+| lexical|نون|نون|noun/pronoun | ٱلنُّونِ | نون | C3-C | 1 | — | WEAK |
+| lexical|نوي|نوى|noun/pronoun | وَٱلنَّوَىٰ | نوي | C3-C | 1 | — | WEAK |
+| lexical|هدد|هد|noun/pronoun | هَدًّا | هدد | C3-C | 1 | — | DOUBLED |
+| lexical|هدهد|هدهد|noun/pronoun | ٱلْهُدْهُدَ | هدهد | C3-C | 1 | FULL | QUADRILITERAL |
+| lexical|هيت|هيت|noun/pronoun | هَيْتَ | هيت | C3-C | 1 | — | WEAK |
+| lexical|وأل|موئل|noun/pronoun | مَوْئِلًا | وأل | C3-C | 1 | — | HAMZATED |
+| lexical|وبر|اوبار|noun/pronoun | وَأَوْبَارِهَا | وبر | C3-C | 1 | — | WEAK |
+| lexical|وسن|سنة|noun/pronoun | سِنَةٌ | وسن | C3-C | 1 | — | WEAK |
+| lexical|وشي|شية|noun/pronoun | شِيَةَ | وشي | C3-C | 1 | — | WEAK |
+| lexical|وطن|مواطن|noun/pronoun | مَوَاطِنَ | وطن | C3-C | 1 | — | WEAK |
+| lexical|وفد|وفد|noun/pronoun | وَفْدًا | وفد | C3-C | 1 | — | WEAK |
+| lexical|وفر|موفور|noun/pronoun | مَّوْفُورًا | وفر | C3-C | 1 | — | WEAK |
+| lexical|وقذ|موقوذة|noun/pronoun | وَٱلْمَوْقُوذَةُ | وقذ | C3-C | 1 | — | WEAK |
+| lexical|وكد|توكيد|noun/pronoun | تَوْكِيدِهَا | وكد | C3-C | 1 | — | WEAK |
+| lexical|يقظ|ايقاظ|noun/pronoun | أَيْقَاظًا | يقظ | C3-C | 1 | — | WEAK |
+| lexical|ينع|ينع|noun/pronoun | وَيَنْعِهِۦٓ | ينع | C3-C | 1 | — | WEAK |
 | lexical|بغت|بغتة|noun/pronoun | بَغْتَةً | بغت | C3-D | 13 | — | — |
 | lexical|قمص|قميص|noun/pronoun | قَمِيصِهِۦ | قمص | C3-D | 6 | — | — |
 | lexical|كهف|كهف|noun/pronoun | ٱلْكَهْفِ | كهف | C3-D | 6 | — | — |

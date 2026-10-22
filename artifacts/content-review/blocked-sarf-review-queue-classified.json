@@ -1,6 +1,6 @@
 {
   "reportType": "blocked-sarf-review-queue-classified",
-  "generatedAt": "2026-10-22T21:48:55.956Z",
+  "generatedAt": "2026-10-22T22:11:14.794Z",
   "sourceAudit": "artifacts\\content-review\\final-sarf-completion-audit.json",
   "sourceReconciliation": "artifacts\\content-review\\mixed-sarf-reconciliation.json",
   "definition": {
@@ -10,13 +10,13 @@
     "D": "Special/model issue: family identity or representation requires resolution before row selection."
   },
   "totals": {
-    "blockedFamilies": 302,
-    "blockedOccurrences": 452,
+    "blockedFamilies": 282,
+    "blockedOccurrences": 428,
     "classifications": {
       "A": 6,
       "B": 3,
-      "C": 290,
-      "D": 3
+      "C": 268,
+      "D": 5
     }
   },
   "queue": [
@@ -1748,114 +1748,6 @@
     },
     {
       "classification": "C",
-      "familyKey": "lexical|قنطر|والقنطير|noun/pronoun",
-      "familyScope": null,
-      "root": "قنطر",
-      "lemmaOrCurrentForm": "وَٱلْقَنَـٰطِيرِ",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:3:14:8",
-          "location": "3:14:8",
-          "surah": 3,
-          "ayah": 14,
-          "position": 8,
-          "arabic": "وَٱلْقَنَـٰطِيرِ",
-          "meaning": "and [the] heaps",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "وَٱلْقَنَـٰطِيرِ is a rootful noun with root ق ن ط ر. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ق ن ط ر",
-            "lemma": "وَٱلْقَنَـٰطِيرِ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "وَٱلْقَنَـٰطِيرِ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|قنطر|مقنطرة|noun/pronoun",
-      "familyScope": null,
-      "root": "قنطر",
-      "lemmaOrCurrentForm": "مُقَنطَرَةِ",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:3:14:9",
-          "location": "3:14:9",
-          "surah": 3,
-          "ayah": 14,
-          "position": 9,
-          "arabic": "ٱلْمُقَنطَرَةِ",
-          "meaning": "[the] stored up",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "ٱلْمُقَنطَرَةِ is a rootful noun with root ق ن ط ر. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ق ن ط ر",
-            "lemma": "مُقَنطَرَةِ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "ٱلْمُقَنطَرَةِ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
       "familyKey": "lexical|رمز|رمز|noun/pronoun",
       "familyScope": null,
       "root": "رمز",
@@ -2686,60 +2578,6 @@
     },
     {
       "classification": "C",
-      "familyKey": "lexical|زحزح|زحزح|verb",
-      "familyScope": null,
-      "root": "زحزح",
-      "lemmaOrCurrentForm": "زُحْزِحَ",
-      "category": "verb",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:3:185:11",
-          "location": "3:185:11",
-          "surah": 3,
-          "ayah": 185,
-          "position": 11,
-          "arabic": "زُحْزِحَ",
-          "meaning": "is drawn away",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "زُحْزِحَ is a rootful verb with root ز ح ز ح. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ز ح ز ح",
-            "lemma": "زُحْزِحَ",
-            "partOfSpeech": "verb",
-            "forms": [
-              "زُحْزِحَ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
       "familyKey": "lexical|حوب|حوب|noun/pronoun",
       "familyScope": null,
       "root": "حوب",
@@ -3531,60 +3369,6 @@
             "partOfSpeech": "noun/pronoun",
             "forms": [
               "كُسَالَىٰ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|ذبذب|مذبذب|noun/pronoun",
-      "familyScope": null,
-      "root": "ذبذب",
-      "lemmaOrCurrentForm": "مُذَبْذَب",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:4:143:1",
-          "location": "4:143:1",
-          "surah": 4,
-          "ayah": 143,
-          "position": 1,
-          "arabic": "مُّذَبْذَبِينَ",
-          "meaning": "Wavering",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "مُّذَبْذَبِينَ is a rootful noun with root ذ ب ذ ب. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ذ ب ذ ب",
-            "lemma": "مُذَبْذَب",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "مُّذَبْذَبِينَ"
             ]
           }
         ],
@@ -4574,60 +4358,6 @@
     },
     {
       "classification": "C",
-      "familyKey": "lexical|خنزر|خنازير|noun/pronoun",
-      "familyScope": null,
-      "root": "خنزر",
-      "lemmaOrCurrentForm": "خَنَازِيرَ",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:5:60:18",
-          "location": "5:60:18",
-          "surah": 5,
-          "ayah": 60,
-          "position": 18,
-          "arabic": "وَٱلْخَنَازِيرَ",
-          "meaning": "and [the] swines",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "وَٱلْخَنَازِيرَ is a rootful noun with root خ ن ز ر. The audit found 4 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "خ ن ز ر",
-            "lemma": "خَنَازِيرَ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "وَٱلْخَنَازِيرَ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
       "familyKey": "lexical|قسس|قسيس|noun/pronoun",
       "familyScope": null,
       "root": "قسس",
@@ -5009,73 +4739,6 @@
             "partOfSpeech": "noun/pronoun",
             "forms": [
               "مَآئِدَةً"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|قرطس|قرطاس|noun/pronoun",
-      "familyScope": null,
-      "root": "قرطس",
-      "lemmaOrCurrentForm": "قِرْطاس",
-      "category": "noun",
-      "occurrenceCount": 2,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:6:7:6",
-          "location": "6:7:6",
-          "surah": 6,
-          "ayah": 7,
-          "position": 6,
-          "arabic": "قِرْطَاسٍ",
-          "meaning": "a parchment",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "قِرْطَاسٍ is a rootful noun with root ق ر ط س. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:6:91:27",
-          "location": "6:91:27",
-          "surah": 6,
-          "ayah": 91,
-          "position": 27,
-          "arabic": "قَرَاطِيسَ",
-          "meaning": "(into) parchments",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "قَرَاطِيسَ is a rootful noun with root ق ر ط س. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ق ر ط س",
-            "lemma": "قِرْطاس",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "قِرْطَاسٍ",
-              "قَرَاطِيسَ"
             ]
           }
         ],
@@ -7113,60 +6776,6 @@
     },
     {
       "classification": "C",
-      "familyKey": "lexical|ضفدع|ضفادع|noun/pronoun",
-      "familyScope": null,
-      "root": "ضفدع",
-      "lemmaOrCurrentForm": "ضَّفَادِعَ",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:7:133:6",
-          "location": "7:133:6",
-          "surah": 7,
-          "ayah": 133,
-          "position": 6,
-          "arabic": "وَٱلضَّفَادِعَ",
-          "meaning": "and the frogs",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "وَٱلضَّفَادِعَ is a rootful noun with root ض ف د ع. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ض ف د ع",
-            "lemma": "ضَّفَادِعَ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "وَٱلضَّفَادِعَ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
       "familyKey": "lexical|جسد|جسد|noun/pronoun",
       "familyScope": null,
       "root": "جسد",
@@ -8794,60 +8403,6 @@
     },
     {
       "classification": "C",
-      "familyKey": "lexical|درهم|دراهم|noun/pronoun",
-      "familyScope": null,
-      "root": "درهم",
-      "lemmaOrCurrentForm": "دَراهِم",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:12:20:4",
-          "location": "12:20:4",
-          "surah": 12,
-          "ayah": 20,
-          "position": 4,
-          "arabic": "دَرَٰهِمَ",
-          "meaning": "dirhams",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "دَرَٰهِمَ is a rootful noun with root د ر ه م. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "د ر ه م",
-            "lemma": "دَراهِم",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "دَرَٰهِمَ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
       "familyKey": "lexical|زهد|زهدين|noun/pronoun",
       "familyScope": null,
       "root": "زهد",
@@ -9142,60 +8697,6 @@
     },
     {
       "classification": "C",
-      "familyKey": "lexical|سنبل|سنبل|noun/pronoun",
-      "familyScope": null,
-      "root": "سنبل",
-      "lemmaOrCurrentForm": "سُنبُل",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:12:47:10",
-          "location": "12:47:10",
-          "surah": 12,
-          "ayah": 47,
-          "position": 10,
-          "arabic": "سُنۢبُلِهِۦٓ",
-          "meaning": "its ears",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "سُنۢبُلِهِۦٓ is a rootful noun with root س ن ب ل. The audit found 4 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "س ن ب ل",
-            "lemma": "سُنبُل",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "سُنۢبُلِهِۦٓ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
       "familyKey": "lexical|بول|بال|noun/pronoun",
       "familyScope": null,
       "root": "بول",
@@ -9266,60 +8767,6 @@
             "forms": [
               "بَالُ",
               "بَالَهُمْ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|حصحص|حصحص|verb",
-      "familyScope": null,
-      "root": "حصحص",
-      "lemmaOrCurrentForm": "حَصْحَصَ",
-      "category": "verb",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:12:51:21",
-          "location": "12:51:21",
-          "surah": 12,
-          "ayah": 51,
-          "position": 21,
-          "arabic": "حَصْحَصَ",
-          "meaning": "(is) manifest",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "حَصْحَصَ is a rootful verb with root ح ص ح ص. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ح ص ح ص",
-            "lemma": "حَصْحَصَ",
-            "partOfSpeech": "verb",
-            "forms": [
-              "حَصْحَصَ"
             ]
           }
         ],
@@ -11007,7 +10454,7 @@
       "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
     },
     {
-      "classification": "C",
+      "classification": "D",
       "familyKey": "lexical|قسطس|قسطاس|noun/pronoun",
       "familyScope": null,
       "root": "قسطس",
@@ -11026,7 +10473,7 @@
           "meaning": "with the balance",
           "formCount": 1,
           "status": "blocked",
-          "currentReason": "بِٱلْقِسْطَاسِ is a rootful noun with root ق س ط س. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+          "currentReason": "MODEL-ISSUE: The item is an instrument noun with vowel variants, not a safely productive learner-facing quadriliteral family. The standard five-row Ṣarf representation would encourage treating two vocalisations as separate morphology or fabricating a verb paradigm."
         },
         {
           "occurrenceId": "word:26:182:2",
@@ -11038,7 +10485,7 @@
           "meaning": "with a balance",
           "formCount": 1,
           "status": "blocked",
-          "currentReason": "بِٱلْقِسْطَاسِ is a rootful noun with root ق س ط س. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+          "currentReason": "MODEL-ISSUE: The item is an instrument noun with vowel variants, not a safely productive learner-facing quadriliteral family. The standard five-row Ṣarf representation would encourage treating two vocalisations as separate morphology or fabricating a verb paradigm."
         }
       ],
       "currentAnalysis": {
@@ -11070,7 +10517,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
+      "codexClassificationComment": "The item is an instrument noun with vowel variants, not a safely productive learner-facing quadriliteral family. The standard five-row Ṣarf representation would encourage treating two vocalisations as separate morphology or fabricating a verb paradigm."
     },
     {
       "classification": "C",
@@ -11753,60 +11200,6 @@
             "partOfSpeech": "noun/pronoun",
             "forms": [
               "رُقُودٌ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|سردق|سرادق|noun/pronoun",
-      "familyScope": null,
-      "root": "سردق",
-      "lemmaOrCurrentForm": "سُرادِق",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:18:29:17",
-          "location": "18:29:17",
-          "surah": 18,
-          "ayah": 29,
-          "position": 17,
-          "arabic": "سُرَادِقُهَا",
-          "meaning": "its walls",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "سُرَادِقُهَا is a rootful noun with root س ر د ق. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "س ر د ق",
-            "lemma": "سُرادِق",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "سُرَادِقُهَا"
             ]
           }
         ],
@@ -12704,60 +12097,6 @@
     },
     {
       "classification": "C",
-      "familyKey": "lexical|صفصف|صفصف|noun/pronoun",
-      "familyScope": null,
-      "root": "صفصف",
-      "lemmaOrCurrentForm": "صَفْصَف",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:20:106:3",
-          "location": "20:106:3",
-          "surah": 20,
-          "ayah": 106,
-          "position": 3,
-          "arabic": "صَفْصَفًا",
-          "meaning": "plain",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "صَفْصَفًا is a rootful noun with root ص ف ص ف. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ص ف ص ف",
-            "lemma": "صَفْصَف",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "صَفْصَفًا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
       "familyKey": "lexical|همس|همس|noun/pronoun",
       "familyScope": null,
       "root": "همس",
@@ -13061,72 +12400,6 @@
             "partOfSpeech": "noun/pronoun",
             "forms": [
               "نَفْحَةٌ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|خردل|خردل|noun/pronoun",
-      "familyScope": null,
-      "root": "خردل",
-      "lemmaOrCurrentForm": "خَرْدَل",
-      "category": "noun",
-      "occurrenceCount": 2,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:21:47:15",
-          "location": "21:47:15",
-          "surah": 21,
-          "ayah": 47,
-          "position": 15,
-          "arabic": "خَرْدَلٍ",
-          "meaning": "a mustard",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "خَرْدَلٍ is a rootful noun with root خ ر د ل. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:31:16:8",
-          "location": "31:16:8",
-          "surah": 31,
-          "ayah": 16,
-          "position": 8,
-          "arabic": "خَرْدَلٍ",
-          "meaning": "a mustard seed",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "خَرْدَلٍ is a rootful noun with root خ ر د ل. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "خ ر د ل",
-            "lemma": "خَرْدَل",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "خَرْدَلٍ"
             ]
           }
         ],
@@ -14514,60 +13787,6 @@
     },
     {
       "classification": "C",
-      "familyKey": "lexical|شرذم|شرذمة|noun/pronoun",
-      "familyScope": null,
-      "root": "شرذم",
-      "lemmaOrCurrentForm": "شِرْذِمَةٌ",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:26:54:3",
-          "location": "26:54:3",
-          "surah": 26,
-          "ayah": 54,
-          "position": 3,
-          "arabic": "لَشِرْذِمَةٌ",
-          "meaning": "(are) certainly a band",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "لَشِرْذِمَةٌ is a rootful noun with root ش ر ذ م. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ش ر ذ م",
-            "lemma": "شِرْذِمَةٌ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "لَشِرْذِمَةٌ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
       "familyKey": "lexical|طود|طود|noun/pronoun",
       "familyScope": null,
       "root": "طود",
@@ -14601,60 +13820,6 @@
             "partOfSpeech": "noun/pronoun",
             "forms": [
               "كَٱلطَّوْدِ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|كبكب|كبكب|verb",
-      "familyScope": null,
-      "root": "كبكب",
-      "lemmaOrCurrentForm": "كُبْكِبُ",
-      "category": "verb",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:26:94:1",
-          "location": "26:94:1",
-          "surah": 26,
-          "ayah": 94,
-          "position": 1,
-          "arabic": "فَكُبْكِبُوا۟",
-          "meaning": "Then they will be overturned",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "فَكُبْكِبُوا۟ is a rootful verb with root ك ب ك ب. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ك ب ك ب",
-            "lemma": "كُبْكِبُ",
-            "partOfSpeech": "verb",
-            "forms": [
-              "فَكُبْكِبُوا۟"
             ]
           }
         ],
@@ -14841,60 +14006,6 @@
             "partOfSpeech": "noun/pronoun",
             "forms": [
               "فَـٰرِهِينَ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|هدهد|هدهد|noun/pronoun",
-      "familyScope": null,
-      "root": "هدهد",
-      "lemmaOrCurrentForm": "هُدْهُدَ",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:27:20:8",
-          "location": "27:20:8",
-          "surah": 27,
-          "ayah": 20,
-          "position": 8,
-          "arabic": "ٱلْهُدْهُدَ",
-          "meaning": "the hoopoe",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "ٱلْهُدْهُدَ is a rootful noun with root ه د ه د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ه د ه د",
-            "lemma": "هُدْهُدَ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "ٱلْهُدْهُدَ"
             ]
           }
         ],
@@ -15219,138 +14330,6 @@
             "partOfSpeech": "noun/pronoun",
             "forms": [
               "ٱلْمَقْبُوحِينَ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|سرمد|سرمد|noun/pronoun",
-      "familyScope": null,
-      "root": "سرمد",
-      "lemmaOrCurrentForm": "سَرْمَد",
-      "category": "noun",
-      "occurrenceCount": 2,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:28:71:8",
-          "location": "28:71:8",
-          "surah": 28,
-          "ayah": 71,
-          "position": 8,
-          "arabic": "سَرْمَدًا",
-          "meaning": "continuous",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "سَرْمَدًا is a rootful noun with root س ر م د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:28:72:8",
-          "location": "28:72:8",
-          "surah": 28,
-          "ayah": 72,
-          "position": 8,
-          "arabic": "سَرْمَدًا",
-          "meaning": "continuous",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "سَرْمَدًا is a rootful noun with root س ر م د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "س ر م د",
-            "lemma": "سَرْمَد",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "سَرْمَدًا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|عنكب|عنكبوت|noun/pronoun",
-      "familyScope": null,
-      "root": "عنكب",
-      "lemmaOrCurrentForm": "عَنكَبُوتِ",
-      "category": "noun",
-      "occurrenceCount": 2,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:29:41:9",
-          "location": "29:41:9",
-          "surah": 29,
-          "ayah": 41,
-          "position": 9,
-          "arabic": "ٱلْعَنكَبُوتِ",
-          "meaning": "the spider",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "ٱلْعَنكَبُوتِ is a rootful noun with root ع ن ك ب. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:29:41:16",
-          "location": "29:41:16",
-          "surah": 29,
-          "ayah": 41,
-          "position": 16,
-          "arabic": "ٱلْعَنكَبُوتِ",
-          "meaning": "(of) the spider",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "ٱلْعَنكَبُوتِ is a rootful noun with root ع ن ك ب. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ع ن ك ب",
-            "lemma": "عَنكَبُوتِ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "ٱلْعَنكَبُوتِ"
             ]
           }
         ],
@@ -16161,7 +15140,7 @@
       "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
     },
     {
-      "classification": "C",
+      "classification": "D",
       "familyKey": "lexical|قطمر|قطمير|noun/pronoun",
       "familyScope": null,
       "root": "قطمر",
@@ -16180,7 +15159,7 @@
           "meaning": "(as much as) the membrane of a date-seed",
           "formCount": 1,
           "status": "blocked",
-          "currentReason": "قِطْمِيرٍ is a rootful noun with root ق ط م ر. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+          "currentReason": "MODEL-ISSUE: This is a highly lexicalised technical noun in the Qur’anic usage. The standard five-row family would require speculative verbs or participles; the correct product treatment is a dedicated lexicalised-noun representation."
         }
       ],
       "currentAnalysis": {
@@ -16212,7 +15191,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
+      "codexClassificationComment": "This is a highly lexicalised technical noun in the Qur’anic usage. The standard five-row family would require speculative verbs or participles; the correct product treatment is a dedicated lexicalised-noun representation."
     },
     {
       "classification": "C",
@@ -16249,60 +15228,6 @@
             "partOfSpeech": "noun/pronoun",
             "forms": [
               "مُّقْمَحُونَ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|عرجن|عرجون|noun/pronoun",
-      "familyScope": null,
-      "root": "عرجن",
-      "lemmaOrCurrentForm": "عُرْجُونِ",
-      "category": "noun",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:36:39:6",
-          "location": "36:39:6",
-          "surah": 36,
-          "ayah": 39,
-          "position": 6,
-          "arabic": "كَٱلْعُرْجُونِ",
-          "meaning": "like the date stalk",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "كَٱلْعُرْجُونِ is a rootful noun with root ع ر ج ن. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ع ر ج ن",
-            "lemma": "عُرْجُونِ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "كَٱلْعُرْجُونِ"
             ]
           }
         ],
@@ -17056,60 +15981,6 @@
             "partOfSpeech": "noun/pronoun",
             "forms": [
               "رُخَآءً"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "codexClassificationComment": "Sparse blocked family: only one row is present in the strongest occurrence. Authoring evidence is substantially incomplete; resolve from lexicons and Qur'anic morphology or keep blocked."
-    },
-    {
-      "classification": "C",
-      "familyKey": "lexical|قشعر|تقشعر|verb",
-      "familyScope": null,
-      "root": "قشعر",
-      "lemmaOrCurrentForm": "تَقْشَعِرُّ",
-      "category": "verb",
-      "occurrenceCount": 1,
-      "maxCurrentFormCount": 1,
-      "occurrences": [
-        {
-          "occurrenceId": "word:39:23:8",
-          "location": "39:23:8",
-          "surah": 39,
-          "ayah": 23,
-          "position": 8,
-          "arabic": "تَقْشَعِرُّ",
-          "meaning": "Shiver",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "تَقْشَعِرُّ is a rootful verb with root ق ش ع ر. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ق ش ع ر",
-            "lemma": "تَقْشَعِرُّ",
-            "partOfSpeech": "verb",
-            "forms": [
-              "تَقْشَعِرُّ"
             ]
           }
         ],
