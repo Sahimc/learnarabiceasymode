@@ -1,7 +1,7 @@
 {
   "reportType": "final-sarf-completion-audit",
   "contractVersion": "1.3.9",
-  "generatedAt": "2026-10-22T11:32:34.930Z",
+  "generatedAt": "2026-10-22T12:49:57.847Z",
   "definition": "A distinct family is a reviewed root plus aligned provider lemma and part of speech; rootless items use category plus aligned lemma/current form. Occurrence counts remain separate.",
   "totals": {
     "packages": 114,
@@ -9,15 +9,15 @@
     "wordOccurrences": 77434,
     "distinctSarfFamilies": 6704,
     "familyCounts": {
-      "full": 5756,
-      "confirmed-limited": 604,
-      "blocked": 344,
+      "full": 5765,
+      "confirmed-limited": 613,
+      "blocked": 326,
       "unknown": 0
     },
     "occurrenceCounts": {
-      "full": 45739,
-      "confirmed-limited": 31185,
-      "blocked": 510,
+      "full": 45755,
+      "confirmed-limited": 31196,
+      "blocked": 483,
       "unknown": 0
     },
     "mixedFamilyCount": 0
@@ -107,15 +107,15 @@
       "families": 3849,
       "occurrences": 27537,
       "familyCounts": {
-        "full": 3360,
-        "confirmed-limited": 157,
-        "blocked": 332,
+        "full": 3369,
+        "confirmed-limited": 166,
+        "blocked": 314,
         "unknown": 0
       },
       "occurrenceCounts": {
-        "full": 26339,
-        "confirmed-limited": 704,
-        "blocked": 494,
+        "full": 26355,
+        "confirmed-limited": 715,
+        "blocked": 467,
         "unknown": 0
       }
     },
@@ -226,113 +226,6 @@
     {
       "recordType": "blocked-sarf-family-review",
       "contractVersion": "1.3.9",
-      "familyKey": "lexical|ندد|انداد|noun/pronoun",
-      "root": "ندد",
-      "lemmaOrCurrentForm": "أَنداد",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:2:22:21",
-          "surah": 2,
-          "ayah": 22,
-          "position": 21,
-          "arabic": "أَندَادًا",
-          "meaning": "rivals",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "أَندَادًا is a rootful noun with root ن د د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:2:165:8",
-          "surah": 2,
-          "ayah": 165,
-          "position": 8,
-          "arabic": "أَندَادًا",
-          "meaning": "equals",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "أَندَادًا is a rootful noun with root ن د د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:14:30:3",
-          "surah": 14,
-          "ayah": 30,
-          "position": 3,
-          "arabic": "أَندَادًا",
-          "meaning": "equals",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "أَندَادًا is a rootful noun with root ن د د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:34:33:17",
-          "surah": 34,
-          "ayah": 33,
-          "position": 17,
-          "arabic": "أَندَادًا",
-          "meaning": "equals",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "أَندَادًا is a rootful noun with root ن د د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:39:8:23",
-          "surah": 39,
-          "ayah": 8,
-          "position": 23,
-          "arabic": "أَندَادًا",
-          "meaning": "rivals",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "أَندَادًا is a rootful noun with root ن د د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:41:9:11",
-          "surah": 41,
-          "ayah": 9,
-          "position": 11,
-          "arabic": "أَندَادًا",
-          "meaning": "rivals",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "أَندَادًا is a rootful noun with root ن د د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ن د د",
-            "lemma": "أَنداد",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "أَندَادًا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.923Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
       "familyKey": "lexical|رغد|رغد|noun/pronoun",
       "root": "رغد",
       "lemmaOrCurrentForm": "رَغَد",
@@ -402,7 +295,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.843Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -476,70 +369,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|حطط|حطة|noun/pronoun",
-      "root": "حطط",
-      "lemmaOrCurrentForm": "حِطَّة",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:2:58:15",
-          "surah": 2,
-          "ayah": 58,
-          "position": 15,
-          "arabic": "حِطَّةٌ",
-          "meaning": "Repentance",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "حِطَّةٌ is a rootful noun with root ح ط ط. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:7:161:12",
-          "surah": 7,
-          "ayah": 161,
-          "position": 12,
-          "arabic": "حِطَّةٌ",
-          "meaning": "Repentance",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "حِطَّةٌ is a rootful noun with root ح ط ط. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ح ط ط",
-            "lemma": "حِطَّة",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "حِطَّةٌ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -591,7 +421,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -643,7 +473,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -695,7 +525,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -747,7 +577,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -799,7 +629,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -851,7 +681,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -935,7 +765,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -987,7 +817,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1039,7 +869,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1124,7 +954,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1187,7 +1017,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1272,7 +1102,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1369,7 +1199,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1432,7 +1262,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1528,7 +1358,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1601,7 +1431,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1653,7 +1483,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1705,7 +1535,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1768,7 +1598,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1820,7 +1650,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1872,7 +1702,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1924,7 +1754,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -1976,59 +1806,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|طلل|طل|noun/pronoun",
-      "root": "طلل",
-      "lemmaOrCurrentForm": "طَلٌّ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:2:265:23",
-          "surah": 2,
-          "ayah": 265,
-          "position": 23,
-          "arabic": "فَطَلٌّ",
-          "meaning": "then a drizzle",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "فَطَلٌّ is a rootful noun with root ط ل ل. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ط ل ل",
-            "lemma": "طَلٌّ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "فَطَلٌّ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2080,7 +1858,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2144,7 +1922,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2196,7 +1974,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2248,7 +2026,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2300,7 +2078,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2363,7 +2141,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2426,7 +2204,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2489,7 +2267,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2552,7 +2330,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.926Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2625,7 +2403,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2677,7 +2455,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2740,7 +2518,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2803,7 +2581,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2855,7 +2633,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -2939,7 +2717,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3002,7 +2780,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3054,59 +2832,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|فظظ|فظ|noun/pronoun",
-      "root": "فظظ",
-      "lemmaOrCurrentForm": "فَظّ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:3:159:9",
-          "surah": 3,
-          "ayah": 159,
-          "position": 9,
-          "arabic": "فَظًّا",
-          "meaning": "rude",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "فَظًّا is a rootful noun with root ف ظ ظ. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ف ظ ظ",
-            "lemma": "فَظّ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "فَظًّا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3158,7 +2884,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3210,7 +2936,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3262,7 +2988,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3314,7 +3040,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3366,7 +3092,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3429,7 +3155,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3492,7 +3218,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3566,7 +3292,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3618,7 +3344,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3670,7 +3396,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3722,7 +3448,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3774,7 +3500,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3826,7 +3552,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3925,7 +3651,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -3988,7 +3714,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4040,7 +3766,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4115,7 +3841,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4233,7 +3959,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4285,7 +4011,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4337,7 +4063,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4389,7 +4115,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4441,7 +4167,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4493,7 +4219,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4557,7 +4283,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4609,7 +4335,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4661,7 +4387,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4724,7 +4450,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4808,7 +4534,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4915,7 +4641,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -4967,7 +4693,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5019,7 +4745,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5039,7 +4765,7 @@
           "meaning": "(are) priests",
           "formCount": 1,
           "status": "blocked",
-          "currentReason": "قِسِّيسِينَ is a rootful noun with root ق س س. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+          "currentReason": "قِسِّيسِينَ is a religious title/loanword-like lexical item. Treating قسس as an ordinary productive doubled Arabic root would imply a false verb/maṣdar paradigm; the correct learner treatment needs a loanword/proper-title model."
         }
       ],
       "currentAnalysis": {
@@ -5071,7 +4797,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5134,7 +4860,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5186,7 +4912,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5238,7 +4964,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5290,7 +5016,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5342,7 +5068,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5405,7 +5131,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5469,7 +5195,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5653,7 +5379,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5726,7 +5452,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.845Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5778,7 +5504,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5830,7 +5556,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5925,7 +5651,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -5977,7 +5703,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6029,7 +5755,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6081,7 +5807,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6133,7 +5859,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6185,7 +5911,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6237,7 +5963,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6289,7 +6015,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6341,7 +6067,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6393,7 +6119,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6445,7 +6171,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6508,7 +6234,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6560,7 +6286,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6612,7 +6338,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6675,7 +6401,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6738,7 +6464,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6790,7 +6516,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6842,7 +6568,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6894,7 +6620,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -6946,59 +6672,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|حثث|حثيث|noun/pronoun",
-      "root": "حثث",
-      "lemmaOrCurrentForm": "حَثِيث",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:7:54:19",
-          "surah": 7,
-          "ayah": 54,
-          "position": 19,
-          "arabic": "حَثِيثًا",
-          "meaning": "rapidly",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "حَثِيثًا is a rootful noun with root ح ث ث. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ح ث ث",
-            "lemma": "حَثِيث",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "حَثِيثًا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7050,7 +6724,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7102,7 +6776,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.927Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7198,7 +6872,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7261,7 +6935,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7335,7 +7009,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7496,7 +7170,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7548,7 +7222,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7600,7 +7274,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7685,7 +7359,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7748,7 +7422,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7812,7 +7486,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7864,7 +7538,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7937,7 +7611,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -7989,7 +7663,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8041,7 +7715,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8093,7 +7767,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8145,7 +7819,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8197,7 +7871,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8260,7 +7934,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8312,7 +7986,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8364,7 +8038,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8416,7 +8090,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8468,7 +8142,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8520,7 +8194,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8572,7 +8246,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8624,7 +8298,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8676,7 +8350,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8728,7 +8402,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8791,7 +8465,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8843,7 +8517,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8895,7 +8569,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8947,7 +8621,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -8999,7 +8673,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9051,7 +8725,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9103,7 +8777,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9155,7 +8829,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9207,122 +8881,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|جذذ|مجذوذ|noun/pronoun",
-      "root": "جذذ",
-      "lemmaOrCurrentForm": "مَجْذُوذ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:11:108:18",
-          "surah": 11,
-          "ayah": 108,
-          "position": 18,
-          "arabic": "مَجْذُوذٍ",
-          "meaning": "interrupted",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "مَجْذُوذٍ is a rootful noun with root ج ذ ذ. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ج ذ ذ",
-            "lemma": "مَجْذُوذ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "مَجْذُوذٍ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|جبب|جب|noun/pronoun",
-      "root": "جبب",
-      "lemmaOrCurrentForm": "جُبِّ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:12:10:10",
-          "surah": 12,
-          "ayah": 10,
-          "position": 10,
-          "arabic": "ٱلْجُبِّ",
-          "meaning": "(of) the well",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "ٱلْجُبِّ is a rootful noun with root ج ب ب. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:12:15:9",
-          "surah": 12,
-          "ayah": 15,
-          "position": 9,
-          "arabic": "ٱلْجُبِّ",
-          "meaning": "(of) the well",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "ٱلْجُبِّ is a rootful noun with root ج ب ب. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ج ب ب",
-            "lemma": "جُبِّ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "ٱلْجُبِّ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9396,7 +8955,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9517,7 +9076,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9569,7 +9128,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9621,7 +9180,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9673,7 +9232,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9736,7 +9295,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9788,7 +9347,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9851,7 +9410,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9903,7 +9462,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -9989,7 +9548,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10041,7 +9600,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10104,7 +9663,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10188,7 +9747,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10240,7 +9799,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10292,7 +9851,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10344,7 +9903,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10408,7 +9967,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10460,7 +10019,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10546,7 +10105,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10598,7 +10157,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10650,7 +10209,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10702,7 +10261,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10754,7 +10313,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10806,7 +10365,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10858,7 +10417,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10921,7 +10480,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -10973,7 +10532,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11047,7 +10606,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11099,7 +10658,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11151,7 +10710,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11203,7 +10762,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11266,7 +10825,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11329,7 +10888,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11381,7 +10940,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11433,59 +10992,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|جوو|جو|noun/pronoun",
-      "root": "جوو",
-      "lemmaOrCurrentForm": "جَوّ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:16:79:7",
-          "surah": 16,
-          "ayah": 79,
-          "position": 7,
-          "arabic": "جَوِّ",
-          "meaning": "the midst",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "جَوِّ is a rootful noun with root ج و و. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ج و و",
-            "lemma": "جَوّ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "جَوِّ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11537,7 +11044,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11589,7 +11096,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11641,7 +11148,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11704,7 +11211,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11756,7 +11263,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11808,7 +11315,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11860,7 +11367,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11934,7 +11441,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -11997,7 +11504,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12060,7 +11567,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12112,7 +11619,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12175,7 +11682,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12227,7 +11734,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.928Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12279,7 +11786,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12331,7 +11838,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12394,7 +11901,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12511,7 +12018,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12563,7 +12070,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12615,7 +12122,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12667,7 +12174,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12719,7 +12226,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12771,7 +12278,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12823,7 +12330,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12875,7 +12382,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12927,7 +12434,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -12979,7 +12486,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13031,59 +12538,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|حنن|حنانا|noun/pronoun",
-      "root": "حنن",
-      "lemmaOrCurrentForm": "حَنَانًا",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:19:13:1",
-          "surah": 19,
-          "ayah": 13,
-          "position": 1,
-          "arabic": "وَحَنَانًا",
-          "meaning": "And affection",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "وَحَنَانًا is a rootful noun with root ح ن ن. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ح ن ن",
-            "lemma": "حَنَانًا",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "وَحَنَانًا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13135,7 +12590,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13198,7 +12653,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13250,111 +12705,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|ضدد|ضد|noun/pronoun",
-      "root": "ضدد",
-      "lemmaOrCurrentForm": "ضِدّ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:19:82:6",
-          "surah": 19,
-          "ayah": 82,
-          "position": 6,
-          "arabic": "ضِدًّا",
-          "meaning": "opponents",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "ضِدًّا is a rootful noun with root ض د د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ض د د",
-            "lemma": "ضِدّ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "ضِدًّا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|أزز|از|noun/pronoun",
-      "root": "أزز",
-      "lemmaOrCurrentForm": "أَزّ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:19:83:9",
-          "surah": 19,
-          "ayah": 83,
-          "position": 9,
-          "arabic": "أَزًّا",
-          "meaning": "(with) incitement",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "أَزًّا is a rootful noun with root أ ز ز. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "أ ز ز",
-            "lemma": "أَزّ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "أَزًّا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13406,163 +12757,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|أدد|اد|noun/pronoun",
-      "root": "أدد",
-      "lemmaOrCurrentForm": "إِدّ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:19:89:4",
-          "surah": 19,
-          "ayah": 89,
-          "position": 4,
-          "arabic": "إِدًّا",
-          "meaning": "atrocious",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "إِدًّا is a rootful noun with root أ د د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "أ د د",
-            "lemma": "إِدّ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "إِدًّا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|هدد|هد|noun/pronoun",
-      "root": "هدد",
-      "lemmaOrCurrentForm": "هَدّ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:19:90:9",
-          "surah": 19,
-          "ayah": 90,
-          "position": 9,
-          "arabic": "هَدًّا",
-          "meaning": "(in) devastation",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "هَدًّا is a rootful noun with root ه د د. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ه د د",
-            "lemma": "هَدّ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "هَدًّا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|لدد|لد|noun/pronoun",
-      "root": "لدد",
-      "lemmaOrCurrentForm": "لُدّ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:19:97:10",
-          "surah": 19,
-          "ayah": 97,
-          "position": 10,
-          "arabic": "لُّدًّا",
-          "meaning": "hostile",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "لُّدًّا is a rootful noun with root ل د د. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ل د د",
-            "lemma": "لُدّ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "لُّدًّا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13614,7 +12809,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13666,7 +12861,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13718,7 +12913,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13770,7 +12965,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13822,7 +13017,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13874,7 +13069,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13926,7 +13121,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -13978,7 +13173,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14030,7 +13225,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14082,7 +13277,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14134,7 +13329,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14186,7 +13381,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14238,7 +13433,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14290,7 +13485,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14342,7 +13537,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14394,7 +13589,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14446,7 +13641,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14509,7 +13704,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.846Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14561,7 +13756,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14613,7 +13808,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14686,7 +13881,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14738,7 +13933,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14790,7 +13985,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14842,7 +14037,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14894,7 +14089,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14946,7 +14141,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -14998,7 +14193,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15061,7 +14256,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15113,7 +14308,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15165,59 +14360,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|عرر|معتر|noun/pronoun",
-      "root": "عرر",
-      "lemmaOrCurrentForm": "مُعْتَرَّ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:22:36:22",
-          "surah": 22,
-          "ayah": 36,
-          "position": 22,
-          "arabic": "وَٱلْمُعْتَرَّ",
-          "meaning": "and the needy who ask",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "وَٱلْمُعْتَرَّ is a rootful noun with root ع ر ر. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ع ر ر",
-            "lemma": "مُعْتَرَّ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "وَٱلْمُعْتَرَّ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15269,7 +14412,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15321,80 +14464,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|ذبب|ذباب|noun/pronoun",
-      "root": "ذبب",
-      "lemmaOrCurrentForm": "ذُباب",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:22:73:15",
-          "surah": 22,
-          "ayah": 73,
-          "position": 15,
-          "arabic": "ذُبَابًا",
-          "meaning": "a fly",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "ذُبَابًا is a rootful noun with root ذ ب ب. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:22:73:21",
-          "surah": 22,
-          "ayah": 73,
-          "position": 21,
-          "arabic": "ٱلذُّبَابُ",
-          "meaning": "the fly",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "ٱلذُّبَابُ is a rootful noun with root ذ ب ب. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ذ ب ب",
-            "lemma": "ذُباب",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "ذُبَابًا",
-              "ٱلذُّبَابُ"
-            ]
-          },
-          {
-            "root": "ذ ب ب",
-            "lemma": "ذُّبَابُ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "ذُبَابًا",
-              "ٱلذُّبَابُ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15446,7 +14516,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15498,7 +14568,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15550,7 +14620,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15602,80 +14672,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|زجج|زجاجة|noun/pronoun",
-      "root": "زجج",
-      "lemmaOrCurrentForm": "زُجاجَة",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:24:35:12",
-          "surah": 24,
-          "ayah": 35,
-          "position": 12,
-          "arabic": "زُجَاجَةٍ",
-          "meaning": "a glass",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "زُجَاجَةٍ is a rootful noun with root ز ج ج. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        },
-        {
-          "occurrenceId": "word:24:35:13",
-          "surah": 24,
-          "ayah": 35,
-          "position": 13,
-          "arabic": "ٱلزُّجَاجَةُ",
-          "meaning": "the glass",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "ٱلزُّجَاجَةُ is a rootful noun with root ز ج ج. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ز ج ج",
-            "lemma": "زُجاجَة",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "زُجَاجَةٍ",
-              "ٱلزُّجَاجَةُ"
-            ]
-          },
-          {
-            "root": "ز ج ج",
-            "lemma": "زُّجَاجَةُ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "زُجَاجَةٍ",
-              "ٱلزُّجَاجَةُ"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15738,7 +14735,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15790,7 +14787,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15842,7 +14839,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15894,7 +14891,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15946,7 +14943,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -15966,7 +14963,7 @@
           "meaning": "(of) Ar-rass",
           "formCount": 1,
           "status": "blocked",
-          "currentReason": "ٱلرَّسِّ is a rootful noun with root ر س س. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+          "currentReason": "ٱلرَّسِّ is a Qur’anic proper place-name/toponym in these occurrences. The ordinary productive root-family model cannot safely turn the name into a five-row lexical paradigm; doing so would teach conjectural morphology."
         },
         {
           "occurrenceId": "word:50:12:6",
@@ -15977,7 +14974,7 @@
           "meaning": "(of) Ar-Raas",
           "formCount": 1,
           "status": "blocked",
-          "currentReason": "ٱلرَّسِّ is a rootful noun with root ر س س. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
+          "currentReason": "ٱلرَّسِّ is a Qur’anic proper place-name/toponym in these occurrences. The ordinary productive root-family model cannot safely turn the name into a five-row lexical paradigm; doing so would teach conjectural morphology."
         }
       ],
       "currentAnalysis": {
@@ -16009,7 +15006,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16072,7 +15069,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16124,7 +15121,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16176,7 +15173,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16228,7 +15225,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16280,7 +15277,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16332,7 +15329,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16406,7 +15403,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16458,7 +15455,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16510,7 +15507,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16562,7 +15559,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16614,7 +15611,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16666,7 +15663,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16718,7 +15715,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16770,7 +15767,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16822,7 +15819,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16874,7 +15871,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16926,7 +15923,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -16978,7 +15975,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17030,7 +16027,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17093,7 +16090,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17156,7 +16153,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17208,7 +16205,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17260,7 +16257,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17333,7 +16330,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17385,7 +16382,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17437,7 +16434,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17489,7 +16486,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17552,7 +16549,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17604,7 +16601,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17656,7 +16653,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17708,7 +16705,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17760,7 +16757,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17812,7 +16809,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17864,7 +16861,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17916,7 +16913,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -17968,7 +16965,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.929Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18020,7 +17017,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18072,7 +17069,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18124,7 +17121,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18176,7 +17173,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18228,7 +17225,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18280,7 +17277,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18332,7 +17329,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18395,7 +17392,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18447,7 +17444,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18499,7 +17496,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18551,7 +17548,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18603,59 +17600,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
-    },
-    {
-      "recordType": "blocked-sarf-family-review",
-      "contractVersion": "1.3.9",
-      "familyKey": "lexical|قطط|قط|noun/pronoun",
-      "root": "قطط",
-      "lemmaOrCurrentForm": "قِطّ",
-      "familyScope": null,
-      "category": "noun",
-      "quranicOccurrences": [
-        {
-          "occurrenceId": "word:38:16:5",
-          "surah": 38,
-          "ayah": 16,
-          "position": 5,
-          "arabic": "قِطَّنَا",
-          "meaning": "our share",
-          "formCount": 1,
-          "status": "blocked",
-          "currentReason": "قِطَّنَا is a rootful noun with root ق ط ط. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required."
-        }
-      ],
-      "currentAnalysis": {
-        "statusSet": [
-          "blocked"
-        ],
-        "publicationStatus": "blocked",
-        "providerAnalyses": [
-          {
-            "root": "ق ط ط",
-            "lemma": "قِطّ",
-            "partOfSpeech": "noun/pronoun",
-            "forms": [
-              "قِطَّنَا"
-            ]
-          }
-        ],
-        "note": "This family was not silently accepted as limited. At least one occurrence remains explicitly blocked after the current evidence-led review pass."
-      },
-      "competingPossibleAnalyses": [
-        "The aligned provider lemma/root/POS may identify a productive lexical family that supports additional reviewed forms.",
-        "The occurrence may be a restricted lexical item or an occurrence-specific noun/verb whose useful contrasts are not represented in the current project evidence.",
-        "Some apparent alternatives may be only article, conjunction, pronoun or case shells and therefore must not count as Ṣarf forms."
-      ],
-      "whyAutomaticResolutionIsUnsafe": "The current evidence does not establish four additional learner-useful forms with reliable form-specific meanings and relationships without risking fabricated, wrong-root, duplicate, shell-only or pedagogically misleading rows.",
-      "evidenceRequiredToResolve": [
-        "An approved Arabic/Qur'anic lexicon entry for the reviewed root and lemma.",
-        "Canonical Qur'anic evidence or an authoritative morphology reference for each proposed related form.",
-        "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
-        "A provenance-backed decision identifying whether the family should be full or specifically limited."
-      ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18743,7 +17688,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18795,7 +17740,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18847,7 +17792,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18899,7 +17844,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -18951,7 +17896,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19003,7 +17948,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19066,7 +18011,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19118,7 +18063,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19170,7 +18115,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19222,7 +18167,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19274,7 +18219,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19326,7 +18271,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19378,7 +18323,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19430,7 +18375,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19482,7 +18427,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19534,7 +18479,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19598,7 +18543,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19650,7 +18595,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19702,7 +18647,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19754,7 +18699,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19806,7 +18751,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19858,7 +18803,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19910,7 +18855,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -19962,7 +18907,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -20014,7 +18959,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -20087,7 +19032,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -20139,7 +19084,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     },
     {
       "recordType": "blocked-sarf-family-review",
@@ -20191,7 +19136,7 @@
         "Expert Arabic/Qur'anic morphology adjudication where provider, lexicon or occurrence analyses conflict.",
         "A provenance-backed decision identifying whether the family should be full or specifically limited."
       ],
-      "reviewedAt": "2026-10-22T11:32:34.930Z"
+      "reviewedAt": "2026-10-22T12:49:57.847Z"
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 Contract: v1.3.9
 
-This is a planning-only artifact. It covers the unchanged C3-C pool of 149 families / 195 occurrences. No C3-C Ṣarf rows were changed in the C3-B pass.
+This artifact covers the C3-C pool of 149 families / 195 occurrences. C3-C1 DOUBLED is now complete for 20 families / 30 occurrences; the remaining C3-C tracks are unchanged.
 
 | Priority | Track | Families | Occurrences | Execution focus |
 |---:|---|---:|---:|---|
@@ -16,4 +16,4 @@ The primary tracks are mutually exclusive and reconcile exactly to 149 families 
 
 Recommended batch order: doubled roots, hamzated roots, quadriliterals, weak roots, then root/lemma uncertainty.
 
-Status: planning only; C3-C adjudication has not started.
+Status: C3-C1 DOUBLED complete. HAMZATED, QUADRILITERAL, WEAK and ROOT/LEMMA-UNCERTAIN adjudication has not started.

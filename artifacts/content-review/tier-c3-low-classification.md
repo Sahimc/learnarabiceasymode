@@ -1,59 +1,60 @@
 # Tier-C LOW classification
 
-Generated: 2026-10-22T11:31:10.715Z
+Generated: 2026-10-22T12:48:50.517Z
 
-C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occurrences. C3-C, C3-D and C3-E were not started.
+C3-C1 doubled-root adjudication covers exactly 20 families / 30 occurrences. The two mixed hamzated+doubled families أثث and ألل remain excluded for the hamzated track; C3-C2 and later tracks were not started.
 
-## C3-B summary
+## C3-C1 summary
 
 ```json
 {
   "contractVersion": "1.3.9",
-  "reviewedAt": "2026-10-22T11:31:10.715Z",
-  "scopeFamilies": 23,
-  "scopeOccurrences": 29,
+  "reviewedAt": "2026-10-22T12:48:50.517Z",
+  "scopeFamilies": 20,
+  "scopeOccurrences": 30,
   "decisions": {
-    "FULL": 23,
-    "CONFIRMED-LIMITED": 0,
+    "FULL": 9,
+    "CONFIRMED-LIMITED": 9,
     "BLOCKED": 0,
-    "MODEL-ISSUE": 0
+    "MODEL-ISSUE": 2
   },
   "occurrencesByDecision": {
-    "FULL": 29,
-    "CONFIRMED-LIMITED": 0,
+    "FULL": 16,
+    "CONFIRMED-LIMITED": 11,
     "BLOCKED": 0,
-    "MODEL-ISSUE": 0
-  }
+    "MODEL-ISSUE": 3
+  },
+  "explicitBoundary": "The planning artifact's DOUBLED track excludes the two mixed hamzated+doubled families أثث and ألل; those remain in the hamzated queue."
 }
 ```
 
 ## Families
 
-| Family | Word | Root | Group | Occurrences | Predicted | Decision |
+| Family | Word | Root | Group | Occurrences | Predicted | C3-C1 decision |
 |---|---|---|---|---:|---|---|
-| lexical|دحر|مدحور|noun/pronoun | مَّدْحُورًا | دحر | C3-B | 3 | HIGH | FULL |
-| lexical|جهز|جهاز|noun/pronoun | بِجَهَازِهِمْ | جهز | C3-B | 2 | HIGH | FULL |
-| lexical|مزق|ممزق|noun/pronoun | مُمَزَّقٍ | مزق | C3-B | 2 | HIGH | FULL |
-| lexical|مرح|مرح|noun/pronoun | مَرَحًا | مرح | C3-B | 2 | HIGH | FULL |
-| lexical|رفق|رفيق|noun/pronoun | رَفِيقًا | رفق | C3-B | 1 | HIGH | FULL |
-| lexical|جرح|جروح|noun/pronoun | وَٱلْجُرُوحَ | جرح | C3-B | 1 | HIGH | FULL |
-| lexical|جرح|جوارح|noun/pronoun | ٱلْجَوَارِحِ | جرح | C3-B | 1 | HIGH | FULL |
-| lexical|حصد|حصاد|noun/pronoun | حَصَادِهِۦ | حصد | C3-B | 1 | HIGH | FULL |
-| lexical|خدع|خادع|noun/pronoun | خَـٰدِعُهُمْ | خدع | C3-B | 1 | HIGH | FULL |
-| lexical|سخط|سخط|noun/pronoun | بِسَخَطٍ | سخط | C3-B | 1 | HIGH | FULL |
-| lexical|نسخ|نسخت|noun/pronoun | نُسْخَتِهَا | نسخ | C3-B | 1 | HIGH | FULL |
-| lexical|بذر|تبذير|noun/pronoun | تَبْذِيرًا | بذر | C3-B | 1 | HIGH | FULL |
-| lexical|بذر|مبذرين|noun/pronoun | ٱلْمُبَذِّرِينَ | بذر | C3-B | 1 | HIGH | FULL |
-| lexical|برم|مبرم|noun/pronoun | مُبْرِمُونَ | برم | C3-B | 1 | HIGH | FULL |
-| lexical|خضع|خاضع|noun/pronoun | خَـٰضِعِينَ | خضع | C3-B | 1 | HIGH | FULL |
-| lexical|ستر|مستور|noun/pronoun | مَّسْتُورًا | ستر | C3-B | 1 | HIGH | FULL |
-| lexical|نقب|نقيب|noun/pronoun | نَقِيبًا | نقب | C3-B | 1 | HIGH | FULL |
-| lexical|طعن|طعنا|noun/pronoun | وَطَعْنًا | طعن | C3-B | 1 | HIGH | FULL |
-| lexical|عبث|عبث|noun/pronoun | عَبَثًا | عبث | C3-B | 1 | HIGH | FULL |
-| lexical|فتر|فترة|noun/pronoun | فَتْرَةٍ | فتر | C3-B | 1 | HIGH | FULL |
-| lexical|هضم|هضم|noun/pronoun | هَضْمًا | هضم | C3-B | 1 | HIGH | FULL |
-| lexical|زفر|زفير|noun/pronoun | زَفِيرٌ | زفر | C3-B | 2 | LOW | FULL |
-| lexical|ندم|ندمين|noun/pronoun | ٱلنَّـٰدِمِينَ | ندم | C3-B | 1 | LOW | FULL |
+| lexical|دحر|مدحور|noun/pronoun | مَّدْحُورًا | دحر | C3-B | 3 | HIGH | — |
+| lexical|جهز|جهاز|noun/pronoun | بِجَهَازِهِمْ | جهز | C3-B | 2 | HIGH | — |
+| lexical|مزق|ممزق|noun/pronoun | مُمَزَّقٍ | مزق | C3-B | 2 | HIGH | — |
+| lexical|مرح|مرح|noun/pronoun | مَرَحًا | مرح | C3-B | 2 | HIGH | — |
+| lexical|رفق|رفيق|noun/pronoun | رَفِيقًا | رفق | C3-B | 1 | HIGH | — |
+| lexical|جرح|جروح|noun/pronoun | وَٱلْجُرُوحَ | جرح | C3-B | 1 | HIGH | — |
+| lexical|جرح|جوارح|noun/pronoun | ٱلْجَوَارِحِ | جرح | C3-B | 1 | HIGH | — |
+| lexical|حصد|حصاد|noun/pronoun | حَصَادِهِۦ | حصد | C3-B | 1 | HIGH | — |
+| lexical|خدع|خادع|noun/pronoun | خَـٰدِعُهُمْ | خدع | C3-B | 1 | HIGH | — |
+| lexical|سخط|سخط|noun/pronoun | بِسَخَطٍ | سخط | C3-B | 1 | HIGH | — |
+| lexical|نسخ|نسخت|noun/pronoun | نُسْخَتِهَا | نسخ | C3-B | 1 | HIGH | — |
+| lexical|بذر|تبذير|noun/pronoun | تَبْذِيرًا | بذر | C3-B | 1 | HIGH | — |
+| lexical|بذر|مبذرين|noun/pronoun | ٱلْمُبَذِّرِينَ | بذر | C3-B | 1 | HIGH | — |
+| lexical|برم|مبرم|noun/pronoun | مُبْرِمُونَ | برم | C3-B | 1 | HIGH | — |
+| lexical|خضع|خاضع|noun/pronoun | خَـٰضِعِينَ | خضع | C3-B | 1 | HIGH | — |
+| lexical|ستر|مستور|noun/pronoun | مَّسْتُورًا | ستر | C3-B | 1 | HIGH | — |
+| lexical|نقب|نقيب|noun/pronoun | نَقِيبًا | نقب | C3-B | 1 | HIGH | — |
+| lexical|طعن|طعنا|noun/pronoun | وَطَعْنًا | طعن | C3-B | 1 | HIGH | — |
+| lexical|عبث|عبث|noun/pronoun | عَبَثًا | عبث | C3-B | 1 | HIGH | — |
+| lexical|فتر|فترة|noun/pronoun | فَتْرَةٍ | فتر | C3-B | 1 | HIGH | — |
+| lexical|هضم|هضم|noun/pronoun | هَضْمًا | هضم | C3-B | 1 | HIGH | — |
+| lexical|زفر|زفير|noun/pronoun | زَفِيرٌ | زفر | C3-B | 2 | LOW | — |
+| lexical|ندم|ندمين|noun/pronoun | ٱلنَّـٰدِمِينَ | ندم | C3-B | 1 | LOW | — |
 | lexical|هيأ|هية|noun/pronoun | كَهَيْـَٔةِ | هيأ | C3-C | 2 | MEDIUM | — |
 | lexical|ميد|مائدة|noun/pronoun | مَآئِدَةً | ميد | C3-C | 2 | MEDIUM | — |
 | lexical|زول|زوال|noun/pronoun | زَوَالٍ | زول | C3-C | 1 | MEDIUM | — |
@@ -71,11 +72,11 @@ C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occu
 | lexical|قصو|قصوى|noun/pronoun | ٱلْقُصْوَىٰ | قصو | C3-C | 1 | MEDIUM | — |
 | lexical|هور|هار|noun/pronoun | هَارٍ | هور | C3-C | 1 | MEDIUM | — |
 | lexical|يبس|يابس|noun/pronoun | يَابِسٍ | يبس | C3-C | 1 | MEDIUM | — |
-| lexical|أزز|از|noun/pronoun | أَزًّا | أزز | C3-C | 1 | MEDIUM | — |
-| lexical|جذذ|مجذوذ|noun/pronoun | مَجْذُوذٍ | جذذ | C3-C | 1 | MEDIUM | — |
-| lexical|لدد|لد|noun/pronoun | لُّدًّا | لدد | C3-C | 1 | MEDIUM | — |
+| lexical|أزز|از|noun/pronoun | أَزًّا | أزز | C3-C | 1 | MEDIUM | CONFIRMED-LIMITED |
+| lexical|جذذ|مجذوذ|noun/pronoun | مَجْذُوذٍ | جذذ | C3-C | 1 | MEDIUM | FULL |
+| lexical|لدد|لد|noun/pronoun | لُّدًّا | لدد | C3-C | 1 | MEDIUM | FULL |
 | lexical|ورق|ورقة|noun/pronoun | وَرَقَةٍ | ورق | C3-C | 1 | MEDIUM | — |
-| lexical|ندد|انداد|noun/pronoun | أَندَادًا | ندد | C3-C | 6 | LOW | — |
+| lexical|ندد|انداد|noun/pronoun | أَندَادًا | ندد | C3-C | 6 | LOW | FULL |
 | lexical|صيد|صيد|noun/pronoun | ٱلصَّيْدِ | صيد | C3-C | 5 | LOW | — |
 | lexical|خطو|خطوة|noun/pronoun | خُطُوَٰتِ | خطو | C3-C | 5 | LOW | — |
 | lexical|حمأ|حما|noun/pronoun | حَمَإٍ | حمأ | C3-C | 3 | LOW | — |
@@ -86,14 +87,14 @@ C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occu
 | lexical|أثث|اثاث|noun/pronoun | أَثَـٰثًا | أثث | C3-C | 2 | LOW | — |
 | lexical|ألل|الا|noun/pronoun | إِلًّا | ألل | C3-C | 2 | LOW | — |
 | lexical|تور|تارة|noun/pronoun | تَارَةً | تور | C3-C | 2 | LOW | — |
-| lexical|جبب|جب|noun/pronoun | ٱلْجُبِّ | جبب | C3-C | 2 | LOW | — |
-| lexical|حطط|حطة|noun/pronoun | حِطَّةٌ | حطط | C3-C | 2 | LOW | — |
+| lexical|جبب|جب|noun/pronoun | ٱلْجُبِّ | جبب | C3-C | 2 | LOW | FULL |
+| lexical|حطط|حطة|noun/pronoun | حِطَّةٌ | حطط | C3-C | 2 | LOW | FULL |
 | lexical|حنجر|حناجر|noun/pronoun | ٱلْحَنَاجِرَ | حنجر | C3-C | 2 | LOW | — |
 | lexical|خردل|خردل|noun/pronoun | خَرْدَلٍ | خردل | C3-C | 2 | LOW | — |
 | lexical|خور|خوار|noun/pronoun | خُوَارٌ | خور | C3-C | 2 | LOW | — |
-| lexical|ذبب|ذباب|noun/pronoun | ذُبَابًا | ذبب | C3-C | 2 | LOW | — |
-| lexical|رسس|رس|noun/pronoun | ٱلرَّسِّ | رسس | C3-C | 2 | LOW | — |
-| lexical|زجج|زجاجة|noun/pronoun | زُجَاجَةٍ | زجج | C3-C | 2 | LOW | — |
+| lexical|ذبب|ذباب|noun/pronoun | ذُبَابًا | ذبب | C3-C | 2 | LOW | CONFIRMED-LIMITED |
+| lexical|رسس|رس|noun/pronoun | ٱلرَّسِّ | رسس | C3-C | 2 | LOW | MODEL-ISSUE |
+| lexical|زجج|زجاجة|noun/pronoun | زُجَاجَةٍ | زجج | C3-C | 2 | LOW | CONFIRMED-LIMITED |
 | lexical|سرمد|سرمد|noun/pronoun | سَرْمَدًا | سرمد | C3-C | 2 | LOW | — |
 | lexical|شفو|شفا|noun/pronoun | شَفَا | شفو | C3-C | 2 | LOW | — |
 | lexical|صنو|صنوان|noun/pronoun | صِنْوَانٌ | صنو | C3-C | 2 | LOW | — |
@@ -116,7 +117,7 @@ C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occu
 | lexical|قيل|قائل|noun/pronoun | قَآئِلُونَ | قيل | C3-C | 1 | LOW | — |
 | lexical|وثن|اوثن|noun/pronoun | ٱلْأَوْثَـٰنِ | وثن | C3-C | 1 | LOW | — |
 | lexical|أثل|اثل|noun/pronoun | وَأَثْلٍ | أثل | C3-C | 1 | LOW | — |
-| lexical|أدد|اد|noun/pronoun | إِدًّا | أدد | C3-C | 1 | LOW | — |
+| lexical|أدد|اد|noun/pronoun | إِدًّا | أدد | C3-C | 1 | LOW | CONFIRMED-LIMITED |
 | lexical|أسن|اسن|noun/pronoun | ءَاسِنٍ | أسن | C3-C | 1 | LOW | — |
 | lexical|أمت|امت|noun/pronoun | أَمْتًا | أمت | C3-C | 1 | LOW | — |
 | lexical|أوه|اوه|noun/pronoun | لَأَوَّٰهٌ | أوه | C3-C | 1 | LOW | — |
@@ -127,10 +128,10 @@ C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occu
 | lexical|جذو|جذوة|noun/pronoun | جَذْوَةٍ | جذو | C3-C | 1 | LOW | — |
 | lexical|جفأ|جفاء|noun/pronoun | جُفَآءً | جفأ | C3-C | 1 | LOW | — |
 | lexical|جوف|جوف|noun/pronoun | جَوْفِهِۦ | جوف | C3-C | 1 | LOW | — |
-| lexical|جوو|جو|noun/pronoun | جَوِّ | جوو | C3-C | 1 | LOW | — |
-| lexical|حثث|حثيث|noun/pronoun | حَثِيثًا | حثث | C3-C | 1 | LOW | — |
+| lexical|جوو|جو|noun/pronoun | جَوِّ | جوو | C3-C | 1 | LOW | CONFIRMED-LIMITED |
+| lexical|حثث|حثيث|noun/pronoun | حَثِيثًا | حثث | C3-C | 1 | LOW | FULL |
 | lexical|حصحص|حصحص|verb | حَصْحَصَ | حصحص | C3-C | 1 | LOW | — |
-| lexical|حنن|حنانا|noun/pronoun | وَحَنَانًا | حنن | C3-C | 1 | LOW | — |
+| lexical|حنن|حنانا|noun/pronoun | وَحَنَانًا | حنن | C3-C | 1 | LOW | FULL |
 | lexical|حوب|حوب|noun/pronoun | حُوبًا | حوب | C3-C | 1 | LOW | — |
 | lexical|حير|حيران|noun/pronoun | حَيْرَانَ | حير | C3-C | 1 | LOW | — |
 | lexical|خبأ|خبء|noun/pronoun | ٱلْخَبْءَ | خبأ | C3-C | 1 | LOW | — |
@@ -157,24 +158,24 @@ C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occu
 | lexical|صوف|اصواف|noun/pronoun | أَصْوَافِهَا | صوف | C3-C | 1 | LOW | — |
 | lexical|صيص|صياصي|noun/pronoun | صَيَاصِيهِمْ | صيص | C3-C | 1 | LOW | — |
 | lexical|ضأن|ضان|noun/pronoun | ٱلضَّأْنِ | ضأن | C3-C | 1 | LOW | — |
-| lexical|ضدد|ضد|noun/pronoun | ضِدًّا | ضدد | C3-C | 1 | LOW | — |
+| lexical|ضدد|ضد|noun/pronoun | ضِدًّا | ضدد | C3-C | 1 | LOW | FULL |
 | lexical|ضفدع|ضفادع|noun/pronoun | وَٱلضَّفَادِعَ | ضفدع | C3-C | 1 | LOW | — |
 | lexical|ضير|ضير|noun/pronoun | ضَيْرَ | ضير | C3-C | 1 | LOW | — |
-| lexical|طلل|طل|noun/pronoun | فَطَلٌّ | طلل | C3-C | 1 | LOW | — |
+| lexical|طلل|طل|noun/pronoun | فَطَلٌّ | طلل | C3-C | 1 | LOW | CONFIRMED-LIMITED |
 | lexical|طود|طود|noun/pronoun | كَٱلطَّوْدِ | طود | C3-C | 1 | LOW | — |
 | lexical|عرجن|عرجون|noun/pronoun | كَٱلْعُرْجُونِ | عرجن | C3-C | 1 | LOW | — |
-| lexical|عرر|معتر|noun/pronoun | وَٱلْمُعْتَرَّ | عرر | C3-C | 1 | LOW | — |
+| lexical|عرر|معتر|noun/pronoun | وَٱلْمُعْتَرَّ | عرر | C3-C | 1 | LOW | CONFIRMED-LIMITED |
 | lexical|عضو|عضين|noun/pronoun | عِضِينَ | عضو | C3-C | 1 | LOW | — |
 | lexical|عوق|معوقين|noun/pronoun | ٱلْمُعَوِّقِينَ | عوق | C3-C | 1 | LOW | — |
 | lexical|غزو|غزى|noun/pronoun | غُزًّى | غزو | C3-C | 1 | LOW | — |
 | lexical|غول|غول|noun/pronoun | غَوْلٌ | غول | C3-C | 1 | LOW | — |
 | lexical|فجو|فجوة|noun/pronoun | فَجْوَةٍ | فجو | C3-C | 1 | LOW | — |
-| lexical|فظظ|فظ|noun/pronoun | فَظًّا | فظظ | C3-C | 1 | LOW | — |
+| lexical|فظظ|فظ|noun/pronoun | فَظًّا | فظظ | C3-C | 1 | LOW | CONFIRMED-LIMITED |
 | lexical|فوم|فوم|noun/pronoun | وَفُومِهَا | فوم | C3-C | 1 | LOW | — |
 | lexical|قثأ|قثائ|noun/pronoun | وَقِثَّآئِهَا | قثأ | C3-C | 1 | LOW | — |
-| lexical|قسس|قسيس|noun/pronoun | قِسِّيسِينَ | قسس | C3-C | 1 | LOW | — |
+| lexical|قسس|قسيس|noun/pronoun | قِسِّيسِينَ | قسس | C3-C | 1 | LOW | MODEL-ISSUE |
 | lexical|قشعر|تقشعر|verb | تَقْشَعِرُّ | قشعر | C3-C | 1 | LOW | — |
-| lexical|قطط|قط|noun/pronoun | قِطَّنَا | قطط | C3-C | 1 | LOW | — |
+| lexical|قطط|قط|noun/pronoun | قِطَّنَا | قطط | C3-C | 1 | LOW | CONFIRMED-LIMITED |
 | lexical|قطمر|قطمير|noun/pronoun | قِطْمِيرٍ | قطمر | C3-C | 1 | LOW | — |
 | lexical|قنطر|مقنطرة|noun/pronoun | ٱلْمُقَنطَرَةِ | قنطر | C3-C | 1 | LOW | — |
 | lexical|قنو|قنوان|noun/pronoun | قِنْوَانٌ | قنو | C3-C | 1 | LOW | — |
@@ -189,7 +190,7 @@ C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occu
 | lexical|نوص|مناص|noun/pronoun | مَنَاصٍ | نوص | C3-C | 1 | LOW | — |
 | lexical|نون|نون|noun/pronoun | ٱلنُّونِ | نون | C3-C | 1 | LOW | — |
 | lexical|نوي|نوى|noun/pronoun | وَٱلنَّوَىٰ | نوي | C3-C | 1 | LOW | — |
-| lexical|هدد|هد|noun/pronoun | هَدًّا | هدد | C3-C | 1 | LOW | — |
+| lexical|هدد|هد|noun/pronoun | هَدًّا | هدد | C3-C | 1 | LOW | FULL |
 | lexical|هدهد|هدهد|noun/pronoun | ٱلْهُدْهُدَ | هدهد | C3-C | 1 | LOW | — |
 | lexical|هيت|هيت|noun/pronoun | هَيْتَ | هيت | C3-C | 1 | LOW | — |
 | lexical|وأل|موئل|noun/pronoun | مَوْئِلًا | وأل | C3-C | 1 | LOW | — |

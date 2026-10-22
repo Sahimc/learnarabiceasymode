@@ -1,0 +1,578 @@
+# Tier-C3-C1 doubled-root Ṣarf adjudications
+
+Reviewed at: 2026-10-22T12:48:50.517Z
+Contract: 1.3.9
+
+This report covers exactly the planning artifact’s DOUBLED track: 20 families / 30 occurrences. The two mixed hamzated+doubled families أثث and ألل are explicitly excluded and remain queued for the hamzated track.
+
+## Summary
+
+```json
+{
+  "startingC3C1Families": 20,
+  "startingC3C1Occurrences": 30,
+  "decisions": {
+    "FULL": 9,
+    "CONFIRMED-LIMITED": 9,
+    "BLOCKED": 0,
+    "MODEL-ISSUE": 2
+  },
+  "occurrencesByDecision": {
+    "FULL": 16,
+    "CONFIRMED-LIMITED": 11,
+    "BLOCKED": 0,
+    "MODEL-ISSUE": 3
+  },
+  "adjudicatedFamilies": 20,
+  "adjudicatedOccurrences": 30,
+  "changedSurahs": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    12,
+    14,
+    16,
+    19,
+    22,
+    24,
+    25,
+    34,
+    38,
+    39,
+    41,
+    50
+  ],
+  "changedPackageFiles": [
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\002-al-baqarah\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\003-l-imr-n\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\005-al-m-idah\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\007-al-a-r-f\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\011-h-d\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\012-y-suf\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\014-ibr-h-m\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\016-an-na-l\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\019-maryam\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\022-al-ajj\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\024-an-n-r\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\025-al-furq-n\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\034-saba\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\038-d\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\039-az-zumar\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\041-fu-ilat\\surah.json",
+    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\050-q-f\\surah.json"
+  ],
+  "glossCorrection": {
+    "occurrence": "5:12:11",
+    "oldMeaning": "leaders",
+    "newMeaning": "a leader / chief"
+  },
+  "excludedMixedHamzatedDoubledFamilies": [
+    "lexical|أثث|اثاث|noun/pronoun",
+    "lexical|ألل|الا|noun/pronoun"
+  ],
+  "excludedTracks": [
+    "C3-C2 hamzated",
+    "C3-C3 quadriliteral",
+    "C3-C4 weak",
+    "C3-C5 root/lemma uncertain",
+    "C3-D",
+    "C3-E",
+    "C2 residuals",
+    "earlier residual exceptions"
+  ]
+}
+```
+
+## lexical|أزز|از|noun/pronoun
+
+Decision: **CONFIRMED-LIMITED**; root: أزز; word: أَزًّا; locations: 19:83:9
+
+Original predicted resolvability: MEDIUM
+
+The root has a secure Qur’anic verb and a related action noun, but the evidence reviewed here does not establish a fourth independent learner-useful member beyond the perfect, imperfect and maṣdar without relying on a weakly attested passive derivative. A reviewed limited family is therefore more accurate than padding.
+
+Accepted candidates:
+
+- أَزَّ — he urged / impelled; Form I perfect verb; The basic verb related to the Qur’anic incitement noun.; The noun names the urging; the verb presents the action.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَؤُزُّ — he urges / incites; Form I imperfect verb; The imperfect counterpart of أَزَّ.; Aspect changes while the incitement sense remains explicit.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- إِزَازٌ — urging / incitement; Form I verbal noun (maṣdar); The action noun of أَزَّ.; Names the action rather than a participant.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- The bare noun without its case ending was not counted separately.
+- تَؤُزُّ was rejected as person/subject-marking duplication of the accepted imperfect lexeme.
+- مَأْزُوزٌ was rejected because the available project evidence did not securely establish it as a useful lexical row.
+- تَؤُزُّ: Rejected as a separate row because it is the same imperfect lexeme as يَؤُزُّ with subject marking only; the Qur’anic occurrence is retained as evidence.
+- مَأْزُوزٌ: Not accepted without a project-approved lexical attestation for this rare passive form; the limited family is safer than generated completion.
+
+Unresolved question: None
+Human expert review still required: no
+
+## lexical|جذذ|مجذوذ|noun/pronoun
+
+Decision: **FULL**; root: جذذ; word: مَجْذُوذٍ; locations: 11:108:18
+
+Original predicted resolvability: MEDIUM
+
+The ج ذ ذ family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.
+
+Accepted candidates:
+
+- جَذَّ — he cut off / severed; Form I perfect verb; The active action behind the Qur’anic passive participle.; The Qur’anic form presents the severed result; the verb presents the action.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ج ذ ذ, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَجُذُّ — he cuts off / severs; Form I imperfect verb; The ongoing form of جَذَّ.; The aspect changes without flattening the result/action contrast.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ج ذ ذ, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- جَذٌّ — cutting off / severance; Form I verbal noun; The action noun of جَذَّ.; Names the act rather than the actor or affected object.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ج ذ ذ, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- جُذَاذٌ — pieces / fragments; Lexical noun; The broken-result noun is attested in the Qur’anic root family.; It names what has been cut into pieces, while مَجْذُوذٌ describes what has been severed.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ج ذ ذ, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- مَجْذُوذٌ was rejected as a duplicate of the current passive-participle lexeme, differing only by inflection.
+- مَجْذُوذٌ: This is the same lexical form as the current Qur’anic مَجْذُوذٍ; changing only the case ending is not a new row.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|لدد|لد|noun/pronoun
+
+Decision: **FULL**; root: لدد; word: لُّدًّا; locations: 19:97:10
+
+Original predicted resolvability: MEDIUM
+
+The ل د د family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.
+
+Accepted candidates:
+
+- لَدَّ — he disputed fiercely; Form I perfect verb; The action behind the Qur’anic hostile-disputant adjective/noun.; The Qur’anic form names the hostile disputants; the verb supplies the action.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ل د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَلُدُّ — he disputes fiercely; Form I imperfect verb; The ongoing counterpart of لَدَّ.; Aspect changes while the dispute sense remains explicit.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ل د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- لَدَدٌ — vehemence in dispute; Form I verbal noun; The abstract noun of the dispute branch.; Names the quality or intensity rather than its participants.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ل د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- أَلَدُّ — more / most quarrelsome; Elative adjective; An established adjective from the same root.; The Qur’anic plural hostile form and the elative show a related adjectival development.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ل د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- لُدٌّ was rejected as the same lexeme as the current Qur’anic plural, not an additional morphological family member.
+- لُدٌّ: Rejected because it is the same lexical plural represented by the current لُّدًّا; only case/definiteness changes.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|ندد|انداد|noun/pronoun
+
+Decision: **FULL**; root: ندد; word: أَندَادًا; locations: 2:22:21, 2:165:8, 14:30:3, 34:33:17, 39:8:23, 41:9:11
+
+Original predicted resolvability: LOW
+
+The ن د د family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.
+
+Accepted candidates:
+
+- نَدَّ — he fled / strayed away; Form I perfect verb; The basic fleeing/aversion branch of the root.; The Qur’anic plural means equals or rivals; the verb shows the root’s other established branch and is translated independently.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ن د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَنِدُّ — he flees / strays away; Form I imperfect verb; The ongoing form of نَدَّ.; Aspect changes within the fleeing branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ن د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- نُدُودٌ — fleeing / aversion; Form I verbal noun; The action noun of نَدَّ.; Names the fleeing tendency rather than an equal or rival.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ن د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- نِدٌّ — an equal / rival; Lexical noun; singular of the Qur’anic broken plural; The singular lexical counterpart of أَندَادًا.; The number contrast is a real broken-plural relationship, not case-only padding.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ن د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- أَنْدَادٌ was rejected as case-only removal of the current surface ending; نِدٌّ is the accepted lexical number contrast.
+- أَنْدَادٌ: Rejected because it is the same lexical form as the current Qur’anic أَندَادًا; removing tanwīn is case-only variation.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|جبب|جب|noun/pronoun
+
+Decision: **FULL**; root: جبب; word: ٱلْجُبِّ; locations: 12:10:10, 12:15:9
+
+Original predicted resolvability: LOW
+
+The ج ب ب family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.
+
+Accepted candidates:
+
+- جَبَّ — he cut off / dug out; Form I perfect verb; The active root action associated with cutting or hollowing.; The Qur’anic جُبّ is a well or pit; the relationship is explained as the hollowed/cut space, not as identical English meaning.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ج ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَجُبُّ — he cuts off / digs out; Form I imperfect verb; The ongoing form of جَبَّ.; Aspect changes within the same lexical branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ج ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- جَبٌّ — cutting off / hollowing; Form I verbal noun; The action noun of جَبَّ.; Names the act that produces a hollow or cut space.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ج ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- مَجْبُوبٌ — cut off / amputated; Form I passive participle; The affected-object form of جَبَّ.; The meaning is the severed result, not the well noun; the semantic development is stated honestly.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ج ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- جُبٌّ was rejected as the current lexical noun without its genitive ending.
+- جُبٌّ: Rejected because it is the same lexical noun as the current Qur’anic جُبِّ; removing the case ending is not a new row.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|حطط|حطة|noun/pronoun
+
+Decision: **FULL**; root: حطط; word: حِطَّةٌ; locations: 2:58:15, 7:161:12
+
+Original predicted resolvability: LOW
+
+The ح ط ط family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.
+
+Accepted candidates:
+
+- حَطَّ — he lowered / put down; Form I perfect verb; The action behind the lowering/removal root.; The Qur’anic word is a noun of release or removal; the verb names the lowering action.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَحُطُّ — he lowers / puts down; Form I imperfect verb; The ongoing form of حَطَّ.; Aspect changes within the same root branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- حَطٌّ — lowering / putting down; Form I verbal noun; The action noun of حَطَّ.; Names the action rather than the command/relief noun.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- مَحْطُوطٌ — lowered / put down; Form I passive participle; The affected-object form of حَطَّ.; The passive result is distinguished from the Qur’anic noun חِطّة.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- The current حِطَّةٌ is retained as the first row; its bare or differently inflected spelling was not counted again.
+- حِطَّةٌ: Rejected as a duplicate of the current lexical form; an uninflected spelling would not add a new row.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|ذبب|ذباب|noun/pronoun
+
+Decision: **CONFIRMED-LIMITED**; root: ذبب; word: ذُبَابًا; locations: 22:73:15, 22:73:21
+
+Original predicted resolvability: LOW
+
+The fly noun has a secure current form and a defensible root verb/maṣdar branch, but the evidence reviewed does not justify adding participles merely to reach five. The family is confirmed limited.
+
+Accepted candidates:
+
+- ذَبَّ — he drove away / repelled; Form I perfect verb; The basic action associated with the root’s driving-away range.; The Qur’anic noun names a fly; the connection is a lexical/root development and is not presented as identical meaning.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَذُبُّ — he drives away / repels; Form I imperfect verb; The ongoing form of ذَبَّ.; Aspect changes within the verbal branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- ذَبٌّ — driving away / repelling; Form I verbal noun; The action noun of ذَبَّ.; Names the action rather than the insect.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- ذَابٌّ and مَذْبُوبٌ were rejected because the available evidence did not establish enough pedagogical value and attestation for this rare noun lesson.
+- ذَابٌّ: Not accepted because the project evidence does not establish it as a sufficiently useful lexical member for this rare noun lesson beyond the securely reviewed verb/maṣdar set.
+- مَذْبُوبٌ: Rejected as a generated passive candidate without adequate project attestation for this lesson.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|رسس|رس|noun/pronoun
+
+Decision: **MODEL-ISSUE**; root: رسس; word: ٱلرَّسِّ; locations: 25:38:4, 50:12:6
+
+Original predicted resolvability: LOW
+
+ٱلرَّسِّ is a Qur’anic proper place-name/toponym in these occurrences. The ordinary productive root-family model cannot safely turn the name into a five-row lexical paradigm; doing so would teach conjectural morphology.
+
+Accepted candidates:
+
+- None
+
+Candidates rejected / safeguards:
+
+- Any verb or maṣdar generated from ر س س was rejected because the proper-name identity is not enough to establish it as the learner’s lexical family.
+- Case-only variants of ٱلرَّسِّ were rejected.
+
+Unresolved question: Should the project represent the place-name as a dedicated proper-name lesson with historical/lexical notes rather than a normal Ṣarf family?
+Human expert review still required: yes
+
+---
+
+## lexical|زجج|زجاجة|noun/pronoun
+
+Decision: **CONFIRMED-LIMITED**; root: زجج; word: زُجَاجَةٍ; locations: 24:35:12, 24:35:13
+
+Original predicted resolvability: LOW
+
+The current glass noun has a secure verb and maṣdar branch, but no further independently useful row was established without repeating the same glass lexeme or relying on a weak occupational derivative. The family is confirmed limited.
+
+Accepted candidates:
+
+- زَجَّ — he drove / thrust; Form I perfect verb; An established verb from the doubled root.; The Qur’anic زُجَاجَة is glass; the related verb is translated on its own semantic branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَزُجُّ — he drives / thrusts; Form I imperfect verb; The ongoing form of زَجَّ.; Aspect changes within the verbal branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- زَجٌّ — driving / thrusting; Form I verbal noun; The action noun of زَجَّ.; Names the action rather than the glass vessel.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- زُجَاجٌ was rejected as the same lexical glass branch as زُجَاجَةٍ.
+- زَجَّاجٌ was rejected for insufficient project-backed attestation and pedagogical relevance.
+- زُجَاجٌ: Rejected as the same lexical stem/semantic noun as the current زُجَاجَة; it would not provide a sufficiently distinct teaching contrast here.
+- زَجَّاجٌ: Rejected because the available project evidence does not establish this modern/occupational sense as the intended Qur’anic-root teaching branch.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|أدد|اد|noun/pronoun
+
+Decision: **CONFIRMED-LIMITED**; root: أدد; word: إِدًّا; locations: 19:89:4
+
+Original predicted resolvability: LOW
+
+إِدًّا is a rare emphatic adjective/noun meaning something atrocious, mighty or severe. The reviewed evidence establishes its current occurrence and root semantic range but does not safely establish additional learner-useful forms; a shorter family is more accurate than fabricated morphology.
+
+Accepted candidates:
+
+- None
+
+Candidates rejected / safeguards:
+
+- Potential forms based only on the radicals were rejected because the project evidence does not establish a stable productive family for this rare lexical item.
+- Case-only or bare-stem variants of إِدًّا were rejected.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|جوو|جو|noun/pronoun
+
+Decision: **CONFIRMED-LIMITED**; root: جوو; word: جَوِّ; locations: 16:79:7
+
+Original predicted resolvability: LOW
+
+The weak doubled root supports a genuine plural and nisbah adjective, but the reviewed evidence does not justify manufacturing a verb paradigm for a noun family whose secure teaching material is limited. The family is confirmed limited.
+
+Accepted candidates:
+
+- أَجْوَاءٌ — atmospheres / skies; Broken plural noun; Established plural of جَوّ.; The Qur’anic form is singular/genitive; this is a genuine lexical number contrast, not a case ending.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ج و و, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- جَوِّيٌّ — atmospheric / aerial; Nisbah adjective; An established adjective derived from جَوّ.; The adjective develops the noun’s air/atmosphere meaning honestly.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ج و و, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- جَوٌّ was rejected as case-only removal of the current noun.
+- Unverified verbal/place candidates were rejected rather than used as padding.
+- جَوٌّ: Rejected because it is the same current lexical noun with only the genitive ending removed.
+- مَجْوًى: Rejected because the available project evidence does not establish this as the intended same-sense family for the Qur’anic atmosphere noun.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|حثث|حثيث|noun/pronoun
+
+Decision: **FULL**; root: حثث; word: حَثِيثًا; locations: 7:54:19
+
+Original predicted resolvability: LOW
+
+The ح ث ث family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.
+
+Accepted candidates:
+
+- حَثَّ — he urged / encouraged; Form I perfect verb; The basic verb behind the speed/urgency adjective.; The Qur’anic adverb expresses rapid action; the verb expresses urging, the root’s established action branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ث ث, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَحُثُّ — he urges / encourages; Form I imperfect verb; The ongoing form of حَثَّ.; Aspect changes within the same verbal branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ث ث, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- حَثٌّ — urging / encouragement; Form I verbal noun; The action noun of حَثَّ.; Names the act rather than its subject or speed quality.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ث ث, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- مَحْثُوثٌ — urged / encouraged; Form I passive participle; The affected-object form of حَثَّ.; The passive result is distinct from the Qur’anic adjective/adverb.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ث ث, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- حَثِيثٌ was rejected as the same current adjective with case-only variation.
+- حَثِيثٌ: Rejected as the same lexical adjective as the current حَثِيثًا; removing case marking is not a new row.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|حنن|حنانا|noun/pronoun
+
+Decision: **FULL**; root: حنن; word: وَحَنَانًا; locations: 19:13:1
+
+Original predicted resolvability: LOW
+
+The ح ن ن family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.
+
+Accepted candidates:
+
+- حَنَّ — he yearned / longed; Form I perfect verb; The verb behind the tenderness/affection noun.; The Qur’anic noun names affection; the verb describes yearning or compassionate longing.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ن ن, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَحِنُّ — he yearns / longs; Form I imperfect verb; The ongoing form of حَنَّ.; Aspect changes within the same root branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ن ن, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- حَنِينٌ — yearning / longing; Form I verbal noun; The abstract noun of حَنَّ.; Names the emotional state rather than the Qur’anic gift of affection.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ن ن, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- حَنُونٌ — tender / compassionate; Descriptive adjective; An established adjective from the same root.; The adjective expresses the compassionate quality associated with the noun and verb.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ح ن ن, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- حَنَانٌ was rejected as the same current noun after removing the conjunction and case ending.
+- حَنَانٌ: Rejected as the same lexical noun as the current وَحَنَانًا; removing the conjunction and case ending is shell/case variation.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|ضدد|ضد|noun/pronoun
+
+Decision: **FULL**; root: ضدد; word: ضِدًّا; locations: 19:82:6
+
+Original predicted resolvability: LOW
+
+The ض د د family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.
+
+Accepted candidates:
+
+- ضَادَّ — he opposed / contradicted; Form III perfect verb; The active verb corresponding to the opposition noun.; The Qur’anic noun names an opponent; the verb names the act of opposing.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ض د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يُضَادُّ — he opposes / contradicts; Form III imperfect verb; The ongoing form of ضَادَّ.; Aspect changes within the derived opposition branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ض د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- مُضَادَّةٌ — opposition / contradiction; Form III verbal noun; The action noun of ضَادَّ.; Names the relation rather than its participant.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ض د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- مُضَادٌّ — opposing / contradictory; Form III active participle; The agent/adjectival form of ضَادَّ.; The adjective describes the opposing party, while ضِدًّا is the noun for an opponent/counterpart.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ض د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- أَضْدَادٌ was rejected as number-only padding; the Form-III verb, maṣdar and participle teach more.
+- أَضْدَادٌ: Rejected because it is a number variant of the same lexical noun and adds no new morphological branch for this lesson.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|طلل|طل|noun/pronoun
+
+Decision: **CONFIRMED-LIMITED**; root: طلل; word: فَطَلٌّ; locations: 2:265:23
+
+Original predicted resolvability: LOW
+
+The current drizzle noun has a defensible verb and a distinct established same-root noun, but the remaining candidate space is semantically split and not sufficiently secured for a five-row family. The family is confirmed limited.
+
+Accepted candidates:
+
+- طَلَّ — he sprinkled / appeared; Form I perfect verb; An established verb in the root’s rain/appearance range.; The Qur’anic طَلّ is a light rain; the verb is translated independently.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- طَلَلٌ — trace / ruin of a dwelling; Lexical noun; An established noun from the same root.; The meaning develops from light covering/appearance to a remaining trace; it is not presented as drizzle.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- Additional appearance/rain candidates were rejected because the available evidence did not securely establish their sense and pedagogical role here.
+- أَطَلَّ: Not accepted because the reviewed project evidence does not establish which sense belongs in this rare lesson without risking a semantic-split mismatch.
+- طَلِيلٌ: Rejected because the form/sense is not sufficiently established in the approved project evidence for this family.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|عرر|معتر|noun/pronoun
+
+Decision: **CONFIRMED-LIMITED**; root: عرر; word: وَٱلْمُعْتَرَّ; locations: 22:36:22
+
+Original predicted resolvability: LOW
+
+The petitioner branch supports a genuine verb, imperfect and maṣdar, but the apparent harm/blame branch remains separately unresolved and cannot be used as padding. The family is confirmed limited.
+
+Accepted candidates:
+
+- اِعْتَرَّ — he came as a needy petitioner; Form VIII perfect verb; The verb behind the Qur’anic active participle مُعْتَرّ.; The Qur’anic form names the petitioner; the verb names the act of coming/asking.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ع ر ر, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَعْتَرُّ — he comes as a needy petitioner; Form VIII imperfect verb; The ongoing form of اِعْتَرَّ.; Aspect changes within the same petitioner branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ع ر ر, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- اِعْتِرَارٌ — coming as a needy petitioner; Form VIII verbal noun; The action noun of اِعْتَرَّ.; Names the act rather than the person.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ع ر ر, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- مَعَرَّةٌ was rejected as a separately unresolved semantic branch.
+- The shell-stripped مُعْتَرٌّ was rejected as the current lexical participle.
+- مُعْتَرٌّ: Rejected as the same lexical participle as the current وَٱلْمُعْتَرَّ; removing conjunction/article/case does not add a row.
+- مَعَرَّةٌ: Rejected here because the project’s existing evidence treats the harm/blame item as a separate unresolved family; it must not be silently merged.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|فظظ|فظ|noun/pronoun
+
+Decision: **CONFIRMED-LIMITED**; root: فظظ; word: فَظًّا; locations: 3:159:9
+
+Original predicted resolvability: LOW
+
+فَظّ is a rare adjective with one securely useful abstract noun relation. Additional rows would either repeat the adjective, add low-value degree morphology or rely on an inadequately attested generated verb, so the family is confirmed limited.
+
+Accepted candidates:
+
+- فَظَاظَةٌ — harshness / rudeness; Abstract noun; The abstract noun related to the Qur’anic adjective فَظّ.; The Qur’anic form describes a person; this form names the quality.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ف ظ ظ, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- Case-only فَظٌّ, weakly useful أَفَظُّ and unverified يَفِظُّ were rejected.
+- فَظٌّ: Rejected as the same current lexical adjective after removing case marking.
+- أَفَظُّ: Rejected because it is a weak pedagogical addition for this rare adjective and does not improve recognition as much as the established abstract noun.
+- يَفِظُّ: Rejected because the project evidence does not establish this as a secure lexical verb for the lesson.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|قسس|قسيس|noun/pronoun
+
+Decision: **MODEL-ISSUE**; root: قسس; word: قِسِّيسِينَ; locations: 5:82:22
+
+Original predicted resolvability: LOW
+
+قِسِّيسِينَ is a religious title/loanword-like lexical item. Treating قسس as an ordinary productive doubled Arabic root would imply a false verb/maṣdar paradigm; the correct learner treatment needs a loanword/proper-title model.
+
+Accepted candidates:
+
+- None
+
+Candidates rejected / safeguards:
+
+- Generated قَسَّ/يَقُسُّ and participles were rejected because shared radicals or a provider flag do not establish productive Arabic morphology here.
+
+Unresolved question: Should قِسِّيس be represented through a dedicated loanword/title lesson rather than an ordinary root-based Ṣarf family?
+Human expert review still required: yes
+
+---
+
+## lexical|قطط|قط|noun/pronoun
+
+Decision: **CONFIRMED-LIMITED**; root: قطط; word: قِطَّنَا; locations: 38:16:5
+
+Original predicted resolvability: LOW
+
+The cutting branch is secure enough for a verb, imperfect and maṣdar, but the share noun is homonymically/sense-sensitive and its apparent singular is only the current noun without an attached pronoun. A limited family is safer than a fabricated five-row display.
+
+Accepted candidates:
+
+- قَطَّ — he cut / divided; Form I perfect verb; The cutting branch associated with the root picture.; The Qur’anic word means a share or allotted portion; the verb shows the cutting/dividing development and is translated independently.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَقُطُّ — he cuts / divides; Form I imperfect verb; The ongoing form of قَطَّ.; Aspect changes within the cutting branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- قَطٌّ — cutting / division; Form I verbal noun; The action noun of قَطَّ.; Names the action rather than the allotted share.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- قِطٌّ with the pronoun removed was rejected as shell variation.
+- The cat sense was rejected as an unrelated homonym for this lesson.
+- قِطٌّ: Rejected because it is the same lexical noun as قِطَّنَا after removing the attached pronoun; the project does not count pronoun-only variants as new Ṣarf rows.
+- قِطٌّ: Rejected because the animal sense is a separate lexical item and would be misleading in this lesson.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
+## lexical|هدد|هد|noun/pronoun
+
+Decision: **FULL**; root: هدد; word: هَدًّا; locations: 19:90:9
+
+Original predicted resolvability: LOW
+
+The ه د د family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.
+
+Accepted candidates:
+
+- هَدَّ — he demolished / pulled down; Form I perfect verb; The active action behind the devastation noun.; The Qur’anic form names devastation; the verb names the act.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- يَهُدُّ — he demolishes / pulls down; Form I imperfect verb; The ongoing form of هَدَّ.; Aspect changes within the same action branch.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- هَادٌّ — demolishing / destructive; Form I active participle; The agent/quality form of هَدَّ.; Describes the one or thing doing the demolition.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+- مَهْدُومٌ — demolished / pulled down; Form I passive participle; The affected-object form of هَدَّ.; Shows the passive result rather than the devastation action noun.; evidence: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.
+
+Candidates rejected / safeguards:
+
+- هَدٌّ was rejected as case-only removal of the current verbal noun.
+- هَدٌّ: Rejected because it is the same lexical noun as the current هَدًّا after removing the case ending.
+
+Unresolved question: None
+Human expert review still required: no
+
+---
+
