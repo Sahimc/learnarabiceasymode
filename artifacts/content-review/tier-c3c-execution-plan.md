@@ -1,19 +1,21 @@
 # Tier-C3-C execution plan
 
-Contract: v1.3.9
+Contract: 1.3.9
 
-This artifact covers the C3-C pool of 149 families / 195 occurrences. C3-C1 DOUBLED is now complete for 20 families / 30 occurrences; the remaining C3-C tracks are unchanged.
+C3-C1 DOUBLED has been corrected for seven named families. C3-C2 HAMZATED is now the normalized next queue but has not been adjudicated.
 
-| Priority | Track | Families | Occurrences | Execution focus |
-|---:|---|---:|---:|---|
-| 1 | DOUBLED | 20 | 30 | Start with a structurally safer class; verify doubled-root normalization and real derived forms. |
-| 2 | HAMZATED | 23 | 28 | Verify hamza position, weak-letter behavior and vocalisation. |
-| 3 | QUADRILITERAL | 22 | 27 | Use quadriliteral morphology; do not force triliteral templates. |
-| 4 | WEAK | 77 | 94 | Normalize weak roots before selecting genuine related forms. |
-| 5 | ROOT/LEMMA-UNCERTAIN | 7 | 16 | Keep these last because root/lemma identity must be established before any family authoring. |
+## Ownership rule
 
-The primary tracks are mutually exclusive and reconcile exactly to 149 families / 195 occurrences. There is no residual “other special” bucket after root/lemma uncertainty is given priority; special/irregular flags remain attached as evidence within the relevant track.
+Completed adjudication owns the family permanently. Otherwise, first matching track: ROOT/LEMMA-UNCERTAIN > QUADRILITERAL > HAMZATED > WEAK > DOUBLED. Remaining feature signals are secondary flags.
 
-Recommended batch order: doubled roots, hamzated roots, quadriliterals, weak roots, then root/lemma uncertainty.
+## Track totals
 
-Status: C3-C1 DOUBLED complete. HAMZATED, QUADRILITERAL, WEAK and ROOT/LEMMA-UNCERTAIN adjudication has not started.
+| Track | Families | Occurrences | Pending families | Pending occurrences |
+|---|---:|---:|---:|---:|
+| DOUBLED | 20 | 30 | 0 | 0 |
+| HAMZATED | 25 | 32 | 25 | 32 |
+| QUADRILITERAL | 22 | 27 | 22 | 27 |
+| WEAK | 77 | 94 | 77 | 94 |
+| ROOT/LEMMA-UNCERTAIN | 5 | 12 | 5 | 12 |
+
+Status: C3-C1 DOUBLED corrected; C3-C2 HAMZATED ownership normalized but not started.

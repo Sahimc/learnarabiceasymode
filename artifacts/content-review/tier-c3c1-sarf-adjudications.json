@@ -1,19 +1,19 @@
 {
   "reportType": "tier-c3c1-sarf-adjudication",
   "contractVersion": "1.3.9",
-  "reviewedAt": "2026-10-22T12:48:50.517Z",
+  "reviewedAt": "2026-10-22T20:49:01.437Z",
   "summary": {
     "startingC3C1Families": 20,
     "startingC3C1Occurrences": 30,
     "decisions": {
-      "FULL": 9,
-      "CONFIRMED-LIMITED": 9,
+      "FULL": 15,
+      "CONFIRMED-LIMITED": 3,
       "BLOCKED": 0,
       "MODEL-ISSUE": 2
     },
     "occurrencesByDecision": {
-      "FULL": 16,
-      "CONFIRMED-LIMITED": 11,
+      "FULL": 24,
+      "CONFIRMED-LIMITED": 3,
       "BLOCKED": 0,
       "MODEL-ISSUE": 3
     },
@@ -75,7 +75,33 @@
       "C3-E",
       "C2 residuals",
       "earlier residual exceptions"
-    ]
+    ],
+    "targetedCorrectionPass": {
+      "reviewedAt": "2026-10-22T20:49:01.437Z",
+      "families": [
+        "lexical|أزز|از|noun/pronoun",
+        "lexical|ذبب|ذباب|noun/pronoun",
+        "lexical|زجج|زجاجة|noun/pronoun",
+        "lexical|أدد|اد|noun/pronoun",
+        "lexical|طلل|طل|noun/pronoun",
+        "lexical|قطط|قط|noun/pronoun",
+        "lexical|هدد|هد|noun/pronoun"
+      ],
+      "statusChanges": 0,
+      "rootCorrection": "مَهْدُومٌ removed from ه د د; مَهْدُودٌ installed; مَهْدُومٌ remains valid only under ه د م where independently attested.",
+      "propagatedOccurrences": [
+        {
+          "sourceFamilyKey": "lexical|ذبب|ذباب|noun/pronoun",
+          "location": "22:73:21",
+          "decision": "FULL"
+        },
+        {
+          "sourceFamilyKey": "lexical|زجج|زجاجة|noun/pronoun",
+          "location": "24:35:13",
+          "decision": "FULL"
+        }
+      ]
+    }
   },
   "adjudications": [
     {
@@ -140,15 +166,50 @@
           "accepted": true
         },
         {
-          "form": "إِزَازٌ",
-          "meaning": "urging / incitement",
+          "form": "أَزَازٌ",
+          "meaning": "urging / impelling",
           "morphology": "Form I verbal noun (maṣdar)",
-          "relationship": "The action noun of أَزَّ.",
-          "semanticDevelopment": "Names the action rather than a participant.",
+          "relationship": "An attested maṣdar related to أَزَّ.",
+          "semanticDevelopment": "The Qur’anic أَزًّا already names the action; this lexical maṣdar shows the same root in another established noun pattern.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Makes the noun–verb relationship visible.",
+          "pedagogicalValue": "Provides a correctly vocalised maṣdar instead of the incorrect إِزَازٌ.",
           "accepted": true
+        },
+        {
+          "form": "أَزِيزٌ",
+          "meaning": "roaring / buzzing",
+          "morphology": "Lexical noun",
+          "relationship": "An established semantic branch of the same root.",
+          "semanticDevelopment": "The meaning develops from urging/impelling to a resonant or buzzing sound; it is translated independently rather than flattened.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows an attested same-root semantic branch.",
+          "accepted": true
+        },
+        {
+          "form": "إِزَازٌ",
+          "meaning": "urging / incitement",
+          "morphology": "Incorrectly vocalised maṣdar candidate",
+          "relationship": "Candidate considered for the أ ز ز family.",
+          "semanticDevelopment": "Not accepted into the learner-facing family.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Rejected under the no-padding and evidence-first safeguards.",
+          "accepted": false,
+          "rejectionReason": "Rejected: the reviewed form is أَزَازٌ, not إِزَازٌ."
+        },
+        {
+          "form": "أَزٌّ",
+          "meaning": "urging / impelling",
+          "morphology": "Form I verbal noun",
+          "relationship": "Candidate considered for the أ ز ز family.",
+          "semanticDevelopment": "Not accepted into the learner-facing family.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Rejected under the no-padding and evidence-first safeguards.",
+          "accepted": false,
+          "rejectionReason": "Rejected as a duplicate maṣdar of the current Qur’anic أَزًّا after removing only case marking."
         },
         {
           "form": "تَؤُزُّ",
@@ -172,7 +233,7 @@
           "confidence": "high",
           "pedagogicalValue": "Rejected under the no-padding and evidence-first safeguards.",
           "accepted": false,
-          "rejectionReason": "Not accepted without a project-approved lexical attestation for this rare passive form; the limited family is safer than generated completion."
+          "rejectionReason": "Rejected because it is not needed once the attested maṣdar and semantic-branch noun are selected, and the project evidence does not establish it as a stronger teaching row."
         }
       ],
       "acceptedCandidates": [
@@ -199,23 +260,37 @@
           "accepted": true
         },
         {
-          "form": "إِزَازٌ",
-          "meaning": "urging / incitement",
+          "form": "أَزَازٌ",
+          "meaning": "urging / impelling",
           "morphology": "Form I verbal noun (maṣdar)",
-          "relationship": "The action noun of أَزَّ.",
-          "semanticDevelopment": "Names the action rather than a participant.",
+          "relationship": "An attested maṣdar related to أَزَّ.",
+          "semanticDevelopment": "The Qur’anic أَزًّا already names the action; this lexical maṣdar shows the same root in another established noun pattern.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Makes the noun–verb relationship visible.",
+          "pedagogicalValue": "Provides a correctly vocalised maṣdar instead of the incorrect إِزَازٌ.",
+          "accepted": true
+        },
+        {
+          "form": "أَزِيزٌ",
+          "meaning": "roaring / buzzing",
+          "morphology": "Lexical noun",
+          "relationship": "An established semantic branch of the same root.",
+          "semanticDevelopment": "The meaning develops from urging/impelling to a resonant or buzzing sound; it is translated independently rather than flattened.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows an attested same-root semantic branch.",
           "accepted": true
         }
       ],
       "rejectedCandidates": [
-        "The bare noun without its case ending was not counted separately.",
+        "The current Qur’anic أَزًّا is already a maṣdar; it was not counted again as أَزٌّ.",
+        "إِزَازٌ was rejected as an incorrect vocalisation; the reviewed form is أَزَازٌ.",
         "تَؤُزُّ was rejected as person/subject-marking duplication of the accepted imperfect lexeme.",
-        "مَأْزُوزٌ was rejected because the available project evidence did not securely establish it as a useful lexical row.",
+        "مَأْزُوزٌ was rejected as weaker than the attested أَزِيزٌ semantic branch.",
+        "إِزَازٌ: Rejected: the reviewed form is أَزَازٌ, not إِزَازٌ.",
+        "أَزٌّ: Rejected as a duplicate maṣdar of the current Qur’anic أَزًّا after removing only case marking.",
         "تَؤُزُّ: Rejected as a separate row because it is the same imperfect lexeme as يَؤُزُّ with subject marking only; the Qur’anic occurrence is retained as evidence.",
-        "مَأْزُوزٌ: Not accepted without a project-approved lexical attestation for this rare passive form; the limited family is safer than generated completion."
+        "مَأْزُوزٌ: Rejected because it is not needed once the attested maṣdar and semantic-branch noun are selected, and the project evidence does not establish it as a stronger teaching row."
       ],
       "finalRows": [
         {
@@ -226,56 +301,65 @@
             {
               "form": "أَزًّا",
               "meaning": "(with) incitement",
-              "difference": "Current Qur’anic occurrence at 19:83:9; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative.",
-              "relationship": "Current Qur’anic occurrence of the أ ز ز doubled-root family; comparison rows show genuine same-root morphology and honest semantic development.",
-              "provenance": "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
+              "difference": "Current Qur’anic occurrence at 19:83:9; Current Qur’anic occurrence at 19:83:9; Current Qur’anic occurrence at 19:83:9; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative.",
+              "relationship": "Current Qur’anic occurrence of the أ ز ز family; comparison rows show genuine same-root morphology and honest semantic development.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
             },
             {
               "form": "أَزَّ",
               "meaning": "he urged / impelled",
               "difference": "Form I perfect verb. Compared with the Qur’anic occurrence at 19:83:9. The noun names the urging; the verb presents the action. Connects the rare noun to the securely attested verbal branch.",
               "relationship": "The basic verb related to the Qur’anic incitement noun. Same-root relationship to أزز; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             },
             {
               "form": "يَؤُزُّ",
               "meaning": "he urges / incites",
               "difference": "Form I imperfect verb. Compared with the Qur’anic occurrence at 19:83:9. Aspect changes while the incitement sense remains explicit. Shows the weak/hamzated surface change without using a person-only duplicate.",
               "relationship": "The imperfect counterpart of أَزَّ. Same-root relationship to أزز; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             },
             {
-              "form": "إِزَازٌ",
-              "meaning": "urging / incitement",
-              "difference": "Form I verbal noun (maṣdar). Compared with the Qur’anic occurrence at 19:83:9. Names the action rather than a participant. Makes the noun–verb relationship visible.",
-              "relationship": "The action noun of أَزَّ. Same-root relationship to أزز; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "form": "أَزَازٌ",
+              "meaning": "urging / impelling",
+              "difference": "Form I verbal noun (maṣdar). Compared with the Qur’anic occurrence at 19:83:9. The Qur’anic أَزًّا already names the action; this lexical maṣdar shows the same root in another established noun pattern. Provides a correctly vocalised maṣdar instead of the incorrect إِزَازٌ.",
+              "relationship": "An attested maṣdar related to أَزَّ. Same-root relationship to أزز; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+            },
+            {
+              "form": "أَزِيزٌ",
+              "meaning": "roaring / buzzing",
+              "difference": "Lexical noun. Compared with the Qur’anic occurrence at 19:83:9. The meaning develops from urging/impelling to a resonant or buzzing sound; it is translated independently rather than flattened. Shows an attested same-root semantic branch.",
+              "relationship": "An established semantic branch of the same root. Same-root relationship to أزز; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             }
           ],
           "sarfReview": {
-            "status": "limited",
-            "limitedReason": "The root has a secure Qur’anic verb and a related action noun, but the evidence reviewed here does not establish a fourth independent learner-useful member beyond the perfect, imperfect and maṣdar without relying on a weakly attested passive derivative. A reviewed limited family is therefore more accurate than padding.",
-            "auditDecision": "confirmed-limited",
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
             "provenance": [
-              "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z: CONFIRMED-LIMITED.",
-              "Every occurrence of lexical|أزز|از|noun/pronoun was inspected: 19:83:9.",
+              "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z: FULL.",
+              "The family was re-adjudicated because the previous decision or row required correction.",
               "Accepted أَزَّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
               "Accepted يَؤُزُّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "Accepted إِزَازٌ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "The bare noun without its case ending was not counted separately.",
+              "Accepted أَزَازٌ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "Accepted أَزِيزٌ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "The current Qur’anic أَزًّا is already a maṣdar; it was not counted again as أَزٌّ.",
+              "إِزَازٌ was rejected as an incorrect vocalisation; the reviewed form is أَزَازٌ.",
               "تَؤُزُّ was rejected as person/subject-marking duplication of the accepted imperfect lexeme.",
-              "مَأْزُوزٌ was rejected because the available project evidence did not securely establish it as a useful lexical row."
+              "مَأْزُوزٌ was rejected as weaker than the attested أَزِيزٌ semantic branch."
             ],
             "reviewedBy": "Codex",
-            "reviewedAt": "2026-10-22T12:48:50.517Z"
+            "reviewedAt": "2026-10-22T20:49:01.437Z"
           }
         }
       ],
-      "decision": "CONFIRMED-LIMITED",
-      "reasoning": "The root has a secure Qur’anic verb and a related action noun, but the evidence reviewed here does not establish a fourth independent learner-useful member beyond the perfect, imperfect and maṣdar without relying on a weakly attested passive derivative. A reviewed limited family is therefore more accurate than padding.",
+      "decision": "FULL",
+      "reasoning": "The أ ز ز family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.",
       "evidence": [
-        "Canonical Qur’anic occurrences inspected: 19:83:9.",
-        "The doubled-root structure was checked against normalized root letters; gemination was not treated as a reason to generate forms automatically.",
+        "Canonical Qur’anic occurrence inspected: 19:83:9.",
+        "Root ownership, vocalisation, morphology, semantic development and shell/case/pronoun padding were independently checked.",
+        "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ ز ز, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
@@ -284,9 +368,9 @@
       "unresolvedQuestion": null,
       "evidenceRequired": [],
       "humanExpertReviewRequired": false,
-      "productionStatus": "confirmed-limited",
-      "reviewedAt": "2026-10-22T12:48:50.517Z",
-      "recordId": "tier-c3c1-family-23597fa3d0f88af4"
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-22T20:49:01.437Z",
+      "recordId": "tier-c3c1-correction-b7f2e789a533be5e"
     },
     {
       "familyKey": "lexical|جذذ|مجذوذ|noun/pronoun",
@@ -2092,15 +2176,26 @@
         },
         {
           "form": "ذَابٌّ",
-          "meaning": "one who repels",
+          "meaning": "one who repels / drives away",
           "morphology": "Form I active participle",
+          "relationship": "The agent form of ذَبَّ.",
+          "semanticDevelopment": "The Qur’anic noun names the fly; this form names the one performing the repelling action.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a genuine agent relationship instead of padding.",
+          "accepted": true
+        },
+        {
+          "form": "ذَبَّابٌ",
+          "meaning": "one who repeatedly repels / a fly",
+          "morphology": "Intensive noun/adjective",
           "relationship": "Candidate considered for the ذ ب ب family.",
           "semanticDevelopment": "Not accepted into the learner-facing family.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
           "pedagogicalValue": "Rejected under the no-padding and evidence-first safeguards.",
           "accepted": false,
-          "rejectionReason": "Not accepted because the project evidence does not establish it as a sufficiently useful lexical member for this rare noun lesson beyond the securely reviewed verb/maṣdar set."
+          "rejectionReason": "Rejected because its attested senses overlap the current fly noun or add no clearer contrast than the active participle ذَابٌّ."
         },
         {
           "form": "مَذْبُوبٌ",
@@ -2148,11 +2243,24 @@
           "confidence": "high",
           "pedagogicalValue": "Shows the maṣdar relation.",
           "accepted": true
+        },
+        {
+          "form": "ذَابٌّ",
+          "meaning": "one who repels / drives away",
+          "morphology": "Form I active participle",
+          "relationship": "The agent form of ذَبَّ.",
+          "semanticDevelopment": "The Qur’anic noun names the fly; this form names the one performing the repelling action.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a genuine agent relationship instead of padding.",
+          "accepted": true
         }
       ],
       "rejectedCandidates": [
-        "ذَابٌّ and مَذْبُوبٌ were rejected because the available evidence did not establish enough pedagogical value and attestation for this rare noun lesson.",
-        "ذَابٌّ: Not accepted because the project evidence does not establish it as a sufficiently useful lexical member for this rare noun lesson beyond the securely reviewed verb/maṣdar set.",
+        "ذَابٌّ is retained because authoritative evidence establishes it as the active participle of the repelling branch.",
+        "ذَبَّابٌ was considered but not selected because its senses overlap the current fly noun or are less useful than ذَابٌّ.",
+        "مَذْبُوبٌ was rejected as a generated passive candidate without adequate project attestation.",
+        "ذَبَّابٌ: Rejected because its attested senses overlap the current fly noun or add no clearer contrast than the active participle ذَابٌّ.",
         "مَذْبُوبٌ: Rejected as a generated passive candidate without adequate project attestation for this lesson."
       ],
       "finalRows": [
@@ -2164,104 +2272,64 @@
             {
               "form": "ذُبَابًا",
               "meaning": "a fly",
-              "difference": "Current Qur’anic occurrence at 22:73:15; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative.",
-              "relationship": "Current Qur’anic occurrence of the ذ ب ب doubled-root family; comparison rows show genuine same-root morphology and honest semantic development.",
-              "provenance": "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
+              "difference": "Current Qur’anic occurrence at 22:73:15; Current Qur’anic occurrence at 22:73:15; Current Qur’anic occurrence at 22:73:15; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative.",
+              "relationship": "Current Qur’anic occurrence of the ذ ب ب family; comparison rows show genuine same-root morphology and honest semantic development.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
             },
             {
               "form": "ذَبَّ",
               "meaning": "he drove away / repelled",
               "difference": "Form I perfect verb. Compared with the Qur’anic occurrence at 22:73:15. The Qur’anic noun names a fly; the connection is a lexical/root development and is not presented as identical meaning. Makes the project root picture visible without flattening the noun’s meaning.",
               "relationship": "The basic action associated with the root’s driving-away range. Same-root relationship to ذبب; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             },
             {
               "form": "يَذُبُّ",
               "meaning": "he drives away / repels",
               "difference": "Form I imperfect verb. Compared with the Qur’anic occurrence at 22:73:15. Aspect changes within the verbal branch. Provides a useful tense contrast.",
               "relationship": "The ongoing form of ذَبَّ. Same-root relationship to ذبب; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             },
             {
               "form": "ذَبٌّ",
               "meaning": "driving away / repelling",
               "difference": "Form I verbal noun. Compared with the Qur’anic occurrence at 22:73:15. Names the action rather than the insect. Shows the maṣdar relation.",
               "relationship": "The action noun of ذَبَّ. Same-root relationship to ذبب; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+            },
+            {
+              "form": "ذَابٌّ",
+              "meaning": "one who repels / drives away",
+              "difference": "Form I active participle. Compared with the Qur’anic occurrence at 22:73:15. The Qur’anic noun names the fly; this form names the one performing the repelling action. Adds a genuine agent relationship instead of padding.",
+              "relationship": "The agent form of ذَبَّ. Same-root relationship to ذبب; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             }
           ],
           "sarfReview": {
-            "status": "limited",
-            "limitedReason": "The fly noun has a secure current form and a defensible root verb/maṣdar branch, but the evidence reviewed does not justify adding participles merely to reach five. The family is confirmed limited.",
-            "auditDecision": "confirmed-limited",
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
             "provenance": [
-              "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z: CONFIRMED-LIMITED.",
-              "Every occurrence of lexical|ذبب|ذباب|noun/pronoun was inspected: 22:73:15, 22:73:21.",
+              "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z: FULL.",
+              "The family was re-adjudicated because the previous decision or row required correction.",
               "Accepted ذَبَّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
               "Accepted يَذُبُّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
               "Accepted ذَبٌّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "ذَابٌّ and مَذْبُوبٌ were rejected because the available evidence did not establish enough pedagogical value and attestation for this rare noun lesson."
+              "Accepted ذَابٌّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "ذَابٌّ is retained because authoritative evidence establishes it as the active participle of the repelling branch.",
+              "ذَبَّابٌ was considered but not selected because its senses overlap the current fly noun or are less useful than ذَابٌّ.",
+              "مَذْبُوبٌ was rejected as a generated passive candidate without adequate project attestation."
             ],
             "reviewedBy": "Codex",
-            "reviewedAt": "2026-10-22T12:48:50.517Z"
-          }
-        },
-        {
-          "occurrenceId": "word:22:73:21",
-          "location": "22:73:21",
-          "arabic": "ٱلذُّبَابُ",
-          "forms": [
-            {
-              "form": "ٱلذُّبَابُ",
-              "meaning": "the fly",
-              "difference": "Current Qur’anic occurrence at 22:73:21; Current Qur'anic occurrence; gender: masculine; case: nominative.",
-              "relationship": "Current Qur’anic occurrence of the ذ ب ب doubled-root family; comparison rows show genuine same-root morphology and honest semantic development.",
-              "provenance": "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
-            },
-            {
-              "form": "ذَبَّ",
-              "meaning": "he drove away / repelled",
-              "difference": "Form I perfect verb. Compared with the Qur’anic occurrence at 22:73:21. The Qur’anic noun names a fly; the connection is a lexical/root development and is not presented as identical meaning. Makes the project root picture visible without flattening the noun’s meaning.",
-              "relationship": "The basic action associated with the root’s driving-away range. Same-root relationship to ذبب; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
-            },
-            {
-              "form": "يَذُبُّ",
-              "meaning": "he drives away / repels",
-              "difference": "Form I imperfect verb. Compared with the Qur’anic occurrence at 22:73:21. Aspect changes within the verbal branch. Provides a useful tense contrast.",
-              "relationship": "The ongoing form of ذَبَّ. Same-root relationship to ذبب; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
-            },
-            {
-              "form": "ذَبٌّ",
-              "meaning": "driving away / repelling",
-              "difference": "Form I verbal noun. Compared with the Qur’anic occurrence at 22:73:21. Names the action rather than the insect. Shows the maṣdar relation.",
-              "relationship": "The action noun of ذَبَّ. Same-root relationship to ذبب; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
-            }
-          ],
-          "sarfReview": {
-            "status": "limited",
-            "limitedReason": "The fly noun has a secure current form and a defensible root verb/maṣdar branch, but the evidence reviewed does not justify adding participles merely to reach five. The family is confirmed limited.",
-            "auditDecision": "confirmed-limited",
-            "provenance": [
-              "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z: CONFIRMED-LIMITED.",
-              "Every occurrence of lexical|ذبب|ذباب|noun/pronoun was inspected: 22:73:15, 22:73:21.",
-              "Accepted ذَبَّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "Accepted يَذُبُّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "Accepted ذَبٌّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "ذَابٌّ and مَذْبُوبٌ were rejected because the available evidence did not establish enough pedagogical value and attestation for this rare noun lesson."
-            ],
-            "reviewedBy": "Codex",
-            "reviewedAt": "2026-10-22T12:48:50.517Z"
+            "reviewedAt": "2026-10-22T20:49:01.437Z"
           }
         }
       ],
-      "decision": "CONFIRMED-LIMITED",
-      "reasoning": "The fly noun has a secure current form and a defensible root verb/maṣdar branch, but the evidence reviewed does not justify adding participles merely to reach five. The family is confirmed limited.",
+      "decision": "FULL",
+      "reasoning": "The ذ ب ب family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.",
       "evidence": [
-        "Canonical Qur’anic occurrences inspected: 22:73:15, 22:73:21.",
-        "The doubled-root structure was checked against normalized root letters; gemination was not treated as a reason to generate forms automatically.",
+        "Canonical Qur’anic occurrence inspected: 22:73:15.",
+        "Root ownership, vocalisation, morphology, semantic development and shell/case/pronoun padding were independently checked.",
+        "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ذ ب ب, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
@@ -2270,9 +2338,9 @@
       "unresolvedQuestion": null,
       "evidenceRequired": [],
       "humanExpertReviewRequired": false,
-      "productionStatus": "confirmed-limited",
-      "reviewedAt": "2026-10-22T12:48:50.517Z",
-      "recordId": "tier-c3c1-family-be057fe51b23a2f5"
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-22T20:49:01.437Z",
+      "recordId": "tier-c3c1-correction-c0c9a11c21736284"
     },
     {
       "familyKey": "lexical|رسس|رس|noun/pronoun",
@@ -2485,103 +2553,125 @@
       ],
       "candidatesConsidered": [
         {
+          "form": "زُجَاجٌ",
+          "meaning": "glass as a material",
+          "morphology": "Lexical material noun",
+          "relationship": "The material noun related to the Qur’anic glass vessel.",
+          "semanticDevelopment": "The Qur’anic form names one vessel; this form names the substance from which it is made.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Teaches vessel versus material without treating them as synonyms.",
+          "accepted": true
+        },
+        {
+          "form": "زُجَاجِيٌّ",
+          "meaning": "glass / made of glass",
+          "morphology": "Nisbah adjective",
+          "relationship": "An adjective derived from زُجَاجٌ.",
+          "semanticDevelopment": "The adjective describes material or composition rather than the vessel itself.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a clear noun–adjective relationship.",
+          "accepted": true
+        },
+        {
           "form": "زَجَّ",
           "meaning": "he drove / thrust",
           "morphology": "Form I perfect verb",
-          "relationship": "An established verb from the doubled root.",
-          "semanticDevelopment": "The Qur’anic زُجَاجَة is glass; the related verb is translated on its own semantic branch.",
+          "relationship": "An established thrusting/spear-related verbal branch of the doubled root.",
+          "semanticDevelopment": "The meaning develops from glass/vessel vocabulary to thrusting; the verb is translated independently.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Shows semantic development without falsely glossing both as glass.",
+          "pedagogicalValue": "Shows genuine same-root semantic development.",
+          "accepted": true
+        },
+        {
+          "form": "زَجَّاجٌ",
+          "meaning": "glassmaker / maker of glass",
+          "morphology": "Occupational/intensive noun",
+          "relationship": "An established occupational noun associated with glass and the root family.",
+          "semanticDevelopment": "This is an agent/occupation branch, not another spelling of the vessel noun.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Connects material, adjective and occupation while preserving the verbal branch.",
           "accepted": true
         },
         {
           "form": "يَزُجُّ",
           "meaning": "he drives / thrusts",
           "morphology": "Form I imperfect verb",
-          "relationship": "The ongoing form of زَجَّ.",
-          "semanticDevelopment": "Aspect changes within the verbal branch.",
+          "relationship": "Candidate considered for the ز ج ج family.",
+          "semanticDevelopment": "Not accepted into the learner-facing family.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Provides a useful tense contrast.",
-          "accepted": true
+          "pedagogicalValue": "Rejected under the no-padding and evidence-first safeguards.",
+          "accepted": false,
+          "rejectionReason": "Rejected in favour of the more educational occupational/material contrast; the perfect already establishes the verbal branch and the family must avoid over-weighting conjugational rows."
         },
         {
           "form": "زَجٌّ",
           "meaning": "driving / thrusting",
           "morphology": "Form I verbal noun",
-          "relationship": "The action noun of زَجَّ.",
-          "semanticDevelopment": "Names the action rather than the glass vessel.",
-          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-          "confidence": "high",
-          "pedagogicalValue": "Shows the maṣdar pattern.",
-          "accepted": true
-        },
-        {
-          "form": "زُجَاجٌ",
-          "meaning": "glass",
-          "morphology": "Lexical noun",
           "relationship": "Candidate considered for the ز ج ج family.",
           "semanticDevelopment": "Not accepted into the learner-facing family.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
           "pedagogicalValue": "Rejected under the no-padding and evidence-first safeguards.",
           "accepted": false,
-          "rejectionReason": "Rejected as the same lexical stem/semantic noun as the current زُجَاجَة; it would not provide a sufficiently distinct teaching contrast here."
-        },
-        {
-          "form": "زَجَّاجٌ",
-          "meaning": "glassmaker",
-          "morphology": "Intensive/agent noun",
-          "relationship": "Candidate considered for the ز ج ج family.",
-          "semanticDevelopment": "Not accepted into the learner-facing family.",
-          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-          "confidence": "high",
-          "pedagogicalValue": "Rejected under the no-padding and evidence-first safeguards.",
-          "accepted": false,
-          "rejectionReason": "Rejected because the available project evidence does not establish this modern/occupational sense as the intended Qur’anic-root teaching branch."
+          "rejectionReason": "Rejected in favour of the material, adjective and occupational derivatives, which broaden recognition more usefully for this noun lesson."
         }
       ],
       "acceptedCandidates": [
         {
+          "form": "زُجَاجٌ",
+          "meaning": "glass as a material",
+          "morphology": "Lexical material noun",
+          "relationship": "The material noun related to the Qur’anic glass vessel.",
+          "semanticDevelopment": "The Qur’anic form names one vessel; this form names the substance from which it is made.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Teaches vessel versus material without treating them as synonyms.",
+          "accepted": true
+        },
+        {
+          "form": "زُجَاجِيٌّ",
+          "meaning": "glass / made of glass",
+          "morphology": "Nisbah adjective",
+          "relationship": "An adjective derived from زُجَاجٌ.",
+          "semanticDevelopment": "The adjective describes material or composition rather than the vessel itself.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a clear noun–adjective relationship.",
+          "accepted": true
+        },
+        {
           "form": "زَجَّ",
           "meaning": "he drove / thrust",
           "morphology": "Form I perfect verb",
-          "relationship": "An established verb from the doubled root.",
-          "semanticDevelopment": "The Qur’anic زُجَاجَة is glass; the related verb is translated on its own semantic branch.",
+          "relationship": "An established thrusting/spear-related verbal branch of the doubled root.",
+          "semanticDevelopment": "The meaning develops from glass/vessel vocabulary to thrusting; the verb is translated independently.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Shows semantic development without falsely glossing both as glass.",
+          "pedagogicalValue": "Shows genuine same-root semantic development.",
           "accepted": true
         },
         {
-          "form": "يَزُجُّ",
-          "meaning": "he drives / thrusts",
-          "morphology": "Form I imperfect verb",
-          "relationship": "The ongoing form of زَجَّ.",
-          "semanticDevelopment": "Aspect changes within the verbal branch.",
+          "form": "زَجَّاجٌ",
+          "meaning": "glassmaker / maker of glass",
+          "morphology": "Occupational/intensive noun",
+          "relationship": "An established occupational noun associated with glass and the root family.",
+          "semanticDevelopment": "This is an agent/occupation branch, not another spelling of the vessel noun.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Provides a useful tense contrast.",
-          "accepted": true
-        },
-        {
-          "form": "زَجٌّ",
-          "meaning": "driving / thrusting",
-          "morphology": "Form I verbal noun",
-          "relationship": "The action noun of زَجَّ.",
-          "semanticDevelopment": "Names the action rather than the glass vessel.",
-          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-          "confidence": "high",
-          "pedagogicalValue": "Shows the maṣdar pattern.",
+          "pedagogicalValue": "Connects material, adjective and occupation while preserving the verbal branch.",
           "accepted": true
         }
       ],
       "rejectedCandidates": [
-        "زُجَاجٌ was rejected as the same lexical glass branch as زُجَاجَةٍ.",
-        "زَجَّاجٌ was rejected for insufficient project-backed attestation and pedagogical relevance.",
-        "زُجَاجٌ: Rejected as the same lexical stem/semantic noun as the current زُجَاجَة; it would not provide a sufficiently distinct teaching contrast here.",
-        "زَجَّاجٌ: Rejected because the available project evidence does not establish this modern/occupational sense as the intended Qur’anic-root teaching branch."
+        "The current glass-vessel noun is distinguished from the material noun, nisbah adjective and occupational noun; the thrusting verb is translated as its own semantic branch.",
+        "يَزُجُّ and زَجٌّ were not needed after selecting the more informative material/adjective/occupation contrasts.",
+        "يَزُجُّ: Rejected in favour of the more educational occupational/material contrast; the perfect already establishes the verbal branch and the family must avoid over-weighting conjugational rows.",
+        "زَجٌّ: Rejected in favour of the material, adjective and occupational derivatives, which broaden recognition more usefully for this noun lesson."
       ],
       "finalRows": [
         {
@@ -2592,106 +2682,63 @@
             {
               "form": "زُجَاجَةٍ",
               "meaning": "a glass",
-              "difference": "Current Qur’anic occurrence at 24:35:12; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: genitive.",
-              "relationship": "Current Qur’anic occurrence of the ز ج ج doubled-root family; comparison rows show genuine same-root morphology and honest semantic development.",
-              "provenance": "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
+              "difference": "Current Qur’anic occurrence at 24:35:12; Current Qur’anic occurrence at 24:35:12; Current Qur’anic occurrence at 24:35:12; Current Qur'anic occurrence; gender: feminine; state: indefinite; case: genitive.",
+              "relationship": "Current Qur’anic occurrence of the ز ج ج family; comparison rows show genuine same-root morphology and honest semantic development.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
+            },
+            {
+              "form": "زُجَاجٌ",
+              "meaning": "glass as a material",
+              "difference": "Lexical material noun. Compared with the Qur’anic occurrence at 24:35:12. The Qur’anic form names one vessel; this form names the substance from which it is made. Teaches vessel versus material without treating them as synonyms.",
+              "relationship": "The material noun related to the Qur’anic glass vessel. Same-root relationship to زجج; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+            },
+            {
+              "form": "زُجَاجِيٌّ",
+              "meaning": "glass / made of glass",
+              "difference": "Nisbah adjective. Compared with the Qur’anic occurrence at 24:35:12. The adjective describes material or composition rather than the vessel itself. Adds a clear noun–adjective relationship.",
+              "relationship": "An adjective derived from زُجَاجٌ. Same-root relationship to زجج; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             },
             {
               "form": "زَجَّ",
               "meaning": "he drove / thrust",
-              "difference": "Form I perfect verb. Compared with the Qur’anic occurrence at 24:35:12. The Qur’anic زُجَاجَة is glass; the related verb is translated on its own semantic branch. Shows semantic development without falsely glossing both as glass.",
-              "relationship": "An established verb from the doubled root. Same-root relationship to زجج; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "difference": "Form I perfect verb. Compared with the Qur’anic occurrence at 24:35:12. The meaning develops from glass/vessel vocabulary to thrusting; the verb is translated independently. Shows genuine same-root semantic development.",
+              "relationship": "An established thrusting/spear-related verbal branch of the doubled root. Same-root relationship to زجج; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             },
             {
-              "form": "يَزُجُّ",
-              "meaning": "he drives / thrusts",
-              "difference": "Form I imperfect verb. Compared with the Qur’anic occurrence at 24:35:12. Aspect changes within the verbal branch. Provides a useful tense contrast.",
-              "relationship": "The ongoing form of زَجَّ. Same-root relationship to زجج; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
-            },
-            {
-              "form": "زَجٌّ",
-              "meaning": "driving / thrusting",
-              "difference": "Form I verbal noun. Compared with the Qur’anic occurrence at 24:35:12. Names the action rather than the glass vessel. Shows the maṣdar pattern.",
-              "relationship": "The action noun of زَجَّ. Same-root relationship to زجج; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "form": "زَجَّاجٌ",
+              "meaning": "glassmaker / maker of glass",
+              "difference": "Occupational/intensive noun. Compared with the Qur’anic occurrence at 24:35:12. This is an agent/occupation branch, not another spelling of the vessel noun. Connects material, adjective and occupation while preserving the verbal branch.",
+              "relationship": "An established occupational noun associated with glass and the root family. Same-root relationship to زجج; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             }
           ],
           "sarfReview": {
-            "status": "limited",
-            "limitedReason": "The current glass noun has a secure verb and maṣdar branch, but no further independently useful row was established without repeating the same glass lexeme or relying on a weak occupational derivative. The family is confirmed limited.",
-            "auditDecision": "confirmed-limited",
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
             "provenance": [
-              "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z: CONFIRMED-LIMITED.",
-              "Every occurrence of lexical|زجج|زجاجة|noun/pronoun was inspected: 24:35:12, 24:35:13.",
+              "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z: FULL.",
+              "The family was re-adjudicated because the previous decision or row required correction.",
+              "Accepted زُجَاجٌ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "Accepted زُجَاجِيٌّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
               "Accepted زَجَّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "Accepted يَزُجُّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "Accepted زَجٌّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "زُجَاجٌ was rejected as the same lexical glass branch as زُجَاجَةٍ.",
-              "زَجَّاجٌ was rejected for insufficient project-backed attestation and pedagogical relevance."
+              "Accepted زَجَّاجٌ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "The current glass-vessel noun is distinguished from the material noun, nisbah adjective and occupational noun; the thrusting verb is translated as its own semantic branch.",
+              "يَزُجُّ and زَجٌّ were not needed after selecting the more informative material/adjective/occupation contrasts."
             ],
             "reviewedBy": "Codex",
-            "reviewedAt": "2026-10-22T12:48:50.517Z"
-          }
-        },
-        {
-          "occurrenceId": "word:24:35:13",
-          "location": "24:35:13",
-          "arabic": "ٱلزُّجَاجَةُ",
-          "forms": [
-            {
-              "form": "ٱلزُّجَاجَةُ",
-              "meaning": "the glass",
-              "difference": "Current Qur’anic occurrence at 24:35:13; Current Qur'anic occurrence; gender: feminine; case: nominative.",
-              "relationship": "Current Qur’anic occurrence of the ز ج ج doubled-root family; comparison rows show genuine same-root morphology and honest semantic development.",
-              "provenance": "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
-            },
-            {
-              "form": "زَجَّ",
-              "meaning": "he drove / thrust",
-              "difference": "Form I perfect verb. Compared with the Qur’anic occurrence at 24:35:13. The Qur’anic زُجَاجَة is glass; the related verb is translated on its own semantic branch. Shows semantic development without falsely glossing both as glass.",
-              "relationship": "An established verb from the doubled root. Same-root relationship to زجج; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
-            },
-            {
-              "form": "يَزُجُّ",
-              "meaning": "he drives / thrusts",
-              "difference": "Form I imperfect verb. Compared with the Qur’anic occurrence at 24:35:13. Aspect changes within the verbal branch. Provides a useful tense contrast.",
-              "relationship": "The ongoing form of زَجَّ. Same-root relationship to زجج; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
-            },
-            {
-              "form": "زَجٌّ",
-              "meaning": "driving / thrusting",
-              "difference": "Form I verbal noun. Compared with the Qur’anic occurrence at 24:35:13. Names the action rather than the glass vessel. Shows the maṣdar pattern.",
-              "relationship": "The action noun of زَجَّ. Same-root relationship to زجج; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
-            }
-          ],
-          "sarfReview": {
-            "status": "limited",
-            "limitedReason": "The current glass noun has a secure verb and maṣdar branch, but no further independently useful row was established without repeating the same glass lexeme or relying on a weak occupational derivative. The family is confirmed limited.",
-            "auditDecision": "confirmed-limited",
-            "provenance": [
-              "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z: CONFIRMED-LIMITED.",
-              "Every occurrence of lexical|زجج|زجاجة|noun/pronoun was inspected: 24:35:12, 24:35:13.",
-              "Accepted زَجَّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "Accepted يَزُجُّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "Accepted زَجٌّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "زُجَاجٌ was rejected as the same lexical glass branch as زُجَاجَةٍ.",
-              "زَجَّاجٌ was rejected for insufficient project-backed attestation and pedagogical relevance."
-            ],
-            "reviewedBy": "Codex",
-            "reviewedAt": "2026-10-22T12:48:50.517Z"
+            "reviewedAt": "2026-10-22T20:49:01.437Z"
           }
         }
       ],
-      "decision": "CONFIRMED-LIMITED",
-      "reasoning": "The current glass noun has a secure verb and maṣdar branch, but no further independently useful row was established without repeating the same glass lexeme or relying on a weak occupational derivative. The family is confirmed limited.",
+      "decision": "FULL",
+      "reasoning": "The ز ج ج family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.",
       "evidence": [
-        "Canonical Qur’anic occurrences inspected: 24:35:12, 24:35:13.",
-        "The doubled-root structure was checked against normalized root letters; gemination was not treated as a reason to generate forms automatically.",
+        "Canonical Qur’anic occurrence inspected: 24:35:12.",
+        "Root ownership, vocalisation, morphology, semantic development and shell/case/pronoun padding were independently checked.",
+        "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ز ج ج, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
@@ -2700,9 +2747,9 @@
       "unresolvedQuestion": null,
       "evidenceRequired": [],
       "humanExpertReviewRequired": false,
-      "productionStatus": "confirmed-limited",
-      "reviewedAt": "2026-10-22T12:48:50.517Z",
-      "recordId": "tier-c3c1-family-ff4854b2b46fb836"
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-22T20:49:01.437Z",
+      "recordId": "tier-c3c1-correction-e48ce91b63688cb6"
     },
     {
       "familyKey": "lexical|أدد|اد|noun/pronoun",
@@ -2742,11 +2789,100 @@
           }
         }
       ],
-      "candidatesConsidered": [],
-      "acceptedCandidates": [],
+      "candidatesConsidered": [
+        {
+          "form": "أَدَّ",
+          "meaning": "he became severe / caused hardship",
+          "morphology": "Form I perfect verb",
+          "relationship": "An attested verbal branch of the root.",
+          "semanticDevelopment": "The Qur’anic noun/adjective expresses something grave; the verb presents severity or affliction as an action/state.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Connects the rare Qur’anic item to a real verb without flattening its meaning.",
+          "accepted": true
+        },
+        {
+          "form": "تَأَدَّدَ",
+          "meaning": "he became severe / firm",
+          "morphology": "Form V perfect verb",
+          "relationship": "A derived verb from the same root.",
+          "semanticDevelopment": "The derived pattern presents becoming severe or firm rather than the Qur’anic noun itself.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows a genuinely different derived pattern.",
+          "accepted": true
+        },
+        {
+          "form": "أَدَدٌ",
+          "meaning": "severity / might / greatness",
+          "morphology": "Lexical abstract noun",
+          "relationship": "An attested noun related to the root’s force and severity range.",
+          "semanticDevelopment": "Names the quality or magnitude rather than an event or participant.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds an abstract noun contrast.",
+          "accepted": true
+        },
+        {
+          "form": "أَدِيدٌ",
+          "meaning": "severe / mighty / vehement",
+          "morphology": "Adjective",
+          "relationship": "An established adjective from the same root.",
+          "semanticDevelopment": "Describes something possessing the root’s severity or force.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a clear adjective relationship.",
+          "accepted": true
+        }
+      ],
+      "acceptedCandidates": [
+        {
+          "form": "أَدَّ",
+          "meaning": "he became severe / caused hardship",
+          "morphology": "Form I perfect verb",
+          "relationship": "An attested verbal branch of the root.",
+          "semanticDevelopment": "The Qur’anic noun/adjective expresses something grave; the verb presents severity or affliction as an action/state.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Connects the rare Qur’anic item to a real verb without flattening its meaning.",
+          "accepted": true
+        },
+        {
+          "form": "تَأَدَّدَ",
+          "meaning": "he became severe / firm",
+          "morphology": "Form V perfect verb",
+          "relationship": "A derived verb from the same root.",
+          "semanticDevelopment": "The derived pattern presents becoming severe or firm rather than the Qur’anic noun itself.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows a genuinely different derived pattern.",
+          "accepted": true
+        },
+        {
+          "form": "أَدَدٌ",
+          "meaning": "severity / might / greatness",
+          "morphology": "Lexical abstract noun",
+          "relationship": "An attested noun related to the root’s force and severity range.",
+          "semanticDevelopment": "Names the quality or magnitude rather than an event or participant.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds an abstract noun contrast.",
+          "accepted": true
+        },
+        {
+          "form": "أَدِيدٌ",
+          "meaning": "severe / mighty / vehement",
+          "morphology": "Adjective",
+          "relationship": "An established adjective from the same root.",
+          "semanticDevelopment": "Describes something possessing the root’s severity or force.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a clear adjective relationship.",
+          "accepted": true
+        }
+      ],
       "rejectedCandidates": [
-        "Potential forms based only on the radicals were rejected because the project evidence does not establish a stable productive family for this rare lexical item.",
-        "Case-only or bare-stem variants of إِدًّا were rejected."
+        "Bare or case-only variants of إِدًّا were rejected; the four accepted forms are genuine lexical or derived contrasts."
       ],
       "finalRows": [
         {
@@ -2757,39 +2893,73 @@
             {
               "form": "إِدًّا",
               "meaning": "atrocious",
-              "difference": "Current Qur’anic occurrence at 19:89:4; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: accusative; partOfSpeech: adjective.",
-              "relationship": "Current Qur’anic occurrence of the أ د د doubled-root family; comparison rows show genuine same-root morphology and honest semantic development.",
-              "provenance": "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
+              "difference": "Current Qur’anic occurrence at 19:89:4; Current Qur’anic occurrence at 19:89:4; Current Qur’anic occurrence at 19:89:4; Current Qur'anic occurrence; number: masculine singular; state: indefinite; case: accusative; partOfSpeech: adjective.",
+              "relationship": "Current Qur’anic occurrence of the أ د د family; comparison rows show genuine same-root morphology and honest semantic development.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
+            },
+            {
+              "form": "أَدَّ",
+              "meaning": "he became severe / caused hardship",
+              "difference": "Form I perfect verb. Compared with the Qur’anic occurrence at 19:89:4. The Qur’anic noun/adjective expresses something grave; the verb presents severity or affliction as an action/state. Connects the rare Qur’anic item to a real verb without flattening its meaning.",
+              "relationship": "An attested verbal branch of the root. Same-root relationship to أدد; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+            },
+            {
+              "form": "تَأَدَّدَ",
+              "meaning": "he became severe / firm",
+              "difference": "Form V perfect verb. Compared with the Qur’anic occurrence at 19:89:4. The derived pattern presents becoming severe or firm rather than the Qur’anic noun itself. Shows a genuinely different derived pattern.",
+              "relationship": "A derived verb from the same root. Same-root relationship to أدد; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+            },
+            {
+              "form": "أَدَدٌ",
+              "meaning": "severity / might / greatness",
+              "difference": "Lexical abstract noun. Compared with the Qur’anic occurrence at 19:89:4. Names the quality or magnitude rather than an event or participant. Adds an abstract noun contrast.",
+              "relationship": "An attested noun related to the root’s force and severity range. Same-root relationship to أدد; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+            },
+            {
+              "form": "أَدِيدٌ",
+              "meaning": "severe / mighty / vehement",
+              "difference": "Adjective. Compared with the Qur’anic occurrence at 19:89:4. Describes something possessing the root’s severity or force. Adds a clear adjective relationship.",
+              "relationship": "An established adjective from the same root. Same-root relationship to أدد; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             }
           ],
           "sarfReview": {
-            "status": "limited",
-            "limitedReason": "إِدًّا is a rare emphatic adjective/noun meaning something atrocious, mighty or severe. The reviewed evidence establishes its current occurrence and root semantic range but does not safely establish additional learner-useful forms; a shorter family is more accurate than fabricated morphology.",
-            "auditDecision": "confirmed-limited",
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
             "provenance": [
-              "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z: CONFIRMED-LIMITED.",
-              "Every occurrence of lexical|أدد|اد|noun/pronoun was inspected: 19:89:4.",
-              "Potential forms based only on the radicals were rejected because the project evidence does not establish a stable productive family for this rare lexical item.",
-              "Case-only or bare-stem variants of إِدًّا were rejected."
+              "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z: FULL.",
+              "The family was re-adjudicated because the previous decision or row required correction.",
+              "Accepted أَدَّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "Accepted تَأَدَّدَ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "Accepted أَدَدٌ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "Accepted أَدِيدٌ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "Bare or case-only variants of إِدًّا were rejected; the four accepted forms are genuine lexical or derived contrasts."
             ],
             "reviewedBy": "Codex",
-            "reviewedAt": "2026-10-22T12:48:50.517Z"
+            "reviewedAt": "2026-10-22T20:49:01.437Z"
           }
         }
       ],
-      "decision": "CONFIRMED-LIMITED",
-      "reasoning": "إِدًّا is a rare emphatic adjective/noun meaning something atrocious, mighty or severe. The reviewed evidence establishes its current occurrence and root semantic range but does not safely establish additional learner-useful forms; a shorter family is more accurate than fabricated morphology.",
+      "decision": "FULL",
+      "reasoning": "The أ د د family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.",
       "evidence": [
-        "Canonical Qur’anic occurrences inspected: 19:89:4.",
-        "The doubled-root structure was checked against normalized root letters; gemination was not treated as a reason to generate forms automatically."
+        "Canonical Qur’anic occurrence inspected: 19:89:4.",
+        "Root ownership, vocalisation, morphology, semantic development and shell/case/pronoun padding were independently checked.",
+        "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+        "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+        "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+        "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for أ د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
       ],
       "confidence": "high",
       "unresolvedQuestion": null,
       "evidenceRequired": [],
       "humanExpertReviewRequired": false,
-      "productionStatus": "confirmed-limited",
-      "reviewedAt": "2026-10-22T12:48:50.517Z",
-      "recordId": "tier-c3c1-family-1a46fbb21ad3590b"
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-22T20:49:01.437Z",
+      "recordId": "tier-c3c1-correction-005e7dcc52112549"
     },
     {
       "familyKey": "lexical|جوو|جو|noun/pronoun",
@@ -3678,37 +3848,47 @@
       "candidatesConsidered": [
         {
           "form": "طَلَّ",
-          "meaning": "he sprinkled / appeared",
+          "meaning": "he sprinkled / drizzled",
           "morphology": "Form I perfect verb",
-          "relationship": "An established verb in the root’s rain/appearance range.",
-          "semanticDevelopment": "The Qur’anic طَلّ is a light rain; the verb is translated independently.",
+          "relationship": "The basic verb associated with the Qur’anic light-rain noun.",
+          "semanticDevelopment": "The Qur’anic طَلّ is light rain; the verb names the act of sprinkling or drizzling.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Shows the verbal development without equating the senses.",
+          "pedagogicalValue": "Shows the noun–verb relationship.",
+          "accepted": true
+        },
+        {
+          "form": "أَطَلَّ",
+          "meaning": "he appeared / overlooked",
+          "morphology": "Form IV perfect verb",
+          "relationship": "An established derived branch of the same root.",
+          "semanticDevelopment": "The meaning develops from rain/appearance to appearing or overlooking; it is translated independently.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows a distinct derived pattern and semantic branch.",
+          "accepted": true
+        },
+        {
+          "form": "مَطْلُولٌ",
+          "meaning": "moistened by dew / drizzling rain",
+          "morphology": "Passive participle",
+          "relationship": "The affected form of the rain/moistening branch.",
+          "semanticDevelopment": "Describes what has been touched by dew or drizzle, rather than naming the rain itself.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds an active/passive-result relationship.",
           "accepted": true
         },
         {
           "form": "طَلَلٌ",
           "meaning": "trace / ruin of a dwelling",
           "morphology": "Lexical noun",
-          "relationship": "An established noun from the same root.",
-          "semanticDevelopment": "The meaning develops from light covering/appearance to a remaining trace; it is not presented as drizzle.",
+          "relationship": "An established same-root noun.",
+          "semanticDevelopment": "The semantic development reaches the visible trace or remnant left on the ground; it is not translated as drizzle.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Makes semantic branching visible.",
+          "pedagogicalValue": "Makes the root’s semantic branching explicit.",
           "accepted": true
-        },
-        {
-          "form": "أَطَلَّ",
-          "meaning": "overlooked / appeared",
-          "morphology": "Form IV verb",
-          "relationship": "Candidate considered for the ط ل ل family.",
-          "semanticDevelopment": "Not accepted into the learner-facing family.",
-          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-          "confidence": "high",
-          "pedagogicalValue": "Rejected under the no-padding and evidence-first safeguards.",
-          "accepted": false,
-          "rejectionReason": "Not accepted because the reviewed project evidence does not establish which sense belongs in this rare lesson without risking a semantic-split mismatch."
         },
         {
           "form": "طَلِيلٌ",
@@ -3720,37 +3900,58 @@
           "confidence": "high",
           "pedagogicalValue": "Rejected under the no-padding and evidence-first safeguards.",
           "accepted": false,
-          "rejectionReason": "Rejected because the form/sense is not sufficiently established in the approved project evidence for this family."
+          "rejectionReason": "Rejected from the five-row set because it is a near-synonymous lexical counterpart of مَطْلُولٌ; the selected set gives a stronger pattern and semantic contrast."
         }
       ],
       "acceptedCandidates": [
         {
           "form": "طَلَّ",
-          "meaning": "he sprinkled / appeared",
+          "meaning": "he sprinkled / drizzled",
           "morphology": "Form I perfect verb",
-          "relationship": "An established verb in the root’s rain/appearance range.",
-          "semanticDevelopment": "The Qur’anic طَلّ is a light rain; the verb is translated independently.",
+          "relationship": "The basic verb associated with the Qur’anic light-rain noun.",
+          "semanticDevelopment": "The Qur’anic طَلّ is light rain; the verb names the act of sprinkling or drizzling.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Shows the verbal development without equating the senses.",
+          "pedagogicalValue": "Shows the noun–verb relationship.",
+          "accepted": true
+        },
+        {
+          "form": "أَطَلَّ",
+          "meaning": "he appeared / overlooked",
+          "morphology": "Form IV perfect verb",
+          "relationship": "An established derived branch of the same root.",
+          "semanticDevelopment": "The meaning develops from rain/appearance to appearing or overlooking; it is translated independently.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows a distinct derived pattern and semantic branch.",
+          "accepted": true
+        },
+        {
+          "form": "مَطْلُولٌ",
+          "meaning": "moistened by dew / drizzling rain",
+          "morphology": "Passive participle",
+          "relationship": "The affected form of the rain/moistening branch.",
+          "semanticDevelopment": "Describes what has been touched by dew or drizzle, rather than naming the rain itself.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds an active/passive-result relationship.",
           "accepted": true
         },
         {
           "form": "طَلَلٌ",
           "meaning": "trace / ruin of a dwelling",
           "morphology": "Lexical noun",
-          "relationship": "An established noun from the same root.",
-          "semanticDevelopment": "The meaning develops from light covering/appearance to a remaining trace; it is not presented as drizzle.",
+          "relationship": "An established same-root noun.",
+          "semanticDevelopment": "The semantic development reaches the visible trace or remnant left on the ground; it is not translated as drizzle.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Makes semantic branching visible.",
+          "pedagogicalValue": "Makes the root’s semantic branching explicit.",
           "accepted": true
         }
       ],
       "rejectedCandidates": [
-        "Additional appearance/rain candidates were rejected because the available evidence did not securely establish their sense and pedagogical role here.",
-        "أَطَلَّ: Not accepted because the reviewed project evidence does not establish which sense belongs in this rare lesson without risking a semantic-split mismatch.",
-        "طَلِيلٌ: Rejected because the form/sense is not sufficiently established in the approved project evidence for this family."
+        "طَلِيلٌ was verified as an attested derivative but not selected because it substantially overlaps the selected passive/result form مَطْلُولٌ; طَلَلٌ supplies the more useful distinct lexical branch.",
+        "طَلِيلٌ: Rejected from the five-row set because it is a near-synonymous lexical counterpart of مَطْلُولٌ; the selected set gives a stronger pattern and semantic contrast."
       ],
       "finalRows": [
         {
@@ -3761,46 +3962,63 @@
             {
               "form": "فَطَلٌّ",
               "meaning": "then a drizzle",
-              "difference": "Current Qur’anic occurrence at 2:265:23; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative.",
-              "relationship": "Current Qur’anic occurrence of the ط ل ل doubled-root family; comparison rows show genuine same-root morphology and honest semantic development.",
-              "provenance": "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
+              "difference": "Current Qur’anic occurrence at 2:265:23; Current Qur’anic occurrence at 2:265:23; Current Qur’anic occurrence at 2:265:23; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: nominative.",
+              "relationship": "Current Qur’anic occurrence of the ط ل ل family; comparison rows show genuine same-root morphology and honest semantic development.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
             },
             {
               "form": "طَلَّ",
-              "meaning": "he sprinkled / appeared",
-              "difference": "Form I perfect verb. Compared with the Qur’anic occurrence at 2:265:23. The Qur’anic طَلّ is a light rain; the verb is translated independently. Shows the verbal development without equating the senses.",
-              "relationship": "An established verb in the root’s rain/appearance range. Same-root relationship to طلل; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "meaning": "he sprinkled / drizzled",
+              "difference": "Form I perfect verb. Compared with the Qur’anic occurrence at 2:265:23. The Qur’anic طَلّ is light rain; the verb names the act of sprinkling or drizzling. Shows the noun–verb relationship.",
+              "relationship": "The basic verb associated with the Qur’anic light-rain noun. Same-root relationship to طلل; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+            },
+            {
+              "form": "أَطَلَّ",
+              "meaning": "he appeared / overlooked",
+              "difference": "Form IV perfect verb. Compared with the Qur’anic occurrence at 2:265:23. The meaning develops from rain/appearance to appearing or overlooking; it is translated independently. Shows a distinct derived pattern and semantic branch.",
+              "relationship": "An established derived branch of the same root. Same-root relationship to طلل; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+            },
+            {
+              "form": "مَطْلُولٌ",
+              "meaning": "moistened by dew / drizzling rain",
+              "difference": "Passive participle. Compared with the Qur’anic occurrence at 2:265:23. Describes what has been touched by dew or drizzle, rather than naming the rain itself. Adds an active/passive-result relationship.",
+              "relationship": "The affected form of the rain/moistening branch. Same-root relationship to طلل; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             },
             {
               "form": "طَلَلٌ",
               "meaning": "trace / ruin of a dwelling",
-              "difference": "Lexical noun. Compared with the Qur’anic occurrence at 2:265:23. The meaning develops from light covering/appearance to a remaining trace; it is not presented as drizzle. Makes semantic branching visible.",
-              "relationship": "An established noun from the same root. Same-root relationship to طلل; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "difference": "Lexical noun. Compared with the Qur’anic occurrence at 2:265:23. The semantic development reaches the visible trace or remnant left on the ground; it is not translated as drizzle. Makes the root’s semantic branching explicit.",
+              "relationship": "An established same-root noun. Same-root relationship to طلل; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             }
           ],
           "sarfReview": {
-            "status": "limited",
-            "limitedReason": "The current drizzle noun has a defensible verb and a distinct established same-root noun, but the remaining candidate space is semantically split and not sufficiently secured for a five-row family. The family is confirmed limited.",
-            "auditDecision": "confirmed-limited",
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
             "provenance": [
-              "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z: CONFIRMED-LIMITED.",
-              "Every occurrence of lexical|طلل|طل|noun/pronoun was inspected: 2:265:23.",
+              "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z: FULL.",
+              "The family was re-adjudicated because the previous decision or row required correction.",
               "Accepted طَلَّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "Accepted أَطَلَّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "Accepted مَطْلُولٌ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
               "Accepted طَلَلٌ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "Additional appearance/rain candidates were rejected because the available evidence did not securely establish their sense and pedagogical role here."
+              "طَلِيلٌ was verified as an attested derivative but not selected because it substantially overlaps the selected passive/result form مَطْلُولٌ; طَلَلٌ supplies the more useful distinct lexical branch."
             ],
             "reviewedBy": "Codex",
-            "reviewedAt": "2026-10-22T12:48:50.517Z"
+            "reviewedAt": "2026-10-22T20:49:01.437Z"
           }
         }
       ],
-      "decision": "CONFIRMED-LIMITED",
-      "reasoning": "The current drizzle noun has a defensible verb and a distinct established same-root noun, but the remaining candidate space is semantically split and not sufficiently secured for a five-row family. The family is confirmed limited.",
+      "decision": "FULL",
+      "reasoning": "The ط ل ل family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.",
       "evidence": [
-        "Canonical Qur’anic occurrences inspected: 2:265:23.",
-        "The doubled-root structure was checked against normalized root letters; gemination was not treated as a reason to generate forms automatically.",
+        "Canonical Qur’anic occurrence inspected: 2:265:23.",
+        "Root ownership, vocalisation, morphology, semantic development and shell/case/pronoun padding were independently checked.",
+        "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+        "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ط ل ل, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
       ],
@@ -3808,9 +4026,9 @@
       "unresolvedQuestion": null,
       "evidenceRequired": [],
       "humanExpertReviewRequired": false,
-      "productionStatus": "confirmed-limited",
-      "reviewedAt": "2026-10-22T12:48:50.517Z",
-      "recordId": "tier-c3c1-family-5c9c735d95895ad4"
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-22T20:49:01.437Z",
+      "recordId": "tier-c3c1-correction-4ae55ac71aa8ce9e"
     },
     {
       "familyKey": "lexical|عرر|معتر|noun/pronoun",
@@ -4316,17 +4534,6 @@
           "accepted": true
         },
         {
-          "form": "يَقُطُّ",
-          "meaning": "he cuts / divides",
-          "morphology": "Form I imperfect verb",
-          "relationship": "The ongoing form of قَطَّ.",
-          "semanticDevelopment": "Aspect changes within the cutting branch.",
-          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-          "confidence": "high",
-          "pedagogicalValue": "Provides a tense contrast.",
-          "accepted": true
-        },
-        {
           "form": "قَطٌّ",
           "meaning": "cutting / division",
           "morphology": "Form I verbal noun",
@@ -4338,6 +4545,40 @@
           "accepted": true
         },
         {
+          "form": "قَطَّطَ",
+          "meaning": "he cut / shaped into pieces",
+          "morphology": "Form II perfect verb",
+          "relationship": "An attested derived cutting/shaping branch.",
+          "semanticDevelopment": "The derived form intensifies or causatively develops the cutting action rather than repeating the current share noun.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows a distinct derived pattern.",
+          "accepted": true
+        },
+        {
+          "form": "مِقَطٌّ",
+          "meaning": "cutting instrument / pen-cutting surface",
+          "morphology": "Instrument noun",
+          "relationship": "An established instrument noun associated with cutting and trimming.",
+          "semanticDevelopment": "Names the tool or surface used for the cutting action rather than the share/allotment noun.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds an instrument relationship useful for recognition.",
+          "accepted": true
+        },
+        {
+          "form": "يَقُطُّ",
+          "meaning": "he cuts / divides",
+          "morphology": "Form I imperfect verb",
+          "relationship": "Candidate considered for the ق ط ط family.",
+          "semanticDevelopment": "Not accepted into the learner-facing family.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Rejected under the no-padding and evidence-first safeguards.",
+          "accepted": false,
+          "rejectionReason": "Rejected in favour of the derived Form II and instrument contrasts, which teach more than another tense row for this noun lesson."
+        },
+        {
           "form": "قِطٌّ",
           "meaning": "a share / allotted portion",
           "morphology": "Lexical noun without attached pronoun",
@@ -4347,7 +4588,7 @@
           "confidence": "high",
           "pedagogicalValue": "Rejected under the no-padding and evidence-first safeguards.",
           "accepted": false,
-          "rejectionReason": "Rejected because it is the same lexical noun as قِطَّنَا after removing the attached pronoun; the project does not count pronoun-only variants as new Ṣarf rows."
+          "rejectionReason": "Rejected because it is the same lexical noun as قِطَّنَا after removing the attached pronoun; pronoun-only variants are not new Ṣarf rows."
         },
         {
           "form": "قِطٌّ",
@@ -4375,17 +4616,6 @@
           "accepted": true
         },
         {
-          "form": "يَقُطُّ",
-          "meaning": "he cuts / divides",
-          "morphology": "Form I imperfect verb",
-          "relationship": "The ongoing form of قَطَّ.",
-          "semanticDevelopment": "Aspect changes within the cutting branch.",
-          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-          "confidence": "high",
-          "pedagogicalValue": "Provides a tense contrast.",
-          "accepted": true
-        },
-        {
           "form": "قَطٌّ",
           "meaning": "cutting / division",
           "morphology": "Form I verbal noun",
@@ -4395,12 +4625,34 @@
           "confidence": "high",
           "pedagogicalValue": "Shows the maṣdar relation.",
           "accepted": true
+        },
+        {
+          "form": "قَطَّطَ",
+          "meaning": "he cut / shaped into pieces",
+          "morphology": "Form II perfect verb",
+          "relationship": "An attested derived cutting/shaping branch.",
+          "semanticDevelopment": "The derived form intensifies or causatively develops the cutting action rather than repeating the current share noun.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows a distinct derived pattern.",
+          "accepted": true
+        },
+        {
+          "form": "مِقَطٌّ",
+          "meaning": "cutting instrument / pen-cutting surface",
+          "morphology": "Instrument noun",
+          "relationship": "An established instrument noun associated with cutting and trimming.",
+          "semanticDevelopment": "Names the tool or surface used for the cutting action rather than the share/allotment noun.",
+          "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds an instrument relationship useful for recognition.",
+          "accepted": true
         }
       ],
       "rejectedCandidates": [
-        "قِطٌّ with the pronoun removed was rejected as shell variation.",
-        "The cat sense was rejected as an unrelated homonym for this lesson.",
-        "قِطٌّ: Rejected because it is the same lexical noun as قِطَّنَا after removing the attached pronoun; the project does not count pronoun-only variants as new Ṣarf rows.",
+        "The current share/allotment noun is kept distinct from the cat homonym. The four additional rows teach Form I action, maṣdar, Form II derivation and an instrument noun.",
+        "يَقُطُّ: Rejected in favour of the derived Form II and instrument contrasts, which teach more than another tense row for this noun lesson.",
+        "قِطٌّ: Rejected because it is the same lexical noun as قِطَّنَا after removing the attached pronoun; pronoun-only variants are not new Ṣarf rows.",
         "قِطٌّ: Rejected because the animal sense is a separate lexical item and would be misleading in this lesson."
       ],
       "finalRows": [
@@ -4412,55 +4664,62 @@
             {
               "form": "قِطَّنَا",
               "meaning": "our share",
-              "difference": "Current Qur’anic occurrence at 38:16:5; Current Qur'anic occurrence; gender: masculine; case: accusative; person: first-person plural.",
-              "relationship": "Current Qur’anic occurrence of the ق ط ط doubled-root family; comparison rows show genuine same-root morphology and honest semantic development.",
-              "provenance": "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
+              "difference": "Current Qur’anic occurrence at 38:16:5; Current Qur’anic occurrence at 38:16:5; Current Qur’anic occurrence at 38:16:5; Current Qur'anic occurrence; gender: masculine; case: accusative; person: first-person plural.",
+              "relationship": "Current Qur’anic occurrence of the ق ط ط family; comparison rows show genuine same-root morphology and honest semantic development.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
             },
             {
               "form": "قَطَّ",
               "meaning": "he cut / divided",
               "difference": "Form I perfect verb. Compared with the Qur’anic occurrence at 38:16:5. The Qur’anic word means a share or allotted portion; the verb shows the cutting/dividing development and is translated independently. Teaches semantic development honestly.",
               "relationship": "The cutting branch associated with the root picture. Same-root relationship to قطط; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
-            },
-            {
-              "form": "يَقُطُّ",
-              "meaning": "he cuts / divides",
-              "difference": "Form I imperfect verb. Compared with the Qur’anic occurrence at 38:16:5. Aspect changes within the cutting branch. Provides a tense contrast.",
-              "relationship": "The ongoing form of قَطَّ. Same-root relationship to قطط; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             },
             {
               "form": "قَطٌّ",
               "meaning": "cutting / division",
               "difference": "Form I verbal noun. Compared with the Qur’anic occurrence at 38:16:5. Names the action rather than the allotted share. Shows the maṣdar relation.",
               "relationship": "The action noun of قَطَّ. Same-root relationship to قطط; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+            },
+            {
+              "form": "قَطَّطَ",
+              "meaning": "he cut / shaped into pieces",
+              "difference": "Form II perfect verb. Compared with the Qur’anic occurrence at 38:16:5. The derived form intensifies or causatively develops the cutting action rather than repeating the current share noun. Shows a distinct derived pattern.",
+              "relationship": "An attested derived cutting/shaping branch. Same-root relationship to قطط; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+            },
+            {
+              "form": "مِقَطٌّ",
+              "meaning": "cutting instrument / pen-cutting surface",
+              "difference": "Instrument noun. Compared with the Qur’anic occurrence at 38:16:5. Names the tool or surface used for the cutting action rather than the share/allotment noun. Adds an instrument relationship useful for recognition.",
+              "relationship": "An established instrument noun associated with cutting and trimming. Same-root relationship to قطط; this is not shell variation or a bare-radical row.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             }
           ],
           "sarfReview": {
-            "status": "limited",
-            "limitedReason": "The cutting branch is secure enough for a verb, imperfect and maṣdar, but the share noun is homonymically/sense-sensitive and its apparent singular is only the current noun without an attached pronoun. A limited family is safer than a fabricated five-row display.",
-            "auditDecision": "confirmed-limited",
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
             "provenance": [
-              "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z: CONFIRMED-LIMITED.",
-              "Every occurrence of lexical|قطط|قط|noun/pronoun was inspected: 38:16:5.",
+              "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z: FULL.",
+              "The family was re-adjudicated because the previous decision or row required correction.",
               "Accepted قَطَّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "Accepted يَقُطُّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
               "Accepted قَطٌّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "قِطٌّ with the pronoun removed was rejected as shell variation.",
-              "The cat sense was rejected as an unrelated homonym for this lesson."
+              "Accepted قَطَّطَ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "Accepted مِقَطٌّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "The current share/allotment noun is kept distinct from the cat homonym. The four additional rows teach Form I action, maṣdar, Form II derivation and an instrument noun."
             ],
             "reviewedBy": "Codex",
-            "reviewedAt": "2026-10-22T12:48:50.517Z"
+            "reviewedAt": "2026-10-22T20:49:01.437Z"
           }
         }
       ],
-      "decision": "CONFIRMED-LIMITED",
-      "reasoning": "The cutting branch is secure enough for a verb, imperfect and maṣdar, but the share noun is homonymically/sense-sensitive and its apparent singular is only the current noun without an attached pronoun. A limited family is safer than a fabricated five-row display.",
+      "decision": "FULL",
+      "reasoning": "The ق ط ط family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.",
       "evidence": [
-        "Canonical Qur’anic occurrences inspected: 38:16:5.",
-        "The doubled-root structure was checked against normalized root letters; gemination was not treated as a reason to generate forms automatically.",
+        "Canonical Qur’anic occurrence inspected: 38:16:5.",
+        "Root ownership, vocalisation, morphology, semantic development and shell/case/pronoun padding were independently checked.",
+        "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ق ط ط, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
@@ -4469,9 +4728,9 @@
       "unresolvedQuestion": null,
       "evidenceRequired": [],
       "humanExpertReviewRequired": false,
-      "productionStatus": "confirmed-limited",
-      "reviewedAt": "2026-10-22T12:48:50.517Z",
-      "recordId": "tier-c3c1-family-74e76b9566368d12"
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-22T20:49:01.437Z",
+      "recordId": "tier-c3c1-correction-8705c3068cb4c235"
     },
     {
       "familyKey": "lexical|هدد|هد|noun/pronoun",
@@ -4546,14 +4805,14 @@
           "accepted": true
         },
         {
-          "form": "مَهْدُومٌ",
+          "form": "مَهْدُودٌ",
           "meaning": "demolished / pulled down",
           "morphology": "Form I passive participle",
           "relationship": "The affected-object form of هَدَّ.",
-          "semanticDevelopment": "Shows the passive result rather than the devastation action noun.",
+          "semanticDevelopment": "Shows the passive result rather than the devastation action noun; the doubled-root د is retained in the correct passive form.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Adds a clear active/passive contrast.",
+          "pedagogicalValue": "Adds a clear active/passive contrast without crossing into root ه د م.",
           "accepted": true
         },
         {
@@ -4604,18 +4863,19 @@
           "accepted": true
         },
         {
-          "form": "مَهْدُومٌ",
+          "form": "مَهْدُودٌ",
           "meaning": "demolished / pulled down",
           "morphology": "Form I passive participle",
           "relationship": "The affected-object form of هَدَّ.",
-          "semanticDevelopment": "Shows the passive result rather than the devastation action noun.",
+          "semanticDevelopment": "Shows the passive result rather than the devastation action noun; the doubled-root د is retained in the correct passive form.",
           "evidence": "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
           "confidence": "high",
-          "pedagogicalValue": "Adds a clear active/passive contrast.",
+          "pedagogicalValue": "Adds a clear active/passive contrast without crossing into root ه د م.",
           "accepted": true
         }
       ],
       "rejectedCandidates": [
+        "مَهْدُومٌ was removed because it belongs to root ه د م, not ه د د. The correct ه د د passive participle is مَهْدُودٌ.",
         "هَدٌّ was rejected as case-only removal of the current verbal noun.",
         "هَدٌّ: Rejected because it is the same lexical noun as the current هَدًّا after removing the case ending."
       ],
@@ -4628,61 +4888,62 @@
             {
               "form": "هَدًّا",
               "meaning": "(in) devastation",
-              "difference": "Current Qur’anic occurrence at 19:90:9; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative.",
-              "relationship": "Current Qur’anic occurrence of the ه د د doubled-root family; comparison rows show genuine same-root morphology and honest semantic development.",
-              "provenance": "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
+              "difference": "Current Qur’anic occurrence at 19:90:9; Current Qur’anic occurrence at 19:90:9; Current Qur’anic occurrence at 19:90:9; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative.",
+              "relationship": "Current Qur’anic occurrence of the ه د د family; comparison rows show genuine same-root morphology and honest semantic development.",
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; canonical occurrence, current lesson, root, lemma and aligned morphology evidence inspected."
             },
             {
               "form": "هَدَّ",
               "meaning": "he demolished / pulled down",
               "difference": "Form I perfect verb. Compared with the Qur’anic occurrence at 19:90:9. The Qur’anic form names devastation; the verb names the act. Connects action and result.",
               "relationship": "The active action behind the devastation noun. Same-root relationship to هدد; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             },
             {
               "form": "يَهُدُّ",
               "meaning": "he demolishes / pulls down",
               "difference": "Form I imperfect verb. Compared with the Qur’anic occurrence at 19:90:9. Aspect changes within the same action branch. Provides a useful tense contrast.",
               "relationship": "The ongoing form of هَدَّ. Same-root relationship to هدد; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             },
             {
               "form": "هَادٌّ",
               "meaning": "demolishing / destructive",
               "difference": "Form I active participle. Compared with the Qur’anic occurrence at 19:90:9. Describes the one or thing doing the demolition. Adds a distinct participial pattern.",
               "relationship": "The agent/quality form of هَدَّ. Same-root relationship to هدد; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             },
             {
-              "form": "مَهْدُومٌ",
+              "form": "مَهْدُودٌ",
               "meaning": "demolished / pulled down",
-              "difference": "Form I passive participle. Compared with the Qur’anic occurrence at 19:90:9. Shows the passive result rather than the devastation action noun. Adds a clear active/passive contrast.",
+              "difference": "Form I passive participle. Compared with the Qur’anic occurrence at 19:90:9. Shows the passive result rather than the devastation action noun; the doubled-root د is retained in the correct passive form. Adds a clear active/passive contrast without crossing into root ه د م.",
               "relationship": "The affected-object form of هَدَّ. Same-root relationship to هدد; this is not shell variation or a bare-radical row.",
-              "provenance": "Tier-C3-C1 adjudication 2026-10-22T12:48:50.517Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
+              "provenance": "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z; Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer."
             }
           ],
           "sarfReview": {
             "status": "full",
             "auditDecision": "upgraded-to-full",
             "provenance": [
-              "Tier-C3-C1 doubled-root adjudication 2026-10-22T12:48:50.517Z: FULL.",
-              "Every occurrence of lexical|هدد|هد|noun/pronoun was inspected: 19:90:9.",
+              "Targeted C3-C1 correction 2026-10-22T20:49:01.437Z: FULL.",
+              "The family was re-adjudicated because the previous decision or row required correction.",
               "Accepted هَدَّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
               "Accepted يَهُدُّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
               "Accepted هَادٌّ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
-              "Accepted مَهْدُومٌ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "Accepted مَهْدُودٌ: Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
+              "مَهْدُومٌ was removed because it belongs to root ه د م, not ه د د. The correct ه د د passive participle is مَهْدُودٌ.",
               "هَدٌّ was rejected as case-only removal of the current verbal noun."
             ],
             "reviewedBy": "Codex",
-            "reviewedAt": "2026-10-22T12:48:50.517Z"
+            "reviewedAt": "2026-10-22T20:49:01.437Z"
           }
         }
       ],
       "decision": "FULL",
       "reasoning": "The ه د د family has four genuinely attested and morphologically useful comparison forms. The current Qur’anic form remains first; no shell-only or case-only variant is used.",
       "evidence": [
-        "Canonical Qur’anic occurrences inspected: 19:90:9.",
-        "The doubled-root structure was checked against normalized root letters; gemination was not treated as a reason to generate forms automatically.",
+        "Canonical Qur’anic occurrence inspected: 19:90:9.",
+        "Root ownership, vocalisation, morphology, semantic development and shell/case/pronoun padding were independently checked.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
         "Canonical Qur’anic occurrence(s), the project-reviewed root-meaning dictionary for ه د د, aligned Qur’anic morphology evidence, and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as an automatic teaching answer.",
@@ -4693,8 +4954,8 @@
       "evidenceRequired": [],
       "humanExpertReviewRequired": false,
       "productionStatus": "full",
-      "reviewedAt": "2026-10-22T12:48:50.517Z",
-      "recordId": "tier-c3c1-family-9c1707993458521d"
+      "reviewedAt": "2026-10-22T20:49:01.437Z",
+      "recordId": "tier-c3c1-correction-79c933ed572f923e"
     }
   ]
 }

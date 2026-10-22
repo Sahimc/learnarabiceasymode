@@ -124,6 +124,16 @@
       "safeguard": "Check every retained row's Arabic form, meaning and provenance against the lesson root and lexeme. Reject wrong-root rows even when they share a surface pattern; require approved lexicon, canonical evidence or explicit Codex linguistic provenance for every retained row."
     },
     {
+      "id": "sarf-cross-root-form-contamination",
+      "problem": "A morphologically similar form from a neighbouring root family is copied into the current Ṣarf family, such as the ه د م passive participle مَهْدُومٌ being assigned to ه د د.",
+      "safeguard": "Before approving every Ṣarf row, independently verify the Arabic root radicals, vocalised pattern, lemma and meaning. Compare doubled-root and neighbouring-root forms explicitly, reject any row whose root ownership differs, and run a corpus-wide wrong-root search after every adjudication batch."
+    },
+    {
+      "id": "sarf-family-split-by-shell-variant",
+      "problem": "One lexical family is split into separate learner families because a second Qur’anic occurrence adds a grammatical shell such as ال, و, ف, a pronoun or a case ending, leaving equivalent occurrences with inconsistent Ṣarf rows.",
+      "safeguard": "After approving a family, locate every occurrence with the same reviewed root and lexical lemma even when its surface shell differs. Keep that occurrence’s complete Qur’anic form first, then propagate the approved family rows and provenance; never count the shell as an additional Ṣarf form."
+    },
+    {
       "id": "sarf-clitic-is-not-family-form",
       "problem": "A conjunction clitic such as وَ or فَ is counted as a new Ṣarf family form when it merely attaches to an otherwise unchanged lexical stem.",
       "safeguard": "Separate conjunction clitics from lexical morphology. Do not count a canonical occurrence whose provider lexical stem is unchanged and whose only added material is وَ or فَ; explain the clitic in the word breakdown instead."
