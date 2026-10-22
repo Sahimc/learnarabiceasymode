@@ -1,9 +1,9 @@
 # Tier-C3-C2 hamzated-root Ṣarf adjudications
 
-Reviewed at: 2026-10-22T21:09:49.866Z
+Reviewed at: 2026-10-22T21:47:35.024Z
 Contract: 1.3.9
 
-This report covers exactly the 25 HAMZATED primary-track families / 32 Qur’anic occurrences. Doubled, weak, quadriliteral, root/lemma-uncertain, C3-D, C3-E and residual tracks were excluded. Hamza-seat spelling was not treated as a separate root or row.
+This report covers the 25 HAMZATED primary-track families / 32 Qur’anic occurrences. This targeted pass corrected only the named C3-C2 metadata/family records; C3-C3 quadriliteral adjudication has not started.
 
 ## Summary
 
@@ -14,62 +14,38 @@ This report covers exactly the 25 HAMZATED primary-track families / 32 Qur’ani
   "adjudicatedFamilies": 25,
   "adjudicatedOccurrences": 32,
   "decisions": {
-    "FULL": 13,
-    "CONFIRMED-LIMITED": 11,
+    "FULL": 18,
+    "CONFIRMED-LIMITED": 6,
     "BLOCKED": 0,
     "MODEL-ISSUE": 1
   },
   "occurrencesByDecision": {
-    "FULL": 19,
-    "CONFIRMED-LIMITED": 12,
+    "FULL": 25,
+    "CONFIRMED-LIMITED": 6,
     "BLOCKED": 0,
     "MODEL-ISSUE": 1
   },
+  "targetedCorrectionFamilies": 6,
+  "targetedCorrectionOccurrences": 8,
   "changedSurahs": [
-    2,
     3,
     5,
-    6,
-    7,
     9,
-    12,
-    13,
-    15,
-    16,
     18,
-    19,
-    20,
     22,
     24,
-    27,
-    28,
-    34,
     47
   ],
   "changedPackageFiles": [
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\002-al-baqarah\\surah.json",
     "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\003-l-imr-n\\surah.json",
     "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\005-al-m-idah\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\006-al-an-m\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\007-al-a-r-f\\surah.json",
     "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\009-at-tawbah\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\012-y-suf\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\013-ar-ra-d\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\015-al-ijr\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\016-an-na-l\\surah.json",
     "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\018-al-kahf\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\019-maryam\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\020-h\\surah.json",
     "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\022-al-ajj\\surah.json",
     "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\024-an-n-r\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\027-an-naml\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\028-al-qa-a\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\034-saba\\surah.json",
-    "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\041-fu-ilat\\surah.json",
     "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\047-mu-ammad\\surah.json"
   ],
   "excluded": [
-    "C3-C1 doubled (closed)",
     "C3-C3 quadriliteral",
     "C3-C4 weak",
     "C3-C5 root/lemma uncertain",
@@ -80,31 +56,6 @@ This report covers exactly the 25 HAMZATED primary-track families / 32 Qur’ani
   ]
 }
 ```
-
-## lexical|هيأ|هية|noun/pronoun
-
-Decision: **FULL**; root: هيأ; word: كَهَيْـَٔةِ; locations: 3:49:16, 5:110:31
-Hamza position: second radical; secondary flags: weak-root
-Root normalization: project and evidence conventions agree
-
-The noun هَيْئَةٌ and the Form-II preparation family are securely related through هيأ. The current Qur’anic form remains first; كَهَيْئَةِ is not stripped to manufacture a row.
-
-Accepted candidates:
-
-- هَيَّأَ — he prepared / made ready; Form II perfect; Causative/intensive development from the noun of form or shape.; semantic development: The Qur’anic noun describes a form; this verb develops the root into making something ready.; confidence: high; pedagogical value: Contrasts noun and derived verb without treating the prefixed كَـ as morphology.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
-- يُهَيِّئُ — he prepares / makes ready; Form II imperfect; Ongoing counterpart of هَيَّأَ.; semantic development: The meaning remains in the preparation branch while the aspect changes.; confidence: high; pedagogical value: Shows the productive imperfect pattern.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
-- تَهْيِئَةٌ — preparation / making ready; Form II maṣdar; Abstract noun of هَيَّأَ.; semantic development: Names the preparation action rather than the physical form.; confidence: high; pedagogical value: Makes the relationship between verb and verbal noun visible.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
-- مُهَيَّأٌ — prepared / made ready; Form II passive participle; Result state produced by هَيَّأَ.; semantic development: Moves from the agent’s preparing to the state of being prepared.; confidence: high; pedagogical value: Adds a genuinely distinct participial contrast.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
-
-Candidates rejected / safeguards:
-
-- هَيْئَةٌ was not repeated as a comparison row because it is the current lexical noun with only the Qur’anic shell/case context changed.
-
-Unresolved question: None
-Evidence required: None
-Human expert review still required: no
-
----
 
 ## lexical|أزر|ازر|noun/pronoun
 
@@ -231,29 +182,6 @@ Human expert review still required: no
 
 ---
 
-## lexical|ألل|الا|noun/pronoun
-
-Decision: **CONFIRMED-LIMITED**; root: ألل; word: إِلًّا; locations: 9:8:8, 9:10:5
-Hamza position: first radical; secondary flags: doubled-root
-Root normalization: project and evidence conventions agree
-
-إِلٌّ is a lexically and exegetically complex Qur’anic word, with competing interpretations such as kinship, covenant or protection. The current family is honestly limited rather than padded with forms from the unrelated لَأَمَ / لَؤُم branches.
-
-Accepted candidates:
-
-- None
-
-Candidates rejected / safeguards:
-
-- Forms from لَأَمَ, لَؤُمَ or الله were rejected: they are not established as safe same-root teaching members of the Qur’anic إِلٌّ family.
-- Hamza-seat and doubled-letter surface variants are not separate rows.
-
-Unresolved question: None
-Evidence required: None
-Human expert review still required: no
-
----
-
 ## lexical|أرب|مارب|noun/pronoun
 
 Decision: **FULL**; root: أرب; word: مَـَٔارِبُ; locations: 20:18:12
@@ -279,29 +207,6 @@ Human expert review still required: no
 
 ---
 
-## lexical|أمو|امائ|noun/pronoun
-
-Decision: **CONFIRMED-LIMITED**; root: أمو; word: وَإِمَآئِكُمْ; locations: 24:32:7
-Hamza position: third radical; secondary flags: weak-root
-Root normalization: project and evidence conventions agree
-
-The target is a weak-root plural noun. The securely useful teaching contrast is the singular أَمَةٌ; additional apparent forms are either shell/number variants, a separate Umayyad nisbah branch, or insufficiently secure for this lesson.
-
-Accepted candidates:
-
-- أَمَةٌ — a female slave / handmaid; Singular noun; Singular counterpart of the Qur’anic plural إِمَاءٌ.; semantic development: This is a meaningful number/lexical relationship, not a case change.; confidence: high; pedagogical value: Helps recognise the plural noun elsewhere.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
-
-Candidates rejected / safeguards:
-
-- وَإِمَاءُ and إِمَائِكُمْ were not duplicated after removing و or the possessive suffix.
-- أُمَوِيٌّ was rejected as the nisbah to Umayya, not the female-slave lexical branch.
-
-Unresolved question: None
-Evidence required: None
-Human expert review still required: no
-
----
-
 ## lexical|أثل|اثل|noun/pronoun
 
 Decision: **FULL**; root: أثل; word: وَأَثْلٍ; locations: 34:16:12
@@ -320,31 +225,6 @@ Accepted candidates:
 Candidates rejected / safeguards:
 
 - None beyond the standard shell/case safeguards.
-
-Unresolved question: None
-Evidence required: None
-Human expert review still required: no
-
----
-
-## lexical|أسن|اسن|noun/pronoun
-
-Decision: **CONFIRMED-LIMITED**; root: أسن; word: ءَاسِنٍ; locations: 47:15:11
-Hamza position: first radical; secondary flags: none
-Root normalization: project and evidence conventions agree
-
-The current adjective and three closely related lexical forms are defensible, but a fifth useful member is not established without padding. This is a confirmed limited family, not an unresolved blocker.
-
-Accepted candidates:
-
-- أَسِنَ — it became stale / altered in smell; Form I perfect; State-change verb behind the stale-water adjective.; semantic development: The Qur’anic adjective describes water; the verb describes its becoming stale.; confidence: high; pedagogical value: Gives the learner a real verb while preserving the specific water sense.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
-- يَأْسَنُ — it becomes stale; Form I imperfect; Imperfect counterpart of أَسِنَ.; semantic development: Ongoing change in the water’s condition.; confidence: high; pedagogical value: Adds aspect contrast.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
-- أُسُونٌ — staleness / alteration; Verbal noun; Abstract noun of the stale/altered state.; semantic development: Names the condition rather than the water itself.; confidence: high; pedagogical value: Completes a compact, genuinely attested family.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
-
-Candidates rejected / safeguards:
-
-- آسِنٌ was not repeated with another case ending or spelling variant.
-- A mechanically generated passive/active participle was rejected without reliable lexical attestation.
 
 Unresolved question: None
 Evidence required: None
@@ -417,31 +297,6 @@ Accepted candidates:
 Candidates rejected / safeguards:
 
 - أَيْمَةٌ was not added as a fifth row because it is a closely related feminine lexical variant and would add less teaching value than the selected verb/derived forms.
-
-Unresolved question: None
-Evidence required: None
-Human expert review still required: no
-
----
-
-## lexical|بأر|بئر|noun/pronoun
-
-Decision: **CONFIRMED-LIMITED**; root: بأر; word: وَبِئْرٍ; locations: 22:45:11
-Hamza position: second radical; secondary flags: none
-Root normalization: project and evidence conventions agree
-
-The well noun has a secure verb and plural relationship, but a fifth useful form is not established without making the plural/case material do too much work.
-
-Accepted candidates:
-
-- بَأَرَ — he dug a well; Form I perfect; Verb related to the well noun.; semantic development: The noun is the excavated well; the verb names making it.; confidence: high; pedagogical value: Provides a strong noun-to-verb bridge.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
-- يَبْأَرُ — he digs a well; Form I imperfect; Imperfect counterpart of بَأَرَ.; semantic development: Ongoing digging action.; confidence: high; pedagogical value: Adds useful aspect contrast.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
-- آبَارٌ — wells; Broken plural; Plural of بِئْرٌ.; semantic development: Moves from one well to multiple wells.; confidence: high; pedagogical value: Useful recognition relationship for a Qur’anic noun.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
-
-Candidates rejected / safeguards:
-
-- بِئْرٍ was not duplicated as بِئْرٌ; that is case variation.
-- A generated participle was rejected without a reviewed lexical entry.
 
 Unresolved question: None
 Evidence required: None
@@ -668,22 +523,176 @@ Human expert review still required: no
 
 ---
 
-## lexical|وأل|موئل|noun/pronoun
+## lexical|هيأ|هية|noun/pronoun
 
-Decision: **CONFIRMED-LIMITED**; root: وأل; word: مَوْئِلًا; locations: 18:58:19
-Hamza position: second radical; secondary flags: weak-root
+Decision: **FULL**; root: هيأ; word: كَهَيْـَٔةِ; locations: 3:49:16, 5:110:31
+Hamza position: third radical; secondary flags: weak-root
 Root normalization: project and evidence conventions agree
 
-The Qur’anic مَوْئِلٌ has a secure place-noun relationship to وَأَلَ, but further forms are not sufficiently established in the project evidence. The family is confirmed-limited rather than padded with case or weak-root variants.
+Previous decision: **FULL**
+Correction reason: Canonical hamza-radical metadata correction; teaching rows and decision preserved.
+
+The noun هَيْئَةٌ and the Form-II preparation family are securely related through هيأ. The current Qur’anic form remains first; كَهَيْئَةِ is not stripped to manufacture a row. Metadata correction: root هيأ is ه ي ء, so hamza is the third radical. This did not affect root matching or candidate generation. Metadata correction: root هيأ is ه ي ء, so hamza is the third radical. This did not affect root matching or candidate generation.
 
 Accepted candidates:
 
-- وَأَلَ — he sought refuge / escaped; Form I perfect; Basic verb behind مَوْئِلٌ, a place of refuge.; semantic development: The Qur’anic noun names the refuge; the verb names seeking it.; confidence: medium; pedagogical value: Gives the learner a secure noun-to-verb relationship.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
+- هَيَّأَ — he prepared / made ready; Form II perfect; Causative/intensive development from the noun of form or shape.; semantic development: The Qur’anic noun describes a form; this verb develops the root into making something ready.; confidence: high; pedagogical value: Contrasts noun and derived verb without treating the prefixed كَـ as morphology.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
+- يُهَيِّئُ — he prepares / makes ready; Form II imperfect; Ongoing counterpart of هَيَّأَ.; semantic development: The meaning remains in the preparation branch while the aspect changes.; confidence: high; pedagogical value: Shows the productive imperfect pattern.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
+- تَهْيِئَةٌ — preparation / making ready; Form II maṣdar; Abstract noun of هَيَّأَ.; semantic development: Names the preparation action rather than the physical form.; confidence: high; pedagogical value: Makes the relationship between verb and verbal noun visible.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
+- مُهَيَّأٌ — prepared / made ready; Form II passive participle; Result state produced by هَيَّأَ.; semantic development: Moves from the agent’s preparing to the state of being prepared.; confidence: high; pedagogical value: Adds a genuinely distinct participial contrast.; evidence: Canonical Qur’anic occurrences, the reviewed project root-meaning dictionary, aligned Qur’anic morphology evidence, and reliable Arabic lexical/morphological evidence were checked. The project’s approved lexical/root evidence and aligned morphology records were checked.
 
 Candidates rejected / safeguards:
 
-- مَوْئِلًا and مَوْئِلٌ were not counted separately; that is case variation.
-- A present or participial form was not generated without authoritative lexical evidence.
+- هَيْئَةٌ was not repeated as a comparison row because it is the current lexical noun with only the Qur’anic shell/case context changed.
+
+Unresolved question: None
+Evidence required: None
+Human expert review still required: no
+
+---
+
+## lexical|ألل|الا|noun/pronoun
+
+Decision: **FULL**; root: ألل; word: إِلًّا; locations: 9:8:8, 9:10:5
+Hamza position: first radical; secondary flags: doubled-root
+Root normalization: project and evidence conventions agree
+
+Previous decision: **CONFIRMED-LIMITED**
+Correction reason: The earlier LIMITED decision was too restrictive because it rejected same-root branches merely because their English meanings differed. The Academy root entry explicitly groups إلٌّ with أَلَّ, أَلِلَ, أَلَّلَ and أَلَلٌ. Each selected row is translated according to its own meaning; none is presented as meaning covenant or kinship.
+
+The earlier LIMITED decision was too restrictive because it rejected same-root branches merely because their English meanings differed. The Academy root entry explicitly groups إلٌّ with أَلَّ, أَلِلَ, أَلَّلَ and أَلَلٌ. Each selected row is translated according to its own meaning; none is presented as meaning covenant or kinship.
+
+Accepted candidates:
+
+- أَلَّ — he sped / attacked / raised his voice in pain; Form I doubled verb; A real doubled Form-I verb from the same root.; semantic development: The Qur’anic إلٌّ concerns covenant, kinship, good origin or hostility; this verb belongs to a different, lexically attested branch and is translated independently.; confidence: high; pedagogical value: Shows that one root can develop into distinct verbal and nominal branches without flattening their meanings.; evidence: Targeted C3-C2 correction evidence for ألل: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- أَلِلَ — it became foul-smelling / the teeth became decayed; Form I stative verb; An attested Form-I state-change verb from the same root.; semantic development: This is a separate lexical branch from covenant or kinship and is not presented as synonymous with إِلًّا.; confidence: high; pedagogical value: Demonstrates honest semantic development across a doubled root.; evidence: Targeted C3-C2 correction evidence for ألل: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- أَلَّلَ — he sharpened or defined its edge; Form II perfect; Derived Form-II verb listed under the same root.; semantic development: The meaning develops into defining an edge; the gloss is kept separate from the Qur’anic noun.; confidence: high; pedagogical value: Provides a clear derived-pattern contrast.; evidence: Targeted C3-C2 correction evidence for ألل: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- أَلَلٌ — the edge of a knife / a broad blade; Lexical noun; A related root noun in the edge/blade branch.; semantic development: It is not a synonym for covenant or kinship; it is displayed as a separate lexical branch.; confidence: high; pedagogical value: Connects the Form-II edge verb to an established noun.; evidence: Targeted C3-C2 correction evidence for ألل: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+
+Candidates rejected / safeguards:
+
+- Forms from لَأَمَ, لَؤُمَ or الله remain rejected as wrong or unsafe root branches.
+- Hamza-seat and doubled-letter surface variants are not separate rows.
+- ائْتَلَّ / تَأَلَّلَ: The forms are listed in the root entry, but their exact learner-facing meanings and pattern relationship were not needed after four stronger, individually glossed forms were established.
+
+Unresolved question: None
+Evidence required: None
+Human expert review still required: no
+
+---
+
+## lexical|أمو|امائ|noun/pronoun
+
+Decision: **FULL**; root: أمو; word: وَإِمَآئِكُمْ; locations: 24:32:7
+Hamza position: first radical; secondary flags: weak-root
+Root normalization: project and evidence conventions agree
+
+Previous decision: **CONFIRMED-LIMITED**
+Correction reason: The previous two-row family was too restrictive. The evidence establishes a singular noun, a basic verb, a Form-II derived verb and a Form-X derived verb. Together they provide five distinct, honest rows including the current plural occurrence.
+
+The previous two-row family was too restrictive. The evidence establishes a singular noun, a basic verb, a Form-II derived verb and a Form-X derived verb. Together they provide five distinct, honest rows including the current plural occurrence.
+
+Accepted candidates:
+
+- أَمَةٌ — a female slave / handmaid; Singular noun; Singular lexical counterpart of the Qur’anic plural إِمَاءٌ.; semantic development: The current form is plural; this row establishes the lexical singular without treating a case ending as morphology.; confidence: high; pedagogical value: Directly improves recognition of the Qur’anic plural.; evidence: Targeted C3-C2 correction evidence for أمو: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- أَمَا — he became a female slave / handmaid; Form I perfect; Basic verb listed under the same root.; semantic development: The noun develops into a verb describing becoming an أَمَةٌ.; confidence: high; pedagogical value: Adds a genuine verbal relationship rather than another plural or shell form.; evidence: Targeted C3-C2 correction evidence for أمو: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- أَمَّى — he made a woman a female slave / handmaid; Form II perfect; Derived causative/intensive verb from the same lexical field.; semantic development: The meaning shifts from becoming an أَمَةٌ to causing that status.; confidence: high; pedagogical value: Shows a useful derived pattern and valency contrast.; evidence: Targeted C3-C2 correction evidence for أمو: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- اسْتَأْمَى — he took or sought a female slave / handmaid; Form X perfect; Derived Form-X verb in the same root family.; semantic development: The meaning develops into seeking or taking an أَمَةٌ.; confidence: high; pedagogical value: Provides a stronger morphological contrast than repeating dialectal Form-I variants.; evidence: Targeted C3-C2 correction evidence for أمو: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+
+Candidates rejected / safeguards:
+
+- أَمِيَ / أَمُوَ: These are additional Form-I variants listed in the evidence, but they were not selected together as padding because the stronger Form-II and Form-X contrasts are more useful for the learner.
+- وَإِمَاءُ / إِمَائِكُمْ: Removing و or the possessive suffix changes the shell, not the lexical family.
+- أُمَوِيٌّ: Nisbah to Umayya; it is not the female-slave lexical branch.
+
+Unresolved question: None
+Evidence required: None
+Human expert review still required: no
+
+---
+
+## lexical|أسن|اسن|noun/pronoun
+
+Decision: **FULL**; root: أسن; word: ءَاسِنٍ; locations: 47:15:11
+Hamza position: first radical; secondary flags: none
+Root normalization: project and evidence conventions agree
+
+Previous decision: **CONFIRMED-LIMITED**
+Correction reason: The previous LIMITED result stopped at the adjective, Form-I verb, imperfect and maṣdar. The authoritative evidence also supports causative and derived state-change forms, giving five useful rows without treating near-identical Form-I variants as separate teaching members.
+
+The previous LIMITED result stopped at the adjective, Form-I verb, imperfect and maṣdar. The authoritative evidence also supports causative and derived state-change forms, giving five useful rows without treating near-identical Form-I variants as separate teaching members.
+
+Accepted candidates:
+
+- أَسِنَ — it became stale / altered in smell; Form I perfect; Basic state-change verb behind the stale-water adjective.; semantic development: The current form describes water; this verb describes its becoming stale.; confidence: high; pedagogical value: Provides the core verbal relationship.; evidence: Targeted C3-C2 correction evidence for أسن: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- أُسُونٌ — staleness / alteration; Verbal noun; Abstract noun for the stale or altered state.; semantic development: Names the condition rather than the affected water.; confidence: high; pedagogical value: Adds a clear noun-to-maṣdar contrast.; evidence: Targeted C3-C2 correction evidence for أسن: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- آسَنَ — he caused something to become stale / foul-smelling; Form IV perfect; Causative branch of the stale/altered meaning.; semantic development: Moves from becoming stale to causing staleness.; confidence: high; pedagogical value: Adds a genuine derived-pattern and valency contrast.; evidence: Targeted C3-C2 correction evidence for أسن: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- تَأَسَّنَ — it became stale / changed; Form V perfect; Derived inchoative/reflexive form in the same root family.; semantic development: Keeps the change-of-state meaning while showing a distinct derived pattern.; confidence: high; pedagogical value: Improves recognition without duplicating the Form-I variant.; evidence: Targeted C3-C2 correction evidence for أسن: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+
+Candidates rejected / safeguards:
+
+- أَسَنَ / آسَنَتْ: The listed variant and inflected feminine form were not added as separate rows because they would duplicate the selected state-change/causative contrasts.
+- Case and Qur’anic spelling variants: Orthographic or inflectional variation is not an additional Ṣarf row.
+
+Unresolved question: None
+Evidence required: None
+Human expert review still required: no
+
+---
+
+## lexical|بأر|بئر|noun/pronoun
+
+Decision: **FULL**; root: بأر; word: وَبِئْرٍ; locations: 22:45:11
+Hamza position: second radical; secondary flags: none
+Root normalization: project and evidence conventions agree
+
+Previous decision: **CONFIRMED-LIMITED**
+Correction reason: The previous family stopped at the noun, basic verb, imperfect and plural. The correction replaces plural/case emphasis with Form-IV, Form-VIII and lexical-noun contrasts, producing a stronger five-row family.
+
+The previous family stopped at the noun, basic verb, imperfect and plural. The correction replaces plural/case emphasis with Form-IV, Form-VIII and lexical-noun contrasts, producing a stronger five-row family.
+
+Accepted candidates:
+
+- بَأَرَ — he dug a well; Form I perfect; Basic verb related to the well noun.; semantic development: The noun is the excavated well; the verb names making it.; confidence: high; pedagogical value: Strong noun-to-verb bridge.; evidence: Targeted C3-C2 correction evidence for بأر: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- أَبْأَرَ — he made or provided a well; Form IV perfect; Causative/derived well-related verb.; semantic development: Develops digging a well into causing or providing one.; confidence: high; pedagogical value: Adds a distinct derived pattern instead of plural padding.; evidence: Targeted C3-C2 correction evidence for بأر: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- ابْتَأَرَ — he dug out or undertook the digging of a well; Form VIII perfect; Derived Form-VIII verb in the same well-making branch.; semantic development: Shows a further derived action related to the well noun.; confidence: high; pedagogical value: Provides genuine morphology beyond the basic verb.; evidence: Targeted C3-C2 correction evidence for بأر: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- بُؤْرَةٌ — a hollow, central point or focal spot; Lexical noun; Established lexical derivative in the same root family.; semantic development: The meaning develops from a well or dug-out place to a hollow or focal point; it is translated honestly.; confidence: high; pedagogical value: Demonstrates same-root semantic development without using a case or plural variant.; evidence: Targeted C3-C2 correction evidence for بأر: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+
+Candidates rejected / safeguards:
+
+- آبَارٌ: The broken plural is genuine, but it was not selected because the four chosen comparison rows provide greater morphological variety than singular/plural padding.
+- البَآّرُ: The well-digger noun remains recorded as evidence, but it was not selected after the stronger Form-I, IV, VIII and lexical-noun contrasts were chosen.
+- بِئْرٌ: The uninflected form differs from بِئْرٍ only by case and is not a separate row.
+
+Unresolved question: None
+Evidence required: None
+Human expert review still required: no
+
+---
+
+## lexical|وأل|موئل|noun/pronoun
+
+Decision: **FULL**; root: وأل; word: مَوْئِلًا; locations: 18:58:19
+Hamza position: second radical; secondary flags: weak-root
+Root normalization: project and evidence conventions agree
+
+Previous decision: **CONFIRMED-LIMITED**
+Correction reason: The Academy evidence establishes the basic verb, imperfect, maṣdar/lexical noun and a derived Form-III verb. The previous two-row limited result was therefore too restrictive.
+
+The Academy evidence establishes the basic verb, imperfect, maṣdar/lexical noun and a derived Form-III verb. The previous two-row limited result was therefore too restrictive.
+
+Accepted candidates:
+
+- وَأَلَ — he sought refuge / escaped; Form I perfect; Basic verb behind مَوْئِلٌ, a place of refuge.; semantic development: The noun names the refuge; the verb names seeking it.; confidence: high; pedagogical value: Secure noun-to-verb bridge.; evidence: Targeted C3-C2 correction evidence for وأل: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- يَئِلُ — he seeks refuge / escapes; Form I imperfect; Imperfect counterpart of وَأَلَ.; semantic development: Keeps the refuge/escape meaning while showing the imperfect pattern.; confidence: high; pedagogical value: Useful aspect contrast.; evidence: Targeted C3-C2 correction evidence for وأل: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- وَأْلٌ — refuge / escape; Lexical noun / maṣdar; Noun related to the act and place of refuge.; semantic development: Provides the abstract/lexical counterpart of مَوْئِلًا.; confidence: high; pedagogical value: Makes the noun family visible without changing case only.; evidence: Targeted C3-C2 correction evidence for وأل: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+- وَاءَلَ — he sought refuge with / fled to; Form III perfect; Derived reciprocal/relational verb in the refuge branch.; semantic development: Develops simple escape into seeking refuge with another or fleeing to a place.; confidence: high; pedagogical value: Adds genuinely distinct derived morphology.; evidence: Targeted C3-C2 correction evidence for وأل: canonical Qur’anic occurrence(s), the project-reviewed root data, aligned Qur’anic morphology evidence, and the authoritative lexical evidence identified in the correction brief were checked.
+
+Candidates rejected / safeguards:
+
+- مُوَاءَلَةٌ: The maṣdar is genuine, but وَاءَلَ gives the learner the more transparent derived verb; both were not needed to fill the family.
+- وُءُولٌ / وَئِيلٌ: These were considered as additional lexical evidence but not selected after the stronger verb, imperfect, maṣdar and derived-verb contrast were established.
+- مَوْئِلٌ: The uninflected form differs from مَوْئِلًا only by case and is not a separate row.
 
 Unresolved question: None
 Evidence required: None

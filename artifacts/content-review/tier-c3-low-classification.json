@@ -3868,10 +3868,10 @@
         "track": "HAMZATED",
         "decision": "FULL",
         "occurrences": 2,
-        "reviewedAt": "2026-10-22T21:09:49.866Z",
-        "recordId": "tier-c3c2-family-b686126304ca434d",
+        "reviewedAt": "2026-10-22T21:47:35.024Z",
+        "recordId": "tier-c3c2-targeted-correction-b686126304ca434d",
         "acceptedRowsPerOccurrence": 5,
-        "hamzaPosition": "second radical",
+        "hamzaPosition": "third radical",
         "secondaryMorphologyFlags": [
           "weak-root"
         ],
@@ -8246,11 +8246,11 @@
       "adjudicationComplete": false,
       "c3C2": {
         "track": "HAMZATED",
-        "decision": "CONFIRMED-LIMITED",
+        "decision": "FULL",
         "occurrences": 2,
-        "reviewedAt": "2026-10-22T21:09:49.866Z",
-        "recordId": "tier-c3c2-family-2df0304721b4bb3a",
-        "acceptedRowsPerOccurrence": 1,
+        "reviewedAt": "2026-10-22T21:47:35.024Z",
+        "recordId": "tier-c3c2-targeted-correction-2df0304721b4bb3a",
+        "acceptedRowsPerOccurrence": 5,
         "hamzaPosition": "first radical",
         "secondaryMorphologyFlags": [
           "doubled-root"
@@ -11048,12 +11048,12 @@
       "adjudicationComplete": false,
       "c3C2": {
         "track": "HAMZATED",
-        "decision": "CONFIRMED-LIMITED",
+        "decision": "FULL",
         "occurrences": 1,
-        "reviewedAt": "2026-10-22T21:09:49.866Z",
-        "recordId": "tier-c3c2-family-b59496bc80e2c22b",
-        "acceptedRowsPerOccurrence": 2,
-        "hamzaPosition": "third radical",
+        "reviewedAt": "2026-10-22T21:47:35.024Z",
+        "recordId": "tier-c3c2-targeted-correction-b59496bc80e2c22b",
+        "acceptedRowsPerOccurrence": 5,
+        "hamzaPosition": "first radical",
         "secondaryMorphologyFlags": [
           "weak-root"
         ],
@@ -12119,11 +12119,11 @@
       "adjudicationComplete": false,
       "c3C2": {
         "track": "HAMZATED",
-        "decision": "CONFIRMED-LIMITED",
+        "decision": "FULL",
         "occurrences": 1,
-        "reviewedAt": "2026-10-22T21:09:49.866Z",
-        "recordId": "tier-c3c2-family-5778632c47b5bbe3",
-        "acceptedRowsPerOccurrence": 4,
+        "reviewedAt": "2026-10-22T21:47:35.024Z",
+        "recordId": "tier-c3c2-targeted-correction-5778632c47b5bbe3",
+        "acceptedRowsPerOccurrence": 5,
         "hamzaPosition": "first radical",
         "secondaryMorphologyFlags": [],
         "rootNormalization": null
@@ -12597,11 +12597,11 @@
       "adjudicationComplete": false,
       "c3C2": {
         "track": "HAMZATED",
-        "decision": "CONFIRMED-LIMITED",
+        "decision": "FULL",
         "occurrences": 1,
-        "reviewedAt": "2026-10-22T21:09:49.866Z",
-        "recordId": "tier-c3c2-family-b2aa0197c322b458",
-        "acceptedRowsPerOccurrence": 4,
+        "reviewedAt": "2026-10-22T21:47:35.024Z",
+        "recordId": "tier-c3c2-targeted-correction-b2aa0197c322b458",
+        "acceptedRowsPerOccurrence": 5,
         "hamzaPosition": "second radical",
         "secondaryMorphologyFlags": [],
         "rootNormalization": null
@@ -20371,11 +20371,11 @@
       "adjudicationComplete": false,
       "c3C2": {
         "track": "HAMZATED",
-        "decision": "CONFIRMED-LIMITED",
+        "decision": "FULL",
         "occurrences": 1,
-        "reviewedAt": "2026-10-22T21:09:49.866Z",
-        "recordId": "tier-c3c2-family-b090e935c95f8696",
-        "acceptedRowsPerOccurrence": 2,
+        "reviewedAt": "2026-10-22T21:47:35.024Z",
+        "recordId": "tier-c3c2-targeted-correction-b090e935c95f8696",
+        "acceptedRowsPerOccurrence": 5,
         "hamzaPosition": "second radical",
         "secondaryMorphologyFlags": [
           "weak-root"
@@ -38674,21 +38674,30 @@
   },
   "tierC3C2": {
     "contractVersion": "1.3.9",
-    "reviewedAt": "2026-10-22T21:09:49.866Z",
+    "reviewedAt": "2026-10-22T21:47:35.024Z",
     "scopeFamilies": 25,
     "scopeOccurrences": 32,
     "decisions": {
-      "FULL": 13,
-      "CONFIRMED-LIMITED": 11,
+      "FULL": 18,
+      "CONFIRMED-LIMITED": 6,
       "BLOCKED": 0,
       "MODEL-ISSUE": 1
     },
     "occurrencesByDecision": {
-      "FULL": 19,
-      "CONFIRMED-LIMITED": 12,
+      "FULL": 25,
+      "CONFIRMED-LIMITED": 6,
       "BLOCKED": 0,
       "MODEL-ISSUE": 1
     },
-    "explicitBoundary": "Only HAMZATED primary-track families were adjudicated. Secondary weak/doubled flags remain metadata and do not create a second queue entry."
+    "explicitBoundary": "Only the six named C3-C2 records were corrected. C3-C3 quadriliteral adjudication remains untouched.",
+    "targetedCorrectionFamilies": 6,
+    "targetedCorrectionKeys": [
+      "lexical|هيأ|هية|noun/pronoun",
+      "lexical|ألل|الا|noun/pronoun",
+      "lexical|أمو|امائ|noun/pronoun",
+      "lexical|أسن|اسن|noun/pronoun",
+      "lexical|بأر|بئر|noun/pronoun",
+      "lexical|وأل|موئل|noun/pronoun"
+    ]
   }
 }

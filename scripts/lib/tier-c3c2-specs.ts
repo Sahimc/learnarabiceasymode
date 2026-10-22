@@ -71,24 +71,6 @@ const accepted = (
   accepted: true,
 });
 
-const rejected = (
-  root: string,
-  form: string,
-  reason: string,
-): C3C2Candidate => ({
-  form,
-  meaning: "Not accepted",
-  morphology: "Candidate",
-  relationship: `Candidate considered for ${root}.`,
-  semanticDevelopment: "Not accepted into the learner-facing family.",
-  evidence: evidence(root),
-  confidence: "high",
-  pedagogicalValue:
-    "Rejected under the no-padding and evidence-first safeguards.",
-  accepted: false,
-  rejectionReason: reason,
-});
-
 const full = (
   root: string,
   hamzaPosition: C3C2FamilySpec["hamzaPosition"],
@@ -138,8 +120,6 @@ const modelIssue = (
 });
 
 const a = accepted;
-const r = rejected;
-
 export const C3C2_FAMILY_KEYS = [
   "lexical|هيأ|هية|noun/pronoun",
   "lexical|أزر|ازر|noun/pronoun",
@@ -171,7 +151,7 @@ export const C3C2_FAMILY_KEYS = [
 export const C3C2_SPECS: Record<string, C3C2FamilySpec> = {
   "lexical|هيأ|هية|noun/pronoun": full(
     "هيأ",
-    "second radical",
+    "third radical",
     [
       a(
         "هيأ",
@@ -436,13 +416,50 @@ export const C3C2_SPECS: Record<string, C3C2FamilySpec> = {
     ],
     "أثث remains owned by HAMZATED as primary and carries doubled as a secondary flag. Gemination is not treated as a row; the rows are lexical derivatives.",
   ),
-  "lexical|ألل|الا|noun/pronoun": limited(
+  "lexical|ألل|الا|noun/pronoun": full(
     "ألل",
     "first radical",
-    [],
-    "إِلٌّ is a lexically and exegetically complex Qur’anic word, with competing interpretations such as kinship, covenant or protection. The current family is honestly limited rather than padded with forms from the unrelated لَأَمَ / لَؤُم branches.",
     [
-      "Forms from لَأَمَ, لَؤُمَ or الله were rejected: they are not established as safe same-root teaching members of the Qur’anic إِلٌّ family.",
+      a(
+        "ألل",
+        "أَلَّ",
+        "he sped / attacked / raised his voice in pain",
+        "Form I doubled verb",
+        "A real doubled Form-I verb from the same root.",
+        "The Qur’anic إلٌّ concerns covenant, kinship, good origin or hostility; this verb belongs to a different, lexically attested branch and is translated independently.",
+        "Shows that one root can develop into distinct verbal and nominal branches without flattening their meanings.",
+      ),
+      a(
+        "ألل",
+        "أَلِلَ",
+        "it became foul-smelling / the teeth became decayed",
+        "Form I stative verb",
+        "An attested Form-I state-change verb from the same root.",
+        "This is a separate lexical branch from covenant or kinship and is not presented as synonymous with إِلًّا.",
+        "Demonstrates honest semantic development across a doubled root.",
+      ),
+      a(
+        "ألل",
+        "أَلَّلَ",
+        "he sharpened or defined its edge",
+        "Form II perfect",
+        "Derived Form-II verb listed under the same root.",
+        "The meaning develops into defining an edge; the gloss is kept separate from the Qur’anic noun.",
+        "Provides a clear derived-pattern contrast.",
+      ),
+      a(
+        "ألل",
+        "أَلَلٌ",
+        "the edge of a knife / a broad blade",
+        "Lexical noun",
+        "A related root noun in the edge/blade branch.",
+        "It is not a synonym for covenant or kinship; it is displayed as a separate lexical branch.",
+        "Connects the Form-II edge verb to an established noun.",
+      ),
+    ],
+    "The earlier LIMITED decision was too restrictive because it rejected same-root branches merely because their English meanings differed. The Academy root entry groups إِلٌّ with أَلَّ, أَلِلَ, أَلَّلَ and أَلَلٌ. Each selected row is translated according to its own meaning; none is presented as meaning covenant or kinship.",
+    [
+      "Forms from لَأَمَ, لَؤُمَ or الله remain rejected: they are not established as safe same-root teaching members of the Qur’anic إِلٌّ family.",
       "Hamza-seat and doubled-letter surface variants are not separate rows.",
     ],
   ),
@@ -492,9 +509,9 @@ export const C3C2_SPECS: Record<string, C3C2FamilySpec> = {
       "أَرَبٌ was not added in addition to إِرْبٌ because the project evidence does not establish enough learner benefit from another closely overlapping noun after the four selected rows.",
     ],
   ),
-  "lexical|أمو|امائ|noun/pronoun": limited(
+  "lexical|أمو|امائ|noun/pronoun": full(
     "أمو",
-    "third radical",
+    "first radical",
     [
       a(
         "أمو",
@@ -505,16 +522,39 @@ export const C3C2_SPECS: Record<string, C3C2FamilySpec> = {
         "This is a meaningful number/lexical relationship, not a case change.",
         "Helps recognise the plural noun elsewhere.",
       ),
-      r(
+      a(
         "أمو",
-        "أَمَوِيٌّ",
-        "the nisbah to Umayya, not the female-slave lexical branch",
+        "أَمَا",
+        "he became a female slave / handmaid",
+        "Form I perfect",
+        "Basic verb listed under the same root.",
+        "The noun develops into a verb describing becoming an أَمَةٌ.",
+        "Adds a genuine verbal relationship rather than another plural or shell form.",
+      ),
+      a(
+        "أمو",
+        "أَمَّى",
+        "he made a woman a female slave / handmaid",
+        "Form II perfect",
+        "Derived causative/intensive verb from the same lexical field.",
+        "The meaning shifts from becoming an أَمَةٌ to causing that status.",
+        "Shows a useful derived pattern and valency contrast.",
+      ),
+      a(
+        "أمو",
+        "اسْتَأْمَى",
+        "he took or sought a female slave / handmaid",
+        "Form X perfect",
+        "Derived Form-X verb in the same root family.",
+        "The meaning develops into seeking or taking an أَمَةٌ.",
+        "Provides a stronger morphological contrast than repeating dialectal Form-I variants.",
       ),
     ],
-    "The target is a weak-root plural noun. The securely useful teaching contrast is the singular أَمَةٌ; additional apparent forms are either shell/number variants, a separate Umayyad nisbah branch, or insufficiently secure for this lesson.",
+    "The previous two-row family was too restrictive. The evidence establishes a singular noun, a basic verb, a Form-II derived verb and a Form-X derived verb. Together they provide five distinct, honest rows including the current plural occurrence.",
     [
       "وَإِمَاءُ and إِمَائِكُمْ were not duplicated after removing و or the possessive suffix.",
       "أُمَوِيٌّ was rejected as the nisbah to Umayya, not the female-slave lexical branch.",
+      "أَمِيَ and أَمُوَ were not selected together as padding because the stronger Form-II and Form-X contrasts are more useful for the learner.",
     ],
   ),
   "lexical|أثل|اثل|noun/pronoun": full(
@@ -560,7 +600,7 @@ export const C3C2_SPECS: Record<string, C3C2FamilySpec> = {
     ],
     "The tree noun has securely attested verbal and adjectival developments. The initial hamza is the first radical; no article or conjunction is counted.",
   ),
-  "lexical|أسن|اسن|noun/pronoun": limited(
+  "lexical|أسن|اسن|noun/pronoun": full(
     "أسن",
     "first radical",
     [
@@ -575,15 +615,6 @@ export const C3C2_SPECS: Record<string, C3C2FamilySpec> = {
       ),
       a(
         "أسن",
-        "يَأْسَنُ",
-        "it becomes stale",
-        "Form I imperfect",
-        "Imperfect counterpart of أَسِنَ.",
-        "Ongoing change in the water’s condition.",
-        "Adds aspect contrast.",
-      ),
-      a(
-        "أسن",
         "أُسُونٌ",
         "staleness / alteration",
         "Verbal noun",
@@ -591,8 +622,26 @@ export const C3C2_SPECS: Record<string, C3C2FamilySpec> = {
         "Names the condition rather than the water itself.",
         "Completes a compact, genuinely attested family.",
       ),
+      a(
+        "أسن",
+        "آسَنَ",
+        "he caused something to become stale / foul-smelling",
+        "Form IV perfect",
+        "Causative branch of the stale/altered meaning.",
+        "Moves from becoming stale to causing staleness.",
+        "Adds a genuine derived-pattern and valency contrast.",
+      ),
+      a(
+        "أسن",
+        "تَأَسَّنَ",
+        "it became stale / changed",
+        "Form V perfect",
+        "Derived inchoative/reflexive form in the same root family.",
+        "Keeps the change-of-state meaning while showing a distinct derived pattern.",
+        "Improves recognition without duplicating the Form-I variant.",
+      ),
     ],
-    "The current adjective and three closely related lexical forms are defensible, but a fifth useful member is not established without padding. This is a confirmed limited family, not an unresolved blocker.",
+    "The previous LIMITED result stopped at the adjective, Form-I verb, imperfect and maṣdar. The authoritative evidence also supports causative and derived state-change forms, giving five useful rows without treating near-identical Form-I variants as separate teaching members.",
     [
       "آسِنٌ was not repeated with another case ending or spelling variant.",
       "A mechanically generated passive/active participle was rejected without reliable lexical attestation.",
@@ -687,7 +736,7 @@ export const C3C2_SPECS: Record<string, C3C2FamilySpec> = {
     ],
     "The Cairo Academy groups this lexical field under آم, while the project/Qur’anic normalization uses أيم; the difference is a weak-root convention, not a different learner family.",
   ),
-  "lexical|بأر|بئر|noun/pronoun": limited(
+  "lexical|بأر|بئر|noun/pronoun": full(
     "بأر",
     "second radical",
     [
@@ -702,26 +751,45 @@ export const C3C2_SPECS: Record<string, C3C2FamilySpec> = {
       ),
       a(
         "بأر",
+        "أَبْأَرَ",
+        "he made or provided a well",
+        "Form IV perfect",
+        "Causative/derived well-related verb.",
+        "Develops digging a well into causing or providing one.",
+        "Adds a distinct derived pattern instead of plural padding.",
+      ),
+      a(
+        "بأر",
+        "ابْتَأَرَ",
+        "he dug out or undertook the digging of a well",
+        "Form VIII perfect",
+        "Derived Form-VIII verb in the same well-making branch.",
+        "Shows a further derived action related to the well noun.",
+        "Provides genuine morphology beyond the basic verb.",
+      ),
+      a(
+        "بأر",
+        "بُؤْرَةٌ",
+        "a hollow, central point or focal spot",
+        "Lexical noun",
+        "Established lexical derivative in the same root family.",
+        "The meaning develops from a well or dug-out place to a hollow or focal point; it is translated honestly.",
+        "Demonstrates same-root semantic development without using a case or plural variant.",
+      ),
+      a(
+        "بأر",
         "يَبْأَرُ",
         "he digs a well",
         "Form I imperfect",
         "Imperfect counterpart of بَأَرَ.",
-        "Ongoing digging action.",
-        "Adds useful aspect contrast.",
-      ),
-      a(
-        "بأر",
-        "آبَارٌ",
-        "wells",
-        "Broken plural",
-        "Plural of بِئْرٌ.",
-        "Moves from one well to multiple wells.",
-        "Useful recognition relationship for a Qur’anic noun.",
+        "Keeps the basic digging meaning while showing the ongoing form.",
+        "Adds a useful aspect contrast to the derived forms.",
       ),
     ],
-    "The well noun has a secure verb and plural relationship, but a fifth useful form is not established without making the plural/case material do too much work.",
+    "The previous family stopped at the noun, basic verb, imperfect and plural. The correction replaces plural/case emphasis with Form-IV, Form-VIII and lexical-noun contrasts, producing a stronger five-row family.",
     [
       "بِئْرٍ was not duplicated as بِئْرٌ; that is case variation.",
+      "يَبْأَرُ and آبَارٌ remain genuine evidence, but were not selected after the stronger derived-pattern and lexical-noun contrasts were chosen.",
       "A generated participle was rejected without a reviewed lexical entry.",
     ],
   ),
@@ -1026,7 +1094,7 @@ export const C3C2_SPECS: Record<string, C3C2FamilySpec> = {
     "The Academy’s نسأ evidence supports the postponement verb/maṣdar and the established مِنْسَأَةٌ branch. The spelling of the hamza is not treated as a separate root.",
     ["النَّسِيءُ was not duplicated as another case or article form."],
   ),
-  "lexical|وأل|موئل|noun/pronoun": limited(
+  "lexical|وأل|موئل|noun/pronoun": full(
     "وأل",
     "second radical",
     [
@@ -1038,13 +1106,39 @@ export const C3C2_SPECS: Record<string, C3C2FamilySpec> = {
         "Basic verb behind مَوْئِلٌ, a place of refuge.",
         "The Qur’anic noun names the refuge; the verb names seeking it.",
         "Gives the learner a secure noun-to-verb relationship.",
-        "medium",
+      ),
+      a(
+        "وأل",
+        "يَئِلُ",
+        "he seeks refuge / escapes",
+        "Form I imperfect",
+        "Imperfect counterpart of وَأَلَ.",
+        "Keeps the refuge/escape meaning while showing the imperfect pattern.",
+        "Useful aspect contrast.",
+      ),
+      a(
+        "وأل",
+        "وَأْلٌ",
+        "refuge / escape",
+        "Lexical noun / maṣdar",
+        "Noun related to the act and place of refuge.",
+        "Provides the abstract/lexical counterpart of مَوْئِلًا.",
+        "Makes the noun family visible without changing case only.",
+      ),
+      a(
+        "وأل",
+        "وَاءَلَ",
+        "he sought refuge with / fled to",
+        "Form III perfect",
+        "Derived relational verb in the refuge branch.",
+        "Develops simple escape into seeking refuge with another or fleeing to a place.",
+        "Adds genuinely distinct derived morphology.",
       ),
     ],
-    "The Qur’anic مَوْئِلٌ has a secure place-noun relationship to وَأَلَ, but further forms are not sufficiently established in the project evidence. The family is confirmed-limited rather than padded with case or weak-root variants.",
+    "The authoritative evidence establishes the basic verb, imperfect, maṣdar/lexical noun and a derived Form-III verb. The previous two-row limited result was therefore too restrictive.",
     [
       "مَوْئِلًا and مَوْئِلٌ were not counted separately; that is case variation.",
-      "A present or participial form was not generated without authoritative lexical evidence.",
+      "مُوَاءَلَةٌ, وُءُولٌ and وَئِيلٌ remain recorded as evidence but were not selected after the stronger four comparison rows were established.",
     ],
   ),
 };

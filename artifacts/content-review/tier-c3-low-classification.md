@@ -1,30 +1,39 @@
 # Tier-C LOW classification
 
-Generated: 2026-10-22T21:09:49.866Z
+Generated: 2026-10-22T21:47:35.024Z
 
-C3-C2 hamzated-root adjudication covers exactly 25 families / 32 occurrences. C3-C3 and later tracks were not started.
+C3-C2 hamzated targeted correction is complete. C3-C3 quadriliteral adjudication has not started.
 
 ## C3-C2 summary
 
 ```json
 {
   "contractVersion": "1.3.9",
-  "reviewedAt": "2026-10-22T21:09:49.866Z",
+  "reviewedAt": "2026-10-22T21:47:35.024Z",
   "scopeFamilies": 25,
   "scopeOccurrences": 32,
   "decisions": {
-    "FULL": 13,
-    "CONFIRMED-LIMITED": 11,
+    "FULL": 18,
+    "CONFIRMED-LIMITED": 6,
     "BLOCKED": 0,
     "MODEL-ISSUE": 1
   },
   "occurrencesByDecision": {
-    "FULL": 19,
-    "CONFIRMED-LIMITED": 12,
+    "FULL": 25,
+    "CONFIRMED-LIMITED": 6,
     "BLOCKED": 0,
     "MODEL-ISSUE": 1
   },
-  "explicitBoundary": "Only HAMZATED primary-track families were adjudicated. Secondary weak/doubled flags remain metadata and do not create a second queue entry."
+  "explicitBoundary": "Only the six named C3-C2 records were corrected. C3-C3 quadriliteral adjudication remains untouched.",
+  "targetedCorrectionFamilies": 6,
+  "targetedCorrectionKeys": [
+    "lexical|هيأ|هية|noun/pronoun",
+    "lexical|ألل|الا|noun/pronoun",
+    "lexical|أمو|امائ|noun/pronoun",
+    "lexical|أسن|اسن|noun/pronoun",
+    "lexical|بأر|بئر|noun/pronoun",
+    "lexical|وأل|موئل|noun/pronoun"
+  ]
 }
 ```
 
@@ -85,7 +94,7 @@ C3-C2 hamzated-root adjudication covers exactly 25 families / 32 occurrences. C3
 | lexical|عير|عير|noun/pronoun | ٱلْعِيرُ | عير | C3-C | 3 | — | — |
 | lexical|جثو|جثي|noun/pronoun | جِثِيًّا | جثو | C3-C | 2 | — | — |
 | lexical|أثث|اثاث|noun/pronoun | أَثَـٰثًا | أثث | C3-C | 2 | FULL | HAMZATED |
-| lexical|ألل|الا|noun/pronoun | إِلًّا | ألل | C3-C | 2 | CONFIRMED-LIMITED | HAMZATED |
+| lexical|ألل|الا|noun/pronoun | إِلًّا | ألل | C3-C | 2 | FULL | HAMZATED |
 | lexical|تور|تارة|noun/pronoun | تَارَةً | تور | C3-C | 2 | — | — |
 | lexical|جبب|جب|noun/pronoun | ٱلْجُبِّ | جبب | C3-C | 2 | — | — |
 | lexical|حطط|حطة|noun/pronoun | حِطَّةٌ | حطط | C3-C | 2 | — | — |
@@ -109,7 +118,7 @@ C3-C2 hamzated-root adjudication covers exactly 25 families / 32 occurrences. C3
 | lexical|طوق|س|verb | سَيُطَوَّقُونَ | طوق | C3-C | 1 | — | — |
 | lexical|أرب|مارب|noun/pronoun | مَـَٔارِبُ | أرب | C3-C | 1 | FULL | HAMZATED |
 | lexical|سنبل|سنبل|noun/pronoun | سُنۢبُلِهِۦٓ | سنبل | C3-C | 1 | — | — |
-| lexical|أمو|امائ|noun/pronoun | وَإِمَآئِكُمْ | أمو | C3-C | 1 | CONFIRMED-LIMITED | HAMZATED |
+| lexical|أمو|امائ|noun/pronoun | وَإِمَآئِكُمْ | أمو | C3-C | 1 | FULL | HAMZATED |
 | lexical|خنزر|خنازير|noun/pronoun | وَٱلْخَنَازِيرَ | خنزر | C3-C | 1 | — | — |
 | lexical|شيد|مشيدة|noun/pronoun | مُّشَيَّدَةٍ | شيد | C3-C | 1 | — | — |
 | lexical|قنطر|والقنطير|noun/pronoun | وَٱلْقَنَـٰطِيرِ | قنطر | C3-C | 1 | — | — |
@@ -118,11 +127,11 @@ C3-C2 hamzated-root adjudication covers exactly 25 families / 32 occurrences. C3
 | lexical|وثن|اوثن|noun/pronoun | ٱلْأَوْثَـٰنِ | وثن | C3-C | 1 | — | — |
 | lexical|أثل|اثل|noun/pronoun | وَأَثْلٍ | أثل | C3-C | 1 | FULL | HAMZATED |
 | lexical|أدد|اد|noun/pronoun | إِدًّا | أدد | C3-C | 1 | — | — |
-| lexical|أسن|اسن|noun/pronoun | ءَاسِنٍ | أسن | C3-C | 1 | CONFIRMED-LIMITED | HAMZATED |
+| lexical|أسن|اسن|noun/pronoun | ءَاسِنٍ | أسن | C3-C | 1 | FULL | HAMZATED |
 | lexical|أمت|امت|noun/pronoun | أَمْتًا | أمت | C3-C | 1 | CONFIRMED-LIMITED | HAMZATED |
 | lexical|أوه|اوه|noun/pronoun | لَأَوَّٰهٌ | أوه | C3-C | 1 | MODEL-ISSUE | HAMZATED |
 | lexical|أيم|ايمى|noun/pronoun | ٱلْأَيَـٰمَىٰ | أيم | C3-C | 1 | FULL | HAMZATED |
-| lexical|بأر|بئر|noun/pronoun | وَبِئْرٍ | بأر | C3-C | 1 | CONFIRMED-LIMITED | HAMZATED |
+| lexical|بأر|بئر|noun/pronoun | وَبِئْرٍ | بأر | C3-C | 1 | FULL | HAMZATED |
 | lexical|ثبي|ثبة|noun/pronoun | ثُبَاتٍ | ثبي | C3-C | 1 | — | — |
 | lexical|ثري|ثرى|noun/pronoun | ٱلثَّرَىٰ | ثري | C3-C | 1 | — | — |
 | lexical|جذو|جذوة|noun/pronoun | جَذْوَةٍ | جذو | C3-C | 1 | — | — |
@@ -193,7 +202,7 @@ C3-C2 hamzated-root adjudication covers exactly 25 families / 32 occurrences. C3
 | lexical|هدد|هد|noun/pronoun | هَدًّا | هدد | C3-C | 1 | — | — |
 | lexical|هدهد|هدهد|noun/pronoun | ٱلْهُدْهُدَ | هدهد | C3-C | 1 | — | — |
 | lexical|هيت|هيت|noun/pronoun | هَيْتَ | هيت | C3-C | 1 | — | — |
-| lexical|وأل|موئل|noun/pronoun | مَوْئِلًا | وأل | C3-C | 1 | CONFIRMED-LIMITED | HAMZATED |
+| lexical|وأل|موئل|noun/pronoun | مَوْئِلًا | وأل | C3-C | 1 | FULL | HAMZATED |
 | lexical|وبر|اوبار|noun/pronoun | وَأَوْبَارِهَا | وبر | C3-C | 1 | — | — |
 | lexical|وسن|سنة|noun/pronoun | سِنَةٌ | وسن | C3-C | 1 | — | — |
 | lexical|وشي|شية|noun/pronoun | شِيَةَ | وشي | C3-C | 1 | — | — |

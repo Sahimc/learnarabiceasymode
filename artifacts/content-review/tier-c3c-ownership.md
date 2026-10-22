@@ -61,3 +61,52 @@ C3-C2 HAMZATED is complete. Secondary weak/doubled flags remain attached to the 
 }
 ```
 
+## Targeted C3-C2 correction
+
+{
+  "contractVersion": "1.3.9",
+  "keys": [
+    "lexical|هيأ|هية|noun/pronoun",
+    "lexical|ألل|الا|noun/pronoun",
+    "lexical|أمو|امائ|noun/pronoun",
+    "lexical|أسن|اسن|noun/pronoun",
+    "lexical|بأر|بئر|noun/pronoun",
+    "lexical|وأل|موئل|noun/pronoun"
+  ],
+  "changedFamilies": [
+    "lexical|ألل|الا|noun/pronoun",
+    "lexical|أمو|امائ|noun/pronoun",
+    "lexical|أسن|اسن|noun/pronoun",
+    "lexical|بأر|بئر|noun/pronoun",
+    "lexical|وأل|موئل|noun/pronoun"
+  ],
+  "metadataOnlyFamilies": [
+    "lexical|هيأ|هية|noun/pronoun"
+  ],
+  "hamzaMetadata": "ه ي ء: hamza is the third radical."
+}
+
+## Targeted C3-C2 correction
+
+{
+  "contractVersion": "1.3.9",
+  "keys": [
+    "lexical|هيأ|هية|noun/pronoun",
+    "lexical|ألل|الا|noun/pronoun",
+    "lexical|أمو|امائ|noun/pronoun",
+    "lexical|أسن|اسن|noun/pronoun",
+    "lexical|بأر|بئر|noun/pronoun",
+    "lexical|وأل|موئل|noun/pronoun"
+  ],
+  "changedFamilies": [
+    "lexical|ألل|الا|noun/pronoun",
+    "lexical|أمو|امائ|noun/pronoun",
+    "lexical|أسن|اسن|noun/pronoun",
+    "lexical|بأر|بئر|noun/pronoun",
+    "lexical|وأل|موئل|noun/pronoun"
+  ],
+  "metadataOnlyFamilies": [
+    "lexical|هيأ|هية|noun/pronoun"
+  ],
+  "hamzaMetadata": "ه ي ء: hamza is the third radical."
+}
