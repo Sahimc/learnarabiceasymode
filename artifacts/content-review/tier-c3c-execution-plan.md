@@ -1,21 +1,34 @@
-# Tier-C3-C execution plan
+# Tier-C-C execution plan
 
-Contract: 1.3.9
+Updated: 2026-10-22T21:09:49.866Z
 
-C3-C1 DOUBLED has been corrected for seven named families. C3-C2 HAMZATED is now the normalized next queue but has not been adjudicated.
+C3-C2 HAMZATED is complete. C3-C3 QUADRILITERAL has not started.
 
-## Ownership rule
+## Completed C3-C2
 
-Completed adjudication owns the family permanently. Otherwise, first matching track: ROOT/LEMMA-UNCERTAIN > QUADRILITERAL > HAMZATED > WEAK > DOUBLED. Remaining feature signals are secondary flags.
+```json
+{
+  "track": "HAMZATED",
+  "families": 25,
+  "occurrences": 32,
+  "decisions": {
+    "FULL": 13,
+    "CONFIRMED-LIMITED": 11,
+    "BLOCKED": 0,
+    "MODEL-ISSUE": 1
+  },
+  "occurrencesByDecision": {
+    "FULL": 19,
+    "CONFIRMED-LIMITED": 12,
+    "BLOCKED": 0,
+    "MODEL-ISSUE": 1
+  }
+}
+```
 
-## Track totals
+## Next untouched queue
 
-| Track | Families | Occurrences | Pending families | Pending occurrences |
-|---|---:|---:|---:|---:|
-| DOUBLED | 20 | 30 | 0 | 0 |
-| HAMZATED | 25 | 32 | 25 | 32 |
-| QUADRILITERAL | 22 | 27 | 22 | 27 |
-| WEAK | 77 | 94 | 77 | 94 |
-| ROOT/LEMMA-UNCERTAIN | 5 | 12 | 5 | 12 |
+QUADRILITERAL — 22 families / 27 occurrences.
 
-Status: C3-C1 DOUBLED corrected; C3-C2 HAMZATED ownership normalized but not started.
+No quadriliteral adjudication was performed by this script.
+

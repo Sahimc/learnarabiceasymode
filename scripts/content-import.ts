@@ -70,7 +70,9 @@ function isExplicitlyRootlessLesson(
     : undefined;
   if (!lesson || normalizeRoot(lesson.root)) return false;
   const parts = word.breakdown?.parts ?? [];
-  return parts.length > 0 && parts.every((part) => part.rootStatus === "rootless");
+  return (
+    parts.length > 0 && parts.every((part) => part.rootStatus === "rootless")
+  );
 }
 
 function isReviewedRootOverride(
@@ -667,9 +669,11 @@ async function insertPackage(
         new Date(),
         new Date(),
       ]);
-      for (const part of breakdown.parts)
+      for (const part of breakdown.parts) {
         partRows.push([
-          `${breakdown.id}:${part.id}`,
+          part.id.startsWith(`${breakdown.id}:`)
+            ? part.id
+            : `${breakdown.id}:${part.id}`,
           breakdown.id,
           part.id,
           part.order,
@@ -682,6 +686,7 @@ async function insertPackage(
           part.rootExplanation ?? null,
           part.kind,
         ]);
+      }
     }
     await insertMany(
       client,
