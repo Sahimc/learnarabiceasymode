@@ -92,29 +92,6 @@ const full = (
   return { decision: "FULL", candidates, reason, rejectedCandidates, predictedLowAssessment: prediction };
 };
 
-const limited = (
-  root: string,
-  candidates: C3BCandidate[],
-  reasonOrRejected: string | string[],
-  rejectedOrPrediction: string[] | string = [],
-  predictedLowAssessment?: string,
-): C3BFamilySpec => {
-  const reason = Array.isArray(reasonOrRejected)
-    ? `The ${root} family is correctly limited because the remaining candidates add only shell, inflection or duplicate conjugation.`
-    : reasonOrRejected;
-  const rejectedCandidates = Array.isArray(reasonOrRejected)
-    ? reasonOrRejected
-    : Array.isArray(rejectedOrPrediction)
-      ? rejectedOrPrediction
-      : [];
-  const prediction = Array.isArray(reasonOrRejected)
-    ? typeof rejectedOrPrediction === "string"
-      ? rejectedOrPrediction
-      : predictedLowAssessment
-    : predictedLowAssessment;
-  return { decision: "CONFIRMED-LIMITED", candidates, reason, rejectedCandidates, predictedLowAssessment: prediction };
-};
-
 const e = (root: string, form: string, meaning: string, morphology: string, relationship: string, development: string, value: string) =>
   candidate(root, form, meaning, morphology, relationship, development, value);
 const r = (root: string, form: string, meaning: string, morphology: string, reason: string) =>
@@ -146,7 +123,7 @@ export const C3B_SPECS: Record<string, C3BFamilySpec> = {
   "lexical|مزق|ممزق|noun/pronoun": full(
     "م ز ق",
     [
-      e("م ز ق", "مَزَقَ", "he tore apart", "Form I perfect verb", "The basic tearing action related to the Qur’anic passive Form II result.", "The Qur’anic word presents a state/result; this form presents the basic action.", "Contrasts root action with derived passive result."),
+      e("م ز ق", "مَزَقَ", "he tore apart", "Form I perfect verb", "The basic tearing action related to the Qur’anic Form-II passive participle.", "The Qur’anic word is a Form-II passive participle with the contextual gloss ‘disintegration’; this form presents the basic action.", "Contrasts root action with the Form-II passive result."),
       e("م ز ق", "يَمْزِقُ", "he tears apart", "Form I imperfect verb", "The ongoing form of مَزَقَ.", "The action is viewed as ongoing rather than completed.", "Teaches a real tense contrast."),
       e("م ز ق", "تَمْزِيقٌ", "tearing apart / disintegration", "Form II verbal noun (maṣdar)", "The action noun of the intensive/causative Form II branch.", "The Qur’anic passive participle names a disintegrated result; the maṣdar names the process.", "Makes the Form II maṣdar recognisable."),
       e("م ز ق", "مَزَّقَ", "he tore to pieces / dispersed", "Form II perfect verb", "The active Form II counterpart of مُمَزَّقٍ.", "Form II intensifies or causes the basic tearing action.", "Shows Form I/Form II development."),
@@ -154,22 +131,24 @@ export const C3B_SPECS: Record<string, C3BFamilySpec> = {
     ],
     ["وَمَزَّقْنَاهُمْ was rejected as a prefixed and pronoun-bearing occurrence of the accepted lexical form مَزَّقَ."],
   ),
-  "lexical|مرح|مرح|noun/pronoun": limited(
+  "lexical|مرح|مرح|noun/pronoun": full(
     "م ر ح",
     [
       e("م ر ح", "مَرِحَ", "he was exultant / insolent", "Form I perfect verb", "The verb related to the Qur’anic maṣdar مَرَحًا.", "The noun names exultation or insolence; the verb describes the person exhibiting it.", "Connects the occurrence meaning to the verbal source."),
       e("م ر ح", "يَمْرَحُ", "he is exultant / insolent", "Form I imperfect verb", "The ongoing form of مَرِحَ.", "The semantic branch is retained honestly while tense changes.", "Provides a useful tense contrast."),
-      e("م ر ح", "مَارِحٌ", "exultant / insolent", "Form I active participle", "The descriptive adjective/agent form of مَرِحَ.", "Describes the person characterised by the state named in مَرَحًا.", "Adds a noun/adjective relationship."),
+      e("م ر ح", "مَرِحٌ", "exultant / insolent", "Form I adjective", "An established lexical adjective in the same root family as مَرَحًا.", "Describes the person characterised by the state named in مَرَحًا; this is the lexical adjective, not a case variant.", "Adds a directly attested noun/adjective relationship."),
+      e("م ر ح", "أَمْرَحَ", "he made someone exultant / amused", "Form IV perfect verb", "A causative Form-IV development from the same root.", "The causative branch extends the state of exultation into causing or producing it; the meaning is translated independently.", "Shows a genuinely distinct derived pattern."),
     ],
-    ["مَرَحٌ was rejected as the same maṣdar lexeme as مَرَحًا with only case/ending variation.", "تَمْرَحُونَ was rejected as a person/number variant of the same imperfect verb, not a new teaching contrast."],
+    ["مَارِحٌ was not selected because the explicitly lexicalised adjective مَرِحٌ is the stronger teaching row.", "تَمْرَحُونَ was rejected as a person/number variant of the same imperfect verb, not a new teaching contrast."],
   ),
   "lexical|رفق|رفيق|noun/pronoun": full(
     "ر ف ق",
     [
       e("ر ف ق", "رِفْقٌ", "gentleness / kindness", "Form I verbal noun or abstract noun", "An abstract noun in the same root family as رَفِيقًا.", "The Qur’anic word denotes a companion; this branch highlights the root’s gentleness/companionship range.", "Teaches semantic development without pretending the meanings are identical."),
+      e("ر ف ق", "رَافَقَ", "he accompanied", "Form III perfect verb", "A directly related Form-III verb that illuminates the companion noun رَفِيقًا.", "The root develops from companion/gentleness into the act of accompanying; the meaning is translated on its own terms.", "Directly links the Qur’anic noun to a useful derived action."),
       e("ر ف ق", "يَرْفُقُ", "he is gentle", "Form I imperfect verb", "The basic gentleness verb.", "Moves from a companion/person noun to the quality or action of gentleness.", "Shows the root’s verbal development."),
       e("ر ف ق", "اِرْتَفَقَ", "he benefited / rested", "Form VIII perfect verb", "A derived Form VIII branch attested in the Qur’anic vocabulary.", "The derived branch develops the notion of obtaining benefit or rest; it is translated on its own terms.", "Shows a useful derived pattern."),
-      e("ر ف ق", "اِرْتِفَاقٌ", "benefiting / resting", "Form VIII verbal noun (maṣdar)", "The maṣdar of اِرْتَفَقَ.", "Names the benefit/rest branch rather than the companion noun.", "Makes the derived maṣdar recognisable."),
+      r("ر ف ق", "اِرْتِفَاقٌ", "benefiting / resting", "Form VIII verbal noun (maṣdar)", "The maṣdar is genuine, but the directly related Form-III verb رَافَقَ teaches the relationship to رَفِيقًا more usefully in this five-row family."),
       r("ر ف ق", "ٱلْمَرَافِقِ", "the elbows", "Broken plural noun with article", "This is a different concrete lexical branch and is not needed to teach the رَفِيقًا family."),
     ],
     ["ٱلْمَرَافِقِ was considered but rejected from this five-row family because it introduces a separate anatomical branch without improving recognition of the selected companion/gentleness/rest sequence."],
@@ -265,22 +244,23 @@ export const C3B_SPECS: Record<string, C3BFamilySpec> = {
     "ب ر م",
     [
       e("ب ر م", "بَرَمَ", "he planned / twisted", "Form I perfect verb", "The basic root action related to the Form IV determination branch.", "The Qur’anic form expresses firm determination; the basic root also carries planning/twisting senses.", "Teaches semantic development without flattening it."),
-      e("ب ر م", "يَبْرِمُ", "he plans / twists", "Form I imperfect verb", "The ongoing form of بَرَمَ.", "Keeps the basic branch while changing aspect.", "Provides a useful imperfect contrast."),
+      e("ب ر م", "أَبْرَمَ", "he determined / concluded", "Form IV perfect verb", "The Form-IV verb directly underlying the Qur’anic active participle مُبْرِمُونَ and attested in the same Qur’anic context.", "The Qur’anic family expresses firm determination; this is the completed Form-IV determining action.", "Shows the actual Form-IV verb rather than a redundant Form-I imperfect."),
       e("ب ر م", "إِبْرَامٌ", "firm planning / completion", "Form IV verbal noun (maṣdar)", "The action noun related to أَبْرَمَ and مُبْرِم.", "Names the process of firmly concluding or arranging.", "Adds a clear maṣdar relationship."),
       e("ب ر م", "مُبْرَمٌ", "firmly concluded / arranged", "Form IV passive participle", "The result counterpart of مُبْرِمُونَ.", "Moves from the determining agent to what has been firmly concluded.", "Teaches active/passive Form IV development."),
     ],
-    ["أَبْرَمُوا was not used because the perfect occurrence adds person/number and interrogative context, while بَرَمَ, إِبْرَامٌ and مُبْرَمٌ give stronger lexical contrasts."],
+    ["يَبْرِمُ was replaced because the Qur’anic evidence directly attests the Form-IV verb أَبْرَمَ; أَبْرَمُوا is its occurrence with person/number marking, so the bare lexical form is used."],
   ),
-  "lexical|خضع|خاضع|noun/pronoun": limited(
+  "lexical|خضع|خاضع|noun/pronoun": full(
     "خ ض ع",
     [
       e("خ ض ع", "خَضَعَ", "he submitted / humbled himself", "Form I perfect verb", "The basic action related to the Qur’anic active participle.", "The Qur’anic word describes people in a state of humility; the verb describes entering or showing that state.", "Connects adjective/participle and verb."),
       e("خ ض ع", "يَخْضَعُ", "he submits / is humble", "Form I imperfect verb", "The ongoing form of خَضَعَ.", "The semantic meaning is retained while aspect changes.", "Provides a useful tense contrast."),
       e("خ ض ع", "خُضُوعٌ", "submission / humility", "Form I verbal noun (maṣdar)", "The action/state noun of خَضَعَ.", "Names the state rather than its participants.", "Provides the maṣdar pattern."),
+      e("خ ض ع", "أَخْضَعَ", "he subdued / made submissive", "Form IV causative verb", "A genuine causative Form-IV development from خَضَعَ.", "The meaning develops from submitting oneself to causing or making another submit; the meanings remain explicitly distinct.", "Adds the missing causative contrast without using a conjugational variant."),
       r("خ ض ع", "تَخْضَعْنَ", "be soft / submit", "Form I imperfect/imperative context with feminine plural subject", "This is a person/gender/conjugational variant of the same verb and adds no independent lexical contrast."),
       r("خ ض ع", "خَاضِعٌ", "submissive", "Form I active participle singular", "This is number variation of the current خَاضِعِينَ, not an additional family member."),
     ],
-    ["The family is confirmed-limited at four forms: the remaining secure evidence is a participle, perfect, imperfect and maṣdar; the other apparent rows are conjugational or number variants."],
+    ["The family is FULL: the attested Form-IV causative أَخْضَعَ supplies a genuine fifth row; the other rejected candidates remain conjugational or number variants."],
   ),
   "lexical|ستر|مستور|noun/pronoun": full(
     "س ت ر",
@@ -297,12 +277,12 @@ export const C3B_SPECS: Record<string, C3BFamilySpec> = {
     "ن ق ب",
     [
       e("ن ق ب", "نَقَبَ", "he pierced / explored", "Form I perfect verb", "The basic action related to the leadership/inspection noun نَقِيب.", "The Qur’anic title develops from the root sense of penetrating, inspecting or investigating.", "Makes the semantic development explicit."),
-      e("ن ق ب", "يَنْقُبُ", "he pierces / explores", "Form I imperfect verb", "The ongoing form of نَقَبَ.", "Keeps the same root branch while changing aspect.", "Teaches a useful tense contrast."),
+      e("ن ق ب", "نَقُبَ", "he became a leader / chief", "Form I stative perfect verb", "The lexical verb نَقُبَ عَلَى الْقَوْمِ means that someone became their leader/chief and directly illuminates the title نَقِيب.", "The leadership sense is a genuine same-root semantic development from the root’s penetrating/inspecting range; it is translated independently.", "Directly connects the Qur’anic title to its lexical verb."),
       e("ن ق ب", "نَقْبٌ", "piercing / passage", "Form I verbal noun (maṣdar)", "The action noun of نَقَبَ.", "Names the penetrating or passage action rather than the leader.", "Provides the maṣdar pattern."),
       e("ن ق ب", "نَقَّبَ", "he explored thoroughly", "Form II perfect verb", "The intensive/causative derived form related to exploration.", "Develops basic piercing into repeated or thorough exploration.", "Shows Form I/Form II development."),
       r("ن ق ب", "فَنَقَّبُوا۟", "so they explored", "Form II perfect with conjunction and plural suffix", "The shell and person/number marking are removed; the lexical form نَقَّبَ is used instead."),
     ],
-    ["فَنَقَّبُوا۟ was rejected as a prefixed, person/number-bearing occurrence of the accepted lexical form نَقَّبَ."],
+    ["يَنْقُبُ was replaced by the more educationally relevant lexical verb نَقُبَ, which directly explains the leadership sense of نَقِيب.", "فَنَقَّبُوا۟ was rejected as a prefixed, person/number-bearing occurrence of the accepted lexical form نَقَّبَ."],
   ),
   "lexical|طعن|طعنا|noun/pronoun": full(
     "ط ع ن",
@@ -315,16 +295,17 @@ export const C3B_SPECS: Record<string, C3BFamilySpec> = {
     ],
     ["وَطَعَنُوا۟ was rejected as a conjunction-bearing plural occurrence of طَعَنَ."],
   ),
-  "lexical|عبث|عبث|noun/pronoun": limited(
+  "lexical|عبث|عبث|noun/pronoun": full(
     "ع ب ث",
     [
       e("ع ب ث", "عَبِثَ", "he acted foolishly / played idly", "Form I perfect verb", "The basic verb related to the Qur’anic maṣdar.", "The occurrence describes purposelessness; the verb describes acting in that manner.", "Connects the maṣdar and verb honestly."),
       e("ع ب ث", "يَعْبَثُ", "he acts foolishly / plays idly", "Form I imperfect verb", "The ongoing form of عَبِثَ.", "Retains the semantic branch while changing aspect.", "Provides a useful tense contrast."),
       e("ع ب ث", "عَابِثٌ", "acting foolishly / playing idly", "Form I active participle", "The descriptive participle from عَبِثَ.", "Describes the actor rather than the purposeless action itself.", "Adds a noun/adjective relationship."),
+      e("ع ب ث", "عَابَثَ", "he played / joked with someone", "Form III perfect verb", "A genuine Form-III relational verb from the same root.", "The meaning develops from acting pointlessly to playing or joking with another person; it is translated honestly rather than flattened.", "Adds a meaningful derived pattern and interpersonal contrast."),
       r("ع ب ث", "تَعْبَثُونَ", "you amuse yourselves / act foolishly", "Form I imperfect with person/number change", "This is conjugational variation of يَعْبَثُ and is not an independent lexical teaching contrast."),
       r("ع ب ث", "عَبَثٌ", "foolish play", "Same maṣdar without case ending", "This is the same maṣdar lexeme as عَبَثًا, differing only in inflection."),
     ],
-    ["The family is confirmed-limited at four forms because the only additional recorded rows are the same maṣdar with a different ending or conjugational variants of the same verb."],
+    ["The family is FULL: the attested Form-III verb عَابَثَ supplies a genuine fifth row; the remaining rejected candidates are only inflectional or conjugational variants."],
   ),
   "lexical|فتر|فترة|noun/pronoun": full(
     "ف ت ر",
@@ -363,11 +344,12 @@ export const C3B_SPECS: Record<string, C3BFamilySpec> = {
       e("ن د م", "نَدِمَ", "he regretted", "Form I perfect verb", "The basic verb related to the Qur’anic active participle.", "The Qur’anic form describes the regretful; the verb presents the experience of regretting.", "Connects adjective/participle and verb."),
       e("ن د م", "يَنْدَمُ", "he regrets", "Form I imperfect verb", "The ongoing form of نَدِمَ.", "Keeps the same semantic meaning while changing aspect.", "Provides a useful tense contrast."),
       e("ن د م", "نَدَمٌ", "regret", "Form I verbal noun (maṣdar)", "The action/state noun of نَدِمَ.", "Names the state rather than the person experiencing it.", "Provides the maṣdar pattern."),
-      e("ن د م", "نَدَامَةٌ", "regret / remorse", "Lexical abstract noun", "An established abstract noun in the same root family.", "Adds a related remorse noun without pretending it is a different tense of the Qur’anic participle.", "Shows a genuine noun-to-noun relationship."),
+      e("ن د م", "تَنَدَّمَ", "he deeply regretted / expressed remorse", "Form V perfect verb", "A genuine derived Form-V verb from the same root.", "The meaning develops from experiencing regret to expressing or intensifying it; it is not treated as synonymous with every other row.", "Adds a stronger morphological contrast than a second near-synonymous maṣdar."),
+      r("ن د م", "نَدَامَةٌ", "regret / remorse", "Lexical abstract noun", "This is genuine, but it is a near-synonymous second maṣdar; تَنَدَّمَ provides more useful Ṣarf contrast for the five-row family."),
       r("ن د م", "نَـٰدِمِينَ", "regretful", "Active participle without article", "This is the same active-participle lexeme as ٱلنَّـٰدِمِينَ after removing the article; it is shell/inflection variation."),
     ],
-    ["The original LOW prediction was not confirmed: the secure perfect and imperfect verbs, together with two attested regret nouns, establish a full family without using the article-stripped duplicate."],
-    "The original LOW prediction was not confirmed: the candidate scan had undercounted the secure Form I verb paradigm and treated a shell variant as a lead; the corrected family uses four genuine lexical contrasts.",
+    ["The original LOW prediction was not confirmed: the secure perfect and imperfect verbs, the maṣdar, and the attested Form-V verb establish a full family without using the article-stripped duplicate.", "نَدَامَةٌ was rejected from the final five because it is a near-synonymous second maṣdar; تَنَدَّمَ provides a more useful derived-form contrast."],
+    "The original LOW prediction was not confirmed: authoritative evidence supports a full family, and the corrected selection prefers the derived Form-V verb تَنَدَّمَ over a second near-synonymous maṣdar.",
   ),
 };
 

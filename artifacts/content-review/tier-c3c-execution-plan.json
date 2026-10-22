@@ -11,35 +11,35 @@
       "track": "ROOT/LEMMA-UNCERTAIN",
       "families": 7,
       "occurrences": 16,
-      "priority": 1,
-      "method": "Resolve root and lemma identity before authoring any family rows. Do not infer a Ṣarf family from an unstable provider segmentation."
+      "priority": 5,
+      "method": "Keep these last because root and lemma identity must be established before authoring any family rows. Do not infer a Ṣarf family from an unstable provider segmentation."
     },
     {
       "track": "QUADRILITERAL",
       "families": 22,
       "occurrences": 27,
-      "priority": 2,
+      "priority": 3,
       "method": "Use quadriliteral-specific morphology and lexicon evidence; do not force triliteral templates."
     },
     {
       "track": "DOUBLED",
       "families": 20,
       "occurrences": 30,
-      "priority": 3,
+      "priority": 1,
       "method": "Verify doubled-root normalization and distinguish genuine derived forms from orthographic doubling."
     },
     {
       "track": "HAMZATED",
       "families": 23,
       "occurrences": 28,
-      "priority": 4,
+      "priority": 2,
       "method": "Verify hamza position, weak-letter behavior and vocalisation before selecting related forms."
     },
     {
       "track": "WEAK",
       "families": 77,
       "occurrences": 94,
-      "priority": 5,
+      "priority": 4,
       "method": "Normalize weak roots first, then adjudicate real derived forms; reject forms that only expose provider or orthographic artifacts."
     }
   ],
@@ -57,11 +57,11 @@
     "c3BCompletedOccurrences": 29
   },
   "recommendedBatchOrder": [
-    "ROOT/LEMMA-UNCERTAIN",
-    "QUADRILITERAL",
     "DOUBLED",
     "HAMZATED",
-    "WEAK"
+    "QUADRILITERAL",
+    "WEAK",
+    "ROOT/LEMMA-UNCERTAIN"
   ],
   "status": "planning-only; no C3-C rows changed"
 }

@@ -1,6 +1,6 @@
 # Tier-C LOW classification
 
-Generated: 2026-10-21T21:14:54.844Z
+Generated: 2026-10-22T11:31:10.715Z
 
 C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occurrences. C3-C, C3-D and C3-E were not started.
 
@@ -9,18 +9,18 @@ C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occu
 ```json
 {
   "contractVersion": "1.3.9",
-  "reviewedAt": "2026-10-21T21:14:54.844Z",
+  "reviewedAt": "2026-10-22T11:31:10.715Z",
   "scopeFamilies": 23,
   "scopeOccurrences": 29,
   "decisions": {
-    "FULL": 20,
-    "CONFIRMED-LIMITED": 3,
+    "FULL": 23,
+    "CONFIRMED-LIMITED": 0,
     "BLOCKED": 0,
     "MODEL-ISSUE": 0
   },
   "occurrencesByDecision": {
-    "FULL": 25,
-    "CONFIRMED-LIMITED": 4,
+    "FULL": 29,
+    "CONFIRMED-LIMITED": 0,
     "BLOCKED": 0,
     "MODEL-ISSUE": 0
   }
@@ -34,7 +34,7 @@ C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occu
 | lexical|دحر|مدحور|noun/pronoun | مَّدْحُورًا | دحر | C3-B | 3 | HIGH | FULL |
 | lexical|جهز|جهاز|noun/pronoun | بِجَهَازِهِمْ | جهز | C3-B | 2 | HIGH | FULL |
 | lexical|مزق|ممزق|noun/pronoun | مُمَزَّقٍ | مزق | C3-B | 2 | HIGH | FULL |
-| lexical|مرح|مرح|noun/pronoun | مَرَحًا | مرح | C3-B | 2 | HIGH | CONFIRMED-LIMITED |
+| lexical|مرح|مرح|noun/pronoun | مَرَحًا | مرح | C3-B | 2 | HIGH | FULL |
 | lexical|رفق|رفيق|noun/pronoun | رَفِيقًا | رفق | C3-B | 1 | HIGH | FULL |
 | lexical|جرح|جروح|noun/pronoun | وَٱلْجُرُوحَ | جرح | C3-B | 1 | HIGH | FULL |
 | lexical|جرح|جوارح|noun/pronoun | ٱلْجَوَارِحِ | جرح | C3-B | 1 | HIGH | FULL |
@@ -45,11 +45,11 @@ C3-B productive noun/adjective adjudication covers exactly 23 families / 29 occu
 | lexical|بذر|تبذير|noun/pronoun | تَبْذِيرًا | بذر | C3-B | 1 | HIGH | FULL |
 | lexical|بذر|مبذرين|noun/pronoun | ٱلْمُبَذِّرِينَ | بذر | C3-B | 1 | HIGH | FULL |
 | lexical|برم|مبرم|noun/pronoun | مُبْرِمُونَ | برم | C3-B | 1 | HIGH | FULL |
-| lexical|خضع|خاضع|noun/pronoun | خَـٰضِعِينَ | خضع | C3-B | 1 | HIGH | CONFIRMED-LIMITED |
+| lexical|خضع|خاضع|noun/pronoun | خَـٰضِعِينَ | خضع | C3-B | 1 | HIGH | FULL |
 | lexical|ستر|مستور|noun/pronoun | مَّسْتُورًا | ستر | C3-B | 1 | HIGH | FULL |
 | lexical|نقب|نقيب|noun/pronoun | نَقِيبًا | نقب | C3-B | 1 | HIGH | FULL |
 | lexical|طعن|طعنا|noun/pronoun | وَطَعْنًا | طعن | C3-B | 1 | HIGH | FULL |
-| lexical|عبث|عبث|noun/pronoun | عَبَثًا | عبث | C3-B | 1 | HIGH | CONFIRMED-LIMITED |
+| lexical|عبث|عبث|noun/pronoun | عَبَثًا | عبث | C3-B | 1 | HIGH | FULL |
 | lexical|فتر|فترة|noun/pronoun | فَتْرَةٍ | فتر | C3-B | 1 | HIGH | FULL |
 | lexical|هضم|هضم|noun/pronoun | هَضْمًا | هضم | C3-B | 1 | HIGH | FULL |
 | lexical|زفر|زفير|noun/pronoun | زَفِيرٌ | زفر | C3-B | 2 | LOW | FULL |

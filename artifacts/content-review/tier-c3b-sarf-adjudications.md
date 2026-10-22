@@ -1,6 +1,6 @@
 # Tier-C-B productive noun/adjective Ṣarf adjudications
 
-Reviewed at: 2026-10-21T21:14:54.844Z
+Reviewed at: 2026-10-22T11:31:10.715Z
 Contract: 1.3.9
 
 This report covers exactly the 23 C3-B families / 29 Qur’anic occurrences. C3-C, C3-D, C3-E, C2 residuals and historical residuals were excluded.
@@ -14,14 +14,14 @@ This report covers exactly the 23 C3-B families / 29 Qur’anic occurrences. C3-
   "adjudicatedFamilies": 23,
   "adjudicatedOccurrences": 29,
   "decisions": {
-    "FULL": 20,
-    "CONFIRMED-LIMITED": 3,
+    "FULL": 23,
+    "CONFIRMED-LIMITED": 0,
     "BLOCKED": 0,
     "MODEL-ISSUE": 0
   },
   "occurrencesByDecision": {
-    "FULL": 25,
-    "CONFIRMED-LIMITED": 4,
+    "FULL": 29,
+    "CONFIRMED-LIMITED": 0,
     "BLOCKED": 0,
     "MODEL-ISSUE": 0
   },
@@ -127,7 +127,7 @@ The م ز ق family has four attested, morphologically useful comparison forms. 
 
 Accepted candidates:
 
-- مَزَقَ — he tore apart; Form I perfect verb; The basic tearing action related to the Qur’anic passive Form II result.; The Qur’anic word presents a state/result; this form presents the basic action.; evidence: Canonical Qur’anic occurrences for م ز ق; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
+- مَزَقَ — he tore apart; Form I perfect verb; The basic tearing action related to the Qur’anic Form-II passive participle.; The Qur’anic word is a Form-II passive participle with the contextual gloss ‘disintegration’; this form presents the basic action.; evidence: Canonical Qur’anic occurrences for م ز ق; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - يَمْزِقُ — he tears apart; Form I imperfect verb; The ongoing form of مَزَقَ.; The action is viewed as ongoing rather than completed.; evidence: Canonical Qur’anic occurrences for م ز ق; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - تَمْزِيقٌ — tearing apart / disintegration; Form II verbal noun (maṣdar); The action noun of the intensive/causative Form II branch.; The Qur’anic passive participle names a disintegrated result; the maṣdar names the process.; evidence: Canonical Qur’anic occurrences for م ز ق; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - مَزَّقَ — he tore to pieces / dispersed; Form II perfect verb; The active Form II counterpart of مُمَزَّقٍ.; Form II intensifies or causes the basic tearing action.; evidence: Canonical Qur’anic occurrences for م ز ق; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
@@ -143,21 +143,22 @@ Human expert review still required: no
 
 ## lexical|مرح|مرح|noun/pronoun
 
-Decision: **CONFIRMED-LIMITED**; root: مرح; word: مَرَحًا; locations: 17:37:5, 31:18:9
+Decision: **FULL**; root: مرح; word: مَرَحًا; locations: 17:37:5, 31:18:9
 
 Original predicted resolvability: HIGH
 
-The م ر ح family is correctly limited because the remaining candidates add only shell, inflection or duplicate conjugation.
+The م ر ح family has four attested, morphologically useful comparison forms. They teach genuine same-root development without shell or inflection padding.
 
 Accepted candidates:
 
 - مَرِحَ — he was exultant / insolent; Form I perfect verb; The verb related to the Qur’anic maṣdar مَرَحًا.; The noun names exultation or insolence; the verb describes the person exhibiting it.; evidence: Canonical Qur’anic occurrences for م ر ح; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - يَمْرَحُ — he is exultant / insolent; Form I imperfect verb; The ongoing form of مَرِحَ.; The semantic branch is retained honestly while tense changes.; evidence: Canonical Qur’anic occurrences for م ر ح; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
-- مَارِحٌ — exultant / insolent; Form I active participle; The descriptive adjective/agent form of مَرِحَ.; Describes the person characterised by the state named in مَرَحًا.; evidence: Canonical Qur’anic occurrences for م ر ح; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
+- مَرِحٌ — exultant / insolent; Form I adjective; An established lexical adjective in the same root family as مَرَحًا.; Describes the person characterised by the state named in مَرَحًا; this is the lexical adjective, not a case variant.; evidence: Canonical Qur’anic occurrences for م ر ح; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
+- أَمْرَحَ — he made someone exultant / amused; Form IV perfect verb; A causative Form-IV development from the same root.; The causative branch extends the state of exultation into causing or producing it; the meaning is translated independently.; evidence: Canonical Qur’anic occurrences for م ر ح; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 
 Candidates rejected / safeguards:
 
-- مَرَحٌ was rejected as the same maṣdar lexeme as مَرَحًا with only case/ending variation.
+- مَارِحٌ was not selected because the explicitly lexicalised adjective مَرِحٌ is the stronger teaching row.
 - تَمْرَحُونَ was rejected as a person/number variant of the same imperfect verb, not a new teaching contrast.
 
 Unresolved question: None
@@ -176,9 +177,9 @@ The ر ف ق family has four attested, morphologically useful comparison forms. 
 Accepted candidates:
 
 - رِفْقٌ — gentleness / kindness; Form I verbal noun or abstract noun; An abstract noun in the same root family as رَفِيقًا.; The Qur’anic word denotes a companion; this branch highlights the root’s gentleness/companionship range.; evidence: Canonical Qur’anic occurrences for ر ف ق; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
+- رَافَقَ — he accompanied; Form III perfect verb; A directly related Form-III verb that illuminates the companion noun رَفِيقًا.; The root develops from companion/gentleness into the act of accompanying; the meaning is translated on its own terms.; evidence: Canonical Qur’anic occurrences for ر ف ق; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - يَرْفُقُ — he is gentle; Form I imperfect verb; The basic gentleness verb.; Moves from a companion/person noun to the quality or action of gentleness.; evidence: Canonical Qur’anic occurrences for ر ف ق; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - اِرْتَفَقَ — he benefited / rested; Form VIII perfect verb; A derived Form VIII branch attested in the Qur’anic vocabulary.; The derived branch develops the notion of obtaining benefit or rest; it is translated on its own terms.; evidence: Canonical Qur’anic occurrences for ر ف ق; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
-- اِرْتِفَاقٌ — benefiting / resting; Form VIII verbal noun (maṣdar); The maṣdar of اِرْتَفَقَ.; Names the benefit/rest branch rather than the companion noun.; evidence: Canonical Qur’anic occurrences for ر ف ق; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 
 Candidates rejected / safeguards:
 
@@ -392,13 +393,13 @@ The ب ر م family has four attested, morphologically useful comparison forms. 
 Accepted candidates:
 
 - بَرَمَ — he planned / twisted; Form I perfect verb; The basic root action related to the Form IV determination branch.; The Qur’anic form expresses firm determination; the basic root also carries planning/twisting senses.; evidence: Canonical Qur’anic occurrences for ب ر م; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
-- يَبْرِمُ — he plans / twists; Form I imperfect verb; The ongoing form of بَرَمَ.; Keeps the basic branch while changing aspect.; evidence: Canonical Qur’anic occurrences for ب ر م; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
+- أَبْرَمَ — he determined / concluded; Form IV perfect verb; The Form-IV verb directly underlying the Qur’anic active participle مُبْرِمُونَ and attested in the same Qur’anic context.; The Qur’anic family expresses firm determination; this is the completed Form-IV determining action.; evidence: Canonical Qur’anic occurrences for ب ر م; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - إِبْرَامٌ — firm planning / completion; Form IV verbal noun (maṣdar); The action noun related to أَبْرَمَ and مُبْرِم.; Names the process of firmly concluding or arranging.; evidence: Canonical Qur’anic occurrences for ب ر م; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - مُبْرَمٌ — firmly concluded / arranged; Form IV passive participle; The result counterpart of مُبْرِمُونَ.; Moves from the determining agent to what has been firmly concluded.; evidence: Canonical Qur’anic occurrences for ب ر م; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 
 Candidates rejected / safeguards:
 
-- أَبْرَمُوا was not used because the perfect occurrence adds person/number and interrogative context, while بَرَمَ, إِبْرَامٌ and مُبْرَمٌ give stronger lexical contrasts.
+- يَبْرِمُ was replaced because the Qur’anic evidence directly attests the Form-IV verb أَبْرَمَ; أَبْرَمُوا is its occurrence with person/number marking, so the bare lexical form is used.
 
 Unresolved question: None
 Human expert review still required: no
@@ -407,21 +408,22 @@ Human expert review still required: no
 
 ## lexical|خضع|خاضع|noun/pronoun
 
-Decision: **CONFIRMED-LIMITED**; root: خضع; word: خَـٰضِعِينَ; locations: 26:4:11
+Decision: **FULL**; root: خضع; word: خَـٰضِعِينَ; locations: 26:4:11
 
 Original predicted resolvability: HIGH
 
-The خ ض ع family is correctly limited because the remaining candidates add only shell, inflection or duplicate conjugation.
+The خ ض ع family has four attested, morphologically useful comparison forms. They teach genuine same-root development without shell or inflection padding.
 
 Accepted candidates:
 
 - خَضَعَ — he submitted / humbled himself; Form I perfect verb; The basic action related to the Qur’anic active participle.; The Qur’anic word describes people in a state of humility; the verb describes entering or showing that state.; evidence: Canonical Qur’anic occurrences for خ ض ع; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - يَخْضَعُ — he submits / is humble; Form I imperfect verb; The ongoing form of خَضَعَ.; The semantic meaning is retained while aspect changes.; evidence: Canonical Qur’anic occurrences for خ ض ع; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - خُضُوعٌ — submission / humility; Form I verbal noun (maṣdar); The action/state noun of خَضَعَ.; Names the state rather than its participants.; evidence: Canonical Qur’anic occurrences for خ ض ع; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
+- أَخْضَعَ — he subdued / made submissive; Form IV causative verb; A genuine causative Form-IV development from خَضَعَ.; The meaning develops from submitting oneself to causing or making another submit; the meanings remain explicitly distinct.; evidence: Canonical Qur’anic occurrences for خ ض ع; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 
 Candidates rejected / safeguards:
 
-- The family is confirmed-limited at four forms: the remaining secure evidence is a participle, perfect, imperfect and maṣdar; the other apparent rows are conjugational or number variants.
+- The family is FULL: the attested Form-IV causative أَخْضَعَ supplies a genuine fifth row; the other rejected candidates remain conjugational or number variants.
 
 Unresolved question: None
 Human expert review still required: no
@@ -463,12 +465,13 @@ The ن ق ب family has four attested, morphologically useful comparison forms. 
 Accepted candidates:
 
 - نَقَبَ — he pierced / explored; Form I perfect verb; The basic action related to the leadership/inspection noun نَقِيب.; The Qur’anic title develops from the root sense of penetrating, inspecting or investigating.; evidence: Canonical Qur’anic occurrences for ن ق ب; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
-- يَنْقُبُ — he pierces / explores; Form I imperfect verb; The ongoing form of نَقَبَ.; Keeps the same root branch while changing aspect.; evidence: Canonical Qur’anic occurrences for ن ق ب; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
+- نَقُبَ — he became a leader / chief; Form I stative perfect verb; The lexical verb نَقُبَ عَلَى الْقَوْمِ means that someone became their leader/chief and directly illuminates the title نَقِيب.; The leadership sense is a genuine same-root semantic development from the root’s penetrating/inspecting range; it is translated independently.; evidence: Canonical Qur’anic occurrences for ن ق ب; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - نَقْبٌ — piercing / passage; Form I verbal noun (maṣdar); The action noun of نَقَبَ.; Names the penetrating or passage action rather than the leader.; evidence: Canonical Qur’anic occurrences for ن ق ب; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - نَقَّبَ — he explored thoroughly; Form II perfect verb; The intensive/causative derived form related to exploration.; Develops basic piercing into repeated or thorough exploration.; evidence: Canonical Qur’anic occurrences for ن ق ب; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 
 Candidates rejected / safeguards:
 
+- يَنْقُبُ was replaced by the more educationally relevant lexical verb نَقُبَ, which directly explains the leadership sense of نَقِيب.
 - فَنَقَّبُوا۟ was rejected as a prefixed, person/number-bearing occurrence of the accepted lexical form نَقَّبَ.
 
 Unresolved question: None
@@ -502,21 +505,22 @@ Human expert review still required: no
 
 ## lexical|عبث|عبث|noun/pronoun
 
-Decision: **CONFIRMED-LIMITED**; root: عبث; word: عَبَثًا; locations: 23:115:4
+Decision: **FULL**; root: عبث; word: عَبَثًا; locations: 23:115:4
 
 Original predicted resolvability: HIGH
 
-The ع ب ث family is correctly limited because the remaining candidates add only shell, inflection or duplicate conjugation.
+The ع ب ث family has four attested, morphologically useful comparison forms. They teach genuine same-root development without shell or inflection padding.
 
 Accepted candidates:
 
 - عَبِثَ — he acted foolishly / played idly; Form I perfect verb; The basic verb related to the Qur’anic maṣdar.; The occurrence describes purposelessness; the verb describes acting in that manner.; evidence: Canonical Qur’anic occurrences for ع ب ث; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - يَعْبَثُ — he acts foolishly / plays idly; Form I imperfect verb; The ongoing form of عَبِثَ.; Retains the semantic branch while changing aspect.; evidence: Canonical Qur’anic occurrences for ع ب ث; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - عَابِثٌ — acting foolishly / playing idly; Form I active participle; The descriptive participle from عَبِثَ.; Describes the actor rather than the purposeless action itself.; evidence: Canonical Qur’anic occurrences for ع ب ث; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
+- عَابَثَ — he played / joked with someone; Form III perfect verb; A genuine Form-III relational verb from the same root.; The meaning develops from acting pointlessly to playing or joking with another person; it is translated honestly rather than flattened.; evidence: Canonical Qur’anic occurrences for ع ب ث; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 
 Candidates rejected / safeguards:
 
-- The family is confirmed-limited at four forms because the only additional recorded rows are the same maṣdar with a different ending or conjugational variants of the same verb.
+- The family is FULL: the attested Form-III verb عَابَثَ supplies a genuine fifth row; the remaining rejected candidates are only inflectional or conjugational variants.
 
 Unresolved question: None
 Human expert review still required: no
@@ -599,7 +603,7 @@ Human expert review still required: no
 
 Decision: **FULL**; root: ندم; word: ٱلنَّـٰدِمِينَ; locations: 5:31:25
 
-Original predicted resolvability: LOW; assessment: The original LOW prediction was not confirmed: the candidate scan had undercounted the secure Form I verb paradigm and treated a shell variant as a lead; the corrected family uses four genuine lexical contrasts.
+Original predicted resolvability: LOW; assessment: The original LOW prediction was not confirmed: authoritative evidence supports a full family, and the corrected selection prefers the derived Form-V verb تَنَدَّمَ over a second near-synonymous maṣdar.
 
 The ن د م family has four attested, morphologically useful comparison forms. They teach genuine same-root development without shell or inflection padding.
 
@@ -608,11 +612,12 @@ Accepted candidates:
 - نَدِمَ — he regretted; Form I perfect verb; The basic verb related to the Qur’anic active participle.; The Qur’anic form describes the regretful; the verb presents the experience of regretting.; evidence: Canonical Qur’anic occurrences for ن د م; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - يَنْدَمُ — he regrets; Form I imperfect verb; The ongoing form of نَدِمَ.; Keeps the same semantic meaning while changing aspect.; evidence: Canonical Qur’anic occurrences for ن د م; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 - نَدَمٌ — regret; Form I verbal noun (maṣdar); The action/state noun of نَدِمَ.; Names the state rather than the person experiencing it.; evidence: Canonical Qur’anic occurrences for ن د م; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
-- نَدَامَةٌ — regret / remorse; Lexical abstract noun; An established abstract noun in the same root family.; Adds a related remorse noun without pretending it is a different tense of the Qur’anic participle.; evidence: Canonical Qur’anic occurrences for ن د م; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
+- تَنَدَّمَ — he deeply regretted / expressed remorse; Form V perfect verb; A genuine derived Form-V verb from the same root.; The meaning develops from experiencing regret to expressing or intensifying it; it is not treated as synonymous with every other row.; evidence: Canonical Qur’anic occurrences for ن د م; approved project root/lexical data; aligned Qur’anic morphology evidence; and reliable Arabic morphology knowledge were checked. Provider output was treated as evidence, not as the teaching answer.
 
 Candidates rejected / safeguards:
 
-- The original LOW prediction was not confirmed: the secure perfect and imperfect verbs, together with two attested regret nouns, establish a full family without using the article-stripped duplicate.
+- The original LOW prediction was not confirmed: the secure perfect and imperfect verbs, the maṣdar, and the attested Form-V verb establish a full family without using the article-stripped duplicate.
+- نَدَامَةٌ was rejected from the final five because it is a near-synonymous second maṣdar; تَنَدَّمَ provides a more useful derived-form contrast.
 
 Unresolved question: None
 Human expert review still required: no

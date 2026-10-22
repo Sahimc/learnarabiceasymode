@@ -81,10 +81,13 @@ const json = <T>(value: T) => JSON.stringify(value, null, 2);
 
 function currentRow(record: OccurrenceRecord): LessonForm {
   const old = record.lesson.forms[0];
+  const isMumazzaq = normalize(record.word.arabic) === normalize("مُمَزَّقٍ") && normalize(record.lesson.root) === normalize("م ز ق");
   return {
     form: record.word.arabic,
     meaning: record.lesson.meaning || record.word.gloss || record.word.arabic,
-    difference: `Current Qur’anic occurrence at ${record.location}; ${old?.difference ?? "the exact surface form is retained first."}`,
+    difference: isMumazzaq
+      ? `Current Qur’anic occurrence at ${record.location}; Form-II passive participle. The learner-facing gloss “disintegration” is contextual; the morphology is the passive participle, not the English gloss.`
+      : `Current Qur’anic occurrence at ${record.location}; ${old?.difference ?? "the exact surface form is retained first."}`,
     relationship: `Current Qur’anic occurrence of the ${record.lesson.root} lexical family; comparison rows show genuine same-root morphology and honest semantic development.`,
     provenance: `Tier-C3-B adjudication ${reviewedAt}; canonical occurrence, existing lesson, root, lemma and aligned morphology evidence inspected.`,
   };
