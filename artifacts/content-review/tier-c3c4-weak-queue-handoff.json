@@ -1,12 +1,12 @@
 {
   "reportType": "tier-c3c4-weak-queue-handoff",
-  "status": "not-started",
+  "status": "C3-C4A W1 complete; C3-C4B and later weak batches not started",
   "source": "tier-c3-low-classification.json after C3-C3 quadriliteral completion",
   "scope": {
     "families": 77,
     "occurrences": 94
   },
-  "rule": "This is classification only. No weak-root rows were changed or adjudicated.",
+  "rule": "Weak families are adjudicated by committed primary batch. Completed families remain closed; W1 is complete and no family may re-enter a later weak batch.",
   "proposedSubtracks": [
     "weak-final / maqsurah and alif-maqsurah",
     "weak-middle / hollow roots",
@@ -3191,5 +3191,24 @@
         ]
       }
     }
-  ]
+  ],
+  "completedBatches": {
+    "C3-C4A": {
+      "families": 12,
+      "occurrences": 17,
+      "decisions": {
+        "FULL": 11,
+        "CONFIRMED-LIMITED": 1,
+        "BLOCKED": 0,
+        "MODEL-ISSUE": 0
+      },
+      "occurrencesByDecision": {
+        "FULL": 16,
+        "CONFIRMED-LIMITED": 1,
+        "BLOCKED": 0,
+        "MODEL-ISSUE": 0
+      },
+      "reportPath": "artifacts\\content-review\\tier-c3c4a-weak-final-adjudications.json"
+    }
+  }
 }

@@ -1,35 +1,13 @@
 # Tier-C-C primary-track ownership
 
-Reviewed at: 2026-10-22T22:09:58.058Z
+Reviewed at: 2026-10-23T16:47:08.183Z
 
 Completed adjudication owns the family permanently. Otherwise, first matching track: ROOT/LEMMA-UNCERTAIN > QUADRILITERAL > HAMZATED > WEAK > DOUBLED. Remaining feature signals are secondary flags.
 
-C3-C3 QUADRILITERAL is complete. Completed families remain permanently owned by their original primary track. WEAK is the next untouched primary track.
+C3-C4A W1 weak-final is complete. Completed families remain permanently owned by their original batch. C3-C4B is the next untouched weak batch.
 
 ```json
 {
-  "primaryTrackCounts": {
-    "DOUBLED": {
-      "families": 20,
-      "occurrences": 30
-    },
-    "HAMZATED": {
-      "families": 25,
-      "occurrences": 32
-    },
-    "QUADRILITERAL": {
-      "families": 22,
-      "occurrences": 27
-    },
-    "WEAK": {
-      "families": 77,
-      "occurrences": 94
-    },
-    "ROOT/LEMMA-UNCERTAIN": {
-      "families": 5,
-      "occurrences": 12
-    }
-  },
   "pendingQueueCounts": {
     "DOUBLED": {
       "families": 0,
@@ -44,8 +22,8 @@ C3-C3 QUADRILITERAL is complete. Completed families remain permanently owned by 
       "occurrences": 0
     },
     "WEAK": {
-      "families": 77,
-      "occurrences": 94
+      "families": 65,
+      "occurrences": 77
     },
     "ROOT/LEMMA-UNCERTAIN": {
       "families": 5,
@@ -54,8 +32,9 @@ C3-C3 QUADRILITERAL is complete. Completed families remain permanently owned by 
   },
   "nextQueue": {
     "track": "WEAK",
-    "families": 77,
-    "occurrences": 94,
+    "batch": "C3-C4B",
+    "families": 15,
+    "occurrences": 15,
     "status": "not-started"
   }
 }

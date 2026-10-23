@@ -1,6 +1,6 @@
 # C3-C4 weak-root classification and execution batches
 
-Status: **planning only; weak-root adjudication has not started**.
+Status: **C3-C4A W1 adjudicated; C3-C4B and later weak batches remain untouched**.
 
 Scope: **77 families / 94 Qur’anic occurrences**.
 
@@ -184,4 +184,11 @@ No Ṣarf rows, corpus decisions or package content were changed.
 - No family belongs to two primary categories or two batches.
 - Existing secondary morphology flags are copied unchanged.
 - No Ṣarf rows, package content or corpus decisions were changed.
+
+
+## C3-C4A adjudication
+
+- Decision counts: `{"FULL":11,"CONFIRMED-LIMITED":1,"BLOCKED":0,"MODEL-ISSUE":0}`
+- Occurrence counts: `{"FULL":16,"CONFIRMED-LIMITED":1,"BLOCKED":0,"MODEL-ISSUE":0}`
+- Report: `artifacts\content-review\tier-c3c4a-weak-final-adjudications.json`
 
