@@ -135,18 +135,18 @@ Final rows:
 Decision: **FULL**; root: غزو; weak radical: و; word: غُزًّى; locations: 3:156:16
 POS: noun/pronoun; confidence: high
 
-The current Qur’anic form plus four independently attested, morphologically useful same-root forms are established. Weak-final alternation is explained honestly; no shell, case, pronoun or bare-radical padding is used.
+The current Qur’anic form plus four independently attested, morphologically useful same-root forms are established. غَازٍ is the direct singular active participle relationship behind غُزًّى; مَغْزًى remains genuine but is not selected because it is less direct for this learner lesson. No shell, case, pronoun or bare-radical padding is used.
 
 Accepted candidates:
 
-- غَزَا — raided or went out to fight; Form-I weak-final perfect verb; Basic verb whose active-participant plural includes غُزًّى.; semantic development: The Qur’anic plural names those engaged in fighting; the verb names the action.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines غَزَا as going to fight/raid and lists غُزًّى among its plurals.
+- غَزَا — he raided / went on campaign; Form-I weak-final perfect verb; Basic verb whose active participle غَازٍ has the plural غُزًّى.; semantic development: The Qur’anic plural names the people on campaign; the verb names the action.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy states غَزا العدوَّ ... فهو غازٍ and lists غُزًّى among its plurals.
+- غَازٍ — raider / one who goes on campaign; Form-I active participle; Direct singular active participle of غَزَا; its plural includes the Qur’anic غُزًّى.; semantic development: The participant noun directly explains the morphology of the Qur’anic plural.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy states غَزا العدوَّ ... فهو غازٍ and gives غُزًّى among the plurals.
 - غَزْوٌ — warfare or raiding; Form-I maṣdar; Verbal noun of غَزَا.; semantic development: Moves from the fighters/action participants to the action itself.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines الغَزْو as armed attempted control/warfare.
 - غَزْوَةٌ — a raid or campaign; lexical event noun; Established single-campaign noun from the same root.; semantic development: The general action غَزْو becomes one concrete campaign.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines الغَزْوَة as one occurrence of غزو/a campaign.
-- مَغْزًى — aim, purpose or objective; lexical place/goal noun; Established derivative under the same root.; semantic development: The root develops from going out/aiming at an enemy to the aim or purpose of an act or statement.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines المَغْزَى as a place of raiding, objective, aim or meaning.
 
 Rejected candidates / safeguards:
 
-- غَازٍ was not needed as an additional row: it is the singular active participle corresponding to the current plural and would add less teaching value than the event and goal nouns.
+- مَغْزًى remains a genuine same-root derivative, but it was rejected from this five-row lesson because غَازٍ directly explains the Qur’anic plural غُزًّى and has greater recognition value here.
 - Case and plural spelling variants were not counted separately.
 
 Human expert review still required: no
@@ -154,14 +154,13 @@ Unresolved question: None
 
 Final rows:
 
-1. غُزًّى — fighting. Current Qur’anic occurrence at 3:156:16; Current Qur'anic occurrence; state: indefinite; case: accusative.
-2. غَزَا — raided or went out to fight. Form-I weak-final perfect verb. The Qur’anic plural names those engaged in fighting; the verb names the action. Compared with the Qur’anic occurrence at 3:156:16. Anchors the current plural in the real Form-I verb.
-3. غَزْوٌ — warfare or raiding. Form-I maṣdar. Moves from the fighters/action participants to the action itself. Compared with the Qur’anic occurrence at 3:156:16. Provides the core verbal noun for recognition across the root family.
-4. غَزْوَةٌ — a raid or campaign. lexical event noun. The general action غَزْو becomes one concrete campaign. Compared with the Qur’anic occurrence at 3:156:16. Adds a useful event-noun contrast without relying on number alone.
-5. مَغْزًى — aim, purpose or objective. lexical place/goal noun. The root develops from going out/aiming at an enemy to the aim or purpose of an act or statement. Compared with the Qur’anic occurrence at 3:156:16. Demonstrates honest semantic development beyond the warfare branch.
+1. غُزًّى — raiders / fighters / those on campaign. Current Qur’anic occurrence at 3:156:16; Current Qur'anic occurrence; state: indefinite; case: accusative.
+2. غَزَا — he raided / went on campaign. Form-I weak-final perfect verb. The Qur’anic plural names the people on campaign; the verb names the action. Compared with the Qur’anic occurrence at 3:156:16. Anchors the current plural in the directly related Form-I verb.
+3. غَازٍ — raider / one who goes on campaign. Form-I active participle. The singular participant form directly explains the Qur’anic plural غُزًّى. Compared with the Qur’anic occurrence at 3:156:16. Provides the strongest recognition bridge from the current plural.
+4. غَزْوٌ — warfare or raiding. Form-I maṣdar. Moves from the fighters/action participants to the action itself. Compared with the Qur’anic occurrence at 3:156:16. Provides the core verbal noun for recognition across the root family.
+5. غَزْوَةٌ — a raid or campaign. lexical event noun. The general action غَزْو becomes one concrete campaign. Compared with the Qur’anic occurrence at 3:156:16. Adds a useful event-noun contrast without relying on number alone.
 
 ---
-
 ## lexical|فجو|فجوة|noun/pronoun
 
 Decision: **FULL**; root: فجو; weak radical: و; word: فَجْوَةٍ; locations: 18:17:17

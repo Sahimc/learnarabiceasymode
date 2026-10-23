@@ -163,14 +163,14 @@ export const C3C4A_SPECS: Record<string, C3C4ASpec> = {
   "lexical|غزو|غزى|noun/pronoun": full(
     "غزو",
     "و",
-    e("غزو", "The entry attests غَزَا, أَغْزَى, غَزَّى, اغْتَزَى, الغَزْو, الغَزْوَة and المَغْزَى, and explicitly lists غُزًّى as a plural."),
+    e("غزو", "The entry attests غَزَا and its active participle غَازٍ, the plural غُزًّى, and the maṣdars/event nouns الغَزْو and الغَزْوَة."),
     [
-      a("غزو", "غَزَا", "Form-I weak-final perfect verb", "raided or went out to fight", "Basic verb whose active-participant plural includes غُزًّى.", "The Qur’anic plural names those engaged in fighting; the verb names the action.", "Anchors the current plural in the real Form-I verb.", e("غزو", "The Academy defines غَزَا as going to fight/raid and lists غُزًّى among its plurals.")),
+      a("غزو", "غَزَا", "Form-I weak-final perfect verb", "he raided / went on campaign", "Basic verb whose active participle غَازٍ has the plural غُزًّى.", "The Qur’anic plural names the people on campaign; the verb names the action.", "Anchors the current plural in the directly related Form-I verb.", e("غزو", "The Academy states غَزا العدوَّ ... فهو غازٍ and lists غُزًّى among its plurals.")),
+      a("غزو", "غَازٍ", "Form-I active participle", "raider / one who goes on campaign", "Direct singular active participle of غَزَا; its plural includes the Qur’anic غُزًّى.", "The participant noun makes the morphology of the Qur’anic plural transparent.", "Provides the strongest learner-facing bridge from the current plural to its singular lexical form.", e("غزو", "The Academy states غَزا العدوَّ ... فهو غازٍ and gives غُزًّى among the plurals.")),
       a("غزو", "غَزْوٌ", "Form-I maṣdar", "warfare or raiding", "Verbal noun of غَزَا.", "Moves from the fighters/action participants to the action itself.", "Provides the core verbal noun for recognition across the root family.", e("غزو", "The Academy defines الغَزْو as armed attempted control/warfare.")),
       a("غزو", "غَزْوَةٌ", "lexical event noun", "a raid or campaign", "Established single-campaign noun from the same root.", "The general action غَزْو becomes one concrete campaign.", "Adds a useful event-noun contrast without relying on number alone.", e("غزو", "The Academy defines الغَزْوَة as one occurrence of غزو/a campaign.")),
-      a("غزو", "مَغْزًى", "lexical place/goal noun", "aim, purpose or objective", "Established derivative under the same root.", "The root develops from going out/aiming at an enemy to the aim or purpose of an act or statement.", "Demonstrates honest semantic development beyond the warfare branch.", e("غزو", "The Academy defines المَغْزَى as a place of raiding, objective, aim or meaning.")),
     ],
-    ["غَازٍ was not needed as an additional row: it is the singular active participle corresponding to the current plural and would add less teaching value than the event and goal nouns.", "Case and plural spelling variants were not counted separately."],
+    ["مَغْزًى is genuinely a same-root derivative, but it is rejected from this five-row lesson because غَازٍ directly explains the Qur’anic plural غُزًّى and has greater recognition value here.", "Case and plural spelling variants were not counted separately."],
   ),
 
   "lexical|فجو|فجوة|noun/pronoun": full(

@@ -1,7 +1,7 @@
 {
   "reportType": "tier-c3c4a-weak-final-adjudication",
   "contractVersion": "1.3.9",
-  "reviewedAt": "2026-10-23T16:47:08.183Z",
+  "reviewedAt": "2026-10-23T17:12:55.409Z",
   "summary": {
     "startingC3C4AFamilies": 12,
     "startingC3C4AOccurrences": 17,
@@ -549,10 +549,10 @@
       "partOfSpeech": [
         "noun/pronoun"
       ],
-      "quranicMeaning": "fighting",
+      "quranicMeaning": "raiders / fighters / those on campaign",
       "morphology": {
         "arabic": "غُزًّى",
-        "meaning": "fighting",
+        "meaning": "raiders / fighters / those on campaign",
         "difference": "Current Qur'anic occurrence; state: indefinite; case: accusative."
       },
       "rootConfidence": "HIGH",
@@ -565,23 +565,21 @@
           "forms": [
             {
               "form": "غُزًّى",
-              "meaning": "fighting",
+              "meaning": "raiders / fighters / those on campaign",
               "difference": "Current Qur'anic occurrence; state: indefinite; case: accusative.",
               "relationship": "Current Qur'anic occurrence of the غزو lexical family in this āyah.",
               "provenance": "Codex review of canonical Qur'anic occurrence word:3:156:16. Aligned Quranic Arabic Corpus morphology 0.4-derived (3:156:16) was checked as evidence."
             }
           ],
           "sarfReview": {
-            "status": "limited",
-            "limitedReason": "غُزًّى is a rootful noun with root غ ز و. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
-            "auditDecision": "blocked-for-genuine-ambiguity",
+            "status": "full",
+            "auditDecision": "full",
             "provenance": [
-              "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:3:156:16.",
-              "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
-              "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+              "C3-C4A weak-final adjudication: FULL.",
+              "Targeted correction: the learner-facing family uses غَازٍ as the direct singular active participle behind غُزًّى; مَغْزًى remains genuine but is not selected for this lesson."
             ],
             "reviewedBy": "Codex",
-            "reviewedAt": "2026-10-18T14:42:38.844Z"
+            "reviewedAt": "2026-10-23T17:13:37.469Z"
           }
         }
       ],
@@ -590,12 +588,24 @@
           "form": "غَزَا",
           "root": "غزو",
           "morphology": "Form-I weak-final perfect verb",
-          "meaning": "raided or went out to fight",
-          "relationship": "Basic verb whose active-participant plural includes غُزًّى.",
-          "semanticDevelopment": "The Qur’anic plural names those engaged in fighting; the verb names the action.",
-          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines غَزَا as going to fight/raid and lists غُزًّى among its plurals.",
+          "meaning": "he raided / went on campaign",
+          "relationship": "Basic verb whose active participle غَازٍ has the plural غُزًّى.",
+          "semanticDevelopment": "The Qur’anic plural names the people on campaign; the verb names the action.",
+          "evidence": "The Academy states غَزا العدوَّ ... فهو غازٍ and lists غُزًّى among its plurals.",
           "confidence": "high",
-          "pedagogicalValue": "Anchors the current plural in the real Form-I verb.",
+          "pedagogicalValue": "Anchors the current plural in the directly related Form-I verb.",
+          "accepted": true
+        },
+        {
+          "form": "غَازٍ",
+          "root": "غزو",
+          "morphology": "Form-I active participle",
+          "meaning": "raider / one who goes on campaign",
+          "relationship": "Direct singular active participle of غَزَا; its plural includes the Qur’anic غُزًّى.",
+          "semanticDevelopment": "The participant noun directly explains the morphology of the Qur’anic plural.",
+          "evidence": "The Academy states غَزا العدوَّ ... فهو غازٍ and gives غُزًّى among the plurals.",
+          "confidence": "high",
+          "pedagogicalValue": "Provides the strongest learner-facing bridge from the current plural to its singular lexical form.",
           "accepted": true
         },
         {
@@ -632,7 +642,7 @@
           "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines المَغْزَى as a place of raiding, objective, aim or meaning.",
           "confidence": "high",
           "pedagogicalValue": "Demonstrates honest semantic development beyond the warfare branch.",
-          "accepted": true
+          "accepted": false
         }
       ],
       "acceptedCandidates": [
@@ -640,12 +650,24 @@
           "form": "غَزَا",
           "root": "غزو",
           "morphology": "Form-I weak-final perfect verb",
-          "meaning": "raided or went out to fight",
-          "relationship": "Basic verb whose active-participant plural includes غُزًّى.",
-          "semanticDevelopment": "The Qur’anic plural names those engaged in fighting; the verb names the action.",
-          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines غَزَا as going to fight/raid and lists غُزًّى among its plurals.",
+          "meaning": "he raided / went on campaign",
+          "relationship": "Basic verb whose active participle غَازٍ has the plural غُزًّى.",
+          "semanticDevelopment": "The Qur’anic plural names the people on campaign; the verb names the action.",
+          "evidence": "The Academy states غَزا العدوَّ ... فهو غازٍ and lists غُزًّى among its plurals.",
           "confidence": "high",
-          "pedagogicalValue": "Anchors the current plural in the real Form-I verb.",
+          "pedagogicalValue": "Anchors the current plural in the directly related Form-I verb.",
+          "accepted": true
+        },
+        {
+          "form": "غَازٍ",
+          "root": "غزو",
+          "morphology": "Form-I active participle",
+          "meaning": "raider / one who goes on campaign",
+          "relationship": "Direct singular active participle of غَزَا; its plural includes the Qur’anic غُزًّى.",
+          "semanticDevelopment": "The participant noun directly explains the morphology of the Qur’anic plural.",
+          "evidence": "The Academy states غَزا العدوَّ ... فهو غازٍ and gives غُزًّى among the plurals.",
+          "confidence": "high",
+          "pedagogicalValue": "Provides the strongest learner-facing bridge from the current plural to its singular lexical form.",
           "accepted": true
         },
         {
@@ -671,22 +693,10 @@
           "confidence": "high",
           "pedagogicalValue": "Adds a useful event-noun contrast without relying on number alone.",
           "accepted": true
-        },
-        {
-          "form": "مَغْزًى",
-          "root": "غزو",
-          "morphology": "lexical place/goal noun",
-          "meaning": "aim, purpose or objective",
-          "relationship": "Established derivative under the same root.",
-          "semanticDevelopment": "The root develops from going out/aiming at an enemy to the aim or purpose of an act or statement.",
-          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines المَغْزَى as a place of raiding, objective, aim or meaning.",
-          "confidence": "high",
-          "pedagogicalValue": "Demonstrates honest semantic development beyond the warfare branch.",
-          "accepted": true
         }
       ],
       "rejectedCandidates": [
-        "غَازٍ was not needed as an additional row: it is the singular active participle corresponding to the current plural and would add less teaching value than the event and goal nouns.",
+        "مَغْزًى is genuinely a same-root derivative, but it was rejected from this five-row lesson because غَازٍ directly explains the Qur’anic plural غُزًّى and has greater recognition value here.",
         "Case and plural spelling variants were not counted separately."
       ],
       "finalRows": [
@@ -753,22 +763,20 @@
         }
       ],
       "decision": "FULL",
-      "reasoning": "The current Qur’anic form plus four independently attested, morphologically useful same-root forms are established. Weak-final alternation is explained honestly; no shell, case, pronoun or bare-radical padding is used.",
+      "reasoning": "The current Qur’anic plural plus four independently attested, morphologically useful same-root forms are established. غَازٍ is the direct singular active participle relationship behind غُزًّى and is more useful here than the genuine but less direct semantic derivative مَغْزًى. No shell, case, pronoun or bare-radical padding is used.",
       "evidence": [
         "Committed C3-C4A queue inspected: 3:156:16.",
         "Weak-final radical position verified as third radical و.",
-        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The entry attests غَزَا, أَغْزَى, غَزَّى, اغْتَزَى, الغَزْو, الغَزْوَة and المَغْزَى, and explicitly lists غُزًّى as a plural.",
-        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines غَزَا as going to fight/raid and lists غُزًّى among its plurals.",
-        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines الغَزْو as armed attempted control/warfare.",
-        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines الغَزْوَة as one occurrence of غزو/a campaign.",
-        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines المَغْزَى as a place of raiding, objective, aim or meaning."
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The entry states غَزا العدوَّ ... فهو غازٍ and explicitly lists غُزًّى as a plural.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. The Academy defines غَزْو as raiding/warfare and غَزْوَة as a campaign; these remain accepted lexical contrasts.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%BA%D8%B2%D9%88. مَغْزًى is a genuine same-root derivative, but is rejected from this lesson in favour of the more direct plural-to-singular bridge غَازٍ."
       ],
       "confidence": "high",
       "unresolvedQuestion": null,
       "evidenceRequired": [],
       "humanExpertReviewRequired": false,
       "productionStatus": "full",
-      "reviewedAt": "2026-10-23T16:47:08.183Z",
+      "reviewedAt": "2026-10-23T17:12:55.409Z",
       "recordId": "tier-c3c4a-family-6e039cc6ff94960e"
     },
     {
