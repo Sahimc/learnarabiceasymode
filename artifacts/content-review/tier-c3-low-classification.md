@@ -367,3 +367,47 @@ C3-C4A W1 weak-final adjudication is complete for exactly 12 families / 17 occur
 | lexical|حوش|حاش|noun/pronoun | حَـٰشَ | حوش | C3-E | 2 | — |
 | lexical|حيث|حيث|noun/pronoun | وَحَيْثُ | حيث | C3-E | 2 | — |
 | lexical|هلم|هلم|noun/pronoun | هَلُمَّ | هلم | C3-E | 2 | — |
+
+## C3-C4B W2 adjudication
+
+Exactly 15 W2 weak-middle/hollow families / 15 occurrences were adjudicated. C3-C4C and later weak batches remain untouched.
+
+```json
+{
+  "contractVersion": "1.3.9",
+  "reviewedAt": "2026-10-24T15:53:58.602Z",
+  "scopeFamilies": 15,
+  "scopeOccurrences": 15,
+  "decisions": {
+    "FULL": 14,
+    "CONFIRMED-LIMITED": 1,
+    "BLOCKED": 0,
+    "MODEL-ISSUE": 0
+  },
+  "occurrencesByDecision": {
+    "FULL": 14,
+    "CONFIRMED-LIMITED": 1,
+    "BLOCKED": 0,
+    "MODEL-ISSUE": 0
+  },
+  "explicitBoundary": "Only the committed C3-C4B W2 weak-middle / hollow families were adjudicated. C3-C4C and later weak batches and all other queues remain untouched."
+}
+```
+
+| Family | Word | Root | Location(s) | Decision | Rows |
+|---|---|---|---|---|---:|
+| lexical|حوب|حوب|noun/pronoun | حُوبًا | حوب | 4:2:15 | FULL | 5 |
+| lexical|حير|حيران|noun/pronoun | حَيْرَانَ | حير | 6:71:23 | FULL | 5 |
+| lexical|روع|روع|noun/pronoun | ٱلرَّوْعُ | روع | 11:74:5 | FULL | 5 |
+| lexical|ريش|ريشا|noun/pronoun | وَرِيشًا | ريش | 7:26:9 | FULL | 5 |
+| lexical|ريع|ريع|noun/pronoun | رِيعٍ | ريع | 26:128:3 | FULL | 5 |
+| lexical|سوح|ساحت|noun/pronoun | بِسَاحَتِهِمْ | سوح | 37:177:3 | CONFIRMED-LIMITED | 2 |
+| lexical|سيب|سائبة|noun/pronoun | سَآئِبَةٍ | سيب | 5:103:7 | FULL | 5 |
+| lexical|شوب|شوبا|noun/pronoun | لَشَوْبًا | شوب | 37:67:5 | FULL | 5 |
+| lexical|شوك|شوكة|noun/pronoun | ٱلشَّوْكَةِ | شوك | 8:7:12 | FULL | 5 |
+| lexical|صوع|صواع|noun/pronoun | صُوَاعَ | صوع | 12:72:3 | FULL | 5 |
+| lexical|صوف|اصواف|noun/pronoun | أَصْوَافِهَا | صوف | 16:80:19 | FULL | 5 |
+| lexical|صيص|صياصي|noun/pronoun | صَيَاصِيهِمْ | صيص | 33:26:8 | FULL | 5 |
+| lexical|ضير|ضير|noun/pronoun | ضَيْرَ | ضير | 26:50:3 | FULL | 5 |
+| lexical|طود|طود|noun/pronoun | كَٱلطَّوْدِ | طود | 26:63:12 | FULL | 5 |
+| lexical|عوق|معوقين|noun/pronoun | ٱلْمُعَوِّقِينَ | عوق | 33:18:4 | FULL | 5 |
