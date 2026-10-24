@@ -118,11 +118,15 @@ function baselineOccurrence(record: OccurrenceRecord) {
 }
 
 function currentForm(record: OccurrenceRecord, root: string): LessonForm {
-  const old = record.lesson.forms[0];
+  const source = record.lesson.sarfReview.familyScope === "C3-C4B" ? baselineOccurrence(record) : record;
+  const old = source.lesson.forms[0];
+  const baselineDifference = old?.difference?.startsWith(`Current Qur’anic occurrence at ${record.location}; `)
+    ? old.difference.slice(`Current Qur’anic occurrence at ${record.location}; `.length)
+    : old?.difference ?? "the exact surface form is retained first.";
   return {
     form: record.word.arabic,
-    meaning: record.lesson.meaning || record.word.gloss || record.word.arabic,
-    difference: `Current Qur’anic occurrence at ${record.location}; ${old?.difference ?? "the exact surface form is retained first."}`,
+    meaning: source.lesson.meaning || record.word.gloss || record.word.arabic,
+    difference: `Current Qur’anic occurrence at ${record.location}; ${baselineDifference}`,
     relationship: `Current occurrence of the ${root} hollow/weak-middle family; comparison rows show real same-root morphology and honest semantic development.`,
     provenance: `Tier-C3-C4B W2 hollow-root adjudication ${reviewedAt}; the occurrence, root, lemma, weak middle radical, hollow behavior and aligned morphology were inspected against approved lexical evidence.`,
   };
@@ -207,7 +211,7 @@ async function main() {
     const source = classification.families.find((row) => row.familyKey === item.familyKey);
     if (!source) throw new Error(`Missing source classification for ${item.familyKey}`);
     if (source.primaryTrack !== "WEAK") throw new Error(`${item.familyKey} is not weak-primary-owned`);
-    if (source.c3C1 || source.c3C2 || source.c3C3 || source.c3C4A || source.c3C4B) throw new Error(`${item.familyKey} was already adjudicated in an earlier C3 track`);
+    if (source.c3C1 || source.c3C2 || source.c3C3 || source.c3C4A || (source.c3C4B && !C3C4B_SPECS[item.familyKey])) throw new Error(`${item.familyKey} was already adjudicated in an earlier C3 track`);
     if (item.batch !== "C3-C4B") throw new Error(`${item.familyKey} is not assigned to C3-C4B`);
     if (batch?.morphologyType !== "W2 weak-middle / hollow" || item.primaryCategory !== "W2") throw new Error(`${item.familyKey} is not W2 hollow`);
     if (item.weakRadicalPosition !== "second" || !Array.isArray(item.weakRadicals) || item.weakRadicals.length !== 1) throw new Error(`${item.familyKey} does not have exactly one recorded weak middle radical`);

@@ -1,6 +1,6 @@
 # Tier-C-C primary-track ownership
 
-Reviewed at: 2026-10-24T15:53:58.602Z
+Reviewed at: 2026-10-24T16:58:57.736Z
 
 Completed adjudication owns the family permanently. Otherwise, first matching track: ROOT/LEMMA-UNCERTAIN > QUADRILITERAL > HAMZATED > WEAK > DOUBLED. Remaining feature signals are secondary flags.
 

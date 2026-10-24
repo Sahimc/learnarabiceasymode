@@ -1,5 +1,6 @@
 # C3-C4B W2 weak-middle / hollow Ṣarf adjudications
-Reviewed at: 2026-10-24T15:53:58.602Z
+
+Reviewed at: 2026-10-24T16:58:57.736Z
 Contract: 1.3.9
 
 This report covers exactly the committed C3-C4B queue: 15 weak-middle/hollow families / 15 Qur’anic occurrences. C3-C4C and later weak batches, C3-D, C3-E and residual queues were excluded.
@@ -77,12 +78,13 @@ Accepted candidates:
 
 - حَابَ — he sinned / committed a wrong; Form-I hollow perfect verb; Basic hollow verb in the sin branch of حوب.; semantic development: The Qur’anic noun names the sin; the verb names committing it.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AD%D9%88%D8%A8. The Academy defines حَابَ ... حَوْبًا as أَثِمَ.
 - أَحْوَبَ — he fell into sin / did wrong; Form-IV derived verb; Established derived form from the same root.; semantic development: The meaning remains in the sin branch but presents entering or causing a sinful state.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AD%D9%88%D8%A8. The Academy lists أَحْوَبَ with the sin meaning.
-- حَوَّبَ — he caused or attributed sin; Form-II derived verb; Form-II development of the same root.; semantic development: The root develops from committing sin to assigning or causing the sin relation.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AD%D9%88%D8%A8. The Academy lists حَوَّبَ in the حوب family.
+- حَوَّبَ — his wealth disappeared then returned / he urged camels with the cry ‘ḥawb’; Form-II derived verb; An independently attested Form-II branch of the same root, not a causative gloss of sin.; semantic development: This is a separate lexical branch of حوب: the form must retain its wealth/camel-call meanings rather than being falsely translated as causing sin.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AD%D9%88%D8%A8. The Academy gives حَوَّبَ for wealth disappearing and returning, and for urging camels with the cry حَوْبِ.
 - تَحَوَّبَ — he abandoned sin / repented; Form-V derived verb; Established derived form in the same root family.; semantic development: The semantic development moves from sin to turning away from it; it is not flattened into the Qur’anic noun’s meaning.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AD%D9%88%D8%A8. The Academy defines تَحَوَّبَ as leaving sin or repenting.
 
 Rejected candidates / safeguards:
 
 - حَوْبٌ and حُوبٌ are lexical vocalic variants of the same noun, not separate rows.
+- حَوَّبَ belongs to another attested semantic branch of حوب; it must not be glossed as ‘caused sin’.
 - Article, case ending and the Qur’anic accusative were not counted.
 
 Human expert review still required: no
@@ -93,9 +95,11 @@ Final rows:
 1. حُوبًا — a sin. Current Qur’anic occurrence at 4:2:15; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative.
 2. حَابَ — he sinned / committed a wrong. Form-I hollow perfect verb. The Qur’anic noun names the sin; the verb names committing it. Compared with the Qur’anic occurrence at 4:2:15. Connects the concrete noun to its verbal action.
 3. أَحْوَبَ — he fell into sin / did wrong. Form-IV derived verb. The meaning remains in the sin branch but presents entering or causing a sinful state. Compared with the Qur’anic occurrence at 4:2:15. Shows a real derived pattern without repeating case or number.
-4. حَوَّبَ — he caused or attributed sin. Form-II derived verb. The root develops from committing sin to assigning or causing the sin relation. Compared with the Qur’anic occurrence at 4:2:15. Contrasts basic and intensive/causative morphology.
+4. حَوَّبَ — his wealth disappeared then returned / he urged camels with the cry ‘ḥawb’. Form-II derived verb. This is a separate lexical branch of حوب: the form must retain its wealth/camel-call meanings rather than being falsely translated as causing sin. Compared with the Qur’anic occurrence at 4:2:15. Teaches honest semantic development within one root while preventing a misleading gloss.
 5. تَحَوَّبَ — he abandoned sin / repented. Form-V derived verb. The semantic development moves from sin to turning away from it; it is not flattened into the Qur’anic noun’s meaning. Compared with the Qur’anic occurrence at 4:2:15. Teaches a useful semantic reversal within the root.
+
 ---
+
 ## lexical|حير|حيران|noun/pronoun
 
 Decision: **FULL**; root: حير; weak middle radical: ي; word: حَيْرَانَ; locations: 6:71:23
@@ -128,6 +132,7 @@ Final rows:
 5. حَيَّرَ — he confused / perplexed someone. Form-II causative/intensive verb. The meaning develops from being confused to causing another person’s confusion. Compared with the Qur’anic occurrence at 6:71:23. Teaches the causative relationship clearly.
 
 ---
+
 ## lexical|روع|روع|noun/pronoun
 
 Decision: **FULL**; root: روع; weak middle radical: و; word: ٱلرَّوْعُ; locations: 11:74:5
@@ -335,12 +340,14 @@ The current Qur’anic form plus four independently attested, morphologically us
 Accepted candidates:
 
 - شَاكَ — thorns appeared / he became strong; Form-I hollow perfect verb; Basic hollow verb in the thorn/strength semantic field.; semantic development: The Qur’anic noun uses the developed sense of strength/power; the verb also has the concrete thorn and power senses.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B4%D9%88%D9%83. The Academy defines شَاكَ for thorns appearing and strength emerging.
-- شَاكَتْ — the thorn pricked; Form-I perfect with a thorn as subject; Attested Form-I occurrence with the thorn as the acting subject.; semantic development: The root shifts from thorn emergence to the thorn’s effect on a person.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B4%D9%88%D9%83. The Academy defines شَاكَتْه الشَّوْكةُ as the thorn pricking him.
-- شِيكَ — he was pricked by a thorn; Form-I passive perfect; Passive counterpart of the same attested thorn verb.; semantic development: The participant role reverses from the thorn acting to the person affected.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B4%D9%88%D9%83. The Academy defines شِيكَ as a body having a thorn enter it.
+- أَشَاكَ — he caused thorns to grow / pricked; Form-IV derived verb; Genuinely distinct derived form in the same root family.; semantic development: The basic thorn branch develops into causing thorn growth or pricking.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B4%D9%88%D9%83. The Academy attests أَشَاكَ in the شاكت lexical entry.
 - شَوَّكَ — he made thorny / thorns emerged; Form-II derived verb; Derived form in the same root family.; semantic development: The basic thorn branch becomes a causative/intensive or growth pattern.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B4%D9%88%D9%83. The Academy defines شَوَّكَ for plants producing thorns and related growth.
+- شَائِكٌ — thorny / armed / difficult or harmful; active participle/adjective; Established adjective from the same root.; semantic development: The concrete thorn sense develops into the figurative qualities of something thorny, armed or difficult.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B4%D9%88%D9%83. The Academy attests شَائِكٌ with thorny, armed and difficult meanings.
 
 Rejected candidates / safeguards:
 
+- شَوْكَتْ is rejected: it is ordinary feminine-subject inflection of شَاكَ, not a sufficiently distinct teaching form.
+- شِيكَ is genuine but rejected from the final five because أَشَاكَ and شَائِكٌ provide better morphological diversity.
 - شَوْكَةٌ is the lexical noun already present in ٱلشَّوْكَةِ; removing the article/case shell would not create a new row.
 - شَوْكٌ was not added separately because it is the same noun family and would duplicate the current lexical branch.
 
@@ -351,9 +358,9 @@ Final rows:
 
 1. ٱلشَّوْكَةِ — (of) the armed. Current Qur’anic occurrence at 8:7:12; Current Qur'anic occurrence; gender: feminine; case: genitive.
 2. شَاكَ — thorns appeared / he became strong. Form-I hollow perfect verb. The Qur’anic noun uses the developed sense of strength/power; the verb also has the concrete thorn and power senses. Compared with the Qur’anic occurrence at 8:7:12. Teaches the semantic bridge without flattening the branches.
-3. شَاكَتْ — the thorn pricked. Form-I perfect with a thorn as subject. The root shifts from thorn emergence to the thorn’s effect on a person. Compared with the Qur’anic occurrence at 8:7:12. Shows a useful valency change inside the same verb family.
-4. شِيكَ — he was pricked by a thorn. Form-I passive perfect. The participant role reverses from the thorn acting to the person affected. Compared with the Qur’anic occurrence at 8:7:12. Provides a meaningful active/passive contrast.
-5. شَوَّكَ — he made thorny / thorns emerged. Form-II derived verb. The basic thorn branch becomes a causative/intensive or growth pattern. Compared with the Qur’anic occurrence at 8:7:12. Adds a distinct derived pattern.
+3. أَشَاكَ — he caused thorns to grow / pricked. Form-IV derived verb. The basic thorn branch develops into causing thorn growth or pricking. Compared with the Qur’anic occurrence at 8:7:12. Adds a distinct derived pattern instead of ordinary feminine-subject inflection.
+4. شَوَّكَ — he made thorny / thorns emerged. Form-II derived verb. The basic thorn branch becomes a causative/intensive or growth pattern. Compared with the Qur’anic occurrence at 8:7:12. Adds a distinct derived pattern.
+5. شَائِكٌ — thorny / armed / difficult or harmful. active participle/adjective. The concrete thorn sense develops into the figurative qualities of something thorny, armed or difficult. Compared with the Qur’anic occurrence at 8:7:12. Provides a useful lexical adjective contrast.
 
 ---
 
@@ -554,3 +561,4 @@ Final rows:
 5. عَائِقٌ — an obstacle / hindering agent. active participle/noun. The act of hindering becomes the person or thing that obstructs. Compared with the Qur’anic occurrence at 33:18:4. Adds a concise lexical noun contrast without using another shell variant.
 
 ---
+
