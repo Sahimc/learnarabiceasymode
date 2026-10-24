@@ -1,10 +1,10 @@
 # Tier-C-C primary-track ownership
 
-Reviewed at: 2026-10-24T16:58:57.736Z
+Reviewed at: 2026-10-24T18:59:04.083Z
 
 Completed adjudication owns the family permanently. Otherwise, first matching track: ROOT/LEMMA-UNCERTAIN > QUADRILITERAL > HAMZATED > WEAK > DOUBLED. Remaining feature signals are secondary flags.
 
-C3-C4A W1 and C3-C4B W2 are complete. Completed families remain permanently owned by their original batch. C3-C4C is the next untouched weak batch.
+C3-C4A, C3-C4B and C3-C4C are complete. Completed families remain permanently owned by their original batch. C3-C4D is the next untouched weak batch.
 
 ```json
 {
@@ -22,8 +22,8 @@ C3-C4A W1 and C3-C4B W2 are complete. Completed families remain permanently owne
       "occurrences": 0
     },
     "WEAK": {
-      "families": 50,
-      "occurrences": 62
+      "families": 41,
+      "occurrences": 53
     },
     "ROOT/LEMMA-UNCERTAIN": {
       "families": 5,
@@ -32,9 +32,9 @@ C3-C4A W1 and C3-C4B W2 are complete. Completed families remain permanently owne
   },
   "nextQueue": {
     "track": "WEAK",
-    "batch": "C3-C4C",
-    "families": 9,
-    "occurrences": 9,
+    "batch": "C3-C4D",
+    "families": 12,
+    "occurrences": 12,
     "status": "not-started"
   }
 }

@@ -199,3 +199,9 @@ No Ṣarf rows, corpus decisions or package content were changed.
 - Occurrence counts: `{"FULL":14,"CONFIRMED-LIMITED":1,"BLOCKED":0,"MODEL-ISSUE":0}`
 - Report: `artifacts\content-review\tier-c3c4b-weak-middle-adjudications.json`
 
+
+## C3-C4C W2 adjudication
+
+- Decision counts: `{"FULL":9,"CONFIRMED-LIMITED":0,"BLOCKED":0,"MODEL-ISSUE":0}`
+- Occurrence counts: `{"FULL":9,"CONFIRMED-LIMITED":0,"BLOCKED":0,"MODEL-ISSUE":0}`
+- Report: `artifacts\content-review\tier-c3c4c-weak-special-adjudications.json`

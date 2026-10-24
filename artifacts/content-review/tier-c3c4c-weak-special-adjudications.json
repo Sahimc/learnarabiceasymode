@@ -1,0 +1,2215 @@
+{
+  "reportType": "tier-c3c4c-weak-special-adjudication",
+  "contractVersion": "1.3.9",
+  "reviewedAt": "2026-10-24T18:59:04.083Z",
+  "summary": {
+    "startingC3C4CFamilies": 9,
+    "startingC3C4COccurrences": 9,
+    "adjudicatedFamilies": 9,
+    "adjudicatedOccurrences": 9,
+    "decisions": {
+      "FULL": 9,
+      "CONFIRMED-LIMITED": 0,
+      "BLOCKED": 0,
+      "MODEL-ISSUE": 0
+    },
+    "occurrencesByDecision": {
+      "FULL": 9,
+      "CONFIRMED-LIMITED": 0,
+      "BLOCKED": 0,
+      "MODEL-ISSUE": 0
+    },
+    "changedSurahs": [
+      2,
+      4,
+      7,
+      9,
+      14,
+      24,
+      34,
+      38
+    ],
+    "changedPackageFiles": [
+      "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\002-al-baqarah\\surah.json",
+      "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\004-an-nis\\surah.json",
+      "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\007-al-a-r-f\\surah.json",
+      "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\009-at-tawbah\\surah.json",
+      "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\014-ibr-h-m\\surah.json",
+      "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\024-an-n-r\\surah.json",
+      "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\034-saba\\surah.json",
+      "C:\\Users\\Sahim Chowdhury\\Documents\\Learn Arabic Easy mode\\content-import\\surahs\\038-d\\surah.json"
+    ],
+    "acceptedCandidateRows": 36,
+    "excluded": [
+      "C3-C4D W3",
+      "C3-C4E/W4",
+      "C3-C4F W5",
+      "C3-C4G W4/W6",
+      "C3-D",
+      "C3-E",
+      "C2 residuals",
+      "historical residuals"
+    ]
+  },
+  "adjudications": [
+    {
+      "familyKey": "lexical|لوذ|لواذ|noun/pronoun",
+      "root": "لوذ",
+      "canonicalRoot": "لوذ",
+      "weakRadical": "و",
+      "weakRadicalPosition": "second",
+      "hollowSubtype": "Hollow root و with an established refuge/turning-away branch; derived forms require exact meanings.",
+      "lemmaOrCurrentForm": "لِواذ",
+      "quranicWord": "لِوَاذًا",
+      "locations": [
+        "24:63:15"
+      ],
+      "occurrenceCount": 1,
+      "partOfSpeech": [
+        "noun/pronoun"
+      ],
+      "quranicMeaning": "under shelter",
+      "morphology": {
+        "arabic": "لِوَاذًا",
+        "meaning": "under shelter",
+        "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative."
+      },
+      "rootConfidence": "HIGH",
+      "lemmaConfidence": "HIGH",
+      "currentRows": [
+        {
+          "occurrenceId": "word:24:63:15",
+          "location": "24:63:15",
+          "arabic": "لِوَاذًا",
+          "forms": [
+            {
+              "form": "لِوَاذًا",
+              "meaning": "under shelter",
+              "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative.",
+              "relationship": "Current Qur'anic occurrence of the لوذ lexical family in this āyah.",
+              "provenance": "Codex review of canonical Qur'anic occurrence word:24:63:15. Aligned Quranic Arabic Corpus morphology 0.4-derived (24:63:15) was checked as evidence."
+            }
+          ],
+          "sarfReview": {
+            "status": "limited",
+            "limitedReason": "لِوَاذًا is a rootful noun with root ل و ذ. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+            "auditDecision": "blocked-for-genuine-ambiguity",
+            "provenance": [
+              "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:24:63:15.",
+              "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
+              "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-18T14:42:38.844Z"
+          }
+        }
+      ],
+      "candidatesConsidered": [
+        {
+          "form": "لَاذَ",
+          "root": "لوذ",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he sought refuge / hid behind",
+          "relationship": "Basic Form-I source of the refuge branch.",
+          "semanticDevelopment": "The Qur’anic Form-III noun is related to the basic act of seeking refuge, while its contextual sense can include evasive withdrawal.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy defines لاذَ as sought refuge, hid and fortified himself.",
+          "confidence": "high",
+          "pedagogicalValue": "Makes the hollow Form-I base visible.",
+          "accepted": true
+        },
+        {
+          "form": "يَلُوذُ",
+          "root": "لوذ",
+          "morphology": "Form-I hollow imperfect verb",
+          "meaning": "he seeks refuge / hides",
+          "relationship": "Imperfect counterpart of لاذَ.",
+          "semanticDevelopment": "The long ū displays the hollow middle radical in the imperfect.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy’s لاذَ entry establishes the Form-I hollow family and its imperfect is the standard lexical counterpart.",
+          "confidence": "medium",
+          "pedagogicalValue": "Shows the recognisable hollow alternation.",
+          "accepted": true
+        },
+        {
+          "form": "مَلَاذٌ",
+          "root": "لوذ",
+          "morphology": "place noun",
+          "meaning": "refuge / sanctuary",
+          "relationship": "Established place noun from the refuge branch.",
+          "semanticDevelopment": "The action of seeking protection develops into the place or protection sought.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy lists المَلاذُ as refuge and fortress.",
+          "confidence": "high",
+          "pedagogicalValue": "Connects the Qur’anic verbal noun to a common learner-facing noun.",
+          "accepted": true
+        },
+        {
+          "form": "لَاوَذَ",
+          "root": "لوذ",
+          "morphology": "Form-III derived verb",
+          "meaning": "he evaded / acted evasively with another",
+          "relationship": "Derived Form-III branch represented by the Qur’anic verbal noun.",
+          "semanticDevelopment": "The root develops from seeking shelter into mutual avoidance or manoeuvring; the meaning is kept distinct.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy defines لاوَذَ as mutual seeking of shelter and, contextually, evasion.",
+          "confidence": "high",
+          "pedagogicalValue": "Explains the Qur’anic Form-III pattern without pretending it means only refuge.",
+          "accepted": true
+        }
+      ],
+      "acceptedCandidates": [
+        {
+          "form": "لَاذَ",
+          "root": "لوذ",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he sought refuge / hid behind",
+          "relationship": "Basic Form-I source of the refuge branch.",
+          "semanticDevelopment": "The Qur’anic Form-III noun is related to the basic act of seeking refuge, while its contextual sense can include evasive withdrawal.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy defines لاذَ as sought refuge, hid and fortified himself.",
+          "confidence": "high",
+          "pedagogicalValue": "Makes the hollow Form-I base visible.",
+          "accepted": true
+        },
+        {
+          "form": "يَلُوذُ",
+          "root": "لوذ",
+          "morphology": "Form-I hollow imperfect verb",
+          "meaning": "he seeks refuge / hides",
+          "relationship": "Imperfect counterpart of لاذَ.",
+          "semanticDevelopment": "The long ū displays the hollow middle radical in the imperfect.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy’s لاذَ entry establishes the Form-I hollow family and its imperfect is the standard lexical counterpart.",
+          "confidence": "medium",
+          "pedagogicalValue": "Shows the recognisable hollow alternation.",
+          "accepted": true
+        },
+        {
+          "form": "مَلَاذٌ",
+          "root": "لوذ",
+          "morphology": "place noun",
+          "meaning": "refuge / sanctuary",
+          "relationship": "Established place noun from the refuge branch.",
+          "semanticDevelopment": "The action of seeking protection develops into the place or protection sought.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy lists المَلاذُ as refuge and fortress.",
+          "confidence": "high",
+          "pedagogicalValue": "Connects the Qur’anic verbal noun to a common learner-facing noun.",
+          "accepted": true
+        },
+        {
+          "form": "لَاوَذَ",
+          "root": "لوذ",
+          "morphology": "Form-III derived verb",
+          "meaning": "he evaded / acted evasively with another",
+          "relationship": "Derived Form-III branch represented by the Qur’anic verbal noun.",
+          "semanticDevelopment": "The root develops from seeking shelter into mutual avoidance or manoeuvring; the meaning is kept distinct.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy defines لاوَذَ as mutual seeking of shelter and, contextually, evasion.",
+          "confidence": "high",
+          "pedagogicalValue": "Explains the Qur’anic Form-III pattern without pretending it means only refuge.",
+          "accepted": true
+        }
+      ],
+      "rejectedCandidates": [
+        "لَوْذٌ and لِيَاذٌ were considered as genuine maṣdar variants, but are lexical variants of the same refuge action rather than better additional morphology.",
+        "لِوَاذًا without its case ending was not counted separately.",
+        "Article, preposition and any attached material were not counted."
+      ],
+      "finalRows": [
+        {
+          "occurrenceId": "word:24:63:15",
+          "location": "24:63:15",
+          "arabic": "لِوَاذًا",
+          "forms": [
+            {
+              "form": "لِوَاذًا",
+              "meaning": "under shelter",
+              "difference": "Current Qur’anic occurrence at 24:63:15; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: accusative.",
+              "relationship": "Current occurrence of the لوذ hollow/special family; comparison rows show real same-root morphology and honest semantic development.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; the occurrence, canonical root, weak middle radical, hollow behavior and aligned morphology were inspected against approved lexical evidence."
+            },
+            {
+              "form": "لَاذَ",
+              "meaning": "he sought refuge / hid behind",
+              "difference": "Form-I hollow perfect verb. The Qur’anic Form-III noun is related to the basic act of seeking refuge, while its contextual sense can include evasive withdrawal. Compared with the Qur’anic occurrence at 24:63:15. Makes the hollow Form-I base visible.",
+              "relationship": "Basic Form-I source of the refuge branch. Same-root relationship to لوذ; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy defines لاذَ as sought refuge, hid and fortified himself."
+            },
+            {
+              "form": "يَلُوذُ",
+              "meaning": "he seeks refuge / hides",
+              "difference": "Form-I hollow imperfect verb. The long ū displays the hollow middle radical in the imperfect. Compared with the Qur’anic occurrence at 24:63:15. Shows the recognisable hollow alternation.",
+              "relationship": "Imperfect counterpart of لاذَ. Same-root relationship to لوذ; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy’s لاذَ entry establishes the Form-I hollow family and its imperfect is the standard lexical counterpart."
+            },
+            {
+              "form": "مَلَاذٌ",
+              "meaning": "refuge / sanctuary",
+              "difference": "place noun. The action of seeking protection develops into the place or protection sought. Compared with the Qur’anic occurrence at 24:63:15. Connects the Qur’anic verbal noun to a common learner-facing noun.",
+              "relationship": "Established place noun from the refuge branch. Same-root relationship to لوذ; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy lists المَلاذُ as refuge and fortress."
+            },
+            {
+              "form": "لَاوَذَ",
+              "meaning": "he evaded / acted evasively with another",
+              "difference": "Form-III derived verb. The root develops from seeking shelter into mutual avoidance or manoeuvring; the meaning is kept distinct. Compared with the Qur’anic occurrence at 24:63:15. Explains the Qur’anic Form-III pattern without pretending it means only refuge.",
+              "relationship": "Derived Form-III branch represented by the Qur’anic verbal noun. Same-root relationship to لوذ; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy defines لاوَذَ as mutual seeking of shelter and, contextually, evasion."
+            }
+          ],
+          "sarfReview": {
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
+            "familyScope": "C3-C4C",
+            "provenance": [
+              "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z: FULL.",
+              "Canonical root: لوذ; weak middle radical: و; hollow subtype: Hollow root و with an established refuge/turning-away branch; derived forms require exact meanings..",
+              "Every occurrence inspected: 24:63:15.",
+              "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy attests لاذَ, لَوْذًا/لِياذًا/لِواذًا, أَلاذَ, لاوَذَ, المَلاذ and related nouns.",
+              "The second radical is و. The Qur’anic لِوَاذًا is a Form-III verbal noun in the refuge/avoidance branch; ordinary hollow-vowel alternation is not counted as a separate form.",
+              "Accepted لَاذَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy defines لاذَ as sought refuge, hid and fortified himself.",
+              "Accepted يَلُوذُ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy’s لاذَ entry establishes the Form-I hollow family and its imperfect is the standard lexical counterpart.",
+              "Accepted مَلَاذٌ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy lists المَلاذُ as refuge and fortress.",
+              "Accepted لَاوَذَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy defines لاوَذَ as mutual seeking of shelter and, contextually, evasion.",
+              "لَوْذٌ and لِيَاذٌ were considered as genuine maṣdar variants, but are lexical variants of the same refuge action rather than better additional morphology.",
+              "لِوَاذًا without its case ending was not counted separately.",
+              "Article, preposition and any attached material were not counted."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-24T18:59:04.083Z"
+          }
+        }
+      ],
+      "decision": "FULL",
+      "reasoning": "The current form plus four independently attested same-root forms provide useful lexical and morphological development without shell, case, pronoun or contraction padding. The second radical is و. The Qur’anic لِوَاذًا is a Form-III verbal noun in the refuge/avoidance branch; ordinary hollow-vowel alternation is not counted as a separate form.",
+      "evidence": [
+        "Committed C3-C4C queue inspected: 24:63:15.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy attests لاذَ, لَوْذًا/لِياذًا/لِواذًا, أَلاذَ, لاوَذَ, المَلاذ and related nouns.",
+        "The second radical is و. The Qur’anic لِوَاذًا is a Form-III verbal noun in the refuge/avoidance branch; ordinary hollow-vowel alternation is not counted as a separate form.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy defines لاذَ as sought refuge, hid and fortified himself.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy’s لاذَ entry establishes the Form-I hollow family and its imperfect is the standard lexical counterpart.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy lists المَلاذُ as refuge and fortress.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%84%D9%88%D8%B0. The Academy defines لاوَذَ as mutual seeking of shelter and, contextually, evasion."
+      ],
+      "confidence": "high",
+      "unresolvedQuestion": null,
+      "evidenceRequired": [],
+      "humanExpertReviewRequired": false,
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-24T18:59:04.083Z",
+      "recordId": "tier-c3c4c-family-49b068780055e477"
+    },
+    {
+      "familyKey": "lexical|نوش|تناوش|noun/pronoun",
+      "root": "نوش",
+      "canonicalRoot": "نوش",
+      "weakRadical": "و",
+      "weakRadicalPosition": "second",
+      "hollowSubtype": "Hollow root و in a derived Form VI noun; investigate the verbal family and semantic branch.",
+      "lemmaOrCurrentForm": "تَّنَاوُشُ",
+      "quranicWord": "ٱلتَّنَاوُشُ",
+      "locations": [
+        "34:52:6"
+      ],
+      "occurrenceCount": 1,
+      "partOfSpeech": [
+        "noun/pronoun"
+      ],
+      "quranicMeaning": "(will be) the receiving",
+      "morphology": {
+        "arabic": "ٱلتَّنَاوُشُ",
+        "meaning": "(will be) the receiving",
+        "difference": "Current Qur'anic occurrence; pattern: Form 6; gender: masculine; case: nominative; verb form: Form 6."
+      },
+      "rootConfidence": "HIGH",
+      "lemmaConfidence": "HIGH",
+      "currentRows": [
+        {
+          "occurrenceId": "word:34:52:6",
+          "location": "34:52:6",
+          "arabic": "ٱلتَّنَاوُشُ",
+          "forms": [
+            {
+              "form": "ٱلتَّنَاوُشُ",
+              "meaning": "(will be) the receiving",
+              "difference": "Current Qur'anic occurrence; pattern: Form 6; gender: masculine; case: nominative; verb form: Form 6.",
+              "relationship": "Current Qur'anic occurrence of the نوش lexical family in this āyah.",
+              "provenance": "Codex review of canonical Qur'anic occurrence word:34:52:6. Aligned Quranic Arabic Corpus morphology 0.4-derived (34:52:6) was checked as evidence."
+            }
+          ],
+          "sarfReview": {
+            "status": "limited",
+            "limitedReason": "ٱلتَّنَاوُشُ is a rootful noun with root ن و ش. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+            "auditDecision": "blocked-for-genuine-ambiguity",
+            "provenance": [
+              "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:34:52:6.",
+              "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
+              "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-18T14:42:38.844Z"
+          }
+        }
+      ],
+      "candidatesConsidered": [
+        {
+          "form": "نَاشَ",
+          "root": "نوش",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he reached / took / sought",
+          "relationship": "Basic Form-I verb underlying the derived receiving/reaching branch.",
+          "semanticDevelopment": "The root develops from movement and reaching to the reciprocal or mutual reaching of تَناوَشَ.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy defines ناشَ with walking, reaching, seeking and taking senses.",
+          "confidence": "high",
+          "pedagogicalValue": "Gives the learner the lexical base of the Qur’anic derived noun.",
+          "accepted": true
+        },
+        {
+          "form": "يَنُوشُ",
+          "root": "نوش",
+          "morphology": "Form-I hollow imperfect verb",
+          "meaning": "he reaches / takes",
+          "relationship": "Imperfect counterpart of ناشَ.",
+          "semanticDevelopment": "The hollow ū makes the middle و visible in the imperfect pattern.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy’s ناشَ entry establishes the Form-I family; يَنُوشُ is the regular attested imperfect counterpart.",
+          "confidence": "medium",
+          "pedagogicalValue": "Provides a useful tense and hollow-pattern contrast.",
+          "accepted": true
+        },
+        {
+          "form": "نَاوَشَ",
+          "root": "نوش",
+          "morphology": "Form-III derived verb",
+          "meaning": "he engaged / exchanged attacks from a distance",
+          "relationship": "Derived Form-III branch related to reaching or taking one another.",
+          "semanticDevelopment": "The simple reaching branch develops into mutual engagement; the military sense is translated honestly.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy defines ناوَشَ as mixing with something and engaging/testing an opponent.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows semantic development without flattening it into receiving.",
+          "accepted": true
+        },
+        {
+          "form": "اِنْتَاشَ",
+          "root": "نوش",
+          "morphology": "Form-VIII derived verb",
+          "meaning": "he rescued / pulled out",
+          "relationship": "Derived form in the same root family.",
+          "semanticDevelopment": "The act of reaching develops into extracting or rescuing someone from danger.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy records انتاشني فلانٌ as he rescued me from destruction.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a distinct derived pattern and a useful semantic branch.",
+          "accepted": true
+        }
+      ],
+      "acceptedCandidates": [
+        {
+          "form": "نَاشَ",
+          "root": "نوش",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he reached / took / sought",
+          "relationship": "Basic Form-I verb underlying the derived receiving/reaching branch.",
+          "semanticDevelopment": "The root develops from movement and reaching to the reciprocal or mutual reaching of تَناوَشَ.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy defines ناشَ with walking, reaching, seeking and taking senses.",
+          "confidence": "high",
+          "pedagogicalValue": "Gives the learner the lexical base of the Qur’anic derived noun.",
+          "accepted": true
+        },
+        {
+          "form": "يَنُوشُ",
+          "root": "نوش",
+          "morphology": "Form-I hollow imperfect verb",
+          "meaning": "he reaches / takes",
+          "relationship": "Imperfect counterpart of ناشَ.",
+          "semanticDevelopment": "The hollow ū makes the middle و visible in the imperfect pattern.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy’s ناشَ entry establishes the Form-I family; يَنُوشُ is the regular attested imperfect counterpart.",
+          "confidence": "medium",
+          "pedagogicalValue": "Provides a useful tense and hollow-pattern contrast.",
+          "accepted": true
+        },
+        {
+          "form": "نَاوَشَ",
+          "root": "نوش",
+          "morphology": "Form-III derived verb",
+          "meaning": "he engaged / exchanged attacks from a distance",
+          "relationship": "Derived Form-III branch related to reaching or taking one another.",
+          "semanticDevelopment": "The simple reaching branch develops into mutual engagement; the military sense is translated honestly.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy defines ناوَشَ as mixing with something and engaging/testing an opponent.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows semantic development without flattening it into receiving.",
+          "accepted": true
+        },
+        {
+          "form": "اِنْتَاشَ",
+          "root": "نوش",
+          "morphology": "Form-VIII derived verb",
+          "meaning": "he rescued / pulled out",
+          "relationship": "Derived form in the same root family.",
+          "semanticDevelopment": "The act of reaching develops into extracting or rescuing someone from danger.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy records انتاشني فلانٌ as he rescued me from destruction.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a distinct derived pattern and a useful semantic branch.",
+          "accepted": true
+        }
+      ],
+      "rejectedCandidates": [
+        "تَنَاوَشَ and تَنَاوُشٌ are the verbal form and maṣdar represented by the current Qur’anic family; the current form itself already supplies that row.",
+        "نَوْشٌ was considered as a maṣdar but was not added alongside the current Form-VI maṣdar to avoid near-duplicate verbal-noun rows.",
+        "The definite article and nominative ending in ٱلتَّنَاوُشُ were not counted separately."
+      ],
+      "finalRows": [
+        {
+          "occurrenceId": "word:34:52:6",
+          "location": "34:52:6",
+          "arabic": "ٱلتَّنَاوُشُ",
+          "forms": [
+            {
+              "form": "ٱلتَّنَاوُشُ",
+              "meaning": "(will be) the receiving",
+              "difference": "Current Qur’anic occurrence at 34:52:6; Current Qur'anic occurrence; pattern: Form 6; gender: masculine; case: nominative; verb form: Form 6.",
+              "relationship": "Current occurrence of the نوش hollow/special family; comparison rows show real same-root morphology and honest semantic development.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; the occurrence, canonical root, weak middle radical, hollow behavior and aligned morphology were inspected against approved lexical evidence."
+            },
+            {
+              "form": "نَاشَ",
+              "meaning": "he reached / took / sought",
+              "difference": "Form-I hollow perfect verb. The root develops from movement and reaching to the reciprocal or mutual reaching of تَناوَشَ. Compared with the Qur’anic occurrence at 34:52:6. Gives the learner the lexical base of the Qur’anic derived noun.",
+              "relationship": "Basic Form-I verb underlying the derived receiving/reaching branch. Same-root relationship to نوش; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy defines ناشَ with walking, reaching, seeking and taking senses."
+            },
+            {
+              "form": "يَنُوشُ",
+              "meaning": "he reaches / takes",
+              "difference": "Form-I hollow imperfect verb. The hollow ū makes the middle و visible in the imperfect pattern. Compared with the Qur’anic occurrence at 34:52:6. Provides a useful tense and hollow-pattern contrast.",
+              "relationship": "Imperfect counterpart of ناشَ. Same-root relationship to نوش; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy’s ناشَ entry establishes the Form-I family; يَنُوشُ is the regular attested imperfect counterpart."
+            },
+            {
+              "form": "نَاوَشَ",
+              "meaning": "he engaged / exchanged attacks from a distance",
+              "difference": "Form-III derived verb. The simple reaching branch develops into mutual engagement; the military sense is translated honestly. Compared with the Qur’anic occurrence at 34:52:6. Shows semantic development without flattening it into receiving.",
+              "relationship": "Derived Form-III branch related to reaching or taking one another. Same-root relationship to نوش; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy defines ناوَشَ as mixing with something and engaging/testing an opponent."
+            },
+            {
+              "form": "اِنْتَاشَ",
+              "meaning": "he rescued / pulled out",
+              "difference": "Form-VIII derived verb. The act of reaching develops into extracting or rescuing someone from danger. Compared with the Qur’anic occurrence at 34:52:6. Adds a distinct derived pattern and a useful semantic branch.",
+              "relationship": "Derived form in the same root family. Same-root relationship to نوش; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy records انتاشني فلانٌ as he rescued me from destruction."
+            }
+          ],
+          "sarfReview": {
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
+            "familyScope": "C3-C4C",
+            "provenance": [
+              "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z: FULL.",
+              "Canonical root: نوش; weak middle radical: و; hollow subtype: Hollow root و in a derived Form VI noun; investigate the verbal family and semantic branch..",
+              "Every occurrence inspected: 34:52:6.",
+              "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy attests ناشَ, ناوَشَ, تَناوَشَ and اِنْتاشَ in movement, reaching, taking and engagement branches.",
+              "The second radical is و. The Qur’anic Form-VI verbal noun is retained as the current form; hollow contraction and inflection are not separate rows.",
+              "Accepted نَاشَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy defines ناشَ with walking, reaching, seeking and taking senses.",
+              "Accepted يَنُوشُ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy’s ناشَ entry establishes the Form-I family; يَنُوشُ is the regular attested imperfect counterpart.",
+              "Accepted نَاوَشَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy defines ناوَشَ as mixing with something and engaging/testing an opponent.",
+              "Accepted اِنْتَاشَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy records انتاشني فلانٌ as he rescued me from destruction.",
+              "تَنَاوَشَ and تَنَاوُشٌ are the verbal form and maṣdar represented by the current Qur’anic family; the current form itself already supplies that row.",
+              "نَوْشٌ was considered as a maṣdar but was not added alongside the current Form-VI maṣdar to avoid near-duplicate verbal-noun rows.",
+              "The definite article and nominative ending in ٱلتَّنَاوُشُ were not counted separately."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-24T18:59:04.083Z"
+          }
+        }
+      ],
+      "decision": "FULL",
+      "reasoning": "The current form plus four independently attested same-root forms provide useful lexical and morphological development without shell, case, pronoun or contraction padding. The second radical is و. The Qur’anic Form-VI verbal noun is retained as the current form; hollow contraction and inflection are not separate rows.",
+      "evidence": [
+        "Committed C3-C4C queue inspected: 34:52:6.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy attests ناشَ, ناوَشَ, تَناوَشَ and اِنْتاشَ in movement, reaching, taking and engagement branches.",
+        "The second radical is و. The Qur’anic Form-VI verbal noun is retained as the current form; hollow contraction and inflection are not separate rows.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy defines ناشَ with walking, reaching, seeking and taking senses.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy’s ناشَ entry establishes the Form-I family; يَنُوشُ is the regular attested imperfect counterpart.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy defines ناوَشَ as mixing with something and engaging/testing an opponent.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B4. The Academy records انتاشني فلانٌ as he rescued me from destruction."
+      ],
+      "confidence": "high",
+      "unresolvedQuestion": null,
+      "evidenceRequired": [],
+      "humanExpertReviewRequired": false,
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-24T18:59:04.083Z",
+      "recordId": "tier-c3c4c-family-e17862e16368e487"
+    },
+    {
+      "familyKey": "lexical|نوص|مناص|noun/pronoun",
+      "root": "نوص",
+      "canonicalRoot": "نوص",
+      "weakRadical": "و",
+      "weakRadicalPosition": "second",
+      "hollowSubtype": "Hollow root و with a fixed escape/recourse noun; likely lexical-narrow and evidence-sensitive.",
+      "lemmaOrCurrentForm": "مَناص",
+      "quranicWord": "مَنَاصٍ",
+      "locations": [
+        "38:3:10"
+      ],
+      "occurrenceCount": 1,
+      "partOfSpeech": [
+        "noun/pronoun"
+      ],
+      "quranicMeaning": "(for) escape",
+      "morphology": {
+        "arabic": "مَنَاصٍ",
+        "meaning": "(for) escape",
+        "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive."
+      },
+      "rootConfidence": "HIGH",
+      "lemmaConfidence": "HIGH",
+      "currentRows": [
+        {
+          "occurrenceId": "word:38:3:10",
+          "location": "38:3:10",
+          "arabic": "مَنَاصٍ",
+          "forms": [
+            {
+              "form": "مَنَاصٍ",
+              "meaning": "(for) escape",
+              "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive.",
+              "relationship": "Current Qur'anic occurrence of the نوص lexical family in this āyah.",
+              "provenance": "Codex review of canonical Qur'anic occurrence word:38:3:10. Aligned Quranic Arabic Corpus morphology 0.4-derived (38:3:10) was checked as evidence."
+            }
+          ],
+          "sarfReview": {
+            "status": "limited",
+            "limitedReason": "مَنَاصٍ is a rootful noun with root ن و ص. The audit found 0 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+            "auditDecision": "blocked-for-genuine-ambiguity",
+            "provenance": [
+              "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:38:3:10.",
+              "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
+              "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-18T14:42:38.844Z"
+          }
+        }
+      ],
+      "candidatesConsidered": [
+        {
+          "form": "نَاصَ",
+          "root": "نوص",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he moved / escaped / sought refuge",
+          "relationship": "Basic verb underlying the escape and refuge noun.",
+          "semanticDevelopment": "The place noun مَناصٌ is linked to the action of moving away or seeking refuge.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy defines ناصَ with movement, withdrawal, seeking and taking refuge senses.",
+          "confidence": "high",
+          "pedagogicalValue": "Connects the Qur’anic noun to its lexical verb.",
+          "accepted": true
+        },
+        {
+          "form": "يَنُوصُ",
+          "root": "نوص",
+          "morphology": "Form-I hollow imperfect verb",
+          "meaning": "he moves away / escapes",
+          "relationship": "Imperfect counterpart of ناصَ.",
+          "semanticDevelopment": "The hollow ū exposes the middle و in the imperfect.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy’s ناصَ entry explicitly gives the verbal family; يَنُوصُ is the established imperfect form.",
+          "confidence": "medium",
+          "pedagogicalValue": "Provides the learner a clear hollow-root pattern.",
+          "accepted": true
+        },
+        {
+          "form": "نَوْصٌ",
+          "root": "نوص",
+          "morphology": "Form-I maṣdar",
+          "meaning": "movement / escape",
+          "relationship": "Maṣdar of the basic escape/movement branch.",
+          "semanticDevelopment": "The concrete refuge noun is connected to the abstract action of moving or escaping.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy gives نَوْصًا as a maṣdar for movement and escape.",
+          "confidence": "high",
+          "pedagogicalValue": "Distinguishes the place noun from the action noun.",
+          "accepted": true
+        },
+        {
+          "form": "اِسْتَنَاصَ",
+          "root": "نوص",
+          "morphology": "Form-X derived verb",
+          "meaning": "he delayed / moved away / sought help",
+          "relationship": "Derived Form-X branch in the same root family.",
+          "semanticDevelopment": "The root develops from movement or escape into seeking movement/help or withdrawing.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy records استناصَ with delaying, moving and seeking help senses.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds an attested derived pattern while preserving the semantic distinction.",
+          "accepted": true
+        }
+      ],
+      "acceptedCandidates": [
+        {
+          "form": "نَاصَ",
+          "root": "نوص",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he moved / escaped / sought refuge",
+          "relationship": "Basic verb underlying the escape and refuge noun.",
+          "semanticDevelopment": "The place noun مَناصٌ is linked to the action of moving away or seeking refuge.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy defines ناصَ with movement, withdrawal, seeking and taking refuge senses.",
+          "confidence": "high",
+          "pedagogicalValue": "Connects the Qur’anic noun to its lexical verb.",
+          "accepted": true
+        },
+        {
+          "form": "يَنُوصُ",
+          "root": "نوص",
+          "morphology": "Form-I hollow imperfect verb",
+          "meaning": "he moves away / escapes",
+          "relationship": "Imperfect counterpart of ناصَ.",
+          "semanticDevelopment": "The hollow ū exposes the middle و in the imperfect.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy’s ناصَ entry explicitly gives the verbal family; يَنُوصُ is the established imperfect form.",
+          "confidence": "medium",
+          "pedagogicalValue": "Provides the learner a clear hollow-root pattern.",
+          "accepted": true
+        },
+        {
+          "form": "نَوْصٌ",
+          "root": "نوص",
+          "morphology": "Form-I maṣdar",
+          "meaning": "movement / escape",
+          "relationship": "Maṣdar of the basic escape/movement branch.",
+          "semanticDevelopment": "The concrete refuge noun is connected to the abstract action of moving or escaping.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy gives نَوْصًا as a maṣdar for movement and escape.",
+          "confidence": "high",
+          "pedagogicalValue": "Distinguishes the place noun from the action noun.",
+          "accepted": true
+        },
+        {
+          "form": "اِسْتَنَاصَ",
+          "root": "نوص",
+          "morphology": "Form-X derived verb",
+          "meaning": "he delayed / moved away / sought help",
+          "relationship": "Derived Form-X branch in the same root family.",
+          "semanticDevelopment": "The root develops from movement or escape into seeking movement/help or withdrawing.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy records استناصَ with delaying, moving and seeking help senses.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds an attested derived pattern while preserving the semantic distinction.",
+          "accepted": true
+        }
+      ],
+      "rejectedCandidates": [
+        "أَنَاصَ was considered, but the selected basic verb, imperfect, maṣdar and Form-X pattern give a clearer teaching progression.",
+        "مَنَاصٌ without its case ending was not counted separately.",
+        "The meaning of مَنَاصٌ was not flattened into the verb’s full semantic range; it remains refuge/escape."
+      ],
+      "finalRows": [
+        {
+          "occurrenceId": "word:38:3:10",
+          "location": "38:3:10",
+          "arabic": "مَنَاصٍ",
+          "forms": [
+            {
+              "form": "مَنَاصٍ",
+              "meaning": "(for) escape",
+              "difference": "Current Qur’anic occurrence at 38:3:10; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive.",
+              "relationship": "Current occurrence of the نوص hollow/special family; comparison rows show real same-root morphology and honest semantic development.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; the occurrence, canonical root, weak middle radical, hollow behavior and aligned morphology were inspected against approved lexical evidence."
+            },
+            {
+              "form": "نَاصَ",
+              "meaning": "he moved / escaped / sought refuge",
+              "difference": "Form-I hollow perfect verb. The place noun مَناصٌ is linked to the action of moving away or seeking refuge. Compared with the Qur’anic occurrence at 38:3:10. Connects the Qur’anic noun to its lexical verb.",
+              "relationship": "Basic verb underlying the escape and refuge noun. Same-root relationship to نوص; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy defines ناصَ with movement, withdrawal, seeking and taking refuge senses."
+            },
+            {
+              "form": "يَنُوصُ",
+              "meaning": "he moves away / escapes",
+              "difference": "Form-I hollow imperfect verb. The hollow ū exposes the middle و in the imperfect. Compared with the Qur’anic occurrence at 38:3:10. Provides the learner a clear hollow-root pattern.",
+              "relationship": "Imperfect counterpart of ناصَ. Same-root relationship to نوص; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy’s ناصَ entry explicitly gives the verbal family; يَنُوصُ is the established imperfect form."
+            },
+            {
+              "form": "نَوْصٌ",
+              "meaning": "movement / escape",
+              "difference": "Form-I maṣdar. The concrete refuge noun is connected to the abstract action of moving or escaping. Compared with the Qur’anic occurrence at 38:3:10. Distinguishes the place noun from the action noun.",
+              "relationship": "Maṣdar of the basic escape/movement branch. Same-root relationship to نوص; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy gives نَوْصًا as a maṣdar for movement and escape."
+            },
+            {
+              "form": "اِسْتَنَاصَ",
+              "meaning": "he delayed / moved away / sought help",
+              "difference": "Form-X derived verb. The root develops from movement or escape into seeking movement/help or withdrawing. Compared with the Qur’anic occurrence at 38:3:10. Adds an attested derived pattern while preserving the semantic distinction.",
+              "relationship": "Derived Form-X branch in the same root family. Same-root relationship to نوص; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy records استناصَ with delaying, moving and seeking help senses."
+            }
+          ],
+          "sarfReview": {
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
+            "familyScope": "C3-C4C",
+            "provenance": [
+              "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z: FULL.",
+              "Canonical root: نوص; weak middle radical: و; hollow subtype: Hollow root و with a fixed escape/recourse noun; likely lexical-narrow and evidence-sensitive..",
+              "Every occurrence inspected: 38:3:10.",
+              "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy attests ناصَ, نَوْصًا/نَوَصانًا, أَناصَ, ناوَصَ, اِنْتاصَ, اسْتَناصَ and المَناصُ as refuge, movement, escape and seeking branches.",
+              "The second radical is و. مَنَاصٌ is a place noun meaning refuge or escape; its lexical family is broader than the surface noun but must remain within root ن و ص.",
+              "Accepted نَاصَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy defines ناصَ with movement, withdrawal, seeking and taking refuge senses.",
+              "Accepted يَنُوصُ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy’s ناصَ entry explicitly gives the verbal family; يَنُوصُ is the established imperfect form.",
+              "Accepted نَوْصٌ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy gives نَوْصًا as a maṣdar for movement and escape.",
+              "Accepted اِسْتَنَاصَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy records استناصَ with delaying, moving and seeking help senses.",
+              "أَنَاصَ was considered, but the selected basic verb, imperfect, maṣdar and Form-X pattern give a clearer teaching progression.",
+              "مَنَاصٌ without its case ending was not counted separately.",
+              "The meaning of مَنَاصٌ was not flattened into the verb’s full semantic range; it remains refuge/escape."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-24T18:59:04.083Z"
+          }
+        }
+      ],
+      "decision": "FULL",
+      "reasoning": "The current form plus four independently attested same-root forms provide useful lexical and morphological development without shell, case, pronoun or contraction padding. The second radical is و. مَنَاصٌ is a place noun meaning refuge or escape; its lexical family is broader than the surface noun but must remain within root ن و ص.",
+      "evidence": [
+        "Committed C3-C4C queue inspected: 38:3:10.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy attests ناصَ, نَوْصًا/نَوَصانًا, أَناصَ, ناوَصَ, اِنْتاصَ, اسْتَناصَ and المَناصُ as refuge, movement, escape and seeking branches.",
+        "The second radical is و. مَنَاصٌ is a place noun meaning refuge or escape; its lexical family is broader than the surface noun but must remain within root ن و ص.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy defines ناصَ with movement, withdrawal, seeking and taking refuge senses.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy’s ناصَ entry explicitly gives the verbal family; يَنُوصُ is the established imperfect form.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy gives نَوْصًا as a maṣdar for movement and escape.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%86%D9%88%D8%B5. The Academy records استناصَ with delaying, moving and seeking help senses."
+      ],
+      "confidence": "high",
+      "unresolvedQuestion": null,
+      "evidenceRequired": [],
+      "humanExpertReviewRequired": false,
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-24T18:59:04.083Z",
+      "recordId": "tier-c3c4c-family-f282fe3ef5f8d4e4"
+    },
+    {
+      "familyKey": "lexical|زول|زوال|noun/pronoun",
+      "root": "زول",
+      "canonicalRoot": "زول",
+      "weakRadical": "و",
+      "weakRadicalPosition": "second",
+      "hollowSubtype": "Hollow root و with a well-attested cessation/removal family; distinguish Form I and causative branches.",
+      "lemmaOrCurrentForm": "زَوال",
+      "quranicWord": "زَوَالٍ",
+      "locations": [
+        "14:44:26"
+      ],
+      "occurrenceCount": 1,
+      "partOfSpeech": [
+        "noun/pronoun"
+      ],
+      "quranicMeaning": "end",
+      "morphology": {
+        "arabic": "زَوَالٍ",
+        "meaning": "end",
+        "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive."
+      },
+      "rootConfidence": "HIGH",
+      "lemmaConfidence": "HIGH",
+      "currentRows": [
+        {
+          "occurrenceId": "word:14:44:26",
+          "location": "14:44:26",
+          "arabic": "زَوَالٍ",
+          "forms": [
+            {
+              "form": "زَوَالٍ",
+              "meaning": "end",
+              "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive.",
+              "relationship": "Current Qur'anic occurrence of the زول lexical family in this āyah.",
+              "provenance": "Codex review of canonical Qur'anic occurrence word:14:44:26. Aligned Quranic Arabic Corpus morphology 0.4-derived (14:44:26) was checked as evidence."
+            }
+          ],
+          "sarfReview": {
+            "status": "limited",
+            "limitedReason": "زَوَالٍ is a rootful noun with root ز و ل. The audit found 3 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+            "auditDecision": "blocked-for-genuine-ambiguity",
+            "provenance": [
+              "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:14:44:26.",
+              "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
+              "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-18T14:42:38.844Z"
+          }
+        }
+      ],
+      "candidatesConsidered": [
+        {
+          "form": "زَالَ",
+          "root": "زول",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he ceased / moved away",
+          "relationship": "Basic Form-I verb of زَوَالٌ.",
+          "semanticDevelopment": "The noun’s idea of ending or passing away is shown through the verb that ceases or departs.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy defines زالَ as moved, disappeared, ceased and went away.",
+          "confidence": "high",
+          "pedagogicalValue": "Makes the root’s basic verbal meaning recognisable.",
+          "accepted": true
+        },
+        {
+          "form": "يَزُولُ",
+          "root": "زول",
+          "morphology": "Form-I hollow imperfect verb",
+          "meaning": "he ceases / moves away",
+          "relationship": "Imperfect counterpart of زالَ.",
+          "semanticDevelopment": "The hollow ū visibly reflects the middle و.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy’s زالَ entry establishes the standard imperfect family.",
+          "confidence": "high",
+          "pedagogicalValue": "Provides the core hollow tense contrast.",
+          "accepted": true
+        },
+        {
+          "form": "زَائِلٌ",
+          "root": "زول",
+          "morphology": "Form-I active participle/adjective",
+          "meaning": "passing / vanishing",
+          "relationship": "Active participle from زالَ.",
+          "semanticDevelopment": "The event of passing becomes a property or state.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy lists الزّائِلُ in the زول family.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a useful participial recognition form.",
+          "accepted": true
+        },
+        {
+          "form": "أَزَالَ",
+          "root": "زول",
+          "morphology": "Form-IV derived verb",
+          "meaning": "he removed / caused to cease",
+          "relationship": "Causative Form-IV counterpart of زالَ.",
+          "semanticDevelopment": "The intransitive cessation branch develops into causing something to disappear or be removed.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy defines أَزالَ as removed and caused to be taken away.",
+          "confidence": "high",
+          "pedagogicalValue": "Teaches the key intransitive/causative contrast.",
+          "accepted": true
+        }
+      ],
+      "acceptedCandidates": [
+        {
+          "form": "زَالَ",
+          "root": "زول",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he ceased / moved away",
+          "relationship": "Basic Form-I verb of زَوَالٌ.",
+          "semanticDevelopment": "The noun’s idea of ending or passing away is shown through the verb that ceases or departs.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy defines زالَ as moved, disappeared, ceased and went away.",
+          "confidence": "high",
+          "pedagogicalValue": "Makes the root’s basic verbal meaning recognisable.",
+          "accepted": true
+        },
+        {
+          "form": "يَزُولُ",
+          "root": "زول",
+          "morphology": "Form-I hollow imperfect verb",
+          "meaning": "he ceases / moves away",
+          "relationship": "Imperfect counterpart of زالَ.",
+          "semanticDevelopment": "The hollow ū visibly reflects the middle و.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy’s زالَ entry establishes the standard imperfect family.",
+          "confidence": "high",
+          "pedagogicalValue": "Provides the core hollow tense contrast.",
+          "accepted": true
+        },
+        {
+          "form": "زَائِلٌ",
+          "root": "زول",
+          "morphology": "Form-I active participle/adjective",
+          "meaning": "passing / vanishing",
+          "relationship": "Active participle from زالَ.",
+          "semanticDevelopment": "The event of passing becomes a property or state.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy lists الزّائِلُ in the زول family.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a useful participial recognition form.",
+          "accepted": true
+        },
+        {
+          "form": "أَزَالَ",
+          "root": "زول",
+          "morphology": "Form-IV derived verb",
+          "meaning": "he removed / caused to cease",
+          "relationship": "Causative Form-IV counterpart of زالَ.",
+          "semanticDevelopment": "The intransitive cessation branch develops into causing something to disappear or be removed.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy defines أَزالَ as removed and caused to be taken away.",
+          "confidence": "high",
+          "pedagogicalValue": "Teaches the key intransitive/causative contrast.",
+          "accepted": true
+        }
+      ],
+      "rejectedCandidates": [
+        "زَوْلٌ and زَوَّلَ were considered; زَوْلٌ belongs to a distinct lively/clever noun branch, while زَوَّلَ would add less value than the selected basic/causative contrast.",
+        "The earlier C1 family using لِتَزُولَ is a separate Qur’anic occurrence family; this family is adjudicated independently with the same canonical root."
+      ],
+      "finalRows": [
+        {
+          "occurrenceId": "word:14:44:26",
+          "location": "14:44:26",
+          "arabic": "زَوَالٍ",
+          "forms": [
+            {
+              "form": "زَوَالٍ",
+              "meaning": "end",
+              "difference": "Current Qur’anic occurrence at 14:44:26; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive.",
+              "relationship": "Current occurrence of the زول hollow/special family; comparison rows show real same-root morphology and honest semantic development.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; the occurrence, canonical root, weak middle radical, hollow behavior and aligned morphology were inspected against approved lexical evidence."
+            },
+            {
+              "form": "زَالَ",
+              "meaning": "he ceased / moved away",
+              "difference": "Form-I hollow perfect verb. The noun’s idea of ending or passing away is shown through the verb that ceases or departs. Compared with the Qur’anic occurrence at 14:44:26. Makes the root’s basic verbal meaning recognisable.",
+              "relationship": "Basic Form-I verb of زَوَالٌ. Same-root relationship to زول; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy defines زالَ as moved, disappeared, ceased and went away."
+            },
+            {
+              "form": "يَزُولُ",
+              "meaning": "he ceases / moves away",
+              "difference": "Form-I hollow imperfect verb. The hollow ū visibly reflects the middle و. Compared with the Qur’anic occurrence at 14:44:26. Provides the core hollow tense contrast.",
+              "relationship": "Imperfect counterpart of زالَ. Same-root relationship to زول; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy’s زالَ entry establishes the standard imperfect family."
+            },
+            {
+              "form": "زَائِلٌ",
+              "meaning": "passing / vanishing",
+              "difference": "Form-I active participle/adjective. The event of passing becomes a property or state. Compared with the Qur’anic occurrence at 14:44:26. Adds a useful participial recognition form.",
+              "relationship": "Active participle from زالَ. Same-root relationship to زول; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy lists الزّائِلُ in the زول family."
+            },
+            {
+              "form": "أَزَالَ",
+              "meaning": "he removed / caused to cease",
+              "difference": "Form-IV derived verb. The intransitive cessation branch develops into causing something to disappear or be removed. Compared with the Qur’anic occurrence at 14:44:26. Teaches the key intransitive/causative contrast.",
+              "relationship": "Causative Form-IV counterpart of زالَ. Same-root relationship to زول; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy defines أَزالَ as removed and caused to be taken away."
+            }
+          ],
+          "sarfReview": {
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
+            "familyScope": "C3-C4C",
+            "provenance": [
+              "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z: FULL.",
+              "Canonical root: زول; weak middle radical: و; hollow subtype: Hollow root و with a well-attested cessation/removal family; distinguish Form I and causative branches..",
+              "Every occurrence inspected: 14:44:26.",
+              "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy attests زالَ, زَوَالًا, أَزالَ, زاوَلَ, زَوَّلَ, انْزالَ, الزّائِلُ and related forms.",
+              "The second radical is و. زَوَالٌ is the maṣdar/noun of cessation, departure or disappearance; the same root also has a causative removal branch.",
+              "Accepted زَالَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy defines زالَ as moved, disappeared, ceased and went away.",
+              "Accepted يَزُولُ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy’s زالَ entry establishes the standard imperfect family.",
+              "Accepted زَائِلٌ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy lists الزّائِلُ in the زول family.",
+              "Accepted أَزَالَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy defines أَزالَ as removed and caused to be taken away.",
+              "زَوْلٌ and زَوَّلَ were considered; زَوْلٌ belongs to a distinct lively/clever noun branch, while زَوَّلَ would add less value than the selected basic/causative contrast.",
+              "The earlier C1 family using لِتَزُولَ is a separate Qur’anic occurrence family; this family is adjudicated independently with the same canonical root."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-24T18:59:04.083Z"
+          }
+        }
+      ],
+      "decision": "FULL",
+      "reasoning": "The current form plus four independently attested same-root forms provide useful lexical and morphological development without shell, case, pronoun or contraction padding. The second radical is و. زَوَالٌ is the maṣdar/noun of cessation, departure or disappearance; the same root also has a causative removal branch.",
+      "evidence": [
+        "Committed C3-C4C queue inspected: 14:44:26.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy attests زالَ, زَوَالًا, أَزالَ, زاوَلَ, زَوَّلَ, انْزالَ, الزّائِلُ and related forms.",
+        "The second radical is و. زَوَالٌ is the maṣdar/noun of cessation, departure or disappearance; the same root also has a causative removal branch.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy defines زالَ as moved, disappeared, ceased and went away.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy’s زالَ entry establishes the standard imperfect family.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy lists الزّائِلُ in the زول family.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D9%84. The Academy defines أَزالَ as removed and caused to be taken away."
+      ],
+      "confidence": "high",
+      "unresolvedQuestion": null,
+      "evidenceRequired": [],
+      "humanExpertReviewRequired": false,
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-24T18:59:04.083Z",
+      "recordId": "tier-c3c4c-family-5fd7d08508d325e6"
+    },
+    {
+      "familyKey": "lexical|بور|بوار|noun/pronoun",
+      "root": "بور",
+      "canonicalRoot": "بور",
+      "weakRadical": "و",
+      "weakRadicalPosition": "second",
+      "hollowSubtype": "Hollow root و with a destruction/ruin semantic branch; verify noun and verb relationships.",
+      "lemmaOrCurrentForm": "بَوَارِ",
+      "quranicWord": "ٱلْبَوَارِ",
+      "locations": [
+        "14:28:12"
+      ],
+      "occurrenceCount": 1,
+      "partOfSpeech": [
+        "noun/pronoun"
+      ],
+      "quranicMeaning": "(of) destruction",
+      "morphology": {
+        "arabic": "ٱلْبَوَارِ",
+        "meaning": "(of) destruction",
+        "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive."
+      },
+      "rootConfidence": "HIGH",
+      "lemmaConfidence": "HIGH",
+      "currentRows": [
+        {
+          "occurrenceId": "word:14:28:12",
+          "location": "14:28:12",
+          "arabic": "ٱلْبَوَارِ",
+          "forms": [
+            {
+              "form": "ٱلْبَوَارِ",
+              "meaning": "(of) destruction",
+              "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+              "relationship": "Current Qur'anic occurrence of the بور lexical family in this āyah.",
+              "provenance": "Codex review of canonical Qur'anic occurrence word:14:28:12. Aligned Quranic Arabic Corpus morphology 0.4-derived (14:28:12) was checked as evidence."
+            }
+          ],
+          "sarfReview": {
+            "status": "limited",
+            "limitedReason": "ٱلْبَوَارِ is a rootful noun with root ب و ر. The audit found 4 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+            "auditDecision": "blocked-for-genuine-ambiguity",
+            "provenance": [
+              "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:14:28:12.",
+              "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
+              "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-18T14:42:38.844Z"
+          }
+        }
+      ],
+      "candidatesConsidered": [
+        {
+          "form": "بَارَ",
+          "root": "بور",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he perished / was ruined",
+          "relationship": "Basic Form-I verb underlying البَوارُ.",
+          "semanticDevelopment": "The destruction noun is linked to the event of perishing or becoming ruined.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines بارَ as perished, failed and became unproductive.",
+          "confidence": "high",
+          "pedagogicalValue": "Makes the lexical source of the current noun clear.",
+          "accepted": true
+        },
+        {
+          "form": "يَبُورُ",
+          "root": "بور",
+          "morphology": "Form-I hollow imperfect verb",
+          "meaning": "he perishes / is ruined",
+          "relationship": "Imperfect counterpart of بارَ.",
+          "semanticDevelopment": "The hollow ū presents the middle و in the imperfect.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy’s بارَ entry establishes the Form-I family; يَبُورُ is its attested imperfect form.",
+          "confidence": "medium",
+          "pedagogicalValue": "Provides a useful hollow tense pattern.",
+          "accepted": true
+        },
+        {
+          "form": "بَائِرٌ",
+          "root": "بور",
+          "morphology": "Form-I active participle/adjective",
+          "meaning": "perishing / ruined / unsuccessful",
+          "relationship": "Active participle/adjective from بارَ.",
+          "semanticDevelopment": "The event develops into a description of a person, land or enterprise in ruin.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines بائرٌ as perishing, failed and, of land, uncultivated.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds an independently useful descriptive form.",
+          "accepted": true
+        },
+        {
+          "form": "أَبَارَ",
+          "root": "بور",
+          "morphology": "Form-IV derived verb",
+          "meaning": "he destroyed / made unsuccessful",
+          "relationship": "Causative Form-IV branch of the same root.",
+          "semanticDevelopment": "The state of ruin becomes an action that causes destruction or failure.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines أَبارَه as destroyed or made unsuccessful.",
+          "confidence": "high",
+          "pedagogicalValue": "Teaches the causative relationship rather than a case or plural variant.",
+          "accepted": true
+        }
+      ],
+      "acceptedCandidates": [
+        {
+          "form": "بَارَ",
+          "root": "بور",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he perished / was ruined",
+          "relationship": "Basic Form-I verb underlying البَوارُ.",
+          "semanticDevelopment": "The destruction noun is linked to the event of perishing or becoming ruined.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines بارَ as perished, failed and became unproductive.",
+          "confidence": "high",
+          "pedagogicalValue": "Makes the lexical source of the current noun clear.",
+          "accepted": true
+        },
+        {
+          "form": "يَبُورُ",
+          "root": "بور",
+          "morphology": "Form-I hollow imperfect verb",
+          "meaning": "he perishes / is ruined",
+          "relationship": "Imperfect counterpart of بارَ.",
+          "semanticDevelopment": "The hollow ū presents the middle و in the imperfect.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy’s بارَ entry establishes the Form-I family; يَبُورُ is its attested imperfect form.",
+          "confidence": "medium",
+          "pedagogicalValue": "Provides a useful hollow tense pattern.",
+          "accepted": true
+        },
+        {
+          "form": "بَائِرٌ",
+          "root": "بور",
+          "morphology": "Form-I active participle/adjective",
+          "meaning": "perishing / ruined / unsuccessful",
+          "relationship": "Active participle/adjective from بارَ.",
+          "semanticDevelopment": "The event develops into a description of a person, land or enterprise in ruin.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines بائرٌ as perishing, failed and, of land, uncultivated.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds an independently useful descriptive form.",
+          "accepted": true
+        },
+        {
+          "form": "أَبَارَ",
+          "root": "بور",
+          "morphology": "Form-IV derived verb",
+          "meaning": "he destroyed / made unsuccessful",
+          "relationship": "Causative Form-IV branch of the same root.",
+          "semanticDevelopment": "The state of ruin becomes an action that causes destruction or failure.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines أَبارَه as destroyed or made unsuccessful.",
+          "confidence": "high",
+          "pedagogicalValue": "Teaches the causative relationship rather than a case or plural variant.",
+          "accepted": true
+        }
+      ],
+      "rejectedCandidates": [
+        "بَوْرٌ and بُورٌ were considered as genuine noun variants, but the selected verb, imperfect, participle and causative give stronger morphology.",
+        "The article in ٱلْبَوَارِ and its genitive ending were not counted separately."
+      ],
+      "finalRows": [
+        {
+          "occurrenceId": "word:14:28:12",
+          "location": "14:28:12",
+          "arabic": "ٱلْبَوَارِ",
+          "forms": [
+            {
+              "form": "ٱلْبَوَارِ",
+              "meaning": "(of) destruction",
+              "difference": "Current Qur’anic occurrence at 14:28:12; Current Qur'anic occurrence; gender: masculine; case: genitive.",
+              "relationship": "Current occurrence of the بور hollow/special family; comparison rows show real same-root morphology and honest semantic development.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; the occurrence, canonical root, weak middle radical, hollow behavior and aligned morphology were inspected against approved lexical evidence."
+            },
+            {
+              "form": "بَارَ",
+              "meaning": "he perished / was ruined",
+              "difference": "Form-I hollow perfect verb. The destruction noun is linked to the event of perishing or becoming ruined. Compared with the Qur’anic occurrence at 14:28:12. Makes the lexical source of the current noun clear.",
+              "relationship": "Basic Form-I verb underlying البَوارُ. Same-root relationship to بور; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines بارَ as perished, failed and became unproductive."
+            },
+            {
+              "form": "يَبُورُ",
+              "meaning": "he perishes / is ruined",
+              "difference": "Form-I hollow imperfect verb. The hollow ū presents the middle و in the imperfect. Compared with the Qur’anic occurrence at 14:28:12. Provides a useful hollow tense pattern.",
+              "relationship": "Imperfect counterpart of بارَ. Same-root relationship to بور; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy’s بارَ entry establishes the Form-I family; يَبُورُ is its attested imperfect form."
+            },
+            {
+              "form": "بَائِرٌ",
+              "meaning": "perishing / ruined / unsuccessful",
+              "difference": "Form-I active participle/adjective. The event develops into a description of a person, land or enterprise in ruin. Compared with the Qur’anic occurrence at 14:28:12. Adds an independently useful descriptive form.",
+              "relationship": "Active participle/adjective from بارَ. Same-root relationship to بور; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines بائرٌ as perishing, failed and, of land, uncultivated."
+            },
+            {
+              "form": "أَبَارَ",
+              "meaning": "he destroyed / made unsuccessful",
+              "difference": "Form-IV derived verb. The state of ruin becomes an action that causes destruction or failure. Compared with the Qur’anic occurrence at 14:28:12. Teaches the causative relationship rather than a case or plural variant.",
+              "relationship": "Causative Form-IV branch of the same root. Same-root relationship to بور; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines أَبارَه as destroyed or made unsuccessful."
+            }
+          ],
+          "sarfReview": {
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
+            "familyScope": "C3-C4C",
+            "provenance": [
+              "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z: FULL.",
+              "Canonical root: بور; weak middle radical: و; hollow subtype: Hollow root و with a destruction/ruin semantic branch; verify noun and verb relationships..",
+              "Every occurrence inspected: 14:28:12.",
+              "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy attests بارَ, بَوْرًا/بَوارًا, أَبارَ, بَوَّرَ, ابْتارَ, بائِرٌ, بُورٌ and البَوارُ.",
+              "The second radical is و. البَوارُ is the destruction/ruin noun; the root also includes perishing, failure, barrenness and causing ruin.",
+              "Accepted بَارَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines بارَ as perished, failed and became unproductive.",
+              "Accepted يَبُورُ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy’s بارَ entry establishes the Form-I family; يَبُورُ is its attested imperfect form.",
+              "Accepted بَائِرٌ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines بائرٌ as perishing, failed and, of land, uncultivated.",
+              "Accepted أَبَارَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines أَبارَه as destroyed or made unsuccessful.",
+              "بَوْرٌ and بُورٌ were considered as genuine noun variants, but the selected verb, imperfect, participle and causative give stronger morphology.",
+              "The article in ٱلْبَوَارِ and its genitive ending were not counted separately."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-24T18:59:04.083Z"
+          }
+        }
+      ],
+      "decision": "FULL",
+      "reasoning": "The current form plus four independently attested same-root forms provide useful lexical and morphological development without shell, case, pronoun or contraction padding. The second radical is و. البَوارُ is the destruction/ruin noun; the root also includes perishing, failure, barrenness and causing ruin.",
+      "evidence": [
+        "Committed C3-C4C queue inspected: 14:28:12.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy attests بارَ, بَوْرًا/بَوارًا, أَبارَ, بَوَّرَ, ابْتارَ, بائِرٌ, بُورٌ and البَوارُ.",
+        "The second radical is و. البَوارُ is the destruction/ruin noun; the root also includes perishing, failure, barrenness and causing ruin.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines بارَ as perished, failed and became unproductive.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy’s بارَ entry establishes the Form-I family; يَبُورُ is its attested imperfect form.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines بائرٌ as perishing, failed and, of land, uncultivated.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A8%D9%88%D8%B1. The Academy defines أَبارَه as destroyed or made unsuccessful."
+      ],
+      "confidence": "high",
+      "unresolvedQuestion": null,
+      "evidenceRequired": [],
+      "humanExpertReviewRequired": false,
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-24T18:59:04.083Z",
+      "recordId": "tier-c3c4c-family-32e488152126110f"
+    },
+    {
+      "familyKey": "lexical|قوت|مقيت|noun/pronoun",
+      "root": "قوت",
+      "canonicalRoot": "قوت",
+      "weakRadical": "و",
+      "weakRadicalPosition": "second",
+      "hollowSubtype": "Hollow root و in an adjective/active-participial branch; meaning and pattern must be separated from قوت noun forms.",
+      "lemmaOrCurrentForm": "مُقِيت",
+      "quranicWord": "مُّقِيتًا",
+      "locations": [
+        "4:85:22"
+      ],
+      "occurrenceCount": 1,
+      "partOfSpeech": [
+        "noun/pronoun"
+      ],
+      "quranicMeaning": "a Keeper",
+      "morphology": {
+        "arabic": "مُّقِيتًا",
+        "meaning": "a Keeper",
+        "difference": "Current Qur'anic occurrence; pattern: Form 4; gender: masculine; state: indefinite; case: accusative; verb form: Form 4."
+      },
+      "rootConfidence": "HIGH",
+      "lemmaConfidence": "HIGH",
+      "currentRows": [
+        {
+          "occurrenceId": "word:4:85:22",
+          "location": "4:85:22",
+          "arabic": "مُّقِيتًا",
+          "forms": [
+            {
+              "form": "مُّقِيتًا",
+              "meaning": "a Keeper",
+              "difference": "Current Qur'anic occurrence; pattern: Form 4; gender: masculine; state: indefinite; case: accusative; verb form: Form 4.",
+              "relationship": "Current Qur'anic occurrence of the قوت lexical family in this āyah.",
+              "provenance": "Codex review of canonical Qur'anic occurrence word:4:85:22. Aligned Quranic Arabic Corpus morphology 0.4-derived (4:85:22) was checked as evidence."
+            }
+          ],
+          "sarfReview": {
+            "status": "limited",
+            "limitedReason": "مُّقِيتًا is a rootful noun with root ق و ت. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+            "auditDecision": "blocked-for-genuine-ambiguity",
+            "provenance": [
+              "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:4:85:22.",
+              "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
+              "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-18T14:42:38.844Z"
+          }
+        }
+      ],
+      "candidatesConsidered": [
+        {
+          "form": "قَاتَ",
+          "root": "قوت",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he fed / sustained",
+          "relationship": "Basic Form-I feeding verb related to مُقِيتٌ.",
+          "semanticDevelopment": "The Qur’anic keeper/provider sense is connected to the basic act of supplying nourishment.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines قاتَ as fed and supported.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows the lexical base behind the derived participle.",
+          "accepted": true
+        },
+        {
+          "form": "أَقَاتَ",
+          "root": "قوت",
+          "morphology": "Form-IV derived verb",
+          "meaning": "he gave nourishment / sustained",
+          "relationship": "Form-IV verb corresponding to the Qur’anic participial branch.",
+          "semanticDevelopment": "The act of feeding becomes causative provision or sustaining.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines أَقاتَ as gave someone food and as being able to sustain.",
+          "confidence": "high",
+          "pedagogicalValue": "Makes the Form-IV relation visible without duplicating person or tense.",
+          "accepted": true
+        },
+        {
+          "form": "اِقْتَاتَ",
+          "root": "قوت",
+          "morphology": "Form-VIII derived verb",
+          "meaning": "he fed himself on / took nourishment",
+          "relationship": "Derived self-directed feeding form.",
+          "semanticDevelopment": "The root shifts from giving nourishment to taking something as one’s food.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines اقتاتَ as made something his food.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds participant-structure development.",
+          "accepted": true
+        },
+        {
+          "form": "قُوتٌ",
+          "root": "قوت",
+          "morphology": "root noun",
+          "meaning": "nourishment / food",
+          "relationship": "Core noun of nourishment in the same root family.",
+          "semanticDevelopment": "The provider/keeper meaning is anchored in the concrete thing that sustains the body.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines القوت as food that sustains the body.",
+          "confidence": "high",
+          "pedagogicalValue": "Separates the noun from the Form-IV participle honestly.",
+          "accepted": true
+        }
+      ],
+      "acceptedCandidates": [
+        {
+          "form": "قَاتَ",
+          "root": "قوت",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he fed / sustained",
+          "relationship": "Basic Form-I feeding verb related to مُقِيتٌ.",
+          "semanticDevelopment": "The Qur’anic keeper/provider sense is connected to the basic act of supplying nourishment.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines قاتَ as fed and supported.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows the lexical base behind the derived participle.",
+          "accepted": true
+        },
+        {
+          "form": "أَقَاتَ",
+          "root": "قوت",
+          "morphology": "Form-IV derived verb",
+          "meaning": "he gave nourishment / sustained",
+          "relationship": "Form-IV verb corresponding to the Qur’anic participial branch.",
+          "semanticDevelopment": "The act of feeding becomes causative provision or sustaining.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines أَقاتَ as gave someone food and as being able to sustain.",
+          "confidence": "high",
+          "pedagogicalValue": "Makes the Form-IV relation visible without duplicating person or tense.",
+          "accepted": true
+        },
+        {
+          "form": "اِقْتَاتَ",
+          "root": "قوت",
+          "morphology": "Form-VIII derived verb",
+          "meaning": "he fed himself on / took nourishment",
+          "relationship": "Derived self-directed feeding form.",
+          "semanticDevelopment": "The root shifts from giving nourishment to taking something as one’s food.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines اقتاتَ as made something his food.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds participant-structure development.",
+          "accepted": true
+        },
+        {
+          "form": "قُوتٌ",
+          "root": "قوت",
+          "morphology": "root noun",
+          "meaning": "nourishment / food",
+          "relationship": "Core noun of nourishment in the same root family.",
+          "semanticDevelopment": "The provider/keeper meaning is anchored in the concrete thing that sustains the body.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines القوت as food that sustains the body.",
+          "confidence": "high",
+          "pedagogicalValue": "Separates the noun from the Form-IV participle honestly.",
+          "accepted": true
+        }
+      ],
+      "rejectedCandidates": [
+        "تَقَوَّتَ and اسْتَقاتَ were investigated but were not needed after selecting the basic verb, Form-IV, Form-VIII and root noun.",
+        "The doubled consonant in مُقِيتًا is not a new root; it is the established Form-IV participial pattern."
+      ],
+      "finalRows": [
+        {
+          "occurrenceId": "word:4:85:22",
+          "location": "4:85:22",
+          "arabic": "مُّقِيتًا",
+          "forms": [
+            {
+              "form": "مُّقِيتًا",
+              "meaning": "a Keeper",
+              "difference": "Current Qur’anic occurrence at 4:85:22; Current Qur'anic occurrence; pattern: Form 4; gender: masculine; state: indefinite; case: accusative; verb form: Form 4.",
+              "relationship": "Current occurrence of the قوت hollow/special family; comparison rows show real same-root morphology and honest semantic development.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; the occurrence, canonical root, weak middle radical, hollow behavior and aligned morphology were inspected against approved lexical evidence."
+            },
+            {
+              "form": "قَاتَ",
+              "meaning": "he fed / sustained",
+              "difference": "Form-I hollow perfect verb. The Qur’anic keeper/provider sense is connected to the basic act of supplying nourishment. Compared with the Qur’anic occurrence at 4:85:22. Shows the lexical base behind the derived participle.",
+              "relationship": "Basic Form-I feeding verb related to مُقِيتٌ. Same-root relationship to قوت; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines قاتَ as fed and supported."
+            },
+            {
+              "form": "أَقَاتَ",
+              "meaning": "he gave nourishment / sustained",
+              "difference": "Form-IV derived verb. The act of feeding becomes causative provision or sustaining. Compared with the Qur’anic occurrence at 4:85:22. Makes the Form-IV relation visible without duplicating person or tense.",
+              "relationship": "Form-IV verb corresponding to the Qur’anic participial branch. Same-root relationship to قوت; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines أَقاتَ as gave someone food and as being able to sustain."
+            },
+            {
+              "form": "اِقْتَاتَ",
+              "meaning": "he fed himself on / took nourishment",
+              "difference": "Form-VIII derived verb. The root shifts from giving nourishment to taking something as one’s food. Compared with the Qur’anic occurrence at 4:85:22. Adds participant-structure development.",
+              "relationship": "Derived self-directed feeding form. Same-root relationship to قوت; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines اقتاتَ as made something his food."
+            },
+            {
+              "form": "قُوتٌ",
+              "meaning": "nourishment / food",
+              "difference": "root noun. The provider/keeper meaning is anchored in the concrete thing that sustains the body. Compared with the Qur’anic occurrence at 4:85:22. Separates the noun from the Form-IV participle honestly.",
+              "relationship": "Core noun of nourishment in the same root family. Same-root relationship to قوت; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines القوت as food that sustains the body."
+            }
+          ],
+          "sarfReview": {
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
+            "familyScope": "C3-C4C",
+            "provenance": [
+              "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z: FULL.",
+              "Canonical root: قوت; weak middle radical: و; hollow subtype: Hollow root و in an adjective/active-participial branch; meaning and pattern must be separated from قوت noun forms..",
+              "Every occurrence inspected: 4:85:22.",
+              "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy attests قاتَ, أَقاتَ, اقْتاتَ, تَقَوَّتَ, اسْتَقاتَ, القُوتُ and المُقِيتُ.",
+              "The second radical is و. The Qur’anic مُقِيتٌ is an active participle in the Form-IV sustaining/providing branch, not the noun قُوتٌ itself.",
+              "Accepted قَاتَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines قاتَ as fed and supported.",
+              "Accepted أَقَاتَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines أَقاتَ as gave someone food and as being able to sustain.",
+              "Accepted اِقْتَاتَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines اقتاتَ as made something his food.",
+              "Accepted قُوتٌ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines القوت as food that sustains the body.",
+              "تَقَوَّتَ and اسْتَقاتَ were investigated but were not needed after selecting the basic verb, Form-IV, Form-VIII and root noun.",
+              "The doubled consonant in مُقِيتًا is not a new root; it is the established Form-IV participial pattern."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-24T18:59:04.083Z"
+          }
+        }
+      ],
+      "decision": "FULL",
+      "reasoning": "The current form plus four independently attested same-root forms provide useful lexical and morphological development without shell, case, pronoun or contraction padding. The second radical is و. The Qur’anic مُقِيتٌ is an active participle in the Form-IV sustaining/providing branch, not the noun قُوتٌ itself.",
+      "evidence": [
+        "Committed C3-C4C queue inspected: 4:85:22.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy attests قاتَ, أَقاتَ, اقْتاتَ, تَقَوَّتَ, اسْتَقاتَ, القُوتُ and المُقِيتُ.",
+        "The second radical is و. The Qur’anic مُقِيتٌ is an active participle in the Form-IV sustaining/providing branch, not the noun قُوتٌ itself.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines قاتَ as fed and supported.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines أَقاتَ as gave someone food and as being able to sustain.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines اقتاتَ as made something his food.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%82%D9%88%D8%AA. The Academy defines القوت as food that sustains the body."
+      ],
+      "confidence": "high",
+      "unresolvedQuestion": null,
+      "evidenceRequired": [],
+      "humanExpertReviewRequired": false,
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-24T18:59:04.083Z",
+      "recordId": "tier-c3c4c-family-84fbd903bff11adb"
+    },
+    {
+      "familyKey": "lexical|خيط|خياط|noun/pronoun",
+      "root": "خيط",
+      "canonicalRoot": "خيط",
+      "weakRadical": "ي",
+      "weakRadicalPosition": "second",
+      "hollowSubtype": "Hollow root ي with a craft/occupational noun; distinguish خِيَاط from خَيَاطَة and related forms.",
+      "lemmaOrCurrentForm": "خِيَاطِ",
+      "quranicWord": "ٱلْخِيَاطِ",
+      "locations": [
+        "7:40:20"
+      ],
+      "occurrenceCount": 1,
+      "partOfSpeech": [
+        "noun/pronoun"
+      ],
+      "quranicMeaning": "(of) the needle",
+      "morphology": {
+        "arabic": "ٱلْخِيَاطِ",
+        "meaning": "(of) the needle",
+        "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive."
+      },
+      "rootConfidence": "HIGH",
+      "lemmaConfidence": "HIGH",
+      "currentRows": [
+        {
+          "occurrenceId": "word:7:40:20",
+          "location": "7:40:20",
+          "arabic": "ٱلْخِيَاطِ",
+          "forms": [
+            {
+              "form": "ٱلْخِيَاطِ",
+              "meaning": "(of) the needle",
+              "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+              "relationship": "Current Qur'anic occurrence of the خيط lexical family in this āyah.",
+              "provenance": "Codex review of canonical Qur'anic occurrence word:7:40:20. Aligned Quranic Arabic Corpus morphology 0.4-derived (7:40:20) was checked as evidence."
+            }
+          ],
+          "sarfReview": {
+            "status": "limited",
+            "limitedReason": "ٱلْخِيَاطِ is a rootful noun with root خ ي ط. The audit found 2 safe related forms, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+            "auditDecision": "blocked-for-genuine-ambiguity",
+            "provenance": [
+              "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:7:40:20.",
+              "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
+              "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-18T14:42:38.844Z"
+          }
+        }
+      ],
+      "candidatesConsidered": [
+        {
+          "form": "خَاطَ",
+          "root": "خيط",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he sewed / stitched",
+          "relationship": "Basic verb underlying the sewing and instrument family.",
+          "semanticDevelopment": "The needle noun is linked to the action performed with thread and needle.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy defines خاطَ as sewed and joined parts with thread.",
+          "confidence": "high",
+          "pedagogicalValue": "Provides the direct lexical base of the current instrument noun.",
+          "accepted": true
+        },
+        {
+          "form": "خِيَاطَةٌ",
+          "root": "خيط",
+          "morphology": "verbal noun",
+          "meaning": "sewing / tailoring",
+          "relationship": "Maṣdar/craft noun from خاطَ.",
+          "semanticDevelopment": "The individual act becomes the established craft or process.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy defines الخِياطة as the profession of the tailor.",
+          "confidence": "high",
+          "pedagogicalValue": "Distinguishes the craft from the instrument الخِياطِ.",
+          "accepted": true
+        },
+        {
+          "form": "خَيَّاطٌ",
+          "root": "خيط",
+          "morphology": "Form-I occupational noun",
+          "meaning": "tailor / one who sews",
+          "relationship": "Occupational noun related to sewing.",
+          "semanticDevelopment": "The action develops into the person who performs it.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy lists الخيّاط among the خيط family and defines the tailor branch.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a highly recognisable agent/occupation relationship.",
+          "accepted": true
+        },
+        {
+          "form": "مَخِيطٌ",
+          "root": "خيط",
+          "morphology": "passive participle/result noun",
+          "meaning": "sewn / stitched",
+          "relationship": "Result form from the act of sewing.",
+          "semanticDevelopment": "The family moves from tool and action to the thing that has been sewn.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy lists المَخِيطُ among the established خيط derivatives.",
+          "confidence": "medium",
+          "pedagogicalValue": "Provides a useful result/passive contrast without repeating the needle noun.",
+          "accepted": true
+        }
+      ],
+      "acceptedCandidates": [
+        {
+          "form": "خَاطَ",
+          "root": "خيط",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he sewed / stitched",
+          "relationship": "Basic verb underlying the sewing and instrument family.",
+          "semanticDevelopment": "The needle noun is linked to the action performed with thread and needle.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy defines خاطَ as sewed and joined parts with thread.",
+          "confidence": "high",
+          "pedagogicalValue": "Provides the direct lexical base of the current instrument noun.",
+          "accepted": true
+        },
+        {
+          "form": "خِيَاطَةٌ",
+          "root": "خيط",
+          "morphology": "verbal noun",
+          "meaning": "sewing / tailoring",
+          "relationship": "Maṣdar/craft noun from خاطَ.",
+          "semanticDevelopment": "The individual act becomes the established craft or process.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy defines الخِياطة as the profession of the tailor.",
+          "confidence": "high",
+          "pedagogicalValue": "Distinguishes the craft from the instrument الخِياطِ.",
+          "accepted": true
+        },
+        {
+          "form": "خَيَّاطٌ",
+          "root": "خيط",
+          "morphology": "Form-I occupational noun",
+          "meaning": "tailor / one who sews",
+          "relationship": "Occupational noun related to sewing.",
+          "semanticDevelopment": "The action develops into the person who performs it.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy lists الخيّاط among the خيط family and defines the tailor branch.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a highly recognisable agent/occupation relationship.",
+          "accepted": true
+        },
+        {
+          "form": "مَخِيطٌ",
+          "root": "خيط",
+          "morphology": "passive participle/result noun",
+          "meaning": "sewn / stitched",
+          "relationship": "Result form from the act of sewing.",
+          "semanticDevelopment": "The family moves from tool and action to the thing that has been sewn.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy lists المَخِيطُ among the established خيط derivatives.",
+          "confidence": "medium",
+          "pedagogicalValue": "Provides a useful result/passive contrast without repeating the needle noun.",
+          "accepted": true
+        }
+      ],
+      "rejectedCandidates": [
+        "مِخْيَطٌ was investigated and is genuine for needle, but it substantially repeats the current instrument meaning الخِياطِ; مَخِيطٌ gives better morphological diversity.",
+        "خَيْطٌ itself is the material noun ‘thread’ and was considered, but the selected set more directly explains the Qur’anic needle/craft branch.",
+        "The long vowel in الخِياطِ is lexical patterning, not evidence for a different root."
+      ],
+      "finalRows": [
+        {
+          "occurrenceId": "word:7:40:20",
+          "location": "7:40:20",
+          "arabic": "ٱلْخِيَاطِ",
+          "forms": [
+            {
+              "form": "ٱلْخِيَاطِ",
+              "meaning": "(of) the needle",
+              "difference": "Current Qur’anic occurrence at 7:40:20; Current Qur'anic occurrence; gender: masculine; case: genitive.",
+              "relationship": "Current occurrence of the خيط hollow/special family; comparison rows show real same-root morphology and honest semantic development.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; the occurrence, canonical root, weak middle radical, hollow behavior and aligned morphology were inspected against approved lexical evidence."
+            },
+            {
+              "form": "خَاطَ",
+              "meaning": "he sewed / stitched",
+              "difference": "Form-I hollow perfect verb. The needle noun is linked to the action performed with thread and needle. Compared with the Qur’anic occurrence at 7:40:20. Provides the direct lexical base of the current instrument noun.",
+              "relationship": "Basic verb underlying the sewing and instrument family. Same-root relationship to خيط; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy defines خاطَ as sewed and joined parts with thread."
+            },
+            {
+              "form": "خِيَاطَةٌ",
+              "meaning": "sewing / tailoring",
+              "difference": "verbal noun. The individual act becomes the established craft or process. Compared with the Qur’anic occurrence at 7:40:20. Distinguishes the craft from the instrument الخِياطِ.",
+              "relationship": "Maṣdar/craft noun from خاطَ. Same-root relationship to خيط; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy defines الخِياطة as the profession of the tailor."
+            },
+            {
+              "form": "خَيَّاطٌ",
+              "meaning": "tailor / one who sews",
+              "difference": "Form-I occupational noun. The action develops into the person who performs it. Compared with the Qur’anic occurrence at 7:40:20. Adds a highly recognisable agent/occupation relationship.",
+              "relationship": "Occupational noun related to sewing. Same-root relationship to خيط; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy lists الخيّاط among the خيط family and defines the tailor branch."
+            },
+            {
+              "form": "مَخِيطٌ",
+              "meaning": "sewn / stitched",
+              "difference": "passive participle/result noun. The family moves from tool and action to the thing that has been sewn. Compared with the Qur’anic occurrence at 7:40:20. Provides a useful result/passive contrast without repeating the needle noun.",
+              "relationship": "Result form from the act of sewing. Same-root relationship to خيط; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy lists المَخِيطُ among the established خيط derivatives."
+            }
+          ],
+          "sarfReview": {
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
+            "familyScope": "C3-C4C",
+            "provenance": [
+              "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z: FULL.",
+              "Canonical root: خيط; weak middle radical: ي; hollow subtype: Hollow root ي with a craft/occupational noun; distinguish خِيَاط from خَيَاطَة and related forms..",
+              "Every occurrence inspected: 7:40:20.",
+              "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy attests خاطَ, خَيِطَ, خَيَّطَ, اخْتاطَ, تَخَيَّطَ, الخِياطُ, الخِياطةُ, الخَيْطُ, الخَيّاطُ, المَخِيطُ and المِخْيَطُ.",
+              "The second radical is ي. The Qur’anic الخِياطِ is the needle/instrument noun; the family also contains sewing verbs, the craft noun and the tailor noun.",
+              "Accepted خَاطَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy defines خاطَ as sewed and joined parts with thread.",
+              "Accepted خِيَاطَةٌ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy defines الخِياطة as the profession of the tailor.",
+              "Accepted خَيَّاطٌ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy lists الخيّاط among the خيط family and defines the tailor branch.",
+              "Accepted مَخِيطٌ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy lists المَخِيطُ among the established خيط derivatives.",
+              "مِخْيَطٌ was investigated and is genuine for needle, but it substantially repeats the current instrument meaning الخِياطِ; مَخِيطٌ gives better morphological diversity.",
+              "خَيْطٌ itself is the material noun ‘thread’ and was considered, but the selected set more directly explains the Qur’anic needle/craft branch.",
+              "The long vowel in الخِياطِ is lexical patterning, not evidence for a different root."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-24T18:59:04.083Z"
+          }
+        }
+      ],
+      "decision": "FULL",
+      "reasoning": "The current form plus four independently attested same-root forms provide useful lexical and morphological development without shell, case, pronoun or contraction padding. The second radical is ي. The Qur’anic الخِياطِ is the needle/instrument noun; the family also contains sewing verbs, the craft noun and the tailor noun.",
+      "evidence": [
+        "Committed C3-C4C queue inspected: 7:40:20.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy attests خاطَ, خَيِطَ, خَيَّطَ, اخْتاطَ, تَخَيَّطَ, الخِياطُ, الخِياطةُ, الخَيْطُ, الخَيّاطُ, المَخِيطُ and المِخْيَطُ.",
+        "The second radical is ي. The Qur’anic الخِياطِ is the needle/instrument noun; the family also contains sewing verbs, the craft noun and the tailor noun.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy defines خاطَ as sewed and joined parts with thread.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy defines الخِياطة as the profession of the tailor.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy lists الخيّاط among the خيط family and defines the tailor branch.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%AE%D9%8A%D8%B7. The Academy lists المَخِيطُ among the established خيط derivatives."
+      ],
+      "confidence": "high",
+      "unresolvedQuestion": null,
+      "evidenceRequired": [],
+      "humanExpertReviewRequired": false,
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-24T18:59:04.083Z",
+      "recordId": "tier-c3c4c-family-3c2988615d477159"
+    },
+    {
+      "familyKey": "lexical|زود|زاد|noun/pronoun",
+      "root": "زود",
+      "canonicalRoot": "زود",
+      "weakRadical": "و",
+      "weakRadicalPosition": "second",
+      "hollowSubtype": "Hollow root و with a developed provision/increase branch; exact lexical relationships need review.",
+      "lemmaOrCurrentForm": "زَّادِ",
+      "quranicWord": "ٱلزَّادِ",
+      "locations": [
+        "2:197:25"
+      ],
+      "occurrenceCount": 1,
+      "partOfSpeech": [
+        "noun/pronoun"
+      ],
+      "quranicMeaning": "provision",
+      "morphology": {
+        "arabic": "ٱلزَّادِ",
+        "meaning": "provision",
+        "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive."
+      },
+      "rootConfidence": "HIGH",
+      "lemmaConfidence": "HIGH",
+      "currentRows": [
+        {
+          "occurrenceId": "word:2:197:25",
+          "location": "2:197:25",
+          "arabic": "ٱلزَّادِ",
+          "forms": [
+            {
+              "form": "ٱلزَّادِ",
+              "meaning": "provision",
+              "difference": "Current Qur'anic occurrence; gender: masculine; case: genitive.",
+              "relationship": "Current Qur'anic occurrence of the زود lexical family in this āyah.",
+              "provenance": "Codex review of canonical Qur'anic occurrence word:2:197:25. Aligned Quranic Arabic Corpus morphology 0.4-derived (2:197:25) was checked as evidence."
+            }
+          ],
+          "sarfReview": {
+            "status": "limited",
+            "limitedReason": "ٱلزَّادِ is a rootful noun with root ز و د. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+            "auditDecision": "blocked-for-genuine-ambiguity",
+            "provenance": [
+              "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:2:197:25.",
+              "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
+              "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-18T14:42:38.844Z"
+          }
+        }
+      ],
+      "candidatesConsidered": [
+        {
+          "form": "زَادَ",
+          "root": "زود",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he prepared provisions",
+          "relationship": "Basic verb underlying the provision noun.",
+          "semanticDevelopment": "The noun provision is connected to the act of preparing travel food or supplies.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines زادَ as prepared provisions.",
+          "confidence": "high",
+          "pedagogicalValue": "Makes the source of الزاد recognisable.",
+          "accepted": true
+        },
+        {
+          "form": "أَزَادَ",
+          "root": "زود",
+          "morphology": "Form-IV derived verb",
+          "meaning": "he gave provisions",
+          "relationship": "Causative/giving branch of the same root.",
+          "semanticDevelopment": "Preparation of provisions develops into supplying them to another person.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines أَزادَه as gave him provisions.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows a clear participant change.",
+          "accepted": true
+        },
+        {
+          "form": "زَوَّدَ",
+          "root": "زود",
+          "morphology": "Form-II derived verb",
+          "meaning": "he supplied / provisioned",
+          "relationship": "Intensive/causative supply verb.",
+          "semanticDevelopment": "The provision noun becomes an active act of supplying someone with what is needed.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines زوَّدَه as supplied or provided him with something.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a distinct derived pattern.",
+          "accepted": true
+        },
+        {
+          "form": "تَزَوَّدَ",
+          "root": "زود",
+          "morphology": "Form-V derived verb",
+          "meaning": "he took provisions / provisioned himself",
+          "relationship": "Self-directed derived form from the provision noun.",
+          "semanticDevelopment": "The root develops from supplying provisions to taking them for oneself.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines تزوَّدَ as took provisions.",
+          "confidence": "high",
+          "pedagogicalValue": "Completes a useful giver/receiver contrast.",
+          "accepted": true
+        }
+      ],
+      "acceptedCandidates": [
+        {
+          "form": "زَادَ",
+          "root": "زود",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "he prepared provisions",
+          "relationship": "Basic verb underlying the provision noun.",
+          "semanticDevelopment": "The noun provision is connected to the act of preparing travel food or supplies.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines زادَ as prepared provisions.",
+          "confidence": "high",
+          "pedagogicalValue": "Makes the source of الزاد recognisable.",
+          "accepted": true
+        },
+        {
+          "form": "أَزَادَ",
+          "root": "زود",
+          "morphology": "Form-IV derived verb",
+          "meaning": "he gave provisions",
+          "relationship": "Causative/giving branch of the same root.",
+          "semanticDevelopment": "Preparation of provisions develops into supplying them to another person.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines أَزادَه as gave him provisions.",
+          "confidence": "high",
+          "pedagogicalValue": "Shows a clear participant change.",
+          "accepted": true
+        },
+        {
+          "form": "زَوَّدَ",
+          "root": "زود",
+          "morphology": "Form-II derived verb",
+          "meaning": "he supplied / provisioned",
+          "relationship": "Intensive/causative supply verb.",
+          "semanticDevelopment": "The provision noun becomes an active act of supplying someone with what is needed.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines زوَّدَه as supplied or provided him with something.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a distinct derived pattern.",
+          "accepted": true
+        },
+        {
+          "form": "تَزَوَّدَ",
+          "root": "زود",
+          "morphology": "Form-V derived verb",
+          "meaning": "he took provisions / provisioned himself",
+          "relationship": "Self-directed derived form from the provision noun.",
+          "semanticDevelopment": "The root develops from supplying provisions to taking them for oneself.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines تزوَّدَ as took provisions.",
+          "confidence": "high",
+          "pedagogicalValue": "Completes a useful giver/receiver contrast.",
+          "accepted": true
+        }
+      ],
+      "rejectedCandidates": [
+        "المِزْوَدُ was considered as a place/container noun, but the selected verb-pattern progression teaches more about the Qur’anic provision word.",
+        "The article and genitive ending in ٱلزَّادِ were not counted."
+      ],
+      "finalRows": [
+        {
+          "occurrenceId": "word:2:197:25",
+          "location": "2:197:25",
+          "arabic": "ٱلزَّادِ",
+          "forms": [
+            {
+              "form": "ٱلزَّادِ",
+              "meaning": "provision",
+              "difference": "Current Qur’anic occurrence at 2:197:25; Current Qur'anic occurrence; gender: masculine; case: genitive.",
+              "relationship": "Current occurrence of the زود hollow/special family; comparison rows show real same-root morphology and honest semantic development.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; the occurrence, canonical root, weak middle radical, hollow behavior and aligned morphology were inspected against approved lexical evidence."
+            },
+            {
+              "form": "زَادَ",
+              "meaning": "he prepared provisions",
+              "difference": "Form-I hollow perfect verb. The noun provision is connected to the act of preparing travel food or supplies. Compared with the Qur’anic occurrence at 2:197:25. Makes the source of الزاد recognisable.",
+              "relationship": "Basic verb underlying the provision noun. Same-root relationship to زود; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines زادَ as prepared provisions."
+            },
+            {
+              "form": "أَزَادَ",
+              "meaning": "he gave provisions",
+              "difference": "Form-IV derived verb. Preparation of provisions develops into supplying them to another person. Compared with the Qur’anic occurrence at 2:197:25. Shows a clear participant change.",
+              "relationship": "Causative/giving branch of the same root. Same-root relationship to زود; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines أَزادَه as gave him provisions."
+            },
+            {
+              "form": "زَوَّدَ",
+              "meaning": "he supplied / provisioned",
+              "difference": "Form-II derived verb. The provision noun becomes an active act of supplying someone with what is needed. Compared with the Qur’anic occurrence at 2:197:25. Adds a distinct derived pattern.",
+              "relationship": "Intensive/causative supply verb. Same-root relationship to زود; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines زوَّدَه as supplied or provided him with something."
+            },
+            {
+              "form": "تَزَوَّدَ",
+              "meaning": "he took provisions / provisioned himself",
+              "difference": "Form-V derived verb. The root develops from supplying provisions to taking them for oneself. Compared with the Qur’anic occurrence at 2:197:25. Completes a useful giver/receiver contrast.",
+              "relationship": "Self-directed derived form from the provision noun. Same-root relationship to زود; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines تزوَّدَ as took provisions."
+            }
+          ],
+          "sarfReview": {
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
+            "familyScope": "C3-C4C",
+            "provenance": [
+              "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z: FULL.",
+              "Canonical root: زود; weak middle radical: و; hollow subtype: Hollow root و with a developed provision/increase branch; exact lexical relationships need review..",
+              "Every occurrence inspected: 2:197:25.",
+              "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy attests زادَ, أَزادَ, زوَّدَ, تَزَوَّدَ, الزّادُ and المِزْوَدُ.",
+              "The second radical is و. The Qur’anic الزَّادِ is the provision noun; the root has basic preparation, giving, supplying and taking-provision branches.",
+              "Accepted زَادَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines زادَ as prepared provisions.",
+              "Accepted أَزَادَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines أَزادَه as gave him provisions.",
+              "Accepted زَوَّدَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines زوَّدَه as supplied or provided him with something.",
+              "Accepted تَزَوَّدَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines تزوَّدَ as took provisions.",
+              "المِزْوَدُ was considered as a place/container noun, but the selected verb-pattern progression teaches more about the Qur’anic provision word.",
+              "The article and genitive ending in ٱلزَّادِ were not counted."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-24T18:59:04.083Z"
+          }
+        }
+      ],
+      "decision": "FULL",
+      "reasoning": "The current form plus four independently attested same-root forms provide useful lexical and morphological development without shell, case, pronoun or contraction padding. The second radical is و. The Qur’anic الزَّادِ is the provision noun; the root has basic preparation, giving, supplying and taking-provision branches.",
+      "evidence": [
+        "Committed C3-C4C queue inspected: 2:197:25.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy attests زادَ, أَزادَ, زوَّدَ, تَزَوَّدَ, الزّادُ and المِزْوَدُ.",
+        "The second radical is و. The Qur’anic الزَّادِ is the provision noun; the root has basic preparation, giving, supplying and taking-provision branches.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines زادَ as prepared provisions.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines أَزادَه as gave him provisions.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines زوَّدَه as supplied or provided him with something.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%B2%D9%88%D8%AF. The Academy defines تزوَّدَ as took provisions."
+      ],
+      "confidence": "high",
+      "unresolvedQuestion": null,
+      "evidenceRequired": [],
+      "humanExpertReviewRequired": false,
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-24T18:59:04.083Z",
+      "recordId": "tier-c3c4c-family-17b5d1aeb9dedd56"
+    },
+    {
+      "familyKey": "lexical|هور|هار|noun/pronoun",
+      "root": "هور",
+      "canonicalRoot": "هور",
+      "weakRadical": "و",
+      "weakRadicalPosition": "second",
+      "hollowSubtype": "Hollow root و in a collapsing/eroding adjective; distinguish the Qur’anic branch from other هور forms.",
+      "lemmaOrCurrentForm": "هار",
+      "quranicWord": "هَارٍ",
+      "locations": [
+        "9:109:17"
+      ],
+      "occurrenceCount": 1,
+      "partOfSpeech": [
+        "noun/pronoun"
+      ],
+      "quranicMeaning": "(about to) collapse",
+      "morphology": {
+        "arabic": "هَارٍ",
+        "meaning": "(about to) collapse",
+        "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive."
+      },
+      "rootConfidence": "HIGH",
+      "lemmaConfidence": "HIGH",
+      "currentRows": [
+        {
+          "occurrenceId": "word:9:109:17",
+          "location": "9:109:17",
+          "arabic": "هَارٍ",
+          "forms": [
+            {
+              "form": "هَارٍ",
+              "meaning": "(about to) collapse",
+              "difference": "Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive.",
+              "relationship": "Current Qur'anic occurrence of the هور lexical family in this āyah.",
+              "provenance": "Codex review of canonical Qur'anic occurrence word:9:109:17. Aligned Quranic Arabic Corpus morphology 0.4-derived (9:109:17) was checked as evidence."
+            }
+          ],
+          "sarfReview": {
+            "status": "limited",
+            "limitedReason": "هَارٍ is a rootful noun with root ه و ر. The audit found 1 safe related form, but did not establish four additional high-value contrasts from canonical evidence, approved project meanings and aligned morphology without an unverified claim. The family is blocked for genuine linguistic ambiguity rather than accepted as limited; further lexicon-led authoring is required.",
+            "auditDecision": "blocked-for-genuine-ambiguity",
+            "provenance": [
+              "Limited-family audit limited-sarf-audit-3659db87cd6c13dd reviewed word:9:109:17.",
+              "Rootful noun family checked against canonical Qur'anic forms, project root meanings, existing reviewed families and aligned provider morphology.",
+              "No unverified form was added merely to reach five rows; further lexicon-led authoring is required."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-18T14:42:38.844Z"
+          }
+        }
+      ],
+      "candidatesConsidered": [
+        {
+          "form": "هَارَ",
+          "root": "هور",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "it collapsed / broke down",
+          "relationship": "Basic verb underlying the collapsing adjective.",
+          "semanticDevelopment": "The adjective describes a structure in the state resulting from the collapse expressed by the verb.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines هارَ البناء as the building collapsed or cracked.",
+          "confidence": "high",
+          "pedagogicalValue": "Connects the Qur’anic descriptive form to the basic event.",
+          "accepted": true
+        },
+        {
+          "form": "هَوْرٌ",
+          "root": "هور",
+          "morphology": "Form-I maṣdar",
+          "meaning": "collapse / crumbling",
+          "relationship": "Maṣdar of the collapse branch.",
+          "semanticDevelopment": "The event is separated from the adjective describing its result or tendency.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy gives هَوْرًا as the maṣdar of collapse.",
+          "confidence": "high",
+          "pedagogicalValue": "Gives a clear noun/verb/adjective relationship.",
+          "accepted": true
+        },
+        {
+          "form": "هَوَّرَ",
+          "root": "هور",
+          "morphology": "Form-II derived verb",
+          "meaning": "he caused to collapse / knocked down",
+          "relationship": "Causative/intensive Form-II branch.",
+          "semanticDevelopment": "The intransitive collapse becomes an action imposed on a structure or person.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines هوَّرَ البناء as caused the building to collapse.",
+          "confidence": "high",
+          "pedagogicalValue": "Teaches the causative distinction honestly.",
+          "accepted": true
+        },
+        {
+          "form": "اِنْهَارَ",
+          "root": "هور",
+          "morphology": "Form-VII derived verb",
+          "meaning": "it collapsed / gave way",
+          "relationship": "Derived intransitive collapse form.",
+          "semanticDevelopment": "The root develops a clear inchoative/resultative pattern for collapse.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines انهارَ البناء as the building collapsed.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a distinct derived pattern rather than gender or case padding.",
+          "accepted": true
+        }
+      ],
+      "acceptedCandidates": [
+        {
+          "form": "هَارَ",
+          "root": "هور",
+          "morphology": "Form-I hollow perfect verb",
+          "meaning": "it collapsed / broke down",
+          "relationship": "Basic verb underlying the collapsing adjective.",
+          "semanticDevelopment": "The adjective describes a structure in the state resulting from the collapse expressed by the verb.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines هارَ البناء as the building collapsed or cracked.",
+          "confidence": "high",
+          "pedagogicalValue": "Connects the Qur’anic descriptive form to the basic event.",
+          "accepted": true
+        },
+        {
+          "form": "هَوْرٌ",
+          "root": "هور",
+          "morphology": "Form-I maṣdar",
+          "meaning": "collapse / crumbling",
+          "relationship": "Maṣdar of the collapse branch.",
+          "semanticDevelopment": "The event is separated from the adjective describing its result or tendency.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy gives هَوْرًا as the maṣdar of collapse.",
+          "confidence": "high",
+          "pedagogicalValue": "Gives a clear noun/verb/adjective relationship.",
+          "accepted": true
+        },
+        {
+          "form": "هَوَّرَ",
+          "root": "هور",
+          "morphology": "Form-II derived verb",
+          "meaning": "he caused to collapse / knocked down",
+          "relationship": "Causative/intensive Form-II branch.",
+          "semanticDevelopment": "The intransitive collapse becomes an action imposed on a structure or person.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines هوَّرَ البناء as caused the building to collapse.",
+          "confidence": "high",
+          "pedagogicalValue": "Teaches the causative distinction honestly.",
+          "accepted": true
+        },
+        {
+          "form": "اِنْهَارَ",
+          "root": "هور",
+          "morphology": "Form-VII derived verb",
+          "meaning": "it collapsed / gave way",
+          "relationship": "Derived intransitive collapse form.",
+          "semanticDevelopment": "The root develops a clear inchoative/resultative pattern for collapse.",
+          "evidence": "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines انهارَ البناء as the building collapsed.",
+          "confidence": "high",
+          "pedagogicalValue": "Adds a distinct derived pattern rather than gender or case padding.",
+          "accepted": true
+        }
+      ],
+      "rejectedCandidates": [
+        "هَائِرٌ and الهَارُ were considered as genuine adjective/agent branches, but the selected maṣdar and derived verbs provide more useful morphology around the Qur’anic form.",
+        "The Qur’anic tanwīn and genitive ending in هَارٍ were not counted separately."
+      ],
+      "finalRows": [
+        {
+          "occurrenceId": "word:9:109:17",
+          "location": "9:109:17",
+          "arabic": "هَارٍ",
+          "forms": [
+            {
+              "form": "هَارٍ",
+              "meaning": "(about to) collapse",
+              "difference": "Current Qur’anic occurrence at 9:109:17; Current Qur'anic occurrence; gender: masculine; state: indefinite; case: genitive.",
+              "relationship": "Current occurrence of the هور hollow/special family; comparison rows show real same-root morphology and honest semantic development.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; the occurrence, canonical root, weak middle radical, hollow behavior and aligned morphology were inspected against approved lexical evidence."
+            },
+            {
+              "form": "هَارَ",
+              "meaning": "it collapsed / broke down",
+              "difference": "Form-I hollow perfect verb. The adjective describes a structure in the state resulting from the collapse expressed by the verb. Compared with the Qur’anic occurrence at 9:109:17. Connects the Qur’anic descriptive form to the basic event.",
+              "relationship": "Basic verb underlying the collapsing adjective. Same-root relationship to هور; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines هارَ البناء as the building collapsed or cracked."
+            },
+            {
+              "form": "هَوْرٌ",
+              "meaning": "collapse / crumbling",
+              "difference": "Form-I maṣdar. The event is separated from the adjective describing its result or tendency. Compared with the Qur’anic occurrence at 9:109:17. Gives a clear noun/verb/adjective relationship.",
+              "relationship": "Maṣdar of the collapse branch. Same-root relationship to هور; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy gives هَوْرًا as the maṣdar of collapse."
+            },
+            {
+              "form": "هَوَّرَ",
+              "meaning": "he caused to collapse / knocked down",
+              "difference": "Form-II derived verb. The intransitive collapse becomes an action imposed on a structure or person. Compared with the Qur’anic occurrence at 9:109:17. Teaches the causative distinction honestly.",
+              "relationship": "Causative/intensive Form-II branch. Same-root relationship to هور; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines هوَّرَ البناء as caused the building to collapse."
+            },
+            {
+              "form": "اِنْهَارَ",
+              "meaning": "it collapsed / gave way",
+              "difference": "Form-VII derived verb. The root develops a clear inchoative/resultative pattern for collapse. Compared with the Qur’anic occurrence at 9:109:17. Adds a distinct derived pattern rather than gender or case padding.",
+              "relationship": "Derived intransitive collapse form. Same-root relationship to هور; this is not shell, case, pronoun or hollow-contraction variation.",
+              "provenance": "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z; Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines انهارَ البناء as the building collapsed."
+            }
+          ],
+          "sarfReview": {
+            "status": "full",
+            "auditDecision": "upgraded-to-full",
+            "familyScope": "C3-C4C",
+            "provenance": [
+              "Tier-C3-C4C W2 hollow/special adjudication 2026-10-24T18:59:04.083Z: FULL.",
+              "Canonical root: هور; weak middle radical: و; hollow subtype: Hollow root و in a collapsing/eroding adjective; distinguish the Qur’anic branch from other هور forms..",
+              "Every occurrence inspected: 9:109:17.",
+              "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy attests هارَ, هَوْرًا/هُؤُورًا, هَوَّرَ, اهْتَوَرَ, انْهارَ, الهائِرُ and الهارُ.",
+              "The second radical is و. The Qur’anic هَارٍ is a lexical adjective describing something collapsing or eroding; it is not merely a surface contraction of an ordinary verb form.",
+              "Accepted هَارَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines هارَ البناء as the building collapsed or cracked.",
+              "Accepted هَوْرٌ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy gives هَوْرًا as the maṣdar of collapse.",
+              "Accepted هَوَّرَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines هوَّرَ البناء as caused the building to collapse.",
+              "Accepted اِنْهَارَ: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines انهارَ البناء as the building collapsed.",
+              "هَائِرٌ and الهَارُ were considered as genuine adjective/agent branches, but the selected maṣdar and derived verbs provide more useful morphology around the Qur’anic form.",
+              "The Qur’anic tanwīn and genitive ending in هَارٍ were not counted separately."
+            ],
+            "reviewedBy": "Codex",
+            "reviewedAt": "2026-10-24T18:59:04.083Z"
+          }
+        }
+      ],
+      "decision": "FULL",
+      "reasoning": "The current form plus four independently attested same-root forms provide useful lexical and morphological development without shell, case, pronoun or contraction padding. The second radical is و. The Qur’anic هَارٍ is a lexical adjective describing something collapsing or eroding; it is not merely a surface contraction of an ordinary verb form.",
+      "evidence": [
+        "Committed C3-C4C queue inspected: 9:109:17.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy attests هارَ, هَوْرًا/هُؤُورًا, هَوَّرَ, اهْتَوَرَ, انْهارَ, الهائِرُ and الهارُ.",
+        "The second radical is و. The Qur’anic هَارٍ is a lexical adjective describing something collapsing or eroding; it is not merely a surface contraction of an ordinary verb form.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines هارَ البناء as the building collapsed or cracked.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy gives هَوْرًا as the maṣdar of collapse.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines هوَّرَ البناء as caused the building to collapse.",
+        "Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%87%D9%88%D8%B1. The Academy defines انهارَ البناء as the building collapsed."
+      ],
+      "confidence": "high",
+      "unresolvedQuestion": null,
+      "evidenceRequired": [],
+      "humanExpertReviewRequired": false,
+      "productionStatus": "full",
+      "reviewedAt": "2026-10-24T18:59:04.083Z",
+      "recordId": "tier-c3c4c-family-04b5780e5f6ab34b"
+    }
+  ]
+}

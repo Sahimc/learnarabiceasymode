@@ -411,3 +411,19 @@ Exactly 15 W2 weak-middle/hollow families / 15 occurrences were adjudicated. C3-
 | lexical|ضير|ضير|noun/pronoun | ضَيْرَ | ضير | 26:50:3 | FULL | 5 |
 | lexical|طود|طود|noun/pronoun | كَٱلطَّوْدِ | طود | 26:63:12 | FULL | 5 |
 | lexical|عوق|معوقين|noun/pronoun | ٱلْمُعَوِّقِينَ | عوق | 33:18:4 | FULL | 5 |
+
+## C3-C4C W2 adjudication
+
+Exactly 9 W2 hollow/special families / 9 occurrences were adjudicated. C3-C4D and later batches remain untouched.
+
+| Family | Word | Root | Location | Decision | Rows |
+|---|---|---|---|---|---:|
+| lexical|لوذ|لواذ|noun/pronoun | لِوَاذًا | لوذ | 24:63:15 | FULL | 5 |
+| lexical|نوش|تناوش|noun/pronoun | ٱلتَّنَاوُشُ | نوش | 34:52:6 | FULL | 5 |
+| lexical|نوص|مناص|noun/pronoun | مَنَاصٍ | نوص | 38:3:10 | FULL | 5 |
+| lexical|زول|زوال|noun/pronoun | زَوَالٍ | زول | 14:44:26 | FULL | 5 |
+| lexical|بور|بوار|noun/pronoun | ٱلْبَوَارِ | بور | 14:28:12 | FULL | 5 |
+| lexical|قوت|مقيت|noun/pronoun | مُّقِيتًا | قوت | 4:85:22 | FULL | 5 |
+| lexical|خيط|خياط|noun/pronoun | ٱلْخِيَاطِ | خيط | 7:40:20 | FULL | 5 |
+| lexical|زود|زاد|noun/pronoun | ٱلزَّادِ | زود | 2:197:25 | FULL | 5 |
+| lexical|هور|هار|noun/pronoun | هَارٍ | هور | 9:109:17 | FULL | 5 |
