@@ -1,7 +1,7 @@
 {
   "reportType": "tier-c3c4-weak-classification-and-batches",
   "contractVersion": "1.3.9",
-  "status": "C3-C4C W2 hollow/special adjudicated; C3-C4D and later batches not started",
+  "status": "C3-C4D W3 weak-initial adjudicated; C3-C4E and later batches not started",
   "source": "tier-c3c4-weak-queue-handoff.json",
   "rule": "No Ṣarf rows, corpus decisions or package content were changed. Each family has exactly one primary category and one execution batch; existing secondary morphology flags are preserved.",
   "scope": {
@@ -2393,6 +2393,22 @@
         "HIGH": 7,
         "MEDIUM": 5,
         "LOW": 0
+      },
+      "status": "complete",
+      "adjudication": {
+        "decisions": {
+          "FULL": 12,
+          "CONFIRMED-LIMITED": 0,
+          "BLOCKED": 0,
+          "MODEL-ISSUE": 0
+        },
+        "occurrencesByDecision": {
+          "FULL": 12,
+          "CONFIRMED-LIMITED": 0,
+          "BLOCKED": 0,
+          "MODEL-ISSUE": 0
+        },
+        "reportPath": "artifacts\\content-review\\tier-c3c4d-weak-initial-adjudications.json"
       }
     },
     {
@@ -7548,7 +7564,7 @@
       "batchRank": 10
     }
   ],
-  "reviewedAt": "2026-10-24T18:59:04.083Z",
+  "reviewedAt": "2026-10-31T17:18:23.295Z",
   "batchResults": {
     "C3-C4A": {
       "contractVersion": "1.3.9",
@@ -7600,6 +7616,23 @@
         "MODEL-ISSUE": 0
       },
       "reportPath": "artifacts\\content-review\\tier-c3c4c-weak-special-adjudications.json"
+    },
+    "C3-C4D": {
+      "contractVersion": "1.3.9",
+      "reviewedAt": "2026-10-31T17:18:23.295Z",
+      "decisions": {
+        "FULL": 12,
+        "CONFIRMED-LIMITED": 0,
+        "BLOCKED": 0,
+        "MODEL-ISSUE": 0
+      },
+      "occurrencesByDecision": {
+        "FULL": 12,
+        "CONFIRMED-LIMITED": 0,
+        "BLOCKED": 0,
+        "MODEL-ISSUE": 0
+      },
+      "reportPath": "artifacts\\content-review\\tier-c3c4d-weak-initial-adjudications.json"
     }
   }
 }

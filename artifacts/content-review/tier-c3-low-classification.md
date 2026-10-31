@@ -427,3 +427,22 @@ Exactly 9 W2 hollow/special families / 9 occurrences were adjudicated. C3-C4D an
 | lexical|خيط|خياط|noun/pronoun | ٱلْخِيَاطِ | خيط | 7:40:20 | FULL | 5 |
 | lexical|زود|زاد|noun/pronoun | ٱلزَّادِ | زود | 2:197:25 | FULL | 5 |
 | lexical|هور|هار|noun/pronoun | هَارٍ | هور | 9:109:17 | FULL | 5 |
+
+## C3-C4D W3 adjudication
+
+Exactly 12 W3 weak-initial families / 12 occurrences were adjudicated. C3-C4E and later batches remain untouched.
+
+| Family | Word | Root | Location | Decision | Rows |
+|---|---|---|---|---|---:|
+| lexical|وبر|اوبار|noun/pronoun | وَأَوْبَارِهَا | وبر | 16:80:20 | FULL | 5 |
+| lexical|وطن|مواطن|noun/pronoun | مَوَاطِنَ | وطن | 9:25:5 | FULL | 5 |
+| lexical|وفد|وفد|noun/pronoun | وَفْدًا | وفد | 19:85:6 | FULL | 5 |
+| lexical|وفر|موفور|noun/pronoun | مَّوْفُورًا | وفر | 17:63:10 | FULL | 5 |
+| lexical|وقذ|موقوذة|noun/pronoun | وَٱلْمَوْقُوذَةُ | وقذ | 5:3:13 | FULL | 5 |
+| lexical|وكد|توكيد|noun/pronoun | تَوْكِيدِهَا | وكد | 16:91:10 | FULL | 5 |
+| lexical|يقظ|ايقاظ|noun/pronoun | أَيْقَاظًا | يقظ | 18:18:2 | FULL | 5 |
+| lexical|ينع|ينع|noun/pronoun | وَيَنْعِهِۦٓ | ينع | 6:99:38 | FULL | 5 |
+| lexical|وصف|وصف|noun/pronoun | وَصْفَهُمْ | وصف | 6:139:19 | FULL | 5 |
+| lexical|وبق|موبق|noun/pronoun | مَّوْبِقًا | وبق | 18:52:13 | FULL | 5 |
+| lexical|يبس|يابس|noun/pronoun | يَابِسٍ | يبس | 6:59:27 | FULL | 5 |
+| lexical|ورق|ورقة|noun/pronoun | وَرَقَةٍ | ورق | 6:59:16 | FULL | 5 |
