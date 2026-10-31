@@ -1,0 +1,1332 @@
+{
+  "generatedAt": "2026-10-31T17:56:45.021Z",
+  "contractVersion": "1.3.9",
+  "sources": {
+    "canonicalArabic": "content-import/sources/tanzil/quran-uthmani.txt",
+    "canonicalArabicVersion": "1.1",
+    "wordOccurrenceInventory": "content-import/surahs/*/surah.json and current runtime database",
+    "morphology": "quranic-arabic-corpus rows in morphology_records, plus other stored providers",
+    "currentDisplay": "word_breakdowns/word_breakdown_parts resolved the same way as app/data/db-lesson-service.ts"
+  },
+  "coverage": {
+    "packageFiles": 114,
+    "uniqueSurahs": 114,
+    "canonicalAyahs": 6236,
+    "packageAyahs": 6236,
+    "canonicalSourceTextTokensAfterContractBoundaries": 77433,
+    "packageWordOccurrences": 77434,
+    "oneToManyTokenSplitOccurrences": 1,
+    "occurrenceRows": 77434,
+    "relevantSegmentedOccurrences": 39672,
+    "notApplicableOccurrences": 37762,
+    "pendingRelevantOccurrences": 39653,
+    "staleDecisions": 0,
+    "classificationCounts": {
+      "CORRECT": 9,
+      "NOT-APPLICABLE": 37762,
+      "WHOLE-WORD-GLOSS-LEAKAGE": 6,
+      "SEMANTIC-OVERLAP-VALID": 1,
+      "GLOSS-DUPLICATION": 1,
+      "NEEDS-REVIEW": 2,
+      "PENDING": 39653
+    },
+    "occurrenceLedgerReconciles": true,
+    "manuallyReviewedSegmentedOccurrences": 19,
+    "manualDecisionRecordsApplied": 19
+  },
+  "canonicalAlignment": {
+    "comparisonNormalization": "For position checks only: NFC/NFD, remove tatweel, short-vowel/tanwin/shadda and Qur'anic stop marks; map dagger alif to alif, alif wasla variants to plain alif, and alif maqsurah to ya. Stored source text is never rewritten.",
+    "standAloneWaqfTokensExcluded": 4379,
+    "basmalahWordsExcludedFromVisibleAyahs": 448,
+    "sourceTextTokenCount": 77433,
+    "packageOccurrenceCount": 77434,
+    "explicitCrosswalk": {
+      "109:1": {
+        "reason": "Tanzil writes يَـٰٓأَيُّهَا as one Uthmani text token; this repository stores separate occurrence IDs for the vocative particle يَا and pronoun form أَيُّهَا. QAC morphology rows also distinguish word positions 2 and 3.",
+        "mapping": [
+          "word:109:1:1 -> source token 1",
+          "word:109:1:2 -> source token 2 (first component)",
+          "word:109:1:3 -> source token 2 (second component)",
+          "word:109:1:4 -> source token 3"
+        ]
+      }
+    },
+    "alignmentErrorCount": 0
+  },
+  "runtimeDatabase": {
+    "wordOccurrenceRows": 77434,
+    "qacMorphologyRowsMatched": 77138,
+    "allMorphologyRows": 77138,
+    "runtimeBreakdownsResolved": 77434,
+    "packageVsRuntimeBreakdownDifferences": 0,
+    "packageVsRuntimeLessonDifferences": 59,
+    "packageVsRuntimeAyahTextDifferences": 0,
+    "packageVsCertifiedTranslationDifferences": 286,
+    "packageChecksumMatches": 107,
+    "packageChecksumMismatches": 7,
+    "packageChecksumMismatchIds": [
+      {
+        "packageId": "surah:5",
+        "surah": 5,
+        "databaseChecksum": "592dd5ac6e3a003d51f5b969fda477610a7cf70270cebbec45dc2ece8fa048c8",
+        "packageChecksum": "fcdb01ee5c997381af11521961b185c7610bb59988083e4201f95ae3a35841af",
+        "databaseContentVersion": "tanzil-1.1+teaching-5-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823",
+        "packageContentVersion": "tanzil-1.1+teaching-5-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174311-c3c4d-correction-20261031174337"
+      },
+      {
+        "packageId": "surah:6",
+        "surah": 6,
+        "databaseChecksum": "21268f39b58609c5bf10879c71951f5cacf16b022cdccded48c79ccfa5196449",
+        "packageChecksum": "92ec44b57f55dd91a50c9b7a9e7133b8a080341c664b09d90dbbb0ce629379fe",
+        "databaseContentVersion": "tanzil-1.1+teaching-6-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4a-20261023164708-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823",
+        "packageContentVersion": "tanzil-1.1+teaching-6-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4a-20261023164708-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174052-c3c4d-correction-20261031174213-c3c4d-correction-20261031174337"
+      },
+      {
+        "packageId": "surah:9",
+        "surah": 9,
+        "databaseChecksum": "09e41e6c4657724c858a0fe9cf9574e3243a70b8433b3c9bba496d9eaae2dc15",
+        "packageChecksum": "a25bd1eea026f78df971b452600b3a06ed2984511cf3e62f82812ba4a8d22660",
+        "databaseContentVersion": "tanzil-1.1+teaching-9-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c4c-20261024185904-c3c4d-20261031171823",
+        "packageContentVersion": "tanzil-1.1+teaching-9-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c4c-20261024185904-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174337"
+      },
+      {
+        "packageId": "surah:16",
+        "surah": 16,
+        "databaseChecksum": "c2a19a733cbd97b413e74a39e77213b7d90a3c873647b312c375f5bad36ec387",
+        "packageChecksum": "b87bb1ce4d38fd5e074889d1fa0295b19656ff4040f5d7b7928bbcf09c930622",
+        "databaseContentVersion": "tanzil-1.1+teaching-16-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823",
+        "packageContentVersion": "tanzil-1.1+teaching-16-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174337"
+      },
+      {
+        "packageId": "surah:17",
+        "surah": 17,
+        "databaseChecksum": "b796510c026e75e4fedd6d70fcc40f951a5379286f3178cf45284f752b4cb29a",
+        "packageChecksum": "d4857e81c4874c1fa07c022168c77023617033ca6fcc7786ed2ee16b77377c8e",
+        "databaseContentVersion": "tanzil-1.1+teaching-17-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4d-20261031171823",
+        "packageContentVersion": "tanzil-1.1+teaching-17-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174337"
+      },
+      {
+        "packageId": "surah:18",
+        "surah": 18,
+        "databaseChecksum": "bcb59b1be902068361edd04d235217a8c2c9e26d6fdbc9455ec335fc19587445",
+        "packageChecksum": "407d88f98d2d8caafc01bad76ba1c6623a8b57011fa3edca2c5fc3e3cf685b0e",
+        "databaseContentVersion": "tanzil-1.1+teaching-18-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4a-20261023164708-c3c4d-20261031171823",
+        "packageContentVersion": "tanzil-1.1+teaching-18-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4a-20261023164708-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174052-c3c4d-correction-20261031174213-c3c4d-correction-20261031174337"
+      },
+      {
+        "packageId": "surah:19",
+        "surah": 19,
+        "databaseChecksum": "e60643f52b048aef2957359772d0a0f57c23087761df47bd95a2b2b86f3381a8",
+        "packageChecksum": "9075826b79850fe8aa98f176190c6f4afbe1792d4022b8e316fa56c8c67f8eb0",
+        "databaseContentVersion": "tanzil-1.1+teaching-19-v1-sarf-1.2-c1-reaudit-c3c4a-20261023164708-c3c4d-20261031171823",
+        "packageContentVersion": "tanzil-1.1+teaching-19-v1-sarf-1.2-c1-reaudit-c3c4a-20261023164708-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174337"
+      }
+    ],
+    "packageOccurrenceDifferences": 0,
+    "packageOnlyOccurrences": 0,
+    "databaseOnlyOccurrences": 0,
+    "packageOccurrenceDifferenceExamples": [],
+    "packageOnlyExamples": [],
+    "databaseOnlyExamples": [],
+    "packageVsRuntimeLessonDifferenceExamples": [
+      {
+        "occurrenceId": "word:5:3:13",
+        "teachingId": "lesson:5:3:13",
+        "fields": [
+          "forms"
+        ]
+      },
+      {
+        "occurrenceId": "word:9:25:5",
+        "teachingId": "lesson:9:25:5",
+        "fields": [
+          "forms"
+        ]
+      },
+      {
+        "occurrenceId": "word:16:80:20",
+        "teachingId": "lesson:16:80:20",
+        "fields": [
+          "forms"
+        ]
+      },
+      {
+        "occurrenceId": "word:16:91:10",
+        "teachingId": "lesson:16:91:10",
+        "fields": [
+          "forms"
+        ]
+      },
+      {
+        "occurrenceId": "word:17:63:10",
+        "teachingId": "lesson:17:63:10",
+        "fields": [
+          "forms"
+        ]
+      },
+      {
+        "occurrenceId": "word:19:85:6",
+        "teachingId": "lesson:19:85:6",
+        "fields": [
+          "forms"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:1:1",
+        "teachingId": "lesson:103:wal-asr",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:2:1",
+        "teachingId": "lesson:103:inna",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:2:2",
+        "teachingId": "lesson:103:insan",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:2:3",
+        "teachingId": "lesson:103:lafi",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:2:4",
+        "teachingId": "lesson:103:khusr",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:3:1",
+        "teachingId": "lesson:103:illa",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:3:2",
+        "teachingId": "lesson:103:alladhina",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:3:3",
+        "teachingId": "lesson:103:amanu",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:3:4",
+        "teachingId": "lesson:103:amilu",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:3:5",
+        "teachingId": "lesson:103:salihat",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:3:6",
+        "teachingId": "lesson:103:tawasaw",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:3:7",
+        "teachingId": "lesson:103:bilhaqq",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:3:8",
+        "teachingId": "lesson:103:tawasaw",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:103:3:9",
+        "teachingId": "lesson:103:bisabr",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:1:1",
+        "teachingId": "lesson:104:wayl",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:1:2",
+        "teachingId": "lesson:104:likulli",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:1:3",
+        "teachingId": "lesson:104:hamazah",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:1:4",
+        "teachingId": "lesson:104:lumazah",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:2:1",
+        "teachingId": "lesson:104:alladhi",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:2:2",
+        "teachingId": "lesson:104:jamaa",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:2:3",
+        "teachingId": "lesson:104:2:3",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:2:4",
+        "teachingId": "lesson:104:addadah",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:3:1",
+        "teachingId": "lesson:104:hasiba",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:3:2",
+        "teachingId": "lesson:104:anna",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:3:3",
+        "teachingId": "lesson:104:3:3",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:3:4",
+        "teachingId": "lesson:104:akhladah",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:4:1",
+        "teachingId": "lesson:104:kalla",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:4:2",
+        "teachingId": "lesson:104:yunbadhanna",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:4:3",
+        "teachingId": "lesson:104:fi",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:4:4",
+        "teachingId": "lesson:104:4:4",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:5:1",
+        "teachingId": "lesson:104:wama",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:5:2",
+        "teachingId": "lesson:104:adraka",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:5:3",
+        "teachingId": "lesson:104:ma-question",
+        "fields": [
+          "components"
+        ]
+      },
+      {
+        "occurrenceId": "word:104:5:4",
+        "teachingId": "lesson:104:5:4",
+        "fields": [
+          "components"
+        ]
+      }
+    ],
+    "packageVsRuntimeAyahTextDifferenceExamples": [],
+    "packageVsCertifiedTranslationDifferenceExamples": [
+      {
+        "occurrenceId": "word:1:1:1",
+        "ayah": "1:1",
+        "databaseCertified": "In the name of Allah, the Entirely Merciful, the Especially Merciful."
+      },
+      {
+        "occurrenceId": "word:1:1:2",
+        "ayah": "1:1",
+        "databaseCertified": "In the name of Allah, the Entirely Merciful, the Especially Merciful."
+      },
+      {
+        "occurrenceId": "word:1:1:3",
+        "ayah": "1:1",
+        "databaseCertified": "In the name of Allah, the Entirely Merciful, the Especially Merciful."
+      },
+      {
+        "occurrenceId": "word:1:1:4",
+        "ayah": "1:1",
+        "databaseCertified": "In the name of Allah, the Entirely Merciful, the Especially Merciful."
+      },
+      {
+        "occurrenceId": "word:1:2:1",
+        "ayah": "1:2",
+        "databaseCertified": "[All] praise is [due] to Allah, Lord of the worlds -"
+      },
+      {
+        "occurrenceId": "word:1:2:2",
+        "ayah": "1:2",
+        "databaseCertified": "[All] praise is [due] to Allah, Lord of the worlds -"
+      },
+      {
+        "occurrenceId": "word:1:2:3",
+        "ayah": "1:2",
+        "databaseCertified": "[All] praise is [due] to Allah, Lord of the worlds -"
+      },
+      {
+        "occurrenceId": "word:1:2:4",
+        "ayah": "1:2",
+        "databaseCertified": "[All] praise is [due] to Allah, Lord of the worlds -"
+      },
+      {
+        "occurrenceId": "word:1:3:1",
+        "ayah": "1:3",
+        "databaseCertified": "The Entirely Merciful, the Especially Merciful,"
+      },
+      {
+        "occurrenceId": "word:1:3:2",
+        "ayah": "1:3",
+        "databaseCertified": "The Entirely Merciful, the Especially Merciful,"
+      },
+      {
+        "occurrenceId": "word:1:4:1",
+        "ayah": "1:4",
+        "databaseCertified": "Sovereign of the Day of Recompense."
+      },
+      {
+        "occurrenceId": "word:1:4:2",
+        "ayah": "1:4",
+        "databaseCertified": "Sovereign of the Day of Recompense."
+      },
+      {
+        "occurrenceId": "word:1:4:3",
+        "ayah": "1:4",
+        "databaseCertified": "Sovereign of the Day of Recompense."
+      },
+      {
+        "occurrenceId": "word:1:5:1",
+        "ayah": "1:5",
+        "databaseCertified": "It is You we worship and You we ask for help."
+      },
+      {
+        "occurrenceId": "word:1:5:2",
+        "ayah": "1:5",
+        "databaseCertified": "It is You we worship and You we ask for help."
+      },
+      {
+        "occurrenceId": "word:1:5:3",
+        "ayah": "1:5",
+        "databaseCertified": "It is You we worship and You we ask for help."
+      },
+      {
+        "occurrenceId": "word:1:5:4",
+        "ayah": "1:5",
+        "databaseCertified": "It is You we worship and You we ask for help."
+      },
+      {
+        "occurrenceId": "word:1:6:1",
+        "ayah": "1:6",
+        "databaseCertified": "Guide us to the straight path -"
+      },
+      {
+        "occurrenceId": "word:1:6:2",
+        "ayah": "1:6",
+        "databaseCertified": "Guide us to the straight path -"
+      },
+      {
+        "occurrenceId": "word:1:6:3",
+        "ayah": "1:6",
+        "databaseCertified": "Guide us to the straight path -"
+      }
+    ]
+  },
+  "perSurah": [
+    {
+      "surah": 1,
+      "ayahs": 7,
+      "occurrences": 29,
+      "segmented": 19,
+      "notApplicable": 10
+    },
+    {
+      "surah": 2,
+      "ayahs": 286,
+      "occurrences": 6117,
+      "segmented": 3229,
+      "notApplicable": 2888
+    },
+    {
+      "surah": 3,
+      "ayahs": 200,
+      "occurrences": 3481,
+      "segmented": 1795,
+      "notApplicable": 1686
+    },
+    {
+      "surah": 4,
+      "ayahs": 176,
+      "occurrences": 3747,
+      "segmented": 1840,
+      "notApplicable": 1907
+    },
+    {
+      "surah": 5,
+      "ayahs": 120,
+      "occurrences": 2804,
+      "segmented": 1461,
+      "notApplicable": 1343
+    },
+    {
+      "surah": 6,
+      "ayahs": 165,
+      "occurrences": 3050,
+      "segmented": 1566,
+      "notApplicable": 1484
+    },
+    {
+      "surah": 7,
+      "ayahs": 206,
+      "occurrences": 3320,
+      "segmented": 1826,
+      "notApplicable": 1494
+    },
+    {
+      "surah": 8,
+      "ayahs": 75,
+      "occurrences": 1234,
+      "segmented": 660,
+      "notApplicable": 574
+    },
+    {
+      "surah": 9,
+      "ayahs": 129,
+      "occurrences": 2498,
+      "segmented": 1280,
+      "notApplicable": 1218
+    },
+    {
+      "surah": 10,
+      "ayahs": 109,
+      "occurrences": 1833,
+      "segmented": 940,
+      "notApplicable": 893
+    },
+    {
+      "surah": 11,
+      "ayahs": 123,
+      "occurrences": 1917,
+      "segmented": 968,
+      "notApplicable": 949
+    },
+    {
+      "surah": 12,
+      "ayahs": 111,
+      "occurrences": 1777,
+      "segmented": 925,
+      "notApplicable": 852
+    },
+    {
+      "surah": 13,
+      "ayahs": 43,
+      "occurrences": 854,
+      "segmented": 432,
+      "notApplicable": 422
+    },
+    {
+      "surah": 14,
+      "ayahs": 52,
+      "occurrences": 830,
+      "segmented": 452,
+      "notApplicable": 378
+    },
+    {
+      "surah": 15,
+      "ayahs": 99,
+      "occurrences": 655,
+      "segmented": 357,
+      "notApplicable": 298
+    },
+    {
+      "surah": 16,
+      "ayahs": 128,
+      "occurrences": 1844,
+      "segmented": 940,
+      "notApplicable": 904
+    },
+    {
+      "surah": 17,
+      "ayahs": 111,
+      "occurrences": 1556,
+      "segmented": 768,
+      "notApplicable": 788
+    },
+    {
+      "surah": 18,
+      "ayahs": 110,
+      "occurrences": 1579,
+      "segmented": 787,
+      "notApplicable": 792
+    },
+    {
+      "surah": 19,
+      "ayahs": 98,
+      "occurrences": 961,
+      "segmented": 449,
+      "notApplicable": 512
+    },
+    {
+      "surah": 20,
+      "ayahs": 135,
+      "occurrences": 1335,
+      "segmented": 696,
+      "notApplicable": 639
+    },
+    {
+      "surah": 21,
+      "ayahs": 112,
+      "occurrences": 1169,
+      "segmented": 620,
+      "notApplicable": 549
+    },
+    {
+      "surah": 22,
+      "ayahs": 78,
+      "occurrences": 1274,
+      "segmented": 617,
+      "notApplicable": 657
+    },
+    {
+      "surah": 23,
+      "ayahs": 118,
+      "occurrences": 1050,
+      "segmented": 544,
+      "notApplicable": 506
+    },
+    {
+      "surah": 24,
+      "ayahs": 64,
+      "occurrences": 1316,
+      "segmented": 626,
+      "notApplicable": 690
+    },
+    {
+      "surah": 25,
+      "ayahs": 77,
+      "occurrences": 893,
+      "segmented": 435,
+      "notApplicable": 458
+    },
+    {
+      "surah": 26,
+      "ayahs": 227,
+      "occurrences": 1318,
+      "segmented": 725,
+      "notApplicable": 593
+    },
+    {
+      "surah": 27,
+      "ayahs": 93,
+      "occurrences": 1151,
+      "segmented": 573,
+      "notApplicable": 578
+    },
+    {
+      "surah": 28,
+      "ayahs": 88,
+      "occurrences": 1430,
+      "segmented": 732,
+      "notApplicable": 698
+    },
+    {
+      "surah": 29,
+      "ayahs": 69,
+      "occurrences": 976,
+      "segmented": 545,
+      "notApplicable": 431
+    },
+    {
+      "surah": 30,
+      "ayahs": 60,
+      "occurrences": 817,
+      "segmented": 410,
+      "notApplicable": 407
+    },
+    {
+      "surah": 31,
+      "ayahs": 34,
+      "occurrences": 546,
+      "segmented": 249,
+      "notApplicable": 297
+    },
+    {
+      "surah": 32,
+      "ayahs": 30,
+      "occurrences": 372,
+      "segmented": 199,
+      "notApplicable": 173
+    },
+    {
+      "surah": 33,
+      "ayahs": 73,
+      "occurrences": 1287,
+      "segmented": 625,
+      "notApplicable": 662
+    },
+    {
+      "surah": 34,
+      "ayahs": 54,
+      "occurrences": 883,
+      "segmented": 432,
+      "notApplicable": 451
+    },
+    {
+      "surah": 35,
+      "ayahs": 45,
+      "occurrences": 775,
+      "segmented": 381,
+      "notApplicable": 394
+    },
+    {
+      "surah": 36,
+      "ayahs": 83,
+      "occurrences": 725,
+      "segmented": 398,
+      "notApplicable": 327
+    },
+    {
+      "surah": 37,
+      "ayahs": 182,
+      "occurrences": 861,
+      "segmented": 475,
+      "notApplicable": 386
+    },
+    {
+      "surah": 38,
+      "ayahs": 88,
+      "occurrences": 733,
+      "segmented": 375,
+      "notApplicable": 358
+    },
+    {
+      "surah": 39,
+      "ayahs": 75,
+      "occurrences": 1172,
+      "segmented": 573,
+      "notApplicable": 599
+    },
+    {
+      "surah": 40,
+      "ayahs": 85,
+      "occurrences": 1219,
+      "segmented": 605,
+      "notApplicable": 614
+    },
+    {
+      "surah": 41,
+      "ayahs": 54,
+      "occurrences": 794,
+      "segmented": 429,
+      "notApplicable": 365
+    },
+    {
+      "surah": 42,
+      "ayahs": 53,
+      "occurrences": 860,
+      "segmented": 432,
+      "notApplicable": 428
+    },
+    {
+      "surah": 43,
+      "ayahs": 89,
+      "occurrences": 830,
+      "segmented": 452,
+      "notApplicable": 378
+    },
+    {
+      "surah": 44,
+      "ayahs": 59,
+      "occurrences": 346,
+      "segmented": 167,
+      "notApplicable": 179
+    },
+    {
+      "surah": 45,
+      "ayahs": 37,
+      "occurrences": 488,
+      "segmented": 256,
+      "notApplicable": 232
+    },
+    {
+      "surah": 46,
+      "ayahs": 35,
+      "occurrences": 643,
+      "segmented": 319,
+      "notApplicable": 324
+    },
+    {
+      "surah": 47,
+      "ayahs": 38,
+      "occurrences": 539,
+      "segmented": 289,
+      "notApplicable": 250
+    },
+    {
+      "surah": 48,
+      "ayahs": 29,
+      "occurrences": 560,
+      "segmented": 279,
+      "notApplicable": 281
+    },
+    {
+      "surah": 49,
+      "ayahs": 18,
+      "occurrences": 347,
+      "segmented": 156,
+      "notApplicable": 191
+    },
+    {
+      "surah": 50,
+      "ayahs": 45,
+      "occurrences": 373,
+      "segmented": 183,
+      "notApplicable": 190
+    },
+    {
+      "surah": 51,
+      "ayahs": 60,
+      "occurrences": 360,
+      "segmented": 192,
+      "notApplicable": 168
+    },
+    {
+      "surah": 52,
+      "ayahs": 49,
+      "occurrences": 312,
+      "segmented": 165,
+      "notApplicable": 147
+    },
+    {
+      "surah": 53,
+      "ayahs": 62,
+      "occurrences": 360,
+      "segmented": 162,
+      "notApplicable": 198
+    },
+    {
+      "surah": 54,
+      "ayahs": 55,
+      "occurrences": 342,
+      "segmented": 180,
+      "notApplicable": 162
+    },
+    {
+      "surah": 55,
+      "ayahs": 78,
+      "occurrences": 351,
+      "segmented": 217,
+      "notApplicable": 134
+    },
+    {
+      "surah": 56,
+      "ayahs": 96,
+      "occurrences": 379,
+      "segmented": 183,
+      "notApplicable": 196
+    },
+    {
+      "surah": 57,
+      "ayahs": 29,
+      "occurrences": 574,
+      "segmented": 313,
+      "notApplicable": 261
+    },
+    {
+      "surah": 58,
+      "ayahs": 22,
+      "occurrences": 472,
+      "segmented": 224,
+      "notApplicable": 248
+    },
+    {
+      "surah": 59,
+      "ayahs": 24,
+      "occurrences": 445,
+      "segmented": 230,
+      "notApplicable": 215
+    },
+    {
+      "surah": 60,
+      "ayahs": 13,
+      "occurrences": 348,
+      "segmented": 197,
+      "notApplicable": 151
+    },
+    {
+      "surah": 61,
+      "ayahs": 14,
+      "occurrences": 221,
+      "segmented": 101,
+      "notApplicable": 120
+    },
+    {
+      "surah": 62,
+      "ayahs": 11,
+      "occurrences": 175,
+      "segmented": 91,
+      "notApplicable": 84
+    },
+    {
+      "surah": 63,
+      "ayahs": 11,
+      "occurrences": 180,
+      "segmented": 94,
+      "notApplicable": 86
+    },
+    {
+      "surah": 64,
+      "ayahs": 18,
+      "occurrences": 241,
+      "segmented": 137,
+      "notApplicable": 104
+    },
+    {
+      "surah": 65,
+      "ayahs": 12,
+      "occurrences": 287,
+      "segmented": 134,
+      "notApplicable": 153
+    },
+    {
+      "surah": 66,
+      "ayahs": 12,
+      "occurrences": 249,
+      "segmented": 123,
+      "notApplicable": 126
+    },
+    {
+      "surah": 67,
+      "ayahs": 30,
+      "occurrences": 333,
+      "segmented": 151,
+      "notApplicable": 182
+    },
+    {
+      "surah": 68,
+      "ayahs": 52,
+      "occurrences": 300,
+      "segmented": 161,
+      "notApplicable": 139
+    },
+    {
+      "surah": 69,
+      "ayahs": 52,
+      "occurrences": 258,
+      "segmented": 139,
+      "notApplicable": 119
+    },
+    {
+      "surah": 70,
+      "ayahs": 44,
+      "occurrences": 217,
+      "segmented": 96,
+      "notApplicable": 121
+    },
+    {
+      "surah": 71,
+      "ayahs": 28,
+      "occurrences": 226,
+      "segmented": 117,
+      "notApplicable": 109
+    },
+    {
+      "surah": 72,
+      "ayahs": 28,
+      "occurrences": 285,
+      "segmented": 131,
+      "notApplicable": 154
+    },
+    {
+      "surah": 73,
+      "ayahs": 20,
+      "occurrences": 199,
+      "segmented": 88,
+      "notApplicable": 111
+    },
+    {
+      "surah": 74,
+      "ayahs": 56,
+      "occurrences": 255,
+      "segmented": 106,
+      "notApplicable": 149
+    },
+    {
+      "surah": 75,
+      "ayahs": 40,
+      "occurrences": 164,
+      "segmented": 87,
+      "notApplicable": 77
+    },
+    {
+      "surah": 76,
+      "ayahs": 31,
+      "occurrences": 243,
+      "segmented": 107,
+      "notApplicable": 136
+    },
+    {
+      "surah": 77,
+      "ayahs": 50,
+      "occurrences": 181,
+      "segmented": 95,
+      "notApplicable": 86
+    },
+    {
+      "surah": 78,
+      "ayahs": 40,
+      "occurrences": 173,
+      "segmented": 76,
+      "notApplicable": 97
+    },
+    {
+      "surah": 79,
+      "ayahs": 46,
+      "occurrences": 179,
+      "segmented": 94,
+      "notApplicable": 85
+    },
+    {
+      "surah": 80,
+      "ayahs": 42,
+      "occurrences": 133,
+      "segmented": 68,
+      "notApplicable": 65
+    },
+    {
+      "surah": 81,
+      "ayahs": 29,
+      "occurrences": 104,
+      "segmented": 52,
+      "notApplicable": 52
+    },
+    {
+      "surah": 82,
+      "ayahs": 19,
+      "occurrences": 80,
+      "segmented": 41,
+      "notApplicable": 39
+    },
+    {
+      "surah": 83,
+      "ayahs": 36,
+      "occurrences": 169,
+      "segmented": 88,
+      "notApplicable": 81
+    },
+    {
+      "surah": 84,
+      "ayahs": 25,
+      "occurrences": 107,
+      "segmented": 53,
+      "notApplicable": 54
+    },
+    {
+      "surah": 85,
+      "ayahs": 22,
+      "occurrences": 109,
+      "segmented": 55,
+      "notApplicable": 54
+    },
+    {
+      "surah": 86,
+      "ayahs": 17,
+      "occurrences": 61,
+      "segmented": 34,
+      "notApplicable": 27
+    },
+    {
+      "surah": 87,
+      "ayahs": 19,
+      "occurrences": 72,
+      "segmented": 35,
+      "notApplicable": 37
+    },
+    {
+      "surah": 88,
+      "ayahs": 26,
+      "occurrences": 92,
+      "segmented": 35,
+      "notApplicable": 57
+    },
+    {
+      "surah": 89,
+      "ayahs": 30,
+      "occurrences": 137,
+      "segmented": 78,
+      "notApplicable": 59
+    },
+    {
+      "surah": 90,
+      "ayahs": 20,
+      "occurrences": 82,
+      "segmented": 33,
+      "notApplicable": 49
+    },
+    {
+      "surah": 91,
+      "ayahs": 15,
+      "occurrences": 54,
+      "segmented": 35,
+      "notApplicable": 19
+    },
+    {
+      "surah": 92,
+      "ayahs": 21,
+      "occurrences": 71,
+      "segmented": 40,
+      "notApplicable": 31
+    },
+    {
+      "surah": 93,
+      "ayahs": 11,
+      "occurrences": 40,
+      "segmented": 28,
+      "notApplicable": 12
+    },
+    {
+      "surah": 94,
+      "ayahs": 8,
+      "occurrences": 27,
+      "segmented": 19,
+      "notApplicable": 8
+    },
+    {
+      "surah": 95,
+      "ayahs": 8,
+      "occurrences": 34,
+      "segmented": 18,
+      "notApplicable": 16
+    },
+    {
+      "surah": 96,
+      "ayahs": 19,
+      "occurrences": 72,
+      "segmented": 30,
+      "notApplicable": 42
+    },
+    {
+      "surah": 97,
+      "ayahs": 5,
+      "occurrences": 30,
+      "segmented": 12,
+      "notApplicable": 18
+    },
+    {
+      "surah": 98,
+      "ayahs": 8,
+      "occurrences": 94,
+      "segmented": 42,
+      "notApplicable": 52
+    },
+    {
+      "surah": 99,
+      "ayahs": 8,
+      "occurrences": 36,
+      "segmented": 21,
+      "notApplicable": 15
+    },
+    {
+      "surah": 100,
+      "ayahs": 11,
+      "occurrences": 40,
+      "segmented": 24,
+      "notApplicable": 16
+    },
+    {
+      "surah": 101,
+      "ayahs": 11,
+      "occurrences": 36,
+      "segmented": 20,
+      "notApplicable": 16
+    },
+    {
+      "surah": 102,
+      "ayahs": 8,
+      "occurrences": 28,
+      "segmented": 15,
+      "notApplicable": 13
+    },
+    {
+      "surah": 103,
+      "ayahs": 3,
+      "occurrences": 14,
+      "segmented": 10,
+      "notApplicable": 4
+    },
+    {
+      "surah": 104,
+      "ayahs": 9,
+      "occurrences": 33,
+      "segmented": 13,
+      "notApplicable": 20
+    },
+    {
+      "surah": 105,
+      "ayahs": 5,
+      "occurrences": 23,
+      "segmented": 12,
+      "notApplicable": 11
+    },
+    {
+      "surah": 106,
+      "ayahs": 4,
+      "occurrences": 17,
+      "segmented": 8,
+      "notApplicable": 9
+    },
+    {
+      "surah": 107,
+      "ayahs": 7,
+      "occurrences": 25,
+      "segmented": 12,
+      "notApplicable": 13
+    },
+    {
+      "surah": 108,
+      "ayahs": 3,
+      "occurrences": 10,
+      "segmented": 7,
+      "notApplicable": 3
+    },
+    {
+      "surah": 109,
+      "ayahs": 6,
+      "occurrences": 27,
+      "segmented": 11,
+      "notApplicable": 16
+    },
+    {
+      "surah": 110,
+      "ayahs": 3,
+      "occurrences": 19,
+      "segmented": 9,
+      "notApplicable": 10
+    },
+    {
+      "surah": 111,
+      "ayahs": 5,
+      "occurrences": 23,
+      "segmented": 10,
+      "notApplicable": 13
+    },
+    {
+      "surah": 112,
+      "ayahs": 4,
+      "occurrences": 15,
+      "segmented": 5,
+      "notApplicable": 10
+    },
+    {
+      "surah": 113,
+      "ayahs": 5,
+      "occurrences": 23,
+      "segmented": 5,
+      "notApplicable": 18
+    },
+    {
+      "surah": 114,
+      "ayahs": 6,
+      "occurrences": 20,
+      "segmented": 12,
+      "notApplicable": 8
+    }
+  ],
+  "artifacts": {
+    "fullMachineReadableLedger": "coverage-ledger.20261031183756-refresh-40060.jsonl.gz",
+    "searchableTable": "coverage-ledger.20261031183756-refresh-40060.csv",
+    "compressedSearchableTable": "coverage-ledger.20261031183756-refresh-40060.csv.gz",
+    "reviewDecisionLog": "review-decisions.jsonl",
+    "canonicalAlignment": "canonical-alignment.json"
+  },
+  "validation": {
+    "occurrenceIdsUnique": true,
+    "rowCountMatchesPackageOccurrenceCount": true,
+    "everyOccurrenceHasAuditClassification": true,
+    "csvDataRowsPlusHeader": true,
+    "compressedTableMatchesPlainCsv": true,
+    "verifiedAt": "2026-10-31T18:41:05.014Z"
+  }
+}
