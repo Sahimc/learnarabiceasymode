@@ -110,7 +110,7 @@ const plans: Record<string, PlanSpec> = {
   "lexical|وفر|موفور|noun/pronoun": spec(W3, "first", ["و"], "Initial و root in a passive participial adjective; inspect the underlying verb and honest semantic development.", "HIGH", "C3-C4D", 4),
   "lexical|وقذ|موقوذة|noun/pronoun": spec(W3, "first", ["و"], "Initial و root in a passive participle; confirm the verb, passive morphology and lexical meaning.", "HIGH", "C3-C4D", 5),
   "lexical|وكد|توكيد|noun/pronoun": spec(W3, "first", ["و"], "Initial و root in a derived verbal noun; a clear Form II/derived family is likely, subject to evidence.", "HIGH", "C3-C4D", 6),
-  "lexical|يقظ|ايقاظ|noun/pronoun": spec(W3, "first", ["ي"], "Initial ي root in a derived verbal noun; verify the underlying verb and vocalisation.", "HIGH", "C3-C4D", 7),
+  "lexical|يقظ|ايقاظ|noun/pronoun": spec(W3, "first", ["ي"], "Initial ي root in the broken plural adjective/noun أَيْقَاظًا; distinguish it from the Form-IV maṣdar إِيقَاظٌ and verify the underlying adjective/verb family.", "HIGH", "C3-C4D", 7),
   "lexical|ينع|ينع|noun/pronoun": spec(W3, "first", ["ي"], "Initial ي root with a maturity/ripening branch; distinguish noun/adjective and verb evidence.", "MEDIUM", "C3-C4D", 8),
   "lexical|ميد|مائدة|noun/pronoun": spec(W6, "uncertain", ["ي"], "The canonical root/lemma analysis of مَائِدَةٌ is potentially disputed; resolve weak/hamzated normalisation before authoring.", "LOW", "C3-C4G", 5),
   "lexical|زول|زوال|noun/pronoun": spec(W2, "second", ["و"], "Hollow root و with a well-attested cessation/removal family; distinguish Form I and causative branches.", "HIGH", "C3-C4C", 4),

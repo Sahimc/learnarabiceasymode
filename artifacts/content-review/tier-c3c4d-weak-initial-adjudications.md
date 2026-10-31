@@ -62,14 +62,14 @@ Decision: **FULL**; root: وبر; weak initial radical: و; word: وَأَوْب
 POS: noun/pronoun; confidence: high
 Weak-initial subtype: Initial و is assimilated/weak; the plural noun requires review of the underlying singular and lexical family.
 
-The current Qur’anic form plus four independently attested, morphologically useful same-root forms are established. Initial و/ي behavior is explained honestly; no shell, case, pronoun or trivial inflectional padding is used. The initial و is retained in the noun and in the imperfect يَوْبَرُ; the Qur’anic أَوْبَارِهَا is the plural noun with conjunction, genitive and possessive shell preserved only in the current row.
+The current Qur’anic form plus four independently attested, morphologically useful same-root forms are established. Initial و/ي behavior is explained honestly; no shell, case, pronoun or trivial inflectional padding is used. The initial و is retained in the noun and in the attested imperfect يَوْبَرُ; this is the exception in this batch where the weak radical remains visible. The Qur’anic أَوْبَارِهَا keeps conjunction, genitive and possessive shell only in the current row.
 
 Accepted candidates:
 
 - وَبَرٌ — wool or fur; lexical noun; Singular lexical base of the Qur’anic plural أَوْبَار.; semantic development: The Qur’anic plural names the material; the singular exposes the lexical base without treating the conjunction or possessive suffix as morphology.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D8%A8%D8%B1. The Academy defines الوَبَر as camel wool and rabbit fur and gives أَوْبَار as its plural.
 - وَبِرَ — became woolly / had much fur; Form-I verb; Basic verb related to the wool/fur noun.; semantic development: The material noun develops into the state of being richly covered with it.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D8%A8%D8%B1. The Academy defines وَبِرَ and gives يَوْبَرُ as its imperfect.
-- يَوْبَرُ — becomes woolly / has much fur; Form-I imperfect verb; Imperfect counterpart of وَبِرَ.; semantic development: The initial و remains visible in this attested imperfect rather than being generated as a shell variant.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D8%A8%D8%B1. The Academy explicitly writes (يَوْبَر) in the وَبِرَ entry.
-- وَبَّرَ — hid traces / made woolly; also pollinated a palm; Form-II derived verb; Established Form-II development of the same root.; semantic development: The semantic field branches from fur to covering, concealment and related lexical actions; the gloss is not flattened to ‘fur’.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D8%A8%D8%B1. The Academy records وَبَّرَ with meanings including making a young ostrich fuzzy, hiding traces and pollinating a palm.
+- يَوْبَرُ — becomes woolly / has much fur; Form-I imperfect verb; Imperfect counterpart of وَبِرَ.; semantic development: The initial و remains visible in this attested imperfect; unlike the assimilated forms in this batch, it is explicitly preserved by the lexical evidence.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D8%A8%D8%B1. The Academy explicitly writes (يَوْبَر) in the وَبِرَ entry.
+- وَبَّرَ — became fuzzy/downy; concealed traces; pollinated a palm; Form-II derived verb; Established Form-II development of the same root.; semantic development: The semantic field branches from fur to covering, concealment and related lexical actions; the gloss is not flattened to ‘fur’.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D8%A8%D8%B1. The Academy records وَبَّرَ with meanings including making a young ostrich fuzzy, hiding traces and pollinating a palm.
 
 Rejected candidates / safeguards:
 
@@ -82,8 +82,8 @@ Final rows:
 1. وَأَوْبَارِهَا — and their fur. Current Qur’anic occurrence at 16:80:20; Current Qur'anic occurrence; number: masculine plural; case: genitive.
 2. وَبَرٌ — wool or fur. lexical noun. The Qur’anic plural names the material; the singular exposes the lexical base without treating the conjunction or possessive suffix as morphology. Compared with the Qur’anic occurrence at 16:80:20. Makes the current plural noun recognisable.
 3. وَبِرَ — became woolly / had much fur. Form-I verb. The material noun develops into the state of being richly covered with it. Compared with the Qur’anic occurrence at 16:80:20. Connects the noun to a real verbal family.
-4. يَوْبَرُ — becomes woolly / has much fur. Form-I imperfect verb. The initial و remains visible in this attested imperfect rather than being generated as a shell variant. Compared with the Qur’anic occurrence at 16:80:20. Shows how the initial weak radical behaves across tense.
-5. وَبَّرَ — hid traces / made woolly; also pollinated a palm. Form-II derived verb. The semantic field branches from fur to covering, concealment and related lexical actions; the gloss is not flattened to ‘fur’. Compared with the Qur’anic occurrence at 16:80:20. Shows a genuine derived pattern and honest semantic development.
+4. يَوْبَرُ — becomes woolly / has much fur. Form-I imperfect verb. The initial و remains visible in this attested imperfect; unlike the assimilated forms in this batch, it is explicitly preserved by the lexical evidence. Compared with the Qur’anic occurrence at 16:80:20. Shows how the initial weak radical behaves across tense.
+5. وَبَّرَ — became fuzzy/downy; concealed traces; pollinated a palm. Form-II derived verb. The semantic field branches from fur to covering, concealment and related lexical actions; the gloss is not flattened to ‘fur’. Compared with the Qur’anic occurrence at 16:80:20. Shows a genuine derived pattern and honest semantic development.
 
 ---
 ## lexical|وطن|مواطن|noun/pronoun
@@ -98,7 +98,7 @@ Accepted candidates:
 
 - مَوْطِنٌ — place of residence; location; place noun; Singular lexical base of مَوَاطِنَ.; semantic development: The Qur’anic plural ‘regions/places’ is linked to the established singular place noun.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D8%B7%D9%86. The Academy defines المَوْطِن as الوطن, a place where a person resides, an assembly and a scene of battle, and gives مَواطِن as its plural.
 - وَطَنَ — resided in / stayed at; Form-I perfect verb; Basic verb underlying the residence noun family.; semantic development: The place noun develops into the act of inhabiting or staying in a place.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D8%B7%D9%86. The Academy defines وَطَنَ بالمكان as أقام به.
-- يَطِنُ — resides / stays; Form-I imperfect verb; Imperfect counterpart of وَطَنَ.; semantic development: The initial و is retained in the attested imperfect; this is a tense contrast, not a fabricated weak-root form.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D8%B7%D9%86. The Academy explicitly gives يَطِنُ in the وَطَنَ entry.
+- يَطِنُ — resides / stays; Form-I imperfect verb; Imperfect counterpart of وَطَنَ.; semantic development: The initial root و drops in the imperfect يَطِنُ, which is characteristic weak-initial/assimilated behavior; the imperfect prefix يـ is not one of the lexical radicals.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D8%B7%D9%86. The Academy explicitly gives يَطِنُ in the وَطَنَ entry.
 - أَوْطَنَ — made a place a homeland / settled in it; Form-IV derived verb; Causative/derived form of the same root.; semantic development: The meaning develops from residing to establishing or adopting a place as a homeland.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D8%B7%D9%86. The Academy defines أَوْطَنَ المكانَ and البلدَ as making it a homeland or taking it as one.
 
 Rejected candidates / safeguards:
@@ -112,7 +112,7 @@ Final rows:
 1. مَوَاطِنَ — regions. Current Qur’anic occurrence at 9:25:5; Current Qur'anic occurrence; number: masculine plural; case: genitive.
 2. مَوْطِنٌ — place of residence; location. place noun. The Qur’anic plural ‘regions/places’ is linked to the established singular place noun. Compared with the Qur’anic occurrence at 9:25:5. Explains the plural’s lexical base.
 3. وَطَنَ — resided in / stayed at. Form-I perfect verb. The place noun develops into the act of inhabiting or staying in a place. Compared with the Qur’anic occurrence at 9:25:5. Connects the Qur’anic noun to a clear root action.
-4. يَطِنُ — resides / stays. Form-I imperfect verb. The initial و is retained in the attested imperfect; this is a tense contrast, not a fabricated weak-root form. Compared with the Qur’anic occurrence at 9:25:5. Shows the initial radical across the verb paradigm.
+4. يَطِنُ — resides / stays. Form-I imperfect verb. The initial root و drops in the imperfect يَطِنُ, which is characteristic weak-initial/assimilated behavior; the imperfect prefix يـ is not one of the lexical radicals. Compared with the Qur’anic occurrence at 9:25:5. Shows the initial radical across the verb paradigm.
 5. أَوْطَنَ — made a place a homeland / settled in it. Form-IV derived verb. The meaning develops from residing to establishing or adopting a place as a homeland. Compared with the Qur’anic occurrence at 9:25:5. Shows a useful derived pattern and semantic development.
 
 ---
@@ -128,7 +128,7 @@ The current Qur’anic form plus four independently attested, morphologically us
 Accepted candidates:
 
 - وَفَدَ — arrived / came as a delegate; Form-I perfect verb; Basic verbal source of the delegation noun.; semantic development: The Qur’anic noun names the group; the verb names their arrival or representation.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%81%D8%AF. The Academy defines وَفَدَ as قَدِمَ and as coming as a messenger.
-- يَفِدُ — arrives / comes as a delegate; Form-I imperfect verb; Imperfect counterpart of وَفَدَ.; semantic development: The initial و remains in the attested imperfect and gives a useful tense contrast.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%81%D8%AF. The Academy explicitly gives يَفِدُ in the وَفَدَ entry.
+- يَفِدُ — arrives / comes as a delegate; Form-I imperfect verb; Imperfect counterpart of وَفَدَ.; semantic development: The initial root و drops in the imperfect يَفِدُ, which is characteristic weak-initial/assimilated behavior; the imperfect prefix يـ is not one of the lexical radicals.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%81%D8%AF. The Academy explicitly gives يَفِدُ in the وَفَدَ entry.
 - وَافِدٌ — one who arrives / a delegate; Form-I active participle; Active participle of the same arrival/representation branch.; semantic development: The group noun becomes the individual participant or representative.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%81%D8%AF. The Academy says فهو وافِدٌ and defines الوافد as one temporarily residing away from home and related arriving forms.
 - أَوْفَدَ — sent / delegated; Form-IV derived verb; Derived causative/commissioning form of the same root.; semantic development: The direction changes from arriving as a delegation to sending a representative.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%81%D8%AF. The Academy defines أَوْفَدَ فلانًا as sent him and says أَوْفَدَ شخصًا يمثله.
 
@@ -142,7 +142,7 @@ Final rows:
 
 1. وَفْدًا — (as) a delegation. Current Qur’anic occurrence at 19:85:6; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: accusative; verb form: Form 1.
 2. وَفَدَ — arrived / came as a delegate. Form-I perfect verb. The Qur’anic noun names the group; the verb names their arrival or representation. Compared with the Qur’anic occurrence at 19:85:6. Makes the noun’s verbal basis clear.
-3. يَفِدُ — arrives / comes as a delegate. Form-I imperfect verb. The initial و remains in the attested imperfect and gives a useful tense contrast. Compared with the Qur’anic occurrence at 19:85:6. Shows the root in present/imperfect use.
+3. يَفِدُ — arrives / comes as a delegate. Form-I imperfect verb. The initial root و drops in the imperfect يَفِدُ, which is characteristic weak-initial/assimilated behavior; the imperfect prefix يـ is not one of the lexical radicals. Compared with the Qur’anic occurrence at 19:85:6. Shows the root in present/imperfect use.
 4. وَافِدٌ — one who arrives / a delegate. Form-I active participle. The group noun becomes the individual participant or representative. Compared with the Qur’anic occurrence at 19:85:6. Provides a person-oriented recognition form.
 5. أَوْفَدَ — sent / delegated. Form-IV derived verb. The direction changes from arriving as a delegation to sending a representative. Compared with the Qur’anic occurrence at 19:85:6. Shows a valuable participant-role contrast.
 
@@ -159,7 +159,7 @@ The current Qur’anic form plus four independently attested, morphologically us
 Accepted candidates:
 
 - وَفَرَ — became abundant / expanded; Form-I perfect verb; Basic verb underlying the abundance family.; semantic development: The Qur’anic result adjective is connected to the state of becoming plentiful.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%81%D8%B1. The Academy defines وَفَرَ الشيء as كثُر واتّسع.
-- يَفِرُ — becomes abundant / expands; Form-I imperfect verb; Imperfect counterpart of وَفَرَ.; semantic development: The initial و is retained in the attested imperfect, giving a real tense contrast.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%81%D8%B1. The Academy explicitly gives يَفِرُ in the وَفَرَ entry.
+- يَفِرُ — becomes abundant / expands; Form-I imperfect verb; Imperfect counterpart of وَفَرَ.; semantic development: The initial root و drops in the imperfect يَفِرُ, which is characteristic weak-initial/assimilated behavior; the imperfect prefix يـ is not one of the lexical radicals.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%81%D8%B1. The Academy explicitly gives يَفِرُ in the وَفَرَ entry.
 - وَفْرٌ — abundance / completeness; lexical noun; Abstract noun of the same abundance branch.; semantic development: The result adjective becomes a stable abstract noun meaning abundance or fullness.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%81%D8%B1. The Academy defines الوَفْر as wealth, fullness and something ample.
 - وَفَّرَ — made plentiful / supplied fully; Form-II derived verb; Derived causative/intensive form of the same root.; semantic development: The meaning develops from being abundant to actively increasing or fully supplying something.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%81%D8%B1. The Academy defines وَفَّرَ الشيءَ as كثّره and gives related complete/safeguard meanings.
 
@@ -173,7 +173,7 @@ Final rows:
 
 1. مَّوْفُورًا — ample. Current Qur’anic occurrence at 17:63:10; Current Qur'anic occurrence; pattern: Form 1; gender: masculine; state: indefinite; case: accusative; verb form: Form 1.
 2. وَفَرَ — became abundant / expanded. Form-I perfect verb. The Qur’anic result adjective is connected to the state of becoming plentiful. Compared with the Qur’anic occurrence at 17:63:10. Makes the passive/result adjective’s lexical base visible.
-3. يَفِرُ — becomes abundant / expands. Form-I imperfect verb. The initial و is retained in the attested imperfect, giving a real tense contrast. Compared with the Qur’anic occurrence at 17:63:10. Shows the initial radical in present/imperfect form.
+3. يَفِرُ — becomes abundant / expands. Form-I imperfect verb. The initial root و drops in the imperfect يَفِرُ, which is characteristic weak-initial/assimilated behavior; the imperfect prefix يـ is not one of the lexical radicals. Compared with the Qur’anic occurrence at 17:63:10. Shows the initial radical in present/imperfect form.
 4. وَفْرٌ — abundance / completeness. lexical noun. The result adjective becomes a stable abstract noun meaning abundance or fullness. Compared with the Qur’anic occurrence at 17:63:10. Adds a clear noun pattern without mere inflection.
 5. وَفَّرَ — made plentiful / supplied fully. Form-II derived verb. The meaning develops from being abundant to actively increasing or fully supplying something. Compared with the Qur’anic occurrence at 17:63:10. Teaches the causative relationship directly.
 
@@ -190,7 +190,7 @@ The current Qur’anic form plus four independently attested, morphologically us
 Accepted candidates:
 
 - وَقَذَ — struck someone fatally / weakened him; Form-I perfect verb; Basic verb underlying the passive Qur’anic noun.; semantic development: The Qur’anic form presents the animal as the one struck; the verb presents the act.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%82%D8%B0. The Academy defines وَقَذَ as striking until the person is weakened or near death, and as knocking down or leaving ill.
-- يَقِذُ — strikes / weakens; Form-I imperfect verb; Imperfect counterpart of وَقَذَ.; semantic development: The initial و remains in the attested imperfect and supplies a genuine tense contrast.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%82%D8%B0. The Academy explicitly gives يَقِذُه in the وَقَذَ entry.
+- يَقِذُ — strikes / weakens; Form-I imperfect verb; Imperfect counterpart of وَقَذَ.; semantic development: The initial root و drops in the imperfect يَقِذُ, which is characteristic weak-initial/assimilated behavior; the imperfect prefix يـ is not one of the lexical radicals.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%82%D8%B0. The Academy explicitly gives يَقِذُه in the وَقَذَ entry.
 - وَقْذٌ — striking / weakening; verbal noun; Maṣdar of وَقَذَ.; semantic development: The action becomes an abstract event noun while retaining the same semantic branch.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%82%D8%B0. The Academy gives وَقْذًا in the وَقَذَ entry.
 - أَوْقَذَ — left someone ill / caused lasting weakness; Form-IV derived verb; Derived form from the same root.; semantic development: The meaning develops from striking to causing or leaving a person in an injured state.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%82%D8%B0. The Academy defines أَوْقَذَ as تركه عليلًا.
 
@@ -204,7 +204,7 @@ Final rows:
 
 1. وَٱلْمَوْقُوذَةُ — and that which is hit fatally. Current Qur’anic occurrence at 5:3:13; Current Qur'anic occurrence; pattern: Form 1; gender: feminine; case: nominative; verb form: Form 1.
 2. وَقَذَ — struck someone fatally / weakened him. Form-I perfect verb. The Qur’anic form presents the animal as the one struck; the verb presents the act. Compared with the Qur’anic occurrence at 5:3:13. Makes the passive relationship explicit.
-3. يَقِذُ — strikes / weakens. Form-I imperfect verb. The initial و remains in the attested imperfect and supplies a genuine tense contrast. Compared with the Qur’anic occurrence at 5:3:13. Shows the root in an active present form.
+3. يَقِذُ — strikes / weakens. Form-I imperfect verb. The initial root و drops in the imperfect يَقِذُ, which is characteristic weak-initial/assimilated behavior; the imperfect prefix يـ is not one of the lexical radicals. Compared with the Qur’anic occurrence at 5:3:13. Shows the root in an active present form.
 4. وَقْذٌ — striking / weakening. verbal noun. The action becomes an abstract event noun while retaining the same semantic branch. Compared with the Qur’anic occurrence at 5:3:13. Provides the learner with the action noun behind the passive form.
 5. أَوْقَذَ — left someone ill / caused lasting weakness. Form-IV derived verb. The meaning develops from striking to causing or leaving a person in an injured state. Compared with the Qur’anic occurrence at 5:3:13. Shows a real derived pattern without inventing a passive form.
 
@@ -221,7 +221,7 @@ The current Qur’anic form plus four independently attested, morphologically us
 Accepted candidates:
 
 - وَكَدَ — fastened / strengthened / pursued; Form-I perfect verb; Basic verb in the firmness and fastening branch.; semantic development: The Qur’anic verbal noun names confirmation; the basic verb shows fastening or making firm.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%83%D8%AF. The Academy defines وَكَدَ for fastening a saddle, strengthening a contract and pursuing an aim.
-- يَكِدُ — fastens / strengthens / pursues; Form-I imperfect verb; Imperfect counterpart of وَكَدَ.; semantic development: The initial و is retained in the attested imperfect, giving a useful tense contrast.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%83%D8%AF. The Academy explicitly gives يَكِدُ in the وَكَدَ entry.
+- يَكِدُ — fastens / strengthens / pursues; Form-I imperfect verb; Imperfect counterpart of وَكَدَ.; semantic development: The initial root و drops in the imperfect يَكِدُ, which is characteristic weak-initial/assimilated behavior; the imperfect prefix يـ is not one of the lexical radicals.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%83%D8%AF. The Academy explicitly gives يَكِدُ in the وَكَدَ entry.
 - أَوْكَدَ — strengthened / confirmed; Form-IV derived verb; Derived form of the same root.; semantic development: The meaning develops from fastening or making firm to explicitly confirming or strengthening an agreement.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%83%D8%AF. The Academy defines أَوْكَدَ العهد as أَوْثَقَه and records the confirmation sense.
 - تَوَكَّدَ — became firm / became confirmed; Form-V derived verb; Reflexive/inchoative derived form of the same root.; semantic development: The action of confirming becomes a state of becoming firm or established.; confidence: high; evidence: Cairo Arabic Language Academy root entry: https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D9%88%D9%83%D8%AF. The Academy defines تَوَكَّدَ as اشتدّ وتوثّق.
 
@@ -235,7 +235,7 @@ Final rows:
 
 1. تَوْكِيدِهَا — their confirmation. Current Qur’anic occurrence at 16:91:10; Current Qur'anic occurrence; pattern: Form 2; gender: masculine; case: genitive; verb form: Form 2.
 2. وَكَدَ — fastened / strengthened / pursued. Form-I perfect verb. The Qur’anic verbal noun names confirmation; the basic verb shows fastening or making firm. Compared with the Qur’anic occurrence at 16:91:10. Connects the derived verbal noun to its root action.
-3. يَكِدُ — fastens / strengthens / pursues. Form-I imperfect verb. The initial و is retained in the attested imperfect, giving a useful tense contrast. Compared with the Qur’anic occurrence at 16:91:10. Makes the initial radical visible in the basic paradigm.
+3. يَكِدُ — fastens / strengthens / pursues. Form-I imperfect verb. The initial root و drops in the imperfect يَكِدُ, which is characteristic weak-initial/assimilated behavior; the imperfect prefix يـ is not one of the lexical radicals. Compared with the Qur’anic occurrence at 16:91:10. Makes the initial radical visible in the basic paradigm.
 4. أَوْكَدَ — strengthened / confirmed. Form-IV derived verb. The meaning develops from fastening or making firm to explicitly confirming or strengthening an agreement. Compared with the Qur’anic occurrence at 16:91:10. Shows a clear derived pattern linked to the Qur’anic noun.
 5. تَوَكَّدَ — became firm / became confirmed. Form-V derived verb. The action of confirming becomes a state of becoming firm or established. Compared with the Qur’anic occurrence at 16:91:10. Adds participant-direction and state change.
 
@@ -245,9 +245,9 @@ Final rows:
 
 Decision: **FULL**; root: يقظ; weak initial radical: ي; word: أَيْقَاظًا; locations: 18:18:2
 POS: noun/pronoun; confidence: high
-Weak-initial subtype: Initial ي root in a derived verbal noun; verify the underlying verb and vocalisation.
+Weak-initial subtype: Initial ي root in the broken plural adjective/noun أَيْقَاظًا; distinguish it from the Form-IV maṣdar إِيقَاظٌ and verify the underlying adjective/verb family.
 
-The current Qur’anic form plus four independently attested, morphologically useful same-root forms are established. Initial و/ي behavior is explained honestly; no shell, case, pronoun or trivial inflectional padding is used. The initial ي is a radical in the lexical root ي ق ظ. The Qur’anic أَيْقَاظًا is the plural adjective ‘awake/alert’; it is not the Form-IV maṣdar أَيْقَاظًا, despite the identical surface spelling in unvocalised text.
+The current Qur’anic form plus four independently attested, morphologically useful same-root forms are established. Initial و/ي behavior is explained honestly; no shell, case, pronoun or trivial inflectional padding is used. The initial ي is a radical in the lexical root ي ق ظ. The Qur’anic أَيْقَاظًا is the broken plural of the adjective يَقِظٌ ‘awake/alert’; it is not the Form-IV maṣdar. The Form-IV maṣdar is إِيقَاظٌ ‘awakening’, and the full vocalisation and morphology distinguish the two words.
 
 Accepted candidates:
 
@@ -426,3 +426,9 @@ Final rows:
 5. تَوَرَّقَ — ate leaves. Form-V derived verb. The noun branch develops into an action involving leaves as food. Compared with the Qur’anic occurrence at 6:59:16. Adds a clear derived pattern directly related to the lexical noun.
 
 ---
+
+## Targeted correction pass
+
+Reviewed at: 2026-10-31T17:37:49.278Z
+
+All 12 C3-C4D families remain FULL. Corrected the initial-و drop explanation for وَطَنَ → يَطِنُ, وَفَدَ → يَفِدُ, وَفَرَ → يَفِرُ, وَقَذَ → يَقِذُ and وَكَدَ → يَكِدُ. Corrected أَيْقَاظًا as the broken plural of يَقِظٌ; the Form-IV maṣdar is إِيقَاظٌ. Refined وَبَّرَ to “became fuzzy/downy; concealed traces; pollinated a palm.”
