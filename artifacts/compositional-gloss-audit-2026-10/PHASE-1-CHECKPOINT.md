@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–47
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–48
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -66,8 +66,9 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 45: eight repository words, all positions verified against canonical visible tokens 1–8; six relevant segmented occurrences individually adjudicated (all `Yes`), and two atomic/whole-word occurrences marked not applicable. The full word-by-word table was posted in chat.
 - Sūrah 2, āyah 46: eight repository words, all positions verified against canonical visible tokens 1–8; five relevant segmented occurrences individually adjudicated (all `Yes`), and three atomic/whole-word occurrences marked not applicable. The full word-by-word table was posted in chat.
 - Sūrah 2, āyah 47: eleven repository words; positions 1–11 verified against package order and canonical token order. Seven relevant segmented occurrences individually adjudicated (all `Yes`); four atomic occurrences marked not applicable. Full word-by-word audit table posted in chat.
-- Total segmented occurrences individually adjudicated: 394 of 39,672; 370 `Yes` and 24 `No`. Total segmented occurrences pending: 39,278; stale decisions: zero. In addition, 305 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–47 and remain explicitly marked not applicable.
-- Next audit location: Sūrah 2, āyah 48, repository word position 1 (`word:2:48:1`, canonical token 1, وَٱتَّقُوا۟), verified against the repository package and Tanzil source.
+- Sūrah 2, āyah 48: nineteen repository words; positions 1–19 verified against package order and canonical token order. Seven relevant segmented occurrences individually adjudicated (all `Yes`); twelve atomic occurrences marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; the full word-by-word audit table was posted in chat.
+- Total segmented occurrences individually adjudicated: 401 of 39,672; 377 `Yes` and 24 `No`. Total segmented occurrences pending: 39,271; stale decisions: zero. In addition, 317 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–48 and remain explicitly marked not applicable.
+- Next audit location: Sūrah 2, āyah 49, repository word position 1 (`word:2:49:1`, canonical token 1, وَإِذْ), verified against the repository package and Tanzil source.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -89,10 +90,10 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 ## Validation and evidence limits
 
 - Ledger ID uniqueness, total coverage, segmentation/N/A partition, CSV row count, and compressed/plain CSV byte identity have been checked.
-- Current counts are recorded in `coverage-manifest.json`.
+- Current counts are recorded in `coverage-manifest.json`. Non-segmented ledger comments now name the exact occurrence ID, location, Arabic surface, current whole-word gloss, and not-applicable reason.
 - The canonical Arabic alignment uses normalization only for comparison; source and package Arabic have not been rewritten.
 - Findings above are preliminary. Phase 1 is not complete until all 39,672 relevant segmented occurrences have individual decisions, pending states reconcile to zero, every proposed change has occurrence-level evidence, and the final root-cause report is reconciled.
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 48, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 49, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.

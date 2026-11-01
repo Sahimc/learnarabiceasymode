@@ -56,6 +56,9 @@ for await (const line of jsonReader) {
   if (!relevant) {
     notApplicable += 1;
     if (row.auditState !== "NOT-APPLICABLE" || row.changeNeeded !== "No") throw new Error(`Invalid N/A row: ${row.occurrenceId}`);
+    const surface = row.currentWholeWord?.surface ?? "unknown surface";
+    const gloss = row.currentWholeWord?.englishGloss ?? "";
+    row.comment = `NO-RELEVANT-SEGMENTATION: ${row.occurrenceId} at Sūrah ${row.surah}, āyah ${row.ayah}, repository word position ${row.wordPosition}, ${JSON.stringify(surface)} (current whole-word gloss ${JSON.stringify(gloss)}); no relevant multi-part display is present. The complete word remains intact, so a compositional segment-gloss decision does not apply.`;
   } else {
     segmented += 1;
     const decision = decisions.get(row.occurrenceId);
