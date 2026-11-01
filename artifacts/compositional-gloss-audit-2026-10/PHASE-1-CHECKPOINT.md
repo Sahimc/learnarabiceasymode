@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–2  
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–3  
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -21,8 +21,9 @@ Sūrah 1 is the first completed surah:
 - 10 segmented occurrences have `Change needed: No`.
 - Sūrah 2, āyah 1: one occurrence, verified against the package and canonical token 1; atomic, not applicable.
 - Sūrah 2, āyah 2: seven occurrences, all repository positions 1–7 verified against canonical visible tokens 1–7; four relevant segmented occurrences individually adjudicated (all `Yes`), and three atomic occurrences marked not applicable.
-- Total segmented occurrences individually adjudicated: 23 of 39,672; 9 `Yes`, 10 `No`, and 4 `Yes` in Sūrah 2:2 (one is `NEEDS-REVIEW`). Total segmented occurrences pending: 39,649.
-- Next audit location: Sūrah 2, āyah 3, repository word position 1 (`word:2:3:1`, canonical token 1).
+- Sūrah 2, āyah 3: eight occurrences, all repository positions 1–8 verified against canonical visible tokens 1–8; six relevant segmented occurrences individually adjudicated (all `Yes`), and two atomic occurrences marked not applicable.
+- Total segmented occurrences individually adjudicated: 29 of 39,672; 19 `Yes` and 10 `No`. Total segmented occurrences pending: 39,643; stale decisions: zero.
+- Next audit location: Sūrah 2, āyah 4, repository word position 1 (`word:2:4:1`, canonical token 1).
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -47,4 +48,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 3, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 4, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
