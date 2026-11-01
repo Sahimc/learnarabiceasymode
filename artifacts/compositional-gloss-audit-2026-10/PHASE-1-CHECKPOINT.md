@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–25
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–26
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -44,8 +44,9 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 23: twenty occurrences, all repository positions 1–20 verified against canonical visible tokens 1–20; eleven relevant segmented occurrences individually adjudicated (all `Yes`), and nine atomic/whole-word occurrences marked not applicable. The full word-by-word table was posted in chat.
 - Sūrah 2, āyah 24: thirteen repository words, all positions verified against canonical visible tokens after excluding the standalone waqf marker; nine relevant segmented occurrences individually adjudicated (all `Yes`), and four atomic/whole-word occurrences marked not applicable. The full word-by-word table was posted in chat.
 - Sūrah 2, āyah 25: thirty-four repository words, all positions verified against canonical visible tokens 1–34; seventeen relevant segmented occurrences individually adjudicated (all `Yes`), and seventeen atomic/whole-word occurrences marked not applicable. The full word-by-word table was posted in chat.
-- Total segmented occurrences individually adjudicated: 197 of 39,672; 185 `Yes` and 12 `No`. Total segmented occurrences pending: 39,475; stale decisions: zero. In addition, 163 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–25 and remain explicitly marked not applicable.
-- Next audit location: Sūrah 2, āyah 26, repository word position 1 (`word:2:26:1`, canonical token 1), verified against both the repository package and Tanzil source.
+- Sūrah 2, āyah 26: thirty-nine repository words, all positions verified against canonical visible tokens 1–39; seventeen relevant segmented occurrences individually adjudicated (all `Yes`), and twenty-two atomic/whole-word occurrences marked not applicable. The full word-by-word table was posted in chat.
+- Total segmented occurrences individually adjudicated: 214 of 39,672; 202 `Yes` and 12 `No`. Total segmented occurrences pending: 39,458; stale decisions: zero. In addition, 185 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–26 and remain explicitly marked not applicable.
+- Next audit location: Sūrah 2, āyah 27, repository word position 1 (`word:2:27:1`, canonical token 1), verified against both the repository package and Tanzil source.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -60,6 +61,9 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 5. Package/runtime lesson fields differ for 59 occurrences (mostly `forms` or `components`); package/runtime ayah text differences are zero. Package translation values differ from the certified runtime translation at 286 occurrences. These require field-level review so audit evidence is attributed to the value the app currently displays.
 6. QAC morphology is matched for 77,138 rows; 296 occurrences have no QAC morphology row. These still remain fully auditable from package, canonical text, runtime display, and context; missing provider morphology is not a coverage gap.
 7. The repository's read-only content validator currently exits with four Ṣarf synthetic-placeholder failures: `word:9:25:5`, `word:16:91:10`, `word:17:63:10`, and `word:19:85:6`. The raw audit ledger retains those occurrences and all others; these issues are outside compositional-gloss Phase 1 remediation scope unless root-cause evidence makes them directly relevant.
+8. In the individually reviewed Sūrah 2:23–26 occurrences, authored stems repeatedly absorb meanings separately represented by conjunctions, articles, or attached pronouns. The duplicated pieces are still being judged one occurrence at a time; recurrence is recorded as a root-cause clue, not used to infer unreviewed decisions.
+9. Generic segment labels such as “pronoun” recur across distinct grammatical roles in the reviewed scope, including plural verb subjects, possessors, and referential suffixes. This label-level weakness makes the displayed compositional explanation incomplete even where the combined whole-word gloss is understandable.
+10. Several reviewed multi-part items have contextually broad English alternatives or added English tense/subject wording. Current verse translation and occurrence context are needed to assess those displays; the broad alternatives are not being accepted as sufficient solely because one option could fit elsewhere.
 
 ## Validation and evidence limits
 
@@ -70,4 +74,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 26, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 27, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
