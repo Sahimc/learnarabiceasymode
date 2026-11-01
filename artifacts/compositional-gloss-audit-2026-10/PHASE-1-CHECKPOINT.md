@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–98
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–99
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -117,8 +117,9 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 96: twenty-five repository words; positions 1–25 map one-to-one to canonical visible Tanzil tokens 1–25 after excluding standalone waqf marks. Eleven relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`); fourteen intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Positions and token text were checked against the package, canonical source, and occurrence ledger. Full word-by-word audit table posted in chat. The active content contract (1.3.9) and common-problems register (1.2.0) were reread before the review.
 - Sūrah 2, āyah 97: eighteen repository words; positions 1–18 map one-to-one to canonical visible Tanzil tokens 1–18. Ten relevant segmented occurrences were individually adjudicated (nine `Change needed: Yes`, one `No`); eight intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Positions and token text were checked against the package, canonical source, and occurrence ledger. Full word-by-word audit table posted in chat. The active content contract (1.3.9) and common-problems register (1.2.0) were reread before the review.
 - Sūrah 2, āyah 98: twelve repository words; positions 1–12 map one-to-one to canonical visible Tanzil tokens 1–12. Five relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`); seven intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Positions and token text were checked against the package, canonical source, and occurrence ledger. Full word-by-word audit table posted in chat. The active content contract (1.3.9) and common-problems register (1.2.1) were read before the review; the register now includes a safeguard for compositional split-gloss overlap discovered repeatedly in the audit.
-- Total segmented occurrences individually adjudicated: 940 of 39,672; 918 `Yes` and 22 `No`. Total segmented occurrences pending: 38,732; stale decisions: zero. In addition, 745 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–98 and remain explicitly marked not applicable.
-- Next audit location: Sūrah 2, āyah 99, repository word position 1, to be verified against the repository package and Tanzil source before recording.
+- Sūrah 2, āyah 99: ten repository words; positions 1–10 map one-to-one to canonical visible Tanzil tokens 1–10. Six relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`); four intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Positions and token text were checked against the package, canonical source, and occurrence ledger. Full word-by-word audit table posted in chat. The active content contract (1.3.9) and common-problems register (1.2.1) were reread before this review.
+- Total segmented occurrences individually adjudicated: 946 of 39,672; 924 `Yes` and 22 `No`. Total segmented occurrences pending: 38,726; stale decisions: zero. In addition, 749 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–99 and remain explicitly marked not applicable.
+- Next audit location: Sūrah 2, āyah 100, repository word position 1, to be verified against the repository package and Tanzil source before recording.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -225,6 +226,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 60. Sūrah 2:98 repeats preposition, conjunction and transition glosses inside adjacent name, noun and particle pieces. In وَرُسُلِهِۦ the noun stem also absorbs possessive meaning while the suffix is generically labelled. These five segmented occurrences are occurrence-specific examples of compositional split-gloss overlap; a corresponding safeguard was added to `common-problems.json` v1.2.1 before continuing, without changing corpus content.
 
+61. Sūrah 2:99 adds an emphatic lām mislabelled as a preposition and a certainty particle whose gloss includes the conjunction; first-person and second-person pronoun meanings absorbed into stems; conjunction meaning repeated inside a negative particle; a preposition left as an uncontextualized option list while its suffix remains a generic pronoun; and article repetition in the active-participle noun. All six segmented occurrences were individually reviewed and linked to QAC morphology under contract v1.3.9 and common-problems v1.2.1.
+
 ## Validation and evidence limits
 
 - Ledger ID uniqueness, total coverage, segmentation/N/A partition, CSV row count, and compressed/plain CSV byte identity have been checked.
@@ -234,4 +237,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 99, word 1, verifying its repository package position and canonical Tanzil token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 100, word 1, verifying its repository package position and canonical Tanzil token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
