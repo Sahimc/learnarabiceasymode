@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–114
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–115
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -268,6 +268,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 75. Sūrah 2:113 repeats connector glosses in both وَقَالَتِ occurrences and in فَٱللَّهُ; repeats definiteness in four attached-article noun splits; leaves verbal subject pronouns generic in يَتْلُونَ, يَعْلَمُونَ, كَانُوا۟ and يَخْتَلِفُونَ; leaves attached possessive/object meanings generic or duplicated in قَوْلِهِمْ, بَيْنَهُمْ and فِيهِ; duplicates “in” across both pieces of فِيمَا; and displays وَهُمْ with a generic possessive suffix and unresolved circumstantial English, and كَذَٰلِكَ with an internal لِ glossed as a preposition and final كَ as a generic pronoun. The genitive ending ٱلْقِيَامَةِ is contextually valid as “(of) Resurrection” after يومَ (“Day”). Nineteen segmented occurrences have individual decisions; 18 have Change Yes and one has Change No. No corpus data changed.
 - Sūrah 2, āyah 114: thirty repository words; positions 1–30 map one-to-one to canonical Tanzil tokens 1–30 after excluding standalone stop marks. Eleven relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`); nineteen intact words were marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Every position was verified against the package, source and ledger; all eleven displayed splits were checked against exact QAC positions and phrase context. Complete word-by-word table posted in chat. No corpus data changed.
 76. Sūrah 2:114 repeats the conjunction inside the glosses of مَنْ and سَعَىٰ; duplicates both “than” and “who” across the pieces of مِمَّن; absorbs object “them” into فِيهَا and leaves هَا generic; absorbs possessive “His” into the noun stem of ٱسْمُهُۥ; absorbs possessive “their” into خَرَابِهَآ; leaves personal pronouns generic in both لَهُمْ occurrences and وَلَهُمْ; absorbs both subject and object pronouns into يَدْخُلُوهَآ while leaving its endings generic; and repeats the article gloss in ٱلدُّنْيَا. Eleven segmented occurrences have Change Yes; nineteen atomic words are not applicable. No corpus data changed.
+- Sūrah 2, āyah 115: twelve repository words; positions 1–12 map one-to-one to canonical Tanzil tokens 1–12 after excluding standalone stop marks. Six relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`); six intact words were marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Every position was verified against the package, source and ledger; all six displayed splits were reviewed against the exact QAC records and phrase context. Complete word-by-word table posted in chat. No corpus data changed.
+77. Sūrah 2:115 repeats “and / for” in the Allah stem of وَلِلَّهِ, repeats definiteness in the stem glosses of ٱلْمَشْرِقُ and ٱلْمَغْرِبُ, duplicates “and” and “the” in the west noun piece, repeats “so” in both أَيْنَمَا and ثَمَّ after separate result/resumption فَ particles, and leaves the second-person plural subject of تُوَلُّوا۟ generic. Six segmented occurrences have Change Yes; six atomic words are not applicable. No corpus data changed.
 
 ## Validation and evidence limits
 
@@ -278,4 +280,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 115, word 1, verifying its repository package position and canonical Tanzil source token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 116, word 1, verifying its repository package position and canonical Tanzil source token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
