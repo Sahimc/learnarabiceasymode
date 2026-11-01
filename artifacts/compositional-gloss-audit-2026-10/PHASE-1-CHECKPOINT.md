@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–63
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–64
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -82,7 +82,8 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 61: fifty-nine repository words; positions 1–59 map one-to-one to canonical visible tokens 1–59 after excluding standalone waqf marks. Thirty-eight relevant segmented occurrences individually adjudicated (all `Change needed: Yes`); twenty-one intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION` with occurrence-specific reasons. All 59 rows were verified against the package, Tanzil source and ledger before decisions were recorded. Full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 62: twenty-four repository words; positions 1–24 map one-to-one to canonical Tanzil tokens 1–24. Thirteen relevant segmented occurrences individually adjudicated (12 `Change needed: Yes`, one `No`); eleven intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Every position was checked against the package, source, and ledger before recording decisions. Full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 63: fifteen repository words; positions 1–15 map one-to-one to canonical Tanzil tokens 1–15. All eleven relevant segmented occurrences were individually adjudicated (`Change needed: Yes`); four intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Every position was verified against the package, source, and ledger. Full word-by-word audit table posted in chat.
-- Total segmented occurrences individually adjudicated: 574 of 39,672; 556 `Yes` and 18 `No`. Total segmented occurrences pending: 39,098; stale decisions: zero. In addition, 428 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–63 and remain explicitly marked not applicable.
+- Sūrah 2, āyah 64: thirteen repository words; positions 1–13 map one-to-one to canonical Tanzil tokens 1–13, excluding the standalone waqf mark from the word count. All seven relevant segmented occurrences were individually adjudicated (`Change needed: Yes`); six intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Every position was verified against the package, source, and ledger. Full word-by-word audit table posted in chat.
+- Total segmented occurrences individually adjudicated: 581 of 39,672; 563 `Yes` and 18 `No`. Total segmented occurrences pending: 39,091; stale decisions: zero. In addition, 434 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–64 and remain explicitly marked not applicable.
 - Next audit location: Sūrah 2, āyah 61, repository word position 1 (`word:2:61:1`, canonical token 1, وَإِذْ), verified against the repository package and Tanzil source.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
@@ -128,6 +129,7 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 23. Sūrah 2:61 adds separate examples of connector, article, and attached-pronoun meaning repeated inside neighboring segment glosses; generic subject/possessor/object labels; and false internal splits of two ذَٰلِكَ demonstratives. Three context-sensitive preposition constructions (بِغَضَبٍ, بِغَيْرِ, بِمَا) remain individually `NEEDS-REVIEW`; their exact English allocation requires editorial review. Repeated forms were reviewed only at their exact occurrence IDs and no decision was extrapolated.
 24. Sūrah 2:62 adds occurrence-level cases of conjunction/preposition meaning repeated in neighboring glosses and attached plural subject or possessive pronouns labelled only “pronoun”. The three-part فَلَهُمْ split (so + for + them) was independently reviewed and found compositional (`Change needed: No`). Each segmented occurrence was decided separately.
 25. Sūrah 2:63 adds separate examples of conjunction and preposition meaning repeated inside lexical segment glosses, as well as generic labels for first-person plural subjects, second-person plural imperative subjects, possessors and object pronouns. Decisions were made for each exact occurrence; the repeated suffix roles were not propagated by pattern.
+26. Sūrah 2:64 independently repeats article leakage, demonstrative over-segmentation, and generic pronoun-role labels. Its لَكُنتُم occurrence also has a prefixed emphatic lām displayed as “for / to” while the stem absorbs both emphasis and the attached second-person plural subject; this exact item is documented at occurrence level.
 
 ## Validation and evidence limits
 
@@ -138,4 +140,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 64, word 1 (ثُمَّ), verified against repository package position 1 and canonical Tanzil token 1. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 65, word 1 (وَلَقَدْ), verified against repository package position 1 and canonical Tanzil token 1. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
