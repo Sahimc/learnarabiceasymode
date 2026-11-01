@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–28
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–29
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -47,8 +47,9 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 26: thirty-nine repository words, all positions verified against canonical visible tokens 1–39; seventeen relevant segmented occurrences individually adjudicated (all `Yes`), and twenty-two atomic/whole-word occurrences marked not applicable. The full word-by-word table was posted in chat.
 - Sūrah 2, āyah 27: twenty repository words, all positions verified against canonical visible tokens 1–20; six relevant segmented occurrences individually adjudicated (all `Yes`, including one `NEEDS-REVIEW`), and fourteen atomic/whole-word occurrences marked not applicable. The full word-by-word table was posted in chat.
 - Sūrah 2, āyah 28: thirteen repository words, all positions verified against canonical visible tokens 1–13; seven relevant segmented occurrences individually adjudicated (all `Yes`), and six atomic/whole-word occurrences marked not applicable. The full word-by-word table was posted in chat.
-- Total segmented occurrences individually adjudicated: 227 of 39,672; 215 `Yes` and 12 `No`. Total segmented occurrences pending: 39,445; stale decisions: zero. In addition, 205 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–28 and remain explicitly marked not applicable.
-- Next audit location: Sūrah 2, āyah 29, repository word position 1 (`word:2:29:1`, canonical token 1), verified against both the repository package and Tanzil source.
+- Sūrah 2, āyah 29: nineteen repository words, all positions verified against canonical visible tokens 1–19; six relevant segmented occurrences individually adjudicated (all `Yes`), and thirteen atomic/whole-word occurrences marked not applicable. The full word-by-word table was posted in chat.
+- Total segmented occurrences individually adjudicated: 233 of 39,672; 221 `Yes` and 12 `No`. Total segmented occurrences pending: 39,439; stale decisions: zero. In addition, 218 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–29 and remain explicitly marked not applicable.
+- Next audit location: Sūrah 2, āyah 30, repository word position 1 (`word:2:30:1`, canonical token 1), verified against both the repository package and Tanzil source.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -76,4 +77,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 29, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 30, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
