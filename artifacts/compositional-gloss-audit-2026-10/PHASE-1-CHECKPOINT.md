@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–5
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–6
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -24,8 +24,9 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 3: eight occurrences, all repository positions 1–8 verified against canonical visible tokens 1–8; six relevant segmented occurrences individually adjudicated (all `Yes`), and two atomic occurrences marked not applicable.
 - Sūrah 2, āyah 4: twelve occurrences, all repository positions 1–12 verified against canonical visible tokens 1–12; seven relevant segmented occurrences individually adjudicated (`Yes`), and five atomic/whole-word occurrences marked not applicable.
 - Sūrah 2, āyah 5: eight occurrences, all repository positions 1–8 verified against canonical visible tokens 1–8; two relevant segmented occurrences individually adjudicated (`Yes`), and six atomic/whole-word occurrences marked not applicable.
-- Total segmented occurrences individually adjudicated: 38 of 39,672; 28 `Yes` and 10 `No`. Total segmented occurrences pending: 39,634; stale decisions: zero. In addition, 27 non-segmented occurrences have been individually checked in the six completed āyahs and remain explicitly marked not applicable.
-- Next audit location: Sūrah 2, āyah 6, repository word position 1 (`word:2:6:1`, canonical token 1), verified against both the repository package and Tanzil source.
+- Sūrah 2, āyah 6: eleven occurrences, all repository positions 1–11 verified against canonical visible tokens 1–11; five relevant segmented occurrences individually adjudicated (`Yes`), and six atomic/whole-word occurrences marked not applicable. Position 6 is marked `NEEDS-REVIEW` because a change is clearly needed but the exact English allocation across four displayed pieces requires editorial review.
+- Total segmented occurrences individually adjudicated: 43 of 39,672; 33 `Yes` and 10 `No`. Total segmented occurrences pending: 39,629; stale decisions: zero. In addition, 33 non-segmented occurrences have been individually checked in the seven completed āyahs and remain explicitly marked not applicable.
+- Next audit location: Sūrah 2, āyah 7, repository word position 1 (`word:2:7:1`, canonical token 1), verified against both the repository package and Tanzil source.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -50,4 +51,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 6, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 7, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
