@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–85
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–86
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -104,7 +104,8 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 83: twenty-nine repository words; positions 1–29 map one-to-one to canonical Tanzil tokens 1–29. Fifteen relevant segmented occurrences were individually adjudicated (fourteen `Change needed: Yes`, one `No`); fourteen intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Every position and token was verified against package, canonical source, and ledger. Full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 84: fifteen repository words; positions 1–15 map one-to-one to canonical Tanzil tokens 1–15. Ten relevant segmented occurrences were individually adjudicated (`Change needed: Yes` for each); five intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. All positions were verified against package, canonical source, and ledger. Full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 85: forty-nine repository words; positions 1–49 map one-to-one to canonical Tanzil tokens 1–49. Twenty-nine relevant segmented occurrences were individually adjudicated (twenty-eight `Change needed: Yes`, one `No`); twenty intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. All positions were verified against package, canonical source, and ledger. Full word-by-word audit table posted in chat.
-- Total segmented occurrences individually adjudicated: 804 of 39,672; 783 `Yes` and 21 `No`. Total segmented occurrences pending: 38,868; stale decisions: zero. In addition, 627 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–85 and remain explicitly marked not applicable.
+- Sūrah 2, āyah 86: thirteen repository words; positions 1–13 map one-to-one to canonical Tanzil tokens 1–13. Eight relevant segmented occurrences were individually adjudicated (`Change needed: Yes` for each); five intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. All positions were verified against package, canonical source, and ledger. Full word-by-word audit table posted in chat.
+- Total segmented occurrences individually adjudicated: 812 of 39,672; 791 `Yes` and 21 `No`. Total segmented occurrences pending: 38,860; stale decisions: zero. In addition, 632 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–86 and remain explicitly marked not applicable.
 - Next audit location: Sūrah 2, āyah 84, repository word position 1, to be verified against the repository package and Tanzil source before recording.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
@@ -186,6 +187,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 47. Sūrah 2:85 adds repeated conjunction and preposition meanings, subject/possessive pronouns left only as generic labels, and one internally split demonstrative whose displayed pieces are not supported by the consulted morphology record; that segmentation is marked `NEEDS-REVIEW` with Change needed Yes. One definite-article component remains correct because English expresses definiteness on the adjacent “most severe” phrase. Every item is tied to its own occurrence ID.
 
+48. Sūrah 2:86 adds another occurrence-specific article duplication, connective repetition in فَلَا and وَلَا, and suffix glosses left as generic “pronoun”. For عَنْهُمُ, the preposition’s context-specific “for” can be retained while the object pronoun is separately glossed. For يُنصَرُونَ, the passive stem gloss remains compatible with the adjacent independent هُمْ, but the suffix’s subject/agreement function still needs explicit teaching.
+
 ## Validation and evidence limits
 
 - Ledger ID uniqueness, total coverage, segmentation/N/A partition, CSV row count, and compressed/plain CSV byte identity have been checked.
@@ -195,4 +198,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 86, word 1, verifying its repository package position and canonical Tanzil token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 87, word 1, verifying its repository package position and canonical Tanzil token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
