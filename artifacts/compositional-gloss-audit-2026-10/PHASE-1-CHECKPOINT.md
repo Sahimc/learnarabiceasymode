@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–51
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–52
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -70,8 +70,9 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 49: eighteen repository words; positions 1–18 verified against package order and canonical token order, including the standalone waqf boundary after token 12. Ten relevant segmented occurrences individually adjudicated (nine `Yes`, one `No`); eight atomic occurrences marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 50: ten repository words; positions 1–10 verified against package order and canonical token order. Seven relevant segmented occurrences individually adjudicated (six `Yes`, one `No`); three atomic occurrences marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 51: twelve repository words; positions 1–12 verified against package order and canonical token order. Six relevant segmented occurrences individually adjudicated (all `Yes`); six atomic occurrences marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; full word-by-word audit table posted in chat.
-- Total segmented occurrences individually adjudicated: 424 of 39,672; 398 `Yes` and 26 `No`. Total segmented occurrences pending: 39,248; stale decisions: zero. In addition, 334 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–51 and remain explicitly marked not applicable.
-- Next audit location: Sūrah 2, āyah 52, repository word position 1 (`word:2:52:1`, canonical token 1, ثُمَّ), verified against the repository package and Tanzil source.
+- Sūrah 2, āyah 52: eight repository words; positions 1–8 verified against package order and canonical token order. Five relevant segmented occurrences individually adjudicated (all `Yes`); three atomic occurrences marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; full word-by-word audit table posted in chat.
+- Total segmented occurrences individually adjudicated: 429 of 39,672; 403 `Yes` and 26 `No`. Total segmented occurrences pending: 39,243; stale decisions: zero. In addition, 337 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–52 and remain explicitly marked not applicable.
+- Next audit location: Sūrah 2, āyah 53, repository word position 1 (`word:2:53:1`, canonical token 1, وَإِذْ), verified against the repository package and Tanzil source.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -90,11 +91,13 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 9. Generic segment labels such as “pronoun” recur across distinct grammatical roles in the reviewed scope, including plural verb subjects, possessors, and referential suffixes. This label-level weakness makes the displayed compositional explanation incomplete even where the combined whole-word gloss is understandable.
 10. Several reviewed multi-part items have contextually broad English alternatives or added English tense/subject wording. Current verse translation and occurrence context are needed to assess those displays; the broad alternatives are not being accepted as sufficient solely because one option could fit elsewhere.
 
-11. Sūrah 2:49 position 14 contains an over-segmentation failure: a part of the single demonstrative ذَٰلِكُم is presented as the independent preposition “for/to,” and the plural-address form is labelled “pronoun.” The QAC classifies the complete occurrence as a demonstrative pronoun; the exact occurrence decision records an atomic-word proposal. This is new occurrence evidence, not a rule applied to other demonstratives.
+11. Sūrah 2:49 position 14 and 2:52 position 6 independently show the same over-segmentation pattern: ذَٰلِكُم / ذَٰلِكَ are presented with an internal لِ glossed “for/to” and a suffix labelled “pronoun,” although QAC classifies each complete word as a demonstrative pronoun. Each occurrence received its own decision proposing an atomic demonstrative; recurrence is evidence for a possible authoring root cause, not permission to propagate decisions to unchecked occurrences.
 
 12. Sūrah 2:50 adds occurrence-level evidence that one stem label can absorb both a separate conjunction and a separate subject pronoun: word:2:50:6 وَأَغْرَقْنَآ currently labels the stem “and We drowned” beside وَ “and” and نَآ “pronoun”. This is documented as a root-cause example only; no unreviewed occurrence inherits its decision.
 
 13. Sūrah 2:51 position 11 وَأَنتُمْ is a separate occurrence where the canonical morphology marks circumstantial وَ (“while”) plus an independent second-person plural pronoun, but the displayed parts gloss the connector as “and” and the pronoun only generically. This reinforces the need for context-specific treatment of particles and pronoun roles; it is not used to classify other occurrences.
+
+14. Sūrah 2:52 position 3 عَنكُم has a preposition component عَن glossed “you” beside a separately displayed كُم pronoun. QAC identifies a preposition plus second-person plural object pronoun and contextualizes the full word as “you”; the compositional English allocation for the fixed verbal construction is recorded as needing editorial review.
 
 ## Validation and evidence limits
 
@@ -105,4 +108,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 52, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 53, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
