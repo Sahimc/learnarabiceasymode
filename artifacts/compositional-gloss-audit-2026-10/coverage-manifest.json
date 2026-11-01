@@ -19,20 +19,20 @@
     "occurrenceRows": 77434,
     "relevantSegmentedOccurrences": 39672,
     "notApplicableOccurrences": 37762,
-    "pendingRelevantOccurrences": 39653,
+    "pendingRelevantOccurrences": 39649,
     "staleDecisions": 0,
     "classificationCounts": {
       "CORRECT": 9,
       "NOT-APPLICABLE": 37762,
-      "WHOLE-WORD-GLOSS-LEAKAGE": 6,
+      "WHOLE-WORD-GLOSS-LEAKAGE": 9,
       "SEMANTIC-OVERLAP-VALID": 1,
       "GLOSS-DUPLICATION": 1,
-      "NEEDS-REVIEW": 2,
-      "PENDING": 39653
+      "NEEDS-REVIEW": 3,
+      "PENDING": 39649
     },
     "occurrenceLedgerReconciles": true,
-    "manuallyReviewedSegmentedOccurrences": 19,
-    "manualDecisionRecordsApplied": 19
+    "manuallyReviewedSegmentedOccurrences": 23,
+    "manualDecisionRecordsApplied": 23
   },
   "canonicalAlignment": {
     "comparisonNormalization": "For position checks only: NFC/NFD, remove tatweel, short-vowel/tanwin/shadda and Qur'anic stop marks; map dagger alif to alif, alif wasla variants to plain alif, and alif maqsurah to ya. Stored source text is never rewritten.",
@@ -1315,9 +1315,9 @@
     }
   ],
   "artifacts": {
-    "fullMachineReadableLedger": "coverage-ledger.20261031183756-refresh-40060.jsonl.gz",
-    "searchableTable": "coverage-ledger.20261031183756-refresh-40060.csv",
-    "compressedSearchableTable": "coverage-ledger.20261031183756-refresh-40060.csv.gz",
+    "fullMachineReadableLedger": "coverage-ledger.20261101121633-refresh-35360.jsonl.gz",
+    "searchableTable": "coverage-ledger.20261101121633-refresh-35360.csv",
+    "compressedSearchableTable": "coverage-ledger.20261101121633-refresh-35360.csv.gz",
     "reviewDecisionLog": "review-decisions.jsonl",
     "canonicalAlignment": "canonical-alignment.json"
   },
@@ -1327,6 +1327,6 @@
     "everyOccurrenceHasAuditClassification": true,
     "csvDataRowsPlusHeader": true,
     "compressedTableMatchesPlainCsv": true,
-    "verifiedAt": "2026-10-31T18:41:05.014Z"
+    "verifiedAt": "2026-11-01T12:17:07.223Z"
   }
 }
