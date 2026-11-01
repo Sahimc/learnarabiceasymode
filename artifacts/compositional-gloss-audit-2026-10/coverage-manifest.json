@@ -19,21 +19,21 @@
     "occurrenceRows": 77434,
     "relevantSegmentedOccurrences": 39672,
     "notApplicableOccurrences": 37762,
-    "pendingRelevantOccurrences": 39643,
+    "pendingRelevantOccurrences": 39634,
     "staleDecisions": 0,
     "classificationCounts": {
       "CORRECT": 9,
       "NOT-APPLICABLE": 37762,
-      "WHOLE-WORD-GLOSS-LEAKAGE": 13,
+      "WHOLE-WORD-GLOSS-LEAKAGE": 20,
       "SEMANTIC-OVERLAP-VALID": 1,
       "GLOSS-DUPLICATION": 2,
-      "NEEDS-REVIEW": 3,
-      "PRONOUN-ROLE-ERROR": 1,
-      "PENDING": 39643
+      "NEEDS-REVIEW": 4,
+      "PRONOUN-ROLE-ERROR": 2,
+      "PENDING": 39634
     },
     "occurrenceLedgerReconciles": true,
-    "manuallyReviewedSegmentedOccurrences": 29,
-    "manualDecisionRecordsApplied": 29
+    "manuallyReviewedSegmentedOccurrences": 38,
+    "manualDecisionRecordsApplied": 38
   },
   "canonicalAlignment": {
     "comparisonNormalization": "For position checks only: NFC/NFD, remove tatweel, short-vowel/tanwin/shadda and Qur'anic stop marks; map dagger alif to alif, alif wasla variants to plain alif, and alif maqsurah to ya. Stored source text is never rewritten.",
@@ -1316,9 +1316,9 @@
     }
   ],
   "artifacts": {
-    "fullMachineReadableLedger": "coverage-ledger.20261101121909-refresh-39192.jsonl.gz",
-    "searchableTable": "coverage-ledger.20261101121909-refresh-39192.csv",
-    "compressedSearchableTable": "coverage-ledger.20261101121909-refresh-39192.csv.gz",
+    "fullMachineReadableLedger": "coverage-ledger.20261101122317-refresh-34880.jsonl.gz",
+    "searchableTable": "coverage-ledger.20261101122317-refresh-34880.csv",
+    "compressedSearchableTable": "coverage-ledger.20261101122317-refresh-34880.csv.gz",
     "reviewDecisionLog": "review-decisions.jsonl",
     "canonicalAlignment": "canonical-alignment.json"
   },
@@ -1328,6 +1328,6 @@
     "everyOccurrenceHasAuditClassification": true,
     "csvDataRowsPlusHeader": true,
     "compressedTableMatchesPlainCsv": true,
-    "verifiedAt": "2026-11-01T12:19:44.592Z"
+    "verifiedAt": "2026-11-01T12:24:06.784Z"
   }
 }
