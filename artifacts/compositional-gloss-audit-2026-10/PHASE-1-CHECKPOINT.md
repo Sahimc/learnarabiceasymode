@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–82
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–83
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -101,8 +101,9 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 80: twenty-three repository words; positions 1–23 map one-to-one to canonical Tanzil tokens 1–23. Eight relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`); fifteen intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Every position and token was verified against package, canonical source, and ledger. Full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 81: thirteen repository words; positions 1–13 map one-to-one to canonical Tanzil tokens 1–13. Four relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`); nine intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Every position and token was verified against package, canonical source, and ledger. Full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 82: ten repository words; positions 1–10 map one-to-one to canonical Tanzil tokens 1–10. Six relevant segmented occurrences were individually adjudicated (five `Change needed: Yes`, one `No`); four intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Every position and token was verified against package, canonical source, and ledger. Full word-by-word audit table posted in chat.
-- Total segmented occurrences individually adjudicated: 750 of 39,672; 731 `Yes` and 19 `No`. Total segmented occurrences pending: 38,922; stale decisions: zero. In addition, 578 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–82 and remain explicitly marked not applicable.
-- Next audit location: Sūrah 2, āyah 83, repository word position 1, to be verified against the repository package and Tanzil source before recording.
+- Sūrah 2, āyah 83: twenty-nine repository words; positions 1–29 map one-to-one to canonical Tanzil tokens 1–29. Fifteen relevant segmented occurrences were individually adjudicated (fourteen `Change needed: Yes`, one `No`); fourteen intact words marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Every position and token was verified against package, canonical source, and ledger. Full word-by-word audit table posted in chat.
+- Total segmented occurrences individually adjudicated: 765 of 39,672; 745 `Yes` and 20 `No`. Total segmented occurrences pending: 38,907; stale decisions: zero. In addition, 592 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–83 and remain explicitly marked not applicable.
+- Next audit location: Sūrah 2, āyah 84, repository word position 1, to be verified against the repository package and Tanzil source before recording.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -176,6 +177,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 43. Sūrah 2:81 provides separate evidence of an object suffix whose referent is omitted from the displayed gloss, possessive overlap and singular/plural mismatch in خَطِيٓـَٔتُهُۥ, and the definite article repeated inside the genitive Fire noun gloss. The atomic words in the verse remain explicitly not applicable under the audit rule.
 
 44. Sūrah 2:82 adds a context-valid article/noun segmentation in ٱلصَّـٰلِحَـٰتِ, where English naturally uses a bare plural, and a separate proper-name case in ٱلْجَنَّةِ whose article/stem split does not compose with “of Paradise”. Subject suffix roles and conjunction meaning were also assessed occurrence by occurrence.
+
+45. Sūrah 2:83 adds exact-occurrence examples of connector, subject, article and preposition meaning repeated inside adjacent stem glosses, while also retaining a context-valid bare-plural English gloss for ٱلْقُرْبَىٰ. The circumstantial وَ in وَأَنتُم is separately distinguished from a plain conjunction. Repeated structures were adjudicated by their own occurrence IDs.
 
 ## Validation and evidence limits
 
