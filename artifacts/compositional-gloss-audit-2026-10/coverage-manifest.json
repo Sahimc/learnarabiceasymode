@@ -19,21 +19,21 @@
     "occurrenceRows": 77434,
     "relevantSegmentedOccurrences": 39672,
     "notApplicableOccurrences": 37762,
-    "pendingRelevantOccurrences": 39624,
+    "pendingRelevantOccurrences": 39617,
     "staleDecisions": 0,
     "classificationCounts": {
-      "CORRECT": 9,
+      "CORRECT": 10,
       "NOT-APPLICABLE": 37762,
-      "WHOLE-WORD-GLOSS-LEAKAGE": 26,
+      "WHOLE-WORD-GLOSS-LEAKAGE": 30,
       "SEMANTIC-OVERLAP-VALID": 1,
       "GLOSS-DUPLICATION": 2,
-      "NEEDS-REVIEW": 5,
-      "PRONOUN-ROLE-ERROR": 5,
-      "PENDING": 39624
+      "NEEDS-REVIEW": 6,
+      "PRONOUN-ROLE-ERROR": 6,
+      "PENDING": 39617
     },
     "occurrenceLedgerReconciles": true,
-    "manuallyReviewedSegmentedOccurrences": 48,
-    "manualDecisionRecordsApplied": 48
+    "manuallyReviewedSegmentedOccurrences": 55,
+    "manualDecisionRecordsApplied": 55
   },
   "canonicalAlignment": {
     "comparisonNormalization": "For position checks only: NFC/NFD, remove tatweel, short-vowel/tanwin/shadda and Qur'anic stop marks; map dagger alif to alif, alif wasla variants to plain alif, and alif maqsurah to ya. Stored source text is never rewritten.",
@@ -1316,9 +1316,9 @@
     }
   ],
   "artifacts": {
-    "fullMachineReadableLedger": "coverage-ledger.20261101122801-refresh-8940.jsonl.gz",
-    "searchableTable": "coverage-ledger.20261101122801-refresh-8940.csv",
-    "compressedSearchableTable": "coverage-ledger.20261101122801-refresh-8940.csv.gz",
+    "fullMachineReadableLedger": "coverage-ledger.20261101123015-refresh-3152.jsonl.gz",
+    "searchableTable": "coverage-ledger.20261101123015-refresh-3152.csv",
+    "compressedSearchableTable": "coverage-ledger.20261101123015-refresh-3152.csv.gz",
     "reviewDecisionLog": "review-decisions.jsonl",
     "canonicalAlignment": "canonical-alignment.json"
   },
@@ -1328,6 +1328,6 @@
     "everyOccurrenceHasAuditClassification": true,
     "csvDataRowsPlusHeader": true,
     "compressedTableMatchesPlainCsv": true,
-    "verifiedAt": "2026-11-01T12:28:48.706Z"
+    "verifiedAt": "2026-11-01T12:31:06.875Z"
   }
 }
