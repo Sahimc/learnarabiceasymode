@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–116
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–117
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -272,6 +272,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 77. Sūrah 2:115 repeats “and / for” in the Allah stem of وَلِلَّهِ, repeats definiteness in the stem glosses of ٱلْمَشْرِقُ and ٱلْمَغْرِبُ, duplicates “and” and “the” in the west noun piece, repeats “so” in both أَيْنَمَا and ثَمَّ after separate result/resumption فَ particles, and leaves the second-person plural subject of تُوَلُّوا۟ generic. Six segmented occurrences have Change Yes; six atomic words are not applicable. No corpus data changed.
 - Sūrah 2, āyah 116: fourteen repository words; positions 1–14 map one-to-one to canonical Tanzil tokens 1–14 after excluding standalone stop marks. Five relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`); nine intact words were marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. All positions were verified against the package, source and ledger; all five displayed splits were reviewed against the exact QAC records and phrase context. Complete word-by-word table posted in chat. No corpus data changed.
 78. Sūrah 2:116 duplicates connector meaning and hides the plural subject in وَقَالُوا۟; leaves the personal pronoun in لَّهُۥ generic; repeats the article meaning in the stem gloss of ٱلسَّمَـٰوَٰتِ; duplicates both the conjunction and article in the stem gloss of وَٱلْأَرْضِ; and leaves the personal pronoun in the second لَّهُۥ generic. Both لَّهُۥ occurrences were independently adjudicated. Five segmented occurrences have Change Yes; nine atomic words are not applicable. No corpus data changed.
+- Sūrah 2, āyah 117: eleven repository words; positions 1–11 map one-to-one to canonical Tanzil tokens 1–11 after excluding standalone stop marks. Six relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`; one `NEEDS-REVIEW` for separately glossing the combined restrictive construction إِنَّمَا); five intact words were marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Every position was verified against the package, source and ledger; all six displayed splits were reviewed against exact QAC entries and phrase context. Complete word-by-word table posted in chat. No corpus data changed.
+79. Sūrah 2:117 repeats definiteness in the stem of ٱلسَّمَـٰوَٰتِ; duplicates both conjunction and article in the stem of وَٱلْأَرْضِ; repeats the conjunction in the time-adverb piece of وَإِذَا; duplicates “so/only” across فَإِنَّمَا while the “only” meaning belongs to the combined inna+mā restriction; leaves the pronoun in لَهُۥ generic; and repeats conjunction and subject meaning in the verb piece of فَيَكُونُ. Six segmented occurrences have Change Yes; five atomic words are not applicable. No corpus data changed.
 
 ## Validation and evidence limits
 
@@ -282,4 +284,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 117, word 1, verifying its repository package position and canonical Tanzil source token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 118, word 1, verifying its repository package position and canonical Tanzil source token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
