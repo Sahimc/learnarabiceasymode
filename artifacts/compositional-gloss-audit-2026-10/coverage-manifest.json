@@ -19,21 +19,21 @@
     "occurrenceRows": 77434,
     "relevantSegmentedOccurrences": 39672,
     "notApplicableOccurrences": 37762,
-    "pendingRelevantOccurrences": 39492,
+    "pendingRelevantOccurrences": 39475,
     "staleDecisions": 0,
     "classificationCounts": {
       "CORRECT": 11,
       "NOT-APPLICABLE": 37762,
-      "WHOLE-WORD-GLOSS-LEAKAGE": 99,
+      "WHOLE-WORD-GLOSS-LEAKAGE": 106,
       "SEMANTIC-OVERLAP-VALID": 1,
       "GLOSS-DUPLICATION": 6,
-      "NEEDS-REVIEW": 11,
-      "PRONOUN-ROLE-ERROR": 52,
-      "PENDING": 39492
+      "NEEDS-REVIEW": 13,
+      "PRONOUN-ROLE-ERROR": 60,
+      "PENDING": 39475
     },
     "occurrenceLedgerReconciles": true,
-    "manuallyReviewedSegmentedOccurrences": 180,
-    "manualDecisionRecordsApplied": 180
+    "manuallyReviewedSegmentedOccurrences": 197,
+    "manualDecisionRecordsApplied": 197
   },
   "canonicalAlignment": {
     "comparisonNormalization": "For position checks only: NFC/NFD, remove tatweel, short-vowel/tanwin/shadda and Qur'anic stop marks; map dagger alif to alif, alif wasla variants to plain alif, and alif maqsurah to ya. Stored source text is never rewritten.",
@@ -1316,9 +1316,9 @@
     }
   ],
   "artifacts": {
-    "fullMachineReadableLedger": "coverage-ledger.20261101130918-refresh-39864.jsonl.gz",
-    "searchableTable": "coverage-ledger.20261101130918-refresh-39864.csv",
-    "compressedSearchableTable": "coverage-ledger.20261101130918-refresh-39864.csv.gz",
+    "fullMachineReadableLedger": "coverage-ledger.20261101131255-refresh-13216.jsonl.gz",
+    "searchableTable": "coverage-ledger.20261101131255-refresh-13216.csv",
+    "compressedSearchableTable": "coverage-ledger.20261101131255-refresh-13216.csv.gz",
     "reviewDecisionLog": "review-decisions.jsonl",
     "canonicalAlignment": "canonical-alignment.json"
   },
@@ -1328,6 +1328,6 @@
     "everyOccurrenceHasAuditClassification": true,
     "csvDataRowsPlusHeader": true,
     "compressedTableMatchesPlainCsv": true,
-    "verifiedAt": "2026-11-01T13:10:08.766Z"
+    "verifiedAt": "2026-11-01T13:13:52.798Z"
   }
 }
