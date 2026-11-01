@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–55
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–56
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -74,8 +74,9 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 53: seven repository words; positions 1–7 verified against package order and canonical token order. Six relevant segmented occurrences individually adjudicated (all `Yes`); one atomic occurrence marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 54: twenty-six repository words; positions 1–26 map one-to-one to canonical visible tokens 1–26, excluding the standalone waqf marker after position 22. Nineteen segmented occurrences individually adjudicated (all `Yes`); seven atomic occurrences marked not applicable. Positions 16 and 25 are `NEEDS-REVIEW` for occurrence-specific segmentation/wording decisions. Full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 55: fourteen repository words; positions 1–14 map one-to-one to canonical visible tokens 1–14. Seven segmented occurrences individually adjudicated (all `Yes`); seven atomic occurrences marked not applicable. Full word-by-word audit table posted in chat.
-- Total segmented occurrences individually adjudicated: 461 of 39,672; 435 `Yes` and 26 `No`. Total segmented occurrences pending: 39,211; stale decisions: zero. In addition, 352 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–55 and remain explicitly marked not applicable.
-- Next audit location: Sūrah 2, āyah 56, repository word position 1 (`word:2:56:1`, canonical token 1, ثُمَّ), verified against the repository package and Tanzil source.
+- Sūrah 2, āyah 56: seven repository words; positions 1–7 map one-to-one to canonical visible tokens 1–7. Three segmented occurrences individually adjudicated (all `Yes`); four atomic occurrences marked not applicable. Full word-by-word audit table posted in chat.
+- Total segmented occurrences individually adjudicated: 464 of 39,672; 438 `Yes` and 26 `No`. Total segmented occurrences pending: 39,208; stale decisions: zero. In addition, 356 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–56 and remain explicitly marked not applicable.
+- Next audit location: Sūrah 2, āyah 57, repository word position 1 (`word:2:57:1`, canonical token 1, وَظَلَّلْنَا), verified against the repository package and Tanzil source.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -107,6 +108,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 16. Sūrah 2:54 adds an independently reviewed recurrence of the ذَٰلِكُمْ demonstrative being falsely split as ذَٰ + لِ “for/to” + كُمْ “pronoun” (position 16); QAC identifies the whole token as one demonstrative pronoun. Position 25 also exhibits article/stem determiner duplication in ٱلتَّوَّابُ, with a contextual lexical rendering concern (“the Accepting of repentance” in the certified translation versus current “(is) the-returning”); both findings are occurrence-specific and do not authorize changes or extrapolation.
 
 17. Sūrah 2:55 contributes occurrence-level evidence of several distinct display problems: position 2 repeats the second-person plural subject in the verb stem and suffix; position 11 repeats both the resumptive connector and object pronoun inside its verb-segment gloss; position 12 repeats the definite article in the noun gloss; position 13 renders circumstantial وَ (“while”) as “and” and leaves أَنتُمْ generic; position 14 labels a second-person plural verb subject only as “pronoun”. Each was adjudicated separately.
+
+18. Sūrah 2:56 positions 5–7 provide three separately adjudicated examples of generic “pronoun” labels hiding distinct roles: second-person plural possessor on مَوْتِكُمْ, second-person plural complement of لَعَلَّ, and second-person plural verb subject on تَشْكُرُونَ. The repeated label is a displayed teaching weakness; each occurrence received its own decision.
 
 ## Validation and evidence limits
 
