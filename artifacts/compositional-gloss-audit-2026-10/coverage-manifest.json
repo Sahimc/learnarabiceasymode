@@ -19,21 +19,21 @@
     "occurrenceRows": 77434,
     "relevantSegmentedOccurrences": 39672,
     "notApplicableOccurrences": 37762,
-    "pendingRelevantOccurrences": 39554,
+    "pendingRelevantOccurrences": 39544,
     "staleDecisions": 0,
     "classificationCounts": {
       "CORRECT": 10,
       "NOT-APPLICABLE": 37762,
-      "WHOLE-WORD-GLOSS-LEAKAGE": 62,
+      "WHOLE-WORD-GLOSS-LEAKAGE": 71,
       "SEMANTIC-OVERLAP-VALID": 1,
       "GLOSS-DUPLICATION": 5,
       "NEEDS-REVIEW": 8,
-      "PRONOUN-ROLE-ERROR": 32,
-      "PENDING": 39554
+      "PRONOUN-ROLE-ERROR": 33,
+      "PENDING": 39544
     },
     "occurrenceLedgerReconciles": true,
-    "manuallyReviewedSegmentedOccurrences": 118,
-    "manualDecisionRecordsApplied": 118
+    "manuallyReviewedSegmentedOccurrences": 128,
+    "manualDecisionRecordsApplied": 128
   },
   "canonicalAlignment": {
     "comparisonNormalization": "For position checks only: NFC/NFD, remove tatweel, short-vowel/tanwin/shadda and Qur'anic stop marks; map dagger alif to alif, alif wasla variants to plain alif, and alif maqsurah to ya. Stored source text is never rewritten.",
@@ -1316,9 +1316,9 @@
     }
   ],
   "artifacts": {
-    "fullMachineReadableLedger": "coverage-ledger.20261101125215-refresh-38040.jsonl.gz",
-    "searchableTable": "coverage-ledger.20261101125215-refresh-38040.csv",
-    "compressedSearchableTable": "coverage-ledger.20261101125215-refresh-38040.csv.gz",
+    "fullMachineReadableLedger": "coverage-ledger.20261101125430-refresh-36576.jsonl.gz",
+    "searchableTable": "coverage-ledger.20261101125430-refresh-36576.csv",
+    "compressedSearchableTable": "coverage-ledger.20261101125430-refresh-36576.csv.gz",
     "reviewDecisionLog": "review-decisions.jsonl",
     "canonicalAlignment": "canonical-alignment.json"
   },
@@ -1328,6 +1328,6 @@
     "everyOccurrenceHasAuditClassification": true,
     "csvDataRowsPlusHeader": true,
     "compressedTableMatchesPlainCsv": true,
-    "verifiedAt": "2026-11-01T12:53:11.098Z"
+    "verifiedAt": "2026-11-01T12:55:31.150Z"
   }
 }
