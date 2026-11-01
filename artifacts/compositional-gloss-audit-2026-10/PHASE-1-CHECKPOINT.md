@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–119
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–120
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -278,6 +278,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 80. Sūrah 2:118 repeats the conjunction in وَقَالَ; leaves the plural subject generic in يَعْلَمُونَ; absorbs the first-person object in يُكَلِّمُنَا and تَأْتِينَآ into verb-stem glosses while their suffixes are generic; splits كَذَٰلِكَ into unsupported separate English components; absorbs “them” into قَبْلِهِم and “their” into قَوْلِهِم and قُلُوبُهُمْ; absorbs the subject “we” into بَيَّنَّا; repeats the preposition in لِقَوْمٍ; and leaves the plural subject of يُوقِنُونَ generic. Eleven segmented occurrences have Change Yes; thirteen atomic words are not applicable. No corpus data changed.
 - Sūrah 2, āyah 119: ten repository words; positions 1–10 map one-to-one to canonical Tanzil tokens 1–10 after excluding the standalone stop mark. Five relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`); five intact words were marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. All positions were verified against package, source and ledger; all five displayed splits were reviewed against exact QAC records and context. Complete word-by-word table posted in chat. No corpus data changed.
 81. Sūrah 2:119 absorbs the first-person “We” into إِنَّ and leaves the attached pronoun generic; gives بِٱلْحَقِّ an unselected preposition option list while repeating “with the” in its noun stem; repeats وَ in the stem gloss of وَنَذِيرًا; repeats وَ in the negative piece of وَلَا; and repeats article meaning in the stem gloss of ٱلْجَحِيمِ. Five segmented occurrences have Change Yes; five atomic words are not applicable. No corpus data changed.
+- Sūrah 2, āyah 120: thirty-one repository words; positions 1–31 map one-to-one to canonical Tanzil tokens 1–31 after excluding standalone stop marks. Fourteen relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`; one `NEEDS-REVIEW` for emphatic lām in وَلَئِنِ); seventeen intact words were marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. All positions were verified against package, source and ledger; all fourteen displayed splits were checked against exact QAC records and context. Complete word-by-word table posted in chat. No corpus data changed.
+82. Sūrah 2:120 repeats the conjunction in وَلَن, duplicates “you” between عَنكَ stem and suffix, repeats articles in ٱلْيَهُودُ and ٱلنَّصَـٰرَىٰ, repeats وَ inside both وَلا negative glosses, absorbs “their” into مِلَّتَهُمْ, repeats definiteness in ٱلْهُدَىٰ and ٱلْعِلْمِ, mislabels the emphatic lām of وَلَئِنِ as a preposition and repeats conjunction meaning in its conditional piece, absorbs subjects/possessives/objects into the stems of ٱتَّبَعْتَ, أَهْوَاءَهُم, and جَاءَكَ, and leaves the personal pronoun in لَكَ generic. Both وَلَا occurrences were adjudicated separately. Fourteen segmented occurrences have Change Yes; seventeen atomic words are not applicable. No corpus data changed.
 
 ## Validation and evidence limits
 
@@ -288,4 +290,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 120, word 1, verifying its repository package position and canonical Tanzil source token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 121, word 1, verifying its repository package position and canonical Tanzil source token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
