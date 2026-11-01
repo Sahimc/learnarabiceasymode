@@ -19,21 +19,21 @@
     "occurrenceRows": 77434,
     "relevantSegmentedOccurrences": 39672,
     "notApplicableOccurrences": 37762,
-    "pendingRelevantOccurrences": 39629,
+    "pendingRelevantOccurrences": 39624,
     "staleDecisions": 0,
     "classificationCounts": {
       "CORRECT": 9,
       "NOT-APPLICABLE": 37762,
-      "WHOLE-WORD-GLOSS-LEAKAGE": 22,
+      "WHOLE-WORD-GLOSS-LEAKAGE": 26,
       "SEMANTIC-OVERLAP-VALID": 1,
       "GLOSS-DUPLICATION": 2,
       "NEEDS-REVIEW": 5,
-      "PRONOUN-ROLE-ERROR": 4,
-      "PENDING": 39629
+      "PRONOUN-ROLE-ERROR": 5,
+      "PENDING": 39624
     },
     "occurrenceLedgerReconciles": true,
-    "manuallyReviewedSegmentedOccurrences": 43,
-    "manualDecisionRecordsApplied": 43
+    "manuallyReviewedSegmentedOccurrences": 48,
+    "manualDecisionRecordsApplied": 48
   },
   "canonicalAlignment": {
     "comparisonNormalization": "For position checks only: NFC/NFD, remove tatweel, short-vowel/tanwin/shadda and Qur'anic stop marks; map dagger alif to alif, alif wasla variants to plain alif, and alif maqsurah to ya. Stored source text is never rewritten.",
@@ -1316,9 +1316,9 @@
     }
   ],
   "artifacts": {
-    "fullMachineReadableLedger": "coverage-ledger.20261101122603-refresh-11120.jsonl.gz",
-    "searchableTable": "coverage-ledger.20261101122603-refresh-11120.csv",
-    "compressedSearchableTable": "coverage-ledger.20261101122603-refresh-11120.csv.gz",
+    "fullMachineReadableLedger": "coverage-ledger.20261101122801-refresh-8940.jsonl.gz",
+    "searchableTable": "coverage-ledger.20261101122801-refresh-8940.csv",
+    "compressedSearchableTable": "coverage-ledger.20261101122801-refresh-8940.csv.gz",
     "reviewDecisionLog": "review-decisions.jsonl",
     "canonicalAlignment": "canonical-alignment.json"
   },
@@ -1328,6 +1328,6 @@
     "everyOccurrenceHasAuditClassification": true,
     "csvDataRowsPlusHeader": true,
     "compressedTableMatchesPlainCsv": true,
-    "verifiedAt": "2026-11-01T12:26:56.121Z"
+    "verifiedAt": "2026-11-01T12:28:48.706Z"
   }
 }
