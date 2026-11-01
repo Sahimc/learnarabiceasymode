@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–48
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–49
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -67,8 +67,9 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 46: eight repository words, all positions verified against canonical visible tokens 1–8; five relevant segmented occurrences individually adjudicated (all `Yes`), and three atomic/whole-word occurrences marked not applicable. The full word-by-word table was posted in chat.
 - Sūrah 2, āyah 47: eleven repository words; positions 1–11 verified against package order and canonical token order. Seven relevant segmented occurrences individually adjudicated (all `Yes`); four atomic occurrences marked not applicable. Full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 48: nineteen repository words; positions 1–19 verified against package order and canonical token order. Seven relevant segmented occurrences individually adjudicated (all `Yes`); twelve atomic occurrences marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; the full word-by-word audit table was posted in chat.
-- Total segmented occurrences individually adjudicated: 401 of 39,672; 377 `Yes` and 24 `No`. Total segmented occurrences pending: 39,271; stale decisions: zero. In addition, 317 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–48 and remain explicitly marked not applicable.
-- Next audit location: Sūrah 2, āyah 49, repository word position 1 (`word:2:49:1`, canonical token 1, وَإِذْ), verified against the repository package and Tanzil source.
+- Sūrah 2, āyah 49: eighteen repository words; positions 1–18 verified against package order and canonical token order, including the standalone waqf boundary after token 12. Ten relevant segmented occurrences individually adjudicated (nine `Yes`, one `No`); eight atomic occurrences marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; full word-by-word audit table posted in chat.
+- Total segmented occurrences individually adjudicated: 411 of 39,672; 386 `Yes` and 25 `No`. Total segmented occurrences pending: 39,261; stale decisions: zero. In addition, 325 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–49 and remain explicitly marked not applicable.
+- Next audit location: Sūrah 2, āyah 50, repository word position 1 (`word:2:50:1`, canonical token 1, وَإِذْ), verified against the repository package and Tanzil source.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -87,6 +88,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 9. Generic segment labels such as “pronoun” recur across distinct grammatical roles in the reviewed scope, including plural verb subjects, possessors, and referential suffixes. This label-level weakness makes the displayed compositional explanation incomplete even where the combined whole-word gloss is understandable.
 10. Several reviewed multi-part items have contextually broad English alternatives or added English tense/subject wording. Current verse translation and occurrence context are needed to assess those displays; the broad alternatives are not being accepted as sufficient solely because one option could fit elsewhere.
 
+11. Sūrah 2:49 position 14 contains an over-segmentation failure: a part of the single demonstrative ذَٰلِكُم is presented as the independent preposition “for/to,” and the plural-address form is labelled “pronoun.” The QAC classifies the complete occurrence as a demonstrative pronoun; the exact occurrence decision records an atomic-word proposal. This is new occurrence evidence, not a rule applied to other demonstratives.
+
 ## Validation and evidence limits
 
 - Ledger ID uniqueness, total coverage, segmentation/N/A partition, CSV row count, and compressed/plain CSV byte identity have been checked.
@@ -96,4 +99,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 49, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 50, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
