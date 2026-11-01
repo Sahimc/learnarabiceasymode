@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–57
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–58
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -76,8 +76,9 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 55: fourteen repository words; positions 1–14 map one-to-one to canonical visible tokens 1–14. Seven segmented occurrences individually adjudicated (all `Yes`); seven atomic occurrences marked not applicable. Full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 56: seven repository words; positions 1–7 map one-to-one to canonical visible tokens 1–7. Three segmented occurrences individually adjudicated (all `Yes`); four atomic occurrences marked not applicable. Full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 57: eighteen repository words; positions 1–18 map one-to-one to canonical visible tokens 1–18 after excluding standalone waqf marks. Thirteen segmented occurrences individually adjudicated (all `Yes`); five atomic occurrences marked not applicable. Full word-by-word audit table posted in chat.
-- Total segmented occurrences individually adjudicated: 477 of 39,672; 451 `Yes` and 26 `No`. Total segmented occurrences pending: 39,195; stale decisions: zero. In addition, 361 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–57 and remain explicitly marked not applicable.
-- Next audit location: Sūrah 2, āyah 58, repository word position 1 (`word:2:58:1`, canonical token 1, وَإِذْ), verified against the repository package and Tanzil source.
+- Sūrah 2, āyah 58: twenty repository words; positions 1–20 map one-to-one to canonical visible tokens 1–20 after excluding the standalone waqf mark. Thirteen segmented occurrences individually adjudicated (twelve `Yes`, one `No`); seven atomic occurrences marked not applicable. Full word-by-word audit table posted in chat.
+- Total segmented occurrences individually adjudicated: 490 of 39,672; 463 `Yes` and 27 `No`. Total segmented occurrences pending: 39,182; stale decisions: zero. In addition, 368 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–58 and remain explicitly marked not applicable.
+- Next audit location: Sūrah 2, āyah 59, repository word position 1 (`word:2:59:1`, canonical token 1, فَبَدَّلَ), verified against the repository package and Tanzil source.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -113,6 +114,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 18. Sūrah 2:56 positions 5–7 provide three separately adjudicated examples of generic “pronoun” labels hiding distinct roles: second-person plural possessor on مَوْتِكُمْ, second-person plural complement of لَعَلَّ, and second-person plural verb subject on تَشْكُرُونَ. The repeated label is a displayed teaching weakness; each occurrence received its own decision.
 
 19. Sūrah 2:57 positions 1–18 add occurrence-specific examples of stem glosses absorbing conjunction, article or pronoun meanings; generic pronoun labels also conceal distinct subject, object and possessive roles. Position 17 أَنفُسَهُمْ additionally needs the contextual English reflexive rendered without the unsupported “to”. Every segmented occurrence received its own decision, including repeated عَلَيْكُمُ at positions 2 and 5.
+
+20. Sūrah 2:58 includes a contextually valid article + noun display at position 5: the article’s definiteness is represented by preceding “this” in English, so the whole-word gloss “town” is sound without “the”. Other reviewed examples in the verse show determiner repetition, generic pronoun labels, and the future particle سَ misglossed as a preposition. Each was assessed in its own context.
 
 ## Validation and evidence limits
 
