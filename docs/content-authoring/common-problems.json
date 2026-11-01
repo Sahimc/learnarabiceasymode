@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.2.0",
+  "schemaVersion": "1.2.1",
   "sourceOfTruth": "docs/content-authoring/quranic-word-tree-contract.json",
   "entries": [
     {
@@ -167,6 +167,11 @@
       "id": "api-arabic-bidi-mark-alignment",
       "problem": "Canonical API Arabic can include verse-stop symbols and invisible bidirectional control marks that are not present in the stored source word, causing a valid word to fail source/API alignment.",
       "safeguard": "Normalize only decorative Qur'anic marks and Unicode bidirectional controls for alignment while preserving the original sourceText and API text for display/provenance. Fail closed for any remaining substantive mismatch, and add a regression case whenever a new provider mark appears."
+    },
+    {
+      "id": "compositional-split-gloss-overlap",
+      "problem": "A displayed component gloss repeats meaning already assigned to an attached connector, preposition, article or pronoun, or a whole-phrase gloss is copied onto one component and hides the contribution of the other pieces.",
+      "safeguard": "Audit every occurrence and every displayed piece against aligned canonical morphology and the local phrase. Allocate each represented meaning to its own component once; distinguish lexical stems from attached grammatical roles and pronouns. Preserve idiomatic whole-word English where appropriate, but record when English omits a component contribution and do not use that phrase gloss to mislabel the component."
     }
   ]
 }
