@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–50
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–51
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -69,8 +69,9 @@ Sūrah 1 is the first completed surah:
 - Sūrah 2, āyah 48: nineteen repository words; positions 1–19 verified against package order and canonical token order. Seven relevant segmented occurrences individually adjudicated (all `Yes`); twelve atomic occurrences marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; the full word-by-word audit table was posted in chat.
 - Sūrah 2, āyah 49: eighteen repository words; positions 1–18 verified against package order and canonical token order, including the standalone waqf boundary after token 12. Ten relevant segmented occurrences individually adjudicated (nine `Yes`, one `No`); eight atomic occurrences marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; full word-by-word audit table posted in chat.
 - Sūrah 2, āyah 50: ten repository words; positions 1–10 verified against package order and canonical token order. Seven relevant segmented occurrences individually adjudicated (six `Yes`, one `No`); three atomic occurrences marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; full word-by-word audit table posted in chat.
-- Total segmented occurrences individually adjudicated: 418 of 39,672; 392 `Yes` and 26 `No`. Total segmented occurrences pending: 39,254; stale decisions: zero. In addition, 328 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–50 and remain explicitly marked not applicable.
-- Next audit location: Sūrah 2, āyah 51, repository word position 1 (`word:2:51:1`, canonical token 1, وَإِذْ), verified against the repository package and Tanzil source.
+- Sūrah 2, āyah 51: twelve repository words; positions 1–12 verified against package order and canonical token order. Six relevant segmented occurrences individually adjudicated (all `Yes`); six atomic occurrences marked not applicable. Reviewed under active contract 1.3.9 and common-problems register 1.2.0; full word-by-word audit table posted in chat.
+- Total segmented occurrences individually adjudicated: 424 of 39,672; 398 `Yes` and 26 `No`. Total segmented occurrences pending: 39,248; stale decisions: zero. In addition, 334 non-segmented occurrences have been individually checked across Sūrah 1 and Sūrah 2:1–51 and remain explicitly marked not applicable.
+- Next audit location: Sūrah 2, āyah 52, repository word position 1 (`word:2:52:1`, canonical token 1, ثُمَّ), verified against the repository package and Tanzil source.
 
 Each segmented decision has an occurrence ID, snapshot hash, audit state, explicit Yes/No decision, occurrence-specific comment, evidence references, reviewer, and timestamp in `review-decisions.jsonl`. No package word, lesson, breakdown, or runtime data has been changed.
 
@@ -93,6 +94,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 12. Sūrah 2:50 adds occurrence-level evidence that one stem label can absorb both a separate conjunction and a separate subject pronoun: word:2:50:6 وَأَغْرَقْنَآ currently labels the stem “and We drowned” beside وَ “and” and نَآ “pronoun”. This is documented as a root-cause example only; no unreviewed occurrence inherits its decision.
 
+13. Sūrah 2:51 position 11 وَأَنتُمْ is a separate occurrence where the canonical morphology marks circumstantial وَ (“while”) plus an independent second-person plural pronoun, but the displayed parts gloss the connector as “and” and the pronoun only generically. This reinforces the need for context-specific treatment of particles and pronoun roles; it is not used to classify other occurrences.
+
 ## Validation and evidence limits
 
 - Ledger ID uniqueness, total coverage, segmentation/N/A partition, CSV row count, and compressed/plain CSV byte identity have been checked.
@@ -102,4 +105,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 51, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 52, word by word. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
