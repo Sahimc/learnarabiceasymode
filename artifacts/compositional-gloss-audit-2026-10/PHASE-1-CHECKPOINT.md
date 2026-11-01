@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–102
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–111
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -260,6 +260,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 71. Sūrah 2:109 adds repeated article meaning in ٱلْكِتَـٰبِ and ٱلْحَقُّ, verb subject and object pronouns hidden in the stem of يَرُدُّونَكُم, a possessive suffix left generic in أَنفُسِهِم, and a generic personal pronoun in لَهُمُ. The commands فَٱعْفُوا۟ and وَٱصْفَحُوا۟ repeat their connectors inside their verb stems and leave plural subject endings generic. بِأَمْرِهِۦٓ leaves بِ as an unselected option list and hides the possessive meaning in the stem. Eight segmented occurrences have Change Yes; twenty-five atomic words are not applicable. No corpus data changed.
 
 72. Sūrah 2:110 repeats conjunction meaning inside imperative stems in وَأَقِيمُوا۟ and وَءَاتُوا۟, leaves their plural subject endings generic, repeats article meaning in ٱلصَّلَوٰةَ and ٱلزَّكَوٰةَ, duplicates the conjunction in وَمَا, leaves the subject ending generic in تُقَدِّمُوا۟, absorbs preposition and possessive meaning into the noun segment of لِأَنفُسِكُم, absorbs both subject and object pronouns into the stem of تَجِدُوهُ, leaves بِمَا contextually unallocated, and leaves the subject ending generic in تَعْمَلُونَ. Ten segmented occurrences have Change Yes; seven atomic words are not applicable. No corpus data changed.
+- Sūrah 2, āyah 111: eighteen repository words; positions 1–18 map one-to-one to canonical Tanzil tokens 1–18. Six relevant segmented occurrences were individually adjudicated (five `Change needed: Yes` with established gloss/pronoun-role defects; one `NEEDS-REVIEW`, `Yes`, for the unsupported split of تِلْكَ); twelve intact whole words were marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Positions and Arabic tokens were checked against the package, Tanzil source and occurrence ledger; all six splits were checked against exact QAC morphology and phrase context. Complete word-by-word table posted in chat. No corpus data changed.
+73. Sūrah 2:111 repeats conjunction meaning and absorbs the plural subject in وَقَالُوا۟; repeats definiteness in the stem gloss for ٱلْجَنَّةَ; displays تِلْكَ as unsupported fragments despite QAC treating it as one demonstrative; absorbs “their” into the stem gloss of أَمَانِيُّهُمْ; leaves the attached subject ending of هَاتُوا۟ generic and classified as possessive; and absorbs the subject of كُنتُمْ into the verb-stem gloss while leaving تُمْ generic. Six segmented occurrences have Change Yes; twelve atomic words are not applicable. No corpus data changed.
 
 ## Validation and evidence limits
 
@@ -270,4 +272,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 111, word 1, verifying its repository package position and canonical Tanzil source token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 112, word 1, verifying its repository package position and canonical Tanzil source token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
