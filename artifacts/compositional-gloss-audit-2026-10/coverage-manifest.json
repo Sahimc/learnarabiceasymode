@@ -19,21 +19,21 @@
     "occurrenceRows": 77434,
     "relevantSegmentedOccurrences": 39672,
     "notApplicableOccurrences": 37762,
-    "pendingRelevantOccurrences": 39598,
+    "pendingRelevantOccurrences": 39595,
     "staleDecisions": 0,
     "classificationCounts": {
       "CORRECT": 10,
       "NOT-APPLICABLE": 37762,
-      "WHOLE-WORD-GLOSS-LEAKAGE": 37,
+      "WHOLE-WORD-GLOSS-LEAKAGE": 39,
       "SEMANTIC-OVERLAP-VALID": 1,
       "GLOSS-DUPLICATION": 3,
       "NEEDS-REVIEW": 8,
-      "PRONOUN-ROLE-ERROR": 15,
-      "PENDING": 39598
+      "PRONOUN-ROLE-ERROR": 16,
+      "PENDING": 39595
     },
     "occurrenceLedgerReconciles": true,
-    "manuallyReviewedSegmentedOccurrences": 74,
-    "manualDecisionRecordsApplied": 74
+    "manuallyReviewedSegmentedOccurrences": 77,
+    "manualDecisionRecordsApplied": 77
   },
   "canonicalAlignment": {
     "comparisonNormalization": "For position checks only: NFC/NFD, remove tatweel, short-vowel/tanwin/shadda and Qur'anic stop marks; map dagger alif to alif, alif wasla variants to plain alif, and alif maqsurah to ya. Stored source text is never rewritten.",
@@ -1316,9 +1316,9 @@
     }
   ],
   "artifacts": {
-    "fullMachineReadableLedger": "coverage-ledger.20261101123632-refresh-32440.jsonl.gz",
-    "searchableTable": "coverage-ledger.20261101123632-refresh-32440.csv",
-    "compressedSearchableTable": "coverage-ledger.20261101123632-refresh-32440.csv.gz",
+    "fullMachineReadableLedger": "coverage-ledger.20261101123818-refresh-7188.jsonl.gz",
+    "searchableTable": "coverage-ledger.20261101123818-refresh-7188.csv",
+    "compressedSearchableTable": "coverage-ledger.20261101123818-refresh-7188.csv.gz",
     "reviewDecisionLog": "review-decisions.jsonl",
     "canonicalAlignment": "canonical-alignment.json"
   },
@@ -1328,6 +1328,6 @@
     "everyOccurrenceHasAuditClassification": true,
     "csvDataRowsPlusHeader": true,
     "compressedTableMatchesPlainCsv": true,
-    "verifiedAt": "2026-11-01T12:37:22.926Z"
+    "verifiedAt": "2026-11-01T12:39:13.903Z"
   }
 }
