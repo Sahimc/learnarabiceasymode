@@ -1,6 +1,6 @@
 # Qur'an compositional-gloss audit — Phase 1 checkpoint
 
-**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–111
+**Checkpoint:** 2026-11-01, after completing Sūrah 2, āyahs 1–112
 **Phase:** exhaustive audit and root-cause investigation only  
 **Corpus corrections:** none authorized or made
 
@@ -262,6 +262,8 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 72. Sūrah 2:110 repeats conjunction meaning inside imperative stems in وَأَقِيمُوا۟ and وَءَاتُوا۟, leaves their plural subject endings generic, repeats article meaning in ٱلصَّلَوٰةَ and ٱلزَّكَوٰةَ, duplicates the conjunction in وَمَا, leaves the subject ending generic in تُقَدِّمُوا۟, absorbs preposition and possessive meaning into the noun segment of لِأَنفُسِكُم, absorbs both subject and object pronouns into the stem of تَجِدُوهُ, leaves بِمَا contextually unallocated, and leaves the subject ending generic in تَعْمَلُونَ. Ten segmented occurrences have Change Yes; seven atomic words are not applicable. No corpus data changed.
 - Sūrah 2, āyah 111: eighteen repository words; positions 1–18 map one-to-one to canonical Tanzil tokens 1–18. Six relevant segmented occurrences were individually adjudicated (five `Change needed: Yes` with established gloss/pronoun-role defects; one `NEEDS-REVIEW`, `Yes`, for the unsupported split of تِلْكَ); twelve intact whole words were marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Positions and Arabic tokens were checked against the package, Tanzil source and occurrence ledger; all six splits were checked against exact QAC morphology and phrase context. Complete word-by-word table posted in chat. No corpus data changed.
 73. Sūrah 2:111 repeats conjunction meaning and absorbs the plural subject in وَقَالُوا۟; repeats definiteness in the stem gloss for ٱلْجَنَّةَ; displays تِلْكَ as unsupported fragments despite QAC treating it as one demonstrative; absorbs “their” into the stem gloss of أَمَانِيُّهُمْ; leaves the attached subject ending of هَاتُوا۟ generic and classified as possessive; and absorbs the subject of كُنتُمْ into the verb-stem gloss while leaving تُمْ generic. Six segmented occurrences have Change Yes; twelve atomic words are not applicable. No corpus data changed.
+- Sūrah 2, āyah 112: seventeen repository words; positions 1–17 map one-to-one to canonical Tanzil tokens 1–17. Ten relevant segmented occurrences were individually adjudicated (all `Change needed: Yes`; one remains `NEEDS-REVIEW` for the contextual reading of circumstantial وَ in وَهُوَ); seven intact whole words were marked `NOT-APPLICABLE / NO-RELEVANT-SEGMENTATION`. Positions and Arabic tokens were verified against the package, Tanzil source and occurrence ledger; all ten displayed splits were checked against exact QAC morphology and phrase context. Complete word-by-word table posted in chat. No corpus data changed.
+74. Sūrah 2:112 absorbs possessive “his” into the noun stems of وَجْهَهُۥ, أَجْرُهُۥ and رَبِّهِۦ while suffixes remain generic; duplicates the preposition in لِلَّهِ; labels the independent pronoun in وَهُوَ as possessive and leaves the circumstantial waw's contextual English unresolved; leaves the pronoun in فَلَهُۥٓ generic and possessive-labeled despite its personal-pronoun role; duplicates “and” inside the negative segments in both وَلَا occurrences; absorbs “them” into the preposition piece of عَلَيْهِمْ; and leaves the attached plural subject of يَحْزَنُونَ generic. Ten segmented occurrences have Change Yes; seven atomic words are not applicable. No corpus data changed.
 
 ## Validation and evidence limits
 
@@ -272,4 +274,4 @@ These are observed contributors or reconciliation issues, not yet a final root-c
 
 ## Next checkpoint
 
-Continue in canonical sequence with Sūrah 2, āyah 112, word 1, verifying its repository package position and canonical Tanzil source token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
+Continue in canonical sequence with Sūrah 2, āyah 113, word 1, verifying its repository package position and canonical Tanzil source token before recording. Preserve occurrence-level decisions even where a surface form or gloss resembles an occurrence reviewed elsewhere. After each completed āyah, post its complete word table in the chat before starting the next āyah.
