@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T17:56:45.021Z",
+  "generatedAt": "2026-11-03T02:30:48.253Z",
   "contractVersion": "1.3.9",
   "sources": {
     "canonicalArabic": "content-import/sources/tanzil/quran-uthmani.txt",
@@ -19,22 +19,30 @@
     "occurrenceRows": 77434,
     "relevantSegmentedOccurrences": 39672,
     "notApplicableOccurrences": 37762,
-    "pendingRelevantOccurrences": 38224,
+    "pendingRelevantOccurrences": 36424,
     "staleDecisions": 0,
     "classificationCounts": {
-      "CORRECT": 18,
-      "NOT-APPLICABLE": 37762,
-      "WHOLE-WORD-GLOSS-LEAKAGE": 404,
-      "SEMANTIC-OVERLAP-VALID": 11,
-      "GLOSS-DUPLICATION": 221,
-      "NEEDS-REVIEW": 68,
-      "PRONOUN-ROLE-ERROR": 701,
-      "PREFIX-LEAKAGE": 25,
-      "PENDING": 38224
+      "CORRECT": 32,
+      "NOT-APPLICABLE": 37767,
+      "WHOLE-WORD-GLOSS-LEAKAGE": 637,
+      "SEMANTIC-OVERLAP-VALID": 19,
+      "GLOSS-DUPLICATION": 781,
+      "NEEDS-REVIEW": 139,
+      "PRONOUN-ROLE-ERROR": 1389,
+      "PREFIX-LEAKAGE": 96,
+      "SEMANTIC-OVERLAP": 1,
+      "FALSE-SEGMENTATION": 13,
+      "MORPHOLOGY-GLOSS-MISMATCH": 14,
+      "PRONOUN-GLOSS-OMISSION": 45,
+      "GLOSS-ALLOCATION-ERROR": 54,
+      "COMPONENT-GLOSS-MISMATCH": 4,
+      "PREPOSITION-GLOSS-MISMATCH": 11,
+      "PREFIX-GLOSS-MISMATCH": 8,
+      "PENDING": 36424
     },
     "occurrenceLedgerReconciles": true,
-    "manuallyReviewedSegmentedOccurrences": 1448,
-    "manualDecisionRecordsApplied": 1448
+    "manuallyReviewedSegmentedOccurrences": 3248,
+    "manualDecisionRecordsApplied": 4808
   },
   "canonicalAlignment": {
     "comparisonNormalization": "For position checks only: NFC/NFD, remove tatweel, short-vowel/tanwin/shadda and Qur'anic stop marks; map dagger alif to alif, alif wasla variants to plain alif, and alif maqsurah to ya. Stored source text is never rewritten.",
@@ -71,7 +79,7 @@
         "packageId": "surah:5",
         "surah": 5,
         "databaseChecksum": "592dd5ac6e3a003d51f5b969fda477610a7cf70270cebbec45dc2ece8fa048c8",
-        "packageChecksum": "fcdb01ee5c997381af11521961b185c7610bb59988083e4201f95ae3a35841af",
+        "packageChecksum": "edaff90c95e842756cf9bf52e107be8c869522a02546882efd131378d32313c7",
         "databaseContentVersion": "tanzil-1.1+teaching-5-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823",
         "packageContentVersion": "tanzil-1.1+teaching-5-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174311-c3c4d-correction-20261031174337"
       },
@@ -79,7 +87,7 @@
         "packageId": "surah:6",
         "surah": 6,
         "databaseChecksum": "21268f39b58609c5bf10879c71951f5cacf16b022cdccded48c79ccfa5196449",
-        "packageChecksum": "92ec44b57f55dd91a50c9b7a9e7133b8a080341c664b09d90dbbb0ce629379fe",
+        "packageChecksum": "57674aec0842c9af1227d30326030ea02fb49a1f2b835f45aa7223a81818b93d",
         "databaseContentVersion": "tanzil-1.1+teaching-6-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4a-20261023164708-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823",
         "packageContentVersion": "tanzil-1.1+teaching-6-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4a-20261023164708-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174052-c3c4d-correction-20261031174213-c3c4d-correction-20261031174337"
       },
@@ -87,7 +95,7 @@
         "packageId": "surah:9",
         "surah": 9,
         "databaseChecksum": "09e41e6c4657724c858a0fe9cf9574e3243a70b8433b3c9bba496d9eaae2dc15",
-        "packageChecksum": "a25bd1eea026f78df971b452600b3a06ed2984511cf3e62f82812ba4a8d22660",
+        "packageChecksum": "3c3e0a1a746ebc7e11ac10c13ac454bee86fa46835055506400752478a007d78",
         "databaseContentVersion": "tanzil-1.1+teaching-9-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c4c-20261024185904-c3c4d-20261031171823",
         "packageContentVersion": "tanzil-1.1+teaching-9-v1-sarf-1.2-c1-reaudit-historical-ab-reaudit-20261020213343-c3c4c-20261024185904-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174337"
       },
@@ -95,7 +103,7 @@
         "packageId": "surah:16",
         "surah": 16,
         "databaseChecksum": "c2a19a733cbd97b413e74a39e77213b7d90a3c873647b312c375f5bad36ec387",
-        "packageChecksum": "b87bb1ce4d38fd5e074889d1fa0295b19656ff4040f5d7b7928bbcf09c930622",
+        "packageChecksum": "f87ab1f842e89ce2ba203fac3344b18747cdad4df113f37ad323a18c8dec7331",
         "databaseContentVersion": "tanzil-1.1+teaching-16-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823",
         "packageContentVersion": "tanzil-1.1+teaching-16-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c4b-20261024155358-c3c4b-20261024165857-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174337"
       },
@@ -103,7 +111,7 @@
         "packageId": "surah:17",
         "surah": 17,
         "databaseChecksum": "b796510c026e75e4fedd6d70fcc40f951a5379286f3178cf45284f752b4cb29a",
-        "packageChecksum": "d4857e81c4874c1fa07c022168c77023617033ca6fcc7786ed2ee16b77377c8e",
+        "packageChecksum": "858714332015beb47012679e21decbaea01f5439e7e7644813eec123f2a96c09",
         "databaseContentVersion": "tanzil-1.1+teaching-17-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4d-20261031171823",
         "packageContentVersion": "tanzil-1.1+teaching-17-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174337"
       },
@@ -111,7 +119,7 @@
         "packageId": "surah:18",
         "surah": 18,
         "databaseChecksum": "bcb59b1be902068361edd04d235217a8c2c9e26d6fdbc9455ec335fc19587445",
-        "packageChecksum": "407d88f98d2d8caafc01bad76ba1c6623a8b57011fa3edca2c5fc3e3cf685b0e",
+        "packageChecksum": "ca9e11f677f18421513ed34affd7b4ae05aa64a1ecd59db59035827b89e82587",
         "databaseContentVersion": "tanzil-1.1+teaching-18-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4a-20261023164708-c3c4d-20261031171823",
         "packageContentVersion": "tanzil-1.1+teaching-18-v1-sarf-1.2-limited-audit-family-reconciliation-historical-ab-reaudit-20261020213343-c3c3-20261022220958-c3c4a-20261023164708-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174052-c3c4d-correction-20261031174213-c3c4d-correction-20261031174337"
       },
@@ -119,7 +127,7 @@
         "packageId": "surah:19",
         "surah": 19,
         "databaseChecksum": "e60643f52b048aef2957359772d0a0f57c23087761df47bd95a2b2b86f3381a8",
-        "packageChecksum": "9075826b79850fe8aa98f176190c6f4afbe1792d4022b8e316fa56c8c67f8eb0",
+        "packageChecksum": "35f6e8ed5d7beda015c3fc90b3d46ab7a942effd7930116e2fdc3d4a28087d62",
         "databaseContentVersion": "tanzil-1.1+teaching-19-v1-sarf-1.2-c1-reaudit-c3c4a-20261023164708-c3c4d-20261031171823",
         "packageContentVersion": "tanzil-1.1+teaching-19-v1-sarf-1.2-c1-reaudit-c3c4a-20261023164708-c3c4d-20261031171823-c3c4d-correction-20261031173749-c3c4d-correction-20261031174337"
       }
@@ -1317,9 +1325,9 @@
     }
   ],
   "artifacts": {
-    "fullMachineReadableLedger": "coverage-ledger.20261101222908-refresh-10516.jsonl.gz",
-    "searchableTable": "coverage-ledger.20261101222908-refresh-10516.csv",
-    "compressedSearchableTable": "coverage-ledger.20261101222908-refresh-10516.csv.gz",
+    "fullMachineReadableLedger": "coverage-ledger.20261103023809-32640.jsonl.gz",
+    "searchableTable": "coverage-ledger.20261103023809-32640.csv",
+    "compressedSearchableTable": "coverage-ledger.20261103023809-32640.csv.gz",
     "reviewDecisionLog": "review-decisions.jsonl",
     "canonicalAlignment": "canonical-alignment.json"
   },
@@ -1329,6 +1337,6 @@
     "everyOccurrenceHasAuditClassification": true,
     "csvDataRowsPlusHeader": true,
     "compressedTableMatchesPlainCsv": true,
-    "verifiedAt": "2026-11-01T22:31:21.156Z"
+    "verifiedAt": "2026-11-03T02:39:32.325Z"
   }
 }

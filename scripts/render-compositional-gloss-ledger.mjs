@@ -9,7 +9,9 @@ const root = process.cwd();
 const artifactRoot = path.join(root, "artifacts/compositional-gloss-audit-2026-10");
 const uncompressedSourcePath = path.join(artifactRoot, "coverage-ledger.jsonl");
 const compressedSourcePath = path.join(artifactRoot, "coverage-ledger-source.jsonl.gz");
-const sourcePath = await fs.access(compressedSourcePath).then(() => compressedSourcePath).catch(() => uncompressedSourcePath);
+// Prefer the latest full rebuild when present. The compressed source may be an
+// older snapshot retained for provenance and must not shadow the fresh ledger.
+const sourcePath = await fs.access(uncompressedSourcePath).then(() => uncompressedSourcePath).catch(() => compressedSourcePath);
 const runId = new Date().toISOString().replaceAll(/[-:.TZ]/gu, "").slice(0, 14) + `-${process.pid}`;
 const gzipPath = path.join(artifactRoot, `coverage-ledger.${runId}.jsonl.gz`);
 const csvPath = path.join(artifactRoot, `coverage-ledger.${runId}.csv`);
@@ -38,6 +40,15 @@ const statuses = new Set([
   "WHOLE-WORD-GLOSS-LEAKAGE",
   "SEMANTIC-OVERLAP-VALID",
   "NEEDS-REVIEW",
+  "SEMANTIC-OVERLAP",
+  "FALSE-SEGMENTATION",
+  "MORPHOLOGY-GLOSS-MISMATCH",
+  "PRONOUN-GLOSS-OMISSION",
+  "GLOSS-ALLOCATION-ERROR",
+  "COMPONENT-GLOSS-MISMATCH",
+  "PREPOSITION-GLOSS-MISMATCH",
+  "PREFIX-GLOSS-MISMATCH",
+  "NOT-APPLICABLE",
 ]);
 function csv(value) {
   const text = value === null || value === undefined
@@ -103,9 +114,27 @@ for await (const line of reader) {
   const relevant = row.relevantDisplayedLayers?.length > 0;
   const decision = decisionMap.get(row.occurrenceId);
   if (!relevant) {
-    row.auditState = "NOT-APPLICABLE";
-    row.changeNeeded = "No";
-    row.comment ||= "NO-RELEVANT-SEGMENTATION: no multi-part segment display exists for this occurrence.";
+    if (decision) {
+      if (decision.auditState !== "NOT-APPLICABLE" || decision.changeNeeded !== "No" || !decision.comment) {
+        throw new Error(`Invalid no-segmentation decision for ${row.occurrenceId}`);
+      }
+      if (decision.snapshotHash !== row.currentSnapshotHash) {
+        row.auditState = "STALE-DECISION";
+        row.changeNeeded = "Pending";
+        row.comment = `STALE-DECISION: reviewed snapshot ${decision.snapshotHash} differs from current ${row.currentSnapshotHash}; re-review required.`;
+        stale += 1;
+      } else {
+        row.auditState = decision.auditState;
+        row.changeNeeded = decision.changeNeeded;
+        row.comment = decision.comment;
+        row.decisionEvidence = decision.evidence ?? [];
+        row.reviewedBy = decision.reviewedBy ?? "Codex";
+      }
+    } else {
+      row.auditState = "NOT-APPLICABLE";
+      row.changeNeeded = "No";
+      row.comment = `NO-RELEVANT-SEGMENTATION: ${row.currentWholeWord.surface} (“${row.currentWholeWord.englishGloss}”) is displayed as one intact word in ${row.occurrenceId}; no multi-part split is presented for compositional review.`;
+    }
     notApplicable += 1;
   } else {
     segmentedRelevant += 1;
