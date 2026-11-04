@@ -7,6 +7,10 @@ import { createGunzip } from "node:zlib";
 
 const root = process.cwd();
 const artifactRoot = path.join(root, "artifacts/compositional-gloss-audit-2026-10");
+const completeSurah = Number(process.argv.find((value) => value.startsWith("--surah-complete="))?.split("=")[1]);
+if (!Number.isInteger(completeSurah) || completeSurah < 1 || completeSurah > 114) {
+  throw new Error("Full-ledger reconciliation is allowed only at a completed-sūrah boundary. Usage: node scripts/verify-compositional-gloss-ledger.mjs --surah-complete=N");
+}
 const manifestPath = path.join(artifactRoot, "coverage-manifest.json");
 const manifest = JSON.parse(await fs.readFile(manifestPath, "utf8"));
 const decisionText = await fs.readFile(path.join(artifactRoot, "review-decisions.jsonl"), "utf8").catch(() => "");
@@ -28,6 +32,7 @@ const appliedDecisionIds = new Set();
 let rows = 0;
 let segmented = 0;
 let notApplicable = 0;
+let stale = 0;
 const rowReader = readline.createInterface({
   input: createReadStream(rowPath).pipe(createGunzip()),
   crlfDelay: Infinity,
@@ -42,22 +47,32 @@ for await (const line of rowReader) {
     segmented += 1;
     if (row.auditState === "PENDING" && row.changeNeeded === "Pending") {
       // Expected before occurrence-level adjudication has started.
+    } else if (row.auditState === "STALE-DECISION" && row.changeNeeded === "Pending" && row.comment?.startsWith("STALE-DECISION:")) {
+      stale += 1;
     } else if (!row.auditState || !["Yes", "No"].includes(row.changeNeeded) || !row.comment) {
       throw new Error(`Relevant row lacks complete audit state: ${row.occurrenceId}`);
     }
   } else {
     notApplicable += 1;
-    if (row.auditState !== "NOT-APPLICABLE" || row.changeNeeded !== "No" || !row.comment?.includes("NO-RELEVANT-SEGMENTATION")) {
+    if (row.auditState === "STALE-DECISION" && row.changeNeeded === "Pending" && row.comment?.startsWith("STALE-DECISION:")) {
+      stale += 1;
+    } else if (row.auditState !== "NOT-APPLICABLE" || row.changeNeeded !== "No" || !row.comment?.includes("NO-RELEVANT-SEGMENTATION")) {
       throw new Error(`Invalid no-segmentation state: ${row.occurrenceId}`);
     }
   }
   states[row.auditState] = (states[row.auditState] ?? 0) + 1;
   const decision = decisions.get(row.occurrenceId);
   if (decision) {
-    if (decision.snapshotHash !== row.currentSnapshotHash || decision.auditState !== row.auditState || decision.changeNeeded !== row.changeNeeded || decision.comment !== row.comment) {
+    if (row.auditState === "STALE-DECISION") {
+      if (decision.snapshotHash === row.currentSnapshotHash || row.changeNeeded !== "Pending" || !row.comment?.startsWith("STALE-DECISION:")) {
+        throw new Error(`Incorrectly classified stale decision: ${row.occurrenceId}`);
+      }
+      appliedDecisionIds.add(row.occurrenceId);
+    } else if (decision.snapshotHash !== row.currentSnapshotHash || decision.auditState !== row.auditState || decision.changeNeeded !== row.changeNeeded || decision.comment !== row.comment) {
       throw new Error(`Decision overlay does not match the reviewed snapshot: ${row.occurrenceId}`);
+    } else {
+      appliedDecisionIds.add(row.occurrenceId);
     }
-    appliedDecisionIds.add(row.occurrenceId);
   }
   rows += 1;
 }
@@ -82,8 +97,8 @@ const [plainTable, compressedTable] = await Promise.all([
 const csvLines = plainTable.crlf;
 if (plainTable.sha256 !== compressedTable.sha256) throw new Error("Compressed table does not decompress byte-for-byte to the searchable CSV.");
 const expected = manifest.coverage.packageWordOccurrences;
-if (rows !== expected || segmented + notApplicable !== rows || csvLines !== rows + 1) {
-  throw new Error(`Reconciliation failed: rows=${rows}/${expected}, segmented=${segmented}, N/A=${notApplicable}, CSV lines=${csvLines}`);
+if (rows !== expected || segmented + notApplicable !== rows || csvLines !== rows + 1 || stale !== (manifest.coverage.staleDecisions ?? 0)) {
+  throw new Error(`Reconciliation failed: rows=${rows}/${expected}, segmented=${segmented}, N/A=${notApplicable}, stale=${stale}/${manifest.coverage.staleDecisions ?? 0}, CSV lines=${csvLines}`);
 }
 manifest.coverage.occurrenceRows = rows;
 manifest.coverage.relevantSegmentedOccurrences = segmented;

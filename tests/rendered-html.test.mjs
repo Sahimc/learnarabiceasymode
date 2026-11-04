@@ -19,8 +19,8 @@ test("prototype removes the starter shell and keeps the app public", async () =>
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(plan, /No account/i);
   assert.match(plan, /P0\.1 Environment lock/);
-  assert.match(prototype, /Āyah \{item\.number\}/);
-  assert.match(prototype, /className="lesson-ayah-nav"/);
+  assert.match(prototype, /Āyah \$\{item\.number\}: \$\{item\.translation\}/);
+  assert.match(prototype, /className="ayah-stepper"/);
   assert.match(prototype, /className="presentation-control"/);
   assert.match(prototype, /<span>Takeaway<\/span>/);
   assert.match(prototype, /orderLessonForms\(lesson, word\)/);

@@ -48,3 +48,14 @@ next-env.d.ts
 
 # generated content-audit reports are archived outside the repository
 /artifacts/content-review/limited-sarf-audit-*.json
+
+# Compositional gloss full-corpus ledgers are reconciled only at sūrah boundaries.
+# Keep the generated full ledgers and timestamped exports out of Git change scans.
+/artifacts/compositional-gloss-audit-2026-10/coverage-ledger.jsonl
+/artifacts/compositional-gloss-audit-2026-10/coverage-ledger.reconciled.*
+/artifacts/compositional-gloss-audit-2026-10/coverage-ledger.rendered.*
+/artifacts/compositional-gloss-audit-2026-10/coverage-ledger.searchable.*
+/artifacts/compositional-gloss-audit-2026-10/coverage-ledger.20*
+/artifacts/compositional-gloss-audit-2026-10/coverage-ledger.full-20*
+/artifacts/compositional-gloss-audit-2026-10/coverage-ledger.*.tmp*
+/.codex-*.tmp.mjs

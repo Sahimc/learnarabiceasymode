@@ -73,7 +73,7 @@ test("public source and reviewed lesson routes remain usable", async ({
     "complete starter sūrahs",
   );
   await expect(page.locator("body")).not.toContainText("accounts required");
-  await expect(page.locator(".current-surah-count")).toHaveText("6 āyāt");
+  await expect(page.locator(".ayah-selector-surah")).toContainText("6 āyāt");
 
   await page.goto("/learn/111/1");
   await expect(page.locator("body")).toContainText("Complete Word Tree");
@@ -113,8 +113,12 @@ test("public source and reviewed lesson routes remain usable", async ({
   await expect(page.locator("body")).toContainText("Where the word comes from");
 
   await page.goto("/learn/7/1");
-  await expect(page.locator("body")).toContainText("Source layer available");
-  await expect(page.locator("body")).toContainText("الٓمٓصٓ");
+  await expect(page.locator(".selected-word-breakdown")).toContainText(
+    "Alif Laam Meem Saad",
+  );
+  await expect(page.locator(".selected-word-breakdown")).toContainText(
+    "الٓمٓصٓ",
+  );
 
   const health = await page.request.get("/api/health");
   expect(health.ok()).toBeTruthy();

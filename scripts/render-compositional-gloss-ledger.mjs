@@ -9,13 +9,16 @@ const root = process.cwd();
 const artifactRoot = path.join(root, "artifacts/compositional-gloss-audit-2026-10");
 const uncompressedSourcePath = path.join(artifactRoot, "coverage-ledger.jsonl");
 const compressedSourcePath = path.join(artifactRoot, "coverage-ledger-source.jsonl.gz");
+const completeSurah = Number(process.argv.find((value) => value.startsWith("--surah-complete="))?.split("=")[1]);
+if (!Number.isInteger(completeSurah) || completeSurah < 1 || completeSurah > 114) {
+  throw new Error("Full-ledger rendering is only for a completed sūrah. Usage: node scripts/render-compositional-gloss-ledger.mjs --surah-complete=N");
+}
 // Prefer the latest full rebuild when present. The compressed source may be an
 // older snapshot retained for provenance and must not shadow the fresh ledger.
 const sourcePath = await fs.access(uncompressedSourcePath).then(() => uncompressedSourcePath).catch(() => compressedSourcePath);
-const runId = new Date().toISOString().replaceAll(/[-:.TZ]/gu, "").slice(0, 14) + `-${process.pid}`;
-const gzipPath = path.join(artifactRoot, `coverage-ledger.${runId}.jsonl.gz`);
-const csvPath = path.join(artifactRoot, `coverage-ledger.${runId}.csv`);
-const csvGzipPath = path.join(artifactRoot, `coverage-ledger.${runId}.csv.gz`);
+const gzipPath = path.join(artifactRoot, "coverage-ledger.rendered.jsonl.gz");
+const csvPath = path.join(artifactRoot, "coverage-ledger.searchable.csv");
+const csvGzipPath = path.join(artifactRoot, "coverage-ledger.searchable.csv.gz");
 const manifestPath = path.join(artifactRoot, "coverage-manifest.json");
 const decisionsPath = path.join(artifactRoot, "review-decisions.jsonl");
 const runSuffix = `.tmp-${process.pid}-${Date.now()}`;
@@ -50,6 +53,13 @@ const statuses = new Set([
   "PREFIX-GLOSS-MISMATCH",
   "NOT-APPLICABLE",
 ]);
+function isAuditState(state) {
+  if (statuses.has(state)) return true;
+  const prefix = "MULTIPLE-ISSUES (";
+  if (typeof state !== "string" || !state.startsWith(prefix) || !state.endsWith(")")) return false;
+  const issues = state.slice(prefix.length, -1).split("; ");
+  return issues.length > 1 && new Set(issues).size === issues.length && issues.every((issue) => statuses.has(issue));
+}
 function csv(value) {
   const text = value === null || value === undefined
     ? ""
@@ -106,6 +116,9 @@ let segmentedRelevant = 0;
 let pending = 0;
 let stale = 0;
 let notApplicable = 0;
+let completeSurahRows = 0;
+let completeSurahPending = 0;
+let completeSurahStale = 0;
 for await (const line of reader) {
   if (!line) continue;
   const row = JSON.parse(line);
@@ -139,7 +152,7 @@ for await (const line of reader) {
   } else {
     segmentedRelevant += 1;
     if (decision) {
-      if (!statuses.has(decision.auditState) || !["Yes", "No"].includes(decision.changeNeeded) || !decision.comment) {
+      if (!isAuditState(decision.auditState) || !["Yes", "No"].includes(decision.changeNeeded) || !decision.comment) {
         throw new Error(`Incomplete/invalid decision for ${row.occurrenceId}`);
       }
       if (decision.snapshotHash !== row.currentSnapshotHash) {
@@ -162,6 +175,11 @@ for await (const line of reader) {
     }
   }
   classificationCounts[row.auditState] = (classificationCounts[row.auditState] ?? 0) + 1;
+  if (row.surah === completeSurah) {
+    completeSurahRows += 1;
+    if (row.relevantDisplayedLayers?.length && row.auditState === "PENDING") completeSurahPending += 1;
+    if (row.auditState === "STALE-DECISION") completeSurahStale += 1;
+  }
   const qac = compactMorphology(row);
   const parts = row.currentDisplayedBreakdown?.parts ?? [];
   const cells = [
@@ -200,6 +218,9 @@ gzip.end();
 csvGzip.end();
 csvOutput.end();
 await Promise.all([finished(gzipOutput), finished(csvGzipOutput), finished(csvOutput)]);
+if (!completeSurahRows || completeSurahPending || completeSurahStale) {
+  throw new Error(`Sūrah ${completeSurah} is not ready for rendering: rows=${completeSurahRows}, pending=${completeSurahPending}, stale=${completeSurahStale}.`);
+}
 async function publish(tempPath, finalPath) {
   try {
     await fs.rename(tempPath, finalPath);
@@ -232,6 +253,7 @@ await fs.writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8
 const [gzipInfo, csvInfo, csvGzipInfo] = await Promise.all([fs.stat(gzipPath), fs.stat(csvPath), fs.stat(csvGzipPath)]);
 console.log(JSON.stringify({
   rows: total,
+  reconciledSurah: completeSurah,
   segmentedRelevant,
   notApplicable,
   pending,

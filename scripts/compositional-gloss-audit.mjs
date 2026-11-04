@@ -4,6 +4,10 @@ import path from "node:path";
 import { query, pool } from "./lib/db.ts";
 import { assertAuthoringContract } from "./lib/authoring-contract.mjs";
 
+if (!process.argv.includes("--full-corpus-bootstrap")) {
+  throw new Error("This tool rebuilds the full Qur’an-wide occurrence ledger. It is disabled for ordinary verse auditing; use the active-sūrah store. Explicit full-corpus rebuilds require --full-corpus-bootstrap.");
+}
+
 assertAuthoringContract("compositional gloss audit");
 
 const root = process.cwd();
